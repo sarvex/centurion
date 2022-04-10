@@ -63,7 +63,7 @@ var searchData=
   ['arcade_5fstick_60',['arcade_stick',['../group__input.html#gga0fdb54f2d315bb56f64ed18410c0e9cfaaf85d6baa98a2d76e61dc6bca89625b1',1,'cen']]],
   ['area_61',['area',['../group__math.html#gab9400bf98cfc56a03b6ed1cb66548058',1,'cen::area()'],['../classcen_1_1basic__rect.html#abdb68a17273b173b7f2e9a235ee13d55',1,'cen::basic_rect::area()']]],
   ['area_5fof_62',['area_of',['../group__math.html#ga70540d3864faad4cf5a714e8e7e870d9',1,'cen']]],
-  ['area_5ftype_63',['area_type',['../classcen_1_1rect__traits.html#ae6a548e1d2ecf083d5b3ec5fb6c11bcc',1,'cen::rect_traits::area_type()'],['../classcen_1_1basic__rect.html#a74b29862fd0b1deba73f3df34b503b5f',1,'cen::basic_rect::area_type()']]],
+  ['area_5ftype_63',['area_type',['../classcen_1_1rect__traits.html#a84ea5fc2ec6bac3dbe2979caf4112f62',1,'cen::rect_traits::area_type()'],['../classcen_1_1basic__rect.html#a74b29862fd0b1deba73f3df34b503b5f',1,'cen::basic_rect::area_type()']]],
   ['argb1555_64',['argb1555',['../group__video.html#gga453f61f77c1356db822463d49e1c6aa6a2d7c3077a68f10ac7aec794ecec1e9dc',1,'cen']]],
   ['argb2101010_65',['argb2101010',['../group__video.html#gga453f61f77c1356db822463d49e1c6aa6ab9770b9bb3613be076ff52c399026764',1,'cen']]],
   ['argb32_66',['argb32',['../group__video.html#gga453f61f77c1356db822463d49e1c6aa6ae57a429bc01664112d277cc6d93d3ad6',1,'cen']]],

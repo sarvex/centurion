@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Centurion
-   &#160;<span id="projectnumber">6.3.1</span>
+   &#160;<span id="projectnumber">6.3.2</span>
    </div>
    <div id="projectbrief">A modern C++ wrapper library for SDL2</div>
   </td>
@@ -100,45 +100,55 @@ $(document).ready(function(){initNavTree('counter_8hpp_source.html',''); initRes
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;../core/time.hpp&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacecen_1_1counter.html">cen::counter</a> {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="group__system.html#ga86a526aed5b7ca4c5ecb38a7dcd5d45d">   30</a></span>&#160;[[nodiscard]] <span class="keyword">inline</span> <span class="keyword">auto</span> <a class="code" href="group__system.html#ga86a526aed5b7ca4c5ecb38a7dcd5d45d">frequency</a>() noexcept -&gt; <a class="code" href="group__core.html#ga23844aa05b9b994328870cca9e5a7808">u64</a></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordflow">return</span> SDL_GetPerformanceFrequency();</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="group__system.html#ga8a3954964160a527a3c11befc42c60c0">   44</a></span>&#160;[[nodiscard]] <span class="keyword">inline</span> <span class="keyword">auto</span> <a class="code" href="group__system.html#ga8a3954964160a527a3c11befc42c60c0">now</a>() noexcept -&gt; <a class="code" href="group__core.html#ga23844aa05b9b994328870cca9e5a7808">u64</a></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordflow">return</span> SDL_GetPerformanceCounter();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="group__system.html#ga0635e1cfd7b3bbed55e54f2245d42dba">   59</a></span>&#160;[[nodiscard]] <span class="keyword">auto</span> <a class="code" href="group__system.html#ga0635e1cfd7b3bbed55e54f2245d42dba">now_in_seconds</a>() noexcept(noexcept(<a class="code" href="group__core.html#ga826ec294a3b6962454d669b9c277537b">seconds</a>&lt;T&gt;{})) -&gt; <a class="code" href="group__core.html#ga826ec294a3b6962454d669b9c277537b">seconds&lt;T&gt;</a></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="group__core.html#ga826ec294a3b6962454d669b9c277537b">seconds&lt;T&gt;</a>{<span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(SDL_GetPerformanceCounter()) / <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(<a class="code" href="group__system.html#ga86a526aed5b7ca4c5ecb38a7dcd5d45d">frequency</a>())};</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="group__system.html#gaaa378627cdab42895b4580deac4347d6">   71</a></span>&#160;[[nodiscard]] <span class="keyword">inline</span> <span class="keyword">auto</span> <a class="code" href="group__system.html#gaaa378627cdab42895b4580deac4347d6">ticks</a>() noexcept(noexcept(<a class="code" href="group__core.html#gaeabb8896b493294e6781651b0abfbef5">milliseconds</a>&lt;<a class="code" href="group__core.html#ga4abd620246f76cc48168dc52a04a62da">u32</a>&gt;{<a class="code" href="group__core.html#ga4abd620246f76cc48168dc52a04a62da">u32</a>{}}))</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    -&gt; <a class="code" href="group__core.html#gaeabb8896b493294e6781651b0abfbef5">milliseconds&lt;u32&gt;</a></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="group__core.html#gaeabb8896b493294e6781651b0abfbef5">milliseconds&lt;u32&gt;</a>{SDL_GetTicks()};</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}  <span class="comment">// namespace cen::counter</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// CENTURION_TIMER_HEADER</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacecen_1_1counter.html">cen::counter</a> {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="group__system.html#ga86a526aed5b7ca4c5ecb38a7dcd5d45d">   32</a></span>&#160;[[nodiscard]] <span class="keyword">inline</span> <span class="keyword">auto</span> <a class="code" href="group__system.html#ga86a526aed5b7ca4c5ecb38a7dcd5d45d">frequency</a>() noexcept -&gt; <a class="code" href="group__core.html#ga23844aa05b9b994328870cca9e5a7808">u64</a></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordflow">return</span> SDL_GetPerformanceFrequency();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="group__system.html#ga8a3954964160a527a3c11befc42c60c0">   46</a></span>&#160;[[nodiscard]] <span class="keyword">inline</span> <span class="keyword">auto</span> <a class="code" href="group__system.html#ga8a3954964160a527a3c11befc42c60c0">now</a>() noexcept -&gt; <a class="code" href="group__core.html#ga23844aa05b9b994328870cca9e5a7808">u64</a></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordflow">return</span> SDL_GetPerformanceCounter();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="group__system.html#ga0635e1cfd7b3bbed55e54f2245d42dba">   61</a></span>&#160;[[nodiscard]] <span class="keyword">auto</span> <a class="code" href="group__system.html#ga0635e1cfd7b3bbed55e54f2245d42dba">now_in_seconds</a>() noexcept(noexcept(<a class="code" href="group__core.html#ga1946ec10338edb2b12b0d5adcb5ac4c6">seconds</a>&lt;T&gt;{})) -&gt; <a class="code" href="group__core.html#ga1946ec10338edb2b12b0d5adcb5ac4c6">seconds&lt;T&gt;</a></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="group__core.html#ga1946ec10338edb2b12b0d5adcb5ac4c6">seconds&lt;T&gt;</a>{<span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(SDL_GetPerformanceCounter()) / <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(<a class="code" href="group__system.html#ga86a526aed5b7ca4c5ecb38a7dcd5d45d">frequency</a>())};</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="group__system.html#ga8811769a4833b77156fce98e83269654">   73</a></span>&#160;[[nodiscard, deprecated]] <span class="keyword">inline</span> <span class="keyword">auto</span> <a class="code" href="group__system.html#ga8811769a4833b77156fce98e83269654">ticks</a>() noexcept(noexcept(<a class="code" href="group__core.html#ga4fe97dc89d79178dc7099f26a23efd2e">u32_ms</a>{<a class="code" href="group__core.html#ga4abd620246f76cc48168dc52a04a62da">u32</a>{}})) -&gt; <a class="code" href="group__core.html#ga4fe97dc89d79178dc7099f26a23efd2e">u32_ms</a></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="group__core.html#ga4fe97dc89d79178dc7099f26a23efd2e">u32_ms</a>{SDL_GetTicks()};</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#if SDL_VERSION_ATLEAST(2, 0, 18)</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="group__system.html#ga47d3fde079f157a51bc86fa02eea4c9e">   85</a></span>&#160;[[nodiscard]] <span class="keyword">inline</span> <span class="keyword">auto</span> <a class="code" href="group__system.html#ga47d3fde079f157a51bc86fa02eea4c9e">ticks64</a>() noexcept(noexcept(<a class="code" href="group__core.html#ga917c641f541ffa1121c3df6c2ea0998f">u64_ms</a>{<a class="code" href="group__core.html#ga23844aa05b9b994328870cca9e5a7808">u64</a>{}})) -&gt; <a class="code" href="group__core.html#ga917c641f541ffa1121c3df6c2ea0998f">u64_ms</a></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;{</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="group__core.html#ga917c641f541ffa1121c3df6c2ea0998f">u64_ms</a>{SDL_GetTicks64()};</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// SDL_VERSION_ATLEAST(2, 0, 18)</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}  <span class="comment">// namespace cen::counter</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// CENTURION_TIMER_HEADER</span></div>
+<div class="ttc" id="agroup__core_html_ga1946ec10338edb2b12b0d5adcb5ac4c6"><div class="ttname"><a href="group__core.html#ga1946ec10338edb2b12b0d5adcb5ac4c6">cen::seconds</a></div><div class="ttdeci">std::chrono::duration&lt; T &gt; seconds</div><div class="ttdoc">Templated alias for durations in seconds.</div><div class="ttdef"><b>Definition:</b> time.hpp:21</div></div>
 <div class="ttc" id="agroup__core_html_ga23844aa05b9b994328870cca9e5a7808"><div class="ttname"><a href="group__core.html#ga23844aa05b9b994328870cca9e5a7808">cen::u64</a></div><div class="ttdeci">Uint64 u64</div><div class="ttdoc">Alias for a 64-bit unsigned integer.</div><div class="ttdef"><b>Definition:</b> integers.hpp:25</div></div>
 <div class="ttc" id="agroup__core_html_ga4abd620246f76cc48168dc52a04a62da"><div class="ttname"><a href="group__core.html#ga4abd620246f76cc48168dc52a04a62da">cen::u32</a></div><div class="ttdeci">Uint32 u32</div><div class="ttdoc">Alias for a 32-bit unsigned integer.</div><div class="ttdef"><b>Definition:</b> integers.hpp:28</div></div>
-<div class="ttc" id="agroup__core_html_ga826ec294a3b6962454d669b9c277537b"><div class="ttname"><a href="group__core.html#ga826ec294a3b6962454d669b9c277537b">cen::seconds</a></div><div class="ttdeci">std::chrono::duration&lt; T &gt; seconds</div><div class="ttdoc">Templated alias for durations in seconds.</div><div class="ttdef"><b>Definition:</b> time.hpp:23</div></div>
-<div class="ttc" id="agroup__core_html_gaeabb8896b493294e6781651b0abfbef5"><div class="ttname"><a href="group__core.html#gaeabb8896b493294e6781651b0abfbef5">cen::milliseconds</a></div><div class="ttdeci">std::chrono::duration&lt; T, std::milli &gt; milliseconds</div><div class="ttdoc">Templated alias for durations in milliseconds.</div><div class="ttdef"><b>Definition:</b> time.hpp:31</div></div>
-<div class="ttc" id="agroup__system_html_ga0635e1cfd7b3bbed55e54f2245d42dba"><div class="ttname"><a href="group__system.html#ga0635e1cfd7b3bbed55e54f2245d42dba">cen::counter::now_in_seconds</a></div><div class="ttdeci">auto now_in_seconds() noexcept(noexcept(seconds&lt; T &gt;{})) -&gt; seconds&lt; T &gt;</div><div class="ttdoc">Returns the value of the system high-performance counter in seconds.</div><div class="ttdef"><b>Definition:</b> counter.hpp:59</div></div>
-<div class="ttc" id="agroup__system_html_ga86a526aed5b7ca4c5ecb38a7dcd5d45d"><div class="ttname"><a href="group__system.html#ga86a526aed5b7ca4c5ecb38a7dcd5d45d">cen::counter::frequency</a></div><div class="ttdeci">auto frequency() noexcept -&gt; u64</div><div class="ttdoc">Returns the frequency of the system high-performance counter.</div><div class="ttdef"><b>Definition:</b> counter.hpp:30</div></div>
-<div class="ttc" id="agroup__system_html_ga8a3954964160a527a3c11befc42c60c0"><div class="ttname"><a href="group__system.html#ga8a3954964160a527a3c11befc42c60c0">cen::counter::now</a></div><div class="ttdeci">auto now() noexcept -&gt; u64</div><div class="ttdoc">Returns the current raw value of the system high-performance counter.</div><div class="ttdef"><b>Definition:</b> counter.hpp:44</div></div>
-<div class="ttc" id="agroup__system_html_gaaa378627cdab42895b4580deac4347d6"><div class="ttname"><a href="group__system.html#gaaa378627cdab42895b4580deac4347d6">cen::counter::ticks</a></div><div class="ttdeci">auto ticks() noexcept(noexcept(milliseconds&lt; u32 &gt;{u32{}})) -&gt; milliseconds&lt; u32 &gt;</div><div class="ttdoc">Returns the amount of milliseconds since the library was initialized.</div><div class="ttdef"><b>Definition:</b> counter.hpp:71</div></div>
+<div class="ttc" id="agroup__core_html_ga4fe97dc89d79178dc7099f26a23efd2e"><div class="ttname"><a href="group__core.html#ga4fe97dc89d79178dc7099f26a23efd2e">cen::u32_ms</a></div><div class="ttdeci">milliseconds&lt; u32 &gt; u32_ms</div><div class="ttdef"><b>Definition:</b> time.hpp:41</div></div>
+<div class="ttc" id="agroup__core_html_ga917c641f541ffa1121c3df6c2ea0998f"><div class="ttname"><a href="group__core.html#ga917c641f541ffa1121c3df6c2ea0998f">cen::u64_ms</a></div><div class="ttdeci">milliseconds&lt; u64 &gt; u64_ms</div><div class="ttdef"><b>Definition:</b> time.hpp:47</div></div>
+<div class="ttc" id="agroup__system_html_ga0635e1cfd7b3bbed55e54f2245d42dba"><div class="ttname"><a href="group__system.html#ga0635e1cfd7b3bbed55e54f2245d42dba">cen::counter::now_in_seconds</a></div><div class="ttdeci">auto now_in_seconds() noexcept(noexcept(seconds&lt; T &gt;{})) -&gt; seconds&lt; T &gt;</div><div class="ttdoc">Returns the value of the system high-performance counter in seconds.</div><div class="ttdef"><b>Definition:</b> counter.hpp:61</div></div>
+<div class="ttc" id="agroup__system_html_ga47d3fde079f157a51bc86fa02eea4c9e"><div class="ttname"><a href="group__system.html#ga47d3fde079f157a51bc86fa02eea4c9e">cen::counter::ticks64</a></div><div class="ttdeci">auto ticks64() noexcept(noexcept(u64_ms{u64{}})) -&gt; u64_ms</div><div class="ttdoc">Returns the amount of milliseconds since the library was initialized.</div><div class="ttdef"><b>Definition:</b> counter.hpp:85</div></div>
+<div class="ttc" id="agroup__system_html_ga86a526aed5b7ca4c5ecb38a7dcd5d45d"><div class="ttname"><a href="group__system.html#ga86a526aed5b7ca4c5ecb38a7dcd5d45d">cen::counter::frequency</a></div><div class="ttdeci">auto frequency() noexcept -&gt; u64</div><div class="ttdoc">Returns the frequency of the system high-performance counter.</div><div class="ttdef"><b>Definition:</b> counter.hpp:32</div></div>
+<div class="ttc" id="agroup__system_html_ga8811769a4833b77156fce98e83269654"><div class="ttname"><a href="group__system.html#ga8811769a4833b77156fce98e83269654">cen::counter::ticks</a></div><div class="ttdeci">auto ticks() noexcept(noexcept(u32_ms{u32{}})) -&gt; u32_ms</div><div class="ttdoc">Returns the amount of milliseconds since the library was initialized.</div><div class="ttdef"><b>Definition:</b> counter.hpp:73</div></div>
+<div class="ttc" id="agroup__system_html_ga8a3954964160a527a3c11befc42c60c0"><div class="ttname"><a href="group__system.html#ga8a3954964160a527a3c11befc42c60c0">cen::counter::now</a></div><div class="ttdeci">auto now() noexcept -&gt; u64</div><div class="ttdoc">Returns the current raw value of the system high-performance counter.</div><div class="ttdef"><b>Definition:</b> counter.hpp:46</div></div>
 <div class="ttc" id="anamespacecen_1_1counter_html"><div class="ttname"><a href="namespacecen_1_1counter.html">cen::counter</a></div><div class="ttdoc">Provides timing utilities.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

@@ -7,8 +7,8 @@ var group__math =
       [ "height", "structcen_1_1basic__area.html#a9e0efb326f131ed27eacfd023a6d8dd8", null ]
     ] ],
     [ "point_traits", "classcen_1_1point__traits.html", [
-      [ "value_type", "classcen_1_1point__traits.html#a20b5aacf147e2f7ce748358c76f10c12", null ],
-      [ "point_type", "classcen_1_1point__traits.html#ad6c60a4ce30e239c564dcbb0b51e6f0a", null ]
+      [ "value_type", "classcen_1_1point__traits.html#a30178766f96e6419db131d801ec83c24", null ],
+      [ "point_type", "classcen_1_1point__traits.html#a98c4025408f7412a10f919b65b873b3f", null ]
     ] ],
     [ "basic_point", "classcen_1_1basic__point.html", [
       [ "value_type", "classcen_1_1basic__point.html#adc21c54b6267e1ce2fdd124a922e250e", null ],
@@ -29,10 +29,10 @@ var group__math =
       [ "serialize", "classcen_1_1basic__point.html#a2662928096822b6792887cbbff00bfa5", null ]
     ] ],
     [ "rect_traits", "classcen_1_1rect__traits.html", [
-      [ "value_type", "classcen_1_1rect__traits.html#a10f0fe55e4a5506a249147e2bfe3fc37", null ],
-      [ "point_type", "classcen_1_1rect__traits.html#ae7732d6f767728a469848887c33b801a", null ],
-      [ "area_type", "classcen_1_1rect__traits.html#ae6a548e1d2ecf083d5b3ec5fb6c11bcc", null ],
-      [ "rect_type", "classcen_1_1rect__traits.html#a216dec431a487124a1c1f676bdd3d628", null ]
+      [ "value_type", "classcen_1_1rect__traits.html#aac399ceb78cb1aac9f0d98789ca9a2c3", null ],
+      [ "point_type", "classcen_1_1rect__traits.html#a8f6ba1adf591b7ad93916e4d519d2314", null ],
+      [ "area_type", "classcen_1_1rect__traits.html#a84ea5fc2ec6bac3dbe2979caf4112f62", null ],
+      [ "rect_type", "classcen_1_1rect__traits.html#ac3d914bcf7fd4ad1e0bf86864188b076", null ]
     ] ],
     [ "basic_rect", "classcen_1_1basic__rect.html", [
       [ "value_type", "classcen_1_1basic__rect.html#a3be2010dd1dffe4571b4c51a3b966abb", null ],

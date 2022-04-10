@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Centurion
-   &#160;<span id="projectnumber">6.3.1</span>
+   &#160;<span id="projectnumber">6.3.2</span>
    </div>
    <div id="projectbrief">A modern C++ wrapper library for SDL2</div>
   </td>
@@ -136,7 +136,7 @@ $(document).ready(function(){initNavTree('channels_8hpp_source.html',''); initRe
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
 <div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="group__audio.html#ga9e858e73369e0315903c662df9431a5a">  100</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">auto</span> <a class="code" href="group__audio.html#ga9e858e73369e0315903c662df9431a5a">expire</a>(<span class="keyword">const</span> <a class="code" href="group__audio.html#ga652508490c53af3f32df983ee1456854">channel_index</a> channel,</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                   <span class="keyword">const</span> <a class="code" href="group__core.html#gaeabb8896b493294e6781651b0abfbef5">milliseconds&lt;int&gt;</a> ms) noexcept(noexcept(ms.count())) -&gt; <a class="code" href="classcen_1_1result.html">result</a></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                   <span class="keyword">const</span> <a class="code" href="group__core.html#ga00e0d04c3d6ce5b2c9e719c45b039de0">milliseconds&lt;int&gt;</a> ms) noexcept(noexcept(ms.count())) -&gt; <a class="code" href="classcen_1_1result.html">result</a></div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;{</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordflow">return</span> Mix_ExpireChannel(channel, ms.count()) != 0;</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
@@ -218,7 +218,7 @@ $(document).ready(function(){initNavTree('channels_8hpp_source.html',''); initRe
 <div class="ttc" id="agroup__audio_html_gaa2e80f918396ede432649eae682172f1"><div class="ttname"><a href="group__audio.html#gaa2e80f918396ede432649eae682172f1">cen::channel_finished_callback</a></div><div class="ttdeci">void(SDLCALL *)(channel_index) noexcept channel_finished_callback</div><div class="ttdef"><b>Definition:</b> channels.hpp:23</div></div>
 <div class="ttc" id="agroup__audio_html_gad67543bc014490038b4ddb09767f4e77"><div class="ttname"><a href="group__audio.html#gad67543bc014490038b4ddb09767f4e77">cen::channels::set_group</a></div><div class="ttdeci">auto set_group(const channel_index channel, const group_index group) noexcept -&gt; result</div><div class="ttdoc">Sets the group that a channel belongs to.</div><div class="ttdef"><b>Definition:</b> channels.hpp:132</div></div>
 <div class="ttc" id="agroup__audio_html_gae0b3f25f29d1a9109b69878a630879aa"><div class="ttname"><a href="group__audio.html#gae0b3f25f29d1a9109b69878a630879aa">cen::channels::remove_expiration</a></div><div class="ttdeci">auto remove_expiration(const channel_index channel) noexcept -&gt; result</div><div class="ttdoc">Removes the current expiration from the specified channel.</div><div class="ttdef"><b>Definition:</b> channels.hpp:115</div></div>
-<div class="ttc" id="agroup__core_html_gaeabb8896b493294e6781651b0abfbef5"><div class="ttname"><a href="group__core.html#gaeabb8896b493294e6781651b0abfbef5">cen::milliseconds</a></div><div class="ttdeci">std::chrono::duration&lt; T, std::milli &gt; milliseconds</div><div class="ttdoc">Templated alias for durations in milliseconds.</div><div class="ttdef"><b>Definition:</b> time.hpp:31</div></div>
+<div class="ttc" id="agroup__core_html_ga00e0d04c3d6ce5b2c9e719c45b039de0"><div class="ttname"><a href="group__core.html#ga00e0d04c3d6ce5b2c9e719c45b039de0">cen::milliseconds</a></div><div class="ttdeci">std::chrono::duration&lt; T, std::milli &gt; milliseconds</div><div class="ttdoc">Templated alias for durations in milliseconds.</div><div class="ttdef"><b>Definition:</b> time.hpp:25</div></div>
 <div class="ttc" id="anamespacecen_html"><div class="ttname"><a href="namespacecen.html">cen</a></div><div class="ttdoc">The top-level namespace that all components of the library reside in.</div><div class="ttdef"><b>Definition:</b> channels.hpp:14</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

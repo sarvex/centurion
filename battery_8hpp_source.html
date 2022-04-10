@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Centurion
-   &#160;<span id="projectnumber">6.3.1</span>
+   &#160;<span id="projectnumber">6.3.2</span>
    </div>
    <div id="projectbrief">A modern C++ wrapper library for SDL2</div>
   </td>
@@ -114,7 +114,7 @@ $(document).ready(function(){initNavTree('battery_8hpp_source.html',''); initRes
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">int</span> secondsLeft{-1};</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  SDL_GetPowerInfo(&amp;secondsLeft, <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordflow">if</span> (secondsLeft != -1) {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="group__core.html#ga826ec294a3b6962454d669b9c277537b">seconds&lt;int&gt;</a>{secondsLeft};</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="group__core.html#ga1946ec10338edb2b12b0d5adcb5ac4c6">seconds&lt;int&gt;</a>{secondsLeft};</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  }</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> std::nullopt;</div>
@@ -176,7 +176,7 @@ $(document).ready(function(){initNavTree('battery_8hpp_source.html',''); initRes
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;}  <span class="comment">// namespace cen::battery</span></div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// CENTURION_BATTERY_HEADER</span></div>
-<div class="ttc" id="agroup__core_html_ga826ec294a3b6962454d669b9c277537b"><div class="ttname"><a href="group__core.html#ga826ec294a3b6962454d669b9c277537b">cen::seconds</a></div><div class="ttdeci">std::chrono::duration&lt; T &gt; seconds</div><div class="ttdoc">Templated alias for durations in seconds.</div><div class="ttdef"><b>Definition:</b> time.hpp:23</div></div>
+<div class="ttc" id="agroup__core_html_ga1946ec10338edb2b12b0d5adcb5ac4c6"><div class="ttname"><a href="group__core.html#ga1946ec10338edb2b12b0d5adcb5ac4c6">cen::seconds</a></div><div class="ttdeci">std::chrono::duration&lt; T &gt; seconds</div><div class="ttdoc">Templated alias for durations in seconds.</div><div class="ttdef"><b>Definition:</b> time.hpp:21</div></div>
 <div class="ttc" id="agroup__system_html_ga0080173146eba8655792695d333c1170"><div class="ttname"><a href="group__system.html#ga0080173146eba8655792695d333c1170">cen::battery::exists</a></div><div class="ttdeci">auto exists() noexcept -&gt; bool</div><div class="ttdoc">Indicates whether or not the system is running on a battery.</div><div class="ttdef"><b>Definition:</b> battery.hpp:110</div></div>
 <div class="ttc" id="agroup__system_html_ga128edfb3b768b77cce3d859851c51876"><div class="ttname"><a href="group__system.html#ga128edfb3b768b77cce3d859851c51876">cen::battery::is_charged</a></div><div class="ttdeci">auto is_charged() noexcept -&gt; bool</div><div class="ttdoc">Indicate whether or not the battery is charged.</div><div class="ttdef"><b>Definition:</b> battery.hpp:143</div></div>
 <div class="ttc" id="agroup__system_html_ga1addb9148cb6e8ca78d998d5226b4a84"><div class="ttname"><a href="group__system.html#ga1addb9148cb6e8ca78d998d5226b4a84">cen::battery::is_charging</a></div><div class="ttdeci">auto is_charging() noexcept -&gt; bool</div><div class="ttdoc">Indicate whether or not the battery is being charged.</div><div class="ttdef"><b>Definition:</b> battery.hpp:128</div></div>

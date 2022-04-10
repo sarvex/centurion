@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Centurion
-   &#160;<span id="projectnumber">6.3.1</span>
+   &#160;<span id="projectnumber">6.3.2</span>
    </div>
    <div id="projectbrief">A modern C++ wrapper library for SDL2</div>
   </td>
@@ -108,13 +108,10 @@ Public Types</h2></td></tr>
 <tr class="memitem:a8544da2a795262ee4cdd989583ac7123"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1thread.html#a8544da2a795262ee4cdd989583ac7123">task_type</a> = SDL_ThreadFunction</td></tr>
 <tr class="memdesc:a8544da2a795262ee4cdd989583ac7123"><td class="mdescLeft">&#160;</td><td class="mdescRight">The signature of the function object that will be executed.  <a href="classcen_1_1thread.html#a8544da2a795262ee4cdd989583ac7123">More...</a><br /></td></tr>
 <tr class="separator:a8544da2a795262ee4cdd989583ac7123"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d5d7fac49508512cdac43ca40182671"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1thread.html#a3d5d7fac49508512cdac43ca40182671">id</a> = SDL_threadID</td></tr>
-<tr class="memdesc:a3d5d7fac49508512cdac43ca40182671"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type used for thread identifiers.  <a href="classcen_1_1thread.html#a3d5d7fac49508512cdac43ca40182671">More...</a><br /></td></tr>
-<tr class="separator:a3d5d7fac49508512cdac43ca40182671"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a45feb8da5b3357347f8bb954ac194e6c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1thread.html#a45feb8da5b3357347f8bb954ac194e6c">sleep</a> (const <a class="el" href="group__core.html#gaeabb8896b493294e6781651b0abfbef5">milliseconds</a>&lt; <a class="el" href="group__core.html#ga4abd620246f76cc48168dc52a04a62da">u32</a> &gt; ms) noexcept(noexcept(ms.count()))</td></tr>
+<tr class="memitem:a45feb8da5b3357347f8bb954ac194e6c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1thread.html#a45feb8da5b3357347f8bb954ac194e6c">sleep</a> (const <a class="el" href="group__core.html#ga00e0d04c3d6ce5b2c9e719c45b039de0">milliseconds</a>&lt; <a class="el" href="group__core.html#ga4abd620246f76cc48168dc52a04a62da">u32</a> &gt; ms) noexcept(noexcept(ms.count()))</td></tr>
 <tr class="memdesc:a45feb8da5b3357347f8bb954ac194e6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forces the current thread to halt for at least the specified duration.  <a href="classcen_1_1thread.html#a45feb8da5b3357347f8bb954ac194e6c">More...</a><br /></td></tr>
 <tr class="separator:a45feb8da5b3357347f8bb954ac194e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9f31a05a50805c3a39e60a0d3462784"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1thread.html#af9f31a05a50805c3a39e60a0d3462784">set_priority</a> (const <a class="el" href="group__thread.html#ga7fba1e8c28384518ae94d5f1f998efae">thread_priority</a> priority) noexcept -&gt; <a class="el" href="classcen_1_1result.html">result</a></td></tr>
@@ -194,24 +191,6 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The signature of the function object that will be executed. </p>
-<dl class="section since"><dt>Since</dt><dd>5.0.0 </dd></dl>
-
-</div>
-</div>
-<a id="a3d5d7fac49508512cdac43ca40182671"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d5d7fac49508512cdac43ca40182671">&#9670;&nbsp;</a></span>id</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classcen_1_1thread.html#a3d5d7fac49508512cdac43ca40182671">cen::thread::id</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The type used for thread identifiers. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>Since 6.2.0, use <code>thread_id</code> instead.</dd></dl>
 <dl class="section since"><dt>Since</dt><dd>5.0.0 </dd></dl>
 
 </div>
@@ -492,7 +471,7 @@ template&lt;typename T  = void, is_stateless_callable&lt; T * &gt; Callable&gt; 
         <tr>
           <td class="memname">static void cen::thread::sleep </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__core.html#gaeabb8896b493294e6781651b0abfbef5">milliseconds</a>&lt; <a class="el" href="group__core.html#ga4abd620246f76cc48168dc52a04a62da">u32</a> &gt;&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__core.html#ga00e0d04c3d6ce5b2c9e719c45b039de0">milliseconds</a>&lt; <a class="el" href="group__core.html#ga4abd620246f76cc48168dc52a04a62da">u32</a> &gt;&#160;</td>
           <td class="paramname"><em>ms</em></td><td>)</td>
           <td></td>
         </tr>

@@ -124,8 +124,7 @@ var menudata={children:[
 {text:"s",url:"namespacemembers_type.html#index_s"},
 {text:"t",url:"namespacemembers_type.html#index_t"},
 {text:"u",url:"namespacemembers_type.html#index_u"},
-{text:"w",url:"namespacemembers_type.html#index_w"},
-{text:"z",url:"namespacemembers_type.html#index_z"}]},
+{text:"w",url:"namespacemembers_type.html#index_w"}]},
 {text:"Enumerations",url:"namespacemembers_enum.html",children:[
 {text:"b",url:"namespacemembers_enum.html#index_b"},
 {text:"c",url:"namespacemembers_enum.html#index_c"},

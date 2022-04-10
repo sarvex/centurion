@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Centurion
-   &#160;<span id="projectnumber">6.3.1</span>
+   &#160;<span id="projectnumber">6.3.2</span>
    </div>
    <div id="projectbrief">A modern C++ wrapper library for SDL2</div>
   </td>
@@ -136,7 +136,7 @@ $(document).ready(function(){initNavTree('condition_8hpp_source.html',''); initR
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">return</span> SDL_CondWait(m_cond.get(), <a class="code" href="classcen_1_1mutex.html">mutex</a>.<a class="code" href="classcen_1_1mutex.html#a67879f779ea892ab51a38a568e61df32">get</a>()) == 0;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  }</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="classcen_1_1condition.html#ae41089a286b74f95584793f12b5c80d1">   94</a></span>&#160;  <span class="keyword">auto</span> <a class="code" href="classcen_1_1condition.html#ae41089a286b74f95584793f12b5c80d1">wait</a>(<a class="code" href="classcen_1_1mutex.html">mutex</a>&amp; <a class="code" href="classcen_1_1mutex.html">mutex</a>, <span class="keyword">const</span> <a class="code" href="group__core.html#gaeabb8896b493294e6781651b0abfbef5">milliseconds&lt;u32&gt;</a> ms) noexcept(noexcept(ms.count()))</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="classcen_1_1condition.html#ae41089a286b74f95584793f12b5c80d1">   94</a></span>&#160;  <span class="keyword">auto</span> <a class="code" href="classcen_1_1condition.html#ae41089a286b74f95584793f12b5c80d1">wait</a>(<a class="code" href="classcen_1_1mutex.html">mutex</a>&amp; <a class="code" href="classcen_1_1mutex.html">mutex</a>, <span class="keyword">const</span> <a class="code" href="group__core.html#ga00e0d04c3d6ce5b2c9e719c45b039de0">milliseconds&lt;u32&gt;</a> ms) noexcept(noexcept(ms.count()))</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      -&gt; <a class="code" href="group__thread.html#ga81e5eda2a43cc39dee8bb8d60cff70d3">lock_status</a></div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  {</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><a class="code" href="group__thread.html#ga81e5eda2a43cc39dee8bb8d60cff70d3">lock_status</a><span class="keyword">&gt;</span>(</div>
@@ -169,7 +169,7 @@ $(document).ready(function(){initNavTree('condition_8hpp_source.html',''); initR
 <div class="ttc" id="aclasscen_1_1mutex_html_a67879f779ea892ab51a38a568e61df32"><div class="ttname"><a href="classcen_1_1mutex.html#a67879f779ea892ab51a38a568e61df32">cen::mutex::get</a></div><div class="ttdeci">auto get() noexcept -&gt; SDL_mutex *</div><div class="ttdoc">Returns a pointer to the associated SDL mutex.</div><div class="ttdef"><b>Definition:</b> mutex.hpp:90</div></div>
 <div class="ttc" id="aclasscen_1_1result_html"><div class="ttname"><a href="classcen_1_1result.html">cen::result</a></div><div class="ttdoc">A simple indicator for the result of different operations.</div><div class="ttdef"><b>Definition:</b> result.hpp:50</div></div>
 <div class="ttc" id="aclasscen_1_1sdl__error_html"><div class="ttname"><a href="classcen_1_1sdl__error.html">cen::sdl_error</a></div><div class="ttdoc">Represents an error related to the core SDL2 library.</div><div class="ttdef"><b>Definition:</b> exception.hpp:64</div></div>
-<div class="ttc" id="agroup__core_html_gaeabb8896b493294e6781651b0abfbef5"><div class="ttname"><a href="group__core.html#gaeabb8896b493294e6781651b0abfbef5">cen::milliseconds</a></div><div class="ttdeci">std::chrono::duration&lt; T, std::milli &gt; milliseconds</div><div class="ttdoc">Templated alias for durations in milliseconds.</div><div class="ttdef"><b>Definition:</b> time.hpp:31</div></div>
+<div class="ttc" id="agroup__core_html_ga00e0d04c3d6ce5b2c9e719c45b039de0"><div class="ttname"><a href="group__core.html#ga00e0d04c3d6ce5b2c9e719c45b039de0">cen::milliseconds</a></div><div class="ttdeci">std::chrono::duration&lt; T, std::milli &gt; milliseconds</div><div class="ttdoc">Templated alias for durations in milliseconds.</div><div class="ttdef"><b>Definition:</b> time.hpp:25</div></div>
 <div class="ttc" id="agroup__thread_html_ga81e5eda2a43cc39dee8bb8d60cff70d3"><div class="ttname"><a href="group__thread.html#ga81e5eda2a43cc39dee8bb8d60cff70d3">cen::lock_status</a></div><div class="ttdeci">lock_status</div><div class="ttdef"><b>Definition:</b> lock_status.hpp:17</div></div>
 <div class="ttc" id="anamespacecen_html"><div class="ttname"><a href="namespacecen.html">cen</a></div><div class="ttdoc">The top-level namespace that all components of the library reside in.</div><div class="ttdef"><b>Definition:</b> channels.hpp:14</div></div>
 </div><!-- fragment --></div><!-- contents -->

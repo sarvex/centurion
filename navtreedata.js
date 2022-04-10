@@ -64,7 +64,6 @@ var NAVTREE =
     ] ],
     [ "Examples", "page-examples.html", "page-examples" ],
     [ "Todo List", "todo.html", null ],
-    [ "Deprecated List", "deprecated.html", null ],
     [ "Modules", "modules.html", "modules" ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
@@ -97,23 +96,23 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "classcen_1_1basic__renderer.html#a59d671fd6a3ccd33611e02c441e69511",
-"classcen_1_1basic__window.html#ad8e5163c95e9b9ad471857f08b2344d9",
-"classcen_1_1font.html#a8bbdc38c0d20d5134c2dfda284510f1c",
-"classcen_1_1keyboard.html#a0f5ea0df0c03a11d21e46bdfc159e4db",
-"classcen_1_1sdl__error.html#aac86899f2c5c0c5fcbb582a3e8d84514",
+"classcen_1_1basic__window.html#ad351c3efa309518e63878fc2698684af",
+"classcen_1_1font.html#a89fef7ac91a9482382fcbca9cd426a00",
+"classcen_1_1keyboard.html#a08181b86c6c459707a89402a61c3e9b4",
+"classcen_1_1sdl__error.html",
 "group__audio.html#ga105d28e38d848b57dd27f0fa6cdf665e",
 "group__audio.html#ga759253d3ea01d7e559b8da64a75a7a5e",
 "group__audio.html#gga031d8555460da0d56819cb782b4716c3adfff0a7fa1a55c8c1a4966c19f6da452",
-"group__event.html#gab0815d6bb1f5594cee8bbbb2557a240d",
-"group__hints.html#ga072a74d2b5960410afb5c7ea94bc5ba5",
-"group__input.html#ga912a6c8d4b4c6434a91b2b6d0da3689e",
-"group__input.html#gga2101a411ac6025302800a78f9c54fce4a50628fab62b5a54a5f0a7e7c7b4f157b",
-"group__math.html#gafdb630e2a87668b2fd270ec50b0e7c79",
-"group__video.html#ga23eaa3383711079816cd6ee070c8f7f6",
-"group__video.html#ga9afbc60949b8a3bca50aa085afa5b2e0",
-"group__video.html#gga0db193ed41c0f20c9dda2efa20c22d70a8bd0830c3f641a6416ee2b8b9a2a8d15",
-"namespacecen_1_1clipboard.html",
-"structcen_1_1hint_1_1mouse_1_1relative__speed__scale.html"
+"group__event.html#ga9b2712d8b5e30517463967ebb5ecafc4",
+"group__filesystem.html#ggad4d6d000bfcb17dc8b889d735a346564abf1bc47a384475eb8e5e5008534ee2e1",
+"group__input.html#ga8a64ec0429044deef18f556e27b5a863",
+"group__input.html#gga2101a411ac6025302800a78f9c54fce4a15d61712450a686a7f365adf4fef581f",
+"group__math.html#gaed8d1563c81df056194c1a12b7a250be",
+"group__video.html#ga1a98b7a6490bd623c4547667b81ce547",
+"group__video.html#ga935b7976af930d94a3158cdfafd4bf30",
+"group__video.html#gga0db193ed41c0f20c9dda2efa20c22d70a4f1914ba94592fe927c7c10eac875af9",
+"index.html",
+"structcen_1_1hint_1_1grab__keyboard.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

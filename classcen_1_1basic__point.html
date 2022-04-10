@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Centurion
-   &#160;<span id="projectnumber">6.3.1</span>
+   &#160;<span id="projectnumber">6.3.2</span>
    </div>
    <div id="projectbrief">A modern C++ wrapper library for SDL2</div>
   </td>
@@ -123,11 +123,17 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a24c7a35f206fd07a03f912a0f430c4ae"><td class="memItemLeft" align="right" valign="top">constexpr static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__point.html#a24c7a35f206fd07a03f912a0f430c4ae">isIntegral</a> = <a class="el" href="classcen_1_1point__traits.html">point_traits</a>&lt;T&gt;::isIntegral</td></tr>
-<tr class="memdesc:a24c7a35f206fd07a03f912a0f430c4ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether or not the point is based on an integral type.  <a href="classcen_1_1basic__point.html#a24c7a35f206fd07a03f912a0f430c4ae">More...</a><br /></td></tr>
+<tr class="memdesc:a24c7a35f206fd07a03f912a0f430c4ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether or not the point has integral components.  <a href="classcen_1_1basic__point.html#a24c7a35f206fd07a03f912a0f430c4ae">More...</a><br /></td></tr>
 <tr class="separator:a24c7a35f206fd07a03f912a0f430c4ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99ac24319da114936a5016b1ef031778"><td class="memItemLeft" align="right" valign="top">constexpr static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__point.html#a99ac24319da114936a5016b1ef031778">isFloating</a> = <a class="el" href="classcen_1_1point__traits.html">point_traits</a>&lt;T&gt;::isFloating</td></tr>
-<tr class="memdesc:a99ac24319da114936a5016b1ef031778"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether or not the point is based on a floating-point type.  <a href="classcen_1_1basic__point.html#a99ac24319da114936a5016b1ef031778">More...</a><br /></td></tr>
+<tr class="memdesc:a99ac24319da114936a5016b1ef031778"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether or not the point has floating-point components.  <a href="classcen_1_1basic__point.html#a99ac24319da114936a5016b1ef031778">More...</a><br /></td></tr>
 <tr class="separator:a99ac24319da114936a5016b1ef031778"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2220da20067d03197dfd56e19c68475"><td class="memItemLeft" align="right" valign="top">constexpr static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__point.html#ac2220da20067d03197dfd56e19c68475">integral</a> = <a class="el" href="classcen_1_1point__traits.html">point_traits</a>&lt;T&gt;::integral</td></tr>
+<tr class="memdesc:ac2220da20067d03197dfd56e19c68475"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether or not the point has integral components.  <a href="classcen_1_1basic__point.html#ac2220da20067d03197dfd56e19c68475">More...</a><br /></td></tr>
+<tr class="separator:ac2220da20067d03197dfd56e19c68475"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a753376bea7f90590a1dd5fb2e21f9e1b"><td class="memItemLeft" align="right" valign="top">constexpr static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__point.html#a753376bea7f90590a1dd5fb2e21f9e1b">floating</a> = <a class="el" href="classcen_1_1point__traits.html">point_traits</a>&lt;T&gt;::floating</td></tr>
+<tr class="memdesc:a753376bea7f90590a1dd5fb2e21f9e1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether or not the point has floating-point components.  <a href="classcen_1_1basic__point.html#a753376bea7f90590a1dd5fb2e21f9e1b">More...</a><br /></td></tr>
+<tr class="separator:a753376bea7f90590a1dd5fb2e21f9e1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Construction</h2></td></tr>
 <tr class="memitem:afc70c77e6b99c69593d9c58091aae094"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__point.html#afc70c77e6b99c69593d9c58091aae094">basic_point</a> () noexcept=default</td></tr>
@@ -192,9 +198,9 @@ class cen::basic_point&lt; T &gt;</h3>
   </dd>
 </dl>
 <dl class="section since"><dt>Since</dt><dd>5.0.0</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><code><a class="el" href="group__math.html#ga482cd24468a5a74647742e69379566c7" title="Alias for an int-based point.">ipoint</a></code> </dd>
+<dl class="section see"><dt>See also</dt><dd><code><a class="el" href="group__math.html#ga482cd24468a5a74647742e69379566c7" title="Alias for an integral point.">ipoint</a></code> </dd>
 <dd>
-<code><a class="el" href="group__math.html#gac8dd351748b0f07b280e685ae4097d40" title="Alias for a float-based point.">fpoint</a></code> </dd>
+<code><a class="el" href="group__math.html#gac8dd351748b0f07b280e685ae4097d40" title="Alias for a floating-point point.">fpoint</a></code> </dd>
 <dd>
 <code><a class="el" href="group__math.html#ga0ea9dbc4b64f2d8d6c83919a080b805b" title="Creates a point instance with automatically deduced precision.">point()</a></code> </dd>
 <dd>
@@ -751,7 +757,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Indicates whether or not the point is based on an integral type. </p>
+<p>Indicates whether or not the point has integral components. </p>
 <dl class="section since"><dt>Since</dt><dd>5.0.0 </dd></dl>
 
 </div>
@@ -778,8 +784,60 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Indicates whether or not the point is based on a floating-point type. </p>
+<p>Indicates whether or not the point has floating-point components. </p>
 <dl class="section since"><dt>Since</dt><dd>5.0.0 </dd></dl>
+
+</div>
+</div>
+<a id="ac2220da20067d03197dfd56e19c68475"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2220da20067d03197dfd56e19c68475">&#9670;&nbsp;</a></span>integral</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr static bool <a class="el" href="classcen_1_1basic__point.html">cen::basic_point</a>&lt; T &gt;::integral = <a class="el" href="classcen_1_1point__traits.html">point_traits</a>&lt;T&gt;::integral</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Indicates whether or not the point has integral components. </p>
+
+</div>
+</div>
+<a id="a753376bea7f90590a1dd5fb2e21f9e1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a753376bea7f90590a1dd5fb2e21f9e1b">&#9670;&nbsp;</a></span>floating</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr static bool <a class="el" href="classcen_1_1basic__point.html">cen::basic_point</a>&lt; T &gt;::floating = <a class="el" href="classcen_1_1point__traits.html">point_traits</a>&lt;T&gt;::floating</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Indicates whether or not the point has floating-point components. </p>
 
 </div>
 </div>

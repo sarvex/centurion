@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Centurion
-   &#160;<span id="projectnumber">6.3.1</span>
+   &#160;<span id="projectnumber">6.3.2</span>
    </div>
    <div id="projectbrief">A modern C++ wrapper library for SDL2</div>
   </td>
@@ -155,10 +155,10 @@ Functions</h2></td></tr>
 <tr class="separator:ga5f419736a187461bed5d129d910f07e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Battery functions</h2></td></tr>
-<tr class="memitem:gac7b98bb966c7172036d8901e6f7fe68d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__system.html#gac7b98bb966c7172036d8901e6f7fe68d">cen::battery::seconds_left</a> () -&gt; std::optional&lt; <a class="el" href="group__core.html#ga826ec294a3b6962454d669b9c277537b">seconds</a>&lt; int &gt;&gt;</td></tr>
+<tr class="memitem:gac7b98bb966c7172036d8901e6f7fe68d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__system.html#gac7b98bb966c7172036d8901e6f7fe68d">cen::battery::seconds_left</a> () -&gt; std::optional&lt; <a class="el" href="group__core.html#ga1946ec10338edb2b12b0d5adcb5ac4c6">seconds</a>&lt; int &gt;&gt;</td></tr>
 <tr class="memdesc:gac7b98bb966c7172036d8901e6f7fe68d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the seconds of battery life that is remaining.  <a href="group__system.html#gac7b98bb966c7172036d8901e6f7fe68d">More...</a><br /></td></tr>
 <tr class="separator:gac7b98bb966c7172036d8901e6f7fe68d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa09886ca03dbb2f6306324459812ac52"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__system.html#gaa09886ca03dbb2f6306324459812ac52">cen::battery::minutes_left</a> () -&gt; std::optional&lt; <a class="el" href="group__core.html#ga188e11bfe67eb564ec1c9afa24a204db">minutes</a>&lt; int &gt;&gt;</td></tr>
+<tr class="memitem:gaa09886ca03dbb2f6306324459812ac52"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__system.html#gaa09886ca03dbb2f6306324459812ac52">cen::battery::minutes_left</a> () -&gt; std::optional&lt; <a class="el" href="group__core.html#ga7ef308458f4541863b7e683acfe536ef">minutes</a>&lt; int &gt;&gt;</td></tr>
 <tr class="memdesc:gaa09886ca03dbb2f6306324459812ac52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the amount of minutes of battery life that is remaining.  <a href="group__system.html#gaa09886ca03dbb2f6306324459812ac52">More...</a><br /></td></tr>
 <tr class="separator:gaa09886ca03dbb2f6306324459812ac52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad923b189924d4471260c87d83559bd30"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__system.html#gad923b189924d4471260c87d83559bd30">cen::battery::percentage</a> () noexcept -&gt; std::optional&lt; int &gt;</td></tr>
@@ -244,12 +244,15 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga8a3954964160a527a3c11befc42c60c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current raw value of the system high-performance counter.  <a href="group__system.html#ga8a3954964160a527a3c11befc42c60c0">More...</a><br /></td></tr>
 <tr class="separator:ga8a3954964160a527a3c11befc42c60c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0635e1cfd7b3bbed55e54f2245d42dba"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ga0635e1cfd7b3bbed55e54f2245d42dba"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__system.html#ga0635e1cfd7b3bbed55e54f2245d42dba">cen::counter::now_in_seconds</a> () noexcept(noexcept(<a class="el" href="group__core.html#ga826ec294a3b6962454d669b9c277537b">seconds</a>&lt; T &gt;{})) -&gt; <a class="el" href="group__core.html#ga826ec294a3b6962454d669b9c277537b">seconds</a>&lt; T &gt;</td></tr>
+<tr class="memitem:ga0635e1cfd7b3bbed55e54f2245d42dba"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__system.html#ga0635e1cfd7b3bbed55e54f2245d42dba">cen::counter::now_in_seconds</a> () noexcept(noexcept(<a class="el" href="group__core.html#ga1946ec10338edb2b12b0d5adcb5ac4c6">seconds</a>&lt; T &gt;{})) -&gt; <a class="el" href="group__core.html#ga1946ec10338edb2b12b0d5adcb5ac4c6">seconds</a>&lt; T &gt;</td></tr>
 <tr class="memdesc:ga0635e1cfd7b3bbed55e54f2245d42dba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of the system high-performance counter in seconds.  <a href="group__system.html#ga0635e1cfd7b3bbed55e54f2245d42dba">More...</a><br /></td></tr>
 <tr class="separator:ga0635e1cfd7b3bbed55e54f2245d42dba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaaa378627cdab42895b4580deac4347d6"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__system.html#gaaa378627cdab42895b4580deac4347d6">cen::counter::ticks</a> () noexcept(noexcept(<a class="el" href="group__core.html#gaeabb8896b493294e6781651b0abfbef5">milliseconds</a>&lt; <a class="el" href="group__core.html#ga4abd620246f76cc48168dc52a04a62da">u32</a> &gt;{<a class="el" href="group__core.html#ga4abd620246f76cc48168dc52a04a62da">u32</a>{}})) -&gt; <a class="el" href="group__core.html#gaeabb8896b493294e6781651b0abfbef5">milliseconds</a>&lt; <a class="el" href="group__core.html#ga4abd620246f76cc48168dc52a04a62da">u32</a> &gt;</td></tr>
-<tr class="memdesc:gaaa378627cdab42895b4580deac4347d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the amount of milliseconds since the library was initialized.  <a href="group__system.html#gaaa378627cdab42895b4580deac4347d6">More...</a><br /></td></tr>
-<tr class="separator:gaaa378627cdab42895b4580deac4347d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8811769a4833b77156fce98e83269654"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__system.html#ga8811769a4833b77156fce98e83269654">cen::counter::ticks</a> () noexcept(noexcept(<a class="el" href="group__core.html#ga4fe97dc89d79178dc7099f26a23efd2e">u32_ms</a>{<a class="el" href="group__core.html#ga4abd620246f76cc48168dc52a04a62da">u32</a>{}})) -&gt; <a class="el" href="group__core.html#ga4fe97dc89d79178dc7099f26a23efd2e">u32_ms</a></td></tr>
+<tr class="memdesc:ga8811769a4833b77156fce98e83269654"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the amount of milliseconds since the library was initialized.  <a href="group__system.html#ga8811769a4833b77156fce98e83269654">More...</a><br /></td></tr>
+<tr class="separator:ga8811769a4833b77156fce98e83269654"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga47d3fde079f157a51bc86fa02eea4c9e"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__system.html#ga47d3fde079f157a51bc86fa02eea4c9e">cen::counter::ticks64</a> () noexcept(noexcept(<a class="el" href="group__core.html#ga917c641f541ffa1121c3df6c2ea0998f">u64_ms</a>{<a class="el" href="group__core.html#ga23844aa05b9b994328870cca9e5a7808">u64</a>{}})) -&gt; <a class="el" href="group__core.html#ga917c641f541ffa1121c3df6c2ea0998f">u64_ms</a></td></tr>
+<tr class="memdesc:ga47d3fde079f157a51bc86fa02eea4c9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the amount of milliseconds since the library was initialized.  <a href="group__system.html#ga47d3fde079f157a51bc86fa02eea4c9e">More...</a><br /></td></tr>
+<tr class="separator:ga47d3fde079f157a51bc86fa02eea4c9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">CPU functions</h2></td></tr>
 <tr class="memitem:gad7f4f7b51ba007c59b0f404f8d9b2c40"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__system.html#gad7f4f7b51ba007c59b0f404f8d9b2c40">cen::cpu::cache_line_size</a> () noexcept -&gt; int</td></tr>
@@ -483,7 +486,7 @@ Functions</h2></td></tr>
           <td class="memname">auto cen::battery::seconds_left </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> -&gt; std::optional&lt;<a class="el" href="group__core.html#ga826ec294a3b6962454d669b9c277537b">seconds</a>&lt;int&gt;&gt;
+          <td> -&gt; std::optional&lt;<a class="el" href="group__core.html#ga1946ec10338edb2b12b0d5adcb5ac4c6">seconds</a>&lt;int&gt;&gt;
 </td>
         </tr>
       </table>
@@ -513,7 +516,7 @@ Functions</h2></td></tr>
           <td class="memname">auto cen::battery::minutes_left </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> -&gt; std::optional&lt;<a class="el" href="group__core.html#ga188e11bfe67eb564ec1c9afa24a204db">minutes</a>&lt;int&gt;&gt;
+          <td> -&gt; std::optional&lt;<a class="el" href="group__core.html#ga7ef308458f4541863b7e683acfe536ef">minutes</a>&lt;int&gt;&gt;
 </td>
         </tr>
       </table>
@@ -1370,7 +1373,7 @@ template&lt;typename T &gt; </div>
           <td class="memname">auto cen::counter::now_in_seconds </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> -&gt; <a class="el" href="group__core.html#ga826ec294a3b6962454d669b9c277537b">seconds</a>&lt;T&gt;
+          <td> -&gt; <a class="el" href="group__core.html#ga1946ec10338edb2b12b0d5adcb5ac4c6">seconds</a>&lt;T&gt;
 </td>
         </tr>
       </table>
@@ -1393,8 +1396,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="gaaa378627cdab42895b4580deac4347d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaaa378627cdab42895b4580deac4347d6">&#9670;&nbsp;</a></span>ticks()</h2>
+<a id="ga8811769a4833b77156fce98e83269654"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8811769a4833b77156fce98e83269654">&#9670;&nbsp;</a></span>ticks()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1406,7 +1409,7 @@ template&lt;typename T &gt; </div>
           <td class="memname">auto cen::counter::ticks </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> -&gt; <a class="el" href="group__core.html#gaeabb8896b493294e6781651b0abfbef5">milliseconds</a>&lt;<a class="el" href="group__core.html#ga4abd620246f76cc48168dc52a04a62da">u32</a>&gt;
+          <td> -&gt; <a class="el" href="group__core.html#ga4fe97dc89d79178dc7099f26a23efd2e">u32_ms</a>
 </td>
         </tr>
       </table>
@@ -1420,6 +1423,35 @@ template&lt;typename T &gt; </div>
 <p>Returns the amount of milliseconds since the library was initialized. </p>
 <dl class="section return"><dt>Returns</dt><dd>the amount of milliseconds since the library was initialized.</dd></dl>
 <dl class="section since"><dt>Since</dt><dd>3.0.0 </dd></dl>
+
+</div>
+</div>
+<a id="ga47d3fde079f157a51bc86fa02eea4c9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga47d3fde079f157a51bc86fa02eea4c9e">&#9670;&nbsp;</a></span>ticks64()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto cen::counter::ticks64 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> -&gt; <a class="el" href="group__core.html#ga917c641f541ffa1121c3df6c2ea0998f">u64_ms</a>
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the amount of milliseconds since the library was initialized. </p>
+<dl class="section return"><dt>Returns</dt><dd>the amount of milliseconds since the library was initialized. </dd></dl>
 
 </div>
 </div>

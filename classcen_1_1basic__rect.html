@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Centurion
-   &#160;<span id="projectnumber">6.3.1</span>
+   &#160;<span id="projectnumber">6.3.2</span>
    </div>
    <div id="projectbrief">A modern C++ wrapper library for SDL2</div>
   </td>
@@ -134,6 +134,12 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:a9b93c52a8d3c86345f6bc21628c70e32"><td class="memItemLeft" align="right" valign="top">constexpr static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__rect.html#a9b93c52a8d3c86345f6bc21628c70e32">isFloating</a> = <a class="el" href="classcen_1_1rect__traits.html">rect_traits</a>&lt;T&gt;::isFloating</td></tr>
 <tr class="memdesc:a9b93c52a8d3c86345f6bc21628c70e32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether or not the rectangle is based on a floating-point type.  <a href="classcen_1_1basic__rect.html#a9b93c52a8d3c86345f6bc21628c70e32">More...</a><br /></td></tr>
 <tr class="separator:a9b93c52a8d3c86345f6bc21628c70e32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafa7d5d43fb4b4e7d87bec23646832fd"><td class="memItemLeft" align="right" valign="top">constexpr static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__rect.html#aafa7d5d43fb4b4e7d87bec23646832fd">integral</a> = <a class="el" href="classcen_1_1rect__traits.html">rect_traits</a>&lt;T&gt;::integral</td></tr>
+<tr class="memdesc:aafa7d5d43fb4b4e7d87bec23646832fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether or not the rectangle uses integral components.  <a href="classcen_1_1basic__rect.html#aafa7d5d43fb4b4e7d87bec23646832fd">More...</a><br /></td></tr>
+<tr class="separator:aafa7d5d43fb4b4e7d87bec23646832fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fcdd75ef3bdffe172d07a0bd7842e52"><td class="memItemLeft" align="right" valign="top">constexpr static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__rect.html#a4fcdd75ef3bdffe172d07a0bd7842e52">floating</a> = <a class="el" href="classcen_1_1rect__traits.html">rect_traits</a>&lt;T&gt;::floating</td></tr>
+<tr class="memdesc:a4fcdd75ef3bdffe172d07a0bd7842e52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether or not the rectangle uses floating-point components.  <a href="classcen_1_1basic__rect.html#a4fcdd75ef3bdffe172d07a0bd7842e52">More...</a><br /></td></tr>
+<tr class="separator:a4fcdd75ef3bdffe172d07a0bd7842e52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Construction</h2></td></tr>
 <tr class="memitem:ac89156903be15d9202cf923e0bf676c5"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__rect.html#ac89156903be15d9202cf923e0bf676c5">basic_rect</a> () noexcept=default</td></tr>
@@ -1728,6 +1734,58 @@ template&lt;typename T &gt; </div>
 
 <p>Indicates whether or not the rectangle is based on a floating-point type. </p>
 <dl class="section since"><dt>Since</dt><dd>5.0.0 </dd></dl>
+
+</div>
+</div>
+<a id="aafa7d5d43fb4b4e7d87bec23646832fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafa7d5d43fb4b4e7d87bec23646832fd">&#9670;&nbsp;</a></span>integral</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr static bool <a class="el" href="classcen_1_1basic__rect.html">cen::basic_rect</a>&lt; T &gt;::integral = <a class="el" href="classcen_1_1rect__traits.html">rect_traits</a>&lt;T&gt;::integral</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Indicates whether or not the rectangle uses integral components. </p>
+
+</div>
+</div>
+<a id="a4fcdd75ef3bdffe172d07a0bd7842e52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fcdd75ef3bdffe172d07a0bd7842e52">&#9670;&nbsp;</a></span>floating</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr static bool <a class="el" href="classcen_1_1basic__rect.html">cen::basic_rect</a>&lt; T &gt;::floating = <a class="el" href="classcen_1_1rect__traits.html">rect_traits</a>&lt;T&gt;::floating</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Indicates whether or not the rectangle uses floating-point components. </p>
 
 </div>
 </div>

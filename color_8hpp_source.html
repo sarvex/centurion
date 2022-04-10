@@ -32,7 +32,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Centurion
-   &#160;<span id="projectnumber">6.3.1</span>
+   &#160;<span id="projectnumber">6.3.2</span>
    </div>
    <div id="projectbrief">A modern C++ wrapper library for SDL2</div>
   </td>
@@ -434,206 +434,219 @@ $(document).ready(function(){initNavTree('color_8hpp_source.html',''); initResiz
 <div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160; </div>
 <div class="line"><a name="l00596"></a><span class="lineno"><a class="line" href="classcen_1_1color.html#a23bc49d9afd575ba8c7b797adb895eeb">  596</a></span>&#160;  [[nodiscard]] <span class="keyword">auto</span> <a class="code" href="classcen_1_1color.html#a23bc49d9afd575ba8c7b797adb895eeb">as_rgb</a>() const -&gt; std::<span class="keywordtype">string</span></div>
 <div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;  {</div>
-<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;    std::stringstream stream;</div>
-<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;    stream &lt;&lt; std::setfill(<span class="charliteral">&#39;0&#39;</span>) &lt;&lt; std::hex &lt;&lt; std::uppercase;</div>
-<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160; </div>
-<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;    stream &lt;&lt; <span class="charliteral">&#39;#&#39;</span>;</div>
-<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;    stream &lt;&lt; std::setw(2) &lt;&lt; +m_color.r;</div>
-<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;    stream &lt;&lt; std::setw(2) &lt;&lt; +m_color.g;</div>
-<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;    stream &lt;&lt; std::setw(2) &lt;&lt; +m_color.b;</div>
-<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160; </div>
-<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;    <span class="keywordflow">return</span> stream.str();</div>
-<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;  }</div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;<span class="preprocessor">#if CENTURION_HAS_FEATURE_FORMAT</span></div>
+<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;    <span class="keywordflow">return</span> std::format(<span class="stringliteral">&quot;#{:02X}{:02X}{:02X}&quot;</span>, +m_color.r, +m_color.g, +m_color.b);</div>
+<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;    std::stringstream stream;</div>
+<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;    stream &lt;&lt; std::setfill(<span class="charliteral">&#39;0&#39;</span>) &lt;&lt; std::hex &lt;&lt; std::uppercase;</div>
+<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160; </div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;    stream &lt;&lt; <span class="charliteral">&#39;#&#39;</span>;</div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;    stream &lt;&lt; std::setw(2) &lt;&lt; +m_color.r;</div>
+<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;    stream &lt;&lt; std::setw(2) &lt;&lt; +m_color.g;</div>
+<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;    stream &lt;&lt; std::setw(2) &lt;&lt; +m_color.b;</div>
 <div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160; </div>
-<div class="line"><a name="l00621"></a><span class="lineno"><a class="line" href="classcen_1_1color.html#adab1637bf3b8b816ed55fa0f7dc3dcc2">  621</a></span>&#160;  [[nodiscard]] <span class="keyword">auto</span> <a class="code" href="classcen_1_1color.html#adab1637bf3b8b816ed55fa0f7dc3dcc2">as_rgba</a>() const -&gt; std::<span class="keywordtype">string</span></div>
-<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;  {</div>
-<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;    std::stringstream stream;</div>
-<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;    stream &lt;&lt; std::setfill(<span class="charliteral">&#39;0&#39;</span>) &lt;&lt; std::hex &lt;&lt; std::uppercase;</div>
-<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160; </div>
-<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;    stream &lt;&lt; <span class="charliteral">&#39;#&#39;</span>;</div>
-<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;    stream &lt;&lt; std::setw(2) &lt;&lt; +m_color.r;</div>
-<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;    stream &lt;&lt; std::setw(2) &lt;&lt; +m_color.g;</div>
-<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;    stream &lt;&lt; std::setw(2) &lt;&lt; +m_color.b;</div>
-<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;    stream &lt;&lt; std::setw(2) &lt;&lt; +m_color.a;</div>
-<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160; </div>
-<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;    <span class="keywordflow">return</span> stream.str();</div>
-<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;  }</div>
-<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160; </div>
-<div class="line"><a name="l00647"></a><span class="lineno"><a class="line" href="classcen_1_1color.html#aa946bb9279e48d71ffd4c0125b9cab7e">  647</a></span>&#160;  [[nodiscard]] <span class="keyword">auto</span> <a class="code" href="classcen_1_1color.html#aa946bb9279e48d71ffd4c0125b9cab7e">as_argb</a>() const -&gt; std::<span class="keywordtype">string</span></div>
-<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;  {</div>
-<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;    std::stringstream stream;</div>
-<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;    stream &lt;&lt; std::setfill(<span class="charliteral">&#39;0&#39;</span>) &lt;&lt; std::hex &lt;&lt; std::uppercase;</div>
-<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160; </div>
-<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;    stream &lt;&lt; <span class="charliteral">&#39;#&#39;</span>;</div>
-<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;    stream &lt;&lt; std::setw(2) &lt;&lt; +m_color.a;</div>
-<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;    stream &lt;&lt; std::setw(2) &lt;&lt; +m_color.r;</div>
-<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;    stream &lt;&lt; std::setw(2) &lt;&lt; +m_color.g;</div>
-<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;    stream &lt;&lt; std::setw(2) &lt;&lt; +m_color.b;</div>
-<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160; </div>
-<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;    <span class="keywordflow">return</span> stream.str();</div>
-<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;  }</div>
-<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160; </div>
-<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160; </div>
-<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160; </div>
-<div class="line"><a name="l00673"></a><span class="lineno"><a class="line" href="classcen_1_1color.html#a16deb80a8bcc7636f537cc1fef1b3f90">  673</a></span>&#160;  [[nodiscard]] <span class="keyword">explicit</span> constexpr <span class="keyword">operator</span> SDL_Color() const noexcept</div>
-<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;  {</div>
-<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;    <span class="keywordflow">return</span> {<a class="code" href="classcen_1_1color.html#a5178f50823d5511787d9f42de251299c">red</a>(), <a class="code" href="classcen_1_1color.html#aa832ab02fc6d92501cb3050d2b134370">green</a>(), <a class="code" href="classcen_1_1color.html#a50b4e69de99c10cd8c299570f2b30ed3">blue</a>(), <a class="code" href="classcen_1_1color.html#a75259be5cc0aa4bf06270c93fcfe5260">alpha</a>()};</div>
-<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;  }</div>
-<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160; </div>
-<div class="line"><a name="l00687"></a><span class="lineno"><a class="line" href="classcen_1_1color.html#abc968709909e4b252cc3ccb9403162f9">  687</a></span>&#160;  [[nodiscard]] <span class="keyword">explicit</span> constexpr <span class="keyword">operator</span> SDL_MessageBoxColor() const noexcept</div>
-<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;  {</div>
-<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;    <span class="keywordflow">return</span> {<a class="code" href="classcen_1_1color.html#a5178f50823d5511787d9f42de251299c">red</a>(), <a class="code" href="classcen_1_1color.html#aa832ab02fc6d92501cb3050d2b134370">green</a>(), <a class="code" href="classcen_1_1color.html#a50b4e69de99c10cd8c299570f2b30ed3">blue</a>()};</div>
-<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;  }</div>
-<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160; </div>
-<div class="line"><a name="l00701"></a><span class="lineno"><a class="line" href="classcen_1_1color.html#a27c55c48d305f3c8a49413b04e52a833">  701</a></span>&#160;  [[nodiscard]] <span class="keyword">explicit</span> <span class="keyword">operator</span> SDL_Color*() noexcept</div>
-<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;  {</div>
-<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;    <span class="keywordflow">return</span> &amp;m_color;</div>
-<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;  }</div>
-<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160; </div>
-<div class="line"><a name="l00715"></a><span class="lineno"><a class="line" href="classcen_1_1color.html#a618b1e8b9626b3ac0cb65945d327bb38">  715</a></span>&#160;  [[nodiscard]] <span class="keyword">explicit</span> <span class="keyword">operator</span> <span class="keyword">const</span> SDL_Color*() <span class="keyword">const</span> noexcept</div>
-<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;  {</div>
-<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;    <span class="keywordflow">return</span> &amp;m_color;</div>
-<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;  }</div>
-<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160; </div>
-<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160; </div>
-<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Archive&gt;</div>
-<div class="line"><a name="l00735"></a><span class="lineno"><a class="line" href="classcen_1_1color.html#a4b4683c36f6a81bbbee0f2b932676c99">  735</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classcen_1_1color.html#a4b4683c36f6a81bbbee0f2b932676c99">serialize</a>(Archive&amp; archive)</div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;    <span class="keywordflow">return</span> stream.str();</div>
+<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// CENTURION_HAS_FEATURE_FORMAT</span></div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;  }</div>
+<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160; </div>
+<div class="line"><a name="l00625"></a><span class="lineno"><a class="line" href="classcen_1_1color.html#adab1637bf3b8b816ed55fa0f7dc3dcc2">  625</a></span>&#160;  [[nodiscard]] <span class="keyword">auto</span> <a class="code" href="classcen_1_1color.html#adab1637bf3b8b816ed55fa0f7dc3dcc2">as_rgba</a>() const -&gt; std::<span class="keywordtype">string</span></div>
+<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;  {</div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;<span class="preprocessor">#if CENTURION_HAS_FEATURE_FORMAT</span></div>
+<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;    <span class="keywordflow">return</span> std::format(<span class="stringliteral">&quot;#{:02X}{:02X}{:02X}{:02X}&quot;</span>,</div>
+<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;                       +m_color.r,</div>
+<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;                       +m_color.g,</div>
+<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;                       +m_color.b,</div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;                       +m_color.a);</div>
+<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;    std::stringstream stream;</div>
+<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;    stream &lt;&lt; std::setfill(<span class="charliteral">&#39;0&#39;</span>) &lt;&lt; std::hex &lt;&lt; std::uppercase;</div>
+<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160; </div>
+<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;    stream &lt;&lt; <span class="charliteral">&#39;#&#39;</span>;</div>
+<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;    stream &lt;&lt; std::setw(2) &lt;&lt; +m_color.r;</div>
+<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;    stream &lt;&lt; std::setw(2) &lt;&lt; +m_color.g;</div>
+<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;    stream &lt;&lt; std::setw(2) &lt;&lt; +m_color.b;</div>
+<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;    stream &lt;&lt; std::setw(2) &lt;&lt; +m_color.a;</div>
+<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160; </div>
+<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;    <span class="keywordflow">return</span> stream.str();</div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// CENTURION_HAS_FEATURE_FORMAT</span></div>
+<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;  }</div>
+<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160; </div>
+<div class="line"><a name="l00659"></a><span class="lineno"><a class="line" href="classcen_1_1color.html#aa946bb9279e48d71ffd4c0125b9cab7e">  659</a></span>&#160;  [[nodiscard]] <span class="keyword">auto</span> <a class="code" href="classcen_1_1color.html#aa946bb9279e48d71ffd4c0125b9cab7e">as_argb</a>() const -&gt; std::<span class="keywordtype">string</span></div>
+<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;  {</div>
+<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;<span class="preprocessor">#if CENTURION_HAS_FEATURE_FORMAT</span></div>
+<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;    <span class="keywordflow">return</span> std::format(<span class="stringliteral">&quot;#{:02X}{:02X}{:02X}{:02X}&quot;</span>,</div>
+<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;                       +m_color.a,</div>
+<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;                       +m_color.r,</div>
+<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;                       +m_color.g,</div>
+<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;                       +m_color.b);</div>
+<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;    std::stringstream stream;</div>
+<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;    stream &lt;&lt; std::setfill(<span class="charliteral">&#39;0&#39;</span>) &lt;&lt; std::hex &lt;&lt; std::uppercase;</div>
+<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160; </div>
+<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;    stream &lt;&lt; <span class="charliteral">&#39;#&#39;</span>;</div>
+<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;    stream &lt;&lt; std::setw(2) &lt;&lt; +m_color.a;</div>
+<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;    stream &lt;&lt; std::setw(2) &lt;&lt; +m_color.r;</div>
+<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;    stream &lt;&lt; std::setw(2) &lt;&lt; +m_color.g;</div>
+<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;    stream &lt;&lt; std::setw(2) &lt;&lt; +m_color.b;</div>
+<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160; </div>
+<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;    <span class="keywordflow">return</span> stream.str();</div>
+<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// CENTURION_HAS_FEATURE_FORMAT</span></div>
+<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;  }</div>
+<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160; </div>
+<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160; </div>
+<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160; </div>
+<div class="line"><a name="l00693"></a><span class="lineno"><a class="line" href="classcen_1_1color.html#a16deb80a8bcc7636f537cc1fef1b3f90">  693</a></span>&#160;  [[nodiscard]] <span class="keyword">explicit</span> constexpr <span class="keyword">operator</span> SDL_Color() const noexcept</div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;  {</div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;    <span class="keywordflow">return</span> {<a class="code" href="classcen_1_1color.html#a5178f50823d5511787d9f42de251299c">red</a>(), <a class="code" href="classcen_1_1color.html#aa832ab02fc6d92501cb3050d2b134370">green</a>(), <a class="code" href="classcen_1_1color.html#a50b4e69de99c10cd8c299570f2b30ed3">blue</a>(), <a class="code" href="classcen_1_1color.html#a75259be5cc0aa4bf06270c93fcfe5260">alpha</a>()};</div>
+<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;  }</div>
+<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160; </div>
+<div class="line"><a name="l00707"></a><span class="lineno"><a class="line" href="classcen_1_1color.html#abc968709909e4b252cc3ccb9403162f9">  707</a></span>&#160;  [[nodiscard]] <span class="keyword">explicit</span> constexpr <span class="keyword">operator</span> SDL_MessageBoxColor() const noexcept</div>
+<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;  {</div>
+<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;    <span class="keywordflow">return</span> {<a class="code" href="classcen_1_1color.html#a5178f50823d5511787d9f42de251299c">red</a>(), <a class="code" href="classcen_1_1color.html#aa832ab02fc6d92501cb3050d2b134370">green</a>(), <a class="code" href="classcen_1_1color.html#a50b4e69de99c10cd8c299570f2b30ed3">blue</a>()};</div>
+<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;  }</div>
+<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160; </div>
+<div class="line"><a name="l00721"></a><span class="lineno"><a class="line" href="classcen_1_1color.html#a27c55c48d305f3c8a49413b04e52a833">  721</a></span>&#160;  [[nodiscard]] <span class="keyword">explicit</span> <span class="keyword">operator</span> SDL_Color*() noexcept</div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;  {</div>
+<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;    <span class="keywordflow">return</span> &amp;m_color;</div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;  }</div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160; </div>
+<div class="line"><a name="l00735"></a><span class="lineno"><a class="line" href="classcen_1_1color.html#a618b1e8b9626b3ac0cb65945d327bb38">  735</a></span>&#160;  [[nodiscard]] <span class="keyword">explicit</span> <span class="keyword">operator</span> <span class="keyword">const</span> SDL_Color*() <span class="keyword">const</span> noexcept</div>
 <div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;  {</div>
-<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;    archive(m_color.r, m_color.g, m_color.b, m_color.a);</div>
+<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;    <span class="keywordflow">return</span> &amp;m_color;</div>
 <div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;  }</div>
 <div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160; </div>
-<div class="line"><a name="l00749"></a><span class="lineno"><a class="line" href="classcen_1_1color.html#a7345d87d41f6efd646be6e53392863c8">  749</a></span>&#160;  [[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="classcen_1_1color.html#a7345d87d41f6efd646be6e53392863c8">with_alpha</a>(<span class="keyword">const</span> <a class="code" href="group__core.html#ga89b6da3d8b9fb42c7799b22d6afd1093">u8</a> <a class="code" href="classcen_1_1color.html#a75259be5cc0aa4bf06270c93fcfe5260">alpha</a>) <span class="keyword">const</span> noexcept -&gt; <a class="code" href="classcen_1_1color.html">color</a></div>
-<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;  {</div>
-<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;    <span class="keywordflow">return</span> {<a class="code" href="classcen_1_1color.html#a5178f50823d5511787d9f42de251299c">red</a>(), <a class="code" href="classcen_1_1color.html#aa832ab02fc6d92501cb3050d2b134370">green</a>(), <a class="code" href="classcen_1_1color.html#a50b4e69de99c10cd8c299570f2b30ed3">blue</a>(), <a class="code" href="classcen_1_1color.html#a75259be5cc0aa4bf06270c93fcfe5260">alpha</a>};</div>
-<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;  }</div>
-<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160; </div>
-<div class="line"><a name="l00761"></a><span class="lineno"><a class="line" href="classcen_1_1color.html#a116165dfe8ace648ee5f0aca32bcf5ba">  761</a></span>&#160;  [[nodiscard]] constexpr <span class="keyword">static</span> <span class="keyword">auto</span> <a class="code" href="classcen_1_1color.html#a116165dfe8ace648ee5f0aca32bcf5ba">max</a>() noexcept -&gt; <a class="code" href="group__core.html#ga89b6da3d8b9fb42c7799b22d6afd1093">u8</a></div>
-<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;  {</div>
-<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;    <span class="keywordflow">return</span> 0xFF;</div>
-<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;  }</div>
-<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160; </div>
-<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;  SDL_Color m_color{0, 0, 0, <a class="code" href="classcen_1_1color.html#a116165dfe8ace648ee5f0aca32bcf5ba">max</a>()};</div>
-<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;};</div>
-<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160; </div>
-<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160; </div>
-<div class="line"><a name="l00782"></a><span class="lineno"><a class="line" href="group__audio.html#ga5cccd9c669fdd74579d28f4a16101941">  782</a></span>&#160;[[nodiscard]] <span class="keyword">inline</span> <span class="keyword">auto</span> <a class="code" href="group__audio.html#ga9ebd3f26fcc0f89398ff473b06e9dcbe">to_string</a>(<span class="keyword">const</span> <a class="code" href="classcen_1_1color.html">color</a>&amp; <a class="code" href="classcen_1_1color.html">color</a>) -&gt; std::string</div>
-<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;{</div>
-<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;<span class="preprocessor">#if CENTURION_HAS_FEATURE_FORMAT</span></div>
-<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;  <span class="keywordflow">return</span> std::format(<span class="stringliteral">&quot;color{{r: {}, g: {}, b: {}: a: {}}}&quot;</span>,</div>
-<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;                     +<a class="code" href="classcen_1_1color.html">color</a>.<a class="code" href="classcen_1_1color.html#a5178f50823d5511787d9f42de251299c">red</a>(),</div>
-<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;                     +<a class="code" href="classcen_1_1color.html">color</a>.<a class="code" href="classcen_1_1color.html#aa832ab02fc6d92501cb3050d2b134370">green</a>(),</div>
-<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;                     +<a class="code" href="classcen_1_1color.html">color</a>.<a class="code" href="classcen_1_1color.html#a50b4e69de99c10cd8c299570f2b30ed3">blue</a>(),</div>
-<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;                     +<a class="code" href="classcen_1_1color.html">color</a>.<a class="code" href="classcen_1_1color.html#a75259be5cc0aa4bf06270c93fcfe5260">alpha</a>());</div>
-<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;  <span class="keywordflow">return</span> <span class="stringliteral">&quot;color{r: &quot;</span> + <a class="code" href="group__audio.html#ga5cccd9c669fdd74579d28f4a16101941">std::to_string</a>(<a class="code" href="classcen_1_1color.html">color</a>.<a class="code" href="classcen_1_1color.html#a5178f50823d5511787d9f42de251299c">red</a>()) + <span class="stringliteral">&quot;, g: &quot;</span> + <a class="code" href="group__audio.html#ga5cccd9c669fdd74579d28f4a16101941">std::to_string</a>(<a class="code" href="classcen_1_1color.html">color</a>.<a class="code" href="classcen_1_1color.html#aa832ab02fc6d92501cb3050d2b134370">green</a>()) +</div>
-<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;         <span class="stringliteral">&quot;, b: &quot;</span> + <a class="code" href="group__audio.html#ga5cccd9c669fdd74579d28f4a16101941">std::to_string</a>(<a class="code" href="classcen_1_1color.html">color</a>.<a class="code" href="classcen_1_1color.html#a50b4e69de99c10cd8c299570f2b30ed3">blue</a>()) + <span class="stringliteral">&quot;, a: &quot;</span> + <a class="code" href="group__audio.html#ga5cccd9c669fdd74579d28f4a16101941">std::to_string</a>(<a class="code" href="classcen_1_1color.html">color</a>.<a class="code" href="classcen_1_1color.html#a75259be5cc0aa4bf06270c93fcfe5260">alpha</a>()) +</div>
-<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;         <span class="stringliteral">&quot;}&quot;</span>;</div>
-<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// CENTURION_HAS_FEATURE_FORMAT</span></div>
-<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;}</div>
-<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160; </div>
-<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160; </div>
-<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160; </div>
-<div class="line"><a name="l00812"></a><span class="lineno"><a class="line" href="group__audio.html#ga9b2b88e0d39f0088b6940317fe33dbdf">  812</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">auto</span> <a class="code" href="group__audio.html#ga83f366781618f05bf8bcb60c753e9ced">operator&lt;&lt;</a>(std::ostream&amp; stream, <span class="keyword">const</span> <a class="code" href="classcen_1_1color.html">color</a>&amp; <a class="code" href="classcen_1_1color.html">color</a>) -&gt; std::ostream&amp;</div>
-<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;{</div>
-<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;  <span class="keywordflow">return</span> stream &lt;&lt; <a class="code" href="group__audio.html#ga9ebd3f26fcc0f89398ff473b06e9dcbe">to_string</a>(<a class="code" href="classcen_1_1color.html">color</a>);</div>
+<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160; </div>
+<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Archive&gt;</div>
+<div class="line"><a name="l00755"></a><span class="lineno"><a class="line" href="classcen_1_1color.html#a4b4683c36f6a81bbbee0f2b932676c99">  755</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classcen_1_1color.html#a4b4683c36f6a81bbbee0f2b932676c99">serialize</a>(Archive&amp; archive)</div>
+<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;  {</div>
+<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;    archive(m_color.r, m_color.g, m_color.b, m_color.a);</div>
+<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;  }</div>
+<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160; </div>
+<div class="line"><a name="l00769"></a><span class="lineno"><a class="line" href="classcen_1_1color.html#a7345d87d41f6efd646be6e53392863c8">  769</a></span>&#160;  [[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="classcen_1_1color.html#a7345d87d41f6efd646be6e53392863c8">with_alpha</a>(<span class="keyword">const</span> <a class="code" href="group__core.html#ga89b6da3d8b9fb42c7799b22d6afd1093">u8</a> <a class="code" href="classcen_1_1color.html#a75259be5cc0aa4bf06270c93fcfe5260">alpha</a>) <span class="keyword">const</span> noexcept -&gt; <a class="code" href="classcen_1_1color.html">color</a></div>
+<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;  {</div>
+<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;    <span class="keywordflow">return</span> {<a class="code" href="classcen_1_1color.html#a5178f50823d5511787d9f42de251299c">red</a>(), <a class="code" href="classcen_1_1color.html#aa832ab02fc6d92501cb3050d2b134370">green</a>(), <a class="code" href="classcen_1_1color.html#a50b4e69de99c10cd8c299570f2b30ed3">blue</a>(), <a class="code" href="classcen_1_1color.html#a75259be5cc0aa4bf06270c93fcfe5260">alpha</a>};</div>
+<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;  }</div>
+<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160; </div>
+<div class="line"><a name="l00781"></a><span class="lineno"><a class="line" href="classcen_1_1color.html#a116165dfe8ace648ee5f0aca32bcf5ba">  781</a></span>&#160;  [[nodiscard]] constexpr <span class="keyword">static</span> <span class="keyword">auto</span> <a class="code" href="classcen_1_1color.html#a116165dfe8ace648ee5f0aca32bcf5ba">max</a>() noexcept -&gt; <a class="code" href="group__core.html#ga89b6da3d8b9fb42c7799b22d6afd1093">u8</a></div>
+<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;  {</div>
+<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;    <span class="keywordflow">return</span> 0xFF;</div>
+<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;  }</div>
+<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160; </div>
+<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;  SDL_Color m_color{0, 0, 0, <a class="code" href="classcen_1_1color.html#a116165dfe8ace648ee5f0aca32bcf5ba">max</a>()};</div>
+<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;};</div>
+<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160; </div>
+<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160; </div>
+<div class="line"><a name="l00802"></a><span class="lineno"><a class="line" href="group__audio.html#ga5cccd9c669fdd74579d28f4a16101941">  802</a></span>&#160;[[nodiscard]] <span class="keyword">inline</span> <span class="keyword">auto</span> <a class="code" href="group__audio.html#ga9ebd3f26fcc0f89398ff473b06e9dcbe">to_string</a>(<span class="keyword">const</span> <a class="code" href="classcen_1_1color.html">color</a>&amp; <a class="code" href="classcen_1_1color.html">color</a>) -&gt; std::string</div>
+<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;{</div>
+<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;<span class="preprocessor">#if CENTURION_HAS_FEATURE_FORMAT</span></div>
+<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;  <span class="keywordflow">return</span> std::format(<span class="stringliteral">&quot;color{{r: {}, g: {}, b: {}: a: {}}}&quot;</span>,</div>
+<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;                     +<a class="code" href="classcen_1_1color.html">color</a>.<a class="code" href="classcen_1_1color.html#a5178f50823d5511787d9f42de251299c">red</a>(),</div>
+<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;                     +<a class="code" href="classcen_1_1color.html">color</a>.<a class="code" href="classcen_1_1color.html#aa832ab02fc6d92501cb3050d2b134370">green</a>(),</div>
+<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;                     +<a class="code" href="classcen_1_1color.html">color</a>.<a class="code" href="classcen_1_1color.html#a50b4e69de99c10cd8c299570f2b30ed3">blue</a>(),</div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;                     +<a class="code" href="classcen_1_1color.html">color</a>.<a class="code" href="classcen_1_1color.html#a75259be5cc0aa4bf06270c93fcfe5260">alpha</a>());</div>
+<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;  <span class="keywordflow">return</span> <span class="stringliteral">&quot;color{r: &quot;</span> + <a class="code" href="group__audio.html#ga5cccd9c669fdd74579d28f4a16101941">std::to_string</a>(<a class="code" href="classcen_1_1color.html">color</a>.<a class="code" href="classcen_1_1color.html#a5178f50823d5511787d9f42de251299c">red</a>()) + <span class="stringliteral">&quot;, g: &quot;</span> + <a class="code" href="group__audio.html#ga5cccd9c669fdd74579d28f4a16101941">std::to_string</a>(<a class="code" href="classcen_1_1color.html">color</a>.<a class="code" href="classcen_1_1color.html#aa832ab02fc6d92501cb3050d2b134370">green</a>()) +</div>
+<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;         <span class="stringliteral">&quot;, b: &quot;</span> + <a class="code" href="group__audio.html#ga5cccd9c669fdd74579d28f4a16101941">std::to_string</a>(<a class="code" href="classcen_1_1color.html">color</a>.<a class="code" href="classcen_1_1color.html#a50b4e69de99c10cd8c299570f2b30ed3">blue</a>()) + <span class="stringliteral">&quot;, a: &quot;</span> + <a class="code" href="group__audio.html#ga5cccd9c669fdd74579d28f4a16101941">std::to_string</a>(<a class="code" href="classcen_1_1color.html">color</a>.<a class="code" href="classcen_1_1color.html#a75259be5cc0aa4bf06270c93fcfe5260">alpha</a>()) +</div>
+<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;         <span class="stringliteral">&quot;}&quot;</span>;</div>
+<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// CENTURION_HAS_FEATURE_FORMAT</span></div>
 <div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;}</div>
 <div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160; </div>
 <div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160; </div>
-<div class="line"><a name="l00840"></a><span class="lineno"><a class="line" href="group__video.html#ga5f2939d9ab14754d723fc7fa58d0f3e3">  840</a></span>&#160;[[nodiscard]] <span class="keyword">inline</span> <span class="keyword">auto</span> <a class="code" href="group__video.html#ga5f2939d9ab14754d723fc7fa58d0f3e3">blend</a>(<span class="keyword">const</span> <a class="code" href="classcen_1_1color.html">color</a>&amp; a, <span class="keyword">const</span> <a class="code" href="classcen_1_1color.html">color</a>&amp; b, <span class="keyword">const</span> <span class="keywordtype">float</span> bias) -&gt; <a class="code" href="classcen_1_1color.html">color</a></div>
-<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;{</div>
-<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;  <a class="code" href="group__core.html#gga5a2bed2933e3748ad2a77961417a102bae44e4612f62d2fb8f8738bab118a9850">assert</a>(bias &gt;= 0);</div>
-<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;  <a class="code" href="group__core.html#gga5a2bed2933e3748ad2a77961417a102bae44e4612f62d2fb8f8738bab118a9850">assert</a>(bias &lt;= 1.0f);</div>
-<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160; </div>
-<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span> <a class="code" href="group__video.html#gaf06617e81e29e02f648503b07b5af311">red</a> = detail::lerp(a.red_norm(), b.red_norm(), bias);</div>
-<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span> <a class="code" href="group__video.html#ga08fa451a44ca19eb64ff37aa6613e729">green</a> = detail::lerp(a.green_norm(), b.green_norm(), bias);</div>
-<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span> <a class="code" href="group__video.html#gacf2c51024b405d76bca00e4cf9c7b8e3">blue</a> = detail::lerp(a.blue_norm(), b.blue_norm(), bias);</div>
-<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span> alpha = detail::lerp(a.alpha_norm(), b.alpha_norm(), bias);</div>
-<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160; </div>
-<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classcen_1_1color.html#af6c7aa198fe60958a12c6d7693445f1d">color::from_norm</a>(<a class="code" href="group__video.html#gaf06617e81e29e02f648503b07b5af311">red</a>, <a class="code" href="group__video.html#ga08fa451a44ca19eb64ff37aa6613e729">green</a>, <a class="code" href="group__video.html#gacf2c51024b405d76bca00e4cf9c7b8e3">blue</a>, alpha);</div>
-<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;}</div>
-<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160; </div>
-<div class="line"><a name="l00855"></a><span class="lineno"><a class="line" href="group__video.html#gaa0633728260ba4798184964a3d606b7b">  855</a></span>&#160;[[nodiscard, deprecated]] <span class="keyword">inline</span> <span class="keyword">auto</span> <a class="code" href="group__video.html#ga5f2939d9ab14754d723fc7fa58d0f3e3">blend</a>(<span class="keyword">const</span> <a class="code" href="classcen_1_1color.html">color</a>&amp; a,</div>
-<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;                                            <span class="keyword">const</span> <a class="code" href="classcen_1_1color.html">color</a>&amp; b,</div>
-<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;                                            <span class="keyword">const</span> <span class="keywordtype">double</span> bias = 0.5) -&gt; <a class="code" href="classcen_1_1color.html">color</a></div>
-<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;{</div>
-<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="group__video.html#ga5f2939d9ab14754d723fc7fa58d0f3e3">blend</a>(a, b, <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(bias));</div>
-<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;}</div>
-<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160; </div>
-<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160; </div>
-<div class="line"><a name="l00875"></a><span class="lineno"><a class="line" href="group__video.html#gaa4de664e3f142d2755f77ebeb388fe86">  875</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="group__audio.html#gaf72595df3886dbb34dbcf030d14333d2">operator==</a>(<span class="keyword">const</span> <a class="code" href="classcen_1_1color.html">color</a>&amp; lhs, <span class="keyword">const</span> <a class="code" href="classcen_1_1color.html">color</a>&amp; rhs) noexcept -&gt; <span class="keywordtype">bool</span></div>
-<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;{</div>
-<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;  <span class="keywordflow">return</span> (lhs.red() == rhs.red()) &amp;&amp; (lhs.green() == rhs.green()) &amp;&amp;</div>
-<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;         (lhs.blue() == rhs.blue()) &amp;&amp; (lhs.alpha() == rhs.alpha());</div>
-<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;}</div>
-<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160; </div>
-<div class="line"><a name="l00882"></a><span class="lineno"><a class="line" href="group__video.html#ga35de669fdaa64e3613dae361f1d212b8">  882</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="group__audio.html#gaf72595df3886dbb34dbcf030d14333d2">operator==</a>(<span class="keyword">const</span> <a class="code" href="classcen_1_1color.html">color</a>&amp; lhs, <span class="keyword">const</span> SDL_Color&amp; rhs) noexcept</div>
-<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;    -&gt; <span class="keywordtype">bool</span></div>
-<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;{</div>
-<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;  <span class="keywordflow">return</span> (lhs.red() == rhs.r) &amp;&amp; (lhs.green() == rhs.g) &amp;&amp; (lhs.blue() == rhs.b) &amp;&amp;</div>
-<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;         (lhs.alpha() == rhs.a);</div>
-<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;}</div>
-<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160; </div>
-<div class="line"><a name="l00890"></a><span class="lineno"><a class="line" href="group__video.html#ga417597f683d0171e440b372291d60488">  890</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="group__audio.html#gaf72595df3886dbb34dbcf030d14333d2">operator==</a>(<span class="keyword">const</span> SDL_Color&amp; lhs, <span class="keyword">const</span> <a class="code" href="classcen_1_1color.html">color</a>&amp; rhs) noexcept</div>
-<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;    -&gt; <span class="keywordtype">bool</span></div>
-<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;{</div>
-<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;  <span class="keywordflow">return</span> rhs == lhs;</div>
-<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;}</div>
-<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160; </div>
-<div class="line"><a name="l00908"></a><span class="lineno"><a class="line" href="group__video.html#ga24db18486aaf8f2f2c489b3a53206354">  908</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="group__audio.html#gaf72595df3886dbb34dbcf030d14333d2">operator==</a>(<span class="keyword">const</span> <a class="code" href="classcen_1_1color.html">color</a>&amp; lhs,</div>
-<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;                                        <span class="keyword">const</span> SDL_MessageBoxColor&amp; rhs) noexcept -&gt; <span class="keywordtype">bool</span></div>
-<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;{</div>
-<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;  <span class="keywordflow">return</span> (lhs.red() == rhs.r) &amp;&amp; (lhs.green() == rhs.g) &amp;&amp; (lhs.blue() == rhs.b);</div>
-<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;}</div>
-<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160; </div>
-<div class="line"><a name="l00915"></a><span class="lineno"><a class="line" href="group__video.html#ga5a288b9edb6fce00cb0c57adc172b1e1">  915</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="group__audio.html#gaf72595df3886dbb34dbcf030d14333d2">operator==</a>(<span class="keyword">const</span> SDL_MessageBoxColor&amp; lhs,</div>
-<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;                                        <span class="keyword">const</span> <a class="code" href="classcen_1_1color.html">color</a>&amp; rhs) noexcept -&gt; <span class="keywordtype">bool</span></div>
-<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;{</div>
-<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;  <span class="keywordflow">return</span> rhs == lhs;</div>
-<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;}</div>
-<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160; </div>
-<div class="line"><a name="l00931"></a><span class="lineno"><a class="line" href="group__video.html#ga51a5ced89253e5ffbdf57a205e78ad29">  931</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="group__audio.html#ga322c699fa08098bd801164819d2f4cc8">operator!=</a>(<span class="keyword">const</span> <a class="code" href="classcen_1_1color.html">color</a>&amp; lhs, <span class="keyword">const</span> <a class="code" href="classcen_1_1color.html">color</a>&amp; rhs) noexcept -&gt; <span class="keywordtype">bool</span></div>
-<div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;{</div>
-<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;  <span class="keywordflow">return</span> !(lhs == rhs);</div>
-<div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;}</div>
-<div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160; </div>
-<div class="line"><a name="l00937"></a><span class="lineno"><a class="line" href="group__video.html#ga630647a4ae815b7ddbdefc79ec4f00a8">  937</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="group__audio.html#ga322c699fa08098bd801164819d2f4cc8">operator!=</a>(<span class="keyword">const</span> <a class="code" href="classcen_1_1color.html">color</a>&amp; lhs, <span class="keyword">const</span> SDL_Color&amp; rhs) noexcept</div>
-<div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;    -&gt; <span class="keywordtype">bool</span></div>
-<div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;{</div>
-<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;  <span class="keywordflow">return</span> !(lhs == rhs);</div>
-<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;}</div>
-<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160; </div>
-<div class="line"><a name="l00944"></a><span class="lineno"><a class="line" href="group__video.html#ga35c45c0739031b2da198d017b4de62b8">  944</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="group__audio.html#ga322c699fa08098bd801164819d2f4cc8">operator!=</a>(<span class="keyword">const</span> SDL_Color&amp; lhs, <span class="keyword">const</span> <a class="code" href="classcen_1_1color.html">color</a>&amp; rhs) noexcept</div>
-<div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;    -&gt; <span class="keywordtype">bool</span></div>
-<div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;{</div>
-<div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;  <span class="keywordflow">return</span> !(lhs == rhs);</div>
-<div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160;}</div>
-<div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160; </div>
-<div class="line"><a name="l00962"></a><span class="lineno"><a class="line" href="group__video.html#ga04473dc66397625946ea6332366cbd1e">  962</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="group__audio.html#ga322c699fa08098bd801164819d2f4cc8">operator!=</a>(<span class="keyword">const</span> <a class="code" href="classcen_1_1color.html">color</a>&amp; lhs,</div>
-<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;                                        <span class="keyword">const</span> SDL_MessageBoxColor&amp; rhs) noexcept -&gt; <span class="keywordtype">bool</span></div>
-<div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;{</div>
-<div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;  <span class="keywordflow">return</span> !(lhs == rhs);</div>
-<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;}</div>
-<div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160; </div>
-<div class="line"><a name="l00969"></a><span class="lineno"><a class="line" href="group__video.html#ga596586cbd10dca63db3afb6dfb662456">  969</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="group__audio.html#ga322c699fa08098bd801164819d2f4cc8">operator!=</a>(<span class="keyword">const</span> SDL_MessageBoxColor&amp; lhs,</div>
-<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;                                        <span class="keyword">const</span> <a class="code" href="classcen_1_1color.html">color</a>&amp; rhs) noexcept -&gt; <span class="keywordtype">bool</span></div>
-<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;{</div>
-<div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;  <span class="keywordflow">return</span> !(lhs == rhs);</div>
-<div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;}</div>
-<div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160; </div>
+<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160; </div>
+<div class="line"><a name="l00832"></a><span class="lineno"><a class="line" href="group__audio.html#ga9b2b88e0d39f0088b6940317fe33dbdf">  832</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">auto</span> <a class="code" href="group__audio.html#ga83f366781618f05bf8bcb60c753e9ced">operator&lt;&lt;</a>(std::ostream&amp; stream, <span class="keyword">const</span> <a class="code" href="classcen_1_1color.html">color</a>&amp; <a class="code" href="classcen_1_1color.html">color</a>) -&gt; std::ostream&amp;</div>
+<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;{</div>
+<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;  <span class="keywordflow">return</span> stream &lt;&lt; <a class="code" href="group__audio.html#ga9ebd3f26fcc0f89398ff473b06e9dcbe">to_string</a>(<a class="code" href="classcen_1_1color.html">color</a>);</div>
+<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;}</div>
+<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160; </div>
+<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160; </div>
+<div class="line"><a name="l00858"></a><span class="lineno"><a class="line" href="group__video.html#gac435fa4777c3dc84c5b3b2465cdee515">  858</a></span>&#160;[[nodiscard]] <span class="keyword">inline</span> <span class="keyword">auto</span> <a class="code" href="group__video.html#gac435fa4777c3dc84c5b3b2465cdee515">blend</a>(<span class="keyword">const</span> <a class="code" href="classcen_1_1color.html">color</a>&amp; a, <span class="keyword">const</span> <a class="code" href="classcen_1_1color.html">color</a>&amp; b, <span class="keyword">const</span> <span class="keywordtype">float</span> bias = 0.5f) -&gt; <a class="code" href="classcen_1_1color.html">color</a></div>
+<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;{</div>
+<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;  <a class="code" href="group__core.html#gga5a2bed2933e3748ad2a77961417a102bae44e4612f62d2fb8f8738bab118a9850">assert</a>(bias &gt;= 0);</div>
+<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;  <a class="code" href="group__core.html#gga5a2bed2933e3748ad2a77961417a102bae44e4612f62d2fb8f8738bab118a9850">assert</a>(bias &lt;= 1.0f);</div>
+<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160; </div>
+<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span> <a class="code" href="group__video.html#gaf06617e81e29e02f648503b07b5af311">red</a> = detail::lerp(a.red_norm(), b.red_norm(), bias);</div>
+<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span> <a class="code" href="group__video.html#ga08fa451a44ca19eb64ff37aa6613e729">green</a> = detail::lerp(a.green_norm(), b.green_norm(), bias);</div>
+<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span> <a class="code" href="group__video.html#gacf2c51024b405d76bca00e4cf9c7b8e3">blue</a> = detail::lerp(a.blue_norm(), b.blue_norm(), bias);</div>
+<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span> alpha = detail::lerp(a.alpha_norm(), b.alpha_norm(), bias);</div>
+<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160; </div>
+<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classcen_1_1color.html#af6c7aa198fe60958a12c6d7693445f1d">color::from_norm</a>(<a class="code" href="group__video.html#gaf06617e81e29e02f648503b07b5af311">red</a>, <a class="code" href="group__video.html#ga08fa451a44ca19eb64ff37aa6613e729">green</a>, <a class="code" href="group__video.html#gacf2c51024b405d76bca00e4cf9c7b8e3">blue</a>, alpha);</div>
+<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;}</div>
+<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160; </div>
+<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160; </div>
+<div class="line"><a name="l00884"></a><span class="lineno"><a class="line" href="group__video.html#gaa4de664e3f142d2755f77ebeb388fe86">  884</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="group__audio.html#gaf72595df3886dbb34dbcf030d14333d2">operator==</a>(<span class="keyword">const</span> <a class="code" href="classcen_1_1color.html">color</a>&amp; lhs, <span class="keyword">const</span> <a class="code" href="classcen_1_1color.html">color</a>&amp; rhs) noexcept -&gt; <span class="keywordtype">bool</span></div>
+<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;{</div>
+<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;  <span class="keywordflow">return</span> (lhs.red() == rhs.red()) &amp;&amp; (lhs.green() == rhs.green()) &amp;&amp;</div>
+<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;         (lhs.blue() == rhs.blue()) &amp;&amp; (lhs.alpha() == rhs.alpha());</div>
+<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;}</div>
+<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160; </div>
+<div class="line"><a name="l00891"></a><span class="lineno"><a class="line" href="group__video.html#ga35de669fdaa64e3613dae361f1d212b8">  891</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="group__audio.html#gaf72595df3886dbb34dbcf030d14333d2">operator==</a>(<span class="keyword">const</span> <a class="code" href="classcen_1_1color.html">color</a>&amp; lhs, <span class="keyword">const</span> SDL_Color&amp; rhs) noexcept</div>
+<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;    -&gt; <span class="keywordtype">bool</span></div>
+<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;{</div>
+<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;  <span class="keywordflow">return</span> (lhs.red() == rhs.r) &amp;&amp; (lhs.green() == rhs.g) &amp;&amp; (lhs.blue() == rhs.b) &amp;&amp;</div>
+<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;         (lhs.alpha() == rhs.a);</div>
+<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;}</div>
+<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160; </div>
+<div class="line"><a name="l00899"></a><span class="lineno"><a class="line" href="group__video.html#ga417597f683d0171e440b372291d60488">  899</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="group__audio.html#gaf72595df3886dbb34dbcf030d14333d2">operator==</a>(<span class="keyword">const</span> SDL_Color&amp; lhs, <span class="keyword">const</span> <a class="code" href="classcen_1_1color.html">color</a>&amp; rhs) noexcept</div>
+<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;    -&gt; <span class="keywordtype">bool</span></div>
+<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;{</div>
+<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;  <span class="keywordflow">return</span> rhs == lhs;</div>
+<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;}</div>
+<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160; </div>
+<div class="line"><a name="l00917"></a><span class="lineno"><a class="line" href="group__video.html#ga24db18486aaf8f2f2c489b3a53206354">  917</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="group__audio.html#gaf72595df3886dbb34dbcf030d14333d2">operator==</a>(<span class="keyword">const</span> <a class="code" href="classcen_1_1color.html">color</a>&amp; lhs,</div>
+<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;                                        <span class="keyword">const</span> SDL_MessageBoxColor&amp; rhs) noexcept -&gt; <span class="keywordtype">bool</span></div>
+<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;{</div>
+<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;  <span class="keywordflow">return</span> (lhs.red() == rhs.r) &amp;&amp; (lhs.green() == rhs.g) &amp;&amp; (lhs.blue() == rhs.b);</div>
+<div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;}</div>
+<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160; </div>
+<div class="line"><a name="l00924"></a><span class="lineno"><a class="line" href="group__video.html#ga5a288b9edb6fce00cb0c57adc172b1e1">  924</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="group__audio.html#gaf72595df3886dbb34dbcf030d14333d2">operator==</a>(<span class="keyword">const</span> SDL_MessageBoxColor&amp; lhs,</div>
+<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;                                        <span class="keyword">const</span> <a class="code" href="classcen_1_1color.html">color</a>&amp; rhs) noexcept -&gt; <span class="keywordtype">bool</span></div>
+<div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;{</div>
+<div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;  <span class="keywordflow">return</span> rhs == lhs;</div>
+<div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;}</div>
+<div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160; </div>
+<div class="line"><a name="l00940"></a><span class="lineno"><a class="line" href="group__video.html#ga51a5ced89253e5ffbdf57a205e78ad29">  940</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="group__audio.html#ga322c699fa08098bd801164819d2f4cc8">operator!=</a>(<span class="keyword">const</span> <a class="code" href="classcen_1_1color.html">color</a>&amp; lhs, <span class="keyword">const</span> <a class="code" href="classcen_1_1color.html">color</a>&amp; rhs) noexcept -&gt; <span class="keywordtype">bool</span></div>
+<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;{</div>
+<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;  <span class="keywordflow">return</span> !(lhs == rhs);</div>
+<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;}</div>
+<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160; </div>
+<div class="line"><a name="l00946"></a><span class="lineno"><a class="line" href="group__video.html#ga630647a4ae815b7ddbdefc79ec4f00a8">  946</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="group__audio.html#ga322c699fa08098bd801164819d2f4cc8">operator!=</a>(<span class="keyword">const</span> <a class="code" href="classcen_1_1color.html">color</a>&amp; lhs, <span class="keyword">const</span> SDL_Color&amp; rhs) noexcept</div>
+<div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;    -&gt; <span class="keywordtype">bool</span></div>
+<div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160;{</div>
+<div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;  <span class="keywordflow">return</span> !(lhs == rhs);</div>
+<div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;}</div>
+<div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160; </div>
+<div class="line"><a name="l00953"></a><span class="lineno"><a class="line" href="group__video.html#ga35c45c0739031b2da198d017b4de62b8">  953</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="group__audio.html#ga322c699fa08098bd801164819d2f4cc8">operator!=</a>(<span class="keyword">const</span> SDL_Color&amp; lhs, <span class="keyword">const</span> <a class="code" href="classcen_1_1color.html">color</a>&amp; rhs) noexcept</div>
+<div class="line"><a name="l00954"></a><span class="lineno">  954</span>&#160;    -&gt; <span class="keywordtype">bool</span></div>
+<div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;{</div>
+<div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;  <span class="keywordflow">return</span> !(lhs == rhs);</div>
+<div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;}</div>
+<div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160; </div>
+<div class="line"><a name="l00971"></a><span class="lineno"><a class="line" href="group__video.html#ga04473dc66397625946ea6332366cbd1e">  971</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="group__audio.html#ga322c699fa08098bd801164819d2f4cc8">operator!=</a>(<span class="keyword">const</span> <a class="code" href="classcen_1_1color.html">color</a>&amp; lhs,</div>
+<div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;                                        <span class="keyword">const</span> SDL_MessageBoxColor&amp; rhs) noexcept -&gt; <span class="keywordtype">bool</span></div>
+<div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;{</div>
+<div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160;  <span class="keywordflow">return</span> !(lhs == rhs);</div>
+<div class="line"><a name="l00975"></a><span class="lineno">  975</span>&#160;}</div>
 <div class="line"><a name="l00976"></a><span class="lineno">  976</span>&#160; </div>
-<div class="line"><a name="l00978"></a><span class="lineno">  978</span>&#160; </div>
-<div class="line"><a name="l00979"></a><span class="lineno">  979</span>&#160;}  <span class="comment">// namespace cen</span></div>
-<div class="line"><a name="l00980"></a><span class="lineno">  980</span>&#160; </div>
-<div class="line"><a name="l00981"></a><span class="lineno">  981</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// CENTURION_COLOR_HEADER</span></div>
+<div class="line"><a name="l00978"></a><span class="lineno"><a class="line" href="group__video.html#ga596586cbd10dca63db3afb6dfb662456">  978</a></span>&#160;[[nodiscard]] constexpr <span class="keyword">auto</span> <a class="code" href="group__audio.html#ga322c699fa08098bd801164819d2f4cc8">operator!=</a>(<span class="keyword">const</span> SDL_MessageBoxColor&amp; lhs,</div>
+<div class="line"><a name="l00979"></a><span class="lineno">  979</span>&#160;                                        <span class="keyword">const</span> <a class="code" href="classcen_1_1color.html">color</a>&amp; rhs) noexcept -&gt; <span class="keywordtype">bool</span></div>
+<div class="line"><a name="l00980"></a><span class="lineno">  980</span>&#160;{</div>
+<div class="line"><a name="l00981"></a><span class="lineno">  981</span>&#160;  <span class="keywordflow">return</span> !(lhs == rhs);</div>
+<div class="line"><a name="l00982"></a><span class="lineno">  982</span>&#160;}</div>
+<div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160; </div>
+<div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160; </div>
+<div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160; </div>
+<div class="line"><a name="l00988"></a><span class="lineno">  988</span>&#160;}  <span class="comment">// namespace cen</span></div>
+<div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160; </div>
+<div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// CENTURION_COLOR_HEADER</span></div>
 <div class="ttc" id="aclasscen_1_1color_html"><div class="ttname"><a href="classcen_1_1color.html">cen::color</a></div><div class="ttdoc">An 8-bit accuracy RGBA color.</div><div class="ttdef"><b>Definition:</b> color.hpp:50</div></div>
-<div class="ttc" id="aclasscen_1_1color_html_a116165dfe8ace648ee5f0aca32bcf5ba"><div class="ttname"><a href="classcen_1_1color.html#a116165dfe8ace648ee5f0aca32bcf5ba">cen::color::max</a></div><div class="ttdeci">constexpr static auto max() noexcept -&gt; u8</div><div class="ttdoc">Returns the maximum possible value of a color component.</div><div class="ttdef"><b>Definition:</b> color.hpp:761</div></div>
+<div class="ttc" id="aclasscen_1_1color_html_a116165dfe8ace648ee5f0aca32bcf5ba"><div class="ttname"><a href="classcen_1_1color.html#a116165dfe8ace648ee5f0aca32bcf5ba">cen::color::max</a></div><div class="ttdeci">constexpr static auto max() noexcept -&gt; u8</div><div class="ttdoc">Returns the maximum possible value of a color component.</div><div class="ttdef"><b>Definition:</b> color.hpp:781</div></div>
 <div class="ttc" id="aclasscen_1_1color_html_a23bc49d9afd575ba8c7b797adb895eeb"><div class="ttname"><a href="classcen_1_1color.html#a23bc49d9afd575ba8c7b797adb895eeb">cen::color::as_rgb</a></div><div class="ttdeci">auto as_rgb() const -&gt; std::string</div><div class="ttdoc">Returns a hexadecimal RGB color string that represents the color.</div><div class="ttdef"><b>Definition:</b> color.hpp:596</div></div>
 <div class="ttc" id="aclasscen_1_1color_html_a24765375a834c452659a64622cfad429"><div class="ttname"><a href="classcen_1_1color.html#a24765375a834c452659a64622cfad429">cen::color::set_red</a></div><div class="ttdeci">constexpr void set_red(const u8 red) noexcept</div><div class="ttdoc">Sets the value of the red component.</div><div class="ttdef"><b>Definition:</b> color.hpp:405</div></div>
 <div class="ttc" id="aclasscen_1_1color_html_a2e5e5c4a486eee0e28f05eee7eca457d"><div class="ttname"><a href="classcen_1_1color.html#a2e5e5c4a486eee0e28f05eee7eca457d">cen::color::set_alpha</a></div><div class="ttdeci">constexpr void set_alpha(const u8 alpha) noexcept</div><div class="ttdoc">Sets the value of the alpha component.</div><div class="ttdef"><b>Definition:</b> color.hpp:441</div></div>
 <div class="ttc" id="aclasscen_1_1color_html_a40bfe76551c3e8fa51b688b024686d06"><div class="ttname"><a href="classcen_1_1color.html#a40bfe76551c3e8fa51b688b024686d06">cen::color::blue_norm</a></div><div class="ttdeci">constexpr auto blue_norm() const noexcept -&gt; float</div><div class="ttdoc">Returns the normalized blue component of the color.</div><div class="ttdef"><b>Definition:</b> color.hpp:530</div></div>
 <div class="ttc" id="aclasscen_1_1color_html_a4a237f41c5c7a70f127698b7882029b7"><div class="ttname"><a href="classcen_1_1color.html#a4a237f41c5c7a70f127698b7882029b7">cen::color::color</a></div><div class="ttdeci">constexpr color() noexcept=default</div><div class="ttdoc">Creates a color. The created color will be equal to #000000FF.</div></div>
-<div class="ttc" id="aclasscen_1_1color_html_a4b4683c36f6a81bbbee0f2b932676c99"><div class="ttname"><a href="classcen_1_1color.html#a4b4683c36f6a81bbbee0f2b932676c99">cen::color::serialize</a></div><div class="ttdeci">void serialize(Archive &amp;archive)</div><div class="ttdoc">Serializes the color.</div><div class="ttdef"><b>Definition:</b> color.hpp:735</div></div>
+<div class="ttc" id="aclasscen_1_1color_html_a4b4683c36f6a81bbbee0f2b932676c99"><div class="ttname"><a href="classcen_1_1color.html#a4b4683c36f6a81bbbee0f2b932676c99">cen::color::serialize</a></div><div class="ttdeci">void serialize(Archive &amp;archive)</div><div class="ttdoc">Serializes the color.</div><div class="ttdef"><b>Definition:</b> color.hpp:755</div></div>
 <div class="ttc" id="aclasscen_1_1color_html_a50b4e69de99c10cd8c299570f2b30ed3"><div class="ttname"><a href="classcen_1_1color.html#a50b4e69de99c10cd8c299570f2b30ed3">cen::color::blue</a></div><div class="ttdeci">constexpr auto blue() const noexcept -&gt; u8</div><div class="ttdoc">Returns the value of the blue component.</div><div class="ttdef"><b>Definition:</b> color.hpp:482</div></div>
 <div class="ttc" id="aclasscen_1_1color_html_a5178f50823d5511787d9f42de251299c"><div class="ttname"><a href="classcen_1_1color.html#a5178f50823d5511787d9f42de251299c">cen::color::red</a></div><div class="ttdeci">constexpr auto red() const noexcept -&gt; u8</div><div class="ttdoc">Returns the value of the red component.</div><div class="ttdef"><b>Definition:</b> color.hpp:458</div></div>
 <div class="ttc" id="aclasscen_1_1color_html_a5a7888775629285bad41ad2715c196f1"><div class="ttname"><a href="classcen_1_1color.html#a5a7888775629285bad41ad2715c196f1">cen::color::data</a></div><div class="ttdeci">auto data() const noexcept -&gt; const SDL_Color *</div><div class="ttdoc">Returns a pointer to the internal SDL color.</div><div class="ttdef"><b>Definition:</b> color.hpp:562</div></div>
@@ -641,7 +654,7 @@ $(document).ready(function(){initNavTree('color_8hpp_source.html',''); initResiz
 <div class="ttc" id="aclasscen_1_1color_html_a67b39159f8ff8988fcab7d7a32e39642"><div class="ttname"><a href="classcen_1_1color.html#a67b39159f8ff8988fcab7d7a32e39642">cen::color::color</a></div><div class="ttdeci">constexpr color(const SDL_MessageBoxColor &amp;color) noexcept</div><div class="ttdoc">Creates a color that is a copy of the supplied SDL_MessageBoxColor.</div><div class="ttdef"><b>Definition:</b> color.hpp:96</div></div>
 <div class="ttc" id="aclasscen_1_1color_html_a69c2df049b39a47858e2b1aa438c0f38"><div class="ttname"><a href="classcen_1_1color.html#a69c2df049b39a47858e2b1aa438c0f38">cen::color::from_rgb</a></div><div class="ttdeci">static auto from_rgb(const std::string_view rgb) -&gt; std::optional&lt; color &gt;</div><div class="ttdoc">Creates a color from a hexadecimal RGB color string.</div><div class="ttdef"><b>Definition:</b> color.hpp:255</div></div>
 <div class="ttc" id="aclasscen_1_1color_html_a69fa2f3722d87a534454a66baa30a324"><div class="ttname"><a href="classcen_1_1color.html#a69fa2f3722d87a534454a66baa30a324">cen::color::from_hsl</a></div><div class="ttdeci">static auto from_hsl(float hue, float saturation, float lightness) -&gt; color</div><div class="ttdoc">Creates a color from HSL-encoded values.</div><div class="ttdef"><b>Definition:</b> color.hpp:182</div></div>
-<div class="ttc" id="aclasscen_1_1color_html_a7345d87d41f6efd646be6e53392863c8"><div class="ttname"><a href="classcen_1_1color.html#a7345d87d41f6efd646be6e53392863c8">cen::color::with_alpha</a></div><div class="ttdeci">constexpr auto with_alpha(const u8 alpha) const noexcept -&gt; color</div><div class="ttdoc">Returns a copy of the color with the specified alpha value.</div><div class="ttdef"><b>Definition:</b> color.hpp:749</div></div>
+<div class="ttc" id="aclasscen_1_1color_html_a7345d87d41f6efd646be6e53392863c8"><div class="ttname"><a href="classcen_1_1color.html#a7345d87d41f6efd646be6e53392863c8">cen::color::with_alpha</a></div><div class="ttdeci">constexpr auto with_alpha(const u8 alpha) const noexcept -&gt; color</div><div class="ttdoc">Returns a copy of the color with the specified alpha value.</div><div class="ttdef"><b>Definition:</b> color.hpp:769</div></div>
 <div class="ttc" id="aclasscen_1_1color_html_a75259be5cc0aa4bf06270c93fcfe5260"><div class="ttname"><a href="classcen_1_1color.html#a75259be5cc0aa4bf06270c93fcfe5260">cen::color::alpha</a></div><div class="ttdeci">constexpr auto alpha() const noexcept -&gt; u8</div><div class="ttdoc">Returns the value of the alpha component.</div><div class="ttdef"><b>Definition:</b> color.hpp:494</div></div>
 <div class="ttc" id="aclasscen_1_1color_html_a791f432c479fc71f48384840ac1adc14"><div class="ttname"><a href="classcen_1_1color.html#a791f432c479fc71f48384840ac1adc14">cen::color::get</a></div><div class="ttdeci">auto get() const noexcept -&gt; const SDL_Color &amp;</div><div class="ttdoc">Returns the internal color instance.</div><div class="ttdef"><b>Definition:</b> color.hpp:574</div></div>
 <div class="ttc" id="aclasscen_1_1color_html_a8498de2b9402e5a2edb4647ff9f69b8e"><div class="ttname"><a href="classcen_1_1color.html#a8498de2b9402e5a2edb4647ff9f69b8e">cen::color::red_norm</a></div><div class="ttdeci">constexpr auto red_norm() const noexcept -&gt; float</div><div class="ttdoc">Returns the normalized red component of the color.</div><div class="ttdef"><b>Definition:</b> color.hpp:506</div></div>
@@ -649,16 +662,16 @@ $(document).ready(function(){initNavTree('color_8hpp_source.html',''); initResiz
 <div class="ttc" id="aclasscen_1_1color_html_a9dec1d62dd4e057cb72b37eb5a1417f6"><div class="ttname"><a href="classcen_1_1color.html#a9dec1d62dd4e057cb72b37eb5a1417f6">cen::color::from_rgba</a></div><div class="ttdeci">static auto from_rgba(const std::string_view rgba) -&gt; std::optional&lt; color &gt;</div><div class="ttdoc">Creates a color from a hexadecimal RGBA color string.</div><div class="ttdef"><b>Definition:</b> color.hpp:294</div></div>
 <div class="ttc" id="aclasscen_1_1color_html_aa25f6361edff98a18a25acc67cb8df38"><div class="ttname"><a href="classcen_1_1color.html#aa25f6361edff98a18a25acc67cb8df38">cen::color::from_argb</a></div><div class="ttdeci">static auto from_argb(const std::string_view argb) -&gt; std::optional&lt; color &gt;</div><div class="ttdoc">Creates a color from a hexadecimal ARGB color string.</div><div class="ttdef"><b>Definition:</b> color.hpp:335</div></div>
 <div class="ttc" id="aclasscen_1_1color_html_aa832ab02fc6d92501cb3050d2b134370"><div class="ttname"><a href="classcen_1_1color.html#aa832ab02fc6d92501cb3050d2b134370">cen::color::green</a></div><div class="ttdeci">constexpr auto green() const noexcept -&gt; u8</div><div class="ttdoc">Returns the value of the green component.</div><div class="ttdef"><b>Definition:</b> color.hpp:470</div></div>
-<div class="ttc" id="aclasscen_1_1color_html_aa946bb9279e48d71ffd4c0125b9cab7e"><div class="ttname"><a href="classcen_1_1color.html#aa946bb9279e48d71ffd4c0125b9cab7e">cen::color::as_argb</a></div><div class="ttdeci">auto as_argb() const -&gt; std::string</div><div class="ttdoc">Returns a hexadecimal ARGB color string that represents the color.</div><div class="ttdef"><b>Definition:</b> color.hpp:647</div></div>
+<div class="ttc" id="aclasscen_1_1color_html_aa946bb9279e48d71ffd4c0125b9cab7e"><div class="ttname"><a href="classcen_1_1color.html#aa946bb9279e48d71ffd4c0125b9cab7e">cen::color::as_argb</a></div><div class="ttdeci">auto as_argb() const -&gt; std::string</div><div class="ttdoc">Returns a hexadecimal ARGB color string that represents the color.</div><div class="ttdef"><b>Definition:</b> color.hpp:659</div></div>
 <div class="ttc" id="aclasscen_1_1color_html_abd268bcf887767d76e474f9e5b429753"><div class="ttname"><a href="classcen_1_1color.html#abd268bcf887767d76e474f9e5b429753">cen::color::alpha_norm</a></div><div class="ttdeci">constexpr auto alpha_norm() const noexcept -&gt; float</div><div class="ttdoc">Returns the normalized alpha component of the color.</div><div class="ttdef"><b>Definition:</b> color.hpp:542</div></div>
 <div class="ttc" id="aclasscen_1_1color_html_ac51df49b84e5893db49240920f30d01a"><div class="ttname"><a href="classcen_1_1color.html#ac51df49b84e5893db49240920f30d01a">cen::color::set_blue</a></div><div class="ttdeci">constexpr void set_blue(const u8 blue) noexcept</div><div class="ttdoc">Sets the value of the blue component.</div><div class="ttdef"><b>Definition:</b> color.hpp:429</div></div>
 <div class="ttc" id="aclasscen_1_1color_html_ad44bc91787b4b153c05f2e56988ab370"><div class="ttname"><a href="classcen_1_1color.html#ad44bc91787b4b153c05f2e56988ab370">cen::color::data</a></div><div class="ttdeci">auto data() noexcept -&gt; SDL_Color *</div><div class="ttdoc">Returns a pointer to the internal SDL color.</div><div class="ttdef"><b>Definition:</b> color.hpp:556</div></div>
 <div class="ttc" id="aclasscen_1_1color_html_ad9ef27ae6ffeeb20fb308d10638be91d"><div class="ttname"><a href="classcen_1_1color.html#ad9ef27ae6ffeeb20fb308d10638be91d">cen::color::from_hsv</a></div><div class="ttdeci">static auto from_hsv(float hue, float saturation, float value) -&gt; color</div><div class="ttdoc">Creates a color from HSV-encoded values.</div><div class="ttdef"><b>Definition:</b> color.hpp:113</div></div>
-<div class="ttc" id="aclasscen_1_1color_html_adab1637bf3b8b816ed55fa0f7dc3dcc2"><div class="ttname"><a href="classcen_1_1color.html#adab1637bf3b8b816ed55fa0f7dc3dcc2">cen::color::as_rgba</a></div><div class="ttdeci">auto as_rgba() const -&gt; std::string</div><div class="ttdoc">Returns a hexadecimal RGBA color string that represents the color.</div><div class="ttdef"><b>Definition:</b> color.hpp:621</div></div>
+<div class="ttc" id="aclasscen_1_1color_html_adab1637bf3b8b816ed55fa0f7dc3dcc2"><div class="ttname"><a href="classcen_1_1color.html#adab1637bf3b8b816ed55fa0f7dc3dcc2">cen::color::as_rgba</a></div><div class="ttdeci">auto as_rgba() const -&gt; std::string</div><div class="ttdoc">Returns a hexadecimal RGBA color string that represents the color.</div><div class="ttdef"><b>Definition:</b> color.hpp:625</div></div>
 <div class="ttc" id="aclasscen_1_1color_html_aea19e3d5d5a010a2e1a7d69d2780d47b"><div class="ttname"><a href="classcen_1_1color.html#aea19e3d5d5a010a2e1a7d69d2780d47b">cen::color::green_norm</a></div><div class="ttdeci">constexpr auto green_norm() const noexcept -&gt; float</div><div class="ttdoc">Returns the normalized green component of the color.</div><div class="ttdef"><b>Definition:</b> color.hpp:518</div></div>
 <div class="ttc" id="aclasscen_1_1color_html_af6c7aa198fe60958a12c6d7693445f1d"><div class="ttname"><a href="classcen_1_1color.html#af6c7aa198fe60958a12c6d7693445f1d">cen::color::from_norm</a></div><div class="ttdeci">static auto from_norm(float red, float green, float blue, float alpha=1.0f) noexcept(on_msvc()) -&gt; color</div><div class="ttdoc">Creates a color from normalized color component values.</div><div class="ttdef"><b>Definition:</b> color.hpp:375</div></div>
 <div class="ttc" id="agroup__audio_html_ga322c699fa08098bd801164819d2f4cc8"><div class="ttname"><a href="group__audio.html#ga322c699fa08098bd801164819d2f4cc8">cen::operator!=</a></div><div class="ttdeci">constexpr auto operator!=(const fade_status lhs, const Mix_Fading rhs) noexcept -&gt; bool</div><div class="ttdoc">Indicates whether or not the fading status values represent aren't the same.</div><div class="ttdef"><b>Definition:</b> fade_status.hpp:141</div></div>
-<div class="ttc" id="agroup__audio_html_ga5cccd9c669fdd74579d28f4a16101941"><div class="ttname"><a href="group__audio.html#ga5cccd9c669fdd74579d28f4a16101941">cen::to_string</a></div><div class="ttdeci">auto to_string(const color &amp;color) -&gt; std::string</div><div class="ttdoc">Returns a textual representation of the color.</div><div class="ttdef"><b>Definition:</b> color.hpp:782</div></div>
+<div class="ttc" id="agroup__audio_html_ga5cccd9c669fdd74579d28f4a16101941"><div class="ttname"><a href="group__audio.html#ga5cccd9c669fdd74579d28f4a16101941">cen::to_string</a></div><div class="ttdeci">auto to_string(const color &amp;color) -&gt; std::string</div><div class="ttdoc">Returns a textual representation of the color.</div><div class="ttdef"><b>Definition:</b> color.hpp:802</div></div>
 <div class="ttc" id="agroup__audio_html_ga83f366781618f05bf8bcb60c753e9ced"><div class="ttname"><a href="group__audio.html#ga83f366781618f05bf8bcb60c753e9ced">cen::operator&lt;&lt;</a></div><div class="ttdeci">auto operator&lt;&lt;(std::ostream &amp;stream, const fade_status status) -&gt; std::ostream &amp;</div><div class="ttdoc">Prints a textual representation of a fade status enumerator.</div><div class="ttdef"><b>Definition:</b> fade_status.hpp:98</div></div>
 <div class="ttc" id="agroup__audio_html_ga9ebd3f26fcc0f89398ff473b06e9dcbe"><div class="ttname"><a href="group__audio.html#ga9ebd3f26fcc0f89398ff473b06e9dcbe">cen::to_string</a></div><div class="ttdeci">constexpr auto to_string(const fade_status status) -&gt; std::string_view</div><div class="ttdoc">Returns a textual version of the supplied fade status.</div><div class="ttdef"><b>Definition:</b> fade_status.hpp:64</div></div>
 <div class="ttc" id="agroup__audio_html_gaf72595df3886dbb34dbcf030d14333d2"><div class="ttname"><a href="group__audio.html#gaf72595df3886dbb34dbcf030d14333d2">cen::operator==</a></div><div class="ttdeci">constexpr auto operator==(const fade_status lhs, const Mix_Fading rhs) noexcept -&gt; bool</div><div class="ttdoc">Indicates whether or not the fading status values represent are the same.</div><div class="ttdef"><b>Definition:</b> fade_status.hpp:118</div></div>
@@ -672,7 +685,7 @@ $(document).ready(function(){initNavTree('color_8hpp_source.html',''); initResiz
 <div class="ttc" id="agroup__input_html_gae6d70a5e5ad0f063706729dd21548a99"><div class="ttname"><a href="group__input.html#gae6d70a5e5ad0f063706729dd21548a99">cen::keycodes::r</a></div><div class="ttdeci">constexpr key_code r</div><div class="ttdoc">Represents the key with the label &quot;R&quot;.</div><div class="ttdef"><b>Definition:</b> keycodes.hpp:159</div></div>
 <div class="ttc" id="agroup__input_html_gae7839ff88627b1def4d215c396b14d6d"><div class="ttname"><a href="group__input.html#gae7839ff88627b1def4d215c396b14d6d">cen::keycodes::v</a></div><div class="ttdeci">constexpr key_code v</div><div class="ttdoc">Represents the key with the label &quot;V&quot;.</div><div class="ttdef"><b>Definition:</b> keycodes.hpp:187</div></div>
 <div class="ttc" id="agroup__video_html_ga08fa451a44ca19eb64ff37aa6613e729"><div class="ttname"><a href="group__video.html#ga08fa451a44ca19eb64ff37aa6613e729">cen::colors::green</a></div><div class="ttdeci">constexpr color green</div><div class="ttdoc">Hex: 008000.</div><div class="ttdef"><b>Definition:</b> colors.hpp:422</div></div>
-<div class="ttc" id="agroup__video_html_ga5f2939d9ab14754d723fc7fa58d0f3e3"><div class="ttname"><a href="group__video.html#ga5f2939d9ab14754d723fc7fa58d0f3e3">cen::blend</a></div><div class="ttdeci">auto blend(const color &amp;a, const color &amp;b, const float bias) -&gt; color</div><div class="ttdoc">Blends two colors according to the specified bias.</div><div class="ttdef"><b>Definition:</b> color.hpp:840</div></div>
+<div class="ttc" id="agroup__video_html_gac435fa4777c3dc84c5b3b2465cdee515"><div class="ttname"><a href="group__video.html#gac435fa4777c3dc84c5b3b2465cdee515">cen::blend</a></div><div class="ttdeci">auto blend(const color &amp;a, const color &amp;b, const float bias=0.5f) -&gt; color</div><div class="ttdoc">Blends two colors according to the specified bias.</div><div class="ttdef"><b>Definition:</b> color.hpp:858</div></div>
 <div class="ttc" id="agroup__video_html_gacf2c51024b405d76bca00e4cf9c7b8e3"><div class="ttname"><a href="group__video.html#gacf2c51024b405d76bca00e4cf9c7b8e3">cen::colors::blue</a></div><div class="ttdeci">constexpr color blue</div><div class="ttdoc">Hex: 0000FF.</div><div class="ttdef"><b>Definition:</b> colors.hpp:100</div></div>
 <div class="ttc" id="agroup__video_html_gaf06617e81e29e02f648503b07b5af311"><div class="ttname"><a href="group__video.html#gaf06617e81e29e02f648503b07b5af311">cen::colors::red</a></div><div class="ttdeci">constexpr color red</div><div class="ttdoc">Hex: FF0000.</div><div class="ttdef"><b>Definition:</b> colors.hpp:877</div></div>
 <div class="ttc" id="anamespacecen_html"><div class="ttname"><a href="namespacecen.html">cen</a></div><div class="ttdoc">The top-level namespace that all components of the library reside in.</div><div class="ttdef"><b>Definition:</b> channels.hpp:14</div></div>

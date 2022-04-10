@@ -1,17 +1,19 @@
 var group__audio =
 [
     [ "music", "classcen_1_1music.html", [
+      [ "ms_type", "classcen_1_1music.html#aeadf90721fb8f8a472f1ee9ce4125c2f", null ],
       [ "music_hook_callback", "classcen_1_1music.html#a246be7360470291a862f7f25cf533ba1", null ],
       [ "music", "classcen_1_1music.html#a9726a27e2d529a648b50e92baffc3ba5", null ],
       [ "music", "classcen_1_1music.html#a30849f530b6672c184c1acdad5c1c551", null ],
       [ "play", "classcen_1_1music.html#ad2c0938fa7fe0dc37a6f2e12b108f534", null ],
-      [ "fade_in", "classcen_1_1music.html#a925aafcb4e885777106de4bebbf7c206", null ],
+      [ "fade_in", "classcen_1_1music.html#afa196d65a6d860e9941a268e2903be22", null ],
       [ "operator Mix_Music *", "classcen_1_1music.html#a004ddaaa1b4b27900750bb0e3286e07a", null ],
       [ "operator const Mix_Music *", "classcen_1_1music.html#a4ee8c5ae9e608d932dad639fc71df148", null ],
       [ "type", "classcen_1_1music.html#aedc950e2b10f9319702ffee4cb5661b3", null ],
       [ "get", "classcen_1_1music.html#a7eca71c9eb339ab4802f802e76a4cb86", null ]
     ] ],
     [ "basic_sound_effect", "classcen_1_1basic__sound__effect.html", [
+      [ "ms_type", "classcen_1_1basic__sound__effect.html#a45b47fd1772177d95cb08f87311e950e", null ],
       [ "basic_sound_effect", "classcen_1_1basic__sound__effect.html#a79fcd31733e4c1343ed1040d2567a425", null ],
       [ "basic_sound_effect", "classcen_1_1basic__sound__effect.html#ab42510adb0deefc2faf3b3873f1326bc", null ],
       [ "basic_sound_effect", "classcen_1_1basic__sound__effect.html#a5417b63c68a31ce90651431b54dea5e8", null ],
@@ -19,8 +21,8 @@ var group__audio =
       [ "play", "classcen_1_1basic__sound__effect.html#a0e34a8199dfa94d8c5354861d31166c8", null ],
       [ "stop", "classcen_1_1basic__sound__effect.html#a912e2e9eea0437fda61946527a8bdbd4", null ],
       [ "is_playing", "classcen_1_1basic__sound__effect.html#a0dd5b356b70124f34b01aff8471880d0", null ],
-      [ "fade_in", "classcen_1_1basic__sound__effect.html#a38ce080d0afe2b4bda971b638796fd6e", null ],
-      [ "fade_out", "classcen_1_1basic__sound__effect.html#a45e9b5711126e7af7f92a2d33830854c", null ],
+      [ "fade_in", "classcen_1_1basic__sound__effect.html#a852f23907faf010f892e10980b0a0291", null ],
+      [ "fade_out", "classcen_1_1basic__sound__effect.html#a5be06817310540037c83cc40cbfd715f", null ],
       [ "is_fading", "classcen_1_1basic__sound__effect.html#ac44d7b91396c6c45a3b1896d7b632ed6", null ],
       [ "set_volume", "classcen_1_1basic__sound__effect.html#ac0d5d2be74fd58d674af919276242b9e", null ],
       [ "volume", "classcen_1_1basic__sound__effect.html#ac1d8b943299a2de82f68d4355baa03e1", null ],

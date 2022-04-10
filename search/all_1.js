@@ -43,7 +43,7 @@ var searchData=
   ['bisque_145',['bisque',['../group__video.html#ga5133440026382479983c9281d4788115',1,'cen::colors']]],
   ['black_146',['black',['../group__video.html#gaf1997eea41dd9324b23428262548a2f5',1,'cen::colors']]],
   ['blanched_5falmond_147',['blanched_almond',['../group__video.html#gae2eaabcc75280355e66f726c9901204d',1,'cen::colors']]],
-  ['blend_148',['blend',['../group__video.html#gaa0633728260ba4798184964a3d606b7b',1,'cen::blend(const color &amp;a, const color &amp;b, const double bias=0.5) -&gt; color'],['../group__video.html#ga5f2939d9ab14754d723fc7fa58d0f3e3',1,'cen::blend(const color &amp;a, const color &amp;b, const float bias) -&gt; color'],['../group__video.html#gga98236ba30ab70fd25e54bf8c5c70dd8fac195f144a8d768f2bb87f155ed2117a4',1,'cen::blend()']]],
+  ['blend_148',['blend',['../group__video.html#gac435fa4777c3dc84c5b3b2465cdee515',1,'cen::blend(const color &amp;a, const color &amp;b, const float bias=0.5f) -&gt; color'],['../group__video.html#gga98236ba30ab70fd25e54bf8c5c70dd8fac195f144a8d768f2bb87f155ed2117a4',1,'cen::blend()']]],
   ['blend_5ffactor_149',['blend_factor',['../group__video.html#ga5382d86f2c57af07b6d18ff7a14bd9ac',1,'cen']]],
   ['blend_5fmode_150',['blend_mode',['../group__video.html#ga98236ba30ab70fd25e54bf8c5c70dd8f',1,'cen']]],
   ['blend_5fop_151',['blend_op',['../group__video.html#gaaf75f07f7c21b21f175be1de240d2182',1,'cen']]],
