@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['hints_3959',['Hints',['../group__hints.html',1,'']]]
+  ['initialization_0',['Initialization',['../group__initialization.html',1,'']]],
+  ['input_1',['Input',['../group__input.html',1,'']]]
 ];

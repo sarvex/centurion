@@ -1,9 +1,9 @@
 var classcen_1_1joy__hat__event =
 [
-    [ "joy_hat_event", "classcen_1_1joy__hat__event.html#a331b5389d6bb0b22171e3506129dc0de", null ],
-    [ "joy_hat_event", "classcen_1_1joy__hat__event.html#aa48236ba6837350916b64fc54ab2f605", null ],
-    [ "set_hat", "classcen_1_1joy__hat__event.html#a9e491b0858b036236831c1bfeef542d7", null ],
-    [ "set_position", "classcen_1_1joy__hat__event.html#a1f5d300ea86e798487e4035fd9f265ba", null ],
-    [ "hat", "classcen_1_1joy__hat__event.html#ad70caeba1bcdcedf784d09c34f4407bd", null ],
-    [ "position", "classcen_1_1joy__hat__event.html#a7d258c11ab9140eae23c7d50971508c2", null ]
+    [ "joy_hat_event", "classcen_1_1joy__hat__event.html#aa848fad034b31d71d5a167a358decb62", null ],
+    [ "joy_hat_event", "classcen_1_1joy__hat__event.html#a18225f75564bd1d409917e475cf7ca14", null ],
+    [ "set_hat", "classcen_1_1joy__hat__event.html#ab84f1936f4498b85809a445649d1494c", null ],
+    [ "set_position", "classcen_1_1joy__hat__event.html#a6da79be8f8c0dad3769f3af032095a80", null ],
+    [ "hat", "classcen_1_1joy__hat__event.html#ac1334c0adda1f665b3107d71506227f6", null ],
+    [ "position", "classcen_1_1joy__hat__event.html#a34cc88e9a9c31a90a28279479c0ef9b0", null ]
 ];

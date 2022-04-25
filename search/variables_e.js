@@ -1,12 +1,21 @@
 var searchData=
 [
-  ['o_3316',['o',['../group__input.html#ga6499384804995cb9aba561bc374c63c3',1,'cen::keycodes::o()'],['../group__input.html#gaeb2f5eefdd7000eeebc278def69d62cb',1,'cen::scancodes::o()']]],
-  ['old_5flace_3317',['old_lace',['../group__video.html#ga9b4b28fbaac23427c374ddba651972c2',1,'cen::colors']]],
-  ['olive_3318',['olive',['../group__video.html#ga6af93db2c6fa01cdb1e5c8f42111f74d',1,'cen::colors']]],
-  ['olive_5fdrab_3319',['olive_drab',['../group__video.html#ga05ee4915ea70c05cb77b540525a04dea',1,'cen::colors']]],
-  ['one_3320',['one',['../group__input.html#ga898acbf0330141b25f2193ae5f335c29',1,'cen::keycodes::one()'],['../group__input.html#gad2b17c88f17130f44e817f99ee9c9e41',1,'cen::scancodes::one()']]],
-  ['op_3321',['op',['../structcen_1_1blend__task.html#aaf84c99d87c52aa60d7b57290084c06a',1,'cen::blend_task']]],
-  ['orange_3322',['orange',['../group__video.html#gaa2ea98648bb178ddc1232354ce00fbcf',1,'cen::colors']]],
-  ['orange_5fred_3323',['orange_red',['../group__video.html#gae50c8e39251c8ddad17a095a625d011c',1,'cen::colors']]],
-  ['orchid_3324',['orchid',['../group__video.html#gab24bf48c9ecf5c1643970114135d2566',1,'cen::colors']]]
+  ['o_0',['o',['../namespacecen_1_1keycodes.html#ab95ac4511fa3395eb4c1c155f7a2a1e8',1,'cen::keycodes::o()'],['../namespacecen_1_1scancodes.html#a21722457aa6e3f72879cdee330ce1a34',1,'cen::scancodes::o()']]],
+  ['old_5flace_1',['old_lace',['../namespacecen_1_1colors.html#ad1bb359c4551da3a6cb217211bc4fe9d',1,'cen::colors']]],
+  ['olive_2',['olive',['../namespacecen_1_1colors.html#a7d1393e04efa5373d19d095a7ee72039',1,'cen::colors']]],
+  ['olive_5fdrab_3',['olive_drab',['../namespacecen_1_1colors.html#adb44b485f347145b23ed861c3fb6ee8c',1,'cen::colors']]],
+  ['on_5fandroid_4',['on_android',['../group__system.html#ga82f5e980ceb412a298fba94520b18ccb',1,'cen']]],
+  ['on_5fapple_5',['on_apple',['../group__system.html#ga47be372c4ad6e74ce8614592034ae064',1,'cen']]],
+  ['on_5fclang_6',['on_clang',['../group__common.html#ga3c1b4ec5c45c2adbd992756468ab093a',1,'cen']]],
+  ['on_5fgcc_7',['on_gcc',['../group__common.html#ga38e9d1a727b8c42a50c54d4e29174acb',1,'cen']]],
+  ['on_5flinux_8',['on_linux',['../group__system.html#ga89847658d86f05d6c3142bff4b3d1c3f',1,'cen']]],
+  ['on_5fmsvc_9',['on_msvc',['../group__common.html#ga536dd3053e832e696a908d66e89af06a',1,'cen']]],
+  ['on_5fwin32_10',['on_win32',['../group__system.html#ga022ba8c017644a8f52bc12307d846d22',1,'cen']]],
+  ['on_5fwin64_11',['on_win64',['../group__system.html#ga0ba2fd57dd31aa4f0050c98c73263270',1,'cen']]],
+  ['on_5fwindows_12',['on_windows',['../group__system.html#gaf00ed6eb14618d1b3f28d42131144fb2',1,'cen']]],
+  ['one_13',['one',['../namespacecen_1_1keycodes.html#adf5d762423e905bca5cbaf7469352888',1,'cen::keycodes::one()'],['../namespacecen_1_1scancodes.html#a4a23c2008a08500c90ddd9711b882f36',1,'cen::scancodes::one()']]],
+  ['op_14',['op',['../structcen_1_1blend__task.html#a9b0908f0bc1f9e77cd23ca55f976a499',1,'cen::blend_task']]],
+  ['orange_15',['orange',['../namespacecen_1_1colors.html#a39c03f597c7cfe6be61b34eea82a34c7',1,'cen::colors']]],
+  ['orange_5fred_16',['orange_red',['../namespacecen_1_1colors.html#a0c536b3488475eb368aedbf797d07cc2',1,'cen::colors']]],
+  ['orchid_17',['orchid',['../namespacecen_1_1colors.html#a5bb65608b3910deabc082cf72e14c52f',1,'cen::colors']]]
 ];

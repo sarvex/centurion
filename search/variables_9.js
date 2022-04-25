@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['j_3252',['j',['../group__input.html#ga8f31e83beb974d592d2fd16676390d78',1,'cen::keycodes::j()'],['../group__input.html#ga246c0edffc279dc0194192ea652d9699',1,'cen::scancodes::j()']]]
+  ['j_0',['j',['../namespacecen_1_1keycodes.html#abb3125c768971807030b98a641d3b2e9',1,'cen::keycodes::j()'],['../namespacecen_1_1scancodes.html#aea4e53550420bbbd53ae3bed73861c39',1,'cen::scancodes::j()']]]
 ];

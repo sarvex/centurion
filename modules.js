@@ -1,14 +1,13 @@
 var modules =
 [
-    [ "Audio", "group__audio.html", "group__audio" ],
-    [ "Compiler", "group__compiler.html", "group__compiler" ],
-    [ "Core", "group__core.html", "group__core" ],
-    [ "Events", "group__event.html", "group__event" ],
+    [ "Audio", "group__audio.html", null ],
+    [ "Common", "group__common.html", "group__common" ],
+    [ "Concurrency", "group__concurrency.html", "group__concurrency" ],
+    [ "Event", "group__event.html", "group__event" ],
     [ "Filesystem", "group__filesystem.html", "group__filesystem" ],
-    [ "Hints", "group__hints.html", "group__hints" ],
+    [ "Text", "group__text.html", "group__text" ],
     [ "Input", "group__input.html", "group__input" ],
-    [ "Math", "group__math.html", "group__math" ],
+    [ "Message box", "group__message-box.html", "group__message-box" ],
     [ "System", "group__system.html", "group__system" ],
-    [ "Threads", "group__thread.html", "group__thread" ],
     [ "Video", "group__video.html", "group__video" ]
 ];

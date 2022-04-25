@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['z_1912',['z',['../structcen_1_1vector3.html#ab31fda1133d4e7b8583b64c39077ca85',1,'cen::vector3::z()'],['../group__input.html#gac6a5ac3024e361a713f7c0331df7fb50',1,'cen::keycodes::z()'],['../group__input.html#ga76909a6711293b81085d0f14033cd9cd',1,'cen::scancodes::z()']]],
-  ['zero_1913',['zero',['../group__input.html#gad56ceef546601040e2d21f58882ccfdd',1,'cen::keycodes::zero()'],['../group__input.html#gae7bcbf10b10494464345f3143da1c3b7',1,'cen::scancodes::zero()'],['../group__video.html#gga5382d86f2c57af07b6d18ff7a14bd9acad02c4c4cde7ae76252540d116a40f23a',1,'cen::zero()']]]
+  ['z_0',['z',['../structcen_1_1basic__vector3.html#acac7be0b8de030a3d89d62d1cdf7bf3b',1,'cen::basic_vector3::z()'],['../namespacecen_1_1keycodes.html#a91321eb103dfcc9004b64f78b6e6fb6f',1,'cen::keycodes::z()'],['../namespacecen_1_1scancodes.html#a2efeb36a6ace5c45ae03363acfd0e28c',1,'cen::scancodes::z()']]],
+  ['zero_1',['zero',['../namespacecen_1_1keycodes.html#a26b4f9606f6bc0f324690b417c07ab78',1,'cen::keycodes::zero()'],['../namespacecen_1_1scancodes.html#a5e87e2af3d94413c3c104aef294b9680',1,'cen::scancodes::zero()'],['../group__video.html#gga775881abd0d0f8e48f03d20303e8f966ad02c4c4cde7ae76252540d116a40f23a',1,'cen::zero()']]]
 ];

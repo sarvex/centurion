@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['gl_5fattribute_3521',['gl_attribute',['../group__video.html#ga0db193ed41c0f20c9dda2efa20c22d70',1,'cen']]],
-  ['gl_5fswap_5finterval_3522',['gl_swap_interval',['../group__video.html#gae16022f0621ec6a930e63f8f57e9c2a2',1,'cen']]]
+  ['gl_5fattribute_0',['gl_attribute',['../group__opengl.html#gad2fd980ea3165bba30330566fd230abb',1,'cen']]],
+  ['gl_5fswap_5finterval_1',['gl_swap_interval',['../group__opengl.html#ga90e35dbbcc444e4aa38fb4b2846f1f3e',1,'cen']]]
 ];

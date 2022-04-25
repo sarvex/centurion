@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['button_5fid_3398',['button_id',['../classcen_1_1message__box.html#a30a2562eff592b0dc6e03bb0e54f4b9a',1,'cen::message_box']]]
+  ['bounded_5farray_5fref_0',['bounded_array_ref',['../group__common.html#gade6b931c80a9e1c6bdd941061d8b0bb9',1,'cen']]],
+  ['button_5fid_1',['button_id',['../classcen_1_1message__box.html#abbee6e3c954bfce0d80d437cb7badda4',1,'cen::message_box']]]
 ];

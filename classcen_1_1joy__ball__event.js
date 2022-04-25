@@ -1,13 +1,13 @@
 var classcen_1_1joy__ball__event =
 [
-    [ "joy_ball_event", "classcen_1_1joy__ball__event.html#aa0c03332ae269f9f31246a9c1f5a8b99", null ],
-    [ "joy_ball_event", "classcen_1_1joy__ball__event.html#a79d6bfea8d29da581ffb6fef13d02d0a", null ],
-    [ "set_which", "classcen_1_1joy__ball__event.html#a1e0f5d57911a2fd5e825d19111583061", null ],
-    [ "set_ball", "classcen_1_1joy__ball__event.html#a4edaec75a024df4a76d665525c61848f", null ],
-    [ "set_dx", "classcen_1_1joy__ball__event.html#ab0405a077d7b188e15e507cf139e104a", null ],
-    [ "set_dy", "classcen_1_1joy__ball__event.html#accccee15856f7e50d4dcfb84658f844f", null ],
-    [ "which", "classcen_1_1joy__ball__event.html#a78ac7f2ad4528f6c1a3551d230f72a91", null ],
-    [ "ball", "classcen_1_1joy__ball__event.html#a517fe0a38c85a3d0fbbb96932ee94de3", null ],
-    [ "dx", "classcen_1_1joy__ball__event.html#a6fd45658f6d392c25adef480a8a4216d", null ],
-    [ "dy", "classcen_1_1joy__ball__event.html#a5f3cfecdf6e7e474edbf94c177b439cd", null ]
+    [ "joy_ball_event", "classcen_1_1joy__ball__event.html#a0cf09a619a17d6b56253974274138176", null ],
+    [ "joy_ball_event", "classcen_1_1joy__ball__event.html#a29b304b7031f42ac788591d9e4818880", null ],
+    [ "set_which", "classcen_1_1joy__ball__event.html#ac21daf884a187d60d417f81234cbb06a", null ],
+    [ "set_ball", "classcen_1_1joy__ball__event.html#adb4a81b464fe711b33a990a6eba08491", null ],
+    [ "set_dx", "classcen_1_1joy__ball__event.html#a94807dc10d5454ac40cf58efda96afd2", null ],
+    [ "set_dy", "classcen_1_1joy__ball__event.html#a9e75f698059fe66854c8527f8a5a89aa", null ],
+    [ "which", "classcen_1_1joy__ball__event.html#aa609823310d5667c692d6cd57924e9df", null ],
+    [ "ball", "classcen_1_1joy__ball__event.html#a74efeb1de12aa16d2ad33ca622461f2f", null ],
+    [ "dx", "classcen_1_1joy__ball__event.html#aba8b8a273447dfe041c90f7e304dd2aa", null ],
+    [ "dy", "classcen_1_1joy__ball__event.html#a79230032c2a925700daab96c2bbc4d10", null ]
 ];

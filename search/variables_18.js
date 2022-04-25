@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['y_3392',['y',['../structcen_1_1touch_1_1finger__state.html#a9356fe8d1494d54a26703ee47133a3d8',1,'cen::touch::finger_state::y()'],['../structcen_1_1vector3.html#a596e523dd26fdffa2f18e818801b40f4',1,'cen::vector3::y()'],['../group__input.html#ga11afefb7283219df1e067cb6700f9ae0',1,'cen::keycodes::y()'],['../group__input.html#ga0b7e30244f08ec15abeab0e9c49dae33',1,'cen::scancodes::y()']]],
-  ['yellow_3393',['yellow',['../group__video.html#gac19bc7454e8f3bbd09d458794e47deda',1,'cen::colors']]],
-  ['yellow_5fgreen_3394',['yellow_green',['../group__video.html#gaa50632ef6b42b2381a9660bdc58c693d',1,'cen::colors']]]
+  ['y_0',['y',['../structcen_1_1controller__finger__state.html#aa4f0d3eebc3c443f9be81bf48561a217',1,'cen::controller_finger_state::y()'],['../structcen_1_1basic__vector3.html#ab08ebdaa6201280aa8192d9c32b06353',1,'cen::basic_vector3::y()'],['../structcen_1_1renderer__scale.html#aa4f0d3eebc3c443f9be81bf48561a217',1,'cen::renderer_scale::y()'],['../namespacecen_1_1keycodes.html#a39783ed77cbe219ddaaa4d7a1f386133',1,'cen::keycodes::y()'],['../namespacecen_1_1scancodes.html#a7142a1853cc53020b2ef2e9e71cb8dac',1,'cen::scancodes::y()']]],
+  ['yellow_1',['yellow',['../namespacecen_1_1colors.html#a298e2903bdb937dbe7d98fd06c8728ea',1,'cen::colors']]],
+  ['yellow_5fgreen_2',['yellow_green',['../namespacecen_1_1colors.html#a9867ff136e3509f20afee9b66cd18046',1,'cen::colors']]]
 ];

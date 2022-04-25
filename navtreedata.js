@@ -43,7 +43,6 @@ var NAVTREE =
       [ "Introduction", "owners-and-handles.html#intro", null ],
       [ "Terminology", "owners-and-handles.html#terminology", null ],
       [ "Syntax", "owners-and-handles.html#syntax", null ],
-      [ "Extensions", "owners-and-handles.html#extensions", null ],
       [ "Examples", "owners-and-handles.html#examples", null ]
     ] ],
     [ "Static Configuration", "configuration.html", [
@@ -63,7 +62,7 @@ var NAVTREE =
       [ "Can I contribute to Centurion?", "page-faq.html#faq-contribution", null ]
     ] ],
     [ "Examples", "page-examples.html", "page-examples" ],
-    [ "Todo List", "todo.html", null ],
+    [ "Deprecated List", "deprecated.html", null ],
     [ "Modules", "modules.html", "modules" ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
@@ -75,6 +74,7 @@ var NAVTREE =
         [ "Enumerations", "namespacemembers_enum.html", null ]
       ] ]
     ] ],
+    [ "Concepts", "concepts.html", "concepts" ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -95,24 +95,16 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classcen_1_1basic__renderer.html#a59d671fd6a3ccd33611e02c441e69511",
-"classcen_1_1basic__window.html#ad351c3efa309518e63878fc2698684af",
-"classcen_1_1font.html#a89fef7ac91a9482382fcbca9cd426a00",
-"classcen_1_1keyboard.html#a08181b86c6c459707a89402a61c3e9b4",
-"classcen_1_1sdl__error.html",
-"group__audio.html#ga105d28e38d848b57dd27f0fa6cdf665e",
-"group__audio.html#ga759253d3ea01d7e559b8da64a75a7a5e",
-"group__audio.html#gga031d8555460da0d56819cb782b4716c3adfff0a7fa1a55c8c1a4966c19f6da452",
-"group__event.html#ga9b2712d8b5e30517463967ebb5ecafc4",
-"group__filesystem.html#ggad4d6d000bfcb17dc8b889d735a346564abf1bc47a384475eb8e5e5008534ee2e1",
-"group__input.html#ga8a64ec0429044deef18f556e27b5a863",
-"group__input.html#gga2101a411ac6025302800a78f9c54fce4a15d61712450a686a7f365adf4fef581f",
-"group__math.html#gaed8d1563c81df056194c1a12b7a250be",
-"group__video.html#ga1a98b7a6490bd623c4547667b81ce547",
-"group__video.html#ga935b7976af930d94a3158cdfafd4bf30",
-"group__video.html#gga0db193ed41c0f20c9dda2efa20c22d70a4f1914ba94592fe927c7c10eac875af9",
-"index.html",
-"structcen_1_1hint_1_1grab__keyboard.html"
+"classcen_1_1basic__sensor.html#a2ca665f40bdac87c89efce69e77a001a",
+"classcen_1_1controller__touchpad__event.html#a6682ad3d4c4a3dcbade46dd7b623a36a",
+"classcen_1_1font__cache.html#af38ce1af42d538f410180c265518d4f0",
+"classcen_1_1palette.html#ad2ccbc72e9777a6a2692d4b297a6ab26",
+"functions_func_v.html",
+"group__filesystem.html#gad7cd68f5f041004164c1ea9bf96a7812",
+"group__math.html#ga0c94295992a014d8b750c13a962a3c68",
+"group__sensor.html",
+"namespacecen_1_1colors.html#a9a21782b65fd1b560fb7c27f730da096",
+"namespacemembers_vars_f.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1,13 +1,13 @@
 var searchData=
 [
-  ['t_3370',['t',['../group__input.html#ga25aa61c8060eab1855d58bb2aa534608',1,'cen::keycodes::t()'],['../group__input.html#gaacda84b51783fd5ddd202abf8b1cfd66',1,'cen::scancodes::t()']]],
-  ['tab_3371',['tab',['../group__input.html#ga33ee6605077c9acf89de9043a7ad7f0f',1,'cen::keycodes::tab()'],['../group__input.html#ga25955b543d866c9b4c7d1f1bf2082b3a',1,'cen::scancodes::tab()']]],
-  ['tan_3372',['tan',['../group__video.html#ga1d67060f449e8e11627d7fb876c4a564',1,'cen::colors']]],
-  ['teal_3373',['teal',['../group__video.html#ga5ac313a0c667c97c948ae7743bbec5e9',1,'cen::colors']]],
-  ['thistle_3374',['thistle',['../group__video.html#gae3c44e2721f72fe5e337726ca64c8e6a',1,'cen::colors']]],
-  ['three_3375',['three',['../group__input.html#ga889c52ddf2edd79fd39d322a9be612a5',1,'cen::keycodes::three()'],['../group__input.html#gaa0394a4a9bf94a2d3d98b25c00fe975c',1,'cen::scancodes::three()']]],
-  ['tomato_3376',['tomato',['../group__video.html#ga123a6bf7b81a56d75ec1b9eab39fb8e8',1,'cen::colors']]],
-  ['transparent_3377',['transparent',['../group__video.html#gaf44a0af69929f38ab89d78119ebc5fdf',1,'cen::colors']]],
-  ['turquoise_3378',['turquoise',['../group__video.html#gad74462279af9fb66ed1210e18ee3b072',1,'cen::colors']]],
-  ['two_3379',['two',['../group__input.html#ga020a5b47594b9beaeeeaadc2cb05554b',1,'cen::keycodes::two()'],['../group__input.html#ga0f593f741b4f5c8e5c59277ee521ce29',1,'cen::scancodes::two()']]]
+  ['t_0',['t',['../namespacecen_1_1keycodes.html#a4b240a8febe1015108a5ae6acbf94c3c',1,'cen::keycodes::t()'],['../namespacecen_1_1scancodes.html#ae7cb8a435d9b90bef8d29e67150ce8cf',1,'cen::scancodes::t()']]],
+  ['tab_1',['tab',['../namespacecen_1_1keycodes.html#ac2e215b394afbce9acdd82226601bf0e',1,'cen::keycodes::tab()'],['../namespacecen_1_1scancodes.html#acb69b1e440256714c7384c75b3e202d4',1,'cen::scancodes::tab()']]],
+  ['tan_2',['tan',['../namespacecen_1_1colors.html#ae8e8334609fbb53edaf4e08ec903a21f',1,'cen::colors']]],
+  ['teal_3',['teal',['../namespacecen_1_1colors.html#a5afb7ef06e117e06ef409c8d17e54c59',1,'cen::colors']]],
+  ['thistle_4',['thistle',['../namespacecen_1_1colors.html#aeab54ab6be51c208548866ce3ca62aa3',1,'cen::colors']]],
+  ['three_5',['three',['../namespacecen_1_1keycodes.html#a06e78922480e4fdb419085dbada2c941',1,'cen::keycodes::three()'],['../namespacecen_1_1scancodes.html#ad583c60b835972589a08e7f8036b40a6',1,'cen::scancodes::three()']]],
+  ['tomato_6',['tomato',['../namespacecen_1_1colors.html#a87b9c034bc70c577bf516cdcee812e0f',1,'cen::colors']]],
+  ['transparent_7',['transparent',['../namespacecen_1_1colors.html#aa7e35454f0ef0de031ee3259d8111369',1,'cen::colors']]],
+  ['turquoise_8',['turquoise',['../namespacecen_1_1colors.html#ad4b9e318707555cbbb859482b600a0c7',1,'cen::colors']]],
+  ['two_9',['two',['../namespacecen_1_1keycodes.html#a7881b63d514a94f4fa9916934238ec9d',1,'cen::keycodes::two()'],['../namespacecen_1_1scancodes.html#a3721f013f132b9516b7c124e2abfafdc',1,'cen::scancodes::two()']]]
 ];

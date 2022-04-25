@@ -1,17 +1,14 @@
 var classcen_1_1thread =
 [
-    [ "task_type", "classcen_1_1thread.html#a8544da2a795262ee4cdd989583ac7123", null ],
-    [ "thread", "classcen_1_1thread.html#a9ff42d542ec7c505a7129f8515351c6b", null ],
-    [ "thread", "classcen_1_1thread.html#afd9f610798263bed048128231912eb81", null ],
-    [ "~thread", "classcen_1_1thread.html#a06e850932f6eff7618e803c1ab592077", null ],
-    [ "operator=", "classcen_1_1thread.html#ad1140a01574ac62177fc21ae9ad8f8d3", null ],
-    [ "detach", "classcen_1_1thread.html#a473c607cab671237bf3cfa2691ace0e3", null ],
-    [ "join", "classcen_1_1thread.html#abdf73f90c6a2a4f3fd03d6e04ddd23d1", null ],
-    [ "joinable", "classcen_1_1thread.html#a5fc5bdd8deeab93a5898947351eebb38", null ],
-    [ "was_joined", "classcen_1_1thread.html#a881fc4e737932c3111ce870951906d78", null ],
-    [ "was_detached", "classcen_1_1thread.html#a14e2e6aaf760dd9dc936811a9a9c4ce5", null ],
-    [ "get_id", "classcen_1_1thread.html#a55a169ddfc4ebc36ae1b9788f6fbe874", null ],
-    [ "name", "classcen_1_1thread.html#ada9f6ae45b09039d545c0af3c9712272", null ],
-    [ "get", "classcen_1_1thread.html#a97cea165187f9a32b6be77c574655aa2", null ],
-    [ "get", "classcen_1_1thread.html#a69d01ce166055fbb5e937d481e45c146", null ]
+    [ "thread", "classcen_1_1thread.html#ae87c9e3ca5338fa31a8f5f2a04802878", null ],
+    [ "~thread", "classcen_1_1thread.html#ad6101d24ef7355aaef472bd520ac7dc6", null ],
+    [ "join", "classcen_1_1thread.html#a991fb4661f0e542dbe656f4e869cfa1a", null ],
+    [ "detach", "classcen_1_1thread.html#a73297c06d2e46aabfc221152bd61ca69", null ],
+    [ "id", "classcen_1_1thread.html#adb19f11399008f65c87a8dde9cb2e290", null ],
+    [ "name", "classcen_1_1thread.html#a82a9c48d6d0aa9eafd722ec3ed82bf8f", null ],
+    [ "joinable", "classcen_1_1thread.html#ab4f63a581c1e83e74b42f885f2cd3904", null ],
+    [ "joined", "classcen_1_1thread.html#a0caa7f5d7a0f324e95d5752e0eae7c62", null ],
+    [ "detached", "classcen_1_1thread.html#a9cd4955fcc911861b62f0f4bf39feea3", null ],
+    [ "data", "classcen_1_1thread.html#aa6dc66d820f0afe88f8c8c3ee41e3c14", null ],
+    [ "data", "classcen_1_1thread.html#a949694c1125a3b971d047b91e58d8283", null ]
 ];

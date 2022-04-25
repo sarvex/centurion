@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['w_3386',['w',['../group__input.html#ga3d661b874bf4a891fcf2c9f29321aa2c',1,'cen::keycodes::w()'],['../group__input.html#ga1d6beaa26253b77418fe84a5b7ae59e3',1,'cen::scancodes::w()']]],
-  ['wheat_3387',['wheat',['../group__video.html#ga297dcd50681c279b0cebc9e4b0256bd1',1,'cen::colors']]],
-  ['white_3388',['white',['../group__video.html#ga5a290edf9f37a8877ac92dfd60d7db25',1,'cen::colors']]],
-  ['white_5fsmoke_3389',['white_smoke',['../group__video.html#gadc68cdf825f348ed6c8829ae7ecdc6a8',1,'cen::colors']]],
-  ['width_3390',['width',['../structcen_1_1basic__area.html#a67e7a56ba8704a8076f70a9382374935',1,'cen::basic_area']]]
+  ['w_0',['w',['../namespacecen_1_1keycodes.html#a6db37ef5a4b6d9989b76d32f8c34a069',1,'cen::keycodes::w()'],['../namespacecen_1_1scancodes.html#aaaef6cfc65fae1cd77b0d0417c400a1e',1,'cen::scancodes::w()']]],
+  ['wheat_1',['wheat',['../namespacecen_1_1colors.html#ae9081fb13825677312e11becd5c9c87c',1,'cen::colors']]],
+  ['white_2',['white',['../namespacecen_1_1colors.html#a451144b88a91c3165d93bbc917264edc',1,'cen::colors']]],
+  ['white_5fsmoke_3',['white_smoke',['../namespacecen_1_1colors.html#ad3a2e7c4ba7291521670dfedd5801f66',1,'cen::colors']]],
+  ['width_4',['width',['../structcen_1_1basic__area.html#a358d552caf0204e03357cbb6d1512204',1,'cen::basic_area']]]
 ];

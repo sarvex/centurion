@@ -1,11 +1,11 @@
 var classcen_1_1controller__axis__event =
 [
-    [ "controller_axis_event", "classcen_1_1controller__axis__event.html#a891d020ead1df4fd696152079ab94397", null ],
-    [ "controller_axis_event", "classcen_1_1controller__axis__event.html#a3e23d1a8eaf72b46d6e9d60bd1f3a207", null ],
-    [ "set_which", "classcen_1_1controller__axis__event.html#af762277c17dd0b3c2453d893015de3b9", null ],
-    [ "set_axis", "classcen_1_1controller__axis__event.html#a030b197ddb8d0ca807461b688ac6426b", null ],
-    [ "set_value", "classcen_1_1controller__axis__event.html#aafd613e2fd5fd991c38f43118d3f947b", null ],
-    [ "which", "classcen_1_1controller__axis__event.html#a04127a5e853b12e21fc49d4165ecdd5f", null ],
-    [ "axis", "classcen_1_1controller__axis__event.html#a842501b0dae1787ea15c32461dc92794", null ],
-    [ "value", "classcen_1_1controller__axis__event.html#a600038363ef65761ca81157d41369736", null ]
+    [ "controller_axis_event", "classcen_1_1controller__axis__event.html#a09e2dbaabd7555677a02db82321957b7", null ],
+    [ "controller_axis_event", "classcen_1_1controller__axis__event.html#af5a7abbd59f21f917420a988eb066eb4", null ],
+    [ "set_which", "classcen_1_1controller__axis__event.html#ac21daf884a187d60d417f81234cbb06a", null ],
+    [ "set_axis", "classcen_1_1controller__axis__event.html#ac2b5bf914ff76eb1244569e44c5308c0", null ],
+    [ "set_value", "classcen_1_1controller__axis__event.html#a444cc0d032f3d766079b770e05551f87", null ],
+    [ "which", "classcen_1_1controller__axis__event.html#aa609823310d5667c692d6cd57924e9df", null ],
+    [ "axis", "classcen_1_1controller__axis__event.html#a6e0aec383b08b1c7328f4b18ee196c1a", null ],
+    [ "value", "classcen_1_1controller__axis__event.html#ac2e6af27d1e2514d0e9fd7c6fff5e4d8", null ]
 ];

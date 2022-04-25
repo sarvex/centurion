@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['joy_5fhat_5fposition_3527',['joy_hat_position',['../group__event.html#ga3014c4847759c6eacbc0f75a90e5caa1',1,'cen']]],
-  ['joystick_5fpower_3528',['joystick_power',['../group__input.html#gaacdee637148c269e0eb2cbedaa0076a4',1,'cen']]],
-  ['joystick_5ftype_3529',['joystick_type',['../group__input.html#ga0fdb54f2d315bb56f64ed18410c0e9cf',1,'cen']]]
+  ['joy_5fhat_5fposition_0',['joy_hat_position',['../group__event.html#gaf2003ca1c675abe2707df2ce2198fad6',1,'cen']]],
+  ['joystick_5fpower_1',['joystick_power',['../group__joystick.html#ga9d37644a7b056f74bd49ed6c94813aa0',1,'cen']]],
+  ['joystick_5ftype_2',['joystick_type',['../group__joystick.html#ga9ebc623128dc34e921ed86c78a4fd13b',1,'cen']]]
 ];

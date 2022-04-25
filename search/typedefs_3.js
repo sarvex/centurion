@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['darea_3411',['darea',['../group__math.html#ga70c6ce95890d23f416b83159e28021f1',1,'cen']]],
-  ['data_5ftype_3412',['data_type',['../classcen_1_1controller__sensor__event.html#ac9aed98d9694309eeb8ee3a3e740c4e3',1,'cen::controller_sensor_event::data_type()'],['../classcen_1_1sensor__event.html#ae848b3d2b52b62f032bc29a7825f6b41',1,'cen::sensor_event::data_type()']]],
-  ['difference_5ftype_3413',['difference_type',['../classcen_1_1unicode__string.html#a4ce937444cc7ca1fe7da47f678b4aadb',1,'cen::unicode_string']]],
-  ['direction_5ftype_3414',['direction_type',['../classcen_1_1haptic__direction.html#ab29fd80841c6476d368c6e7ecb3b9829',1,'cen::haptic_direction']]]
+  ['data_5ftype_0',['data_type',['../classcen_1_1sensor__event.html#acb435559730321701c87f180939d6706',1,'cen::sensor_event::data_type()'],['../classcen_1_1basic__sensor.html#a091a2fe4c22cad3ba668ca2332537f83',1,'cen::basic_sensor::data_type()'],['../structcen_1_1basic__window_1_1icc__profile__data.html#adfab3b425091f5d5291be3ab192f1a8a',1,'cen::basic_window::icc_profile_data::data_type()']]],
+  ['device_5findex_1',['device_index',['../classcen_1_1basic__joystick.html#a2afad9f01282d85509cec124f6506a4e',1,'cen::basic_joystick::device_index()'],['../classcen_1_1basic__sensor.html#a2afad9f01282d85509cec124f6506a4e',1,'cen::basic_sensor::device_index()']]]
 ];

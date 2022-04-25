@@ -1,13 +1,10 @@
 var searchData=
 [
-  ['valid_5farg_3094',['valid_arg',['../classcen_1_1hint_1_1enum__hint.html#a02b88e2cd843871c4439039e866a9507',1,'cen::hint::enum_hint']]],
-  ['value_3095',['value',['../classcen_1_1controller__axis__event.html#a600038363ef65761ca81157d41369736',1,'cen::controller_axis_event::value()'],['../classcen_1_1joy__axis__event.html#a3cc642d1074818b1c100ebb1a0982323',1,'cen::joy_axis_event::value()'],['../classcen_1_1haptic__direction.html#a34271c0ddf18e8a9d188a164256c08a4',1,'cen::haptic_direction::value()']]],
-  ['vendor_3096',['vendor',['../classcen_1_1basic__controller.html#ae3111864ef4fefcf10487ba5d2ff3bca',1,'cen::basic_controller::vendor()'],['../classcen_1_1basic__joystick.html#a5cac67ca458ea368697a0309d61663ac',1,'cen::basic_joystick::vendor() const noexcept -&gt; std::optional&lt; u16 &gt;'],['../classcen_1_1basic__joystick.html#a0bce10e6116c4d018cd3cfd5f158b454',1,'cen::basic_joystick::vendor(const int deviceIndex) noexcept -&gt; std::optional&lt; u16 &gt;']]],
-  ['version_3097',['version',['../classcen_1_1palette.html#a5d36d1452d9fca369e8395d4ffc68d96',1,'cen::palette']]],
-  ['vertical_5fdpi_3098',['vertical_dpi',['../namespacecen_1_1screen.html#a53292357d526bbdc2c82f10f154722f1',1,'cen::screen']]],
-  ['video_5fdriver_5fcount_3099',['video_driver_count',['../group__video.html#ga6cd40c2531924c61c77ce6b5f785f26c',1,'cen']]],
-  ['viewport_3100',['viewport',['../classcen_1_1basic__renderer.html#ae5afd7667997d950f49e1d2f7a99ba40',1,'cen::basic_renderer']]],
-  ['visible_3101',['visible',['../classcen_1_1basic__cursor.html#a46946afa880d2168bd5b27710d8d4008',1,'cen::basic_cursor']]],
-  ['vk_5flibrary_3102',['vk_library',['../classcen_1_1vk__library.html#ab39bf8f454e139b8e63bf73d3f94134c',1,'cen::vk_library::vk_library(const str path=nullptr)'],['../classcen_1_1vk__library.html#a564c8d07bdf711d1124811642324b290',1,'cen::vk_library::vk_library(const vk_library &amp;)=delete'],['../classcen_1_1vk__library.html#a299db595319562367cf080ecd15c1454',1,'cen::vk_library::vk_library(vk_library &amp;&amp;)=delete']]],
-  ['volume_3103',['volume',['../classcen_1_1music.html#aab9c9410c23f248ea7a8b1135476d965',1,'cen::music::volume()'],['../classcen_1_1basic__sound__effect.html#ac1d8b943299a2de82f68d4355baa03e1',1,'cen::basic_sound_effect::volume()']]]
+  ['value_0',['value',['../classcen_1_1controller__axis__event.html#ac2e6af27d1e2514d0e9fd7c6fff5e4d8',1,'cen::controller_axis_event::value()'],['../classcen_1_1joy__axis__event.html#ac2e6af27d1e2514d0e9fd7c6fff5e4d8',1,'cen::joy_axis_event::value()']]],
+  ['vendor_1',['vendor',['../classcen_1_1basic__controller.html#abdb267a91cee950b0b4de16d68a286f1',1,'cen::basic_controller::vendor()'],['../classcen_1_1basic__joystick.html#abdb267a91cee950b0b4de16d68a286f1',1,'cen::basic_joystick::vendor() const noexcept -&gt; std::optional&lt; uint16 &gt;'],['../classcen_1_1basic__joystick.html#ab293582f0ae4a964ec228dc05df1d6a4',1,'cen::basic_joystick::vendor(const device_index index) noexcept -&gt; std::optional&lt; uint16 &gt;']]],
+  ['version_2',['version',['../classcen_1_1palette.html#a5082359761a325fb6ec68442b325071c',1,'cen::palette']]],
+  ['video_5fdriver_5fcount_3',['video_driver_count',['../group__render.html#ga6cd40c2531924c61c77ce6b5f785f26c',1,'cen']]],
+  ['viewport_4',['viewport',['../classcen_1_1basic__renderer.html#a908962795f399d7d665b61379b6feb26',1,'cen::basic_renderer']]],
+  ['visible_5',['visible',['../classcen_1_1basic__cursor.html#abbfbb52e6d3efe32baf00eb527b1c53a',1,'cen::basic_cursor']]],
+  ['vk_5flibrary_6',['vk_library',['../classcen_1_1vk__library.html#a66dac99cd1ee494536a06dadcf9414ef',1,'cen::vk_library']]]
 ];

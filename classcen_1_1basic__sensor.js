@@ -1,13 +1,16 @@
 var classcen_1_1basic__sensor =
 [
-    [ "basic_sensor", "classcen_1_1basic__sensor.html#a153f126822bb0584f3f9c8c408d43d06", null ],
-    [ "basic_sensor", "classcen_1_1basic__sensor.html#a87d0009c3f80789d7e6a9b8a383e8660", null ],
-    [ "basic_sensor", "classcen_1_1basic__sensor.html#a0bb3e35e29c404fbdf7622c2e35320c8", null ],
-    [ "id", "classcen_1_1basic__sensor.html#a5984bca2e8706532bec1ce5cfee22445", null ],
-    [ "name", "classcen_1_1basic__sensor.html#ab7f3bad56c29048343da88fcf721a96c", null ],
-    [ "type", "classcen_1_1basic__sensor.html#a4a8c668c12b3a6be5969f222628aa3a3", null ],
-    [ "non_portable_type", "classcen_1_1basic__sensor.html#a836d515a35f0b3299e79a0d264b774cb", null ],
-    [ "data", "classcen_1_1basic__sensor.html#ab571dfa65e117774cffd8902a61ee310", null ],
-    [ "get", "classcen_1_1basic__sensor.html#a591634f59da8a5c5c2942897443e924e", null ],
-    [ "operator bool", "classcen_1_1basic__sensor.html#a075358eda58ea5aebe6282ec004e6b14", null ]
+    [ "device_index", "classcen_1_1basic__sensor.html#a2afad9f01282d85509cec124f6506a4e", null ],
+    [ "size_type", "classcen_1_1basic__sensor.html#af38ce1af42d538f410180c265518d4f0", null ],
+    [ "data_type", "classcen_1_1basic__sensor.html#a091a2fe4c22cad3ba668ca2332537f83", null ],
+    [ "basic_sensor", "classcen_1_1basic__sensor.html#a7a91fb9ffa7ed12fca6af2a8a6e2a61c", null ],
+    [ "basic_sensor", "classcen_1_1basic__sensor.html#a102c853206f9082ab7da5d109e6dea0c", null ],
+    [ "basic_sensor", "classcen_1_1basic__sensor.html#a12f7b4694ab1f1f62465ce7d1e042e04", null ],
+    [ "name", "classcen_1_1basic__sensor.html#a9bd605e34571537cf40aab45f69cc577", null ],
+    [ "type", "classcen_1_1basic__sensor.html#a2ca665f40bdac87c89efce69e77a001a", null ],
+    [ "non_portable_type", "classcen_1_1basic__sensor.html#ad7ec4eb163297ffe3e3b6ccdc652a00e", null ],
+    [ "id", "classcen_1_1basic__sensor.html#a633aa00d42db11e4282f954cd5a43c4d", null ],
+    [ "data", "classcen_1_1basic__sensor.html#a2eaae77b9f65a340877b6c189295c62b", null ],
+    [ "get", "classcen_1_1basic__sensor.html#af9902100b11d4be438d5cda942b6783a", null ],
+    [ "operator bool", "classcen_1_1basic__sensor.html#a5bd22283effc54c70cc24db49d9a97c9", null ]
 ];

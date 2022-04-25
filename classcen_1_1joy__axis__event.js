@@ -1,11 +1,11 @@
 var classcen_1_1joy__axis__event =
 [
-    [ "joy_axis_event", "classcen_1_1joy__axis__event.html#ae51596dd29ad00907700be3904383f59", null ],
-    [ "joy_axis_event", "classcen_1_1joy__axis__event.html#a91cb1e7c06dd884162b6892e9033be27", null ],
-    [ "set_which", "classcen_1_1joy__axis__event.html#a6e42cc85a13eda8456154f694febdb7e", null ],
-    [ "set_axis", "classcen_1_1joy__axis__event.html#a592308c0083fd2e8424966ab52529865", null ],
-    [ "set_value", "classcen_1_1joy__axis__event.html#ad732f6b317ccd5cfc73efd2565c4d755", null ],
-    [ "which", "classcen_1_1joy__axis__event.html#a67760ec3d7ebe0252473380f8ace89e9", null ],
-    [ "axis", "classcen_1_1joy__axis__event.html#a5410120eefa9ac994d018af4631ee64d", null ],
-    [ "value", "classcen_1_1joy__axis__event.html#a3cc642d1074818b1c100ebb1a0982323", null ]
+    [ "joy_axis_event", "classcen_1_1joy__axis__event.html#adb7a024db7a228770d0b398363cae43a", null ],
+    [ "joy_axis_event", "classcen_1_1joy__axis__event.html#ad3bd8e1868b47b87bfcd7b806064c159", null ],
+    [ "set_which", "classcen_1_1joy__axis__event.html#ac21daf884a187d60d417f81234cbb06a", null ],
+    [ "set_axis", "classcen_1_1joy__axis__event.html#a388f8198fb0f0a802952778db88a5942", null ],
+    [ "set_value", "classcen_1_1joy__axis__event.html#a444cc0d032f3d766079b770e05551f87", null ],
+    [ "which", "classcen_1_1joy__axis__event.html#aa609823310d5667c692d6cd57924e9df", null ],
+    [ "axis", "classcen_1_1joy__axis__event.html#a9860bf4229315bda068acb3883277a05", null ],
+    [ "value", "classcen_1_1joy__axis__event.html#ac2e6af27d1e2514d0e9fd7c6fff5e4d8", null ]
 ];

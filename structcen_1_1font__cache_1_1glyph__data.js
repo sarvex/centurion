@@ -1,5 +1,5 @@
 var structcen_1_1font__cache_1_1glyph__data =
 [
-    [ "cached", "structcen_1_1font__cache_1_1glyph__data.html#a6e20347ed5cfb6a124b80d81ee5e2e29", null ],
-    [ "metrics", "structcen_1_1font__cache_1_1glyph__data.html#ae7ab67cf4b678dc28063774b62f5954c", null ]
+    [ "glyph", "structcen_1_1font__cache_1_1glyph__data.html#a80042b861944b01bf5e840aa4b479220", null ],
+    [ "metrics", "structcen_1_1font__cache_1_1glyph__data.html#aac309e3ce374d134f5928f7282613490", null ]
 ];

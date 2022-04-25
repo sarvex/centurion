@@ -1,16 +1,16 @@
 var searchData=
 [
-  ['p_3325',['p',['../group__input.html#ga8f953df5f6dfd2c69b4354748e23c153',1,'cen::keycodes::p()'],['../group__input.html#gade986a742563f2bac2b5e422e1d44f61',1,'cen::scancodes::p()']]],
-  ['pale_5fgolden_5frod_3326',['pale_golden_rod',['../group__video.html#gaf4255648def9316ff5080d984e69b6d9',1,'cen::colors']]],
-  ['pale_5fgreen_3327',['pale_green',['../group__video.html#ga935b7976af930d94a3158cdfafd4bf30',1,'cen::colors']]],
-  ['pale_5fturquoise_3328',['pale_turquoise',['../group__video.html#ga8c56e9cce71260ff74e8435441e60638',1,'cen::colors']]],
-  ['pale_5fviolet_5fred_3329',['pale_violet_red',['../group__video.html#gaf292dc716cfef09e0922a666c04c5904',1,'cen::colors']]],
-  ['papaya_5fwhip_3330',['papaya_whip',['../group__video.html#ga9e0577045c29d82041c677daa129d969',1,'cen::colors']]],
-  ['peach_5fpuff_3331',['peach_puff',['../group__video.html#gae4b21a033ad86d36e5cc89df4428fac8',1,'cen::colors']]],
-  ['peru_3332',['peru',['../group__video.html#gabefaf538cdbcdb48191bb539b4fd9f49',1,'cen::colors']]],
-  ['pink_3333',['pink',['../group__video.html#ga5cd6983ebe3e5206283d45fa36c8ea16',1,'cen::colors']]],
-  ['plum_3334',['plum',['../group__video.html#ga6eecab0bb97f571730ae306e420f427b',1,'cen::colors']]],
-  ['powder_5fblue_3335',['powder_blue',['../group__video.html#gab42d5d087b318bed8aca2d4a18fcb922',1,'cen::colors']]],
-  ['pressure_3336',['pressure',['../structcen_1_1touch_1_1finger__state.html#a34a669c5a112c3ea18bf07b095c0c801',1,'cen::touch::finger_state']]],
-  ['purple_3337',['purple',['../group__video.html#ga29b13fda8267ae446ec425f8a634586c',1,'cen::colors']]]
+  ['p_0',['p',['../namespacecen_1_1keycodes.html#a94a7fc5d010f4545613c0196f1ceb36c',1,'cen::keycodes::p()'],['../namespacecen_1_1scancodes.html#a2d62fb1a91a2159c4096353d436a0466',1,'cen::scancodes::p()']]],
+  ['pale_5fgolden_5frod_1',['pale_golden_rod',['../namespacecen_1_1colors.html#a5f18c08a726b97c129c066cc1acb09bb',1,'cen::colors']]],
+  ['pale_5fgreen_2',['pale_green',['../namespacecen_1_1colors.html#a5b9d5941d0ef41b4590634c1c7b67828',1,'cen::colors']]],
+  ['pale_5fturquoise_3',['pale_turquoise',['../namespacecen_1_1colors.html#a60822149d00c50574e7a7e8fd605bb66',1,'cen::colors']]],
+  ['pale_5fviolet_5fred_4',['pale_violet_red',['../namespacecen_1_1colors.html#aa79db34b64756e8d3754ebf612534e1e',1,'cen::colors']]],
+  ['papaya_5fwhip_5',['papaya_whip',['../namespacecen_1_1colors.html#a16e4c21436282a017c603691f2759088',1,'cen::colors']]],
+  ['peach_5fpuff_6',['peach_puff',['../namespacecen_1_1colors.html#a94784701b3a45291d2a639a061dac08c',1,'cen::colors']]],
+  ['peru_7',['peru',['../namespacecen_1_1colors.html#ac886e6ee552805166aca076014500c57',1,'cen::colors']]],
+  ['pink_8',['pink',['../namespacecen_1_1colors.html#aa6e729805fd76032fc583e6ff1f3e157',1,'cen::colors']]],
+  ['plum_9',['plum',['../namespacecen_1_1colors.html#a45f27b2b286812a7867f83000d160a5a',1,'cen::colors']]],
+  ['powder_5fblue_10',['powder_blue',['../namespacecen_1_1colors.html#aa2c6838aff47a3bfa58aeb184d6ddfc6',1,'cen::colors']]],
+  ['pressure_11',['pressure',['../structcen_1_1controller__finger__state.html#ac870e1249bab4a2a68cc4126761d24ef',1,'cen::controller_finger_state']]],
+  ['purple_12',['purple',['../namespacecen_1_1colors.html#a9f1d62396498d2b4fa9959676f68e541',1,'cen::colors']]]
 ];

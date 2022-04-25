@@ -1,7 +1,7 @@
 var classcen_1_1controller__device__event =
 [
-    [ "controller_device_event", "classcen_1_1controller__device__event.html#ad8e208bafc8d829e10e3dbf75e64b6b9", null ],
-    [ "controller_device_event", "classcen_1_1controller__device__event.html#a362b586d703284786fb40d6018f8a539", null ],
-    [ "set_which", "classcen_1_1controller__device__event.html#aef0d2d78ace8b0ba697a12960abc0be2", null ],
-    [ "which", "classcen_1_1controller__device__event.html#a95360a763d328085b66ee7302111cd67", null ]
+    [ "controller_device_event", "classcen_1_1controller__device__event.html#a777b462c38122d3c8e5f6dd455d0ae01", null ],
+    [ "controller_device_event", "classcen_1_1controller__device__event.html#adabbc039204c30d8dc4853d32a965b2e", null ],
+    [ "set_which", "classcen_1_1controller__device__event.html#ae05616ee75178ee493285d5100ccd8b7", null ],
+    [ "which", "classcen_1_1controller__device__event.html#a6b53632bc5048ac9c25dff0b4c24e83d", null ]
 ];

@@ -1,0 +1,46 @@
+var group__logging =
+[
+    [ "cen::log_priority", "group__logging.html#ga87e2b0bdb074915521f34ea7e53d9c54", [
+      [ "cen::log_priority::verbose", "group__logging.html#gga87e2b0bdb074915521f34ea7e53d9c54a2c7aea4237e25b4f8ee3b0bf77d6fed0", null ],
+      [ "cen::log_priority::debug", "group__logging.html#gga87e2b0bdb074915521f34ea7e53d9c54aad42f6697b035b7580e4fef93be20b4d", null ],
+      [ "cen::log_priority::info", "group__logging.html#gga87e2b0bdb074915521f34ea7e53d9c54acaf9b6b99962bf5c2264824231d7a40c", null ],
+      [ "cen::log_priority::warn", "group__logging.html#gga87e2b0bdb074915521f34ea7e53d9c54a1ea4c3ab05ee0c6d4de30740443769cb", null ],
+      [ "cen::log_priority::error", "group__logging.html#gga87e2b0bdb074915521f34ea7e53d9c54acb5e100e5a9a3e7f6d1fd97512215282", null ],
+      [ "cen::log_priority::critical", "group__logging.html#gga87e2b0bdb074915521f34ea7e53d9c54a7e85bcb66fb9a809d5ab4f62a8b8bea8", null ]
+    ] ],
+    [ "cen::log_category", "group__logging.html#ga3a6b7415e80b54dc6e6cff5d4451bc00", [
+      [ "cen::log_category::app", "group__logging.html#gga3a6b7415e80b54dc6e6cff5d4451bc00ad2a57dc1d883fd21fb9951699df71cc7", null ],
+      [ "cen::log_category::error", "group__logging.html#gga3a6b7415e80b54dc6e6cff5d4451bc00acb5e100e5a9a3e7f6d1fd97512215282", null ],
+      [ "cen::log_category::assert", "group__logging.html#gga3a6b7415e80b54dc6e6cff5d4451bc00ae44e4612f62d2fb8f8738bab118a9850", null ],
+      [ "cen::log_category::system", "group__logging.html#gga3a6b7415e80b54dc6e6cff5d4451bc00a54b53072540eeeb8f8e9343e71f28176", null ],
+      [ "cen::log_category::audio", "group__logging.html#gga3a6b7415e80b54dc6e6cff5d4451bc00aa5ca0b5894324f8bb54bb9fffad29d1e", null ],
+      [ "cen::log_category::video", "group__logging.html#gga3a6b7415e80b54dc6e6cff5d4451bc00a421b47ffd946ca083b65cd668c6b17e6", null ],
+      [ "cen::log_category::render", "group__logging.html#gga3a6b7415e80b54dc6e6cff5d4451bc00a9e5f0bb330344d580b9e30d338d6ab6d", null ],
+      [ "cen::log_category::input", "group__logging.html#gga3a6b7415e80b54dc6e6cff5d4451bc00aa43c1b0aa53a0c908810c06ab1ff3967", null ],
+      [ "cen::log_category::test", "group__logging.html#gga3a6b7415e80b54dc6e6cff5d4451bc00a098f6bcd4621d373cade4e832627b4f6", null ],
+      [ "cen::log_category::custom", "group__logging.html#gga3a6b7415e80b54dc6e6cff5d4451bc00a8b9035807842a4e4dbe009f3f1478127", null ]
+    ] ],
+    [ "cen::to_string", "group__logging.html#ga89b09833a5ee2548f6459b71cbb00ce2", null ],
+    [ "cen::operator<<", "group__logging.html#ga287754dc3b061659402513a3c2ab055c", null ],
+    [ "cen::is_custom", "group__logging.html#gab997b1bec8e0d123bcfd037d646919b4", null ],
+    [ "cen::to_string", "group__logging.html#ga759253d3ea01d7e559b8da64a75a7a5e", null ],
+    [ "cen::operator<<", "group__logging.html#gac302c63cae8ff892a35f1243d3c2cbb8", null ],
+    [ "cen::reset_log_priorities", "group__logging.html#ga84a5d970879461ce72efaa40ad32c7c3", null ],
+    [ "cen::set_priority", "group__logging.html#ga251049378335206737580f287b297b05", null ],
+    [ "cen::set_priority", "group__logging.html#ga128ba69cfc861c864380bbc231a87e85", null ],
+    [ "cen::get_priority", "group__logging.html#ga93959f2899880e8da5364908e136dc4f", null ],
+    [ "cen::max_log_message_size", "group__logging.html#gaecdcb0c789058314da401e26811fa146", null ],
+    [ "cen::log", "group__logging.html#ga7a2ec6c84cd1d5754efd5cc7a0fb6981", null ],
+    [ "cen::log_verbose", "group__logging.html#ga006e41254fa65fcc1635241f8ebd06ca", null ],
+    [ "cen::log_verbose", "group__logging.html#ga79b9132f7e05d4b32bf305255307c94c", null ],
+    [ "cen::log_debug", "group__logging.html#ga663459e2527a371a277187fba91a5940", null ],
+    [ "cen::log_debug", "group__logging.html#ga0891ed7e5ccc309e23d70b12f5cac3a3", null ],
+    [ "cen::log_info", "group__logging.html#ga938504e56b56df3968ec46a4aed7ac38", null ],
+    [ "cen::log_info", "group__logging.html#ga052955cb6b22893967d4a2bacfce04e3", null ],
+    [ "cen::log_warn", "group__logging.html#ga6e541beaa327818c3b6f5d382b3eda7d", null ],
+    [ "cen::log_warn", "group__logging.html#ga72cd21d0b657f54d4c48b360471f6f8f", null ],
+    [ "cen::log_error", "group__logging.html#ga777b9f8a395da636da68fec831c65946", null ],
+    [ "cen::log_error", "group__logging.html#gab8dee9ec172a3fa51d033f444e5ad73f", null ],
+    [ "cen::log_critical", "group__logging.html#ga3e17fa87a51652097da716bace8212f9", null ],
+    [ "cen::log_critical", "group__logging.html#ga555a2f262115812f7ee6828413ffb289", null ]
+];

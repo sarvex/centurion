@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['dynamic_20configuration_3967',['Dynamic Configuration',['../page-custom-configuration.html',1,'page-examples']]]
+  ['deprecated_20list_0',['Deprecated List',['../deprecated.html',1,'']]],
+  ['dynamic_20configuration_1',['Dynamic Configuration',['../page-custom-configuration.html',1,'page-examples']]]
 ];

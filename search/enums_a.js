@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['mapping_5fresult_3534',['mapping_result',['../classcen_1_1basic__controller.html#abe417bbdffc8ad5e023989a33ecb98eb',1,'cen::basic_controller']]],
-  ['message_5fbox_5ftype_3535',['message_box_type',['../group__video.html#gaad63d73213e62b11edf9533fb7b34597',1,'cen']]],
-  ['mouse_5fbutton_3536',['mouse_button',['../group__input.html#ga2783619b1566fca313d4a8e7835c91a0',1,'cen']]],
-  ['mouse_5fwheel_5fdirection_3537',['mouse_wheel_direction',['../group__event.html#ga854c0b92c2b3c8277b87d3a99196372d',1,'cen']]],
-  ['music_5ftype_3538',['music_type',['../group__audio.html#ga031d8555460da0d56819cb782b4716c3',1,'cen']]]
+  ['message_5fbox_5fbutton_5forder_0',['message_box_button_order',['../group__message-box.html#ga5bb0733de51aa009e5ae9e639aee2031',1,'cen']]],
+  ['message_5fbox_5fcolor_5ftype_1',['message_box_color_type',['../group__message-box.html#ga52020ebcb6a229b166b1371a72439a73',1,'cen']]],
+  ['message_5fbox_5ftype_2',['message_box_type',['../group__message-box.html#gaa122c98ded301158f82d2ca5f298ca52',1,'cen']]],
+  ['mouse_5fbutton_3',['mouse_button',['../group__mouse.html#ga659387a639623fa1c4eac6a154b16f96',1,'cen']]],
+  ['mouse_5fwheel_5fdirection_4',['mouse_wheel_direction',['../group__event.html#ga79e5c6c934460fe1c19a500c96571271',1,'cen']]]
 ];

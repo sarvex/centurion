@@ -1,18 +1,15 @@
 var searchData=
 [
-  ['k_948',['k',['../group__input.html#ga0493edcb92e5fe0ca3a78aa7a29efe93',1,'cen::keycodes::k()'],['../group__input.html#gaea7804dd3692c94a5f4c9c1693de3c88',1,'cen::scancodes::k()']]],
-  ['kerning_5famount_949',['kerning_amount',['../classcen_1_1font.html#aaacfe144b40c071c6b6c6af26c1389a3',1,'cen::font']]],
-  ['key_950',['key',['../classcen_1_1keyboard__event.html#af5d30f3640bf4280ed40ae7caa50b67a',1,'cen::keyboard_event']]],
-  ['key_5fcode_951',['key_code',['../classcen_1_1key__code.html',1,'cen::key_code'],['../classcen_1_1key__code.html#a246f02a4048766c4707bf2b595244200',1,'cen::key_code::key_code() noexcept=default'],['../classcen_1_1key__code.html#ad3cdf9a121ff90b06d84828f1bfcdac3',1,'cen::key_code::key_code(const key_code &amp;) noexcept=default'],['../classcen_1_1key__code.html#a29c836842683611ed303c4c8e19770cf',1,'cen::key_code::key_code(key_code &amp;&amp;) noexcept=default'],['../classcen_1_1key__code.html#a8448c8e0ec518174de4c56c40f4a99c9',1,'cen::key_code::key_code(const SDL_KeyCode key) noexcept'],['../classcen_1_1key__code.html#ab7d79a03b03df26cef2a8534b92d5fd6',1,'cen::key_code::key_code(const SDL_Scancode scancode) noexcept'],['../classcen_1_1key__code.html#aec746e7b87a963a326a9109acdeaf633',1,'cen::key_code::key_code(const not_null&lt; str &gt; name) noexcept'],['../classcen_1_1key__code.html#a2de6cab2ad9a370198126351fc5d75ad',1,'cen::key_code::key_code(const std::string &amp;name) noexcept']]],
-  ['key_5fcount_952',['key_count',['../classcen_1_1keyboard.html#af0bf21c68dbdee9f49c388c2ebb51051',1,'cen::keyboard']]],
-  ['key_5fdown_953',['key_down',['../group__event.html#ggaa96233ec6356fc786c810d6aaf5e939ba88aee4617a01e1e5da7f11f3b5fb7ac0',1,'cen']]],
-  ['key_5fmod_954',['key_mod',['../group__input.html#ga1e670ac17f14b9de2ee7391e1c5630c2',1,'cen']]],
-  ['key_5fmodifier_955',['key_modifier',['../group__input.html#ga2101a411ac6025302800a78f9c54fce4',1,'cen']]],
-  ['key_5fup_956',['key_up',['../group__event.html#ggaa96233ec6356fc786c810d6aaf5e939ba2d19def4e5861d6d2e62450fcc84cb97',1,'cen']]],
-  ['keyboard_957',['keyboard',['../classcen_1_1keyboard.html',1,'cen::keyboard'],['../classcen_1_1keyboard.html#af4d7164038e1842c5dc4a79eaaae720e',1,'cen::keyboard::keyboard()']]],
-  ['keyboard_5felement_958',['keyboard_element',['../structcen_1_1hint_1_1emscripten_1_1keyboard__element.html',1,'cen::hint::emscripten']]],
-  ['keyboard_5fevent_959',['keyboard_event',['../classcen_1_1keyboard__event.html',1,'cen::keyboard_event'],['../classcen_1_1keyboard__event.html#a6dbf594bf29f61e43e10386b363f3773',1,'cen::keyboard_event::keyboard_event(const SDL_KeyboardEvent &amp;event) noexcept'],['../classcen_1_1keyboard__event.html#aa93d5f15c4f18f2f0bc7f7656813036b',1,'cen::keyboard_event::keyboard_event() noexcept']]],
-  ['keyboard_5ffocus_5fwindow_960',['keyboard_focus_window',['../group__video.html#ga792d5524a1cf4f5954bffc346cfba949',1,'cen']]],
-  ['keymap_5fchanged_961',['keymap_changed',['../group__event.html#ggaa96233ec6356fc786c810d6aaf5e939ba587c13d591880465ffc356f94463852c',1,'cen']]],
-  ['khaki_962',['khaki',['../group__video.html#gac588c03b1ad992a8db94f5b846b2dbad',1,'cen::colors']]]
+  ['k_0',['k',['../namespacecen_1_1keycodes.html#a0c09e5750907e1762e93c796264ef8c8',1,'cen::keycodes::k()'],['../namespacecen_1_1scancodes.html#ae493b8c4cd0239167b86c348f0ff807e',1,'cen::scancodes::k()']]],
+  ['key_1',['key',['../classcen_1_1keyboard__event.html#af5a4d7489a268025d13cb4ec129ccab4',1,'cen::keyboard_event']]],
+  ['key_5fcode_2',['key_code',['../classcen_1_1key__code.html',1,'key_code'],['../classcen_1_1key__code.html#af9ea7ba4c304fc9a3cb1f42e601f8008',1,'cen::key_code::key_code() noexcept=default'],['../classcen_1_1key__code.html#ae4d32cd1c9fced16718f7757ff1e5f36',1,'cen::key_code::key_code(const key_code &amp;) noexcept=default'],['../classcen_1_1key__code.html#a1325a055a7360b840c58a45df210dc56',1,'cen::key_code::key_code(key_code &amp;&amp;) noexcept=default'],['../classcen_1_1key__code.html#a08103a1d5880c5d058bb21bcf6094c13',1,'cen::key_code::key_code(const SDL_KeyCode key) noexcept'],['../classcen_1_1key__code.html#a58cd5946816bf4d01e1f604cbc13db23',1,'cen::key_code::key_code(const SDL_Scancode scancode) noexcept'],['../classcen_1_1key__code.html#a45caf0b552dbdd3617c56b697458495c',1,'cen::key_code::key_code(const char *name) noexcept'],['../classcen_1_1key__code.html#a479a7d7de6840ed7bb9d62089c37508b',1,'cen::key_code::key_code(const std::string &amp;name) noexcept']]],
+  ['key_5fdown_3',['key_down',['../group__event.html#ggaeb4d53edaa173984689adc358463ecada88aee4617a01e1e5da7f11f3b5fb7ac0',1,'cen']]],
+  ['key_5fmod_4',['key_mod',['../group__keyboard.html#ga27a8c495c13f2ed96dc549b9cbdaf73c',1,'cen']]],
+  ['key_5fup_5',['key_up',['../group__event.html#ggaeb4d53edaa173984689adc358463ecada2d19def4e5861d6d2e62450fcc84cb97',1,'cen']]],
+  ['keyboard_6',['keyboard',['../classcen_1_1keyboard.html',1,'cen']]],
+  ['keyboard_7',['Keyboard',['../group__keyboard.html',1,'']]],
+  ['keyboard_8',['keyboard',['../classcen_1_1keyboard.html#a7c8770c1c1019c4d449379750cf3a4ed',1,'cen::keyboard']]],
+  ['keyboard_5fevent_9',['keyboard_event',['../classcen_1_1keyboard__event.html',1,'keyboard_event'],['../classcen_1_1keyboard__event.html#a8db69b13da09f420dcb36b88bd8f7d83',1,'cen::keyboard_event::keyboard_event(const SDL_KeyboardEvent &amp;event) noexcept'],['../classcen_1_1keyboard__event.html#a76c934c224cbcb94790e5dedbf3cca48',1,'cen::keyboard_event::keyboard_event()']]],
+  ['keymap_5fchanged_10',['keymap_changed',['../group__event.html#ggaeb4d53edaa173984689adc358463ecada587c13d591880465ffc356f94463852c',1,'cen']]],
+  ['khaki_11',['khaki',['../namespacecen_1_1colors.html#a917892396fa2fc7014b15437a3a32708',1,'cen::colors']]]
 ];

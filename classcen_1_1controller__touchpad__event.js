@@ -1,17 +1,17 @@
 var classcen_1_1controller__touchpad__event =
 [
-    [ "controller_touchpad_event", "classcen_1_1controller__touchpad__event.html#a9a20a0b101532880013e1417fd2d1f85", null ],
-    [ "controller_touchpad_event", "classcen_1_1controller__touchpad__event.html#aa7df3f8774d7b1d86b54f2232b9f84a3", null ],
-    [ "set_which", "classcen_1_1controller__touchpad__event.html#aa79f19006d04633764ef119501c34555", null ],
-    [ "set_touchpad_index", "classcen_1_1controller__touchpad__event.html#ab657b160c1d2f5a461928b5fa71eaa3d", null ],
-    [ "set_finger_index", "classcen_1_1controller__touchpad__event.html#a900d17bdb03b04735c3578e522c50413", null ],
-    [ "set_x", "classcen_1_1controller__touchpad__event.html#a8539d61bbe47ba8af60beb709afed0c8", null ],
-    [ "set_y", "classcen_1_1controller__touchpad__event.html#a542ebaed3ea270d1b13c29245051e5af", null ],
-    [ "set_pressure", "classcen_1_1controller__touchpad__event.html#ada9a39c84bcd1dac519d3b144d7f3343", null ],
-    [ "which", "classcen_1_1controller__touchpad__event.html#a7117d8c961f39cc264e3ede72acff993", null ],
-    [ "touchpad_index", "classcen_1_1controller__touchpad__event.html#a7ca5042159979140df3732c1899f8dc9", null ],
-    [ "finger_index", "classcen_1_1controller__touchpad__event.html#a83c5e9e3e4497be2cf0b8256475bd4db", null ],
-    [ "x", "classcen_1_1controller__touchpad__event.html#afb6ba9fc355892a81f90b0b6032dce3e", null ],
-    [ "y", "classcen_1_1controller__touchpad__event.html#a6bd8276f38cba37fc1fa7ceb4775e210", null ],
-    [ "pressure", "classcen_1_1controller__touchpad__event.html#a12a42f9fb8c17a3b66308003c236dc65", null ]
+    [ "controller_touchpad_event", "classcen_1_1controller__touchpad__event.html#adcf89f88206f40e5233ac99c9a335bc6", null ],
+    [ "controller_touchpad_event", "classcen_1_1controller__touchpad__event.html#a3d8d789dd58a3253444142053d838f3e", null ],
+    [ "set_which", "classcen_1_1controller__touchpad__event.html#aea5fc26631d769de841b2a799afb8e92", null ],
+    [ "set_touchpad_index", "classcen_1_1controller__touchpad__event.html#a6682ad3d4c4a3dcbade46dd7b623a36a", null ],
+    [ "set_finger_index", "classcen_1_1controller__touchpad__event.html#aecfff261e698dcb11f403c513f3248d0", null ],
+    [ "set_x", "classcen_1_1controller__touchpad__event.html#a9737bf5a4650172a080a15dc00445d60", null ],
+    [ "set_y", "classcen_1_1controller__touchpad__event.html#a61d11c2015a52d4469a4fa0a56ece9c2", null ],
+    [ "set_pressure", "classcen_1_1controller__touchpad__event.html#a7c5147d1a7abb3ce98dcf1bc501980c6", null ],
+    [ "which", "classcen_1_1controller__touchpad__event.html#aa609823310d5667c692d6cd57924e9df", null ],
+    [ "touchpad_index", "classcen_1_1controller__touchpad__event.html#ac6479e3bf2a89cca5bb87e771151a90b", null ],
+    [ "finger_index", "classcen_1_1controller__touchpad__event.html#a708187bfd5772762ef53c6a9ec819f58", null ],
+    [ "x", "classcen_1_1controller__touchpad__event.html#aa2ef6725db37a265729a4835b8a9a83e", null ],
+    [ "y", "classcen_1_1controller__touchpad__event.html#a1e67f37fe901d75e29d2fe7ad1340c85", null ],
+    [ "pressure", "classcen_1_1controller__touchpad__event.html#aea869b3bc777c14f28760430e741f1b1", null ]
 ];

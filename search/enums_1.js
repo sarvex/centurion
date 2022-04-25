@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['color_5fid_3506',['color_id',['../classcen_1_1message__box.html#a6a1776fd526f8e07ff631bf115261831',1,'cen::message_box']]],
-  ['condition_5ftype_3507',['condition_type',['../classcen_1_1haptic__condition.html#ace742819ca88e29d895a28ed2b520758',1,'cen::haptic_condition']]],
-  ['controller_5faxis_3508',['controller_axis',['../group__input.html#ga1e58560c3414740db4b3f78929e9ddc3',1,'cen']]],
-  ['controller_5fbind_5ftype_3509',['controller_bind_type',['../group__input.html#ga2779bd4878fed7a711e390b086f77444',1,'cen']]],
-  ['controller_5fbutton_3510',['controller_button',['../group__input.html#gadeba7b364c5b4830cc2c8e2541e334b2',1,'cen']]],
-  ['controller_5ftype_3511',['controller_type',['../group__input.html#gafe17aeb9f1085c0ab6485aae5aafc9f6',1,'cen']]]
+  ['controller_5faxis_0',['controller_axis',['../group__game-controller.html#gac495417b343a67cb4d41bc672ce55f5a',1,'cen']]],
+  ['controller_5fbind_5ftype_1',['controller_bind_type',['../group__game-controller.html#ga3ad53f51d4beaff271379b3b5e695f25',1,'cen']]],
+  ['controller_5fbutton_2',['controller_button',['../group__game-controller.html#ga60011722b21f8fabe22666e9e9127a56',1,'cen']]],
+  ['controller_5fmapping_5fresult_3',['controller_mapping_result',['../group__game-controller.html#ga7f9c55e337f026e00c01ddbc3e50c97d',1,'cen']]],
+  ['controller_5ftype_4',['controller_type',['../group__game-controller.html#ga6b8e04683e11af0fa32c219882156cab',1,'cen']]]
 ];

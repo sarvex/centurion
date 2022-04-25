@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['k_3253',['k',['../group__input.html#ga0493edcb92e5fe0ca3a78aa7a29efe93',1,'cen::keycodes::k()'],['../group__input.html#gaea7804dd3692c94a5f4c9c1693de3c88',1,'cen::scancodes::k()']]],
-  ['khaki_3254',['khaki',['../group__video.html#gac588c03b1ad992a8db94f5b846b2dbad',1,'cen::colors']]]
+  ['k_0',['k',['../namespacecen_1_1keycodes.html#a0c09e5750907e1762e93c796264ef8c8',1,'cen::keycodes::k()'],['../namespacecen_1_1scancodes.html#ae493b8c4cd0239167b86c348f0ff807e',1,'cen::scancodes::k()']]],
+  ['khaki_1',['khaki',['../namespacecen_1_1colors.html#a917892396fa2fc7014b15437a3a32708',1,'cen::colors']]]
 ];

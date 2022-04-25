@@ -1,6 +1,6 @@
 var structcen_1_1dpi__info =
 [
-    [ "diagonal", "structcen_1_1dpi__info.html#a2c0a135d274c19c6452f161e67ec51b6", null ],
-    [ "horizontal", "structcen_1_1dpi__info.html#aa86c20919b6a0529c8a78730c837bd6b", null ],
-    [ "vertical", "structcen_1_1dpi__info.html#ae06c2d167f322d2d656ba91ee4b01440", null ]
+    [ "diagonal", "structcen_1_1dpi__info.html#a302548e39c06923564f5f1d1a7032b09", null ],
+    [ "horizontal", "structcen_1_1dpi__info.html#a2346d053d917ae4a61e1b5acd0dded0d", null ],
+    [ "vertical", "structcen_1_1dpi__info.html#acfa06a4269933790af0889b813a2207d", null ]
 ];

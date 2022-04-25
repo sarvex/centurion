@@ -1,15 +1,16 @@
 var searchData=
 [
-  ['c_3151',['c',['../group__input.html#ga8c77805e75dafd9712a0bbd2b9f05729',1,'cen::keycodes::c()'],['../group__input.html#ga17bc5690a1e6c97a8dce76b5b47ee952',1,'cen::scancodes::c()']]],
-  ['cached_3152',['cached',['../structcen_1_1font__cache_1_1glyph__data.html#a6e20347ed5cfb6a124b80d81ee5e2e29',1,'cen::font_cache::glyph_data']]],
-  ['cadet_5fblue_3153',['cadet_blue',['../group__video.html#gadcc46b013f233df8b763b54951d5e4cd',1,'cen::colors']]],
-  ['caps_5flock_3154',['caps_lock',['../group__input.html#gac3ed73cc633eda3303a3a7f6f73e71c2',1,'cen::keycodes::caps_lock()'],['../group__input.html#gaeba3b850c91d6b822881931c250ba056',1,'cen::scancodes::caps_lock()']]],
-  ['chartreuse_3155',['chartreuse',['../group__video.html#gad530269ab31ce9face42ebf57b9df4cc',1,'cen::colors']]],
-  ['chocolate_3156',['chocolate',['../group__video.html#gade74da6b6dcadcc3dd9155806286c648',1,'cen::colors']]],
-  ['coral_3157',['coral',['../group__video.html#ga832f22b7348010a260c7e3d230ae5062',1,'cen::colors']]],
-  ['coreflags_3158',['coreFlags',['../group__core.html#ga1ed86a26cf1d09208a65a195932f5ba8',1,'cen::config']]],
-  ['cornflower_5fblue_3159',['cornflower_blue',['../group__video.html#ga05463dfb81d935b6ae38b8cef5061595',1,'cen::colors']]],
-  ['cornsilk_3160',['cornsilk',['../group__video.html#ga6d7b08e3bfef30ff576f661fe5726eef',1,'cen::colors']]],
-  ['crimson_3161',['crimson',['../group__video.html#gaaa64348794d9d5a1da530e15c077fe98',1,'cen::colors']]],
-  ['cyan_3162',['cyan',['../group__video.html#gaf05b772cdbe62a7eec9c5207680dfbef',1,'cen::colors']]]
+  ['c_0',['c',['../namespacecen_1_1keycodes.html#a145f88ee194ff9c77a8da272fc6031fb',1,'cen::keycodes::c()'],['../namespacecen_1_1scancodes.html#a1b5414788106a0902c4270e6a2ed567a',1,'cen::scancodes::c()']]],
+  ['cadet_5fblue_1',['cadet_blue',['../namespacecen_1_1colors.html#a574c71eb62dce7f53215c7626c31c717',1,'cen::colors']]],
+  ['caps_5flock_2',['caps_lock',['../namespacecen_1_1keycodes.html#a9bbdaeda745536b93923c811b854bbd0',1,'cen::keycodes::caps_lock()'],['../namespacecen_1_1scancodes.html#af1c6055ec97b11b88d371a621523a5a1',1,'cen::scancodes::caps_lock()']]],
+  ['channels_3',['channels',['../structcen_1_1mix__cfg.html#a178795099d0608972755dfef8d8367e3',1,'cen::mix_cfg']]],
+  ['chartreuse_4',['chartreuse',['../namespacecen_1_1colors.html#a526892d241ae4dd94f47893e2b0550c9',1,'cen::colors']]],
+  ['chocolate_5',['chocolate',['../namespacecen_1_1colors.html#a2e825b260c12f7ef22bc793d4bf4413f',1,'cen::colors']]],
+  ['chunk_5fsize_6',['chunk_size',['../structcen_1_1mix__cfg.html#a18591da771e828eff9a922b779b30c1a',1,'cen::mix_cfg']]],
+  ['coral_7',['coral',['../namespacecen_1_1colors.html#aa2921da0a9103e5fe03f8ca1211d7de2',1,'cen::colors']]],
+  ['cornflower_5fblue_8',['cornflower_blue',['../namespacecen_1_1colors.html#aca74540b605883d6ddc610280d067989',1,'cen::colors']]],
+  ['cornsilk_9',['cornsilk',['../namespacecen_1_1colors.html#a17a79e925b9c81c6765a6e068b363f19',1,'cen::colors']]],
+  ['count_10',['count',['../structcen_1_1font_1_1measure__result.html#ad43c3812e6d13e0518d9f8b8f463ffcf',1,'cen::font::measure_result']]],
+  ['crimson_11',['crimson',['../namespacecen_1_1colors.html#a869ea90f5795cd1672d9da9a60793f58',1,'cen::colors']]],
+  ['cyan_12',['cyan',['../namespacecen_1_1colors.html#a80252eff78ab3ac37aec98a103da8719',1,'cen::colors']]]
 ];

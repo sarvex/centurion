@@ -1,13 +1,13 @@
 var classcen_1_1controller__button__event =
 [
-    [ "controller_button_event", "classcen_1_1controller__button__event.html#a335c1214460fa0d7562daba8b55a3b0b", null ],
-    [ "controller_button_event", "classcen_1_1controller__button__event.html#a0eb543a59971343e1a939351d28c9624", null ],
-    [ "set_button", "classcen_1_1controller__button__event.html#a925bc7f2422c45b6c872708679aff535", null ],
-    [ "set_state", "classcen_1_1controller__button__event.html#a790424c64287b753eebb1164f248a73c", null ],
-    [ "set_which", "classcen_1_1controller__button__event.html#af25044e99747b2406b03f9a114235a43", null ],
-    [ "button", "classcen_1_1controller__button__event.html#aec19d1e3edb01f0c2c0b4fdb36ad12ea", null ],
-    [ "state", "classcen_1_1controller__button__event.html#a9be3f1e5cd10eea84eda195c3cad7136", null ],
-    [ "pressed", "classcen_1_1controller__button__event.html#a46dd9d0306c5460d8db001f212470120", null ],
-    [ "released", "classcen_1_1controller__button__event.html#abc4cbd4c86ef85b3b5f4ad8b94cee7f1", null ],
-    [ "which", "classcen_1_1controller__button__event.html#a043f1e89f684904520e25662faff44d4", null ]
+    [ "controller_button_event", "classcen_1_1controller__button__event.html#ae15e626fcd050ae15439ff59ca76e500", null ],
+    [ "controller_button_event", "classcen_1_1controller__button__event.html#ad8298ce72f298b5e91765fb29fb905df", null ],
+    [ "set_which", "classcen_1_1controller__button__event.html#aea5fc26631d769de841b2a799afb8e92", null ],
+    [ "set_button", "classcen_1_1controller__button__event.html#aa85a6a9572b8ad5f1efedd84fa68b708", null ],
+    [ "set_state", "classcen_1_1controller__button__event.html#aaaad26d27513cfb6da71fd23702ae608", null ],
+    [ "which", "classcen_1_1controller__button__event.html#aa609823310d5667c692d6cd57924e9df", null ],
+    [ "button", "classcen_1_1controller__button__event.html#a8ff334169741d1aa9d2e9a5d5f4338a7", null ],
+    [ "state", "classcen_1_1controller__button__event.html#aa74b2111a06229cb5bbd403e5e8395ba", null ],
+    [ "is_pressed", "classcen_1_1controller__button__event.html#aa15fcde29226248ec2ef92459d35895f", null ],
+    [ "is_released", "classcen_1_1controller__button__event.html#a71408198b676c9913cf00a6f4a57965d", null ]
 ];

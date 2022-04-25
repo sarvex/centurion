@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['verbose_3920',['verbose',['../group__core.html#gga910862a214870faa7b625862de858c52a2c7aea4237e25b4f8ee3b0bf77d6fed0',1,'cen']]],
-  ['video_3921',['video',['../group__core.html#gga5a2bed2933e3748ad2a77961417a102ba421b47ffd946ca083b65cd668c6b17e6',1,'cen']]],
-  ['virt_3922',['virt',['../group__input.html#ggafe17aeb9f1085c0ab6485aae5aafc9f6aa385e96c9dcb7d1865a718934a8798fc',1,'cen']]],
-  ['vsync_3923',['vsync',['../classcen_1_1basic__renderer.html#a10b3ec2f2dfe62c988243e94f1c30241a42c28e4bbd98755d2e66f6d827a9f9cc',1,'cen::basic_renderer']]],
-  ['vulkan_3924',['vulkan',['../classcen_1_1basic__window.html#a0bd8de44951446c808450f0719634fb3af96eddf1cbaad0735467be10ac6a6438',1,'cen::basic_window']]]
+  ['verbose_0',['verbose',['../group__logging.html#gga87e2b0bdb074915521f34ea7e53d9c54a2c7aea4237e25b4f8ee3b0bf77d6fed0',1,'cen']]],
+  ['vertical_1',['vertical',['../group__render.html#ggaeb2373b14ee5fb8990583f501dbb54d7ae6dec152d6a941fccb0a5e8cc2579cc3',1,'cen']]],
+  ['video_2',['video',['../group__logging.html#gga3a6b7415e80b54dc6e6cff5d4451bc00a421b47ffd946ca083b65cd668c6b17e6',1,'cen']]],
+  ['virt_3',['virt',['../group__game-controller.html#gga6b8e04683e11af0fa32c219882156cabaa385e96c9dcb7d1865a718934a8798fc',1,'cen']]],
+  ['vsync_4',['vsync',['../classcen_1_1basic__renderer.html#a2fff200b83b959769cc47fc30568f557aed0480df41185ac10f3d618052365d49',1,'cen::basic_renderer']]],
+  ['vulkan_5',['vulkan',['../classcen_1_1basic__window.html#acc7c900547698857c92626f0f232badca4d7ffaba7a5bb1b85414bab167e7f03d',1,'cen::basic_window']]]
 ];

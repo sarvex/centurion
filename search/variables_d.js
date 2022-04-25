@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['n_3312',['n',['../group__input.html#gab8e5964dc03647c12426992f51131903',1,'cen::keycodes::n()'],['../group__input.html#gacd6179bdc60c7dd4f94d66af92543063',1,'cen::scancodes::n()']]],
-  ['navajo_5fwhite_3313',['navajo_white',['../group__video.html#ga3638e8f1e50e34f22d2fed5f2a264e02',1,'cen::colors']]],
-  ['navy_3314',['navy',['../group__video.html#ga0f5927fa07081fd45b7823305c0d94f5',1,'cen::colors']]],
-  ['nine_3315',['nine',['../group__input.html#gabb12c9a34547a6d5882fbe3c520c6310',1,'cen::keycodes::nine()'],['../group__input.html#gaa29e3b9cb68436f77ff1a38bebb47945',1,'cen::scancodes::nine()']]]
+  ['n_0',['n',['../namespacecen_1_1keycodes.html#a60ce7be32e0cf3a1ef53b6be534a75e0',1,'cen::keycodes::n()'],['../namespacecen_1_1scancodes.html#a49135c345d83f8f91f7f85a6a085e731',1,'cen::scancodes::n()']]],
+  ['navajo_5fwhite_1',['navajo_white',['../namespacecen_1_1colors.html#aa9de8d26bddd5d650fc0b49c143acbbb',1,'cen::colors']]],
+  ['navy_2',['navy',['../namespacecen_1_1colors.html#a8c9b21b6c050989a23053743ab4b4b47',1,'cen::colors']]],
+  ['nine_3',['nine',['../namespacecen_1_1keycodes.html#af15ba5acebe32a68e36d949bcd4dbaef',1,'cen::keycodes::nine()'],['../namespacecen_1_1scancodes.html#a4e59bca21adb8987c489f6fadc713d9d',1,'cen::scancodes::nine()']]]
 ];
