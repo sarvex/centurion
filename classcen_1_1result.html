@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Centurion
-   &#160;<span id="projectnumber">7.0.0</span>
+   &#160;<span id="projectnumber">7.1.0</span>
    </div>
    <div id="projectbrief">A modern C++ wrapper library for SDL2</div>
   </td>
@@ -94,49 +94,46 @@ $(document).ready(function(){initNavTree('classcen_1_1result.html',''); initResi
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classcen_1_1result-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">result Class Reference<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="group__common.html">Common</a></div></div></div>
+  <div class="headertitle"><div class="title">result Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>A simple indicator for the result of different operations.  
- <a href="classcen_1_1result.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="common_8hpp_source.html">common.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a23c4ccc7cb7584db54839aa3753ff5fd"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1result.html#a23c4ccc7cb7584db54839aa3753ff5fd">result</a> (const bool <a class="el" href="group__common.html#ga0e2f9db1cc3408561d81c7cb3e33c9e3">success</a>) noexcept</td></tr>
-<tr class="memdesc:a23c4ccc7cb7584db54839aa3753ff5fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a result.  <a href="classcen_1_1result.html#a23c4ccc7cb7584db54839aa3753ff5fd">More...</a><br /></td></tr>
+<tr class="memitem:a23c4ccc7cb7584db54839aa3753ff5fd"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1result.html#a23c4ccc7cb7584db54839aa3753ff5fd">result</a> (const bool <a class="el" href="namespacecen.html#a0e2f9db1cc3408561d81c7cb3e33c9e3">success</a>) noexcept</td></tr>
 <tr class="separator:a23c4ccc7cb7584db54839aa3753ff5fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7990d8e87d9eab2383f94c88c23a6488"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1result.html#a7990d8e87d9eab2383f94c88c23a6488">operator bool</a> () const noexcept</td></tr>
-<tr class="memdesc:a7990d8e87d9eab2383f94c88c23a6488"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether the result is a success.  <a href="classcen_1_1result.html#a7990d8e87d9eab2383f94c88c23a6488">More...</a><br /></td></tr>
+<tr class="memdesc:a7990d8e87d9eab2383f94c88c23a6488"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether the result was a success.  <a href="classcen_1_1result.html#a7990d8e87d9eab2383f94c88c23a6488">More...</a><br /></td></tr>
 <tr class="separator:a7990d8e87d9eab2383f94c88c23a6488"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >A simple indicator for the result of different operations. </p>
-<p >The idea behind this class is to make results of various operations unambiguous. Quite an amount of functions in the library may fail, and earlier versions of Centurion would usually return a <code>bool</code> in those cases, where <code>true</code> and <code>false</code> would indicate success and failure, respectively. This class is a development of that practice. For instance, this class is contextually convertible to <code>bool</code>, where a successful result is still converted to <code>true</code>, and vice versa. However, this class also enables explicit checks against <code>success</code> and <code>failure</code> constants, which makes code very easy to read and unambiguous. </p><div class="fragment"><div class="line"><a class="code hl_class" href="classcen_1_1basic__window.html">cen::window</a> <a class="code hl_typedef" href="group__video.html#gad2eb382608242f24cf986eee93ea144c">window</a>;</div>
+<div class="textblock"><p >A simple indicator for the result of different operations.</p>
+<p >The idea behind this class is to make results of various operations unambiguous. Quite an amount of functions in the library may fail, and earlier versions of Centurion would usually return a <code>bool</code> in those cases, where <code>true</code> and <code>false</code> would indicate success and failure, respectively. This class is a development of that practice. For instance, this class is contextually convertible to <code>bool</code>, where a successful result is still converted to <code>true</code>, and vice versa. However, this class also enables explicit checks against <code>success</code> and <code>failure</code> constants, which makes code very easy to read and unambiguous.</p>
+<div class="fragment"><div class="line"><a class="code hl_class" href="classcen_1_1basic__window.html">cen::window</a> <a class="code hl_typedef" href="namespacecen.html#ad2eb382608242f24cf986eee93ea144c">window</a>;</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordflow">if</span> (<a class="code hl_typedef" href="group__video.html#gad2eb382608242f24cf986eee93ea144c">window</a>.set_opacity(0.4f))</div>
+<div class="line"><span class="keywordflow">if</span> (<a class="code hl_typedef" href="namespacecen.html#ad2eb382608242f24cf986eee93ea144c">window</a>.set_opacity(0.4f))</div>
 <div class="line">{</div>
 <div class="line">  <span class="comment">// Success!</span></div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordflow">if</span> (<a class="code hl_typedef" href="group__video.html#gad2eb382608242f24cf986eee93ea144c">window</a>.set_opacity(0.4f) == <a class="code hl_variable" href="group__common.html#ga0e2f9db1cc3408561d81c7cb3e33c9e3">cen::success</a>)</div>
+<div class="line"><span class="keywordflow">if</span> (<a class="code hl_typedef" href="namespacecen.html#ad2eb382608242f24cf986eee93ea144c">window</a>.set_opacity(0.4f) == <a class="code hl_variable" href="namespacecen.html#a0e2f9db1cc3408561d81c7cb3e33c9e3">cen::success</a>)</div>
 <div class="line">{</div>
 <div class="line">  <span class="comment">// Success!</span></div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordflow">if</span> (<a class="code hl_typedef" href="group__video.html#gad2eb382608242f24cf986eee93ea144c">window</a>.set_opacity(0.4f) == <a class="code hl_variable" href="group__common.html#gafaf1da5beba38d47bd79340b7b626f9b">cen::failure</a>)</div>
+<div class="line"><span class="keywordflow">if</span> (<a class="code hl_typedef" href="namespacecen.html#ad2eb382608242f24cf986eee93ea144c">window</a>.set_opacity(0.4f) == <a class="code hl_variable" href="namespacecen.html#afaf1da5beba38d47bd79340b7b626f9b">cen::failure</a>)</div>
 <div class="line">{</div>
 <div class="line">  <span class="comment">// Failure!</span></div>
 <div class="line">}</div>
-<div class="ttc" id="aclasscen_1_1basic__window_html"><div class="ttname"><a href="classcen_1_1basic__window.html">cen::basic_window</a></div><div class="ttdoc">Represents an operating-system window.</div><div class="ttdef"><b>Definition:</b> window.hpp:80</div></div>
-<div class="ttc" id="agroup__common_html_ga0e2f9db1cc3408561d81c7cb3e33c9e3"><div class="ttname"><a href="group__common.html#ga0e2f9db1cc3408561d81c7cb3e33c9e3">cen::success</a></div><div class="ttdeci">constexpr result success</div><div class="ttdoc">Represents a successful result.</div><div class="ttdef"><b>Definition:</b> common.hpp:333</div></div>
-<div class="ttc" id="agroup__common_html_gafaf1da5beba38d47bd79340b7b626f9b"><div class="ttname"><a href="group__common.html#gafaf1da5beba38d47bd79340b7b626f9b">cen::failure</a></div><div class="ttdeci">constexpr result failure</div><div class="ttdoc">Represents a failure.</div><div class="ttdef"><b>Definition:</b> common.hpp:334</div></div>
-<div class="ttc" id="agroup__video_html_gad2eb382608242f24cf986eee93ea144c"><div class="ttname"><a href="group__video.html#gad2eb382608242f24cf986eee93ea144c">cen::window</a></div><div class="ttdeci">basic_window&lt; detail::owner_tag &gt; window</div><div class="ttdoc">An owning window.</div><div class="ttdef"><b>Definition:</b> window.hpp:61</div></div>
-</div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><code><a class="el" href="group__common.html#ga0e2f9db1cc3408561d81c7cb3e33c9e3" title="Represents a successful result.">success</a></code> </dd>
+<div class="ttc" id="aclasscen_1_1basic__window_html"><div class="ttname"><a href="classcen_1_1basic__window.html">cen::basic_window</a></div><div class="ttdef"><b>Definition:</b> window.hpp:75</div></div>
+<div class="ttc" id="anamespacecen_html_a0e2f9db1cc3408561d81c7cb3e33c9e3"><div class="ttname"><a href="namespacecen.html#a0e2f9db1cc3408561d81c7cb3e33c9e3">cen::success</a></div><div class="ttdeci">constexpr result success</div><div class="ttdoc">A successful result.</div><div class="ttdef"><b>Definition:</b> common.hpp:263</div></div>
+<div class="ttc" id="anamespacecen_html_ad2eb382608242f24cf986eee93ea144c"><div class="ttname"><a href="namespacecen.html#ad2eb382608242f24cf986eee93ea144c">cen::window</a></div><div class="ttdeci">basic_window&lt; detail::owner_tag &gt; window</div><div class="ttdef"><b>Definition:</b> window.hpp:58</div></div>
+<div class="ttc" id="anamespacecen_html_afaf1da5beba38d47bd79340b7b626f9b"><div class="ttname"><a href="namespacecen.html#afaf1da5beba38d47bd79340b7b626f9b">cen::failure</a></div><div class="ttdeci">constexpr result failure</div><div class="ttdoc">A failure.</div><div class="ttdef"><b>Definition:</b> common.hpp:264</div></div>
+</div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacecen.html#a0e2f9db1cc3408561d81c7cb3e33c9e3" title="A successful result.">success</a> </dd>
 <dd>
-<code><a class="el" href="group__common.html#gafaf1da5beba38d47bd79340b7b626f9b" title="Represents a failure.">failure</a></code> </dd></dl>
+<a class="el" href="namespacecen.html#afaf1da5beba38d47bd79340b7b626f9b" title="A failure.">failure</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a23c4ccc7cb7584db54839aa3753ff5fd" name="a23c4ccc7cb7584db54839aa3753ff5fd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a23c4ccc7cb7584db54839aa3753ff5fd">&#9670;&nbsp;</a></span>result()</h2>
@@ -161,14 +158,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Creates a result. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">success</td><td><code>true</code> if the result is successful; <code>false</code> otherwise. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -196,8 +185,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Indicates whether the result is a success. </p>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the result is a success; <code>false</code> otherwise. </dd></dl>
+<p>Indicates whether the result was a success. </p>
 
 </div>
 </div>

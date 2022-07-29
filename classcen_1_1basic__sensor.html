@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Centurion
-   &#160;<span id="projectnumber">7.0.0</span>
+   &#160;<span id="projectnumber">7.1.0</span>
    </div>
    <div id="projectbrief">A modern C++ wrapper library for SDL2</div>
   </td>
@@ -93,13 +93,12 @@ $(document).ready(function(){initNavTree('classcen_1_1basic__sensor.html',''); i
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classcen_1_1basic__sensor-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">basic_sensor&lt; T &gt; Class Template Reference<div class="ingroups"><a class="el" href="group__input.html">Input</a> &raquo; <a class="el" href="group__sensor.html">Sensor</a></div></div></div>
+  <div class="headertitle"><div class="title">basic_sensor&lt; T &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>Represents a sensor device.  
- <a href="classcen_1_1basic__sensor.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="sensor_8hpp_source.html">sensor.hpp</a>&gt;</code></p>
 <table class="memberdecls">
@@ -113,84 +112,59 @@ Public Types</h2></td></tr>
 <tr class="memitem:a091a2fe4c22cad3ba668ca2332537f83"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__sensor.html#a091a2fe4c22cad3ba668ca2332537f83">data_type</a> = std::array&lt; float, Size &gt;</td></tr>
 <tr class="separator:a091a2fe4c22cad3ba668ca2332537f83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Construction</h2></td></tr>
-<tr class="memitem:a7a91fb9ffa7ed12fca6af2a8a6e2a61c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__sensor.html#a7a91fb9ffa7ed12fca6af2a8a6e2a61c">basic_sensor</a> (<a class="el" href="group__common.html#ga8ab6d78cbc2030d15036476760bbbf3f">maybe_owner</a>&lt; SDL_Sensor * &gt; <a class="el" href="group__sensor.html#gae0eff9d8618a5169175c30077271cd84">sensor</a>) noexcept(detail::is_handle&lt; T &gt;)</td></tr>
-<tr class="memdesc:a7a91fb9ffa7ed12fca6af2a8a6e2a61c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a sensor instance based on an existing SDL sensor.  <a href="classcen_1_1basic__sensor.html#a7a91fb9ffa7ed12fca6af2a8a6e2a61c">More...</a><br /></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a7a91fb9ffa7ed12fca6af2a8a6e2a61c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__sensor.html#a7a91fb9ffa7ed12fca6af2a8a6e2a61c">basic_sensor</a> (<a class="el" href="namespacecen.html#a8ab6d78cbc2030d15036476760bbbf3f">maybe_owner</a>&lt; SDL_Sensor * &gt; <a class="el" href="namespacecen.html#ae0eff9d8618a5169175c30077271cd84">sensor</a>) noexcept(<a class="el" href="namespacecen_1_1detail.html#a8ca49fdda5da2e804a34921261a1fe5f">detail::is_handle</a>&lt; T &gt;)</td></tr>
 <tr class="separator:a7a91fb9ffa7ed12fca6af2a8a6e2a61c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a102c853206f9082ab7da5d109e6dea0c"><td class="memTemplParams" colspan="2">template&lt;typename TT  = T, detail::enable_for_owner&lt; TT &gt;  = 0&gt; </td></tr>
+<tr class="memitem:a102c853206f9082ab7da5d109e6dea0c"><td class="memTemplParams" colspan="2">template&lt;typename TT  = T, <a class="el" href="namespacecen_1_1detail.html#a10de886509ce4311b91d656f5e620d5a">detail::enable_for_owner</a>&lt; TT &gt;  = 0&gt; </td></tr>
 <tr class="memitem:a102c853206f9082ab7da5d109e6dea0c"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__sensor.html#a102c853206f9082ab7da5d109e6dea0c">basic_sensor</a> (const <a class="el" href="classcen_1_1basic__sensor.html#a2afad9f01282d85509cec124f6506a4e">device_index</a> index=0)</td></tr>
-<tr class="memdesc:a102c853206f9082ab7da5d109e6dea0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an owning sensor instance based on a device index.  <a href="classcen_1_1basic__sensor.html#a102c853206f9082ab7da5d109e6dea0c">More...</a><br /></td></tr>
 <tr class="separator:a102c853206f9082ab7da5d109e6dea0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12f7b4694ab1f1f62465ce7d1e042e04"><td class="memTemplParams" colspan="2">template&lt;typename TT  = T, detail::enable_for_handle&lt; TT &gt;  = 0&gt; </td></tr>
-<tr class="memitem:a12f7b4694ab1f1f62465ce7d1e042e04"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__sensor.html#a12f7b4694ab1f1f62465ce7d1e042e04">basic_sensor</a> (const <a class="el" href="group__sensor.html#gae0eff9d8618a5169175c30077271cd84">sensor</a> &amp;<a class="el" href="group__common.html#gae635fa1092d174256dfa190f7d24cd96">owner</a>) noexcept</td></tr>
-<tr class="memdesc:a12f7b4694ab1f1f62465ce7d1e042e04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a handle to an owning sensor.  <a href="classcen_1_1basic__sensor.html#a12f7b4694ab1f1f62465ce7d1e042e04">More...</a><br /></td></tr>
+<tr class="memitem:a12f7b4694ab1f1f62465ce7d1e042e04"><td class="memTemplParams" colspan="2">template&lt;typename TT  = T, <a class="el" href="namespacecen_1_1detail.html#af7eaf1dad7d2f17f827758b6586e98f2">detail::enable_for_handle</a>&lt; TT &gt;  = 0&gt; </td></tr>
+<tr class="memitem:a12f7b4694ab1f1f62465ce7d1e042e04"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__sensor.html#a12f7b4694ab1f1f62465ce7d1e042e04">basic_sensor</a> (const <a class="el" href="namespacecen.html#ae0eff9d8618a5169175c30077271cd84">sensor</a> &amp;<a class="el" href="namespacecen.html#ae635fa1092d174256dfa190f7d24cd96">owner</a>) noexcept</td></tr>
 <tr class="separator:a12f7b4694ab1f1f62465ce7d1e042e04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">General information</h2></td></tr>
 <tr class="memitem:a9bd605e34571537cf40aab45f69cc577"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__sensor.html#a9bd605e34571537cf40aab45f69cc577">name</a> () const noexcept -&gt; const char *</td></tr>
-<tr class="memdesc:a9bd605e34571537cf40aab45f69cc577"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the sensor.  <a href="classcen_1_1basic__sensor.html#a9bd605e34571537cf40aab45f69cc577">More...</a><br /></td></tr>
 <tr class="separator:a9bd605e34571537cf40aab45f69cc577"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ca665f40bdac87c89efce69e77a001a"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__sensor.html#a2ca665f40bdac87c89efce69e77a001a">type</a> () const noexcept -&gt; <a class="el" href="group__sensor.html#ga6ceb3ea24264a6faa4f32351cb58d41a">sensor_type</a></td></tr>
-<tr class="memdesc:a2ca665f40bdac87c89efce69e77a001a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the type of the sensor.  <a href="classcen_1_1basic__sensor.html#a2ca665f40bdac87c89efce69e77a001a">More...</a><br /></td></tr>
+<tr class="memitem:a2ca665f40bdac87c89efce69e77a001a"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__sensor.html#a2ca665f40bdac87c89efce69e77a001a">type</a> () const noexcept -&gt; <a class="el" href="namespacecen.html#a6ceb3ea24264a6faa4f32351cb58d41a">sensor_type</a></td></tr>
 <tr class="separator:a2ca665f40bdac87c89efce69e77a001a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7ec4eb163297ffe3e3b6ccdc652a00e"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__sensor.html#ad7ec4eb163297ffe3e3b6ccdc652a00e">non_portable_type</a> () const noexcept -&gt; std::optional&lt; int &gt;</td></tr>
-<tr class="memdesc:ad7ec4eb163297ffe3e3b6ccdc652a00e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the non-portable type of the sensor.  <a href="classcen_1_1basic__sensor.html#ad7ec4eb163297ffe3e3b6ccdc652a00e">More...</a><br /></td></tr>
 <tr class="separator:ad7ec4eb163297ffe3e3b6ccdc652a00e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ff1b87e5517b52860a7a602d52e0627"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__sensor.html#a4ff1b87e5517b52860a7a602d52e0627">name</a> (const <a class="el" href="classcen_1_1basic__sensor.html#a2afad9f01282d85509cec124f6506a4e">device_index</a> index) noexcept -&gt; const char *</td></tr>
-<tr class="memdesc:a4ff1b87e5517b52860a7a602d52e0627"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of a sensor.  <a href="classcen_1_1basic__sensor.html#a4ff1b87e5517b52860a7a602d52e0627">More...</a><br /></td></tr>
-<tr class="separator:a4ff1b87e5517b52860a7a602d52e0627"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acba2a085fdf570b11d0409d7e5108e5b"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__sensor.html#acba2a085fdf570b11d0409d7e5108e5b">type</a> (const <a class="el" href="classcen_1_1basic__sensor.html#a2afad9f01282d85509cec124f6506a4e">device_index</a> index) noexcept -&gt; <a class="el" href="group__sensor.html#ga6ceb3ea24264a6faa4f32351cb58d41a">sensor_type</a></td></tr>
-<tr class="memdesc:acba2a085fdf570b11d0409d7e5108e5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the type of a sensor.  <a href="classcen_1_1basic__sensor.html#acba2a085fdf570b11d0409d7e5108e5b">More...</a><br /></td></tr>
-<tr class="separator:acba2a085fdf570b11d0409d7e5108e5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86e2e832976ed6381a9b926b40d737bd"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__sensor.html#a86e2e832976ed6381a9b926b40d737bd">non_portable_type</a> (const <a class="el" href="classcen_1_1basic__sensor.html#a2afad9f01282d85509cec124f6506a4e">device_index</a> index) noexcept -&gt; std::optional&lt; int &gt;</td></tr>
-<tr class="memdesc:a86e2e832976ed6381a9b926b40d737bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the non-portable type of a sensor.  <a href="classcen_1_1basic__sensor.html#a86e2e832976ed6381a9b926b40d737bd">More...</a><br /></td></tr>
-<tr class="separator:a86e2e832976ed6381a9b926b40d737bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Queries</h2></td></tr>
-<tr class="memitem:a633aa00d42db11e4282f954cd5a43c4d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__sensor.html#a633aa00d42db11e4282f954cd5a43c4d">id</a> () const noexcept -&gt; std::optional&lt; <a class="el" href="group__sensor.html#gaffb1c3d47aec5915baef55058e84df26">sensor_id</a> &gt;</td></tr>
-<tr class="memdesc:a633aa00d42db11e4282f954cd5a43c4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the identifier associated with the sensor.  <a href="classcen_1_1basic__sensor.html#a633aa00d42db11e4282f954cd5a43c4d">More...</a><br /></td></tr>
+<tr class="memitem:a633aa00d42db11e4282f954cd5a43c4d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__sensor.html#a633aa00d42db11e4282f954cd5a43c4d">id</a> () const noexcept -&gt; std::optional&lt; <a class="el" href="namespacecen.html#affb1c3d47aec5915baef55058e84df26">sensor_id</a> &gt;</td></tr>
 <tr class="separator:a633aa00d42db11e4282f954cd5a43c4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2eaae77b9f65a340877b6c189295c62b"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="classcen_1_1basic__sensor.html#af38ce1af42d538f410180c265518d4f0">size_type</a> Size&gt; </td></tr>
 <tr class="memitem:a2eaae77b9f65a340877b6c189295c62b"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__sensor.html#a2eaae77b9f65a340877b6c189295c62b">data</a> () const noexcept -&gt; std::optional&lt; <a class="el" href="classcen_1_1basic__sensor.html#a091a2fe4c22cad3ba668ca2332537f83">data_type</a>&lt; Size &gt; &gt;</td></tr>
-<tr class="memdesc:a2eaae77b9f65a340877b6c189295c62b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns sensor-dependent data.  <a href="classcen_1_1basic__sensor.html#a2eaae77b9f65a340877b6c189295c62b">More...</a><br /></td></tr>
 <tr class="separator:a2eaae77b9f65a340877b6c189295c62b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3737e248117789bd4ee2bdac05c2e7f6"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__sensor.html#a3737e248117789bd4ee2bdac05c2e7f6">id</a> (const <a class="el" href="classcen_1_1basic__sensor.html#a2afad9f01282d85509cec124f6506a4e">device_index</a> index) noexcept -&gt; std::optional&lt; <a class="el" href="group__sensor.html#gaffb1c3d47aec5915baef55058e84df26">sensor_id</a> &gt;</td></tr>
-<tr class="memdesc:a3737e248117789bd4ee2bdac05c2e7f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the identifier associated with a sensor.  <a href="classcen_1_1basic__sensor.html#a3737e248117789bd4ee2bdac05c2e7f6">More...</a><br /></td></tr>
-<tr class="separator:a3737e248117789bd4ee2bdac05c2e7f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Misc functions</h2></td></tr>
 <tr class="memitem:af9902100b11d4be438d5cda942b6783a"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__sensor.html#af9902100b11d4be438d5cda942b6783a">get</a> () const noexcept -&gt; SDL_Sensor *</td></tr>
 <tr class="separator:af9902100b11d4be438d5cda942b6783a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5bd22283effc54c70cc24db49d9a97c9"><td class="memTemplParams" colspan="2">template&lt;typename TT  = T, detail::enable_for_handle&lt; TT &gt;  = 0&gt; </td></tr>
+<tr class="memitem:a5bd22283effc54c70cc24db49d9a97c9"><td class="memTemplParams" colspan="2">template&lt;typename TT  = T, <a class="el" href="namespacecen_1_1detail.html#af7eaf1dad7d2f17f827758b6586e98f2">detail::enable_for_handle</a>&lt; TT &gt;  = 0&gt; </td></tr>
 <tr class="memitem:a5bd22283effc54c70cc24db49d9a97c9"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__sensor.html#a5bd22283effc54c70cc24db49d9a97c9">operator bool</a> () const noexcept</td></tr>
 <tr class="memdesc:a5bd22283effc54c70cc24db49d9a97c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether a handle holds a non-null pointer.  <a href="classcen_1_1basic__sensor.html#a5bd22283effc54c70cc24db49d9a97c9">More...</a><br /></td></tr>
 <tr class="separator:a5bd22283effc54c70cc24db49d9a97c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Sensor management</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a4ff1b87e5517b52860a7a602d52e0627"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__sensor.html#a4ff1b87e5517b52860a7a602d52e0627">name</a> (const <a class="el" href="classcen_1_1basic__sensor.html#a2afad9f01282d85509cec124f6506a4e">device_index</a> index) noexcept -&gt; const char *</td></tr>
+<tr class="separator:a4ff1b87e5517b52860a7a602d52e0627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acba2a085fdf570b11d0409d7e5108e5b"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__sensor.html#acba2a085fdf570b11d0409d7e5108e5b">type</a> (const <a class="el" href="classcen_1_1basic__sensor.html#a2afad9f01282d85509cec124f6506a4e">device_index</a> index) noexcept -&gt; <a class="el" href="namespacecen.html#a6ceb3ea24264a6faa4f32351cb58d41a">sensor_type</a></td></tr>
+<tr class="separator:acba2a085fdf570b11d0409d7e5108e5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86e2e832976ed6381a9b926b40d737bd"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__sensor.html#a86e2e832976ed6381a9b926b40d737bd">non_portable_type</a> (const <a class="el" href="classcen_1_1basic__sensor.html#a2afad9f01282d85509cec124f6506a4e">device_index</a> index) noexcept -&gt; std::optional&lt; int &gt;</td></tr>
+<tr class="separator:a86e2e832976ed6381a9b926b40d737bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3737e248117789bd4ee2bdac05c2e7f6"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__sensor.html#a3737e248117789bd4ee2bdac05c2e7f6">id</a> (const <a class="el" href="classcen_1_1basic__sensor.html#a2afad9f01282d85509cec124f6506a4e">device_index</a> index) noexcept -&gt; std::optional&lt; <a class="el" href="namespacecen.html#affb1c3d47aec5915baef55058e84df26">sensor_id</a> &gt;</td></tr>
+<tr class="separator:a3737e248117789bd4ee2bdac05c2e7f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b00a98d0d732298510d6f8e60efcbe0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__sensor.html#a8b00a98d0d732298510d6f8e60efcbe0">update</a> () noexcept</td></tr>
-<tr class="memdesc:a8b00a98d0d732298510d6f8e60efcbe0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the state of all open sensors.  <a href="classcen_1_1basic__sensor.html#a8b00a98d0d732298510d6f8e60efcbe0">More...</a><br /></td></tr>
 <tr class="separator:a8b00a98d0d732298510d6f8e60efcbe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a856f50a049e3d46da48ee891e0d9666b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__sensor.html#a856f50a049e3d46da48ee891e0d9666b">lock</a> () noexcept</td></tr>
-<tr class="memdesc:a856f50a049e3d46da48ee891e0d9666b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Locks access to all sensors.  <a href="classcen_1_1basic__sensor.html#a856f50a049e3d46da48ee891e0d9666b">More...</a><br /></td></tr>
 <tr class="separator:a856f50a049e3d46da48ee891e0d9666b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a996937a71f7e83069f173986c45a8edb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__sensor.html#a996937a71f7e83069f173986c45a8edb">unlock</a> () noexcept</td></tr>
-<tr class="memdesc:a996937a71f7e83069f173986c45a8edb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlocks access to all sensors.  <a href="classcen_1_1basic__sensor.html#a996937a71f7e83069f173986c45a8edb">More...</a><br /></td></tr>
 <tr class="separator:a996937a71f7e83069f173986c45a8edb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Global sensor information</h2></td></tr>
 <tr class="memitem:aa895164841e34210cfe29f5cc6374e98"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__sensor.html#aa895164841e34210cfe29f5cc6374e98">count</a> () noexcept -&gt; int</td></tr>
-<tr class="memdesc:aa895164841e34210cfe29f5cc6374e98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the amount of sensors currently attached to the system.  <a href="classcen_1_1basic__sensor.html#aa895164841e34210cfe29f5cc6374e98">More...</a><br /></td></tr>
 <tr class="separator:aa895164841e34210cfe29f5cc6374e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename T&gt;<br />
-class cen::basic_sensor&lt; T &gt;</div><p >Represents a sensor device. </p>
-<p >This class is a part of the owner/handle API, the owner/handle versions of this class are <code>sensor</code>/<code>sensor_handle</code></p>
-<dl class="section see"><dt>See also</dt><dd><code><a class="el" href="group__sensor.html#gae0eff9d8618a5169175c30077271cd84" title="An owning sensor.">sensor</a></code> </dd>
+class cen::basic_sensor&lt; T &gt;</div><p >Represents a sensor device.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacecen.html#ae0eff9d8618a5169175c30077271cd84">sensor</a> </dd>
 <dd>
-<code><a class="el" href="group__sensor.html#ga3bf6ab1dcce03a6aa0e6c08cb1205f02" title="A non-owning sensor.">sensor_handle</a></code></dd>
-<dd>
-<code>SDL_Sensor</code> </dd></dl>
+<a class="el" href="namespacecen.html#a3bf6ab1dcce03a6aa0e6c08cb1205f02">sensor_handle</a> </dd></dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a2afad9f01282d85509cec124f6506a4e" name="a2afad9f01282d85509cec124f6506a4e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2afad9f01282d85509cec124f6506a4e">&#9670;&nbsp;</a></span>device_index</h2>
@@ -247,7 +221,7 @@ class cen::basic_sensor&lt; T &gt;</div><p >Represents a sensor device. </p>
         <tr>
           <td class="memname"><a class="el" href="classcen_1_1basic__sensor.html">basic_sensor</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__common.html#ga8ab6d78cbc2030d15036476760bbbf3f">maybe_owner</a>&lt; SDL_Sensor * &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacecen.html#a8ab6d78cbc2030d15036476760bbbf3f">maybe_owner</a>&lt; SDL_Sensor * &gt;&#160;</td>
           <td class="paramname"><em>sensor</em></td><td>)</td>
           <td></td>
         </tr>
@@ -258,18 +232,11 @@ class cen::basic_sensor&lt; T &gt;</div><p >Represents a sensor device. </p>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Creates a sensor instance based on an existing SDL sensor. </p>
+<p >Creates a sensor instance based on an existing SDL sensor.</p>
 <p >Ownership of the pointer is claimed if the class has owning semantics.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">sensor</td><td>a pointer to the SDL sensor data.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">exception</td><td>if the pointer is null and the sensor has owning semantics. </td></tr>
+    <tr><td class="paramname">sensor</td><td>a pointer to the SDL sensor data. </td></tr>
   </table>
   </dd>
 </dl>
@@ -300,20 +267,6 @@ class cen::basic_sensor&lt; T &gt;</div><p >Represents a sensor device. </p>
 </table>
 </div><div class="memdoc">
 
-<p>Creates an owning sensor instance based on a device index. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">index</td><td>the device index of the sensor.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="classcen_1_1sdl__error.html" title="Represents an error related to the core SDL library.">sdl_error</a></td><td>if the sensor cannot be opened. </td></tr>
-  </table>
-  </dd>
-</dl>
-
 </div>
 </div>
 <a id="a12f7b4694ab1f1f62465ce7d1e042e04" name="a12f7b4694ab1f1f62465ce7d1e042e04"></a>
@@ -328,7 +281,7 @@ class cen::basic_sensor&lt; T &gt;</div><p >Represents a sensor device. </p>
         <tr>
           <td class="memname"><a class="el" href="classcen_1_1basic__sensor.html">basic_sensor</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__sensor.html#gae0eff9d8618a5169175c30077271cd84">sensor</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#ae0eff9d8618a5169175c30077271cd84">sensor</a> &amp;&#160;</td>
           <td class="paramname"><em>owner</em></td><td>)</td>
           <td></td>
         </tr>
@@ -339,14 +292,6 @@ class cen::basic_sensor&lt; T &gt;</div><p >Represents a sensor device. </p>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Creates a handle to an owning sensor. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">owner</td><td>the owning sensor. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -375,9 +320,6 @@ class cen::basic_sensor&lt; T &gt;</div><p >Represents a sensor device. </p>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the name of the sensor. </p>
-<dl class="section return"><dt>Returns</dt><dd>the sensor name; a null string is returned upon failure. </dd></dl>
-
 </div>
 </div>
 <a id="a4ff1b87e5517b52860a7a602d52e0627" name="a4ff1b87e5517b52860a7a602d52e0627"></a>
@@ -405,15 +347,6 @@ class cen::basic_sensor&lt; T &gt;</div><p >Represents a sensor device. </p>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the name of a sensor. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">index</td><td>the device index of the sensor that will be queried.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the sensor name; a null string is returned upon failure. </dd></dl>
-
 </div>
 </div>
 <a id="a2ca665f40bdac87c89efce69e77a001a" name="a2ca665f40bdac87c89efce69e77a001a"></a>
@@ -429,7 +362,7 @@ class cen::basic_sensor&lt; T &gt;</div><p >Represents a sensor device. </p>
           <td class="memname">auto type </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const -&gt; <a class="el" href="group__sensor.html#ga6ceb3ea24264a6faa4f32351cb58d41a">sensor_type</a>
+          <td> const -&gt; <a class="el" href="namespacecen.html#a6ceb3ea24264a6faa4f32351cb58d41a">sensor_type</a>
   </td>
         </tr>
       </table>
@@ -439,9 +372,6 @@ class cen::basic_sensor&lt; T &gt;</div><p >Represents a sensor device. </p>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the type of the sensor. </p>
-<dl class="section return"><dt>Returns</dt><dd>the sensor type. </dd></dl>
 
 </div>
 </div>
@@ -459,7 +389,7 @@ class cen::basic_sensor&lt; T &gt;</div><p >Represents a sensor device. </p>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classcen_1_1basic__sensor.html#a2afad9f01282d85509cec124f6506a4e">device_index</a>&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>
-          <td> -&gt; <a class="el" href="group__sensor.html#ga6ceb3ea24264a6faa4f32351cb58d41a">sensor_type</a>
+          <td> -&gt; <a class="el" href="namespacecen.html#a6ceb3ea24264a6faa4f32351cb58d41a">sensor_type</a>
   </td>
         </tr>
       </table>
@@ -469,15 +399,6 @@ class cen::basic_sensor&lt; T &gt;</div><p >Represents a sensor device. </p>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the type of a sensor. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">index</td><td>the device index of the sensor that will be queried.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the sensor type. </dd></dl>
 
 </div>
 </div>
@@ -504,9 +425,6 @@ class cen::basic_sensor&lt; T &gt;</div><p >Represents a sensor device. </p>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the non-portable type of the sensor. </p>
-<dl class="section return"><dt>Returns</dt><dd>a non-portable sensor type; an empty optional is returned upon failure. </dd></dl>
 
 </div>
 </div>
@@ -535,15 +453,6 @@ class cen::basic_sensor&lt; T &gt;</div><p >Represents a sensor device. </p>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the non-portable type of a sensor. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">index</td><td>the device index of the sensor that will be queried.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>a non-portable sensor type; an empty optional is returned upon failure. </dd></dl>
-
 </div>
 </div>
 <a id="a633aa00d42db11e4282f954cd5a43c4d" name="a633aa00d42db11e4282f954cd5a43c4d"></a>
@@ -559,7 +468,7 @@ class cen::basic_sensor&lt; T &gt;</div><p >Represents a sensor device. </p>
           <td class="memname">auto id </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const -&gt; std::optional&lt;<a class="el" href="group__sensor.html#gaffb1c3d47aec5915baef55058e84df26">sensor_id</a>&gt;
+          <td> const -&gt; std::optional&lt;<a class="el" href="namespacecen.html#affb1c3d47aec5915baef55058e84df26">sensor_id</a>&gt;
   </td>
         </tr>
       </table>
@@ -569,9 +478,6 @@ class cen::basic_sensor&lt; T &gt;</div><p >Represents a sensor device. </p>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the identifier associated with the sensor. </p>
-<dl class="section return"><dt>Returns</dt><dd>the sensor identifier; an empty optional is returned upon failure. </dd></dl>
 
 </div>
 </div>
@@ -589,7 +495,7 @@ class cen::basic_sensor&lt; T &gt;</div><p >Represents a sensor device. </p>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classcen_1_1basic__sensor.html#a2afad9f01282d85509cec124f6506a4e">device_index</a>&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>
-          <td> -&gt; std::optional&lt;<a class="el" href="group__sensor.html#gaffb1c3d47aec5915baef55058e84df26">sensor_id</a>&gt;
+          <td> -&gt; std::optional&lt;<a class="el" href="namespacecen.html#affb1c3d47aec5915baef55058e84df26">sensor_id</a>&gt;
   </td>
         </tr>
       </table>
@@ -599,15 +505,6 @@ class cen::basic_sensor&lt; T &gt;</div><p >Represents a sensor device. </p>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the identifier associated with a sensor. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">index</td><td>the device index of the sensor that will be queried.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the sensor identifier; an empty optional is returned upon failure. </dd></dl>
 
 </div>
 </div>
@@ -635,15 +532,6 @@ class cen::basic_sensor&lt; T &gt;</div><p >Represents a sensor device. </p>
 </table>
 </div><div class="memdoc">
 
-<p>Returns sensor-dependent data. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">Size</td><td>the number of data elements, varies from sensor to sensor.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the data associated with the sensor; an empty optional is returned upon failure. </dd></dl>
-
 </div>
 </div>
 <a id="a8b00a98d0d732298510d6f8e60efcbe0" name="a8b00a98d0d732298510d6f8e60efcbe0"></a>
@@ -668,9 +556,6 @@ class cen::basic_sensor&lt; T &gt;</div><p >Represents a sensor device. </p>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Updates the state of all open sensors. </p>
-<dl class="section note"><dt>Note</dt><dd>This is done automatically by the event loop if sensor events are enabled. </dd></dl>
 
 </div>
 </div>
@@ -697,9 +582,6 @@ class cen::basic_sensor&lt; T &gt;</div><p >Represents a sensor device. </p>
 </table>
 </div><div class="memdoc">
 
-<p>Locks access to all sensors. </p>
-<dl class="section remark"><dt>Remarks</dt><dd>This function requires at least SDL 2.0.14 </dd></dl>
-
 </div>
 </div>
 <a id="a996937a71f7e83069f173986c45a8edb" name="a996937a71f7e83069f173986c45a8edb"></a>
@@ -725,9 +607,6 @@ class cen::basic_sensor&lt; T &gt;</div><p >Represents a sensor device. </p>
 </table>
 </div><div class="memdoc">
 
-<p>Unlocks access to all sensors. </p>
-<dl class="section remark"><dt>Remarks</dt><dd>This function requires at least SDL 2.0.14 </dd></dl>
-
 </div>
 </div>
 <a id="aa895164841e34210cfe29f5cc6374e98" name="aa895164841e34210cfe29f5cc6374e98"></a>
@@ -752,9 +631,6 @@ class cen::basic_sensor&lt; T &gt;</div><p >Represents a sensor device. </p>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the amount of sensors currently attached to the system. </p>
-<dl class="section return"><dt>Returns</dt><dd>the system sensor count. </dd></dl>
 
 </div>
 </div>
@@ -807,7 +683,6 @@ class cen::basic_sensor&lt; T &gt;</div><p >Represents a sensor device. </p>
 </div><div class="memdoc">
 
 <p>Indicates whether a handle holds a non-null pointer. </p>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the handle holds a non-null pointer; <code>false</code> otherwise. </dd></dl>
 
 </div>
 </div>

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Centurion
-   &#160;<span id="projectnumber">7.0.0</span>
+   &#160;<span id="projectnumber">7.1.0</span>
    </div>
    <div id="projectbrief">A modern C++ wrapper library for SDL2</div>
   </td>
@@ -122,7 +122,7 @@ Examples</h1>
 <div class="line"><span class="comment">// Valid usage of an owning window, no need to worry about ownership and lifetimes</span></div>
 <div class="line"><span class="keywordtype">void</span> basic_owning_window()</div>
 <div class="line">{</div>
-<div class="line">  <a class="code hl_class" href="classcen_1_1basic__window.html">cen::window</a> <a class="code hl_typedef" href="group__video.html#gad2eb382608242f24cf986eee93ea144c">window</a>;</div>
+<div class="line">  <a class="code hl_class" href="classcen_1_1basic__window.html">cen::window</a> <a class="code hl_typedef" href="namespacecen.html#ad2eb382608242f24cf986eee93ea144c">window</a>;</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// Do stuff...</span></div>
 <div class="line"> </div>
@@ -131,14 +131,14 @@ Examples</h1>
 <div class="line"><span class="comment">// Valid usage of an owning window along with a handle, handles don&#39;t claim ownership</span></div>
 <div class="line"><span class="keywordtype">void</span> valid_handle_usage()</div>
 <div class="line">{</div>
-<div class="line">  <a class="code hl_class" href="classcen_1_1basic__window.html">cen::window</a> <a class="code hl_typedef" href="group__video.html#gad2eb382608242f24cf986eee93ea144c">window</a>;                 <span class="comment">// Creates an owning window</span></div>
-<div class="line">  <a class="code hl_class" href="classcen_1_1basic__window.html">cen::window_handle</a> handle{<a class="code hl_typedef" href="group__video.html#gad2eb382608242f24cf986eee93ea144c">window</a>};  <span class="comment">// Creates a handle to an owning window</span></div>
+<div class="line">  <a class="code hl_class" href="classcen_1_1basic__window.html">cen::window</a> <a class="code hl_typedef" href="namespacecen.html#ad2eb382608242f24cf986eee93ea144c">window</a>;                 <span class="comment">// Creates an owning window</span></div>
+<div class="line">  <a class="code hl_class" href="classcen_1_1basic__window.html">cen::window_handle</a> handle{<a class="code hl_typedef" href="namespacecen.html#ad2eb382608242f24cf986eee93ea144c">window</a>};  <span class="comment">// Creates a handle to an owning window</span></div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// Do stuff...</span></div>
 <div class="line"> </div>
 <div class="line">} <span class="comment">// The window is only destroyed once, since the handle is non-owning</span></div>
-<div class="ttc" id="aclasscen_1_1basic__window_html"><div class="ttname"><a href="classcen_1_1basic__window.html">cen::basic_window</a></div><div class="ttdoc">Represents an operating-system window.</div><div class="ttdef"><b>Definition:</b> window.hpp:80</div></div>
-<div class="ttc" id="agroup__video_html_gad2eb382608242f24cf986eee93ea144c"><div class="ttname"><a href="group__video.html#gad2eb382608242f24cf986eee93ea144c">cen::window</a></div><div class="ttdeci">basic_window&lt; detail::owner_tag &gt; window</div><div class="ttdoc">An owning window.</div><div class="ttdef"><b>Definition:</b> window.hpp:61</div></div>
+<div class="ttc" id="aclasscen_1_1basic__window_html"><div class="ttname"><a href="classcen_1_1basic__window.html">cen::basic_window</a></div><div class="ttdef"><b>Definition:</b> window.hpp:75</div></div>
+<div class="ttc" id="anamespacecen_html_ad2eb382608242f24cf986eee93ea144c"><div class="ttname"><a href="namespacecen.html#ad2eb382608242f24cf986eee93ea144c">cen::window</a></div><div class="ttdeci">basic_window&lt; detail::owner_tag &gt; window</div><div class="ttdef"><b>Definition:</b> window.hpp:58</div></div>
 </div><!-- fragment --><p >So what makes owners and handles so useful? Well, let's imagine a simple function like the following, which takes a non-owning pointer to an SDL struct, such as <code>SDL_Renderer</code>.</p>
 <div class="fragment"><div class="line"><span class="keywordtype">void</span> foo(SDL_Renderer* ptr)</div>
 <div class="line">{</div>
@@ -147,13 +147,13 @@ Examples</h1>
 </div><!-- fragment --><p >If our codebase features functions like the one in our example and we want to start using Centurion, we might not be able to immediately refactor all such functions in our codebase (there may be a lot of them). So we might be tempted to write something like the following.</p>
 <div class="fragment"><div class="line"><span class="keywordtype">void</span> foo(SDL_Renderer* ptr)</div>
 <div class="line">{</div>
-<div class="line">  <a class="code hl_class" href="classcen_1_1basic__renderer.html">cen::renderer</a> <a class="code hl_typedef" href="group__render.html#gaf6dbad20a46b69892b5e694a4069ae42">renderer</a>{ptr};  <span class="comment">// Claims ownership of the pointer!</span></div>
+<div class="line">  <a class="code hl_class" href="classcen_1_1basic__renderer.html">cen::renderer</a> <a class="code hl_typedef" href="namespacecen.html#af6dbad20a46b69892b5e694a4069ae42">renderer</a>{ptr};  <span class="comment">// Claims ownership of the pointer!</span></div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// Fancier rendering...</span></div>
 <div class="line"> </div>
 <div class="line">} <span class="comment">// Oops, the renderer is deleted here!</span></div>
-<div class="ttc" id="aclasscen_1_1basic__renderer_html"><div class="ttname"><a href="classcen_1_1basic__renderer.html">cen::basic_renderer</a></div><div class="ttdoc">Provides the primary 2D rendering API.</div><div class="ttdef"><b>Definition:</b> render.hpp:143</div></div>
-<div class="ttc" id="agroup__render_html_gaf6dbad20a46b69892b5e694a4069ae42"><div class="ttname"><a href="group__render.html#gaf6dbad20a46b69892b5e694a4069ae42">cen::renderer</a></div><div class="ttdeci">basic_renderer&lt; detail::owner_tag &gt; renderer</div><div class="ttdoc">An owning renderer.</div><div class="ttdef"><b>Definition:</b> render.hpp:123</div></div>
+<div class="ttc" id="aclasscen_1_1basic__renderer_html"><div class="ttname"><a href="classcen_1_1basic__renderer.html">cen::basic_renderer</a></div><div class="ttdef"><b>Definition:</b> render.hpp:115</div></div>
+<div class="ttc" id="anamespacecen_html_af6dbad20a46b69892b5e694a4069ae42"><div class="ttname"><a href="namespacecen.html#af6dbad20a46b69892b5e694a4069ae42">cen::renderer</a></div><div class="ttdeci">basic_renderer&lt; detail::owner_tag &gt; renderer</div><div class="ttdef"><b>Definition:</b> render.hpp:101</div></div>
 </div><!-- fragment --><p >The problem with the above approach is that <b>we cannot supply a non-owning pointer to an owning Centurion component</b>. This is where handles come to the rescue! Handles are perfect for providing a <em>view</em> into the fancy Centurion APIs, without committing ownership of the associated resources. A correct version of the earlier example would look like the following.</p>
 <div class="fragment"><div class="line"><span class="keywordtype">void</span> foo(SDL_Renderer* ptr)</div>
 <div class="line">{</div>
@@ -162,7 +162,7 @@ Examples</h1>
 <div class="line">  <span class="comment">// Fancier rendering...</span></div>
 <div class="line"> </div>
 <div class="line">}  <span class="comment">// The SDL renderer is not deleted!</span></div>
-</div><!-- fragment --><p >Furthermore, handles allow Centurion to provide wrappers for SDL functions that return non-owning raw pointers. For instance, one such function is <code>SDL_GetWindowFromID()</code>, which returns <code>SDL_Window*</code>. It would be impossible to safely wrap the returned pointers of such functions in Centurion components if we did not have the ability to explicitly specify the ownership semantics. Since we have handles, there is a Centurion function for the aforementioned SDL function, <code><a class="el" href="group__opengl.html#ga37524582e0c38d993b4b05350918b93d" title="Returns a handle to the currently active OpenGL window.">get_window()</a></code>. There are many more examples of this throughout the library. </p>
+</div><!-- fragment --><p >Furthermore, handles allow Centurion to provide wrappers for SDL functions that return non-owning raw pointers. For instance, one such function is <code>SDL_GetWindowFromID()</code>, which returns <code>SDL_Window*</code>. It would be impossible to safely wrap the returned pointers of such functions in Centurion components if we did not have the ability to explicitly specify the ownership semantics. Since we have handles, there is a Centurion function for the aforementioned SDL function, <code>get_window()</code>. There are many more examples of this throughout the library. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

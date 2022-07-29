@@ -13,7 +13,7 @@ var searchData=
   ['f7_10',['f7',['../namespacecen_1_1keycodes.html#a125640b1ccc90f8608efd11f912af818',1,'cen::keycodes::f7()'],['../namespacecen_1_1scancodes.html#aefd2a65f74a0c96c52ffd9882299b8b5',1,'cen::scancodes::f7()']]],
   ['f8_11',['f8',['../namespacecen_1_1keycodes.html#af5e9a4ad80a5e62355687fae5df7f4bb',1,'cen::keycodes::f8()'],['../namespacecen_1_1scancodes.html#a5f2beb5a6452e7202af22d29eae8a0bb',1,'cen::scancodes::f8()']]],
   ['f9_12',['f9',['../namespacecen_1_1keycodes.html#a9eea2f6e2ca6b111132c302c117439e2',1,'cen::keycodes::f9()'],['../namespacecen_1_1scancodes.html#a902ad60a4c07052db25bd7109f68bb9b',1,'cen::scancodes::f9()']]],
-  ['failure_13',['failure',['../group__common.html#gafaf1da5beba38d47bd79340b7b626f9b',1,'cen']]],
+  ['failure_13',['failure',['../namespacecen.html#afaf1da5beba38d47bd79340b7b626f9b',1,'cen']]],
   ['fire_5fbrick_14',['fire_brick',['../namespacecen_1_1colors.html#a021b80c6503a385c1e45d93808008a55',1,'cen::colors']]],
   ['five_15',['five',['../namespacecen_1_1keycodes.html#a93100f096dc78156729b31771ee532f5',1,'cen::keycodes::five()'],['../namespacecen_1_1scancodes.html#a2284a5e0a12c8694b02e59a8bc2ed5b5',1,'cen::scancodes::five()']]],
   ['flags_16',['flags',['../structcen_1_1img__cfg.html#ac8bf36fe0577cba66bccda3a6f7e80a4',1,'cen::img_cfg::flags()'],['../structcen_1_1mix__cfg.html#ac8bf36fe0577cba66bccda3a6f7e80a4',1,'cen::mix_cfg::flags()'],['../structcen_1_1sdl__cfg.html#a81a27ce50e78368b0d0de1e8767fd32d',1,'cen::sdl_cfg::flags()']]],

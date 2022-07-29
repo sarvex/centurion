@@ -23,12 +23,13 @@ var searchData=
   ['event_5fbase_3c_20sdl_5fquitevent_20_3e_20',['event_base&lt; SDL_QuitEvent &gt;',['../classcen_1_1event__base.html',1,'cen']]],
   ['event_5fbase_3c_20sdl_5fsensorevent_20_3e_21',['event_base&lt; SDL_SensorEvent &gt;',['../classcen_1_1event__base.html',1,'cen']]],
   ['event_5fbase_3c_20sdl_5ftexteditingevent_20_3e_22',['event_base&lt; SDL_TextEditingEvent &gt;',['../classcen_1_1event__base.html',1,'cen']]],
-  ['event_5fbase_3c_20sdl_5ftextinputevent_20_3e_23',['event_base&lt; SDL_TextInputEvent &gt;',['../classcen_1_1event__base.html',1,'cen']]],
-  ['event_5fbase_3c_20sdl_5ftouchfingerevent_20_3e_24',['event_base&lt; SDL_TouchFingerEvent &gt;',['../classcen_1_1event__base.html',1,'cen']]],
-  ['event_5fbase_3c_20sdl_5fuserevent_20_3e_25',['event_base&lt; SDL_UserEvent &gt;',['../classcen_1_1event__base.html',1,'cen']]],
-  ['event_5fbase_3c_20sdl_5fwindowevent_20_3e_26',['event_base&lt; SDL_WindowEvent &gt;',['../classcen_1_1event__base.html',1,'cen']]],
-  ['event_5fdispatcher_27',['event_dispatcher',['../classcen_1_1event__dispatcher.html',1,'cen']]],
-  ['event_5fhandler_28',['event_handler',['../classcen_1_1event__handler.html',1,'cen']]],
-  ['event_5fsink_29',['event_sink',['../classcen_1_1event__sink.html',1,'cen']]],
-  ['exception_30',['exception',['../classcen_1_1exception.html',1,'cen']]]
+  ['event_5fbase_3c_20sdl_5ftexteditingextevent_20_3e_23',['event_base&lt; SDL_TextEditingExtEvent &gt;',['../classcen_1_1event__base.html',1,'cen']]],
+  ['event_5fbase_3c_20sdl_5ftextinputevent_20_3e_24',['event_base&lt; SDL_TextInputEvent &gt;',['../classcen_1_1event__base.html',1,'cen']]],
+  ['event_5fbase_3c_20sdl_5ftouchfingerevent_20_3e_25',['event_base&lt; SDL_TouchFingerEvent &gt;',['../classcen_1_1event__base.html',1,'cen']]],
+  ['event_5fbase_3c_20sdl_5fuserevent_20_3e_26',['event_base&lt; SDL_UserEvent &gt;',['../classcen_1_1event__base.html',1,'cen']]],
+  ['event_5fbase_3c_20sdl_5fwindowevent_20_3e_27',['event_base&lt; SDL_WindowEvent &gt;',['../classcen_1_1event__base.html',1,'cen']]],
+  ['event_5fdispatcher_28',['event_dispatcher',['../classcen_1_1event__dispatcher.html',1,'cen']]],
+  ['event_5fhandler_29',['event_handler',['../classcen_1_1event__handler.html',1,'cen']]],
+  ['event_5fsink_30',['event_sink',['../classcen_1_1event__sink.html',1,'cen']]],
+  ['exception_31',['exception',['../classcen_1_1exception.html',1,'cen']]]
 ];

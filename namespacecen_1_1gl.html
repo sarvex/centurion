@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Centurion
-   &#160;<span id="projectnumber">7.0.0</span>
+   &#160;<span id="projectnumber">7.1.0</span>
    </div>
    <div id="projectbrief">A modern C++ wrapper library for SDL2</div>
   </td>
@@ -93,56 +93,399 @@ $(document).ready(function(){initNavTree('namespacecen_1_1gl.html',''); initResi
 <div class="header">
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">cen::gl Namespace Reference<div class="ingroups"><a class="el" href="group__video.html">Video</a> &raquo; <a class="el" href="group__opengl.html">OpenGL</a></div></div></div>
+  <div class="headertitle"><div class="title">cen::gl Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga8751e0efd2337bf15b6eaae6bd6a1d28"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ga8751e0efd2337bf15b6eaae6bd6a1d28"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__opengl.html#ga8751e0efd2337bf15b6eaae6bd6a1d28">swap</a> (<a class="el" href="classcen_1_1basic__window.html">basic_window</a>&lt; T &gt; &amp;<a class="el" href="group__video.html#gad2eb382608242f24cf986eee93ea144c">window</a>) noexcept</td></tr>
-<tr class="memdesc:ga8751e0efd2337bf15b6eaae6bd6a1d28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swaps the buffers for an OpenGL window.  <a href="group__opengl.html#ga8751e0efd2337bf15b6eaae6bd6a1d28">More...</a><br /></td></tr>
-<tr class="separator:ga8751e0efd2337bf15b6eaae6bd6a1d28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga98d071ae50d06b904222b68ad5bea391"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ga98d071ae50d06b904222b68ad5bea391"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__opengl.html#ga98d071ae50d06b904222b68ad5bea391">drawable_size</a> (const <a class="el" href="classcen_1_1basic__window.html">basic_window</a>&lt; T &gt; &amp;<a class="el" href="group__video.html#gad2eb382608242f24cf986eee93ea144c">window</a>) noexcept -&gt; <a class="el" href="group__math.html#gafe9a20175fe4b1a7e241b8c057a65c2d">iarea</a></td></tr>
-<tr class="memdesc:ga98d071ae50d06b904222b68ad5bea391"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the drawable size of an OpenGL window.  <a href="group__opengl.html#ga98d071ae50d06b904222b68ad5bea391">More...</a><br /></td></tr>
-<tr class="separator:ga98d071ae50d06b904222b68ad5bea391"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga949851829d17597e7b22ce20180848cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__opengl.html#ga949851829d17597e7b22ce20180848cf">reset_attributes</a> () noexcept</td></tr>
-<tr class="memdesc:ga949851829d17597e7b22ce20180848cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets all OpenGL context attributes to their default values.  <a href="group__opengl.html#ga949851829d17597e7b22ce20180848cf">More...</a><br /></td></tr>
-<tr class="separator:ga949851829d17597e7b22ce20180848cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga714d6d0a82552ef7368117d8b32fd908"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__opengl.html#ga714d6d0a82552ef7368117d8b32fd908">set</a> (const <a class="el" href="group__opengl.html#gad2fd980ea3165bba30330566fd230abb">gl_attribute</a> attr, const int value) noexcept -&gt; <a class="el" href="classcen_1_1result.html">result</a></td></tr>
-<tr class="memdesc:ga714d6d0a82552ef7368117d8b32fd908"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of an OpenGL context attribute.  <a href="group__opengl.html#ga714d6d0a82552ef7368117d8b32fd908">More...</a><br /></td></tr>
-<tr class="separator:ga714d6d0a82552ef7368117d8b32fd908"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga563e02365f9bb8c8c8c5a9871f12bd43"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__opengl.html#ga563e02365f9bb8c8c8c5a9871f12bd43">get</a> (const <a class="el" href="group__opengl.html#gad2fd980ea3165bba30330566fd230abb">gl_attribute</a> attr) noexcept -&gt; std::optional&lt; int &gt;</td></tr>
-<tr class="memdesc:ga563e02365f9bb8c8c8c5a9871f12bd43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current value of an OpenGL context attribute.  <a href="group__opengl.html#ga563e02365f9bb8c8c8c5a9871f12bd43">More...</a><br /></td></tr>
-<tr class="separator:ga563e02365f9bb8c8c8c5a9871f12bd43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae6e36a664c1b6997f5cefef583123bb2"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__opengl.html#gae6e36a664c1b6997f5cefef583123bb2">set_swap_interval</a> (const <a class="el" href="group__opengl.html#ga90e35dbbcc444e4aa38fb4b2846f1f3e">gl_swap_interval</a> interval) noexcept -&gt; <a class="el" href="classcen_1_1result.html">result</a></td></tr>
-<tr class="memdesc:gae6e36a664c1b6997f5cefef583123bb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the swap interval strategy that will be used.  <a href="group__opengl.html#gae6e36a664c1b6997f5cefef583123bb2">More...</a><br /></td></tr>
-<tr class="separator:gae6e36a664c1b6997f5cefef583123bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaeb6c9ab78d8da4a8f19b5340296ad341"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__opengl.html#gaeb6c9ab78d8da4a8f19b5340296ad341">swap_interval</a> () noexcept -&gt; <a class="el" href="group__opengl.html#ga90e35dbbcc444e4aa38fb4b2846f1f3e">gl_swap_interval</a></td></tr>
-<tr class="memdesc:gaeb6c9ab78d8da4a8f19b5340296ad341"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the swap interval used by the current OpenGL context.  <a href="group__opengl.html#gaeb6c9ab78d8da4a8f19b5340296ad341">More...</a><br /></td></tr>
-<tr class="separator:gaeb6c9ab78d8da4a8f19b5340296ad341"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga37524582e0c38d993b4b05350918b93d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__opengl.html#ga37524582e0c38d993b4b05350918b93d">get_window</a> () noexcept -&gt; <a class="el" href="group__video.html#ga33e9c5d191b09bdb03534937b41695e6">window_handle</a></td></tr>
-<tr class="memdesc:ga37524582e0c38d993b4b05350918b93d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a handle to the currently active OpenGL window.  <a href="group__opengl.html#ga37524582e0c38d993b4b05350918b93d">More...</a><br /></td></tr>
-<tr class="separator:ga37524582e0c38d993b4b05350918b93d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad5e8ecb5c1ecbad74ae791a4d1101e79"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__opengl.html#gad5e8ecb5c1ecbad74ae791a4d1101e79">get_context</a> () noexcept -&gt; <a class="el" href="group__opengl.html#ga27a52ce5a9e5d951f6ff0d3a82758a0b">gl_context_handle</a></td></tr>
-<tr class="memdesc:gad5e8ecb5c1ecbad74ae791a4d1101e79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a handle to the currently active OpenGL context.  <a href="group__opengl.html#gad5e8ecb5c1ecbad74ae791a4d1101e79">More...</a><br /></td></tr>
-<tr class="separator:gad5e8ecb5c1ecbad74ae791a4d1101e79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaca6a9291f4a107454d4f77a3e9b19ca3"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__opengl.html#gaca6a9291f4a107454d4f77a3e9b19ca3">is_extension_supported</a> (const char *extension) noexcept -&gt; bool</td></tr>
-<tr class="memdesc:gaca6a9291f4a107454d4f77a3e9b19ca3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether a specific extension is supported.  <a href="group__opengl.html#gaca6a9291f4a107454d4f77a3e9b19ca3">More...</a><br /></td></tr>
-<tr class="separator:gaca6a9291f4a107454d4f77a3e9b19ca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacf99bedc0bba882f75c90167cd5361a1"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__opengl.html#gacf99bedc0bba882f75c90167cd5361a1">is_extension_supported</a> (const std::string &amp;extension) noexcept -&gt; bool</td></tr>
-<tr class="memdesc:gacf99bedc0bba882f75c90167cd5361a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether a specific extension is supported.  <a href="group__opengl.html#gacf99bedc0bba882f75c90167cd5361a1">More...</a><br /></td></tr>
-<tr class="separator:gacf99bedc0bba882f75c90167cd5361a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadd9fe0dd0ec3dfa1e41fbcc2f576767c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:gadd9fe0dd0ec3dfa1e41fbcc2f576767c"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__opengl.html#gadd9fe0dd0ec3dfa1e41fbcc2f576767c">bind</a> (<a class="el" href="classcen_1_1basic__texture.html">basic_texture</a>&lt; T &gt; &amp;<a class="el" href="group__render.html#gaf3987dbc8acab4d9401d089e274546aa">texture</a>) noexcept -&gt; std::optional&lt; <a class="el" href="group__math.html#ga7da0f7c9d1a50a63b71b2bc3a3f24947">farea</a> &gt;</td></tr>
-<tr class="memdesc:gadd9fe0dd0ec3dfa1e41fbcc2f576767c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a texture to the current OpenGL context.  <a href="group__opengl.html#gadd9fe0dd0ec3dfa1e41fbcc2f576767c">More...</a><br /></td></tr>
-<tr class="separator:gadd9fe0dd0ec3dfa1e41fbcc2f576767c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0c3d4156a287085bff44db84a700009c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ga0c3d4156a287085bff44db84a700009c"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__opengl.html#ga0c3d4156a287085bff44db84a700009c">unbind</a> (<a class="el" href="classcen_1_1basic__texture.html">basic_texture</a>&lt; T &gt; &amp;<a class="el" href="group__render.html#gaf3987dbc8acab4d9401d089e274546aa">texture</a>) noexcept -&gt; <a class="el" href="classcen_1_1result.html">result</a></td></tr>
-<tr class="memdesc:ga0c3d4156a287085bff44db84a700009c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unbinds a texture from the OpenGL context.  <a href="group__opengl.html#ga0c3d4156a287085bff44db84a700009c">More...</a><br /></td></tr>
-<tr class="separator:ga0c3d4156a287085bff44db84a700009c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8751e0efd2337bf15b6eaae6bd6a1d28"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a8751e0efd2337bf15b6eaae6bd6a1d28"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecen_1_1gl.html#a8751e0efd2337bf15b6eaae6bd6a1d28">swap</a> (<a class="el" href="classcen_1_1basic__window.html">basic_window</a>&lt; T &gt; &amp;<a class="el" href="namespacecen.html#ad2eb382608242f24cf986eee93ea144c">window</a>) noexcept</td></tr>
+<tr class="separator:a8751e0efd2337bf15b6eaae6bd6a1d28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98d071ae50d06b904222b68ad5bea391"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a98d071ae50d06b904222b68ad5bea391"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecen_1_1gl.html#a98d071ae50d06b904222b68ad5bea391">drawable_size</a> (const <a class="el" href="classcen_1_1basic__window.html">basic_window</a>&lt; T &gt; &amp;<a class="el" href="namespacecen.html#ad2eb382608242f24cf986eee93ea144c">window</a>) noexcept -&gt; <a class="el" href="namespacecen.html#afe9a20175fe4b1a7e241b8c057a65c2d">iarea</a></td></tr>
+<tr class="separator:a98d071ae50d06b904222b68ad5bea391"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a949851829d17597e7b22ce20180848cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecen_1_1gl.html#a949851829d17597e7b22ce20180848cf">reset_attributes</a> () noexcept</td></tr>
+<tr class="separator:a949851829d17597e7b22ce20180848cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a714d6d0a82552ef7368117d8b32fd908"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecen_1_1gl.html#a714d6d0a82552ef7368117d8b32fd908">set</a> (const <a class="el" href="namespacecen.html#ad2fd980ea3165bba30330566fd230abb">gl_attribute</a> attr, const int value) noexcept -&gt; <a class="el" href="classcen_1_1result.html">result</a></td></tr>
+<tr class="separator:a714d6d0a82552ef7368117d8b32fd908"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a563e02365f9bb8c8c8c5a9871f12bd43"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecen_1_1gl.html#a563e02365f9bb8c8c8c5a9871f12bd43">get</a> (const <a class="el" href="namespacecen.html#ad2fd980ea3165bba30330566fd230abb">gl_attribute</a> attr) noexcept -&gt; std::optional&lt; int &gt;</td></tr>
+<tr class="separator:a563e02365f9bb8c8c8c5a9871f12bd43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6e36a664c1b6997f5cefef583123bb2"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecen_1_1gl.html#ae6e36a664c1b6997f5cefef583123bb2">set_swap_interval</a> (const <a class="el" href="namespacecen.html#a90e35dbbcc444e4aa38fb4b2846f1f3e">gl_swap_interval</a> interval) noexcept -&gt; <a class="el" href="classcen_1_1result.html">result</a></td></tr>
+<tr class="separator:ae6e36a664c1b6997f5cefef583123bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb6c9ab78d8da4a8f19b5340296ad341"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecen_1_1gl.html#aeb6c9ab78d8da4a8f19b5340296ad341">swap_interval</a> () noexcept -&gt; <a class="el" href="namespacecen.html#a90e35dbbcc444e4aa38fb4b2846f1f3e">gl_swap_interval</a></td></tr>
+<tr class="separator:aeb6c9ab78d8da4a8f19b5340296ad341"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37524582e0c38d993b4b05350918b93d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecen_1_1gl.html#a37524582e0c38d993b4b05350918b93d">get_window</a> () noexcept -&gt; <a class="el" href="namespacecen.html#a33e9c5d191b09bdb03534937b41695e6">window_handle</a></td></tr>
+<tr class="separator:a37524582e0c38d993b4b05350918b93d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5e8ecb5c1ecbad74ae791a4d1101e79"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecen_1_1gl.html#ad5e8ecb5c1ecbad74ae791a4d1101e79">get_context</a> () noexcept -&gt; <a class="el" href="namespacecen.html#a27a52ce5a9e5d951f6ff0d3a82758a0b">gl_context_handle</a></td></tr>
+<tr class="separator:ad5e8ecb5c1ecbad74ae791a4d1101e79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca6a9291f4a107454d4f77a3e9b19ca3"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecen_1_1gl.html#aca6a9291f4a107454d4f77a3e9b19ca3">is_extension_supported</a> (const char *extension) noexcept -&gt; bool</td></tr>
+<tr class="separator:aca6a9291f4a107454d4f77a3e9b19ca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf99bedc0bba882f75c90167cd5361a1"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecen_1_1gl.html#acf99bedc0bba882f75c90167cd5361a1">is_extension_supported</a> (const std::string &amp;extension) noexcept -&gt; bool</td></tr>
+<tr class="separator:acf99bedc0bba882f75c90167cd5361a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add9fe0dd0ec3dfa1e41fbcc2f576767c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:add9fe0dd0ec3dfa1e41fbcc2f576767c"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecen_1_1gl.html#add9fe0dd0ec3dfa1e41fbcc2f576767c">bind</a> (<a class="el" href="classcen_1_1basic__texture.html">basic_texture</a>&lt; T &gt; &amp;<a class="el" href="namespacecen.html#af3987dbc8acab4d9401d089e274546aa">texture</a>) noexcept -&gt; std::optional&lt; <a class="el" href="namespacecen.html#a7da0f7c9d1a50a63b71b2bc3a3f24947">farea</a> &gt;</td></tr>
+<tr class="separator:add9fe0dd0ec3dfa1e41fbcc2f576767c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c3d4156a287085bff44db84a700009c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a0c3d4156a287085bff44db84a700009c"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecen_1_1gl.html#a0c3d4156a287085bff44db84a700009c">unbind</a> (<a class="el" href="classcen_1_1basic__texture.html">basic_texture</a>&lt; T &gt; &amp;<a class="el" href="namespacecen.html#af3987dbc8acab4d9401d089e274546aa">texture</a>) noexcept -&gt; <a class="el" href="classcen_1_1result.html">result</a></td></tr>
+<tr class="separator:a0c3d4156a287085bff44db84a700009c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a8751e0efd2337bf15b6eaae6bd6a1d28" name="a8751e0efd2337bf15b6eaae6bd6a1d28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8751e0efd2337bf15b6eaae6bd6a1d28">&#9670;&nbsp;</a></span>swap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cen::gl::swap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcen_1_1basic__window.html">basic_window</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>window</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a98d071ae50d06b904222b68ad5bea391" name="a98d071ae50d06b904222b68ad5bea391"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98d071ae50d06b904222b68ad5bea391">&#9670;&nbsp;</a></span>drawable_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto cen::gl::drawable_size </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classcen_1_1basic__window.html">basic_window</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>window</em></td><td>)</td>
+          <td> -&gt; <a class="el" href="namespacecen.html#afe9a20175fe4b1a7e241b8c057a65c2d">iarea</a>
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a949851829d17597e7b22ce20180848cf" name="a949851829d17597e7b22ce20180848cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a949851829d17597e7b22ce20180848cf">&#9670;&nbsp;</a></span>reset_attributes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cen::gl::reset_attributes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a714d6d0a82552ef7368117d8b32fd908" name="a714d6d0a82552ef7368117d8b32fd908"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a714d6d0a82552ef7368117d8b32fd908">&#9670;&nbsp;</a></span>set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto cen::gl::set </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#ad2fd980ea3165bba30330566fd230abb">gl_attribute</a>&#160;</td>
+          <td class="paramname"><em>attr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; <a class="el" href="classcen_1_1result.html">result</a>
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a563e02365f9bb8c8c8c5a9871f12bd43" name="a563e02365f9bb8c8c8c5a9871f12bd43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a563e02365f9bb8c8c8c5a9871f12bd43">&#9670;&nbsp;</a></span>get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto cen::gl::get </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#ad2fd980ea3165bba30330566fd230abb">gl_attribute</a>&#160;</td>
+          <td class="paramname"><em>attr</em></td><td>)</td>
+          <td> -&gt; std::optional&lt;int&gt;
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae6e36a664c1b6997f5cefef583123bb2" name="ae6e36a664c1b6997f5cefef583123bb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6e36a664c1b6997f5cefef583123bb2">&#9670;&nbsp;</a></span>set_swap_interval()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto cen::gl::set_swap_interval </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#a90e35dbbcc444e4aa38fb4b2846f1f3e">gl_swap_interval</a>&#160;</td>
+          <td class="paramname"><em>interval</em></td><td>)</td>
+          <td> -&gt; <a class="el" href="classcen_1_1result.html">result</a>
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeb6c9ab78d8da4a8f19b5340296ad341" name="aeb6c9ab78d8da4a8f19b5340296ad341"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb6c9ab78d8da4a8f19b5340296ad341">&#9670;&nbsp;</a></span>swap_interval()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto cen::gl::swap_interval </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> -&gt; <a class="el" href="namespacecen.html#a90e35dbbcc444e4aa38fb4b2846f1f3e">gl_swap_interval</a>
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a37524582e0c38d993b4b05350918b93d" name="a37524582e0c38d993b4b05350918b93d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37524582e0c38d993b4b05350918b93d">&#9670;&nbsp;</a></span>get_window()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto cen::gl::get_window </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> -&gt; <a class="el" href="namespacecen.html#a33e9c5d191b09bdb03534937b41695e6">window_handle</a>
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad5e8ecb5c1ecbad74ae791a4d1101e79" name="ad5e8ecb5c1ecbad74ae791a4d1101e79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5e8ecb5c1ecbad74ae791a4d1101e79">&#9670;&nbsp;</a></span>get_context()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto cen::gl::get_context </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> -&gt; <a class="el" href="namespacecen.html#a27a52ce5a9e5d951f6ff0d3a82758a0b">gl_context_handle</a>
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aca6a9291f4a107454d4f77a3e9b19ca3" name="aca6a9291f4a107454d4f77a3e9b19ca3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca6a9291f4a107454d4f77a3e9b19ca3">&#9670;&nbsp;</a></span>is_extension_supported() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto cen::gl::is_extension_supported </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>extension</em></td><td>)</td>
+          <td> -&gt; bool
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acf99bedc0bba882f75c90167cd5361a1" name="acf99bedc0bba882f75c90167cd5361a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf99bedc0bba882f75c90167cd5361a1">&#9670;&nbsp;</a></span>is_extension_supported() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto cen::gl::is_extension_supported </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>extension</em></td><td>)</td>
+          <td> -&gt; bool
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="add9fe0dd0ec3dfa1e41fbcc2f576767c" name="add9fe0dd0ec3dfa1e41fbcc2f576767c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add9fe0dd0ec3dfa1e41fbcc2f576767c">&#9670;&nbsp;</a></span>bind()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto cen::gl::bind </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcen_1_1basic__texture.html">basic_texture</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>texture</em></td><td>)</td>
+          <td> -&gt; std::optional&lt;<a class="el" href="namespacecen.html#a7da0f7c9d1a50a63b71b2bc3a3f24947">farea</a>&gt;
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0c3d4156a287085bff44db84a700009c" name="a0c3d4156a287085bff44db84a700009c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c3d4156a287085bff44db84a700009c">&#9670;&nbsp;</a></span>unbind()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto cen::gl::unbind </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcen_1_1basic__texture.html">basic_texture</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>texture</em></td><td>)</td>
+          <td> -&gt; <a class="el" href="classcen_1_1result.html">result</a>
+</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.1-->

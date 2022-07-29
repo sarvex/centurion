@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Centurion
-   &#160;<span id="projectnumber">7.0.0</span>
+   &#160;<span id="projectnumber">7.1.0</span>
    </div>
    <div id="projectbrief">A modern C++ wrapper library for SDL2</div>
   </td>
@@ -106,7 +106,7 @@ $(document).ready(function(){initNavTree('primer.html',''); initResizable(); });
 <div class="textblock"><p >This page goes through important core concepts related to the Centurion APIs.</p>
 <h1><a class="anchor" id="impl-details"></a>
 Implementation Details</h1>
-<p >All implementation details used by the library are located in the <code>cen::detail</code> namespace. <b>Do not use anything from this namespace directly!</b> Implementation details are subject to change and/or removal often and without notice.</p>
+<p >All implementation details used by the library are located in the <code><a class="el" href="namespacecen_1_1detail.html">cen::detail</a></code> namespace. <b>Do not use anything from this namespace directly!</b> Implementation details are subject to change and/or removal often and without notice.</p>
 <h1><a class="anchor" id="owners-handles-primer"></a>
 Owners and Handles</h1>
 <p >One of the most important concepts for understanding the Centurion APIs is the notion of "owners" and "handles". In a nutshell, some Centurion classes come in two flavours, where the differences lie in whether or not they own their associated resources. You can read more about owners and handles here: <a class="el" href="owners-and-handles.html">Owners and Handles</a>.</p>
@@ -119,10 +119,10 @@ Non-Null Pointers</h1>
 <p >Wherever possible, assertions will abort the execution of the program in debug builds if a null pointer is supplied to an API that does not allow them. In general, make sure to avoid passing null C-style strings (<code>const char*</code>), since that is generally disallowed.</p>
 <h1><a class="anchor" id="stringification"></a>
 Stringification</h1>
-<p >Most Centurion classes and enums feature stringification support in the form of overloads of the <code><a class="el" href="group__video.html#ga5cccd9c669fdd74579d28f4a16101941">to_string()</a></code> function. Additionally, all classes and enums that provide a <code><a class="el" href="group__video.html#ga5cccd9c669fdd74579d28f4a16101941">to_string()</a></code> overload also provide an overload of <code>operator&lt;&lt;</code>, for use with standard streams such as <code>std::cout</code> and <code>std::clog</code>.</p>
+<p >Most Centurion classes and enums feature stringification support in the form of overloads of the <code>to_string()</code> function. Additionally, all classes and enums that provide a <code>to_string()</code> overload also provide an overload of <code>operator&lt;&lt;</code>, for use with standard streams such as <code>std::cout</code> and <code>std::clog</code>.</p>
 <h1><a class="anchor" id="serialization"></a>
 Serialization</h1>
-<p >Certain Centurion classes provide serialization support, using the API of the <a href="https://github.com/USCiLab/cereal">Cereal</a> library. In other words, the classes that support serialization either provide a <code><a class="el" href="group__math.html#gaa51c1c8201c10e8c573d0873803de5ac">serialize()</a></code> member function or an associated overload of <code><a class="el" href="group__math.html#gaa51c1c8201c10e8c573d0873803de5ac">serialize()</a></code> in the form of a free function. These functions accept a generic "archive", on which <code>operator()</code> is applied to serialize the associated data. As a result, you do <b>not</b> need to install Cereal to use Centurion, and it should be relatively straight forward to write archive wrappers for use with other serialization libraries. </p>
+<p >Certain Centurion classes provide serialization support, using the API of the <a href="https://github.com/USCiLab/cereal">Cereal</a> library. In other words, the classes that support serialization either provide a <code>serialize()</code> member function or an associated overload of <code>serialize()</code> in the form of a free function. These functions accept a generic "archive", on which <code>operator()</code> is applied to serialize the associated data. As a result, you do <b>not</b> need to install Cereal to use Centurion, and it should be relatively straight forward to write archive wrappers for use with other serialization libraries. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

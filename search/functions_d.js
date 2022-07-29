@@ -6,6 +6,6 @@ var searchData=
   ['norm_5fblue_3',['norm_blue',['../classcen_1_1color.html#ae94c6063cf7ba9bb0b8ebcbb816c3c46',1,'cen::color']]],
   ['norm_5fgreen_4',['norm_green',['../classcen_1_1color.html#a1b6a81d62475b11eeb123888765eafaf',1,'cen::color']]],
   ['norm_5fred_5',['norm_red',['../classcen_1_1color.html#a4e63a8d994489680f692e904a96783e1',1,'cen::color']]],
-  ['now_6',['now',['../group__system.html#ga772435dbfc0a02f938e532aa5f4ef42c',1,'cen']]],
-  ['now_5fin_5fseconds_7',['now_in_seconds',['../group__system.html#ga0ffa57835918612fff4b4d58fd7852f9',1,'cen']]]
+  ['now_6',['now',['../namespacecen.html#a772435dbfc0a02f938e532aa5f4ef42c',1,'cen']]],
+  ['now_5fin_5fseconds_7',['now_in_seconds',['../namespacecen.html#a0ffa57835918612fff4b4d58fd7852f9',1,'cen']]]
 ];

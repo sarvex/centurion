@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Centurion
-   &#160;<span id="projectnumber">7.0.0</span>
+   &#160;<span id="projectnumber">7.1.0</span>
    </div>
    <div id="projectbrief">A modern C++ wrapper library for SDL2</div>
   </td>
@@ -141,112 +141,111 @@ $(document).ready(function(){initNavTree('stdlib_8hpp_source.html',''); initResi
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#endif  </span><span class="comment">// CENTURION_HAS_FEATURE_FORMAT</span></div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacecen_1_1detail.html">cen::detail</a> {</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">namespace </span>cen::detail {</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">/* Clamps a value in the range [min, max] */</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> clamp(<span class="keyword">const</span> T&amp; value,</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                                   <span class="keyword">const</span> T&amp; min,</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                                   <span class="keyword">const</span> T&amp; max) <span class="keyword">noexcept</span>(<span class="keyword">noexcept</span>(value &lt; <a class="code hl_enumvalue" href="group__video.html#ggac1a60cfa85f91ddbdb4c884659ca2398ad8bd79cc131920d5de426f914d17405a">min</a>)) -&gt; T</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>{</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <a class="code hl_enumvalue" href="group__logging.html#gga3a6b7415e80b54dc6e6cff5d4451bc00ae44e4612f62d2fb8f8738bab118a9850">assert</a>(min &lt;= max);</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <span class="keywordflow">if</span> (value &lt; min) {</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="group__video.html#ggac1a60cfa85f91ddbdb4c884659ca2398ad8bd79cc131920d5de426f914d17405a">min</a>;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  }</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (max &lt; value) {</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="group__game-controller.html#gga60011722b21f8fabe22666e9e9127a56a2ffe4e77325d9a7152f7086ea7aa5114">max</a>;</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  }</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordflow">return</span> value;</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  }</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>}</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> (<a class="code hl_enumvalue" href="group__video.html#ggac1a60cfa85f91ddbdb4c884659ca2398ad8bd79cc131920d5de426f914d17405a">min</a>)(<span class="keyword">const</span> T&amp; a, <span class="keyword">const</span> T&amp; b) <span class="keyword">noexcept</span>(<span class="keyword">noexcept</span>(<a class="code hl_variable" href="namespacecen_1_1keycodes.html#a8c081f370f50a4c2039bba3a1e63430d">a</a> &lt; <a class="code hl_variable" href="namespacecen_1_1keycodes.html#a2d382bf934a9b2cbc8424bf6b4950761">b</a>)) -&gt; T</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>{</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  <span class="keywordflow">return</span> (a &lt; b) ? <a class="code hl_variable" href="namespacecen_1_1keycodes.html#a8c081f370f50a4c2039bba3a1e63430d">a</a> : <a class="code hl_variable" href="namespacecen_1_1keycodes.html#a2d382bf934a9b2cbc8424bf6b4950761">b</a>;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>}</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> (<a class="code hl_enumvalue" href="group__game-controller.html#gga60011722b21f8fabe22666e9e9127a56a2ffe4e77325d9a7152f7086ea7aa5114">max</a>)(<span class="keyword">const</span> T&amp; a, <span class="keyword">const</span> T&amp; b) <span class="keyword">noexcept</span>(<span class="keyword">noexcept</span>(<a class="code hl_variable" href="namespacecen_1_1keycodes.html#a8c081f370f50a4c2039bba3a1e63430d">a</a> &lt; <a class="code hl_variable" href="namespacecen_1_1keycodes.html#a2d382bf934a9b2cbc8424bf6b4950761">b</a>)) -&gt; T</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>{</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  <span class="comment">/* Purposefully use less-than operator, since it&#39;s more commonly overloaded */</span></div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <span class="keywordflow">return</span> (a &lt; b) ? <a class="code hl_variable" href="namespacecen_1_1keycodes.html#a2d382bf934a9b2cbc8424bf6b4950761">b</a> : <a class="code hl_variable" href="namespacecen_1_1keycodes.html#a8c081f370f50a4c2039bba3a1e63430d">a</a>;</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>}</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> lerp(<span class="keyword">const</span> <span class="keywordtype">float</span> a, <span class="keyword">const</span> <span class="keywordtype">float</span> b, <span class="keyword">const</span> <span class="keywordtype">float</span> bias) <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    -&gt; <span class="keywordtype">float</span></div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>{</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="preprocessor">#if CENTURION_HAS_FEATURE_LERP</span></div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  <span class="keywordflow">return</span> std::lerp(a, b, bias);</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  <span class="keywordflow">return</span> (a * (1.0f - bias)) + (<a class="code hl_variable" href="namespacecen_1_1keycodes.html#a2d382bf934a9b2cbc8424bf6b4950761">b</a> * bias);</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="preprocessor">#endif  </span><span class="comment">// CENTURION_HAS_FEATURE_LERP</span></div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>}</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T = <span class="keywordtype">int</span>&gt;</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>[[nodiscard]] <span class="keyword">auto</span> stoi(<span class="keyword">const</span> std::string_view str, <span class="keyword">const</span> <span class="keywordtype">int</span> base = 10) noexcept(<a class="code hl_variable" href="group__common.html#ga536dd3053e832e696a908d66e89af06a">on_msvc</a>)</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    -&gt; std::optional&lt;T&gt;</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>{</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  <span class="comment">/* We don&#39;t check if the compiler provides &lt;charconv&gt; here because all major compilers we</span></div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment">     support provide the integral overloads of from_chars */</span></div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  T value{};</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  <span class="keyword">const</span> <span class="keyword">auto</span>* begin = str.data();</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  <span class="keyword">const</span> <span class="keyword">auto</span>* end = begin + str.size();</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  <span class="keyword">const</span> <span class="keyword">auto</span> [ptr, err] = std::from_chars(begin, end, value, base);</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  <span class="keywordflow">if</span> (ptr == end &amp;&amp; err == std::errc{}) {</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="keywordflow">return</span> value;</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  }</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keywordflow">return</span> std::nullopt;</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  }</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>}</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>[[nodiscard]] <span class="keyword">inline</span> <span class="keyword">auto</span> cmp(<span class="keyword">const</span> <span class="keywordtype">char</span>* a, <span class="keyword">const</span> <span class="keywordtype">char</span>* b) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">bool</span></div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>{</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>  <span class="keywordflow">if</span> (a &amp;&amp; b) {</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="keywordflow">return</span> std::strcmp(a, b) == 0;</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  }</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>  <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>  }</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>}</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="comment">/* Returns a string that represents the address of the supplied pointer */</span></div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>[[nodiscard]] <span class="keyword">inline</span> <span class="keyword">auto</span> address_of(<span class="keyword">const</span> <span class="keywordtype">void</span>* ptr) -&gt; std::string</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>{</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="preprocessor">#if CENTURION_HAS_FEATURE_FORMAT</span></div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>  <span class="keywordflow">return</span> ptr ? std::format(<span class="stringliteral">&quot;{}&quot;</span>, ptr) : <a class="code hl_enumvalue" href="group__filesystem.html#ggad838be0cacd65634a2867f809ff48edcad2229cc70e64ae7c07361778573c4e0c">std</a>::string{};</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>  <span class="keywordflow">if</span> (ptr) {</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    std::stringstream stream;</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (<a class="code hl_variable" href="group__common.html#ga536dd3053e832e696a908d66e89af06a">on_msvc</a>) {</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>      stream &lt;&lt; <span class="stringliteral">&quot;0x&quot;</span>;  <span class="comment">// Only MSVC seems to omit this, add it for consistency</span></div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    }</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    stream &lt;&lt; ptr;</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <span class="keywordflow">return</span> stream.str();</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>  }</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>  <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    <span class="keywordflow">return</span> std::string{};</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>  }</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="preprocessor">#endif  </span><span class="comment">// CENTURION_HAS_FEATURE_FORMAT</span></div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>}</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="namespacecen_1_1detail.html#a59a40a07069228871bc5b751ac7ef41d">   52</a></span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespacecen_1_1detail.html#a59a40a07069228871bc5b751ac7ef41d">clamp</a>(<span class="keyword">const</span> T&amp; value,</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                                   <span class="keyword">const</span> T&amp; <a class="code hl_function" href="namespacecen_1_1detail.html#a91964c553e1989fb4c1db5ea779e5cdb">min</a>,</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                                   <span class="keyword">const</span> T&amp; <a class="code hl_function" href="namespacecen_1_1detail.html#a8376136359892764835cf15c5fdfec2e">max</a>) <span class="keyword">noexcept</span>(<span class="keyword">noexcept</span>(value &lt; <a class="code hl_function" href="namespacecen_1_1detail.html#a91964c553e1989fb4c1db5ea779e5cdb">min</a>)) -&gt; T</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>{</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <a class="code hl_enumvalue" href="namespacecen.html#a3a6b7415e80b54dc6e6cff5d4451bc00ae44e4612f62d2fb8f8738bab118a9850">assert</a>(<a class="code hl_function" href="namespacecen_1_1detail.html#a91964c553e1989fb4c1db5ea779e5cdb">min</a> &lt;= <a class="code hl_function" href="namespacecen_1_1detail.html#a8376136359892764835cf15c5fdfec2e">max</a>);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="keywordflow">if</span> (value &lt; <a class="code hl_function" href="namespacecen_1_1detail.html#a91964c553e1989fb4c1db5ea779e5cdb">min</a>) {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespacecen_1_1detail.html#a91964c553e1989fb4c1db5ea779e5cdb">min</a>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_function" href="namespacecen_1_1detail.html#a8376136359892764835cf15c5fdfec2e">max</a> &lt; value) {</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespacecen_1_1detail.html#a8376136359892764835cf15c5fdfec2e">max</a>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  }</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordflow">return</span> value;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>}</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="namespacecen_1_1detail.html#a91964c553e1989fb4c1db5ea779e5cdb">   69</a></span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> (<a class="code hl_function" href="namespacecen_1_1detail.html#a91964c553e1989fb4c1db5ea779e5cdb">min</a>)(<span class="keyword">const</span> T&amp; a, <span class="keyword">const</span> T&amp; b) <span class="keyword">noexcept</span>(<span class="keyword">noexcept</span>(a &lt; b)) -&gt; T</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>{</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  <span class="keywordflow">return</span> (a &lt; b) ? a : b;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>}</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="namespacecen_1_1detail.html#a8376136359892764835cf15c5fdfec2e">   75</a></span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> (<a class="code hl_function" href="namespacecen_1_1detail.html#a8376136359892764835cf15c5fdfec2e">max</a>)(<span class="keyword">const</span> T&amp; a, <span class="keyword">const</span> T&amp; b) <span class="keyword">noexcept</span>(<span class="keyword">noexcept</span>(a &lt; b)) -&gt; T</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>{</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <span class="comment">/* Purposefully use less-than operator, since it&#39;s more commonly overloaded */</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  <span class="keywordflow">return</span> (a &lt; b) ? b : a;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>}</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="namespacecen_1_1detail.html#ac29da3a83b953ce46c20eba32e206ccd">   81</a></span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespacecen_1_1detail.html#ac29da3a83b953ce46c20eba32e206ccd">lerp</a>(<span class="keyword">const</span> <span class="keywordtype">float</span> a, <span class="keyword">const</span> <span class="keywordtype">float</span> b, <span class="keyword">const</span> <span class="keywordtype">float</span> bias) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    -&gt; <span class="keywordtype">float</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>{</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="preprocessor">#if CENTURION_HAS_FEATURE_LERP</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  <span class="keywordflow">return</span> std::lerp(a, b, bias);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  <span class="keywordflow">return</span> (a * (1.0f - bias)) + (b * bias);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="preprocessor">#endif  </span><span class="comment">// CENTURION_HAS_FEATURE_LERP</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>}</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T = <span class="keywordtype">int</span>&gt;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="namespacecen_1_1detail.html#a62e266222e0a55810de00602acb69acb">   92</a></span>[[nodiscard]] <span class="keyword">auto</span> <a class="code hl_function" href="namespacecen_1_1detail.html#a62e266222e0a55810de00602acb69acb">stoi</a>(<span class="keyword">const</span> std::string_view str, <span class="keyword">const</span> <span class="keywordtype">int</span> base = 10) noexcept(<a class="code hl_variable" href="namespacecen.html#a536dd3053e832e696a908d66e89af06a">on_msvc</a>)</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    -&gt; std::optional&lt;T&gt;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>{</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  <span class="comment">/* We don&#39;t check if the compiler provides &lt;charconv&gt; here because all major compilers we</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment">     support provide the integral overloads of from_chars */</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  T value{};</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  <span class="keyword">const</span> <span class="keyword">auto</span>* begin = str.data();</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  <span class="keyword">const</span> <span class="keyword">auto</span>* end = begin + str.size();</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  <span class="keyword">const</span> <span class="keyword">auto</span> [ptr, err] = std::from_chars(begin, end, value, base);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  <span class="keywordflow">if</span> (ptr == end &amp;&amp; err == std::errc{}) {</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="keywordflow">return</span> value;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  }</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="keywordflow">return</span> std::nullopt;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  }</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>}</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="namespacecen_1_1detail.html#aa6e78ea746638ef88f8b9e8dec17ae80">  110</a></span>[[nodiscard]] <span class="keyword">inline</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespacecen_1_1detail.html#aa6e78ea746638ef88f8b9e8dec17ae80">cmp</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* a, <span class="keyword">const</span> <span class="keywordtype">char</span>* b) <span class="keyword">noexcept</span> -&gt; <span class="keywordtype">bool</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>{</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>  <span class="keywordflow">if</span> (a &amp;&amp; b) {</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="keywordflow">return</span> std::strcmp(a, b) == 0;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>  }</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>  }</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>}</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="namespacecen_1_1detail.html#a9a5b459ce9562dd89bcf9c6a7f359481">  121</a></span>[[nodiscard]] <span class="keyword">inline</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespacecen_1_1detail.html#a9a5b459ce9562dd89bcf9c6a7f359481">address_of</a>(<span class="keyword">const</span> <span class="keywordtype">void</span>* ptr) -&gt; std::string</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>{</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="preprocessor">#if CENTURION_HAS_FEATURE_FORMAT</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>  <span class="keywordflow">return</span> ptr ? std::format(<span class="stringliteral">&quot;{}&quot;</span>, ptr) : std::string{};</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>  <span class="keywordflow">if</span> (ptr) {</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    std::stringstream stream;</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (<a class="code hl_variable" href="namespacecen.html#a536dd3053e832e696a908d66e89af06a">on_msvc</a>) {</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>      stream &lt;&lt; <span class="stringliteral">&quot;0x&quot;</span>;  <span class="comment">// Only MSVC seems to omit this, add it for consistency</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    }</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    stream &lt;&lt; ptr;</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <span class="keywordflow">return</span> stream.str();</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>  }</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>  <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <span class="keywordflow">return</span> std::string{};</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>  }</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="preprocessor">#endif  </span><span class="comment">// CENTURION_HAS_FEATURE_FORMAT</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>}</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>}  <span class="comment">// namespace cen::detail</span></div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>}  <span class="comment">// namespace cen::detail</span></div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="preprocessor">#endif  </span><span class="comment">// CENTURION_DETAIL_STDLIB_HPP_</span></div>
-<div class="ttc" id="agroup__common_html_ga536dd3053e832e696a908d66e89af06a"><div class="ttname"><a href="group__common.html#ga536dd3053e832e696a908d66e89af06a">cen::on_msvc</a></div><div class="ttdeci">constexpr bool on_msvc</div><div class="ttdef"><b>Definition:</b> common.hpp:134</div></div>
-<div class="ttc" id="agroup__filesystem_html_ggad838be0cacd65634a2867f809ff48edcad2229cc70e64ae7c07361778573c4e0c"><div class="ttname"><a href="group__filesystem.html#ggad838be0cacd65634a2867f809ff48edcad2229cc70e64ae7c07361778573c4e0c">cen::file_type::std</a></div><div class="ttdeci">@ std</div></div>
-<div class="ttc" id="agroup__game-controller_html_gga60011722b21f8fabe22666e9e9127a56a2ffe4e77325d9a7152f7086ea7aa5114"><div class="ttname"><a href="group__game-controller.html#gga60011722b21f8fabe22666e9e9127a56a2ffe4e77325d9a7152f7086ea7aa5114">cen::controller_button::max</a></div><div class="ttdeci">@ max</div></div>
-<div class="ttc" id="agroup__logging_html_gga3a6b7415e80b54dc6e6cff5d4451bc00ae44e4612f62d2fb8f8738bab118a9850"><div class="ttname"><a href="group__logging.html#gga3a6b7415e80b54dc6e6cff5d4451bc00ae44e4612f62d2fb8f8738bab118a9850">cen::log_category::assert</a></div><div class="ttdeci">@ assert</div></div>
-<div class="ttc" id="agroup__video_html_ggac1a60cfa85f91ddbdb4c884659ca2398ad8bd79cc131920d5de426f914d17405a"><div class="ttname"><a href="group__video.html#ggac1a60cfa85f91ddbdb4c884659ca2398ad8bd79cc131920d5de426f914d17405a">cen::blend_op::min</a></div><div class="ttdeci">@ min</div></div>
-<div class="ttc" id="anamespacecen_1_1keycodes_html_a2d382bf934a9b2cbc8424bf6b4950761"><div class="ttname"><a href="namespacecen_1_1keycodes.html#a2d382bf934a9b2cbc8424bf6b4950761">cen::keycodes::b</a></div><div class="ttdeci">constexpr key_code b</div><div class="ttdef"><b>Definition:</b> keyboard.hpp:743</div></div>
-<div class="ttc" id="anamespacecen_1_1keycodes_html_a8c081f370f50a4c2039bba3a1e63430d"><div class="ttname"><a href="namespacecen_1_1keycodes.html#a8c081f370f50a4c2039bba3a1e63430d">cen::keycodes::a</a></div><div class="ttdeci">constexpr key_code a</div><div class="ttdef"><b>Definition:</b> keyboard.hpp:742</div></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="preprocessor">#endif  </span><span class="comment">// CENTURION_DETAIL_STDLIB_HPP_</span></div>
+<div class="ttc" id="anamespacecen_1_1detail_html"><div class="ttname"><a href="namespacecen_1_1detail.html">cen::detail</a></div><div class="ttdef"><b>Definition:</b> array_utils.hpp:34</div></div>
+<div class="ttc" id="anamespacecen_1_1detail_html_a59a40a07069228871bc5b751ac7ef41d"><div class="ttname"><a href="namespacecen_1_1detail.html#a59a40a07069228871bc5b751ac7ef41d">cen::detail::clamp</a></div><div class="ttdeci">constexpr auto clamp(const T &amp;value, const T &amp;min, const T &amp;max) noexcept(noexcept(value&lt; min)) -&gt; T</div><div class="ttdoc">Clamps a value in the range [min, max].</div><div class="ttdef"><b>Definition:</b> stdlib.hpp:52</div></div>
+<div class="ttc" id="anamespacecen_1_1detail_html_a62e266222e0a55810de00602acb69acb"><div class="ttname"><a href="namespacecen_1_1detail.html#a62e266222e0a55810de00602acb69acb">cen::detail::stoi</a></div><div class="ttdeci">auto stoi(const std::string_view str, const int base=10) noexcept(on_msvc) -&gt; std::optional&lt; T &gt;</div><div class="ttdef"><b>Definition:</b> stdlib.hpp:92</div></div>
+<div class="ttc" id="anamespacecen_1_1detail_html_a8376136359892764835cf15c5fdfec2e"><div class="ttname"><a href="namespacecen_1_1detail.html#a8376136359892764835cf15c5fdfec2e">cen::detail::max</a></div><div class="ttdeci">constexpr auto() max(const T &amp;a, const T &amp;b) noexcept(noexcept(a&lt; b)) -&gt; T</div><div class="ttdef"><b>Definition:</b> stdlib.hpp:75</div></div>
+<div class="ttc" id="anamespacecen_1_1detail_html_a91964c553e1989fb4c1db5ea779e5cdb"><div class="ttname"><a href="namespacecen_1_1detail.html#a91964c553e1989fb4c1db5ea779e5cdb">cen::detail::min</a></div><div class="ttdeci">constexpr auto() min(const T &amp;a, const T &amp;b) noexcept(noexcept(a&lt; b)) -&gt; T</div><div class="ttdef"><b>Definition:</b> stdlib.hpp:69</div></div>
+<div class="ttc" id="anamespacecen_1_1detail_html_a9a5b459ce9562dd89bcf9c6a7f359481"><div class="ttname"><a href="namespacecen_1_1detail.html#a9a5b459ce9562dd89bcf9c6a7f359481">cen::detail::address_of</a></div><div class="ttdeci">auto address_of(const void *ptr) -&gt; std::string</div><div class="ttdoc">Returns a string that represents the address of the supplied pointer.</div><div class="ttdef"><b>Definition:</b> stdlib.hpp:121</div></div>
+<div class="ttc" id="anamespacecen_1_1detail_html_aa6e78ea746638ef88f8b9e8dec17ae80"><div class="ttname"><a href="namespacecen_1_1detail.html#aa6e78ea746638ef88f8b9e8dec17ae80">cen::detail::cmp</a></div><div class="ttdeci">auto cmp(const char *a, const char *b) noexcept -&gt; bool</div><div class="ttdef"><b>Definition:</b> stdlib.hpp:110</div></div>
+<div class="ttc" id="anamespacecen_1_1detail_html_ac29da3a83b953ce46c20eba32e206ccd"><div class="ttname"><a href="namespacecen_1_1detail.html#ac29da3a83b953ce46c20eba32e206ccd">cen::detail::lerp</a></div><div class="ttdeci">constexpr auto lerp(const float a, const float b, const float bias) noexcept -&gt; float</div><div class="ttdef"><b>Definition:</b> stdlib.hpp:81</div></div>
+<div class="ttc" id="anamespacecen_html_a3a6b7415e80b54dc6e6cff5d4451bc00ae44e4612f62d2fb8f8738bab118a9850"><div class="ttname"><a href="namespacecen.html#a3a6b7415e80b54dc6e6cff5d4451bc00ae44e4612f62d2fb8f8738bab118a9850">cen::log_category::assert</a></div><div class="ttdeci">@ assert</div></div>
+<div class="ttc" id="anamespacecen_html_a536dd3053e832e696a908d66e89af06a"><div class="ttname"><a href="namespacecen.html#a536dd3053e832e696a908d66e89af06a">cen::on_msvc</a></div><div class="ttdeci">constexpr bool on_msvc</div><div class="ttdef"><b>Definition:</b> common.hpp:112</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.1-->

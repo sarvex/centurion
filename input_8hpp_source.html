@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Centurion
-   &#160;<span id="projectnumber">7.0.0</span>
+   &#160;<span id="projectnumber">7.1.0</span>
    </div>
    <div id="projectbrief">A modern C++ wrapper library for SDL2</div>
   </td>
@@ -130,46 +130,42 @@ $(document).ready(function(){initNavTree('input_8hpp_source.html',''); initResiz
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacecen.html">cen</a> {</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="group__input.html#gaca49ff1dab9f8fde0cc789fac0f23e04">   46</a></span><span class="keyword">enum class</span> <a class="code hl_enumeration" href="group__input.html#gaca49ff1dab9f8fde0cc789fac0f23e04">button_state</a> : <a class="code hl_typedef" href="group__common.html#ga0fecf032c367d6e513b85439dcdb8fb2">uint8</a></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>{</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <a class="code hl_enumvalue" href="group__input.html#ggaca49ff1dab9f8fde0cc789fac0f23e04a23690fd759f17135ec9879b56ff2600c">released</a> = SDL_RELEASED,  </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <a class="code hl_enumvalue" href="group__input.html#ggaca49ff1dab9f8fde0cc789fac0f23e04a6375592a2d987630e9bf9afd9e7de973">pressed</a> = SDL_PRESSED     </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>};</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="namespacecen.html#aca49ff1dab9f8fde0cc789fac0f23e04">   37</a></span><span class="keyword">enum class</span> <a class="code hl_enumeration" href="namespacecen.html#aca49ff1dab9f8fde0cc789fac0f23e04">button_state</a> : <a class="code hl_typedef" href="namespacecen.html#a0fecf032c367d6e513b85439dcdb8fb2">uint8</a></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>{</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <a class="code hl_enumvalue" href="namespacecen.html#aca49ff1dab9f8fde0cc789fac0f23e04a23690fd759f17135ec9879b56ff2600c">released</a> = SDL_RELEASED,</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  <a class="code hl_enumvalue" href="namespacecen.html#aca49ff1dab9f8fde0cc789fac0f23e04a6375592a2d987630e9bf9afd9e7de973">pressed</a> = SDL_PRESSED</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>};</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="namespacecen.html#a31e19e6b44241edd8fff8413c53d006b">   43</a></span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespacecen.html#a5cccd9c669fdd74579d28f4a16101941">to_string</a>(<span class="keyword">const</span> <a class="code hl_enumeration" href="namespacecen.html#aca49ff1dab9f8fde0cc789fac0f23e04">button_state</a> state) -&gt; std::string_view</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>{</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <span class="keywordflow">switch</span> (state) {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacecen.html#aca49ff1dab9f8fde0cc789fac0f23e04a23690fd759f17135ec9879b56ff2600c">button_state::released</a>:</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>      <span class="keywordflow">return</span> <span class="stringliteral">&quot;released&quot;</span>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacecen.html#aca49ff1dab9f8fde0cc789fac0f23e04a6375592a2d987630e9bf9afd9e7de973">button_state::pressed</a>:</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>      <span class="keywordflow">return</span> <span class="stringliteral">&quot;pressed&quot;</span>;</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="group__input.html#ga31e19e6b44241edd8fff8413c53d006b">   55</a></span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__video.html#ga5cccd9c669fdd74579d28f4a16101941">to_string</a>(<span class="keyword">const</span> <a class="code hl_enumeration" href="group__input.html#gaca49ff1dab9f8fde0cc789fac0f23e04">button_state</a> state) -&gt; std::string_view</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>{</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="keywordflow">switch</span> (state) {</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group__input.html#ggaca49ff1dab9f8fde0cc789fac0f23e04a23690fd759f17135ec9879b56ff2600c">button_state::released</a>:</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>      <span class="keywordflow">return</span> <span class="stringliteral">&quot;released&quot;</span>;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="group__input.html#ggaca49ff1dab9f8fde0cc789fac0f23e04a6375592a2d987630e9bf9afd9e7de973">button_state::pressed</a>:</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>      <span class="keywordflow">return</span> <span class="stringliteral">&quot;pressed&quot;</span>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordflow">default</span>:</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>      <span class="keywordflow">throw</span> <a class="code hl_class" href="classcen_1_1exception.html">exception</a>{<span class="stringliteral">&quot;Did not recognize button state!&quot;</span>};</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>}</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="namespacecen.html#a655bdedd0f342670a64372b2274b91d5">   57</a></span><span class="keyword">inline</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespacecen.html#a9b2b88e0d39f0088b6940317fe33dbdf">operator&lt;&lt;</a>(std::ostream&amp; stream, <span class="keyword">const</span> <a class="code hl_enumeration" href="namespacecen.html#aca49ff1dab9f8fde0cc789fac0f23e04">button_state</a> state) -&gt; std::ostream&amp;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>{</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <span class="keywordflow">return</span> stream &lt;&lt; <a class="code hl_function" href="namespacecen.html#a5cccd9c669fdd74579d28f4a16101941">to_string</a>(state);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>}</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}  <span class="comment">// namespace cen</span></div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordflow">default</span>:</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>      <span class="keywordflow">throw</span> <a class="code hl_class" href="classcen_1_1exception.html">exception</a>{<span class="stringliteral">&quot;Did not recognize button state!&quot;</span>};</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  }</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="group__input.html#ga655bdedd0f342670a64372b2274b91d5">   69</a></span><span class="keyword">inline</span> <span class="keyword">auto</span> <a class="code hl_function" href="group__video.html#ga9b2b88e0d39f0088b6940317fe33dbdf">operator&lt;&lt;</a>(std::ostream&amp; stream, <span class="keyword">const</span> <a class="code hl_enumeration" href="group__input.html#gaca49ff1dab9f8fde0cc789fac0f23e04">button_state</a> state) -&gt; std::ostream&amp;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>{</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  <span class="keywordflow">return</span> stream &lt;&lt; <a class="code hl_function" href="group__video.html#ga5cccd9c669fdd74579d28f4a16101941">to_string</a>(state);</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>}</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>}  <span class="comment">// namespace cen</span></div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="preprocessor">#endif  </span><span class="comment">// CENTURION_INPUT_HPP_</span></div>
-<div class="ttc" id="aclasscen_1_1exception_html"><div class="ttname"><a href="classcen_1_1exception.html">cen::exception</a></div><div class="ttdoc">The base class of all exceptions explicitly thrown by the library.</div><div class="ttdef"><b>Definition:</b> common.hpp:206</div></div>
-<div class="ttc" id="agroup__common_html_ga0fecf032c367d6e513b85439dcdb8fb2"><div class="ttname"><a href="group__common.html#ga0fecf032c367d6e513b85439dcdb8fb2">cen::uint8</a></div><div class="ttdeci">Uint8 uint8</div><div class="ttdef"><b>Definition:</b> common.hpp:92</div></div>
-<div class="ttc" id="agroup__input_html_gaca49ff1dab9f8fde0cc789fac0f23e04"><div class="ttname"><a href="group__input.html#gaca49ff1dab9f8fde0cc789fac0f23e04">cen::button_state</a></div><div class="ttdeci">button_state</div><div class="ttdef"><b>Definition:</b> input.hpp:47</div></div>
-<div class="ttc" id="agroup__input_html_ggaca49ff1dab9f8fde0cc789fac0f23e04a23690fd759f17135ec9879b56ff2600c"><div class="ttname"><a href="group__input.html#ggaca49ff1dab9f8fde0cc789fac0f23e04a23690fd759f17135ec9879b56ff2600c">cen::button_state::released</a></div><div class="ttdeci">@ released</div><div class="ttdoc">Corresponds to SDL_RELEASED.</div></div>
-<div class="ttc" id="agroup__input_html_ggaca49ff1dab9f8fde0cc789fac0f23e04a6375592a2d987630e9bf9afd9e7de973"><div class="ttname"><a href="group__input.html#ggaca49ff1dab9f8fde0cc789fac0f23e04a6375592a2d987630e9bf9afd9e7de973">cen::button_state::pressed</a></div><div class="ttdeci">@ pressed</div><div class="ttdoc">Corresponds to SDL_PRESSED.</div></div>
-<div class="ttc" id="agroup__video_html_ga5cccd9c669fdd74579d28f4a16101941"><div class="ttname"><a href="group__video.html#ga5cccd9c669fdd74579d28f4a16101941">cen::to_string</a></div><div class="ttdeci">auto to_string(const color &amp;color) -&gt; std::string</div><div class="ttdef"><b>Definition:</b> color.hpp:662</div></div>
-<div class="ttc" id="agroup__video_html_ga9b2b88e0d39f0088b6940317fe33dbdf"><div class="ttname"><a href="group__video.html#ga9b2b88e0d39f0088b6940317fe33dbdf">cen::operator&lt;&lt;</a></div><div class="ttdeci">auto operator&lt;&lt;(std::ostream &amp;stream, const color &amp;color) -&gt; std::ostream &amp;</div><div class="ttdef"><b>Definition:</b> color.hpp:667</div></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">#endif  </span><span class="comment">// CENTURION_INPUT_HPP_</span></div>
+<div class="ttc" id="aclasscen_1_1exception_html"><div class="ttname"><a href="classcen_1_1exception.html">cen::exception</a></div><div class="ttdoc">The base class of all exceptions explicitly thrown by the library.</div><div class="ttdef"><b>Definition:</b> common.hpp:160</div></div>
 <div class="ttc" id="anamespacecen_html"><div class="ttname"><a href="namespacecen.html">cen</a></div><div class="ttdef"><b>Definition:</b> audio_events.hpp:33</div></div>
+<div class="ttc" id="anamespacecen_html_a0fecf032c367d6e513b85439dcdb8fb2"><div class="ttname"><a href="namespacecen.html#a0fecf032c367d6e513b85439dcdb8fb2">cen::uint8</a></div><div class="ttdeci">Uint8 uint8</div><div class="ttdef"><b>Definition:</b> common.hpp:75</div></div>
+<div class="ttc" id="anamespacecen_html_a5cccd9c669fdd74579d28f4a16101941"><div class="ttname"><a href="namespacecen.html#a5cccd9c669fdd74579d28f4a16101941">cen::to_string</a></div><div class="ttdeci">auto to_string(const color &amp;color) -&gt; std::string</div><div class="ttdef"><b>Definition:</b> color.hpp:526</div></div>
+<div class="ttc" id="anamespacecen_html_a9b2b88e0d39f0088b6940317fe33dbdf"><div class="ttname"><a href="namespacecen.html#a9b2b88e0d39f0088b6940317fe33dbdf">cen::operator&lt;&lt;</a></div><div class="ttdeci">auto operator&lt;&lt;(std::ostream &amp;stream, const color &amp;color) -&gt; std::ostream &amp;</div><div class="ttdef"><b>Definition:</b> color.hpp:531</div></div>
+<div class="ttc" id="anamespacecen_html_aca49ff1dab9f8fde0cc789fac0f23e04"><div class="ttname"><a href="namespacecen.html#aca49ff1dab9f8fde0cc789fac0f23e04">cen::button_state</a></div><div class="ttdeci">button_state</div><div class="ttdef"><b>Definition:</b> input.hpp:38</div></div>
+<div class="ttc" id="anamespacecen_html_aca49ff1dab9f8fde0cc789fac0f23e04a23690fd759f17135ec9879b56ff2600c"><div class="ttname"><a href="namespacecen.html#aca49ff1dab9f8fde0cc789fac0f23e04a23690fd759f17135ec9879b56ff2600c">cen::button_state::released</a></div><div class="ttdeci">@ released</div></div>
+<div class="ttc" id="anamespacecen_html_aca49ff1dab9f8fde0cc789fac0f23e04a6375592a2d987630e9bf9afd9e7de973"><div class="ttname"><a href="namespacecen.html#aca49ff1dab9f8fde0cc789fac0f23e04a6375592a2d987630e9bf9afd9e7de973">cen::button_state::pressed</a></div><div class="ttdeci">@ pressed</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.1-->

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Centurion
-   &#160;<span id="projectnumber">7.0.0</span>
+   &#160;<span id="projectnumber">7.1.0</span>
    </div>
    <div id="projectbrief">A modern C++ wrapper library for SDL2</div>
   </td>
@@ -93,13 +93,12 @@ $(document).ready(function(){initNavTree('classcen_1_1basic__joystick.html','');
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classcen_1_1basic__joystick-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">basic_joystick&lt; T &gt; Class Template Reference<div class="ingroups"><a class="el" href="group__input.html">Input</a> &raquo; <a class="el" href="group__joystick.html">Joystick</a></div></div></div>
+  <div class="headertitle"><div class="title">basic_joystick&lt; T &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>Represents a joystick device.  
- <a href="classcen_1_1basic__joystick.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="joystick_8hpp_source.html">joystick.hpp</a>&gt;</code></p>
 <table class="memberdecls">
@@ -112,230 +111,147 @@ Public Types</h2></td></tr>
 <tr class="memitem:a6809b81a928783a40daf32e227f6063b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a6809b81a928783a40daf32e227f6063b">guid_type</a> = SDL_JoystickGUID</td></tr>
 <tr class="separator:a6809b81a928783a40daf32e227f6063b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Construction</h2></td></tr>
-<tr class="memitem:a825d16b17a760cea8bed02f501e975be"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a825d16b17a760cea8bed02f501e975be">basic_joystick</a> (<a class="el" href="group__common.html#ga8ab6d78cbc2030d15036476760bbbf3f">maybe_owner</a>&lt; SDL_Joystick * &gt; <a class="el" href="group__joystick.html#gaf78e75debd724ef4e9e84949a215c909">joystick</a>) noexcept(detail::is_handle&lt; T &gt;)</td></tr>
-<tr class="memdesc:a825d16b17a760cea8bed02f501e975be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a joystick instance based on an existing SDL joystick.  <a href="classcen_1_1basic__joystick.html#a825d16b17a760cea8bed02f501e975be">More...</a><br /></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a825d16b17a760cea8bed02f501e975be"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a825d16b17a760cea8bed02f501e975be">basic_joystick</a> (<a class="el" href="namespacecen.html#a8ab6d78cbc2030d15036476760bbbf3f">maybe_owner</a>&lt; SDL_Joystick * &gt; <a class="el" href="namespacecen.html#af78e75debd724ef4e9e84949a215c909">joystick</a>) noexcept(<a class="el" href="namespacecen_1_1detail.html#a8ca49fdda5da2e804a34921261a1fe5f">detail::is_handle</a>&lt; T &gt;)</td></tr>
 <tr class="separator:a825d16b17a760cea8bed02f501e975be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11b822f0542c6294935d626bc810f925"><td class="memTemplParams" colspan="2">template&lt;typename TT  = T, detail::enable_for_owner&lt; TT &gt;  = 0&gt; </td></tr>
+<tr class="memitem:a11b822f0542c6294935d626bc810f925"><td class="memTemplParams" colspan="2">template&lt;typename TT  = T, <a class="el" href="namespacecen_1_1detail.html#a10de886509ce4311b91d656f5e620d5a">detail::enable_for_owner</a>&lt; TT &gt;  = 0&gt; </td></tr>
 <tr class="memitem:a11b822f0542c6294935d626bc810f925"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a11b822f0542c6294935d626bc810f925">basic_joystick</a> (const <a class="el" href="classcen_1_1basic__joystick.html#a2afad9f01282d85509cec124f6506a4e">device_index</a> index=0)</td></tr>
-<tr class="memdesc:a11b822f0542c6294935d626bc810f925"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens a joystick based on a device index.  <a href="classcen_1_1basic__joystick.html#a11b822f0542c6294935d626bc810f925">More...</a><br /></td></tr>
 <tr class="separator:a11b822f0542c6294935d626bc810f925"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaef3ac4ce1b6ce8cd058e1a888134d13"><td class="memTemplParams" colspan="2">template&lt;typename TT  = T, detail::enable_for_handle&lt; TT &gt;  = 0&gt; </td></tr>
-<tr class="memitem:aaef3ac4ce1b6ce8cd058e1a888134d13"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#aaef3ac4ce1b6ce8cd058e1a888134d13">basic_joystick</a> (const <a class="el" href="group__joystick.html#gaf78e75debd724ef4e9e84949a215c909">joystick</a> &amp;<a class="el" href="group__common.html#gae635fa1092d174256dfa190f7d24cd96">owner</a>) noexcept</td></tr>
-<tr class="memdesc:aaef3ac4ce1b6ce8cd058e1a888134d13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a handle to an owning joystick.  <a href="classcen_1_1basic__joystick.html#aaef3ac4ce1b6ce8cd058e1a888134d13">More...</a><br /></td></tr>
+<tr class="memitem:aaef3ac4ce1b6ce8cd058e1a888134d13"><td class="memTemplParams" colspan="2">template&lt;typename TT  = T, <a class="el" href="namespacecen_1_1detail.html#af7eaf1dad7d2f17f827758b6586e98f2">detail::enable_for_handle</a>&lt; TT &gt;  = 0&gt; </td></tr>
+<tr class="memitem:aaef3ac4ce1b6ce8cd058e1a888134d13"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#aaef3ac4ce1b6ce8cd058e1a888134d13">basic_joystick</a> (const <a class="el" href="namespacecen.html#af78e75debd724ef4e9e84949a215c909">joystick</a> &amp;<a class="el" href="namespacecen.html#ae635fa1092d174256dfa190f7d24cd96">owner</a>) noexcept</td></tr>
 <tr class="separator:aaef3ac4ce1b6ce8cd058e1a888134d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">General information</h2></td></tr>
 <tr class="memitem:a9bd605e34571537cf40aab45f69cc577"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a9bd605e34571537cf40aab45f69cc577">name</a> () const noexcept -&gt; const char *</td></tr>
-<tr class="memdesc:a9bd605e34571537cf40aab45f69cc577"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name associated with the joystick.  <a href="classcen_1_1basic__joystick.html#a9bd605e34571537cf40aab45f69cc577">More...</a><br /></td></tr>
 <tr class="separator:a9bd605e34571537cf40aab45f69cc577"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab16ade03bd84dddd278ad4a852fe52cf"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#ab16ade03bd84dddd278ad4a852fe52cf">type</a> () const noexcept -&gt; <a class="el" href="group__joystick.html#ga9ebc623128dc34e921ed86c78a4fd13b">joystick_type</a></td></tr>
-<tr class="memdesc:ab16ade03bd84dddd278ad4a852fe52cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the type of the joystick.  <a href="classcen_1_1basic__joystick.html#ab16ade03bd84dddd278ad4a852fe52cf">More...</a><br /></td></tr>
+<tr class="memitem:ab16ade03bd84dddd278ad4a852fe52cf"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#ab16ade03bd84dddd278ad4a852fe52cf">type</a> () const noexcept -&gt; <a class="el" href="namespacecen.html#a9ebc623128dc34e921ed86c78a4fd13b">joystick_type</a></td></tr>
 <tr class="separator:ab16ade03bd84dddd278ad4a852fe52cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abdb267a91cee950b0b4de16d68a286f1"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#abdb267a91cee950b0b4de16d68a286f1">vendor</a> () const noexcept -&gt; std::optional&lt; <a class="el" href="group__common.html#ga4b8300d0da9b3af587b60196e9efd080">uint16</a> &gt;</td></tr>
-<tr class="memdesc:abdb267a91cee950b0b4de16d68a286f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the USB vendor ID of the joystick.  <a href="classcen_1_1basic__joystick.html#abdb267a91cee950b0b4de16d68a286f1">More...</a><br /></td></tr>
+<tr class="memitem:abdb267a91cee950b0b4de16d68a286f1"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#abdb267a91cee950b0b4de16d68a286f1">vendor</a> () const noexcept -&gt; std::optional&lt; <a class="el" href="namespacecen.html#a4b8300d0da9b3af587b60196e9efd080">uint16</a> &gt;</td></tr>
 <tr class="separator:abdb267a91cee950b0b4de16d68a286f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4bc2fcd349c69b17d243ba43eced6047"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a4bc2fcd349c69b17d243ba43eced6047">product</a> () const noexcept -&gt; std::optional&lt; <a class="el" href="group__common.html#ga4b8300d0da9b3af587b60196e9efd080">uint16</a> &gt;</td></tr>
-<tr class="memdesc:a4bc2fcd349c69b17d243ba43eced6047"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the USB product ID of the joystick.  <a href="classcen_1_1basic__joystick.html#a4bc2fcd349c69b17d243ba43eced6047">More...</a><br /></td></tr>
+<tr class="memitem:a4bc2fcd349c69b17d243ba43eced6047"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a4bc2fcd349c69b17d243ba43eced6047">product</a> () const noexcept -&gt; std::optional&lt; <a class="el" href="namespacecen.html#a4b8300d0da9b3af587b60196e9efd080">uint16</a> &gt;</td></tr>
 <tr class="separator:a4bc2fcd349c69b17d243ba43eced6047"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57a250d1e47f6163f4f49773f78bbb44"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a57a250d1e47f6163f4f49773f78bbb44">product_version</a> () const noexcept -&gt; std::optional&lt; <a class="el" href="group__common.html#ga4b8300d0da9b3af587b60196e9efd080">uint16</a> &gt;</td></tr>
-<tr class="memdesc:a57a250d1e47f6163f4f49773f78bbb44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the product version of the joystick.  <a href="classcen_1_1basic__joystick.html#a57a250d1e47f6163f4f49773f78bbb44">More...</a><br /></td></tr>
+<tr class="memitem:a57a250d1e47f6163f4f49773f78bbb44"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a57a250d1e47f6163f4f49773f78bbb44">product_version</a> () const noexcept -&gt; std::optional&lt; <a class="el" href="namespacecen.html#a4b8300d0da9b3af587b60196e9efd080">uint16</a> &gt;</td></tr>
 <tr class="separator:a57a250d1e47f6163f4f49773f78bbb44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ae742bbc30386325f36e0df67474ab7"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a6ae742bbc30386325f36e0df67474ab7">guid</a> () noexcept -&gt; <a class="el" href="classcen_1_1basic__joystick.html#a6809b81a928783a40daf32e227f6063b">guid_type</a></td></tr>
-<tr class="memdesc:a6ae742bbc30386325f36e0df67474ab7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the GUID of the joystick.  <a href="classcen_1_1basic__joystick.html#a6ae742bbc30386325f36e0df67474ab7">More...</a><br /></td></tr>
 <tr class="separator:a6ae742bbc30386325f36e0df67474ab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a00d4bd3bb106711d4860fc1d5606f4"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a7a00d4bd3bb106711d4860fc1d5606f4">serial</a> () const noexcept -&gt; const char *</td></tr>
-<tr class="memdesc:a7a00d4bd3bb106711d4860fc1d5606f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the serial number associated with the joystick.  <a href="classcen_1_1basic__joystick.html#a7a00d4bd3bb106711d4860fc1d5606f4">More...</a><br /></td></tr>
 <tr class="separator:a7a00d4bd3bb106711d4860fc1d5606f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59deac084f3a4fcd1bdcab399ceae7ef"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a59deac084f3a4fcd1bdcab399ceae7ef">button_count</a> () const noexcept -&gt; int</td></tr>
-<tr class="memdesc:a59deac084f3a4fcd1bdcab399ceae7ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the amount of buttons on the joystick.  <a href="classcen_1_1basic__joystick.html#a59deac084f3a4fcd1bdcab399ceae7ef">More...</a><br /></td></tr>
 <tr class="separator:a59deac084f3a4fcd1bdcab399ceae7ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a725ee3a5fd9f9f7b44deb42680f7dd73"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a725ee3a5fd9f9f7b44deb42680f7dd73">hat_count</a> () const noexcept -&gt; int</td></tr>
-<tr class="memdesc:a725ee3a5fd9f9f7b44deb42680f7dd73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the amount of hats on the joystick.  <a href="classcen_1_1basic__joystick.html#a725ee3a5fd9f9f7b44deb42680f7dd73">More...</a><br /></td></tr>
 <tr class="separator:a725ee3a5fd9f9f7b44deb42680f7dd73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72e2b3ed5688edea8300e47434831834"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a72e2b3ed5688edea8300e47434831834">axis_count</a> () const noexcept -&gt; int</td></tr>
-<tr class="memdesc:a72e2b3ed5688edea8300e47434831834"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the amount of axis controls on the joystick.  <a href="classcen_1_1basic__joystick.html#a72e2b3ed5688edea8300e47434831834">More...</a><br /></td></tr>
 <tr class="separator:a72e2b3ed5688edea8300e47434831834"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecdf2b9e279a432b3f085fe858020e2f"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#aecdf2b9e279a432b3f085fe858020e2f">trackball_count</a> () const noexcept -&gt; int</td></tr>
-<tr class="memdesc:aecdf2b9e279a432b3f085fe858020e2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the amount of trackballs on the joystick.  <a href="classcen_1_1basic__joystick.html#aecdf2b9e279a432b3f085fe858020e2f">More...</a><br /></td></tr>
 <tr class="separator:aecdf2b9e279a432b3f085fe858020e2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ff1b87e5517b52860a7a602d52e0627"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a4ff1b87e5517b52860a7a602d52e0627">name</a> (const <a class="el" href="classcen_1_1basic__joystick.html#a2afad9f01282d85509cec124f6506a4e">device_index</a> index) noexcept -&gt; const char *</td></tr>
-<tr class="memdesc:a4ff1b87e5517b52860a7a602d52e0627"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name associated with a joystick.  <a href="classcen_1_1basic__joystick.html#a4ff1b87e5517b52860a7a602d52e0627">More...</a><br /></td></tr>
-<tr class="separator:a4ff1b87e5517b52860a7a602d52e0627"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac338f0e87cd31649c05747ebd620c17b"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#ac338f0e87cd31649c05747ebd620c17b">type</a> (const <a class="el" href="classcen_1_1basic__joystick.html#a2afad9f01282d85509cec124f6506a4e">device_index</a> index) noexcept -&gt; <a class="el" href="group__joystick.html#ga9ebc623128dc34e921ed86c78a4fd13b">joystick_type</a></td></tr>
-<tr class="memdesc:ac338f0e87cd31649c05747ebd620c17b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the type of a joystick.  <a href="classcen_1_1basic__joystick.html#ac338f0e87cd31649c05747ebd620c17b">More...</a><br /></td></tr>
-<tr class="separator:ac338f0e87cd31649c05747ebd620c17b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab293582f0ae4a964ec228dc05df1d6a4"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#ab293582f0ae4a964ec228dc05df1d6a4">vendor</a> (const <a class="el" href="classcen_1_1basic__joystick.html#a2afad9f01282d85509cec124f6506a4e">device_index</a> index) noexcept -&gt; std::optional&lt; <a class="el" href="group__common.html#ga4b8300d0da9b3af587b60196e9efd080">uint16</a> &gt;</td></tr>
-<tr class="memdesc:ab293582f0ae4a964ec228dc05df1d6a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the USB vendor ID of a joystick.  <a href="classcen_1_1basic__joystick.html#ab293582f0ae4a964ec228dc05df1d6a4">More...</a><br /></td></tr>
-<tr class="separator:ab293582f0ae4a964ec228dc05df1d6a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4db39984c4d73db0d1351a73545e635f"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a4db39984c4d73db0d1351a73545e635f">product</a> (const <a class="el" href="classcen_1_1basic__joystick.html#a2afad9f01282d85509cec124f6506a4e">device_index</a> index) noexcept -&gt; std::optional&lt; <a class="el" href="group__common.html#ga4b8300d0da9b3af587b60196e9efd080">uint16</a> &gt;</td></tr>
-<tr class="memdesc:a4db39984c4d73db0d1351a73545e635f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the USB product ID of a joystick.  <a href="classcen_1_1basic__joystick.html#a4db39984c4d73db0d1351a73545e635f">More...</a><br /></td></tr>
-<tr class="separator:a4db39984c4d73db0d1351a73545e635f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae1ca4de85339e98991cb1d8014fd92d"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#aae1ca4de85339e98991cb1d8014fd92d">product_version</a> (const <a class="el" href="classcen_1_1basic__joystick.html#a2afad9f01282d85509cec124f6506a4e">device_index</a> index) noexcept -&gt; std::optional&lt; <a class="el" href="group__common.html#ga4b8300d0da9b3af587b60196e9efd080">uint16</a> &gt;</td></tr>
-<tr class="memdesc:aae1ca4de85339e98991cb1d8014fd92d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the product version of a joystick.  <a href="classcen_1_1basic__joystick.html#aae1ca4de85339e98991cb1d8014fd92d">More...</a><br /></td></tr>
-<tr class="separator:aae1ca4de85339e98991cb1d8014fd92d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a9c9bd11e1a19e411804c0ca26600cf"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a2a9c9bd11e1a19e411804c0ca26600cf">guid</a> (const <a class="el" href="classcen_1_1basic__joystick.html#a2afad9f01282d85509cec124f6506a4e">device_index</a> index) noexcept -&gt; <a class="el" href="classcen_1_1basic__joystick.html#a6809b81a928783a40daf32e227f6063b">guid_type</a></td></tr>
-<tr class="memdesc:a2a9c9bd11e1a19e411804c0ca26600cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the GUID of a joystick.  <a href="classcen_1_1basic__joystick.html#a2a9c9bd11e1a19e411804c0ca26600cf">More...</a><br /></td></tr>
-<tr class="separator:a2a9c9bd11e1a19e411804c0ca26600cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Queries</h2></td></tr>
 <tr class="memitem:a067adb53232df963117d4bdb43b90f27"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a067adb53232df963117d4bdb43b90f27">id</a> () const noexcept -&gt; <a class="el" href="classcen_1_1basic__joystick.html#a622c0b174cc88f36b974a15ade47d829">id_type</a></td></tr>
-<tr class="memdesc:a067adb53232df963117d4bdb43b90f27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the ID associated with the joystick.  <a href="classcen_1_1basic__joystick.html#a067adb53232df963117d4bdb43b90f27">More...</a><br /></td></tr>
 <tr class="separator:a067adb53232df963117d4bdb43b90f27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af880bb446ae1da69d036cc0ec32d4533"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#af880bb446ae1da69d036cc0ec32d4533">attached</a> () const noexcept -&gt; bool</td></tr>
-<tr class="memdesc:af880bb446ae1da69d036cc0ec32d4533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether the joystick has been opened.  <a href="classcen_1_1basic__joystick.html#af880bb446ae1da69d036cc0ec32d4533">More...</a><br /></td></tr>
 <tr class="separator:af880bb446ae1da69d036cc0ec32d4533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78badcbda5ca40a4d26b2da247ad80ca"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a78badcbda5ca40a4d26b2da247ad80ca">power</a> () const noexcept -&gt; <a class="el" href="group__joystick.html#ga9d37644a7b056f74bd49ed6c94813aa0">joystick_power</a></td></tr>
-<tr class="memdesc:a78badcbda5ca40a4d26b2da247ad80ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current power state of the joystick.  <a href="classcen_1_1basic__joystick.html#a78badcbda5ca40a4d26b2da247ad80ca">More...</a><br /></td></tr>
+<tr class="memitem:a78badcbda5ca40a4d26b2da247ad80ca"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a78badcbda5ca40a4d26b2da247ad80ca">power</a> () const noexcept -&gt; <a class="el" href="namespacecen.html#a9d37644a7b056f74bd49ed6c94813aa0">joystick_power</a></td></tr>
 <tr class="separator:a78badcbda5ca40a4d26b2da247ad80ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d5a293e804d83417c21a62a2704c759"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a5d5a293e804d83417c21a62a2704c759">id</a> (const <a class="el" href="classcen_1_1basic__joystick.html#a2afad9f01282d85509cec124f6506a4e">device_index</a> index) noexcept -&gt; std::optional&lt; <a class="el" href="classcen_1_1basic__joystick.html#a622c0b174cc88f36b974a15ade47d829">id_type</a> &gt;</td></tr>
-<tr class="memdesc:a5d5a293e804d83417c21a62a2704c759"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the ID associated with a joystick.  <a href="classcen_1_1basic__joystick.html#a5d5a293e804d83417c21a62a2704c759">More...</a><br /></td></tr>
-<tr class="separator:a5d5a293e804d83417c21a62a2704c759"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Rumble functions</h2></td></tr>
-<tr class="memitem:a197df64d50ac11dc70fc2287ac674cbf"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a197df64d50ac11dc70fc2287ac674cbf">rumble</a> (const <a class="el" href="group__common.html#ga4b8300d0da9b3af587b60196e9efd080">uint16</a> lo, const <a class="el" href="group__common.html#ga4b8300d0da9b3af587b60196e9efd080">uint16</a> hi, const <a class="el" href="group__common.html#ga66f48b1369b952fdefe95b983184ef2a">u32ms</a> duration) noexcept(noexcept(duration.count())) -&gt; <a class="el" href="classcen_1_1result.html">result</a></td></tr>
-<tr class="memdesc:a197df64d50ac11dc70fc2287ac674cbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes the joystick rumble.  <a href="classcen_1_1basic__joystick.html#a197df64d50ac11dc70fc2287ac674cbf">More...</a><br /></td></tr>
+<tr class="memitem:a197df64d50ac11dc70fc2287ac674cbf"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a197df64d50ac11dc70fc2287ac674cbf">rumble</a> (const <a class="el" href="namespacecen.html#a4b8300d0da9b3af587b60196e9efd080">uint16</a> lo, const <a class="el" href="namespacecen.html#a4b8300d0da9b3af587b60196e9efd080">uint16</a> hi, const <a class="el" href="namespacecen.html#a66f48b1369b952fdefe95b983184ef2a">u32ms</a> duration) noexcept(noexcept(duration.count())) -&gt; <a class="el" href="classcen_1_1result.html">result</a></td></tr>
 <tr class="separator:a197df64d50ac11dc70fc2287ac674cbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44e754cc87f1ae2862211694eae87be4"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a44e754cc87f1ae2862211694eae87be4">stop_rumble</a> () -&gt; <a class="el" href="classcen_1_1result.html">result</a></td></tr>
-<tr class="memdesc:a44e754cc87f1ae2862211694eae87be4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops any currently playing rumble effect.  <a href="classcen_1_1basic__joystick.html#a44e754cc87f1ae2862211694eae87be4">More...</a><br /></td></tr>
 <tr class="separator:a44e754cc87f1ae2862211694eae87be4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac47cecbc10296661d323e3fc16c9608b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#ac47cecbc10296661d323e3fc16c9608b">rumble_triggers</a> (const <a class="el" href="group__common.html#ga4b8300d0da9b3af587b60196e9efd080">uint16</a> left, const <a class="el" href="group__common.html#ga4b8300d0da9b3af587b60196e9efd080">uint16</a> right, const <a class="el" href="group__common.html#ga66f48b1369b952fdefe95b983184ef2a">u32ms</a> duration) noexcept(noexcept(duration.count())) -&gt; <a class="el" href="classcen_1_1result.html">result</a></td></tr>
-<tr class="memdesc:ac47cecbc10296661d323e3fc16c9608b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes the joystick triggers rumble.  <a href="classcen_1_1basic__joystick.html#ac47cecbc10296661d323e3fc16c9608b">More...</a><br /></td></tr>
+<tr class="memitem:ac47cecbc10296661d323e3fc16c9608b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#ac47cecbc10296661d323e3fc16c9608b">rumble_triggers</a> (const <a class="el" href="namespacecen.html#a4b8300d0da9b3af587b60196e9efd080">uint16</a> left, const <a class="el" href="namespacecen.html#a4b8300d0da9b3af587b60196e9efd080">uint16</a> right, const <a class="el" href="namespacecen.html#a66f48b1369b952fdefe95b983184ef2a">u32ms</a> duration) noexcept(noexcept(duration.count())) -&gt; <a class="el" href="classcen_1_1result.html">result</a></td></tr>
 <tr class="separator:ac47cecbc10296661d323e3fc16c9608b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d715b6780ab1331a649cb0c0be7f345"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a9d715b6780ab1331a649cb0c0be7f345">has_rumble</a> () const noexcept -&gt; bool</td></tr>
-<tr class="memdesc:a9d715b6780ab1331a649cb0c0be7f345"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether the joystick has rumble support.  <a href="classcen_1_1basic__joystick.html#a9d715b6780ab1331a649cb0c0be7f345">More...</a><br /></td></tr>
 <tr class="separator:a9d715b6780ab1331a649cb0c0be7f345"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67ec6de702cc725e5637065d31e3dce8"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a67ec6de702cc725e5637065d31e3dce8">has_rumble_triggers</a> () const noexcept -&gt; bool</td></tr>
-<tr class="memdesc:a67ec6de702cc725e5637065d31e3dce8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether the joystick has rumble support for triggers.  <a href="classcen_1_1basic__joystick.html#a67ec6de702cc725e5637065d31e3dce8">More...</a><br /></td></tr>
 <tr class="separator:a67ec6de702cc725e5637065d31e3dce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">LED functions</h2></td></tr>
 <tr class="memitem:a9449192486e1cdd4d658eab731f2ace4"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a9449192486e1cdd4d658eab731f2ace4">set_led</a> (const <a class="el" href="classcen_1_1color.html">color</a> &amp;<a class="el" href="classcen_1_1color.html">color</a>) noexcept -&gt; <a class="el" href="classcen_1_1result.html">result</a></td></tr>
-<tr class="memdesc:a9449192486e1cdd4d658eab731f2ace4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the color of the associated LED light.  <a href="classcen_1_1basic__joystick.html#a9449192486e1cdd4d658eab731f2ace4">More...</a><br /></td></tr>
 <tr class="separator:a9449192486e1cdd4d658eab731f2ace4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26676070562550f666e19a903afeaf01"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a26676070562550f666e19a903afeaf01">has_led</a> () const noexcept -&gt; bool</td></tr>
-<tr class="memdesc:a26676070562550f666e19a903afeaf01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether the joystick features a LED light.  <a href="classcen_1_1basic__joystick.html#a26676070562550f666e19a903afeaf01">More...</a><br /></td></tr>
 <tr class="separator:a26676070562550f666e19a903afeaf01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Virtual joystick API</h2></td></tr>
-<tr class="memitem:add6a1dd8d956300d5036637c6df185bc"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#add6a1dd8d956300d5036637c6df185bc">set_virtual_axis</a> (const int axis, const <a class="el" href="group__common.html#ga8089acde96bbf064054dc5af993346bd">int16</a> value) noexcept -&gt; <a class="el" href="classcen_1_1result.html">result</a></td></tr>
-<tr class="memdesc:add6a1dd8d956300d5036637c6df185bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of a virtual joystick axis.  <a href="classcen_1_1basic__joystick.html#add6a1dd8d956300d5036637c6df185bc">More...</a><br /></td></tr>
+<tr class="memitem:add6a1dd8d956300d5036637c6df185bc"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#add6a1dd8d956300d5036637c6df185bc">set_virtual_axis</a> (const int axis, const <a class="el" href="namespacecen.html#a8089acde96bbf064054dc5af993346bd">int16</a> value) noexcept -&gt; <a class="el" href="classcen_1_1result.html">result</a></td></tr>
 <tr class="separator:add6a1dd8d956300d5036637c6df185bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f573b840e6fc9936eec39e03a635821"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a5f573b840e6fc9936eec39e03a635821">set_virtual_button</a> (const int button, const <a class="el" href="group__input.html#gaca49ff1dab9f8fde0cc789fac0f23e04">button_state</a> state) noexcept -&gt; <a class="el" href="classcen_1_1result.html">result</a></td></tr>
-<tr class="memdesc:a5f573b840e6fc9936eec39e03a635821"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the state of a virtual button.  <a href="classcen_1_1basic__joystick.html#a5f573b840e6fc9936eec39e03a635821">More...</a><br /></td></tr>
+<tr class="memitem:a5f573b840e6fc9936eec39e03a635821"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a5f573b840e6fc9936eec39e03a635821">set_virtual_button</a> (const int button, const <a class="el" href="namespacecen.html#aca49ff1dab9f8fde0cc789fac0f23e04">button_state</a> state) noexcept -&gt; <a class="el" href="classcen_1_1result.html">result</a></td></tr>
 <tr class="separator:a5f573b840e6fc9936eec39e03a635821"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d8a079700c32281345744812cfb1ada"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a5d8a079700c32281345744812cfb1ada">set_virtual_hat</a> (const int hat, const <a class="el" href="group__joystick.html#ga5316417f468c766a1042777d1ff33eb6">hat_state</a> state) noexcept -&gt; <a class="el" href="classcen_1_1result.html">result</a></td></tr>
-<tr class="memdesc:a5d8a079700c32281345744812cfb1ada"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the state of a virtual joystick hat.  <a href="classcen_1_1basic__joystick.html#a5d8a079700c32281345744812cfb1ada">More...</a><br /></td></tr>
+<tr class="memitem:a5d8a079700c32281345744812cfb1ada"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a5d8a079700c32281345744812cfb1ada">set_virtual_hat</a> (const int hat, const <a class="el" href="namespacecen.html#a5316417f468c766a1042777d1ff33eb6">hat_state</a> state) noexcept -&gt; <a class="el" href="classcen_1_1result.html">result</a></td></tr>
 <tr class="separator:a5d8a079700c32281345744812cfb1ada"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af93e05b3d3691c01ed72f0d8eaccde84"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#af93e05b3d3691c01ed72f0d8eaccde84">attach_virtual</a> (const <a class="el" href="group__joystick.html#ga9ebc623128dc34e921ed86c78a4fd13b">joystick_type</a> <a class="el" href="classcen_1_1basic__joystick.html#ab16ade03bd84dddd278ad4a852fe52cf">type</a>, const int axes, const int buttons, const int hats) noexcept -&gt; std::optional&lt; <a class="el" href="classcen_1_1basic__joystick.html#a2afad9f01282d85509cec124f6506a4e">device_index</a> &gt;</td></tr>
-<tr class="memdesc:af93e05b3d3691c01ed72f0d8eaccde84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attaches a new virtual joystick.  <a href="classcen_1_1basic__joystick.html#af93e05b3d3691c01ed72f0d8eaccde84">More...</a><br /></td></tr>
-<tr class="separator:af93e05b3d3691c01ed72f0d8eaccde84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fd1dac95056b7f0924dbba1091ca10a"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a2fd1dac95056b7f0924dbba1091ca10a">detach_virtual</a> (const <a class="el" href="classcen_1_1basic__joystick.html#a2afad9f01282d85509cec124f6506a4e">device_index</a> index) noexcept -&gt; <a class="el" href="classcen_1_1result.html">result</a></td></tr>
-<tr class="memdesc:a2fd1dac95056b7f0924dbba1091ca10a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detaches a virtual joystick.  <a href="classcen_1_1basic__joystick.html#a2fd1dac95056b7f0924dbba1091ca10a">More...</a><br /></td></tr>
-<tr class="separator:a2fd1dac95056b7f0924dbba1091ca10a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f6cf7d9455230ff9ed34d1eee1a300a"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a5f6cf7d9455230ff9ed34d1eee1a300a">is_virtual</a> (const <a class="el" href="classcen_1_1basic__joystick.html#a2afad9f01282d85509cec124f6506a4e">device_index</a> index) noexcept -&gt; bool</td></tr>
-<tr class="memdesc:a5f6cf7d9455230ff9ed34d1eee1a300a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether a joystick is virtual.  <a href="classcen_1_1basic__joystick.html#a5f6cf7d9455230ff9ed34d1eee1a300a">More...</a><br /></td></tr>
-<tr class="separator:a5f6cf7d9455230ff9ed34d1eee1a300a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Button and axis functions</h2></td></tr>
-<tr class="memitem:a372b3dc461b5c167042dcd3054c6f6ed"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a372b3dc461b5c167042dcd3054c6f6ed">query_button</a> (const int button) const noexcept -&gt; <a class="el" href="group__input.html#gaca49ff1dab9f8fde0cc789fac0f23e04">button_state</a></td></tr>
-<tr class="memdesc:a372b3dc461b5c167042dcd3054c6f6ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the state of a joystick button.  <a href="classcen_1_1basic__joystick.html#a372b3dc461b5c167042dcd3054c6f6ed">More...</a><br /></td></tr>
+<tr class="memitem:a372b3dc461b5c167042dcd3054c6f6ed"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a372b3dc461b5c167042dcd3054c6f6ed">query_button</a> (const int button) const noexcept -&gt; <a class="el" href="namespacecen.html#aca49ff1dab9f8fde0cc789fac0f23e04">button_state</a></td></tr>
 <tr class="separator:a372b3dc461b5c167042dcd3054c6f6ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac057026fdba5a3013834f0723678c3dd"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#ac057026fdba5a3013834f0723678c3dd">query_hat</a> (const int hat) const noexcept -&gt; <a class="el" href="group__joystick.html#ga5316417f468c766a1042777d1ff33eb6">hat_state</a></td></tr>
-<tr class="memdesc:ac057026fdba5a3013834f0723678c3dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the state of a joystick hat.  <a href="classcen_1_1basic__joystick.html#ac057026fdba5a3013834f0723678c3dd">More...</a><br /></td></tr>
+<tr class="memitem:ac057026fdba5a3013834f0723678c3dd"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#ac057026fdba5a3013834f0723678c3dd">query_hat</a> (const int hat) const noexcept -&gt; <a class="el" href="namespacecen.html#a5316417f468c766a1042777d1ff33eb6">hat_state</a></td></tr>
 <tr class="separator:ac057026fdba5a3013834f0723678c3dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a5538fac86986b2a46863d3432eabc8"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a2a5538fac86986b2a46863d3432eabc8">query_axis</a> (const int axis) const noexcept -&gt; <a class="el" href="group__common.html#ga8089acde96bbf064054dc5af993346bd">int16</a></td></tr>
-<tr class="memdesc:a2a5538fac86986b2a46863d3432eabc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the position of an axis.  <a href="classcen_1_1basic__joystick.html#a2a5538fac86986b2a46863d3432eabc8">More...</a><br /></td></tr>
+<tr class="memitem:a2a5538fac86986b2a46863d3432eabc8"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a2a5538fac86986b2a46863d3432eabc8">query_axis</a> (const int axis) const noexcept -&gt; <a class="el" href="namespacecen.html#a8089acde96bbf064054dc5af993346bd">int16</a></td></tr>
 <tr class="separator:a2a5538fac86986b2a46863d3432eabc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f8970befb9251192ecc8a13a34a2302"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a7f8970befb9251192ecc8a13a34a2302">axis_initial_state</a> (const int axis) const noexcept -&gt; std::optional&lt; <a class="el" href="group__common.html#ga8089acde96bbf064054dc5af993346bd">int16</a> &gt;</td></tr>
-<tr class="memdesc:a7f8970befb9251192ecc8a13a34a2302"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the initial state of an axis on the joystick.  <a href="classcen_1_1basic__joystick.html#a7f8970befb9251192ecc8a13a34a2302">More...</a><br /></td></tr>
+<tr class="memitem:a7f8970befb9251192ecc8a13a34a2302"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a7f8970befb9251192ecc8a13a34a2302">axis_initial_state</a> (const int axis) const noexcept -&gt; std::optional&lt; <a class="el" href="namespacecen.html#a8089acde96bbf064054dc5af993346bd">int16</a> &gt;</td></tr>
 <tr class="separator:a7f8970befb9251192ecc8a13a34a2302"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a4f84ad6a3c1ce2851dd4f63026dcb8"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a2a4f84ad6a3c1ce2851dd4f63026dcb8">get_ball_axis_delta</a> (const int ball) const noexcept -&gt; std::optional&lt; <a class="el" href="structcen_1_1ball__axis__delta.html">ball_axis_delta</a> &gt;</td></tr>
-<tr class="memdesc:a2a4f84ad6a3c1ce2851dd4f63026dcb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the ball axis delta since the last poll.  <a href="classcen_1_1basic__joystick.html#a2a4f84ad6a3c1ce2851dd4f63026dcb8">More...</a><br /></td></tr>
 <tr class="separator:a2a4f84ad6a3c1ce2851dd4f63026dcb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Effects</h2></td></tr>
 <tr class="memitem:ac90186cdd4d29431a016be6397de729d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#ac90186cdd4d29431a016be6397de729d">send_effect</a> (const void *data, const int size) -&gt; <a class="el" href="classcen_1_1result.html">result</a></td></tr>
-<tr class="memdesc:ac90186cdd4d29431a016be6397de729d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a packet of joystick specific data.  <a href="classcen_1_1basic__joystick.html#ac90186cdd4d29431a016be6397de729d">More...</a><br /></td></tr>
 <tr class="separator:ac90186cdd4d29431a016be6397de729d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Setters</h2></td></tr>
 <tr class="memitem:ae75689bec05f6cb5220cd93ef15a6e62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#ae75689bec05f6cb5220cd93ef15a6e62">set_player_index</a> (const int index) noexcept</td></tr>
-<tr class="memdesc:ae75689bec05f6cb5220cd93ef15a6e62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the player index associated with the joystick.  <a href="classcen_1_1basic__joystick.html#ae75689bec05f6cb5220cd93ef15a6e62">More...</a><br /></td></tr>
 <tr class="separator:ae75689bec05f6cb5220cd93ef15a6e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Getters</h2></td></tr>
 <tr class="memitem:a18d44b2693cfae71c3c41e9a13399e4c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a18d44b2693cfae71c3c41e9a13399e4c">player_index</a> () const noexcept -&gt; std::optional&lt; int &gt;</td></tr>
-<tr class="memdesc:a18d44b2693cfae71c3c41e9a13399e4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the player index associated with the joystick.  <a href="classcen_1_1basic__joystick.html#a18d44b2693cfae71c3c41e9a13399e4c">More...</a><br /></td></tr>
 <tr class="separator:a18d44b2693cfae71c3c41e9a13399e4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72e8936fad8b803e9aa9efaca3ce27d8"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a72e8936fad8b803e9aa9efaca3ce27d8">player_index</a> (const <a class="el" href="classcen_1_1basic__joystick.html#a2afad9f01282d85509cec124f6506a4e">device_index</a> index) noexcept -&gt; std::optional&lt; int &gt;</td></tr>
-<tr class="memdesc:a72e8936fad8b803e9aa9efaca3ce27d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the player index associated with a joystick.  <a href="classcen_1_1basic__joystick.html#a72e8936fad8b803e9aa9efaca3ce27d8">More...</a><br /></td></tr>
-<tr class="separator:a72e8936fad8b803e9aa9efaca3ce27d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Misc functions</h2></td></tr>
-<tr class="memitem:a5bd22283effc54c70cc24db49d9a97c9"><td class="memTemplParams" colspan="2">template&lt;typename TT  = T, detail::enable_for_handle&lt; TT &gt;  = 0&gt; </td></tr>
+<tr class="memitem:a5bd22283effc54c70cc24db49d9a97c9"><td class="memTemplParams" colspan="2">template&lt;typename TT  = T, <a class="el" href="namespacecen_1_1detail.html#af7eaf1dad7d2f17f827758b6586e98f2">detail::enable_for_handle</a>&lt; TT &gt;  = 0&gt; </td></tr>
 <tr class="memitem:a5bd22283effc54c70cc24db49d9a97c9"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a5bd22283effc54c70cc24db49d9a97c9">operator bool</a> () const noexcept</td></tr>
 <tr class="memdesc:a5bd22283effc54c70cc24db49d9a97c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether a handle holds a non-null pointer.  <a href="classcen_1_1basic__joystick.html#a5bd22283effc54c70cc24db49d9a97c9">More...</a><br /></td></tr>
 <tr class="separator:a5bd22283effc54c70cc24db49d9a97c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3418a3ad045a82381588e2424f859cd9"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a3418a3ad045a82381588e2424f859cd9">get</a> () const noexcept -&gt; SDL_Joystick *</td></tr>
 <tr class="separator:a3418a3ad045a82381588e2424f859cd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Factory functions</h2></td></tr>
-<tr class="memitem:ac94dd8db54ad4b80e1a9593eb1e70558"><td class="memTemplParams" colspan="2">template&lt;typename TT  = T, detail::enable_for_handle&lt; TT &gt;  = 0&gt; </td></tr>
-<tr class="memitem:ac94dd8db54ad4b80e1a9593eb1e70558"><td class="memTemplItemLeft" align="right" valign="top">static auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#ac94dd8db54ad4b80e1a9593eb1e70558">from_id</a> (const <a class="el" href="classcen_1_1basic__joystick.html#a622c0b174cc88f36b974a15ade47d829">id_type</a> <a class="el" href="classcen_1_1basic__joystick.html#a067adb53232df963117d4bdb43b90f27">id</a>) noexcept -&gt; <a class="el" href="group__joystick.html#gae7d73a39edd2e9bcd77ba41fe740a2a8">joystick_handle</a></td></tr>
-<tr class="memdesc:ac94dd8db54ad4b80e1a9593eb1e70558"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a handle to the joystick associated with a specific ID.  <a href="classcen_1_1basic__joystick.html#ac94dd8db54ad4b80e1a9593eb1e70558">More...</a><br /></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ac94dd8db54ad4b80e1a9593eb1e70558"><td class="memTemplParams" colspan="2">template&lt;typename TT  = T, <a class="el" href="namespacecen_1_1detail.html#af7eaf1dad7d2f17f827758b6586e98f2">detail::enable_for_handle</a>&lt; TT &gt;  = 0&gt; </td></tr>
+<tr class="memitem:ac94dd8db54ad4b80e1a9593eb1e70558"><td class="memTemplItemLeft" align="right" valign="top">static auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#ac94dd8db54ad4b80e1a9593eb1e70558">from_id</a> (const <a class="el" href="classcen_1_1basic__joystick.html#a622c0b174cc88f36b974a15ade47d829">id_type</a> <a class="el" href="classcen_1_1basic__joystick.html#a067adb53232df963117d4bdb43b90f27">id</a>) noexcept -&gt; <a class="el" href="namespacecen.html#ae7d73a39edd2e9bcd77ba41fe740a2a8">joystick_handle</a></td></tr>
 <tr class="separator:ac94dd8db54ad4b80e1a9593eb1e70558"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b4d4fc23ddbbf79917d016d2e7efde9"><td class="memTemplParams" colspan="2">template&lt;typename TT  = T, detail::enable_for_handle&lt; TT &gt;  = 0&gt; </td></tr>
-<tr class="memitem:a9b4d4fc23ddbbf79917d016d2e7efde9"><td class="memTemplItemLeft" align="right" valign="top">static auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a9b4d4fc23ddbbf79917d016d2e7efde9">from_player_index</a> (const int index) noexcept -&gt; <a class="el" href="group__joystick.html#gae7d73a39edd2e9bcd77ba41fe740a2a8">joystick_handle</a></td></tr>
-<tr class="memdesc:a9b4d4fc23ddbbf79917d016d2e7efde9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a handle to the joystick associated with a player index.  <a href="classcen_1_1basic__joystick.html#a9b4d4fc23ddbbf79917d016d2e7efde9">More...</a><br /></td></tr>
+<tr class="memitem:a9b4d4fc23ddbbf79917d016d2e7efde9"><td class="memTemplParams" colspan="2">template&lt;typename TT  = T, <a class="el" href="namespacecen_1_1detail.html#af7eaf1dad7d2f17f827758b6586e98f2">detail::enable_for_handle</a>&lt; TT &gt;  = 0&gt; </td></tr>
+<tr class="memitem:a9b4d4fc23ddbbf79917d016d2e7efde9"><td class="memTemplItemLeft" align="right" valign="top">static auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a9b4d4fc23ddbbf79917d016d2e7efde9">from_player_index</a> (const int index) noexcept -&gt; <a class="el" href="namespacecen.html#ae7d73a39edd2e9bcd77ba41fe740a2a8">joystick_handle</a></td></tr>
 <tr class="separator:a9b4d4fc23ddbbf79917d016d2e7efde9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">GUID string conversions</h2></td></tr>
+<tr class="memitem:a4ff1b87e5517b52860a7a602d52e0627"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a4ff1b87e5517b52860a7a602d52e0627">name</a> (const <a class="el" href="classcen_1_1basic__joystick.html#a2afad9f01282d85509cec124f6506a4e">device_index</a> index) noexcept -&gt; const char *</td></tr>
+<tr class="separator:a4ff1b87e5517b52860a7a602d52e0627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac338f0e87cd31649c05747ebd620c17b"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#ac338f0e87cd31649c05747ebd620c17b">type</a> (const <a class="el" href="classcen_1_1basic__joystick.html#a2afad9f01282d85509cec124f6506a4e">device_index</a> index) noexcept -&gt; <a class="el" href="namespacecen.html#a9ebc623128dc34e921ed86c78a4fd13b">joystick_type</a></td></tr>
+<tr class="separator:ac338f0e87cd31649c05747ebd620c17b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab293582f0ae4a964ec228dc05df1d6a4"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#ab293582f0ae4a964ec228dc05df1d6a4">vendor</a> (const <a class="el" href="classcen_1_1basic__joystick.html#a2afad9f01282d85509cec124f6506a4e">device_index</a> index) noexcept -&gt; std::optional&lt; <a class="el" href="namespacecen.html#a4b8300d0da9b3af587b60196e9efd080">uint16</a> &gt;</td></tr>
+<tr class="separator:ab293582f0ae4a964ec228dc05df1d6a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4db39984c4d73db0d1351a73545e635f"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a4db39984c4d73db0d1351a73545e635f">product</a> (const <a class="el" href="classcen_1_1basic__joystick.html#a2afad9f01282d85509cec124f6506a4e">device_index</a> index) noexcept -&gt; std::optional&lt; <a class="el" href="namespacecen.html#a4b8300d0da9b3af587b60196e9efd080">uint16</a> &gt;</td></tr>
+<tr class="separator:a4db39984c4d73db0d1351a73545e635f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae1ca4de85339e98991cb1d8014fd92d"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#aae1ca4de85339e98991cb1d8014fd92d">product_version</a> (const <a class="el" href="classcen_1_1basic__joystick.html#a2afad9f01282d85509cec124f6506a4e">device_index</a> index) noexcept -&gt; std::optional&lt; <a class="el" href="namespacecen.html#a4b8300d0da9b3af587b60196e9efd080">uint16</a> &gt;</td></tr>
+<tr class="separator:aae1ca4de85339e98991cb1d8014fd92d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a9c9bd11e1a19e411804c0ca26600cf"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a2a9c9bd11e1a19e411804c0ca26600cf">guid</a> (const <a class="el" href="classcen_1_1basic__joystick.html#a2afad9f01282d85509cec124f6506a4e">device_index</a> index) noexcept -&gt; <a class="el" href="classcen_1_1basic__joystick.html#a6809b81a928783a40daf32e227f6063b">guid_type</a></td></tr>
+<tr class="separator:a2a9c9bd11e1a19e411804c0ca26600cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d5a293e804d83417c21a62a2704c759"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a5d5a293e804d83417c21a62a2704c759">id</a> (const <a class="el" href="classcen_1_1basic__joystick.html#a2afad9f01282d85509cec124f6506a4e">device_index</a> index) noexcept -&gt; std::optional&lt; <a class="el" href="classcen_1_1basic__joystick.html#a622c0b174cc88f36b974a15ade47d829">id_type</a> &gt;</td></tr>
+<tr class="separator:a5d5a293e804d83417c21a62a2704c759"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af93e05b3d3691c01ed72f0d8eaccde84"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#af93e05b3d3691c01ed72f0d8eaccde84">attach_virtual</a> (const <a class="el" href="namespacecen.html#a9ebc623128dc34e921ed86c78a4fd13b">joystick_type</a> <a class="el" href="classcen_1_1basic__joystick.html#ab16ade03bd84dddd278ad4a852fe52cf">type</a>, const int axes, const int buttons, const int hats) noexcept -&gt; std::optional&lt; <a class="el" href="classcen_1_1basic__joystick.html#a2afad9f01282d85509cec124f6506a4e">device_index</a> &gt;</td></tr>
+<tr class="separator:af93e05b3d3691c01ed72f0d8eaccde84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fd1dac95056b7f0924dbba1091ca10a"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a2fd1dac95056b7f0924dbba1091ca10a">detach_virtual</a> (const <a class="el" href="classcen_1_1basic__joystick.html#a2afad9f01282d85509cec124f6506a4e">device_index</a> index) noexcept -&gt; <a class="el" href="classcen_1_1result.html">result</a></td></tr>
+<tr class="separator:a2fd1dac95056b7f0924dbba1091ca10a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f6cf7d9455230ff9ed34d1eee1a300a"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a5f6cf7d9455230ff9ed34d1eee1a300a">is_virtual</a> (const <a class="el" href="classcen_1_1basic__joystick.html#a2afad9f01282d85509cec124f6506a4e">device_index</a> index) noexcept -&gt; bool</td></tr>
+<tr class="separator:a5f6cf7d9455230ff9ed34d1eee1a300a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72e8936fad8b803e9aa9efaca3ce27d8"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a72e8936fad8b803e9aa9efaca3ce27d8">player_index</a> (const <a class="el" href="classcen_1_1basic__joystick.html#a2afad9f01282d85509cec124f6506a4e">device_index</a> index) noexcept -&gt; std::optional&lt; int &gt;</td></tr>
+<tr class="separator:a72e8936fad8b803e9aa9efaca3ce27d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e3aa1c0993a4ae8e706928252bfd8c1"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a1e3aa1c0993a4ae8e706928252bfd8c1">to_guid</a> (const char *str) noexcept -&gt; <a class="el" href="classcen_1_1basic__joystick.html#a6809b81a928783a40daf32e227f6063b">guid_type</a></td></tr>
-<tr class="memdesc:a1e3aa1c0993a4ae8e706928252bfd8c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a joystick GUID based on a string.  <a href="classcen_1_1basic__joystick.html#a1e3aa1c0993a4ae8e706928252bfd8c1">More...</a><br /></td></tr>
 <tr class="separator:a1e3aa1c0993a4ae8e706928252bfd8c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82883ce2d9249bb4c68d0c98bd2627c5"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a82883ce2d9249bb4c68d0c98bd2627c5">to_guid</a> (const std::string &amp;str) noexcept -&gt; <a class="el" href="classcen_1_1basic__joystick.html#a6809b81a928783a40daf32e227f6063b">guid_type</a></td></tr>
-<tr class="memdesc:a82883ce2d9249bb4c68d0c98bd2627c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a joystick GUID based on a string.  <a href="classcen_1_1basic__joystick.html#a82883ce2d9249bb4c68d0c98bd2627c5">More...</a><br /></td></tr>
 <tr class="separator:a82883ce2d9249bb4c68d0c98bd2627c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Joystick management</h2></td></tr>
 <tr class="memitem:a856f50a049e3d46da48ee891e0d9666b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a856f50a049e3d46da48ee891e0d9666b">lock</a> () noexcept</td></tr>
-<tr class="memdesc:a856f50a049e3d46da48ee891e0d9666b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Locks the access to all joysticks.  <a href="classcen_1_1basic__joystick.html#a856f50a049e3d46da48ee891e0d9666b">More...</a><br /></td></tr>
 <tr class="separator:a856f50a049e3d46da48ee891e0d9666b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a996937a71f7e83069f173986c45a8edb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a996937a71f7e83069f173986c45a8edb">unlock</a> () noexcept</td></tr>
-<tr class="memdesc:a996937a71f7e83069f173986c45a8edb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlocks the access to all joysticks.  <a href="classcen_1_1basic__joystick.html#a996937a71f7e83069f173986c45a8edb">More...</a><br /></td></tr>
 <tr class="separator:a996937a71f7e83069f173986c45a8edb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b00a98d0d732298510d6f8e60efcbe0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a8b00a98d0d732298510d6f8e60efcbe0">update</a> () noexcept</td></tr>
-<tr class="memdesc:a8b00a98d0d732298510d6f8e60efcbe0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the state of all open joysticks.  <a href="classcen_1_1basic__joystick.html#a8b00a98d0d732298510d6f8e60efcbe0">More...</a><br /></td></tr>
 <tr class="separator:a8b00a98d0d732298510d6f8e60efcbe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5a91d016db52972414719dfb3c4e71b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#ad5a91d016db52972414719dfb3c4e71b">set_polling</a> (const bool enabled) noexcept</td></tr>
-<tr class="memdesc:ad5a91d016db52972414719dfb3c4e71b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether joystick event polling is enabled.  <a href="classcen_1_1basic__joystick.html#ad5a91d016db52972414719dfb3c4e71b">More...</a><br /></td></tr>
 <tr class="separator:ad5a91d016db52972414719dfb3c4e71b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1612942ab477403e42a1f271f640e90c"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a1612942ab477403e42a1f271f640e90c">polling</a> () noexcept -&gt; bool</td></tr>
-<tr class="memdesc:a1612942ab477403e42a1f271f640e90c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether joystick event polling is enabled.  <a href="classcen_1_1basic__joystick.html#a1612942ab477403e42a1f271f640e90c">More...</a><br /></td></tr>
 <tr class="separator:a1612942ab477403e42a1f271f640e90c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Global joystick information</h2></td></tr>
 <tr class="memitem:a243ecfcb346f6f99419143245b54e5a1"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a243ecfcb346f6f99419143245b54e5a1">count</a> () noexcept -&gt; std::optional&lt; int &gt;</td></tr>
-<tr class="memdesc:a243ecfcb346f6f99419143245b54e5a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the amount of available joysticks.  <a href="classcen_1_1basic__joystick.html#a243ecfcb346f6f99419143245b54e5a1">More...</a><br /></td></tr>
 <tr class="separator:a243ecfcb346f6f99419143245b54e5a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f71f6df5cf5a4e0228fd453164ebb05"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a1f71f6df5cf5a4e0228fd453164ebb05">axis_max</a> () noexcept -&gt; <a class="el" href="group__common.html#ga8089acde96bbf064054dc5af993346bd">int16</a></td></tr>
-<tr class="memdesc:a1f71f6df5cf5a4e0228fd453164ebb05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the maximum possible value of an joystick axis control.  <a href="classcen_1_1basic__joystick.html#a1f71f6df5cf5a4e0228fd453164ebb05">More...</a><br /></td></tr>
+<tr class="memitem:a1f71f6df5cf5a4e0228fd453164ebb05"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#a1f71f6df5cf5a4e0228fd453164ebb05">axis_max</a> () noexcept -&gt; <a class="el" href="namespacecen.html#a8089acde96bbf064054dc5af993346bd">int16</a></td></tr>
 <tr class="separator:a1f71f6df5cf5a4e0228fd453164ebb05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb0e8ca5eaed28b0a8db1db70bca55a3"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#afb0e8ca5eaed28b0a8db1db70bca55a3">axis_min</a> () noexcept -&gt; <a class="el" href="group__common.html#ga8089acde96bbf064054dc5af993346bd">int16</a></td></tr>
-<tr class="memdesc:afb0e8ca5eaed28b0a8db1db70bca55a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the minimum possible value of an joystick axis control.  <a href="classcen_1_1basic__joystick.html#afb0e8ca5eaed28b0a8db1db70bca55a3">More...</a><br /></td></tr>
+<tr class="memitem:afb0e8ca5eaed28b0a8db1db70bca55a3"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__joystick.html#afb0e8ca5eaed28b0a8db1db70bca55a3">axis_min</a> () noexcept -&gt; <a class="el" href="namespacecen.html#a8089acde96bbf064054dc5af993346bd">int16</a></td></tr>
 <tr class="separator:afb0e8ca5eaed28b0a8db1db70bca55a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename T&gt;<br />
-class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
+class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device.</p>
 <p >The joystick is lower level than the game controller API, which is built on top of the joystick API. As a result, the game controller API is easier to use and should be preferred over the joystick API.</p>
-<p >This class is a part of the owner/handle API, the owner/handle versions of this class are <code>joystick</code>/<code>joystick_handle</code></p>
-<dl class="section see"><dt>See also</dt><dd><code><a class="el" href="group__joystick.html#gaf78e75debd724ef4e9e84949a215c909" title="An owning joystick.">joystick</a></code> </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacecen.html#af78e75debd724ef4e9e84949a215c909" title="An owning joystick.">joystick</a> </dd>
 <dd>
-<code><a class="el" href="group__joystick.html#gae7d73a39edd2e9bcd77ba41fe740a2a8" title="A non-owning joystick.">joystick_handle</a></code></dd>
+<a class="el" href="namespacecen.html#ae7d73a39edd2e9bcd77ba41fe740a2a8" title="A non-owning joystick.">joystick_handle</a> </dd>
 <dd>
-<code><a class="el" href="classcen_1_1basic__controller.html" title="Represents a game controller, such as Xbox and Playstation controllers.">basic_controller</a></code> </dd></dl>
+<a class="el" href="classcen_1_1basic__controller.html">basic_controller</a> </dd></dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a2afad9f01282d85509cec124f6506a4e" name="a2afad9f01282d85509cec124f6506a4e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2afad9f01282d85509cec124f6506a4e">&#9670;&nbsp;</a></span>device_index</h2>
@@ -392,7 +308,7 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
         <tr>
           <td class="memname"><a class="el" href="classcen_1_1basic__joystick.html">basic_joystick</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__common.html#ga8ab6d78cbc2030d15036476760bbbf3f">maybe_owner</a>&lt; SDL_Joystick * &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacecen.html#a8ab6d78cbc2030d15036476760bbbf3f">maybe_owner</a>&lt; SDL_Joystick * &gt;&#160;</td>
           <td class="paramname"><em>joystick</em></td><td>)</td>
           <td></td>
         </tr>
@@ -403,18 +319,11 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Creates a joystick instance based on an existing SDL joystick. </p>
+<p >Creates a joystick instance based on an existing SDL joystick.</p>
 <p >Ownership of the pointer is claimed if the joystick has owning semantics.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">joystick</td><td>a pointer to the existing joystick instance.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">exception</td><td>if the pointer is null and the joystick is owning. </td></tr>
+    <tr><td class="paramname">joystick</td><td>a pointer to an SDL joystick. </td></tr>
   </table>
   </dd>
 </dl>
@@ -445,20 +354,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
 </table>
 </div><div class="memdoc">
 
-<p>Opens a joystick based on a device index. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">index</td><td>the device index of the joystick.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="classcen_1_1sdl__error.html" title="Represents an error related to the core SDL library.">sdl_error</a></td><td>if the joystick cannot be opened. </td></tr>
-  </table>
-  </dd>
-</dl>
-
 </div>
 </div>
 <a id="aaef3ac4ce1b6ce8cd058e1a888134d13" name="aaef3ac4ce1b6ce8cd058e1a888134d13"></a>
@@ -473,7 +368,7 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
         <tr>
           <td class="memname"><a class="el" href="classcen_1_1basic__joystick.html">basic_joystick</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__joystick.html#gaf78e75debd724ef4e9e84949a215c909">joystick</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#af78e75debd724ef4e9e84949a215c909">joystick</a> &amp;&#160;</td>
           <td class="paramname"><em>owner</em></td><td>)</td>
           <td></td>
         </tr>
@@ -484,14 +379,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Creates a handle to an owning joystick. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">owner</td><td>the existing owning joystick. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -510,7 +397,7 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classcen_1_1basic__joystick.html#a622c0b174cc88f36b974a15ade47d829">id_type</a>&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
-          <td> -&gt; <a class="el" href="group__joystick.html#gae7d73a39edd2e9bcd77ba41fe740a2a8">joystick_handle</a>
+          <td> -&gt; <a class="el" href="namespacecen.html#ae7d73a39edd2e9bcd77ba41fe740a2a8">joystick_handle</a>
   </td>
         </tr>
       </table>
@@ -520,15 +407,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns a handle to the joystick associated with a specific ID. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">id</td><td>the ID of with the desired joystick.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>a potentially empty joystick handle. </dd></dl>
 
 </div>
 </div>
@@ -546,7 +424,7 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
           <td>(</td>
           <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>
-          <td> -&gt; <a class="el" href="group__joystick.html#gae7d73a39edd2e9bcd77ba41fe740a2a8">joystick_handle</a>
+          <td> -&gt; <a class="el" href="namespacecen.html#ae7d73a39edd2e9bcd77ba41fe740a2a8">joystick_handle</a>
   </td>
         </tr>
       </table>
@@ -556,16 +434,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns a handle to the joystick associated with a player index. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">index</td><td>the player index of the desired joystick.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>a potentially empty joystick handle.</dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function requires at least SDL 2.0.12 </dd></dl>
 
 </div>
 </div>
@@ -592,9 +460,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the name associated with the joystick. </p>
-<dl class="section return"><dt>Returns</dt><dd>the joystick name; a null pointer is returned if the name is unavailable. </dd></dl>
 
 </div>
 </div>
@@ -623,15 +488,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the name associated with a joystick. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">index</td><td>the device index of the joystick to query.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the joystick name; a null pointer is returned if the name is unavailable. </dd></dl>
-
 </div>
 </div>
 <a id="ab16ade03bd84dddd278ad4a852fe52cf" name="ab16ade03bd84dddd278ad4a852fe52cf"></a>
@@ -647,7 +503,7 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
           <td class="memname">auto type </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const -&gt; <a class="el" href="group__joystick.html#ga9ebc623128dc34e921ed86c78a4fd13b">joystick_type</a>
+          <td> const -&gt; <a class="el" href="namespacecen.html#a9ebc623128dc34e921ed86c78a4fd13b">joystick_type</a>
   </td>
         </tr>
       </table>
@@ -657,9 +513,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the type of the joystick. </p>
-<dl class="section return"><dt>Returns</dt><dd>the joystick type. </dd></dl>
 
 </div>
 </div>
@@ -677,7 +530,7 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classcen_1_1basic__joystick.html#a2afad9f01282d85509cec124f6506a4e">device_index</a>&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>
-          <td> -&gt; <a class="el" href="group__joystick.html#ga9ebc623128dc34e921ed86c78a4fd13b">joystick_type</a>
+          <td> -&gt; <a class="el" href="namespacecen.html#a9ebc623128dc34e921ed86c78a4fd13b">joystick_type</a>
   </td>
         </tr>
       </table>
@@ -687,15 +540,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the type of a joystick. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">index</td><td>the device index of the joystick to query.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the joystick type. </dd></dl>
 
 </div>
 </div>
@@ -712,7 +556,7 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
           <td class="memname">auto vendor </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const -&gt; std::optional&lt;<a class="el" href="group__common.html#ga4b8300d0da9b3af587b60196e9efd080">uint16</a>&gt;
+          <td> const -&gt; std::optional&lt;<a class="el" href="namespacecen.html#a4b8300d0da9b3af587b60196e9efd080">uint16</a>&gt;
   </td>
         </tr>
       </table>
@@ -722,9 +566,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the USB vendor ID of the joystick. </p>
-<dl class="section return"><dt>Returns</dt><dd>the joystick USB vendor ID; an empty optional is returned upon failure. </dd></dl>
 
 </div>
 </div>
@@ -742,7 +583,7 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classcen_1_1basic__joystick.html#a2afad9f01282d85509cec124f6506a4e">device_index</a>&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>
-          <td> -&gt; std::optional&lt;<a class="el" href="group__common.html#ga4b8300d0da9b3af587b60196e9efd080">uint16</a>&gt;
+          <td> -&gt; std::optional&lt;<a class="el" href="namespacecen.html#a4b8300d0da9b3af587b60196e9efd080">uint16</a>&gt;
   </td>
         </tr>
       </table>
@@ -752,15 +593,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the USB vendor ID of a joystick. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">index</td><td>the device index of the joystick that will be queried.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the joystick USB vendor ID; an empty optional is returned upon failure. </dd></dl>
 
 </div>
 </div>
@@ -777,7 +609,7 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
           <td class="memname">auto product </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const -&gt; std::optional&lt;<a class="el" href="group__common.html#ga4b8300d0da9b3af587b60196e9efd080">uint16</a>&gt;
+          <td> const -&gt; std::optional&lt;<a class="el" href="namespacecen.html#a4b8300d0da9b3af587b60196e9efd080">uint16</a>&gt;
   </td>
         </tr>
       </table>
@@ -787,9 +619,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the USB product ID of the joystick. </p>
-<dl class="section return"><dt>Returns</dt><dd>the joystick USB product ID; an empty optional is returned upon failure. </dd></dl>
 
 </div>
 </div>
@@ -807,7 +636,7 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classcen_1_1basic__joystick.html#a2afad9f01282d85509cec124f6506a4e">device_index</a>&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>
-          <td> -&gt; std::optional&lt;<a class="el" href="group__common.html#ga4b8300d0da9b3af587b60196e9efd080">uint16</a>&gt;
+          <td> -&gt; std::optional&lt;<a class="el" href="namespacecen.html#a4b8300d0da9b3af587b60196e9efd080">uint16</a>&gt;
   </td>
         </tr>
       </table>
@@ -817,15 +646,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the USB product ID of a joystick. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">index</td><td>the device index of the joystick that will be queried.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the joystick USB product ID; an empty optional is returned upon failure. </dd></dl>
 
 </div>
 </div>
@@ -842,7 +662,7 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
           <td class="memname">auto product_version </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const -&gt; std::optional&lt;<a class="el" href="group__common.html#ga4b8300d0da9b3af587b60196e9efd080">uint16</a>&gt;
+          <td> const -&gt; std::optional&lt;<a class="el" href="namespacecen.html#a4b8300d0da9b3af587b60196e9efd080">uint16</a>&gt;
   </td>
         </tr>
       </table>
@@ -852,9 +672,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the product version of the joystick. </p>
-<dl class="section return"><dt>Returns</dt><dd>the joystick product version; an empty optional is returned upon failure. </dd></dl>
 
 </div>
 </div>
@@ -872,7 +689,7 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classcen_1_1basic__joystick.html#a2afad9f01282d85509cec124f6506a4e">device_index</a>&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>
-          <td> -&gt; std::optional&lt;<a class="el" href="group__common.html#ga4b8300d0da9b3af587b60196e9efd080">uint16</a>&gt;
+          <td> -&gt; std::optional&lt;<a class="el" href="namespacecen.html#a4b8300d0da9b3af587b60196e9efd080">uint16</a>&gt;
   </td>
         </tr>
       </table>
@@ -882,15 +699,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the product version of a joystick. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">index</td><td>the device index of the joystick that will be queried.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the joystick product version; an empty optional is returned upon failure. </dd></dl>
 
 </div>
 </div>
@@ -916,9 +724,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the GUID of the joystick. </p>
-<dl class="section return"><dt>Returns</dt><dd>the joystick GUID; a zeroed GUID is returned for an invalid index. </dd></dl>
 
 </div>
 </div>
@@ -947,15 +752,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the GUID of a joystick. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">index</td><td>the device index of the joystick that will be queried.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the joystick GUID; a zeroed GUID is returned for an invalid index. </dd></dl>
-
 </div>
 </div>
 <a id="a7a00d4bd3bb106711d4860fc1d5606f4" name="a7a00d4bd3bb106711d4860fc1d5606f4"></a>
@@ -981,10 +777,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the serial number associated with the joystick. </p>
-<dl class="section return"><dt>Returns</dt><dd>the joystick serial number; a null pointer is returned upon failure.</dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function requires at least SDL 2.0.14 </dd></dl>
 
 </div>
 </div>
@@ -1012,9 +804,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the amount of buttons on the joystick. </p>
-<dl class="section return"><dt>Returns</dt><dd>the joystick button count. </dd></dl>
-
 </div>
 </div>
 <a id="a725ee3a5fd9f9f7b44deb42680f7dd73" name="a725ee3a5fd9f9f7b44deb42680f7dd73"></a>
@@ -1040,9 +829,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the amount of hats on the joystick. </p>
-<dl class="section return"><dt>Returns</dt><dd>the joystick hat count. </dd></dl>
 
 </div>
 </div>
@@ -1070,9 +856,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the amount of axis controls on the joystick. </p>
-<dl class="section return"><dt>Returns</dt><dd>the joystick axis control count. </dd></dl>
-
 </div>
 </div>
 <a id="aecdf2b9e279a432b3f085fe858020e2f" name="aecdf2b9e279a432b3f085fe858020e2f"></a>
@@ -1099,9 +882,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the amount of trackballs on the joystick. </p>
-<dl class="section return"><dt>Returns</dt><dd>the joystick trackball count. </dd></dl>
-
 </div>
 </div>
 <a id="a067adb53232df963117d4bdb43b90f27" name="a067adb53232df963117d4bdb43b90f27"></a>
@@ -1127,9 +907,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the ID associated with the joystick. </p>
-<dl class="section return"><dt>Returns</dt><dd>a joystick identifier. </dd></dl>
 
 </div>
 </div>
@@ -1158,15 +935,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the ID associated with a joystick. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">index</td><td>the device index of the joystick that will be queried.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>a joystick identifier; an empty optional is returned upon failure. </dd></dl>
-
 </div>
 </div>
 <a id="af880bb446ae1da69d036cc0ec32d4533" name="af880bb446ae1da69d036cc0ec32d4533"></a>
@@ -1193,9 +961,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
 </table>
 </div><div class="memdoc">
 
-<p>Indicates whether the joystick has been opened. </p>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the joystick is opened; <code>false</code> otherwise. </dd></dl>
-
 </div>
 </div>
 <a id="a78badcbda5ca40a4d26b2da247ad80ca" name="a78badcbda5ca40a4d26b2da247ad80ca"></a>
@@ -1211,7 +976,7 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
           <td class="memname">auto power </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const -&gt; <a class="el" href="group__joystick.html#ga9d37644a7b056f74bd49ed6c94813aa0">joystick_power</a>
+          <td> const -&gt; <a class="el" href="namespacecen.html#a9d37644a7b056f74bd49ed6c94813aa0">joystick_power</a>
   </td>
         </tr>
       </table>
@@ -1221,9 +986,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the current power state of the joystick. </p>
-<dl class="section return"><dt>Returns</dt><dd>the joystick power state. </dd></dl>
 
 </div>
 </div>
@@ -1239,19 +1001,19 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
         <tr>
           <td class="memname">auto rumble </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__common.html#ga4b8300d0da9b3af587b60196e9efd080">uint16</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#a4b8300d0da9b3af587b60196e9efd080">uint16</a>&#160;</td>
           <td class="paramname"><em>lo</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__common.html#ga4b8300d0da9b3af587b60196e9efd080">uint16</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#a4b8300d0da9b3af587b60196e9efd080">uint16</a>&#160;</td>
           <td class="paramname"><em>hi</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__common.html#ga66f48b1369b952fdefe95b983184ef2a">u32ms</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#a66f48b1369b952fdefe95b983184ef2a">u32ms</a>&#160;</td>
           <td class="paramname"><em>duration</em>&#160;</td>
         </tr>
         <tr>
@@ -1267,19 +1029,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Makes the joystick rumble. </p>
-<p >This function cancels any previously active rumble effects.</p>
-<dl class="section note"><dt>Note</dt><dd>This function has no effect if rumbling isn't supported by joystick.</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">lo</td><td>the intensity of the low frequency (left) motor. </td></tr>
-    <tr><td class="paramname">hi</td><td>the intensity of the high frequency (right) motor. </td></tr>
-    <tr><td class="paramname">duration</td><td>the duration of the rumble effect.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><code>success</code> if the rumble was successful; <code>failure</code> otherwise. </dd></dl>
 
 </div>
 </div>
@@ -1306,9 +1055,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
 </table>
 </div><div class="memdoc">
 
-<p>Stops any currently playing rumble effect. </p>
-<dl class="section return"><dt>Returns</dt><dd><code>success</code> if the operation succeeded; <code>failure</code> otherwise. </dd></dl>
-
 </div>
 </div>
 <a id="ac47cecbc10296661d323e3fc16c9608b" name="ac47cecbc10296661d323e3fc16c9608b"></a>
@@ -1323,19 +1069,19 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
         <tr>
           <td class="memname">auto rumble_triggers </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__common.html#ga4b8300d0da9b3af587b60196e9efd080">uint16</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#a4b8300d0da9b3af587b60196e9efd080">uint16</a>&#160;</td>
           <td class="paramname"><em>left</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__common.html#ga4b8300d0da9b3af587b60196e9efd080">uint16</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#a4b8300d0da9b3af587b60196e9efd080">uint16</a>&#160;</td>
           <td class="paramname"><em>right</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__common.html#ga66f48b1369b952fdefe95b983184ef2a">u32ms</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#a66f48b1369b952fdefe95b983184ef2a">u32ms</a>&#160;</td>
           <td class="paramname"><em>duration</em>&#160;</td>
         </tr>
         <tr>
@@ -1351,20 +1097,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Makes the joystick triggers rumble. </p>
-<p >This function cancels any previously active rumble effects.</p>
-<dl class="section note"><dt>Note</dt><dd>This function has no effect if rumbling isn't supported by joystick.</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">left</td><td>the intensity of the left trigger motor. </td></tr>
-    <tr><td class="paramname">right</td><td>the intensity of the right trigger motor. </td></tr>
-    <tr><td class="paramname">duration</td><td>the duration of the rumble effect.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><code>success</code> if the rumble was successful; <code>failure</code> otherwise.</dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function requires at least SDL 2.0.14 </dd></dl>
 
 </div>
 </div>
@@ -1392,10 +1124,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
 </table>
 </div><div class="memdoc">
 
-<p>Indicates whether the joystick has rumble support. </p>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if there is rumble support; <code>false</code> otherwise.</dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function requires at least SDL 2.0.18 </dd></dl>
-
 </div>
 </div>
 <a id="a67ec6de702cc725e5637065d31e3dce8" name="a67ec6de702cc725e5637065d31e3dce8"></a>
@@ -1421,10 +1149,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Indicates whether the joystick has rumble support for triggers. </p>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if there is trigger rumble support; <code>false</code> otherwise.</dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function requires at least SDL 2.0.18 </dd></dl>
 
 </div>
 </div>
@@ -1453,16 +1177,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
 </table>
 </div><div class="memdoc">
 
-<p>Sets the color of the associated LED light. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">color</td><td>the new LED color.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><code>success</code> if the LED color was updated; <code>failure</code> otherwise.</dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function requires at least SDL 2.0.14 </dd></dl>
-
 </div>
 </div>
 <a id="a26676070562550f666e19a903afeaf01" name="a26676070562550f666e19a903afeaf01"></a>
@@ -1489,10 +1203,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
 </table>
 </div><div class="memdoc">
 
-<p>Indicates whether the joystick features a LED light. </p>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the joystick has a LED light; <code>false</code> otherwise.</dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function requires at least SDL 2.0.14 </dd></dl>
-
 </div>
 </div>
 <a id="af93e05b3d3691c01ed72f0d8eaccde84" name="af93e05b3d3691c01ed72f0d8eaccde84"></a>
@@ -1507,7 +1217,7 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
         <tr>
           <td class="memname">static auto attach_virtual </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__joystick.html#ga9ebc623128dc34e921ed86c78a4fd13b">joystick_type</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#a9ebc623128dc34e921ed86c78a4fd13b">joystick_type</a>&#160;</td>
           <td class="paramname"><em>type</em>, </td>
         </tr>
         <tr>
@@ -1542,18 +1252,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
 </table>
 </div><div class="memdoc">
 
-<p>Attaches a new virtual joystick. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">type</td><td>the type of the joystick. </td></tr>
-    <tr><td class="paramname">axes</td><td>the number of axes. </td></tr>
-    <tr><td class="paramname">buttons</td><td>the number of buttons. </td></tr>
-    <tr><td class="paramname">hats</td><td>the number of joystick hats.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the virtual joystick device index; an empty optional is returned upon failure. </dd></dl>
-
 </div>
 </div>
 <a id="a2fd1dac95056b7f0924dbba1091ca10a" name="a2fd1dac95056b7f0924dbba1091ca10a"></a>
@@ -1581,15 +1279,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
 </table>
 </div><div class="memdoc">
 
-<p>Detaches a virtual joystick. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">index</td><td>the device index of the virtual joystick.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><code>success</code> if the joystick was disconnected; <code>failure</code> otherwise. </dd></dl>
-
 </div>
 </div>
 <a id="add6a1dd8d956300d5036637c6df185bc" name="add6a1dd8d956300d5036637c6df185bc"></a>
@@ -1610,7 +1299,7 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__common.html#ga8089acde96bbf064054dc5af993346bd">int16</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#a8089acde96bbf064054dc5af993346bd">int16</a>&#160;</td>
           <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
@@ -1626,16 +1315,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Sets the value of a virtual joystick axis. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">axis</td><td>the axis that will be modified. </td></tr>
-    <tr><td class="paramname">value</td><td>the new axis value.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><code>success</code> if the axis was updated; <code>failure</code> otherwise. </dd></dl>
 
 </div>
 </div>
@@ -1657,7 +1336,7 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__input.html#gaca49ff1dab9f8fde0cc789fac0f23e04">button_state</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#aca49ff1dab9f8fde0cc789fac0f23e04">button_state</a>&#160;</td>
           <td class="paramname"><em>state</em>&#160;</td>
         </tr>
         <tr>
@@ -1673,16 +1352,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Sets the state of a virtual button. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">button</td><td>the index of the button that will be set. </td></tr>
-    <tr><td class="paramname">state</td><td>the new button state.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><code>success</code> if the button was updated; <code>failure</code> otherwise. </dd></dl>
 
 </div>
 </div>
@@ -1704,7 +1373,7 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__joystick.html#ga5316417f468c766a1042777d1ff33eb6">hat_state</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#a5316417f468c766a1042777d1ff33eb6">hat_state</a>&#160;</td>
           <td class="paramname"><em>state</em>&#160;</td>
         </tr>
         <tr>
@@ -1720,16 +1389,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Sets the state of a virtual joystick hat. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">hat</td><td>the index of the hat that will be changed. </td></tr>
-    <tr><td class="paramname">state</td><td>the new hat state.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><code>success</code> if the hat was updated; <code>failure</code> otherwise. </dd></dl>
 
 </div>
 </div>
@@ -1758,15 +1417,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
 </table>
 </div><div class="memdoc">
 
-<p>Indicates whether a joystick is virtual. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">index</td><td>the device index of the joystick to query.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the joystick is virtual; <code>false</code> otherwise. </dd></dl>
-
 </div>
 </div>
 <a id="a372b3dc461b5c167042dcd3054c6f6ed" name="a372b3dc461b5c167042dcd3054c6f6ed"></a>
@@ -1783,7 +1433,7 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
           <td>(</td>
           <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>button</em></td><td>)</td>
-          <td> const -&gt; <a class="el" href="group__input.html#gaca49ff1dab9f8fde0cc789fac0f23e04">button_state</a>
+          <td> const -&gt; <a class="el" href="namespacecen.html#aca49ff1dab9f8fde0cc789fac0f23e04">button_state</a>
   </td>
         </tr>
       </table>
@@ -1793,15 +1443,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the state of a joystick button. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">button</td><td>the index of the button to query.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the button state. </dd></dl>
 
 </div>
 </div>
@@ -1819,7 +1460,7 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
           <td>(</td>
           <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>hat</em></td><td>)</td>
-          <td> const -&gt; <a class="el" href="group__joystick.html#ga5316417f468c766a1042777d1ff33eb6">hat_state</a>
+          <td> const -&gt; <a class="el" href="namespacecen.html#a5316417f468c766a1042777d1ff33eb6">hat_state</a>
   </td>
         </tr>
       </table>
@@ -1829,15 +1470,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the state of a joystick hat. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">hat</td><td>the index of the hat to query.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the hat state. </dd></dl>
 
 </div>
 </div>
@@ -1855,7 +1487,7 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
           <td>(</td>
           <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>axis</em></td><td>)</td>
-          <td> const -&gt; <a class="el" href="group__common.html#ga8089acde96bbf064054dc5af993346bd">int16</a>
+          <td> const -&gt; <a class="el" href="namespacecen.html#a8089acde96bbf064054dc5af993346bd">int16</a>
   </td>
         </tr>
       </table>
@@ -1865,17 +1497,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the position of an axis. </p>
-<p >Most modern joysticks let the X-axis be represented by 0 and the Y-axis by 1. It might be a good idea to combat jitter by imposing thresholds on the returned values.</p>
-<dl class="section note"><dt>Note</dt><dd>Some joysticks use axes 2 and 3 for extra buttons.</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">axis</td><td>the index of the axis to query.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the axis position. </dd></dl>
 
 </div>
 </div>
@@ -1893,7 +1514,7 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
           <td>(</td>
           <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>axis</em></td><td>)</td>
-          <td> const -&gt; std::optional&lt;<a class="el" href="group__common.html#ga8089acde96bbf064054dc5af993346bd">int16</a>&gt;
+          <td> const -&gt; std::optional&lt;<a class="el" href="namespacecen.html#a8089acde96bbf064054dc5af993346bd">int16</a>&gt;
   </td>
         </tr>
       </table>
@@ -1903,15 +1524,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the initial state of an axis on the joystick. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">axis</td><td>the index of the axis that will be queried.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the initial state of the axis; an empty optional is returned if there is none. </dd></dl>
 
 </div>
 </div>
@@ -1939,16 +1551,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the ball axis delta since the last poll. </p>
-<p >Trackballs can only return relative motion since the last call.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ball</td><td>the index of the trackball to query.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the axis delta; an empty optional is returned upon failure. </dd></dl>
 
 </div>
 </div>
@@ -1987,17 +1589,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
 </table>
 </div><div class="memdoc">
 
-<p>Sends a packet of joystick specific data. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">data</td><td>the data that will be sent. </td></tr>
-    <tr><td class="paramname">size</td><td>the size of the data.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><code>success</code> if the data was sent successfully; <code>failure</code> if the joystick or driver doesn't support effect packets.</dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function requires at least SDL 2.0.16 </dd></dl>
-
 </div>
 </div>
 <a id="ae75689bec05f6cb5220cd93ef15a6e62" name="ae75689bec05f6cb5220cd93ef15a6e62"></a>
@@ -2024,15 +1615,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
 </table>
 </div><div class="memdoc">
 
-<p>Sets the player index associated with the joystick. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">index</td><td>new the player index.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function requires at least SDL 2.0.12 </dd></dl>
-
 </div>
 </div>
 <a id="a18d44b2693cfae71c3c41e9a13399e4c" name="a18d44b2693cfae71c3c41e9a13399e4c"></a>
@@ -2058,9 +1640,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the player index associated with the joystick. </p>
-<dl class="section return"><dt>Returns</dt><dd>the joystick player index; an empty optional is returned upon failure. </dd></dl>
 
 </div>
 </div>
@@ -2089,15 +1668,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the player index associated with a joystick. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">index</td><td>the device index of the joystick to query.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the joystick player index; an empty optional is returned upon failure. </dd></dl>
-
 </div>
 </div>
 <a id="a1e3aa1c0993a4ae8e706928252bfd8c1" name="a1e3aa1c0993a4ae8e706928252bfd8c1"></a>
@@ -2124,15 +1694,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns a joystick GUID based on a string. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">str</td><td>the string used to obtain the GUID.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the obtained GUID. </dd></dl>
 
 </div>
 </div>
@@ -2161,15 +1722,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
 </table>
 </div><div class="memdoc">
 
-<p>Returns a joystick GUID based on a string. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">str</td><td>the string used to obtain the GUID.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the obtained GUID. </dd></dl>
-
 </div>
 </div>
 <a id="a856f50a049e3d46da48ee891e0d9666b" name="a856f50a049e3d46da48ee891e0d9666b"></a>
@@ -2194,9 +1746,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Locks the access to all joysticks. </p>
-<p >If you are using the joystick API from multiple threads you should use this function to restrict access to the joysticks. </p>
 
 </div>
 </div>
@@ -2223,8 +1772,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
 </table>
 </div><div class="memdoc">
 
-<p>Unlocks the access to all joysticks. </p>
-
 </div>
 </div>
 <a id="a8b00a98d0d732298510d6f8e60efcbe0" name="a8b00a98d0d732298510d6f8e60efcbe0"></a>
@@ -2249,9 +1796,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Updates the state of all open joysticks. </p>
-<dl class="section note"><dt>Note</dt><dd>This is done automatically by the event loop if joystick events are enabled. </dd></dl>
 
 </div>
 </div>
@@ -2279,15 +1823,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
 </table>
 </div><div class="memdoc">
 
-<p>Sets whether joystick event polling is enabled. </p>
-<p >If polling is disabled, then you have to call <code><a class="el" href="classcen_1_1basic__joystick.html#a8b00a98d0d732298510d6f8e60efcbe0" title="Updates the state of all open joysticks.">update()</a></code> by yourself.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">enabled</td><td><code>true</code> to enable automatic joystick event polling; <code>false</code> otherwise. </td></tr>
-  </table>
-  </dd>
-</dl>
-
 </div>
 </div>
 <a id="a1612942ab477403e42a1f271f640e90c" name="a1612942ab477403e42a1f271f640e90c"></a>
@@ -2313,9 +1848,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Indicates whether joystick event polling is enabled. </p>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if joystick event polling is enabled; <code>false</code> otherwise. </dd></dl>
 
 </div>
 </div>
@@ -2343,9 +1875,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the amount of available joysticks. </p>
-<dl class="section return"><dt>Returns</dt><dd>the amount of available joysticks; an empty optional is returned upon failure. </dd></dl>
-
 </div>
 </div>
 <a id="a1f71f6df5cf5a4e0228fd453164ebb05" name="a1f71f6df5cf5a4e0228fd453164ebb05"></a>
@@ -2361,7 +1890,7 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
           <td class="memname">static constexpr auto axis_max </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> -&gt; <a class="el" href="group__common.html#ga8089acde96bbf064054dc5af993346bd">int16</a>
+          <td> -&gt; <a class="el" href="namespacecen.html#a8089acde96bbf064054dc5af993346bd">int16</a>
   </td>
         </tr>
       </table>
@@ -2371,9 +1900,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the maximum possible value of an joystick axis control. </p>
-<dl class="section return"><dt>Returns</dt><dd>the maximum value of an axis control. </dd></dl>
 
 </div>
 </div>
@@ -2390,7 +1916,7 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
           <td class="memname">static constexpr auto axis_min </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> -&gt; <a class="el" href="group__common.html#ga8089acde96bbf064054dc5af993346bd">int16</a>
+          <td> -&gt; <a class="el" href="namespacecen.html#a8089acde96bbf064054dc5af993346bd">int16</a>
   </td>
         </tr>
       </table>
@@ -2400,9 +1926,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the minimum possible value of an joystick axis control. </p>
-<dl class="section return"><dt>Returns</dt><dd>the minimum value of an axis control. </dd></dl>
 
 </div>
 </div>
@@ -2430,7 +1953,6 @@ class cen::basic_joystick&lt; T &gt;</div><p >Represents a joystick device. </p>
 </div><div class="memdoc">
 
 <p>Indicates whether a handle holds a non-null pointer. </p>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the internal pointer isn't null; <code>false</code> otherwise. </dd></dl>
 
 </div>
 </div>

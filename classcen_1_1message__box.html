@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Centurion
-   &#160;<span id="projectnumber">7.0.0</span>
+   &#160;<span id="projectnumber">7.1.0</span>
    </div>
    <div id="projectbrief">A modern C++ wrapper library for SDL2</div>
   </td>
@@ -94,8 +94,10 @@ $(document).ready(function(){initNavTree('classcen_1_1message__box.html',''); in
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classcen_1_1message__box-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">message_box Class Reference<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="group__message-box.html">Message box</a></div></div></div>
+  <div class="headertitle"><div class="title">message_box Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -116,92 +118,59 @@ Public Types</h2></td></tr>
 <tr class="memitem:abbee6e3c954bfce0d80d437cb7badda4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1message__box.html#abbee6e3c954bfce0d80d437cb7badda4">button_id</a> = int</td></tr>
 <tr class="separator:abbee6e3c954bfce0d80d437cb7badda4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Construction</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
 <tr class="memitem:ab40c608701897cf4e84e218c456e751d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1message__box.html#ab40c608701897cf4e84e218c456e751d">message_box</a> ()=default</td></tr>
-<tr class="memdesc:ab40c608701897cf4e84e218c456e751d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a basic message box.  <a href="classcen_1_1message__box.html#ab40c608701897cf4e84e218c456e751d">More...</a><br /></td></tr>
 <tr class="separator:ab40c608701897cf4e84e218c456e751d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a173ef182cc1e92843ed5ad1705e783"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1message__box.html#a0a173ef182cc1e92843ed5ad1705e783">message_box</a> (std::string <a class="el" href="classcen_1_1message__box.html#a46a300aeebc35c9f886bc20b43a4f03f">title</a>, std::string <a class="el" href="classcen_1_1message__box.html#ae420bd8abe3097b557378b319860b0c2">message</a>)</td></tr>
-<tr class="memdesc:a0a173ef182cc1e92843ed5ad1705e783"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a message box.  <a href="classcen_1_1message__box.html#a0a173ef182cc1e92843ed5ad1705e783">More...</a><br /></td></tr>
 <tr class="separator:a0a173ef182cc1e92843ed5ad1705e783"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Instance-based message box API</h2></td></tr>
 <tr class="memitem:a88b3749e1d84df024389a4de3e21780b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a88b3749e1d84df024389a4de3e21780b"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1message__box.html#a88b3749e1d84df024389a4de3e21780b">show</a> (const <a class="el" href="classcen_1_1basic__window.html">basic_window</a>&lt; T &gt; &amp;parent) -&gt; std::optional&lt; <a class="el" href="classcen_1_1message__box.html#abbee6e3c954bfce0d80d437cb7badda4">button_id</a> &gt;</td></tr>
-<tr class="memdesc:a88b3749e1d84df024389a4de3e21780b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shows the message box.  <a href="classcen_1_1message__box.html#a88b3749e1d84df024389a4de3e21780b">More...</a><br /></td></tr>
 <tr class="separator:a88b3749e1d84df024389a4de3e21780b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a622abe2f616c8c9fffc072b3689084ab"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1message__box.html#a622abe2f616c8c9fffc072b3689084ab">show</a> () -&gt; std::optional&lt; <a class="el" href="classcen_1_1message__box.html#abbee6e3c954bfce0d80d437cb7badda4">button_id</a> &gt;</td></tr>
-<tr class="memdesc:a622abe2f616c8c9fffc072b3689084ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shows the message box.  <a href="classcen_1_1message__box.html#a622abe2f616c8c9fffc072b3689084ab">More...</a><br /></td></tr>
 <tr class="separator:a622abe2f616c8c9fffc072b3689084ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Mutators</h2></td></tr>
 <tr class="memitem:a470b1d34cec83e506ad105b001a39380"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1message__box.html#a470b1d34cec83e506ad105b001a39380">add_button</a> (const <a class="el" href="classcen_1_1message__box.html#abbee6e3c954bfce0d80d437cb7badda4">button_id</a> id, std::string text, const <a class="el" href="classcen_1_1message__box.html#a07532d7581cbdfc81fdec2a994aab406">button_flags</a> button=button_flags::return_key_default)</td></tr>
-<tr class="memdesc:a470b1d34cec83e506ad105b001a39380"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a button to the message box.  <a href="classcen_1_1message__box.html#a470b1d34cec83e506ad105b001a39380">More...</a><br /></td></tr>
 <tr class="separator:a470b1d34cec83e506ad105b001a39380"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Queries</h2></td></tr>
 <tr class="memitem:ae0503ad62cfb9882070ef87e1d4142c9"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1message__box.html#ae0503ad62cfb9882070ef87e1d4142c9">has_button</a> (const <a class="el" href="classcen_1_1message__box.html#abbee6e3c954bfce0d80d437cb7badda4">button_id</a> id) const -&gt; bool</td></tr>
-<tr class="memdesc:ae0503ad62cfb9882070ef87e1d4142c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether the message box has a button.  <a href="classcen_1_1message__box.html#ae0503ad62cfb9882070ef87e1d4142c9">More...</a><br /></td></tr>
 <tr class="separator:ae0503ad62cfb9882070ef87e1d4142c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Setters</h2></td></tr>
 <tr class="memitem:afdb3d00c861f800b5e201d5970f8c811"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1message__box.html#afdb3d00c861f800b5e201d5970f8c811">set_title</a> (std::string <a class="el" href="classcen_1_1message__box.html#a46a300aeebc35c9f886bc20b43a4f03f">title</a>)</td></tr>
-<tr class="memdesc:afdb3d00c861f800b5e201d5970f8c811"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the title of the message box.  <a href="classcen_1_1message__box.html#afdb3d00c861f800b5e201d5970f8c811">More...</a><br /></td></tr>
 <tr class="separator:afdb3d00c861f800b5e201d5970f8c811"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fa5ffc13c01c4e48f2f0f950bfccdcb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1message__box.html#a7fa5ffc13c01c4e48f2f0f950bfccdcb">set_message</a> (std::string <a class="el" href="classcen_1_1message__box.html#ae420bd8abe3097b557378b319860b0c2">message</a>)</td></tr>
-<tr class="memdesc:a7fa5ffc13c01c4e48f2f0f950bfccdcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the message of the message box.  <a href="classcen_1_1message__box.html#a7fa5ffc13c01c4e48f2f0f950bfccdcb">More...</a><br /></td></tr>
 <tr class="separator:a7fa5ffc13c01c4e48f2f0f950bfccdcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa0abcabb492632e0c8fd23692e43398"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1message__box.html#aaa0abcabb492632e0c8fd23692e43398">set_color_scheme</a> (const <a class="el" href="classcen_1_1message__box__color__scheme.html">message_box_color_scheme</a> &amp;scheme) noexcept</td></tr>
-<tr class="memdesc:aaa0abcabb492632e0c8fd23692e43398"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the color scheme used by the message box.  <a href="classcen_1_1message__box.html#aaa0abcabb492632e0c8fd23692e43398">More...</a><br /></td></tr>
 <tr class="separator:aaa0abcabb492632e0c8fd23692e43398"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0187ef147815b7118a595ef771b6a977"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1message__box.html#a0187ef147815b7118a595ef771b6a977">set_type</a> (const <a class="el" href="group__message-box.html#gaa122c98ded301158f82d2ca5f298ca52">message_box_type</a> <a class="el" href="classcen_1_1message__box.html#a6353a8262bd22a0b3fa287c8e038423c">type</a>) noexcept</td></tr>
-<tr class="memdesc:a0187ef147815b7118a595ef771b6a977"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the type of the message box.  <a href="classcen_1_1message__box.html#a0187ef147815b7118a595ef771b6a977">More...</a><br /></td></tr>
+<tr class="memitem:a0187ef147815b7118a595ef771b6a977"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1message__box.html#a0187ef147815b7118a595ef771b6a977">set_type</a> (const <a class="el" href="namespacecen.html#aa122c98ded301158f82d2ca5f298ca52">message_box_type</a> <a class="el" href="classcen_1_1message__box.html#a6353a8262bd22a0b3fa287c8e038423c">type</a>) noexcept</td></tr>
 <tr class="separator:a0187ef147815b7118a595ef771b6a977"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad75e6980dd65bc0044d6a22b9c52a46c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1message__box.html#ad75e6980dd65bc0044d6a22b9c52a46c">set_button_order</a> (const <a class="el" href="group__message-box.html#ga5bb0733de51aa009e5ae9e639aee2031">message_box_button_order</a> order) noexcept</td></tr>
-<tr class="memdesc:ad75e6980dd65bc0044d6a22b9c52a46c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the button order used by the message box.  <a href="classcen_1_1message__box.html#ad75e6980dd65bc0044d6a22b9c52a46c">More...</a><br /></td></tr>
+<tr class="memitem:ad75e6980dd65bc0044d6a22b9c52a46c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1message__box.html#ad75e6980dd65bc0044d6a22b9c52a46c">set_button_order</a> (const <a class="el" href="namespacecen.html#a5bb0733de51aa009e5ae9e639aee2031">message_box_button_order</a> order) noexcept</td></tr>
 <tr class="separator:ad75e6980dd65bc0044d6a22b9c52a46c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Getters</h2></td></tr>
 <tr class="memitem:a46a300aeebc35c9f886bc20b43a4f03f"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1message__box.html#a46a300aeebc35c9f886bc20b43a4f03f">title</a> () const -&gt; const std::string &amp;</td></tr>
-<tr class="memdesc:a46a300aeebc35c9f886bc20b43a4f03f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the title of the message box.  <a href="classcen_1_1message__box.html#a46a300aeebc35c9f886bc20b43a4f03f">More...</a><br /></td></tr>
 <tr class="separator:a46a300aeebc35c9f886bc20b43a4f03f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae420bd8abe3097b557378b319860b0c2"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1message__box.html#ae420bd8abe3097b557378b319860b0c2">message</a> () const -&gt; const std::string &amp;</td></tr>
-<tr class="memdesc:ae420bd8abe3097b557378b319860b0c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the message associated with the message box.  <a href="classcen_1_1message__box.html#ae420bd8abe3097b557378b319860b0c2">More...</a><br /></td></tr>
 <tr class="separator:ae420bd8abe3097b557378b319860b0c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6353a8262bd22a0b3fa287c8e038423c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1message__box.html#a6353a8262bd22a0b3fa287c8e038423c">type</a> () const noexcept -&gt; <a class="el" href="group__message-box.html#gaa122c98ded301158f82d2ca5f298ca52">message_box_type</a></td></tr>
-<tr class="memdesc:a6353a8262bd22a0b3fa287c8e038423c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the type of the message box.  <a href="classcen_1_1message__box.html#a6353a8262bd22a0b3fa287c8e038423c">More...</a><br /></td></tr>
+<tr class="memitem:a6353a8262bd22a0b3fa287c8e038423c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1message__box.html#a6353a8262bd22a0b3fa287c8e038423c">type</a> () const noexcept -&gt; <a class="el" href="namespacecen.html#aa122c98ded301158f82d2ca5f298ca52">message_box_type</a></td></tr>
 <tr class="separator:a6353a8262bd22a0b3fa287c8e038423c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a316f506b67dd28109065062054a73b34"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1message__box.html#a316f506b67dd28109065062054a73b34">button_order</a> () const noexcept -&gt; <a class="el" href="group__message-box.html#ga5bb0733de51aa009e5ae9e639aee2031">message_box_button_order</a></td></tr>
-<tr class="memdesc:a316f506b67dd28109065062054a73b34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the button order used by the message box.  <a href="classcen_1_1message__box.html#a316f506b67dd28109065062054a73b34">More...</a><br /></td></tr>
+<tr class="memitem:a316f506b67dd28109065062054a73b34"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1message__box.html#a316f506b67dd28109065062054a73b34">button_order</a> () const noexcept -&gt; <a class="el" href="namespacecen.html#a5bb0733de51aa009e5ae9e639aee2031">message_box_button_order</a></td></tr>
 <tr class="separator:a316f506b67dd28109065062054a73b34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Direct message box API</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a5b99347ab48f8c8f179d3dd3764bd871"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a5b99347ab48f8c8f179d3dd3764bd871"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1message__box.html#a5b99347ab48f8c8f179d3dd3764bd871">show</a> (const <a class="el" href="classcen_1_1basic__window.html">basic_window</a>&lt; T &gt; &amp;parent, const char *<a class="el" href="classcen_1_1message__box.html#a46a300aeebc35c9f886bc20b43a4f03f">title</a>, const char *<a class="el" href="classcen_1_1message__box.html#ae420bd8abe3097b557378b319860b0c2">message</a>, const <a class="el" href="group__message-box.html#gaa122c98ded301158f82d2ca5f298ca52">message_box_type</a> <a class="el" href="classcen_1_1message__box.html#a6353a8262bd22a0b3fa287c8e038423c">type</a>=<a class="el" href="classcen_1_1message__box.html#a4a1fb5d0638097c22046c1749218de81">default_type</a>(), const <a class="el" href="group__message-box.html#ga5bb0733de51aa009e5ae9e639aee2031">message_box_button_order</a> order=<a class="el" href="classcen_1_1message__box.html#a638200205f467a4ca3e79dbf9c890123">default_order</a>())</td></tr>
-<tr class="memdesc:a5b99347ab48f8c8f179d3dd3764bd871"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays a message box.  <a href="classcen_1_1message__box.html#a5b99347ab48f8c8f179d3dd3764bd871">More...</a><br /></td></tr>
+<tr class="memitem:a5b99347ab48f8c8f179d3dd3764bd871"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1message__box.html#a5b99347ab48f8c8f179d3dd3764bd871">show</a> (const <a class="el" href="classcen_1_1basic__window.html">basic_window</a>&lt; T &gt; &amp;parent, const char *<a class="el" href="classcen_1_1message__box.html#a46a300aeebc35c9f886bc20b43a4f03f">title</a>, const char *<a class="el" href="classcen_1_1message__box.html#ae420bd8abe3097b557378b319860b0c2">message</a>, const <a class="el" href="namespacecen.html#aa122c98ded301158f82d2ca5f298ca52">message_box_type</a> <a class="el" href="classcen_1_1message__box.html#a6353a8262bd22a0b3fa287c8e038423c">type</a>=<a class="el" href="classcen_1_1message__box.html#a4a1fb5d0638097c22046c1749218de81">default_type</a>(), const <a class="el" href="namespacecen.html#a5bb0733de51aa009e5ae9e639aee2031">message_box_button_order</a> order=<a class="el" href="classcen_1_1message__box.html#a638200205f467a4ca3e79dbf9c890123">default_order</a>())</td></tr>
 <tr class="separator:a5b99347ab48f8c8f179d3dd3764bd871"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72bc2fcd4a22a7bb234e5578f7c9f8d2"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a72bc2fcd4a22a7bb234e5578f7c9f8d2"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1message__box.html#a72bc2fcd4a22a7bb234e5578f7c9f8d2">show</a> (const <a class="el" href="classcen_1_1basic__window.html">basic_window</a>&lt; T &gt; &amp;parent, const std::string &amp;<a class="el" href="classcen_1_1message__box.html#a46a300aeebc35c9f886bc20b43a4f03f">title</a>, const std::string &amp;<a class="el" href="classcen_1_1message__box.html#ae420bd8abe3097b557378b319860b0c2">message</a>, const <a class="el" href="group__message-box.html#gaa122c98ded301158f82d2ca5f298ca52">message_box_type</a> <a class="el" href="classcen_1_1message__box.html#a6353a8262bd22a0b3fa287c8e038423c">type</a>=<a class="el" href="classcen_1_1message__box.html#a4a1fb5d0638097c22046c1749218de81">default_type</a>(), const <a class="el" href="group__message-box.html#ga5bb0733de51aa009e5ae9e639aee2031">message_box_button_order</a> order=<a class="el" href="classcen_1_1message__box.html#a638200205f467a4ca3e79dbf9c890123">default_order</a>())</td></tr>
-<tr class="memdesc:a72bc2fcd4a22a7bb234e5578f7c9f8d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays a message box.  <a href="classcen_1_1message__box.html#a72bc2fcd4a22a7bb234e5578f7c9f8d2">More...</a><br /></td></tr>
+<tr class="memitem:a72bc2fcd4a22a7bb234e5578f7c9f8d2"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1message__box.html#a72bc2fcd4a22a7bb234e5578f7c9f8d2">show</a> (const <a class="el" href="classcen_1_1basic__window.html">basic_window</a>&lt; T &gt; &amp;parent, const std::string &amp;<a class="el" href="classcen_1_1message__box.html#a46a300aeebc35c9f886bc20b43a4f03f">title</a>, const std::string &amp;<a class="el" href="classcen_1_1message__box.html#ae420bd8abe3097b557378b319860b0c2">message</a>, const <a class="el" href="namespacecen.html#aa122c98ded301158f82d2ca5f298ca52">message_box_type</a> <a class="el" href="classcen_1_1message__box.html#a6353a8262bd22a0b3fa287c8e038423c">type</a>=<a class="el" href="classcen_1_1message__box.html#a4a1fb5d0638097c22046c1749218de81">default_type</a>(), const <a class="el" href="namespacecen.html#a5bb0733de51aa009e5ae9e639aee2031">message_box_button_order</a> order=<a class="el" href="classcen_1_1message__box.html#a638200205f467a4ca3e79dbf9c890123">default_order</a>())</td></tr>
 <tr class="separator:a72bc2fcd4a22a7bb234e5578f7c9f8d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe6d076474da3e271a2cc7a4bede3021"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1message__box.html#afe6d076474da3e271a2cc7a4bede3021">show</a> (const char *<a class="el" href="classcen_1_1message__box.html#a46a300aeebc35c9f886bc20b43a4f03f">title</a>, const char *<a class="el" href="classcen_1_1message__box.html#ae420bd8abe3097b557378b319860b0c2">message</a>, const <a class="el" href="group__message-box.html#gaa122c98ded301158f82d2ca5f298ca52">message_box_type</a> <a class="el" href="classcen_1_1message__box.html#a6353a8262bd22a0b3fa287c8e038423c">type</a>=<a class="el" href="classcen_1_1message__box.html#a4a1fb5d0638097c22046c1749218de81">default_type</a>(), const <a class="el" href="group__message-box.html#ga5bb0733de51aa009e5ae9e639aee2031">message_box_button_order</a> order=<a class="el" href="classcen_1_1message__box.html#a638200205f467a4ca3e79dbf9c890123">default_order</a>())</td></tr>
-<tr class="memdesc:afe6d076474da3e271a2cc7a4bede3021"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays a message box.  <a href="classcen_1_1message__box.html#afe6d076474da3e271a2cc7a4bede3021">More...</a><br /></td></tr>
+<tr class="memitem:afe6d076474da3e271a2cc7a4bede3021"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1message__box.html#afe6d076474da3e271a2cc7a4bede3021">show</a> (const char *<a class="el" href="classcen_1_1message__box.html#a46a300aeebc35c9f886bc20b43a4f03f">title</a>, const char *<a class="el" href="classcen_1_1message__box.html#ae420bd8abe3097b557378b319860b0c2">message</a>, const <a class="el" href="namespacecen.html#aa122c98ded301158f82d2ca5f298ca52">message_box_type</a> <a class="el" href="classcen_1_1message__box.html#a6353a8262bd22a0b3fa287c8e038423c">type</a>=<a class="el" href="classcen_1_1message__box.html#a4a1fb5d0638097c22046c1749218de81">default_type</a>(), const <a class="el" href="namespacecen.html#a5bb0733de51aa009e5ae9e639aee2031">message_box_button_order</a> order=<a class="el" href="classcen_1_1message__box.html#a638200205f467a4ca3e79dbf9c890123">default_order</a>())</td></tr>
 <tr class="separator:afe6d076474da3e271a2cc7a4bede3021"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4235e3f257e47bc17fcaabdf76ebb908"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1message__box.html#a4235e3f257e47bc17fcaabdf76ebb908">show</a> (const std::string &amp;<a class="el" href="classcen_1_1message__box.html#a46a300aeebc35c9f886bc20b43a4f03f">title</a>, const std::string &amp;<a class="el" href="classcen_1_1message__box.html#ae420bd8abe3097b557378b319860b0c2">message</a>, const <a class="el" href="group__message-box.html#gaa122c98ded301158f82d2ca5f298ca52">message_box_type</a> <a class="el" href="classcen_1_1message__box.html#a6353a8262bd22a0b3fa287c8e038423c">type</a>=<a class="el" href="classcen_1_1message__box.html#a4a1fb5d0638097c22046c1749218de81">default_type</a>(), const <a class="el" href="group__message-box.html#ga5bb0733de51aa009e5ae9e639aee2031">message_box_button_order</a> order=<a class="el" href="classcen_1_1message__box.html#a638200205f467a4ca3e79dbf9c890123">default_order</a>())</td></tr>
-<tr class="memdesc:a4235e3f257e47bc17fcaabdf76ebb908"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays a message box.  <a href="classcen_1_1message__box.html#a4235e3f257e47bc17fcaabdf76ebb908">More...</a><br /></td></tr>
+<tr class="memitem:a4235e3f257e47bc17fcaabdf76ebb908"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1message__box.html#a4235e3f257e47bc17fcaabdf76ebb908">show</a> (const std::string &amp;<a class="el" href="classcen_1_1message__box.html#a46a300aeebc35c9f886bc20b43a4f03f">title</a>, const std::string &amp;<a class="el" href="classcen_1_1message__box.html#ae420bd8abe3097b557378b319860b0c2">message</a>, const <a class="el" href="namespacecen.html#aa122c98ded301158f82d2ca5f298ca52">message_box_type</a> <a class="el" href="classcen_1_1message__box.html#a6353a8262bd22a0b3fa287c8e038423c">type</a>=<a class="el" href="classcen_1_1message__box.html#a4a1fb5d0638097c22046c1749218de81">default_type</a>(), const <a class="el" href="namespacecen.html#a5bb0733de51aa009e5ae9e639aee2031">message_box_button_order</a> order=<a class="el" href="classcen_1_1message__box.html#a638200205f467a4ca3e79dbf9c890123">default_order</a>())</td></tr>
 <tr class="separator:a4235e3f257e47bc17fcaabdf76ebb908"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Defaults</h2></td></tr>
-<tr class="memitem:a4a1fb5d0638097c22046c1749218de81"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1message__box.html#a4a1fb5d0638097c22046c1749218de81">default_type</a> () noexcept -&gt; <a class="el" href="group__message-box.html#gaa122c98ded301158f82d2ca5f298ca52">message_box_type</a></td></tr>
-<tr class="memdesc:a4a1fb5d0638097c22046c1749218de81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the default message box type.  <a href="classcen_1_1message__box.html#a4a1fb5d0638097c22046c1749218de81">More...</a><br /></td></tr>
+<tr class="memitem:a4a1fb5d0638097c22046c1749218de81"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1message__box.html#a4a1fb5d0638097c22046c1749218de81">default_type</a> () noexcept -&gt; <a class="el" href="namespacecen.html#aa122c98ded301158f82d2ca5f298ca52">message_box_type</a></td></tr>
 <tr class="separator:a4a1fb5d0638097c22046c1749218de81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a638200205f467a4ca3e79dbf9c890123"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1message__box.html#a638200205f467a4ca3e79dbf9c890123">default_order</a> () noexcept -&gt; <a class="el" href="group__message-box.html#ga5bb0733de51aa009e5ae9e639aee2031">message_box_button_order</a></td></tr>
-<tr class="memdesc:a638200205f467a4ca3e79dbf9c890123"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the default message box button order.  <a href="classcen_1_1message__box.html#a638200205f467a4ca3e79dbf9c890123">More...</a><br /></td></tr>
+<tr class="memitem:a638200205f467a4ca3e79dbf9c890123"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1message__box.html#a638200205f467a4ca3e79dbf9c890123">default_order</a> () noexcept -&gt; <a class="el" href="namespacecen.html#a5bb0733de51aa009e5ae9e639aee2031">message_box_button_order</a></td></tr>
 <tr class="separator:a638200205f467a4ca3e79dbf9c890123"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Represents a modal message box that can be used display information, warnings and errors. </p>
-<p >An example usage of this class can be found <a class="el" href="page-message-box.html">here</a>.</p>
-<dl class="section note"><dt>Note</dt><dd>The appearance of message boxes varies depending on the platform, and certain styling options are not available on all platforms. </dd></dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="abbee6e3c954bfce0d80d437cb7badda4" name="abbee6e3c954bfce0d80d437cb7badda4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abbee6e3c954bfce0d80d437cb7badda4">&#9670;&nbsp;</a></span>button_id</h2>
@@ -225,7 +194,7 @@ Public Types</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="classcen_1_1message__box.html#a07532d7581cbdfc81fdec2a994aab406">button_flags</a> : <a class="el" href="group__common.html#gae847b0ef07964fb6bdb468179580dc11">uint32</a></td>
+          <td class="memname">enum <a class="el" href="classcen_1_1message__box.html#a07532d7581cbdfc81fdec2a994aab406">button_flags</a> : <a class="el" href="namespacecen.html#ae847b0ef07964fb6bdb468179580dc11">uint32</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -259,8 +228,6 @@ Public Types</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Creates a basic message box. </p>
 
 </div>
 </div>
@@ -298,15 +265,6 @@ Public Types</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Creates a message box. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">title</td><td>the title of the message box. </td></tr>
-    <tr><td class="paramname">message</td><td>the message of the message box. </td></tr>
-  </table>
-  </dd>
-</dl>
-
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -340,13 +298,13 @@ Public Types</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__message-box.html#gaa122c98ded301158f82d2ca5f298ca52">message_box_type</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#aa122c98ded301158f82d2ca5f298ca52">message_box_type</a>&#160;</td>
           <td class="paramname"><em>type</em> = <code><a class="el" href="classcen_1_1message__box.html#a4a1fb5d0638097c22046c1749218de81">default_type</a>()</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__message-box.html#ga5bb0733de51aa009e5ae9e639aee2031">message_box_button_order</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#a5bb0733de51aa009e5ae9e639aee2031">message_box_button_order</a>&#160;</td>
           <td class="paramname"><em>order</em> = <code><a class="el" href="classcen_1_1message__box.html#a638200205f467a4ca3e79dbf9c890123">default_order</a>()</code>&#160;</td>
         </tr>
         <tr>
@@ -361,24 +319,6 @@ Public Types</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Displays a message box. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">parent</td><td>the parent window. </td></tr>
-    <tr><td class="paramname">title</td><td>the message box title. </td></tr>
-    <tr><td class="paramname">message</td><td>the message that will be displayed. </td></tr>
-    <tr><td class="paramname">type</td><td>the message box type. </td></tr>
-    <tr><td class="paramname">order</td><td>the button order that will be used.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="classcen_1_1sdl__error.html" title="Represents an error related to the core SDL library.">sdl_error</a></td><td>if the message box cannot be shown. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -412,13 +352,13 @@ Public Types</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__message-box.html#gaa122c98ded301158f82d2ca5f298ca52">message_box_type</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#aa122c98ded301158f82d2ca5f298ca52">message_box_type</a>&#160;</td>
           <td class="paramname"><em>type</em> = <code><a class="el" href="classcen_1_1message__box.html#a4a1fb5d0638097c22046c1749218de81">default_type</a>()</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__message-box.html#ga5bb0733de51aa009e5ae9e639aee2031">message_box_button_order</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#a5bb0733de51aa009e5ae9e639aee2031">message_box_button_order</a>&#160;</td>
           <td class="paramname"><em>order</em> = <code><a class="el" href="classcen_1_1message__box.html#a638200205f467a4ca3e79dbf9c890123">default_order</a>()</code>&#160;</td>
         </tr>
         <tr>
@@ -433,24 +373,6 @@ Public Types</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Displays a message box. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">parent</td><td>the parent window. </td></tr>
-    <tr><td class="paramname">title</td><td>the message box title. </td></tr>
-    <tr><td class="paramname">message</td><td>the message that will be displayed. </td></tr>
-    <tr><td class="paramname">type</td><td>the message box type. </td></tr>
-    <tr><td class="paramname">order</td><td>the button order that will be used.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="classcen_1_1sdl__error.html" title="Represents an error related to the core SDL library.">sdl_error</a></td><td>if the message box cannot be shown. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -478,13 +400,13 @@ Public Types</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__message-box.html#gaa122c98ded301158f82d2ca5f298ca52">message_box_type</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#aa122c98ded301158f82d2ca5f298ca52">message_box_type</a>&#160;</td>
           <td class="paramname"><em>type</em> = <code><a class="el" href="classcen_1_1message__box.html#a4a1fb5d0638097c22046c1749218de81">default_type</a>()</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__message-box.html#ga5bb0733de51aa009e5ae9e639aee2031">message_box_button_order</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#a5bb0733de51aa009e5ae9e639aee2031">message_box_button_order</a>&#160;</td>
           <td class="paramname"><em>order</em> = <code><a class="el" href="classcen_1_1message__box.html#a638200205f467a4ca3e79dbf9c890123">default_order</a>()</code>&#160;</td>
         </tr>
         <tr>
@@ -499,23 +421,6 @@ Public Types</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Displays a message box. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">title</td><td>the message box title. </td></tr>
-    <tr><td class="paramname">message</td><td>the message that will be displayed. </td></tr>
-    <tr><td class="paramname">type</td><td>the message box type. </td></tr>
-    <tr><td class="paramname">order</td><td>the button order that will be used.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="classcen_1_1sdl__error.html" title="Represents an error related to the core SDL library.">sdl_error</a></td><td>if the message box cannot be shown. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -543,13 +448,13 @@ Public Types</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__message-box.html#gaa122c98ded301158f82d2ca5f298ca52">message_box_type</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#aa122c98ded301158f82d2ca5f298ca52">message_box_type</a>&#160;</td>
           <td class="paramname"><em>type</em> = <code><a class="el" href="classcen_1_1message__box.html#a4a1fb5d0638097c22046c1749218de81">default_type</a>()</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__message-box.html#ga5bb0733de51aa009e5ae9e639aee2031">message_box_button_order</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#a5bb0733de51aa009e5ae9e639aee2031">message_box_button_order</a>&#160;</td>
           <td class="paramname"><em>order</em> = <code><a class="el" href="classcen_1_1message__box.html#a638200205f467a4ca3e79dbf9c890123">default_order</a>()</code>&#160;</td>
         </tr>
         <tr>
@@ -564,23 +469,6 @@ Public Types</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Displays a message box. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">title</td><td>the message box title. </td></tr>
-    <tr><td class="paramname">message</td><td>the message that will be displayed. </td></tr>
-    <tr><td class="paramname">type</td><td>the message box type. </td></tr>
-    <tr><td class="paramname">order</td><td>the button order that will be used.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="classcen_1_1sdl__error.html" title="Represents an error related to the core SDL library.">sdl_error</a></td><td>if the message box cannot be shown. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -609,15 +497,6 @@ Public Types</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Shows the message box. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">parent</td><td>the parent window.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the identifier of the pressed button; an empty optional is returned if something goes wrong. </dd></dl>
-
 </div>
 </div>
 <a id="a622abe2f616c8c9fffc072b3689084ab" name="a622abe2f616c8c9fffc072b3689084ab"></a>
@@ -642,9 +521,6 @@ Public Types</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Shows the message box. </p>
-<dl class="section return"><dt>Returns</dt><dd>the identifier of the pressed button; an empty optional is returned if something goes wrong. </dd></dl>
 
 </div>
 </div>
@@ -688,22 +564,6 @@ Public Types</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Adds a button to the message box. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">id</td><td>the unique identifier used by the button. </td></tr>
-    <tr><td class="paramname">text</td><td>the button label. </td></tr>
-    <tr><td class="paramname">button</td><td>the button flags.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">exception</td><td>if the button identifier is already taken. </td></tr>
-  </table>
-  </dd>
-</dl>
-
 </div>
 </div>
 <a id="ae0503ad62cfb9882070ef87e1d4142c9" name="ae0503ad62cfb9882070ef87e1d4142c9"></a>
@@ -731,15 +591,6 @@ Public Types</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Indicates whether the message box has a button. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">id</td><td>the identifier of the button to look for.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the button was found; <code>false</code> otherwise. </dd></dl>
-
 </div>
 </div>
 <a id="afdb3d00c861f800b5e201d5970f8c811" name="afdb3d00c861f800b5e201d5970f8c811"></a>
@@ -765,14 +616,6 @@ Public Types</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Sets the title of the message box. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">title</td><td>the new title. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -800,14 +643,6 @@ Public Types</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Sets the message of the message box. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">message</td><td>the new message. </td></tr>
-  </table>
-  </dd>
-</dl>
-
 </div>
 </div>
 <a id="aaa0abcabb492632e0c8fd23692e43398" name="aaa0abcabb492632e0c8fd23692e43398"></a>
@@ -834,14 +669,6 @@ Public Types</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Sets the color scheme used by the message box. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">scheme</td><td>the new color scheme. </td></tr>
-  </table>
-  </dd>
-</dl>
-
 </div>
 </div>
 <a id="a0187ef147815b7118a595ef771b6a977" name="a0187ef147815b7118a595ef771b6a977"></a>
@@ -856,7 +683,7 @@ Public Types</h2></td></tr>
         <tr>
           <td class="memname">void set_type </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__message-box.html#gaa122c98ded301158f82d2ca5f298ca52">message_box_type</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#aa122c98ded301158f82d2ca5f298ca52">message_box_type</a>&#160;</td>
           <td class="paramname"><em>type</em></td><td>)</td>
           <td></td>
         </tr>
@@ -867,14 +694,6 @@ Public Types</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Sets the type of the message box. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">type</td><td>the new type. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -890,7 +709,7 @@ Public Types</h2></td></tr>
         <tr>
           <td class="memname">void set_button_order </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__message-box.html#ga5bb0733de51aa009e5ae9e639aee2031">message_box_button_order</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#a5bb0733de51aa009e5ae9e639aee2031">message_box_button_order</a>&#160;</td>
           <td class="paramname"><em>order</em></td><td>)</td>
           <td></td>
         </tr>
@@ -901,14 +720,6 @@ Public Types</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Sets the button order used by the message box. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">order</td><td>the new button order. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -935,9 +746,6 @@ Public Types</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the title of the message box. </p>
-<dl class="section return"><dt>Returns</dt><dd>the message box title. </dd></dl>
-
 </div>
 </div>
 <a id="ae420bd8abe3097b557378b319860b0c2" name="ae420bd8abe3097b557378b319860b0c2"></a>
@@ -963,9 +771,6 @@ Public Types</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the message associated with the message box. </p>
-<dl class="section return"><dt>Returns</dt><dd>the message box message. </dd></dl>
-
 </div>
 </div>
 <a id="a6353a8262bd22a0b3fa287c8e038423c" name="a6353a8262bd22a0b3fa287c8e038423c"></a>
@@ -981,7 +786,7 @@ Public Types</h2></td></tr>
           <td class="memname">auto type </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const -&gt; <a class="el" href="group__message-box.html#gaa122c98ded301158f82d2ca5f298ca52">message_box_type</a> </td>
+          <td> const -&gt; <a class="el" href="namespacecen.html#aa122c98ded301158f82d2ca5f298ca52">message_box_type</a> </td>
         </tr>
       </table>
   </td>
@@ -990,9 +795,6 @@ Public Types</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the type of the message box. </p>
-<dl class="section return"><dt>Returns</dt><dd>the message box type. </dd></dl>
 
 </div>
 </div>
@@ -1009,7 +811,7 @@ Public Types</h2></td></tr>
           <td class="memname">auto button_order </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const -&gt; <a class="el" href="group__message-box.html#ga5bb0733de51aa009e5ae9e639aee2031">message_box_button_order</a>
+          <td> const -&gt; <a class="el" href="namespacecen.html#a5bb0733de51aa009e5ae9e639aee2031">message_box_button_order</a>
   </td>
         </tr>
       </table>
@@ -1019,9 +821,6 @@ Public Types</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the button order used by the message box. </p>
-<dl class="section return"><dt>Returns</dt><dd>the button order. </dd></dl>
 
 </div>
 </div>
@@ -1038,7 +837,7 @@ Public Types</h2></td></tr>
           <td class="memname">static constexpr auto default_type </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> -&gt; <a class="el" href="group__message-box.html#gaa122c98ded301158f82d2ca5f298ca52">message_box_type</a>
+          <td> -&gt; <a class="el" href="namespacecen.html#aa122c98ded301158f82d2ca5f298ca52">message_box_type</a>
   </td>
         </tr>
       </table>
@@ -1048,9 +847,6 @@ Public Types</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the default message box type. </p>
-<dl class="section return"><dt>Returns</dt><dd>the default type. </dd></dl>
 
 </div>
 </div>
@@ -1067,7 +863,7 @@ Public Types</h2></td></tr>
           <td class="memname">static constexpr auto default_order </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> -&gt; <a class="el" href="group__message-box.html#ga5bb0733de51aa009e5ae9e639aee2031">message_box_button_order</a>
+          <td> -&gt; <a class="el" href="namespacecen.html#a5bb0733de51aa009e5ae9e639aee2031">message_box_button_order</a>
   </td>
         </tr>
       </table>
@@ -1077,9 +873,6 @@ Public Types</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the default message box button order. </p>
-<dl class="section return"><dt>Returns</dt><dd>the default button order. </dd></dl>
 
 </div>
 </div>

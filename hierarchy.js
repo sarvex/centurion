@@ -10,6 +10,7 @@ var hierarchy =
     [ "basic_point< T >", "classcen_1_1basic__point.html", null ],
     [ "basic_point< int >", "classcen_1_1basic__point.html", null ],
     [ "basic_rect< T >", "classcen_1_1basic__rect.html", null ],
+    [ "basic_renderer< T >", "classcen_1_1basic__renderer.html", null ],
     [ "basic_sensor< T >", "classcen_1_1basic__sensor.html", null ],
     [ "basic_sound_effect< T >", "classcen_1_1basic__sound__effect.html", null ],
     [ "basic_surface< T >", "classcen_1_1basic__surface.html", null ],
@@ -109,6 +110,9 @@ var hierarchy =
     [ "event_base< SDL_TextEditingEvent >", "classcen_1_1event__base.html", [
       [ "text_editing_event", "classcen_1_1text__editing__event.html", null ]
     ] ],
+    [ "event_base< SDL_TextEditingExtEvent >", "classcen_1_1event__base.html", [
+      [ "text_editing_ext_event", "classcen_1_1text__editing__ext__event.html", null ]
+    ] ],
     [ "event_base< SDL_TextInputEvent >", "classcen_1_1event__base.html", [
       [ "text_input_event", "classcen_1_1text__input__event.html", null ]
     ] ],
@@ -121,6 +125,8 @@ var hierarchy =
     [ "event_base< SDL_WindowEvent >", "classcen_1_1event__base.html", [
       [ "window_event", "classcen_1_1window__event.html", null ]
     ] ],
+    [ "event_dispatcher< Events >", "classcen_1_1event__dispatcher.html", null ],
+    [ "event_handler", "classcen_1_1event__handler.html", null ],
     [ "event_sink< E >", "classcen_1_1event__sink.html", null ],
     [ "exception", null, [
       [ "exception", "classcen_1_1exception.html", [
@@ -132,6 +138,7 @@ var hierarchy =
     ] ],
     [ "file", "classcen_1_1file.html", null ],
     [ "finger", "classcen_1_1finger.html", null ],
+    [ "font", "classcen_1_1font.html", null ],
     [ "font_bundle", "classcen_1_1experimental_1_1font__bundle.html", null ],
     [ "font_cache", "classcen_1_1font__cache.html", null ],
     [ "font_dpi", "structcen_1_1font__dpi.html", null ],
@@ -145,29 +152,26 @@ var hierarchy =
     [ "keyboard", "classcen_1_1keyboard.html", null ],
     [ "locale", "classcen_1_1locale.html", null ],
     [ "font::measure_result", "structcen_1_1font_1_1measure__result.html", null ],
+    [ "message_box", "classcen_1_1message__box.html", null ],
     [ "message_box_color_scheme", "classcen_1_1message__box__color__scheme.html", null ],
     [ "mix", "classcen_1_1mix.html", null ],
     [ "mix_cfg", "structcen_1_1mix__cfg.html", null ],
     [ "mouse", "classcen_1_1mouse.html", null ],
     [ "mutex", "classcen_1_1mutex.html", null ],
-    [ "page-basic-rendering", null, [
-      [ "basic_renderer< T >", "classcen_1_1basic__renderer.html", null ]
-    ] ],
-    [ "page-event-dispatcher", null, [
-      [ "event_dispatcher< Events >", "classcen_1_1event__dispatcher.html", null ]
-    ] ],
-    [ "page-event-handler", null, [
-      [ "event_handler", "classcen_1_1event__handler.html", null ]
-    ] ],
-    [ "page-example-font", null, [
-      [ "font", "classcen_1_1font.html", null ]
-    ] ],
-    [ "page-message-box", null, [
-      [ "message_box", "classcen_1_1message__box.html", null ]
-    ] ],
     [ "palette", "classcen_1_1palette.html", null ],
     [ "point_traits< T, >", "classcen_1_1point__traits.html", null ],
     [ "point_traits< int >", "classcen_1_1point__traits.html", null ],
+    [ "pointer< B, Type >", "classcen_1_1detail_1_1pointer.html", null ],
+    [ "pointer< detail::owner_tag, SDL_Texture >", "classcen_1_1detail_1_1pointer.html", null ],
+    [ "pointer< T, SDL_Cursor >", "classcen_1_1detail_1_1pointer.html", null ],
+    [ "pointer< T, SDL_GameController >", "classcen_1_1detail_1_1pointer.html", null ],
+    [ "pointer< T, SDL_Joystick >", "classcen_1_1detail_1_1pointer.html", null ],
+    [ "pointer< T, SDL_PixelFormat >", "classcen_1_1detail_1_1pointer.html", null ],
+    [ "pointer< T, SDL_Renderer >", "classcen_1_1detail_1_1pointer.html", null ],
+    [ "pointer< T, SDL_Sensor >", "classcen_1_1detail_1_1pointer.html", null ],
+    [ "pointer< T, SDL_Surface >", "classcen_1_1detail_1_1pointer.html", null ],
+    [ "pointer< T, SDL_Texture >", "classcen_1_1detail_1_1pointer.html", null ],
+    [ "pointer< T, SDL_Window >", "classcen_1_1detail_1_1pointer.html", null ],
     [ "rect_traits< T, >", "classcen_1_1rect__traits.html", null ],
     [ "renderer_info", "classcen_1_1renderer__info.html", null ],
     [ "renderer_scale", "structcen_1_1renderer__scale.html", null ],
@@ -176,6 +180,7 @@ var hierarchy =
     [ "scoped_lock", "classcen_1_1scoped__lock.html", null ],
     [ "sdl", "classcen_1_1sdl.html", null ],
     [ "sdl_cfg", "structcen_1_1sdl__cfg.html", null ],
+    [ "sdl_deleter", "structcen_1_1detail_1_1sdl__deleter.html", null ],
     [ "sdl_string", "classcen_1_1sdl__string.html", null ],
     [ "semaphore", "classcen_1_1semaphore.html", null ],
     [ "shared_object", "classcen_1_1shared__object.html", null ],
@@ -183,6 +188,8 @@ var hierarchy =
     [ "thread", "classcen_1_1thread.html", null ],
     [ "try_lock", "classcen_1_1try__lock.html", null ],
     [ "ttf", "classcen_1_1ttf.html", null ],
+    [ "tuple_type_index< Target, Tuple >", "classcen_1_1detail_1_1tuple__type__index.html", null ],
+    [ "tuple_type_index< Target, std::tuple< T... > >", "classcen_1_1detail_1_1tuple__type__index_3_01_target_00_01std_1_1tuple_3_01_t_8_8_8_01_4_01_4.html", null ],
     [ "unicode_string", "classcen_1_1unicode__string.html", null ],
     [ "vk_library", "classcen_1_1vk__library.html", null ]
 ];

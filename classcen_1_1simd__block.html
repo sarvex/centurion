@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Centurion
-   &#160;<span id="projectnumber">7.0.0</span>
+   &#160;<span id="projectnumber">7.1.0</span>
    </div>
    <div id="projectbrief">A modern C++ wrapper library for SDL2</div>
   </td>
@@ -96,12 +96,9 @@ $(document).ready(function(){initNavTree('classcen_1_1simd__block.html',''); ini
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classcen_1_1simd__block-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">simd_block Class Reference<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="group__common.html">Common</a> &raquo; <a class="el" href="group__memory.html">Memory</a></div></div></div>
+  <div class="headertitle"><div class="title">simd_block Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>Represents a block of memory, allocated in SIMD-friendly way.  
- <a href="classcen_1_1simd__block.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="memory_8hpp_source.html">memory.hpp</a>&gt;</code></p>
 <table class="memberdecls">
@@ -113,10 +110,8 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aad036ad22dfed47e4ce6757bab79467a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1simd__block.html#aad036ad22dfed47e4ce6757bab79467a">simd_block</a> (const <a class="el" href="classcen_1_1simd__block.html#af38ce1af42d538f410180c265518d4f0">size_type</a> size) noexcept</td></tr>
-<tr class="memdesc:aad036ad22dfed47e4ce6757bab79467a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to allocate a block of SIMD-friendly memory.  <a href="classcen_1_1simd__block.html#aad036ad22dfed47e4ce6757bab79467a">More...</a><br /></td></tr>
 <tr class="separator:aad036ad22dfed47e4ce6757bab79467a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2664fc9d85cac0f87630be7ff701fb0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1simd__block.html#a2664fc9d85cac0f87630be7ff701fb0f">reallocate</a> (const <a class="el" href="classcen_1_1simd__block.html#af38ce1af42d538f410180c265518d4f0">size_type</a> size) noexcept</td></tr>
-<tr class="memdesc:a2664fc9d85cac0f87630be7ff701fb0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reallocates the associated memory block.  <a href="classcen_1_1simd__block.html#a2664fc9d85cac0f87630be7ff701fb0f">More...</a><br /></td></tr>
 <tr class="separator:a2664fc9d85cac0f87630be7ff701fb0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a942420c3893b2ba3e6d84077b5c650e4"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1simd__block.html#a942420c3893b2ba3e6d84077b5c650e4">data</a> () noexcept -&gt; void *</td></tr>
 <tr class="separator:a942420c3893b2ba3e6d84077b5c650e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,9 +121,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a420e60e9788bfa3b52aa3aab72ea3a5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether the internal pointer is non-null.  <a href="classcen_1_1simd__block.html#a420e60e9788bfa3b52aa3aab72ea3a5e">More...</a><br /></td></tr>
 <tr class="separator:a420e60e9788bfa3b52aa3aab72ea3a5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Represents a block of memory, allocated in SIMD-friendly way. </p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="af38ce1af42d538f410180c265518d4f0" name="af38ce1af42d538f410180c265518d4f0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af38ce1af42d538f410180c265518d4f0">&#9670;&nbsp;</a></span>size_type</h2>
 
@@ -168,15 +161,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Attempts to allocate a block of SIMD-friendly memory. </p>
-<p >Check the success of the allocation using the overloaded <code>operator bool()</code>.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">size</td><td>the size of the block, in bytes. </td></tr>
-  </table>
-  </dd>
-</dl>
-
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -203,15 +187,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Reallocates the associated memory block. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">size</td><td>the size of the new memory block.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function requires at least SDL 2.0.14 </dd></dl>
 
 </div>
 </div>
@@ -289,7 +264,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Indicates whether the internal pointer is non-null. </p>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the internal pointer isn't null; <code>false</code> otherwise. </dd></dl>
 
 </div>
 </div>

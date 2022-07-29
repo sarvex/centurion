@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['unbind_0',['unbind',['../group__opengl.html#ga0c3d4156a287085bff44db84a700009c',1,'cen::gl']]],
+  ['unbind_0',['unbind',['../namespacecen_1_1gl.html#a0c3d4156a287085bff44db84a700009c',1,'cen::gl']]],
   ['unicode_5fstring_1',['unicode_string',['../classcen_1_1unicode__string.html#a46f37bb8cf65b6284fc327409f5cb1d3',1,'cen::unicode_string::unicode_string(const std::u16string_view str)'],['../classcen_1_1unicode__string.html#a94c8706d6078dbdc744999a505e0ade1',1,'cen::unicode_string::unicode_string(std::initializer_list&lt; unicode_t &gt; codes)'],['../classcen_1_1unicode__string.html#a2c942437aa0588e61cf3ee5a1b0d44cc',1,'cen::unicode_string::unicode_string()']]],
   ['unknown_2',['unknown',['../classcen_1_1key__code.html#a54a63b78b5b447cb0706a7893940b3bb',1,'cen::key_code::unknown()'],['../classcen_1_1scan__code.html#a54a63b78b5b447cb0706a7893940b3bb',1,'cen::scan_code::unknown()']]],
   ['unlock_3',['unlock',['../classcen_1_1mutex.html#aa697560613ba0bf46a0e1a397f07f70f',1,'cen::mutex::unlock()'],['../classcen_1_1basic__joystick.html#a996937a71f7e83069f173986c45a8edb',1,'cen::basic_joystick::unlock()'],['../classcen_1_1basic__sensor.html#a996937a71f7e83069f173986c45a8edb',1,'cen::basic_sensor::unlock()'],['../classcen_1_1basic__surface.html#a4b7c1039f47fca6ca12bbf9134a543a1',1,'cen::basic_surface::unlock()']]],

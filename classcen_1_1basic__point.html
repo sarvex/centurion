@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Centurion
-   &#160;<span id="projectnumber">7.0.0</span>
+   &#160;<span id="projectnumber">7.1.0</span>
    </div>
    <div id="projectbrief">A modern C++ wrapper library for SDL2</div>
   </td>
@@ -93,14 +93,12 @@ $(document).ready(function(){initNavTree('classcen_1_1basic__point.html',''); in
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classcen_1_1basic__point-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">basic_point&lt; T &gt; Class Template Reference<div class="ingroups"><a class="el" href="group__common.html">Common</a> &raquo; <a class="el" href="group__math.html">Math</a></div></div></div>
+  <div class="headertitle"><div class="title">basic_point&lt; T &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>Represents a two-dimensional point.  
- <a href="classcen_1_1basic__point.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="math_8hpp_source.html">math.hpp</a>&gt;</code></p>
 <table class="memberdecls">
@@ -111,55 +109,32 @@ Public Types</h2></td></tr>
 <tr class="memitem:a0f6c00c31d6fb8534fe0eb21fcf63855"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__point.html#a0f6c00c31d6fb8534fe0eb21fcf63855">point_type</a> = typename <a class="el" href="classcen_1_1point__traits.html">point_traits</a>&lt; T &gt;::point_type</td></tr>
 <tr class="separator:a0f6c00c31d6fb8534fe0eb21fcf63855"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:ae99c5aefa72c56874b1b20dc33820b02"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__point.html#ae99c5aefa72c56874b1b20dc33820b02">integral</a></td></tr>
-<tr class="separator:ae99c5aefa72c56874b1b20dc33820b02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00b9fb4dd032793793a1b62524e886d7"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__point.html#a00b9fb4dd032793793a1b62524e886d7">floating</a></td></tr>
-<tr class="separator:a00b9fb4dd032793793a1b62524e886d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Construction</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
 <tr class="memitem:a79baec6823a5dc1bae1b197157d2cf85"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__point.html#a79baec6823a5dc1bae1b197157d2cf85">basic_point</a> () noexcept=default</td></tr>
-<tr class="memdesc:a79baec6823a5dc1bae1b197157d2cf85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a zero-initialized point.  <a href="classcen_1_1basic__point.html#a79baec6823a5dc1bae1b197157d2cf85">More...</a><br /></td></tr>
 <tr class="separator:a79baec6823a5dc1bae1b197157d2cf85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f1249b00f5a8dd948823eef6cd420a5"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__point.html#a6f1249b00f5a8dd948823eef6cd420a5">basic_point</a> (const <a class="el" href="classcen_1_1basic__point.html#a3a4045187c4303faf020d14f1027fb98">value_type</a> <a class="el" href="classcen_1_1basic__point.html#add06f6614e624143cee7cfeb90fcaf50">x</a>, const <a class="el" href="classcen_1_1basic__point.html#a3a4045187c4303faf020d14f1027fb98">value_type</a> <a class="el" href="classcen_1_1basic__point.html#a83fa5c37204bf9c5ee20ff40c5f96d84">y</a>) noexcept</td></tr>
-<tr class="memdesc:a6f1249b00f5a8dd948823eef6cd420a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a point with the specified coordinates.  <a href="classcen_1_1basic__point.html#a6f1249b00f5a8dd948823eef6cd420a5">More...</a><br /></td></tr>
 <tr class="separator:a6f1249b00f5a8dd948823eef6cd420a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27677139c35ef870aebaf4f9d51b75bf"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__point.html#a27677139c35ef870aebaf4f9d51b75bf">basic_point</a> (const <a class="el" href="classcen_1_1basic__point.html#a0f6c00c31d6fb8534fe0eb21fcf63855">point_type</a> point) noexcept</td></tr>
-<tr class="memdesc:a27677139c35ef870aebaf4f9d51b75bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies an SDL point.  <a href="classcen_1_1basic__point.html#a27677139c35ef870aebaf4f9d51b75bf">More...</a><br /></td></tr>
 <tr class="separator:a27677139c35ef870aebaf4f9d51b75bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Setters</h2></td></tr>
 <tr class="memitem:a2793d6c36b8520dac2626e6d8a494e79"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__point.html#a2793d6c36b8520dac2626e6d8a494e79">set_x</a> (const <a class="el" href="classcen_1_1basic__point.html#a3a4045187c4303faf020d14f1027fb98">value_type</a> <a class="el" href="classcen_1_1basic__point.html#add06f6614e624143cee7cfeb90fcaf50">x</a>) noexcept</td></tr>
-<tr class="memdesc:a2793d6c36b8520dac2626e6d8a494e79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the x-coordinate of the point.  <a href="classcen_1_1basic__point.html#a2793d6c36b8520dac2626e6d8a494e79">More...</a><br /></td></tr>
 <tr class="separator:a2793d6c36b8520dac2626e6d8a494e79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08aaf2ca8d89e5e5ca8795e087e500e5"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__point.html#a08aaf2ca8d89e5e5ca8795e087e500e5">set_y</a> (const <a class="el" href="classcen_1_1basic__point.html#a3a4045187c4303faf020d14f1027fb98">value_type</a> <a class="el" href="classcen_1_1basic__point.html#a83fa5c37204bf9c5ee20ff40c5f96d84">y</a>) noexcept</td></tr>
-<tr class="memdesc:a08aaf2ca8d89e5e5ca8795e087e500e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the y-coordinate of the point.  <a href="classcen_1_1basic__point.html#a08aaf2ca8d89e5e5ca8795e087e500e5">More...</a><br /></td></tr>
 <tr class="separator:a08aaf2ca8d89e5e5ca8795e087e500e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Getters</h2></td></tr>
 <tr class="memitem:add06f6614e624143cee7cfeb90fcaf50"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__point.html#add06f6614e624143cee7cfeb90fcaf50">x</a> () const noexcept -&gt; <a class="el" href="classcen_1_1basic__point.html#a3a4045187c4303faf020d14f1027fb98">value_type</a></td></tr>
-<tr class="memdesc:add06f6614e624143cee7cfeb90fcaf50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the x-coordinate of the point.  <a href="classcen_1_1basic__point.html#add06f6614e624143cee7cfeb90fcaf50">More...</a><br /></td></tr>
 <tr class="separator:add06f6614e624143cee7cfeb90fcaf50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83fa5c37204bf9c5ee20ff40c5f96d84"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__point.html#a83fa5c37204bf9c5ee20ff40c5f96d84">y</a> () const noexcept -&gt; <a class="el" href="classcen_1_1basic__point.html#a3a4045187c4303faf020d14f1027fb98">value_type</a></td></tr>
-<tr class="memdesc:a83fa5c37204bf9c5ee20ff40c5f96d84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the y-coordinate of the point.  <a href="classcen_1_1basic__point.html#a83fa5c37204bf9c5ee20ff40c5f96d84">More...</a><br /></td></tr>
 <tr class="separator:a83fa5c37204bf9c5ee20ff40c5f96d84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67c6cf2383c25004331badb83cd8eee5"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__point.html#a67c6cf2383c25004331badb83cd8eee5">get</a> () noexcept -&gt; <a class="el" href="classcen_1_1basic__point.html#a0f6c00c31d6fb8534fe0eb21fcf63855">point_type</a> &amp;</td></tr>
 <tr class="separator:a67c6cf2383c25004331badb83cd8eee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9d08bfa72bc4c93adda6a94d94cfaa8"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__point.html#ae9d08bfa72bc4c93adda6a94d94cfaa8">get</a> () const noexcept -&gt; const <a class="el" href="classcen_1_1basic__point.html#a0f6c00c31d6fb8534fe0eb21fcf63855">point_type</a> &amp;</td></tr>
 <tr class="separator:ae9d08bfa72bc4c93adda6a94d94cfaa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Casting functions</h2></td></tr>
 <tr class="memitem:a1743c2fafa61280b28f23e395c3410a3"><td class="memTemplParams" colspan="2">template&lt;typename TT  = T, std::enable_if_t&lt; std::is_integral_v&lt; TT &gt;, int &gt;  = 0&gt; </td></tr>
-<tr class="memitem:a1743c2fafa61280b28f23e395c3410a3"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__point.html#a1743c2fafa61280b28f23e395c3410a3">as_f</a> () const noexcept -&gt; <a class="el" href="group__math.html#ga2820e59331906838db0d13a0924c061d">fpoint</a></td></tr>
-<tr class="memdesc:a1743c2fafa61280b28f23e395c3410a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the point as an <code>fpoint</code>.  <a href="classcen_1_1basic__point.html#a1743c2fafa61280b28f23e395c3410a3">More...</a><br /></td></tr>
+<tr class="memitem:a1743c2fafa61280b28f23e395c3410a3"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__point.html#a1743c2fafa61280b28f23e395c3410a3">as_f</a> () const noexcept -&gt; <a class="el" href="namespacecen.html#a2820e59331906838db0d13a0924c061d">fpoint</a></td></tr>
 <tr class="separator:a1743c2fafa61280b28f23e395c3410a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85431a49145c54a4653f0a0c7dc1d5f3"><td class="memTemplParams" colspan="2">template&lt;typename TT  = T, std::enable_if_t&lt; std::is_floating_point_v&lt; TT &gt;, int &gt;  = 0&gt; </td></tr>
-<tr class="memitem:a85431a49145c54a4653f0a0c7dc1d5f3"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__point.html#a85431a49145c54a4653f0a0c7dc1d5f3">as_i</a> () const noexcept -&gt; <a class="el" href="group__math.html#gaa280ad1d741fe50107f6ee49bb578bda">ipoint</a></td></tr>
-<tr class="memdesc:a85431a49145c54a4653f0a0c7dc1d5f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the point as an <code>ipoint</code>.  <a href="classcen_1_1basic__point.html#a85431a49145c54a4653f0a0c7dc1d5f3">More...</a><br /></td></tr>
+<tr class="memitem:a85431a49145c54a4653f0a0c7dc1d5f3"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__point.html#a85431a49145c54a4653f0a0c7dc1d5f3">as_i</a> () const noexcept -&gt; <a class="el" href="namespacecen.html#aa280ad1d741fe50107f6ee49bb578bda">ipoint</a></td></tr>
 <tr class="separator:a85431a49145c54a4653f0a0c7dc1d5f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Misc functions</h2></td></tr>
 <tr class="memitem:a471354d71ba97866fe5dabb75f1a016b"><td class="memTemplParams" colspan="2">template&lt;typename Archive &gt; </td></tr>
 <tr class="memitem:a471354d71ba97866fe5dabb75f1a016b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__point.html#a471354d71ba97866fe5dabb75f1a016b">serialize</a> (Archive &amp;archive)</td></tr>
 <tr class="separator:a471354d71ba97866fe5dabb75f1a016b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -167,23 +142,27 @@ Static Public Attributes</h2></td></tr>
 <tr class="separator:ad376776b77c7a5bce8b015830c449461"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92cd45b625ed22c995248d1a15942b21"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__point.html#a92cd45b625ed22c995248d1a15942b21">data</a> () const noexcept -&gt; const <a class="el" href="classcen_1_1basic__point.html#a0f6c00c31d6fb8534fe0eb21fcf63855">point_type</a> *</td></tr>
 <tr class="separator:a92cd45b625ed22c995248d1a15942b21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:ae99c5aefa72c56874b1b20dc33820b02"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__point.html#ae99c5aefa72c56874b1b20dc33820b02">integral</a></td></tr>
+<tr class="separator:ae99c5aefa72c56874b1b20dc33820b02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00b9fb4dd032793793a1b62524e886d7"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__point.html#a00b9fb4dd032793793a1b62524e886d7">floating</a></td></tr>
+<tr class="separator:a00b9fb4dd032793793a1b62524e886d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename T&gt;<br />
-class cen::basic_point&lt; T &gt;</div><p >Represents a two-dimensional point. </p>
+class cen::basic_point&lt; T &gt;</div><p >Represents a two-dimensional point.</p>
 <p >This class is a wrapper for either <code>SDL_Point</code> or <code>SDL_FPoint</code>.</p>
-<p >This type is serializable, see the associated <code>serialize</code> function.<br  />
- </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>the representation type.</td></tr>
+    <tr><td class="paramname">T</td><td>the component type.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><code><a class="el" href="group__math.html#gaa280ad1d741fe50107f6ee49bb578bda" title="An int-based 2D point.">ipoint</a></code> </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacecen.html#aa280ad1d741fe50107f6ee49bb578bda">ipoint</a> </dd>
 <dd>
-<code><a class="el" href="group__math.html#ga2820e59331906838db0d13a0924c061d" title="A float-based 2D point.">fpoint</a></code></dd>
-<dd>
-<code>distance(const basic_point&amp;, const basic_point&amp;)</code> </dd></dl>
+<a class="el" href="namespacecen.html#a2820e59331906838db0d13a0924c061d">fpoint</a> </dd></dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a3a4045187c4303faf020d14f1027fb98" name="a3a4045187c4303faf020d14f1027fb98"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3a4045187c4303faf020d14f1027fb98">&#9670;&nbsp;</a></span>value_type</h2>
@@ -237,8 +216,6 @@ class cen::basic_point&lt; T &gt;</div><p >Represents a two-dimensional point. <
 </table>
 </div><div class="memdoc">
 
-<p>Creates a zero-initialized point. </p>
-
 </div>
 </div>
 <a id="a6f1249b00f5a8dd948823eef6cd420a5" name="a6f1249b00f5a8dd948823eef6cd420a5"></a>
@@ -275,15 +252,6 @@ class cen::basic_point&lt; T &gt;</div><p >Represents a two-dimensional point. <
 </table>
 </div><div class="memdoc">
 
-<p>Creates a point with the specified coordinates. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">x</td><td>the x-coordinate that will be used. </td></tr>
-    <tr><td class="paramname">y</td><td>the y-coordinate that will be used. </td></tr>
-  </table>
-  </dd>
-</dl>
-
 </div>
 </div>
 <a id="a27677139c35ef870aebaf4f9d51b75bf" name="a27677139c35ef870aebaf4f9d51b75bf"></a>
@@ -309,14 +277,6 @@ class cen::basic_point&lt; T &gt;</div><p >Represents a two-dimensional point. <
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Copies an SDL point. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">point</td><td>the point that will be copied. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -345,14 +305,6 @@ class cen::basic_point&lt; T &gt;</div><p >Represents a two-dimensional point. <
 </table>
 </div><div class="memdoc">
 
-<p>Sets the x-coordinate of the point. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">x</td><td>the new x-coordinate. </td></tr>
-  </table>
-  </dd>
-</dl>
-
 </div>
 </div>
 <a id="a08aaf2ca8d89e5e5ca8795e087e500e5" name="a08aaf2ca8d89e5e5ca8795e087e500e5"></a>
@@ -379,14 +331,6 @@ class cen::basic_point&lt; T &gt;</div><p >Represents a two-dimensional point. <
 </table>
 </div><div class="memdoc">
 
-<p>Sets the y-coordinate of the point. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">y</td><td>the new y-coordinate. </td></tr>
-  </table>
-  </dd>
-</dl>
-
 </div>
 </div>
 <a id="add06f6614e624143cee7cfeb90fcaf50" name="add06f6614e624143cee7cfeb90fcaf50"></a>
@@ -412,9 +356,6 @@ class cen::basic_point&lt; T &gt;</div><p >Represents a two-dimensional point. <
 </table>
 </div><div class="memdoc">
 
-<p>Returns the x-coordinate of the point. </p>
-<dl class="section return"><dt>Returns</dt><dd>the x-coordinate. </dd></dl>
-
 </div>
 </div>
 <a id="a83fa5c37204bf9c5ee20ff40c5f96d84" name="a83fa5c37204bf9c5ee20ff40c5f96d84"></a>
@@ -439,9 +380,6 @@ class cen::basic_point&lt; T &gt;</div><p >Represents a two-dimensional point. <
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the y-coordinate of the point. </p>
-<dl class="section return"><dt>Returns</dt><dd>the y-coordinate. </dd></dl>
 
 </div>
 </div>
@@ -508,7 +446,7 @@ class cen::basic_point&lt; T &gt;</div><p >Represents a two-dimensional point. <
           <td class="memname">constexpr auto as_f </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const -&gt; <a class="el" href="group__math.html#ga2820e59331906838db0d13a0924c061d">fpoint</a>
+          <td> const -&gt; <a class="el" href="namespacecen.html#a2820e59331906838db0d13a0924c061d">fpoint</a>
   </td>
         </tr>
       </table>
@@ -518,9 +456,6 @@ class cen::basic_point&lt; T &gt;</div><p >Represents a two-dimensional point. <
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the point as an <code>fpoint</code>. </p>
-<dl class="section return"><dt>Returns</dt><dd>a floating-point based point. </dd></dl>
 
 </div>
 </div>
@@ -537,7 +472,7 @@ class cen::basic_point&lt; T &gt;</div><p >Represents a two-dimensional point. <
           <td class="memname">constexpr auto as_i </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const -&gt; <a class="el" href="group__math.html#gaa280ad1d741fe50107f6ee49bb578bda">ipoint</a>
+          <td> const -&gt; <a class="el" href="namespacecen.html#aa280ad1d741fe50107f6ee49bb578bda">ipoint</a>
   </td>
         </tr>
       </table>
@@ -547,9 +482,6 @@ class cen::basic_point&lt; T &gt;</div><p >Represents a two-dimensional point. <
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the point as an <code>ipoint</code>. </p>
-<dl class="section return"><dt>Returns</dt><dd>a integer based point. </dd></dl>
 
 </div>
 </div>

@@ -21,5 +21,5 @@ var searchData=
   ['src_18',['src',['../structcen_1_1blend__task.html#a2c73e164b6f34a07c16515d41857b405',1,'cen::blend_task']]],
   ['state_19',['state',['../structcen_1_1controller__finger__state.html#a3bcf222aa943af46be04be6ec0b7f9d1',1,'cen::controller_finger_state']]],
   ['steel_5fblue_20',['steel_blue',['../namespacecen_1_1colors.html#a02e74c0526d7fd1182baa5b2b78ec223',1,'cen::colors']]],
-  ['success_21',['success',['../group__common.html#ga0e2f9db1cc3408561d81c7cb3e33c9e3',1,'cen']]]
+  ['success_21',['success',['../namespacecen.html#a0e2f9db1cc3408561d81c7cb3e33c9e3',1,'cen']]]
 ];

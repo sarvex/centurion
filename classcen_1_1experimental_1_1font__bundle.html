@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Centurion
-   &#160;<span id="projectnumber">7.0.0</span>
+   &#160;<span id="projectnumber">7.1.0</span>
    </div>
    <div id="projectbrief">A modern C++ wrapper library for SDL2</div>
   </td>
@@ -96,12 +96,9 @@ $(document).ready(function(){initNavTree('classcen_1_1experimental_1_1font__bund
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classcen_1_1experimental_1_1font__bundle-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">font_bundle Class Reference<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="group__text.html">Text</a> &raquo; <a class="el" href="group__font.html">Font</a></div></div></div>
+  <div class="headertitle"><div class="title">font_bundle Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>Utility for handling fonts of various sizes.  
- <a href="classcen_1_1experimental_1_1font__bundle.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="font_8hpp_source.html">font.hpp</a>&gt;</code></p>
 <table class="memberdecls">
@@ -115,10 +112,9 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aac6d990d762109fd63477f27bf772552"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1experimental_1_1font__bundle.html#aac6d990d762109fd63477f27bf772552">load_font</a> (const char *path, const int size) -&gt; <a class="el" href="classcen_1_1experimental_1_1font__bundle.html#ac1736ede57259cd13f11b36271b4464a">id_type</a></td></tr>
-<tr class="memdesc:aac6d990d762109fd63477f27bf772552"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a font in a specific size.  <a href="classcen_1_1experimental_1_1font__bundle.html#aac6d990d762109fd63477f27bf772552">More...</a><br /></td></tr>
 <tr class="separator:aac6d990d762109fd63477f27bf772552"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51b88901e9aa3e4f66f9f5ca9b55c1bb"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1experimental_1_1font__bundle.html#a51b88901e9aa3e4f66f9f5ca9b55c1bb">contains</a> (const <a class="el" href="classcen_1_1experimental_1_1font__bundle.html#ac1736ede57259cd13f11b36271b4464a">id_type</a> id) const -&gt; bool</td></tr>
-<tr class="memdesc:a51b88901e9aa3e4f66f9f5ca9b55c1bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether or not there is a font pool associated with an ID.  <a href="classcen_1_1experimental_1_1font__bundle.html#a51b88901e9aa3e4f66f9f5ca9b55c1bb">More...</a><br /></td></tr>
+<tr class="memdesc:a51b88901e9aa3e4f66f9f5ca9b55c1bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether there is a font pool associated with an ID.  <a href="classcen_1_1experimental_1_1font__bundle.html#a51b88901e9aa3e4f66f9f5ca9b55c1bb">More...</a><br /></td></tr>
 <tr class="separator:a51b88901e9aa3e4f66f9f5ca9b55c1bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e8a8123999297d5d016e9bb9cfb9691"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1experimental_1_1font__bundle.html#a4e8a8123999297d5d016e9bb9cfb9691">contains</a> (const std::string_view path) const -&gt; bool</td></tr>
 <tr class="memdesc:a4e8a8123999297d5d016e9bb9cfb9691"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether there is a pool for the specified file path.  <a href="classcen_1_1experimental_1_1font__bundle.html#a4e8a8123999297d5d016e9bb9cfb9691">More...</a><br /></td></tr>
@@ -130,13 +126,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aa8b03ecec2ef808018db2c6650ea29cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a previously loaded font of a particular size from a pool.  <a href="classcen_1_1experimental_1_1font__bundle.html#aa8b03ecec2ef808018db2c6650ea29cf">More...</a><br /></td></tr>
 <tr class="separator:aa8b03ecec2ef808018db2c6650ea29cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f4906639349658d27adaa9f25e52f48"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1experimental_1_1font__bundle.html#a7f4906639349658d27adaa9f25e52f48">at</a> (const <a class="el" href="classcen_1_1experimental_1_1font__bundle.html#ac1736ede57259cd13f11b36271b4464a">id_type</a> id, const int size) const -&gt; const <a class="el" href="classcen_1_1font__cache.html">font_cache</a> &amp;</td></tr>
-<tr class="memdesc:a7f4906639349658d27adaa9f25e52f48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a previously loaded font of a particular size from a pool.  <a href="classcen_1_1experimental_1_1font__bundle.html#a7f4906639349658d27adaa9f25e52f48">More...</a><br /></td></tr>
 <tr class="separator:a7f4906639349658d27adaa9f25e52f48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8281e04e0989912747bbe1927b94901"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1experimental_1_1font__bundle.html#ae8281e04e0989912747bbe1927b94901">get_font</a> (const <a class="el" href="classcen_1_1experimental_1_1font__bundle.html#ac1736ede57259cd13f11b36271b4464a">id_type</a> id, const int size) -&gt; <a class="el" href="classcen_1_1font.html">font</a> &amp;</td></tr>
-<tr class="memdesc:ae8281e04e0989912747bbe1927b94901"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a previously loaded font of a particular size from a pool.  <a href="classcen_1_1experimental_1_1font__bundle.html#ae8281e04e0989912747bbe1927b94901">More...</a><br /></td></tr>
 <tr class="separator:ae8281e04e0989912747bbe1927b94901"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9d59c1bf7b489f774a176126750c951"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1experimental_1_1font__bundle.html#ac9d59c1bf7b489f774a176126750c951">get_font</a> (const <a class="el" href="classcen_1_1experimental_1_1font__bundle.html#ac1736ede57259cd13f11b36271b4464a">id_type</a> id, const int size) const -&gt; const <a class="el" href="classcen_1_1font.html">font</a> &amp;</td></tr>
-<tr class="memdesc:ac9d59c1bf7b489f774a176126750c951"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a previously loaded font of a particular size from a pool.  <a href="classcen_1_1experimental_1_1font__bundle.html#ac9d59c1bf7b489f774a176126750c951">More...</a><br /></td></tr>
 <tr class="separator:ac9d59c1bf7b489f774a176126750c951"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac94bc4af5e9edbe2ec3471da63e739fc"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1experimental_1_1font__bundle.html#ac94bc4af5e9edbe2ec3471da63e739fc">font_count</a> () const noexcept -&gt; <a class="el" href="classcen_1_1experimental_1_1font__bundle.html#af38ce1af42d538f410180c265518d4f0">size_type</a></td></tr>
 <tr class="memdesc:ac94bc4af5e9edbe2ec3471da63e739fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the amount of fonts that have been loaded (including different sizes).  <a href="classcen_1_1experimental_1_1font__bundle.html#ac94bc4af5e9edbe2ec3471da63e739fc">More...</a><br /></td></tr>
@@ -146,13 +139,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a14d74bf29fe2d0ed0ace4e05088385fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Utility for handling fonts of various sizes. </p>
+<div class="textblock"><p >Utility for handling fonts of various sizes.</p>
 <p >The main motivation behind this utility is the fact that it is common to load the same font family in several different sizes. This class provides a simple API for efficiently managing such pools of fonts.</p>
 <p >This class works by organizing different pools of fonts based on their file paths. Which means that the same font, loaded from different file paths, will be put into different pools.</p>
-<dl class="section note"><dt>Note</dt><dd>Despite the name, this class actually stores <code><a class="el" href="classcen_1_1font__cache.html" title="Provides efficient font rendering.">font_cache</a></code> instances. However, you can still simply extract the underlying <code>font</code> instances if you do not need the extra features provided by the <code><a class="el" href="classcen_1_1font__cache.html" title="Provides efficient font rendering.">font_cache</a></code> class.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><code><a class="el" href="classcen_1_1font.html" title="Represents a TrueType font.">font</a></code> </dd>
+<p >Despite the name, this class actually stores <a class="el" href="classcen_1_1font__cache.html">font_cache</a> instances. However, you can still easily extract the underlying font instances if you do not need the extra features provided by the <code><a class="el" href="classcen_1_1font__cache.html">font_cache</a></code> class.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classcen_1_1font.html">font</a> </dd>
 <dd>
-<code><a class="el" href="classcen_1_1font__cache.html" title="Provides efficient font rendering.">font_cache</a></code> </dd></dl>
+<a class="el" href="classcen_1_1font__cache.html">font_cache</a> </dd></dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="ac1736ede57259cd13f11b36271b4464a" name="ac1736ede57259cd13f11b36271b4464a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac1736ede57259cd13f11b36271b4464a">&#9670;&nbsp;</a></span>id_type</h2>
@@ -217,8 +210,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Loads a font in a specific size. </p>
+<p >Loads a font in a specific size.</p>
 <p >It is safe to load a font that has already been previously loaded. Furthermore, this function has no effect if there is already a font of the specified size stored in the pool for the font family.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -256,14 +248,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Indicates whether or not there is a font pool associated with an ID. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">id</td><td>the pool ID that will be checked.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if there is a font pool associated with the ID; <code>false</code> otherwise. </dd></dl>
+<p>Indicates whether there is a font pool associated with an ID. </p>
 
 </div>
 </div>
@@ -293,13 +278,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Indicates whether there is a pool for the specified file path. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">path</td><td>the file path that will be checked.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if a pool is found; <code>false</code> otherwise. </dd></dl>
 
 </div>
 </div>
@@ -339,15 +317,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Indicates whether there is a font of a specific size in a pool. </p>
-<p >This function returns <code>false</code> if an invalid pool identifier is used.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">id</td><td>the identifier associated with the pool that will be checked. </td></tr>
-    <tr><td class="paramname">size</td><td>the font size to look for.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if there is a font of the specific size in the pool; <code>false</code> otherwise. </dd></dl>
 
 </div>
 </div>
@@ -387,20 +356,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns a previously loaded font of a particular size from a pool. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">id</td><td>the identifier of the pool to query. </td></tr>
-    <tr><td class="paramname">size</td><td>the size of the desired font.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the found font cache.</dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">exception</td><td>if the identifier is invalid or if there is no font of the specified size. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -439,22 +394,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns a previously loaded font of a particular size from a pool. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">id</td><td>the identifier of the pool to query. </td></tr>
-    <tr><td class="paramname">size</td><td>the size of the desired font.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the found font cache.</dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">exception</td><td>if the identifier is invalid or if there is no font of the specified size. </td></tr>
-  </table>
-  </dd>
-</dl>
-
 </div>
 </div>
 <a id="ae8281e04e0989912747bbe1927b94901" name="ae8281e04e0989912747bbe1927b94901"></a>
@@ -491,9 +430,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns a previously loaded font of a particular size from a pool. </p>
-<dl class="section note"><dt>Note</dt><dd>This function is provided as a shorthand, and simply calls <code><a class="el" href="classcen_1_1experimental_1_1font__bundle.html#aa8b03ecec2ef808018db2c6650ea29cf" title="Returns a previously loaded font of a particular size from a pool.">at()</a></code> and extracts the font from the found font cache.</dd></dl>
+<p >Returns a previously loaded font of a particular size from a pool.</p>
+<p >This function is provided as a shorthand, and simply calls <a class="el" href="classcen_1_1experimental_1_1font__bundle.html#aa8b03ecec2ef808018db2c6650ea29cf" title="Returns a previously loaded font of a particular size from a pool.">at()</a> and extracts the font from the found font cache.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">id</td><td>the identifier of the pool to query. </td></tr>
@@ -501,14 +439,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the found font.</dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">exception</td><td>if the identifier is invalid or if there is no font of the specified size.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><code><a class="el" href="classcen_1_1experimental_1_1font__bundle.html#aa8b03ecec2ef808018db2c6650ea29cf" title="Returns a previously loaded font of a particular size from a pool.">at()</a></code> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the found font. </dd></dl>
 
 </div>
 </div>
@@ -547,24 +478,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns a previously loaded font of a particular size from a pool. </p>
-<dl class="section note"><dt>Note</dt><dd>This function is provided as a shorthand, and simply calls <code><a class="el" href="classcen_1_1experimental_1_1font__bundle.html#aa8b03ecec2ef808018db2c6650ea29cf" title="Returns a previously loaded font of a particular size from a pool.">at()</a></code> and extracts the font from the found font cache.</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">id</td><td>the identifier of the pool to query. </td></tr>
-    <tr><td class="paramname">size</td><td>the size of the desired font.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the found font.</dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">exception</td><td>if the identifier is invalid or if there is no font of the specified size.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><code><a class="el" href="classcen_1_1experimental_1_1font__bundle.html#aa8b03ecec2ef808018db2c6650ea29cf" title="Returns a previously loaded font of a particular size from a pool.">at()</a></code> </dd></dl>
-
 </div>
 </div>
 <a id="ac94bc4af5e9edbe2ec3471da63e739fc" name="ac94bc4af5e9edbe2ec3471da63e739fc"></a>
@@ -592,8 +505,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the amount of fonts that have been loaded (including different sizes). </p>
-<dl class="section return"><dt>Returns</dt><dd>the total amount of loaded individual fonts.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><code><a class="el" href="classcen_1_1experimental_1_1font__bundle.html#a14d74bf29fe2d0ed0ace4e05088385fa" title="Returns the amount of loaded font pools, i.e. font faces irrespective of sizes.">pool_count()</a></code> </dd></dl>
 
 </div>
 </div>
@@ -621,8 +532,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the amount of loaded font pools, i.e. font faces irrespective of sizes. </p>
-<dl class="section return"><dt>Returns</dt><dd>the number of font pools.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><code><a class="el" href="classcen_1_1experimental_1_1font__bundle.html#ac94bc4af5e9edbe2ec3471da63e739fc" title="Returns the amount of fonts that have been loaded (including different sizes).">font_count()</a></code> </dd></dl>
 
 </div>
 </div>

@@ -1,6 +1,5 @@
 var classcen_1_1event__handler =
 [
-    [ "event_handler", "classcen_1_1event__handler.html#a7b8e10910a2bb2854d18d7500112bddb", null ],
     [ "poll", "classcen_1_1event__handler.html#a7ed11595e1c07a0eaff96b628a93cac3", null ],
     [ "is", "classcen_1_1event__handler.html#adc0bf5d5967ffc62e8d151306a49e0cc", null ],
     [ "is", "classcen_1_1event__handler.html#a907fcc922926a9c620af3e846af6c260", null ],

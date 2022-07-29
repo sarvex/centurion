@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Centurion
-   &#160;<span id="projectnumber">7.0.0</span>
+   &#160;<span id="projectnumber">7.1.0</span>
    </div>
    <div id="projectbrief">A modern C++ wrapper library for SDL2</div>
   </td>
@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('classcen_1_1condition.html',''); initR
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classcen_1_1condition-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">condition Class Reference<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="group__concurrency.html">Concurrency</a></div></div></div>
+  <div class="headertitle"><div class="title">condition Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -106,7 +106,6 @@ $(document).ready(function(){initNavTree('classcen_1_1condition.html',''); initR
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aac1f494c787e89f4e50b22c2c2f93d45"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1condition.html#aac1f494c787e89f4e50b22c2c2f93d45">condition</a> ()</td></tr>
-<tr class="memdesc:aac1f494c787e89f4e50b22c2c2f93d45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a condition variable.  <a href="classcen_1_1condition.html#aac1f494c787e89f4e50b22c2c2f93d45">More...</a><br /></td></tr>
 <tr class="separator:aac1f494c787e89f4e50b22c2c2f93d45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b310697fbf8ae89d2451068bc1a6f37"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1condition.html#a4b310697fbf8ae89d2451068bc1a6f37">signal</a> () noexcept -&gt; <a class="el" href="classcen_1_1result.html">result</a></td></tr>
 <tr class="memdesc:a4b310697fbf8ae89d2451068bc1a6f37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wakes up one of the threads waiting on the condition variable.  <a href="classcen_1_1condition.html#a4b310697fbf8ae89d2451068bc1a6f37">More...</a><br /></td></tr>
@@ -115,10 +114,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a62768457f57e71dcae9fcfb2e7db3ad2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wakes up all threads that are waiting on the condition variable.  <a href="classcen_1_1condition.html#a62768457f57e71dcae9fcfb2e7db3ad2">More...</a><br /></td></tr>
 <tr class="separator:a62768457f57e71dcae9fcfb2e7db3ad2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f587069de6a8a312cc9a09183a0a5b1"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1condition.html#a6f587069de6a8a312cc9a09183a0a5b1">wait</a> (<a class="el" href="classcen_1_1mutex.html">mutex</a> &amp;<a class="el" href="classcen_1_1mutex.html">mutex</a>) noexcept -&gt; <a class="el" href="classcen_1_1result.html">result</a></td></tr>
-<tr class="memdesc:a6f587069de6a8a312cc9a09183a0a5b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits until the condition variable is signaled.  <a href="classcen_1_1condition.html#a6f587069de6a8a312cc9a09183a0a5b1">More...</a><br /></td></tr>
 <tr class="separator:a6f587069de6a8a312cc9a09183a0a5b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfaf0cfe04ce057f563495c4af008ed1"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1condition.html#abfaf0cfe04ce057f563495c4af008ed1">wait</a> (<a class="el" href="classcen_1_1mutex.html">mutex</a> &amp;<a class="el" href="classcen_1_1mutex.html">mutex</a>, const <a class="el" href="group__common.html#ga66f48b1369b952fdefe95b983184ef2a">u32ms</a> duration) noexcept(noexcept(duration.count())) -&gt; <a class="el" href="group__concurrency.html#ga87a7bc4e11220a6a035e3e25661fa558">lock_status</a></td></tr>
-<tr class="memdesc:abfaf0cfe04ce057f563495c4af008ed1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits until signalled or if the specified amount of time passes.  <a href="classcen_1_1condition.html#abfaf0cfe04ce057f563495c4af008ed1">More...</a><br /></td></tr>
+<tr class="memitem:abfaf0cfe04ce057f563495c4af008ed1"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1condition.html#abfaf0cfe04ce057f563495c4af008ed1">wait</a> (<a class="el" href="classcen_1_1mutex.html">mutex</a> &amp;<a class="el" href="classcen_1_1mutex.html">mutex</a>, const <a class="el" href="namespacecen.html#a66f48b1369b952fdefe95b983184ef2a">u32ms</a> duration) noexcept(noexcept(duration.count())) -&gt; <a class="el" href="namespacecen.html#a87a7bc4e11220a6a035e3e25661fa558">lock_status</a></td></tr>
 <tr class="separator:abfaf0cfe04ce057f563495c4af008ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -147,14 +144,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Creates a condition variable. </p>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="classcen_1_1sdl__error.html" title="Represents an error related to the core SDL library.">sdl_error</a></td><td>if the condition variable cannot be initialized. </td></tr>
-  </table>
-  </dd>
-</dl>
-
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -182,7 +171,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Wakes up one of the threads waiting on the condition variable. </p>
-<dl class="section return"><dt>Returns</dt><dd><code>success</code> if nothing went wrong; <code>failure</code> otherwise. </dd></dl>
 
 </div>
 </div>
@@ -210,7 +198,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Wakes up all threads that are waiting on the condition variable. </p>
-<dl class="section return"><dt>Returns</dt><dd><code>success</code> if nothing went wrong; <code>failure</code> otherwise. </dd></dl>
 
 </div>
 </div>
@@ -239,16 +226,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Waits until the condition variable is signaled. </p>
-<dl class="section pre"><dt>Precondition</dt><dd>the mutex must be locked when this function is called.</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">mutex</td><td>the mutex that will be used.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><code>success</code> if nothing went wrong; <code>failure</code> otherwise. </dd></dl>
-
 </div>
 </div>
 <a id="abfaf0cfe04ce057f563495c4af008ed1" name="abfaf0cfe04ce057f563495c4af008ed1"></a>
@@ -269,13 +246,13 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__common.html#ga66f48b1369b952fdefe95b983184ef2a">u32ms</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#a66f48b1369b952fdefe95b983184ef2a">u32ms</a>&#160;</td>
           <td class="paramname"><em>duration</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> -&gt; <a class="el" href="group__concurrency.html#ga87a7bc4e11220a6a035e3e25661fa558">lock_status</a>
+          <td></td><td> -&gt; <a class="el" href="namespacecen.html#a87a7bc4e11220a6a035e3e25661fa558">lock_status</a>
   </td>
         </tr>
       </table>
@@ -285,18 +262,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Waits until signalled or if the specified amount of time passes. </p>
-<p >This function is implement by looping with a delay of 1 ms on some platforms, and should therefore be avoided if possible.</p>
-<dl class="section pre"><dt>Precondition</dt><dd>the mutex must be locked when this function is called.</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">mutex</td><td>the mutex that will be used. </td></tr>
-    <tr><td class="paramname">duration</td><td>the maximum amount of time to wait.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><code>success</code> if nothing went wrong; <code>failure</code> otherwise. </dd></dl>
 
 </div>
 </div>

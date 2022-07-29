@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Centurion
-   &#160;<span id="projectnumber">7.0.0</span>
+   &#160;<span id="projectnumber">7.1.0</span>
    </div>
    <div id="projectbrief">A modern C++ wrapper library for SDL2</div>
   </td>
@@ -93,14 +93,12 @@ $(document).ready(function(){initNavTree('classcen_1_1basic__rect.html',''); ini
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classcen_1_1basic__rect-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">basic_rect&lt; T &gt; Class Template Reference<div class="ingroups"><a class="el" href="group__common.html">Common</a> &raquo; <a class="el" href="group__math.html">Math</a></div></div></div>
+  <div class="headertitle"><div class="title">basic_rect&lt; T &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>A simple rectangle implementation, based on either <code>SDL_Rect</code> or <code>SDL_FRect</code>.  
- <a href="classcen_1_1basic__rect.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="math_8hpp_source.html">math.hpp</a>&gt;</code></p>
 <table class="memberdecls">
@@ -115,133 +113,80 @@ Public Types</h2></td></tr>
 <tr class="memitem:ab10c52250851b9823e2dd07a18f1fbc1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__rect.html#ab10c52250851b9823e2dd07a18f1fbc1">rect_type</a> = typename <a class="el" href="classcen_1_1rect__traits.html">rect_traits</a>&lt; T &gt;::rect_type</td></tr>
 <tr class="separator:ab10c52250851b9823e2dd07a18f1fbc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:ae99c5aefa72c56874b1b20dc33820b02"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__rect.html#ae99c5aefa72c56874b1b20dc33820b02">integral</a></td></tr>
-<tr class="separator:ae99c5aefa72c56874b1b20dc33820b02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00b9fb4dd032793793a1b62524e886d7"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__rect.html#a00b9fb4dd032793793a1b62524e886d7">floating</a></td></tr>
-<tr class="separator:a00b9fb4dd032793793a1b62524e886d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Construction</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
 <tr class="memitem:a753e25b5d9173b6ef4071c93381e7fec"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__rect.html#a753e25b5d9173b6ef4071c93381e7fec">basic_rect</a> () noexcept=default</td></tr>
-<tr class="memdesc:a753e25b5d9173b6ef4071c93381e7fec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a zero-initialized rectangle.  <a href="classcen_1_1basic__rect.html#a753e25b5d9173b6ef4071c93381e7fec">More...</a><br /></td></tr>
 <tr class="separator:a753e25b5d9173b6ef4071c93381e7fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1134ac5c8208eecce3b7b390a2084145"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__rect.html#a1134ac5c8208eecce3b7b390a2084145">basic_rect</a> (const <a class="el" href="classcen_1_1basic__rect.html#a179aebb35ad5f78a20b210e77d67a322">value_type</a> <a class="el" href="classcen_1_1basic__rect.html#add06f6614e624143cee7cfeb90fcaf50">x</a>, const <a class="el" href="classcen_1_1basic__rect.html#a179aebb35ad5f78a20b210e77d67a322">value_type</a> <a class="el" href="classcen_1_1basic__rect.html#a83fa5c37204bf9c5ee20ff40c5f96d84">y</a>, const <a class="el" href="classcen_1_1basic__rect.html#a179aebb35ad5f78a20b210e77d67a322">value_type</a> <a class="el" href="classcen_1_1basic__rect.html#a84b8cf407ef33e6c8f32c9f473dda8a1">width</a>, const <a class="el" href="classcen_1_1basic__rect.html#a179aebb35ad5f78a20b210e77d67a322">value_type</a> <a class="el" href="classcen_1_1basic__rect.html#ae882a23d156d68dc0e7f2a9af3fbd57d">height</a>) noexcept</td></tr>
-<tr class="memdesc:a1134ac5c8208eecce3b7b390a2084145"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a rectangle with the supplied position and size.  <a href="classcen_1_1basic__rect.html#a1134ac5c8208eecce3b7b390a2084145">More...</a><br /></td></tr>
 <tr class="separator:a1134ac5c8208eecce3b7b390a2084145"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71cf44347066736c0038d0a4ab501fa8"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__rect.html#a71cf44347066736c0038d0a4ab501fa8">basic_rect</a> (const <a class="el" href="classcen_1_1basic__rect.html#a204a28586270322f3716a24acb9aa2ac">point_type</a> &amp;<a class="el" href="classcen_1_1basic__rect.html#a0b164ce658f649514c6b92ada8f4086e">position</a>, const <a class="el" href="classcen_1_1basic__rect.html#a60ea584d437a2762de3aed539cd99f19">area_type</a> &amp;<a class="el" href="classcen_1_1basic__rect.html#a4cbeb20e0906707b5d0758b5ffb6f80e">size</a>) noexcept</td></tr>
-<tr class="memdesc:a71cf44347066736c0038d0a4ab501fa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a rectangle with the supplied position and size.  <a href="classcen_1_1basic__rect.html#a71cf44347066736c0038d0a4ab501fa8">More...</a><br /></td></tr>
 <tr class="separator:a71cf44347066736c0038d0a4ab501fa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38b419b89736d8f48dca18556aabf486"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__rect.html#a38b419b89736d8f48dca18556aabf486">basic_rect</a> (const <a class="el" href="classcen_1_1basic__rect.html#ab10c52250851b9823e2dd07a18f1fbc1">rect_type</a> &amp;rect) noexcept</td></tr>
-<tr class="memdesc:a38b419b89736d8f48dca18556aabf486"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies an SDL rectangle.  <a href="classcen_1_1basic__rect.html#a38b419b89736d8f48dca18556aabf486">More...</a><br /></td></tr>
 <tr class="separator:a38b419b89736d8f48dca18556aabf486"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Plain setters</h2></td></tr>
 <tr class="memitem:a2793d6c36b8520dac2626e6d8a494e79"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__rect.html#a2793d6c36b8520dac2626e6d8a494e79">set_x</a> (const <a class="el" href="classcen_1_1basic__rect.html#a179aebb35ad5f78a20b210e77d67a322">value_type</a> <a class="el" href="classcen_1_1basic__rect.html#add06f6614e624143cee7cfeb90fcaf50">x</a>) noexcept</td></tr>
-<tr class="memdesc:a2793d6c36b8520dac2626e6d8a494e79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the x-coordinate of the rectangle.  <a href="classcen_1_1basic__rect.html#a2793d6c36b8520dac2626e6d8a494e79">More...</a><br /></td></tr>
 <tr class="separator:a2793d6c36b8520dac2626e6d8a494e79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08aaf2ca8d89e5e5ca8795e087e500e5"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__rect.html#a08aaf2ca8d89e5e5ca8795e087e500e5">set_y</a> (const <a class="el" href="classcen_1_1basic__rect.html#a179aebb35ad5f78a20b210e77d67a322">value_type</a> <a class="el" href="classcen_1_1basic__rect.html#a83fa5c37204bf9c5ee20ff40c5f96d84">y</a>) noexcept</td></tr>
-<tr class="memdesc:a08aaf2ca8d89e5e5ca8795e087e500e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the y-coordinate of the rectangle.  <a href="classcen_1_1basic__rect.html#a08aaf2ca8d89e5e5ca8795e087e500e5">More...</a><br /></td></tr>
 <tr class="separator:a08aaf2ca8d89e5e5ca8795e087e500e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8af30baa25ec256a9070da27aa53030f"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__rect.html#a8af30baa25ec256a9070da27aa53030f">set_position</a> (const <a class="el" href="classcen_1_1basic__rect.html#a179aebb35ad5f78a20b210e77d67a322">value_type</a> <a class="el" href="classcen_1_1basic__rect.html#add06f6614e624143cee7cfeb90fcaf50">x</a>, const <a class="el" href="classcen_1_1basic__rect.html#a179aebb35ad5f78a20b210e77d67a322">value_type</a> <a class="el" href="classcen_1_1basic__rect.html#a83fa5c37204bf9c5ee20ff40c5f96d84">y</a>) noexcept</td></tr>
-<tr class="memdesc:a8af30baa25ec256a9070da27aa53030f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the position of the rectangle.  <a href="classcen_1_1basic__rect.html#a8af30baa25ec256a9070da27aa53030f">More...</a><br /></td></tr>
 <tr class="separator:a8af30baa25ec256a9070da27aa53030f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65d7238f36b3c125414740522ed16d8f"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__rect.html#a65d7238f36b3c125414740522ed16d8f">set_position</a> (const <a class="el" href="classcen_1_1basic__rect.html#a204a28586270322f3716a24acb9aa2ac">point_type</a> &amp;pos) noexcept</td></tr>
-<tr class="memdesc:a65d7238f36b3c125414740522ed16d8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the position of the rectangle.  <a href="classcen_1_1basic__rect.html#a65d7238f36b3c125414740522ed16d8f">More...</a><br /></td></tr>
 <tr class="separator:a65d7238f36b3c125414740522ed16d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a627d74ea8d764579b90e3be761aa57cb"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__rect.html#a627d74ea8d764579b90e3be761aa57cb">set_width</a> (const <a class="el" href="classcen_1_1basic__rect.html#a179aebb35ad5f78a20b210e77d67a322">value_type</a> <a class="el" href="classcen_1_1basic__rect.html#a84b8cf407ef33e6c8f32c9f473dda8a1">width</a>) noexcept</td></tr>
-<tr class="memdesc:a627d74ea8d764579b90e3be761aa57cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the width of the rectangle.  <a href="classcen_1_1basic__rect.html#a627d74ea8d764579b90e3be761aa57cb">More...</a><br /></td></tr>
 <tr class="separator:a627d74ea8d764579b90e3be761aa57cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25d0468b04d2306f6e24d50d296a0402"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__rect.html#a25d0468b04d2306f6e24d50d296a0402">set_height</a> (const <a class="el" href="classcen_1_1basic__rect.html#a179aebb35ad5f78a20b210e77d67a322">value_type</a> <a class="el" href="classcen_1_1basic__rect.html#ae882a23d156d68dc0e7f2a9af3fbd57d">height</a>) noexcept</td></tr>
-<tr class="memdesc:a25d0468b04d2306f6e24d50d296a0402"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the height of the rectangle.  <a href="classcen_1_1basic__rect.html#a25d0468b04d2306f6e24d50d296a0402">More...</a><br /></td></tr>
 <tr class="separator:a25d0468b04d2306f6e24d50d296a0402"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4084e233afee7ded015eb75b9a30823f"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__rect.html#a4084e233afee7ded015eb75b9a30823f">set_size</a> (const <a class="el" href="classcen_1_1basic__rect.html#a179aebb35ad5f78a20b210e77d67a322">value_type</a> <a class="el" href="classcen_1_1basic__rect.html#a84b8cf407ef33e6c8f32c9f473dda8a1">width</a>, const <a class="el" href="classcen_1_1basic__rect.html#a179aebb35ad5f78a20b210e77d67a322">value_type</a> <a class="el" href="classcen_1_1basic__rect.html#ae882a23d156d68dc0e7f2a9af3fbd57d">height</a>) noexcept</td></tr>
-<tr class="memdesc:a4084e233afee7ded015eb75b9a30823f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the size of the rectangle.  <a href="classcen_1_1basic__rect.html#a4084e233afee7ded015eb75b9a30823f">More...</a><br /></td></tr>
 <tr class="separator:a4084e233afee7ded015eb75b9a30823f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9a1473f9ea9b4c081efe0a53f75943e"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__rect.html#af9a1473f9ea9b4c081efe0a53f75943e">set_size</a> (const <a class="el" href="classcen_1_1basic__rect.html#a60ea584d437a2762de3aed539cd99f19">area_type</a> &amp;<a class="el" href="classcen_1_1basic__rect.html#a4cbeb20e0906707b5d0758b5ffb6f80e">size</a>) noexcept</td></tr>
-<tr class="memdesc:af9a1473f9ea9b4c081efe0a53f75943e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the size of the rectangle.  <a href="classcen_1_1basic__rect.html#af9a1473f9ea9b4c081efe0a53f75943e">More...</a><br /></td></tr>
 <tr class="separator:af9a1473f9ea9b4c081efe0a53f75943e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Mutators</h2></td></tr>
 <tr class="memitem:a8610e698636d66bf1219dc89325fa3a4"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__rect.html#a8610e698636d66bf1219dc89325fa3a4">set_max_x</a> (const <a class="el" href="classcen_1_1basic__rect.html#a179aebb35ad5f78a20b210e77d67a322">value_type</a> mx) noexcept</td></tr>
-<tr class="memdesc:a8610e698636d66bf1219dc89325fa3a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the maximum x-coordinate of the rectangle.  <a href="classcen_1_1basic__rect.html#a8610e698636d66bf1219dc89325fa3a4">More...</a><br /></td></tr>
 <tr class="separator:a8610e698636d66bf1219dc89325fa3a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab2f74f641bd0ce0b61ddc23f122d18a"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__rect.html#aab2f74f641bd0ce0b61ddc23f122d18a">set_max_y</a> (const <a class="el" href="classcen_1_1basic__rect.html#a179aebb35ad5f78a20b210e77d67a322">value_type</a> my) noexcept</td></tr>
-<tr class="memdesc:aab2f74f641bd0ce0b61ddc23f122d18a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the maximum y-coordinate of the rectangle.  <a href="classcen_1_1basic__rect.html#aab2f74f641bd0ce0b61ddc23f122d18a">More...</a><br /></td></tr>
 <tr class="separator:aab2f74f641bd0ce0b61ddc23f122d18a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b90146c5be149213763206402e9a5f6"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__rect.html#a4b90146c5be149213763206402e9a5f6">offset_x</a> (const <a class="el" href="classcen_1_1basic__rect.html#a179aebb35ad5f78a20b210e77d67a322">value_type</a> dx) noexcept</td></tr>
-<tr class="memdesc:a4b90146c5be149213763206402e9a5f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offsets the x-coordinate of the rectangle by the specified amount.  <a href="classcen_1_1basic__rect.html#a4b90146c5be149213763206402e9a5f6">More...</a><br /></td></tr>
 <tr class="separator:a4b90146c5be149213763206402e9a5f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac4f0c5d969304d266d40b66562ffd2e"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__rect.html#aac4f0c5d969304d266d40b66562ffd2e">offset_y</a> (const <a class="el" href="classcen_1_1basic__rect.html#a179aebb35ad5f78a20b210e77d67a322">value_type</a> dy) noexcept</td></tr>
-<tr class="memdesc:aac4f0c5d969304d266d40b66562ffd2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offsets the y-coordinate of the rectangle by the specified amount.  <a href="classcen_1_1basic__rect.html#aac4f0c5d969304d266d40b66562ffd2e">More...</a><br /></td></tr>
 <tr class="separator:aac4f0c5d969304d266d40b66562ffd2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7188345693b345eba2e90dc822a71851"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__rect.html#a7188345693b345eba2e90dc822a71851">offset_width</a> (const <a class="el" href="classcen_1_1basic__rect.html#a179aebb35ad5f78a20b210e77d67a322">value_type</a> dw) noexcept</td></tr>
-<tr class="memdesc:a7188345693b345eba2e90dc822a71851"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offsets the width of the rectangle by the specified amount.  <a href="classcen_1_1basic__rect.html#a7188345693b345eba2e90dc822a71851">More...</a><br /></td></tr>
 <tr class="separator:a7188345693b345eba2e90dc822a71851"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9407fffa5d26c46415ac511e5174d44"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__rect.html#ac9407fffa5d26c46415ac511e5174d44">offset_height</a> (const <a class="el" href="classcen_1_1basic__rect.html#a179aebb35ad5f78a20b210e77d67a322">value_type</a> dh) noexcept</td></tr>
-<tr class="memdesc:ac9407fffa5d26c46415ac511e5174d44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offsets the height of the rectangle by the specified amount.  <a href="classcen_1_1basic__rect.html#ac9407fffa5d26c46415ac511e5174d44">More...</a><br /></td></tr>
 <tr class="separator:ac9407fffa5d26c46415ac511e5174d44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Plain getters</h2></td></tr>
 <tr class="memitem:add06f6614e624143cee7cfeb90fcaf50"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__rect.html#add06f6614e624143cee7cfeb90fcaf50">x</a> () const noexcept -&gt; <a class="el" href="classcen_1_1basic__rect.html#a179aebb35ad5f78a20b210e77d67a322">value_type</a></td></tr>
-<tr class="memdesc:add06f6614e624143cee7cfeb90fcaf50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the x-coordinate of the rectangle.  <a href="classcen_1_1basic__rect.html#add06f6614e624143cee7cfeb90fcaf50">More...</a><br /></td></tr>
 <tr class="separator:add06f6614e624143cee7cfeb90fcaf50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83fa5c37204bf9c5ee20ff40c5f96d84"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__rect.html#a83fa5c37204bf9c5ee20ff40c5f96d84">y</a> () const noexcept -&gt; <a class="el" href="classcen_1_1basic__rect.html#a179aebb35ad5f78a20b210e77d67a322">value_type</a></td></tr>
-<tr class="memdesc:a83fa5c37204bf9c5ee20ff40c5f96d84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the y-coordinate of the rectangle.  <a href="classcen_1_1basic__rect.html#a83fa5c37204bf9c5ee20ff40c5f96d84">More...</a><br /></td></tr>
 <tr class="separator:a83fa5c37204bf9c5ee20ff40c5f96d84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b164ce658f649514c6b92ada8f4086e"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__rect.html#a0b164ce658f649514c6b92ada8f4086e">position</a> () const noexcept -&gt; <a class="el" href="classcen_1_1basic__rect.html#a204a28586270322f3716a24acb9aa2ac">point_type</a></td></tr>
-<tr class="memdesc:a0b164ce658f649514c6b92ada8f4086e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the position of the rectangle.  <a href="classcen_1_1basic__rect.html#a0b164ce658f649514c6b92ada8f4086e">More...</a><br /></td></tr>
 <tr class="separator:a0b164ce658f649514c6b92ada8f4086e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84b8cf407ef33e6c8f32c9f473dda8a1"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__rect.html#a84b8cf407ef33e6c8f32c9f473dda8a1">width</a> () const noexcept -&gt; <a class="el" href="classcen_1_1basic__rect.html#a179aebb35ad5f78a20b210e77d67a322">value_type</a></td></tr>
-<tr class="memdesc:a84b8cf407ef33e6c8f32c9f473dda8a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the width of the rectangle.  <a href="classcen_1_1basic__rect.html#a84b8cf407ef33e6c8f32c9f473dda8a1">More...</a><br /></td></tr>
 <tr class="separator:a84b8cf407ef33e6c8f32c9f473dda8a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae882a23d156d68dc0e7f2a9af3fbd57d"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__rect.html#ae882a23d156d68dc0e7f2a9af3fbd57d">height</a> () const noexcept -&gt; <a class="el" href="classcen_1_1basic__rect.html#a179aebb35ad5f78a20b210e77d67a322">value_type</a></td></tr>
-<tr class="memdesc:ae882a23d156d68dc0e7f2a9af3fbd57d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the height of the rectangle.  <a href="classcen_1_1basic__rect.html#ae882a23d156d68dc0e7f2a9af3fbd57d">More...</a><br /></td></tr>
 <tr class="separator:ae882a23d156d68dc0e7f2a9af3fbd57d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cbeb20e0906707b5d0758b5ffb6f80e"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__rect.html#a4cbeb20e0906707b5d0758b5ffb6f80e">size</a> () const noexcept -&gt; <a class="el" href="classcen_1_1basic__rect.html#a60ea584d437a2762de3aed539cd99f19">area_type</a></td></tr>
-<tr class="memdesc:a4cbeb20e0906707b5d0758b5ffb6f80e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size of the rectangle.  <a href="classcen_1_1basic__rect.html#a4cbeb20e0906707b5d0758b5ffb6f80e">More...</a><br /></td></tr>
 <tr class="separator:a4cbeb20e0906707b5d0758b5ffb6f80e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Queries</h2></td></tr>
 <tr class="memitem:a75873edbb145c30a57b50ad3cbcc3955"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__rect.html#a75873edbb145c30a57b50ad3cbcc3955">max_x</a> () const noexcept -&gt; <a class="el" href="classcen_1_1basic__rect.html#a179aebb35ad5f78a20b210e77d67a322">value_type</a></td></tr>
-<tr class="memdesc:a75873edbb145c30a57b50ad3cbcc3955"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the maximum x-coordinate of the rectangle.  <a href="classcen_1_1basic__rect.html#a75873edbb145c30a57b50ad3cbcc3955">More...</a><br /></td></tr>
 <tr class="separator:a75873edbb145c30a57b50ad3cbcc3955"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a7e45bdcd7b8d672eb84d76d3c12d91"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__rect.html#a8a7e45bdcd7b8d672eb84d76d3c12d91">max_y</a> () const noexcept -&gt; <a class="el" href="classcen_1_1basic__rect.html#a179aebb35ad5f78a20b210e77d67a322">value_type</a></td></tr>
-<tr class="memdesc:a8a7e45bdcd7b8d672eb84d76d3c12d91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the maximum y-coordinate of the rectangle.  <a href="classcen_1_1basic__rect.html#a8a7e45bdcd7b8d672eb84d76d3c12d91">More...</a><br /></td></tr>
 <tr class="separator:a8a7e45bdcd7b8d672eb84d76d3c12d91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0f6a3b373df19e04a0cfab912f47e5c"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__rect.html#aa0f6a3b373df19e04a0cfab912f47e5c">has_area</a> () const noexcept -&gt; bool</td></tr>
-<tr class="memdesc:aa0f6a3b373df19e04a0cfab912f47e5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether the rectangle has an area.  <a href="classcen_1_1basic__rect.html#aa0f6a3b373df19e04a0cfab912f47e5c">More...</a><br /></td></tr>
 <tr class="separator:aa0f6a3b373df19e04a0cfab912f47e5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54d38908f53e82ae8d7115750da9fa09"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__rect.html#a54d38908f53e82ae8d7115750da9fa09">area</a> () const noexcept -&gt; <a class="el" href="classcen_1_1basic__rect.html#a179aebb35ad5f78a20b210e77d67a322">value_type</a></td></tr>
-<tr class="memdesc:a54d38908f53e82ae8d7115750da9fa09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the area of the rectangle.  <a href="classcen_1_1basic__rect.html#a54d38908f53e82ae8d7115750da9fa09">More...</a><br /></td></tr>
 <tr class="separator:a54d38908f53e82ae8d7115750da9fa09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3624246f3fa2a2d9d5f3e0b41698f17c"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__rect.html#a3624246f3fa2a2d9d5f3e0b41698f17c">center_x</a> () const noexcept -&gt; <a class="el" href="classcen_1_1basic__rect.html#a179aebb35ad5f78a20b210e77d67a322">value_type</a></td></tr>
-<tr class="memdesc:a3624246f3fa2a2d9d5f3e0b41698f17c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the x-coordinate of the center point of the rectangle.  <a href="classcen_1_1basic__rect.html#a3624246f3fa2a2d9d5f3e0b41698f17c">More...</a><br /></td></tr>
 <tr class="separator:a3624246f3fa2a2d9d5f3e0b41698f17c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c82cd63eafef016fdff495322fc19d1"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__rect.html#a2c82cd63eafef016fdff495322fc19d1">center_y</a> () const noexcept -&gt; <a class="el" href="classcen_1_1basic__rect.html#a179aebb35ad5f78a20b210e77d67a322">value_type</a></td></tr>
-<tr class="memdesc:a2c82cd63eafef016fdff495322fc19d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the y-coordinate of the center point of the rectangle.  <a href="classcen_1_1basic__rect.html#a2c82cd63eafef016fdff495322fc19d1">More...</a><br /></td></tr>
 <tr class="separator:a2c82cd63eafef016fdff495322fc19d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e9465f6ca2204699cf888fdfe3c59e1"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__rect.html#a4e9465f6ca2204699cf888fdfe3c59e1">center</a> () const noexcept -&gt; <a class="el" href="classcen_1_1basic__rect.html#a204a28586270322f3716a24acb9aa2ac">point_type</a></td></tr>
-<tr class="memdesc:a4e9465f6ca2204699cf888fdfe3c59e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the center point of the rectangle.  <a href="classcen_1_1basic__rect.html#a4e9465f6ca2204699cf888fdfe3c59e1">More...</a><br /></td></tr>
 <tr class="separator:a4e9465f6ca2204699cf888fdfe3c59e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70f0a59c786411446f9bab05149133a0"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__rect.html#a70f0a59c786411446f9bab05149133a0">contains</a> (const <a class="el" href="classcen_1_1basic__rect.html#a179aebb35ad5f78a20b210e77d67a322">value_type</a> px, const <a class="el" href="classcen_1_1basic__rect.html#a179aebb35ad5f78a20b210e77d67a322">value_type</a> py) const noexcept -&gt; bool</td></tr>
-<tr class="memdesc:a70f0a59c786411446f9bab05149133a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether the rectangle contains a point.  <a href="classcen_1_1basic__rect.html#a70f0a59c786411446f9bab05149133a0">More...</a><br /></td></tr>
 <tr class="separator:a70f0a59c786411446f9bab05149133a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15a5000e42df07a52da201fb24c1ea0d"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__rect.html#a15a5000e42df07a52da201fb24c1ea0d">contains</a> (const <a class="el" href="classcen_1_1basic__rect.html#a204a28586270322f3716a24acb9aa2ac">point_type</a> &amp;point) const noexcept -&gt; bool</td></tr>
-<tr class="memdesc:a15a5000e42df07a52da201fb24c1ea0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether the rectangle contains a point.  <a href="classcen_1_1basic__rect.html#a15a5000e42df07a52da201fb24c1ea0d">More...</a><br /></td></tr>
 <tr class="separator:a15a5000e42df07a52da201fb24c1ea0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Casting functions</h2></td></tr>
 <tr class="memitem:a8ed59f69afef8b5700d4a7f83810cc31"><td class="memTemplParams" colspan="2">template&lt;typename TT  = T, std::enable_if_t&lt; std::is_integral_v&lt; TT &gt;, int &gt;  = 0&gt; </td></tr>
-<tr class="memitem:a8ed59f69afef8b5700d4a7f83810cc31"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__rect.html#a8ed59f69afef8b5700d4a7f83810cc31">as_f</a> () const noexcept -&gt; <a class="el" href="group__math.html#ga336ad4ae752b44d7f4199f9a42102c9b">frect</a></td></tr>
-<tr class="memdesc:a8ed59f69afef8b5700d4a7f83810cc31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the rectangle as an <code>frect</code>.  <a href="classcen_1_1basic__rect.html#a8ed59f69afef8b5700d4a7f83810cc31">More...</a><br /></td></tr>
+<tr class="memitem:a8ed59f69afef8b5700d4a7f83810cc31"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__rect.html#a8ed59f69afef8b5700d4a7f83810cc31">as_f</a> () const noexcept -&gt; <a class="el" href="namespacecen.html#a336ad4ae752b44d7f4199f9a42102c9b">frect</a></td></tr>
 <tr class="separator:a8ed59f69afef8b5700d4a7f83810cc31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4990324a5f8e6ea1c77a02bf8e38578c"><td class="memTemplParams" colspan="2">template&lt;typename TT  = T, std::enable_if_t&lt; std::is_floating_point_v&lt; TT &gt;, int &gt;  = 0&gt; </td></tr>
-<tr class="memitem:a4990324a5f8e6ea1c77a02bf8e38578c"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__rect.html#a4990324a5f8e6ea1c77a02bf8e38578c">as_i</a> () const noexcept -&gt; <a class="el" href="group__math.html#ga57aaadeac20efcad966376c59b52bcab">irect</a></td></tr>
-<tr class="memdesc:a4990324a5f8e6ea1c77a02bf8e38578c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the rectangle as an <code>irect</code>.  <a href="classcen_1_1basic__rect.html#a4990324a5f8e6ea1c77a02bf8e38578c">More...</a><br /></td></tr>
+<tr class="memitem:a4990324a5f8e6ea1c77a02bf8e38578c"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__rect.html#a4990324a5f8e6ea1c77a02bf8e38578c">as_i</a> () const noexcept -&gt; <a class="el" href="namespacecen.html#a57aaadeac20efcad966376c59b52bcab">irect</a></td></tr>
 <tr class="separator:a4990324a5f8e6ea1c77a02bf8e38578c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Misc functions</h2></td></tr>
 <tr class="memitem:a471354d71ba97866fe5dabb75f1a016b"><td class="memTemplParams" colspan="2">template&lt;typename Archive &gt; </td></tr>
 <tr class="memitem:a471354d71ba97866fe5dabb75f1a016b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__rect.html#a471354d71ba97866fe5dabb75f1a016b">serialize</a> (Archive &amp;archive)</td></tr>
 <tr class="separator:a471354d71ba97866fe5dabb75f1a016b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -253,26 +198,26 @@ Static Public Attributes</h2></td></tr>
 <tr class="separator:a0a28551d606048ed96a4ffbaf16d1d7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7da22468cf5eb83e0d85b769bbc3b79"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__rect.html#ac7da22468cf5eb83e0d85b769bbc3b79">get</a> () const noexcept -&gt; const <a class="el" href="classcen_1_1basic__rect.html#ab10c52250851b9823e2dd07a18f1fbc1">rect_type</a> &amp;</td></tr>
 <tr class="separator:ac7da22468cf5eb83e0d85b769bbc3b79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:ae99c5aefa72c56874b1b20dc33820b02"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__rect.html#ae99c5aefa72c56874b1b20dc33820b02">integral</a></td></tr>
+<tr class="separator:ae99c5aefa72c56874b1b20dc33820b02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00b9fb4dd032793793a1b62524e886d7"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__rect.html#a00b9fb4dd032793793a1b62524e886d7">floating</a></td></tr>
+<tr class="separator:a00b9fb4dd032793793a1b62524e886d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename T&gt;<br />
-class cen::basic_rect&lt; T &gt;</div><p >A simple rectangle implementation, based on either <code>SDL_Rect</code> or <code>SDL_FRect</code>. </p>
-<p >This type is serializable, see the associated <code>serialize</code> function.<br  />
- </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+class cen::basic_rect&lt; T &gt;</div><p >A simple rectangle implementation, based on either <code>SDL_Rect</code> or <code>SDL_FRect</code>.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>underlying value type, i.e. <code>int</code> or <code>float</code>.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><code><a class="el" href="group__math.html#ga57aaadeac20efcad966376c59b52bcab" title="A rectangle based on SDL_Point.">irect</a></code> </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacecen.html#a57aaadeac20efcad966376c59b52bcab">irect</a> </dd>
 <dd>
-<code><a class="el" href="group__math.html#ga336ad4ae752b44d7f4199f9a42102c9b" title="A rectangle based on SDL_FPoint.">frect</a></code></dd>
-<dd>
-<code>intersects(const basic_rect&amp;, const basic_rect&amp;)</code> </dd>
-<dd>
-<code>overlaps(const basic_rect&amp;, const basic_rect&amp;)</code> </dd>
-<dd>
-<code>get_union(const basic_rect&amp;, const basic_rect&amp;)</code> </dd></dl>
+<a class="el" href="namespacecen.html#a336ad4ae752b44d7f4199f9a42102c9b">frect</a> </dd></dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a179aebb35ad5f78a20b210e77d67a322" name="a179aebb35ad5f78a20b210e77d67a322"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a179aebb35ad5f78a20b210e77d67a322">&#9670;&nbsp;</a></span>value_type</h2>
@@ -354,8 +299,6 @@ class cen::basic_rect&lt; T &gt;</div><p >A simple rectangle implementation, bas
 </table>
 </div><div class="memdoc">
 
-<p>Creates a zero-initialized rectangle. </p>
-
 </div>
 </div>
 <a id="a1134ac5c8208eecce3b7b390a2084145" name="a1134ac5c8208eecce3b7b390a2084145"></a>
@@ -404,17 +347,6 @@ class cen::basic_rect&lt; T &gt;</div><p >A simple rectangle implementation, bas
 </table>
 </div><div class="memdoc">
 
-<p>Creates a rectangle with the supplied position and size. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">x</td><td>the x-coordinate of the rectangle. </td></tr>
-    <tr><td class="paramname">y</td><td>the y-coordinate of the rectangle. </td></tr>
-    <tr><td class="paramname">width</td><td>the width of the rectangle. </td></tr>
-    <tr><td class="paramname">height</td><td>the height of the rectangle. </td></tr>
-  </table>
-  </dd>
-</dl>
-
 </div>
 </div>
 <a id="a71cf44347066736c0038d0a4ab501fa8" name="a71cf44347066736c0038d0a4ab501fa8"></a>
@@ -451,15 +383,6 @@ class cen::basic_rect&lt; T &gt;</div><p >A simple rectangle implementation, bas
 </table>
 </div><div class="memdoc">
 
-<p>Creates a rectangle with the supplied position and size. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">position</td><td>the position of the rectangle. </td></tr>
-    <tr><td class="paramname">size</td><td>the size of the rectangle. </td></tr>
-  </table>
-  </dd>
-</dl>
-
 </div>
 </div>
 <a id="a38b419b89736d8f48dca18556aabf486" name="a38b419b89736d8f48dca18556aabf486"></a>
@@ -485,14 +408,6 @@ class cen::basic_rect&lt; T &gt;</div><p >A simple rectangle implementation, bas
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Copies an SDL rectangle. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rect</td><td>the rectangle that will be copied. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -521,14 +436,6 @@ class cen::basic_rect&lt; T &gt;</div><p >A simple rectangle implementation, bas
 </table>
 </div><div class="memdoc">
 
-<p>Sets the x-coordinate of the rectangle. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">x</td><td>the new x-coordinate. </td></tr>
-  </table>
-  </dd>
-</dl>
-
 </div>
 </div>
 <a id="a08aaf2ca8d89e5e5ca8795e087e500e5" name="a08aaf2ca8d89e5e5ca8795e087e500e5"></a>
@@ -554,14 +461,6 @@ class cen::basic_rect&lt; T &gt;</div><p >A simple rectangle implementation, bas
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Sets the y-coordinate of the rectangle. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">y</td><td>the new y-coordinate. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -599,16 +498,6 @@ class cen::basic_rect&lt; T &gt;</div><p >A simple rectangle implementation, bas
 </table>
 </div><div class="memdoc">
 
-<p>Sets the position of the rectangle. </p>
-<p >The size of the rectangle is preserved by this function.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">x</td><td>the new x-coordinate. </td></tr>
-    <tr><td class="paramname">y</td><td>the new y-coordinate. </td></tr>
-  </table>
-  </dd>
-</dl>
-
 </div>
 </div>
 <a id="a65d7238f36b3c125414740522ed16d8f" name="a65d7238f36b3c125414740522ed16d8f"></a>
@@ -634,15 +523,6 @@ class cen::basic_rect&lt; T &gt;</div><p >A simple rectangle implementation, bas
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Sets the position of the rectangle. </p>
-<p >The size of the rectangle is preserved by this function.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pos</td><td>the new position. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -670,14 +550,6 @@ class cen::basic_rect&lt; T &gt;</div><p >A simple rectangle implementation, bas
 </table>
 </div><div class="memdoc">
 
-<p>Sets the width of the rectangle. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">width</td><td>the new width. </td></tr>
-  </table>
-  </dd>
-</dl>
-
 </div>
 </div>
 <a id="a25d0468b04d2306f6e24d50d296a0402" name="a25d0468b04d2306f6e24d50d296a0402"></a>
@@ -703,14 +575,6 @@ class cen::basic_rect&lt; T &gt;</div><p >A simple rectangle implementation, bas
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Sets the height of the rectangle. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">height</td><td>the new height. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -748,15 +612,6 @@ class cen::basic_rect&lt; T &gt;</div><p >A simple rectangle implementation, bas
 </table>
 </div><div class="memdoc">
 
-<p>Sets the size of the rectangle. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">width</td><td>the new width. </td></tr>
-    <tr><td class="paramname">height</td><td>the new height. </td></tr>
-  </table>
-  </dd>
-</dl>
-
 </div>
 </div>
 <a id="af9a1473f9ea9b4c081efe0a53f75943e" name="af9a1473f9ea9b4c081efe0a53f75943e"></a>
@@ -782,14 +637,6 @@ class cen::basic_rect&lt; T &gt;</div><p >A simple rectangle implementation, bas
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Sets the size of the rectangle. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">size</td><td>the new size. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -817,15 +664,6 @@ class cen::basic_rect&lt; T &gt;</div><p >A simple rectangle implementation, bas
 </table>
 </div><div class="memdoc">
 
-<p>Sets the maximum x-coordinate of the rectangle. </p>
-<dl class="section note"><dt>Note</dt><dd>This function preserves the width of the rectangle.</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">mx</td><td>the maximum x-coordinate. </td></tr>
-  </table>
-  </dd>
-</dl>
-
 </div>
 </div>
 <a id="aab2f74f641bd0ce0b61ddc23f122d18a" name="aab2f74f641bd0ce0b61ddc23f122d18a"></a>
@@ -851,15 +689,6 @@ class cen::basic_rect&lt; T &gt;</div><p >A simple rectangle implementation, bas
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Sets the maximum y-coordinate of the rectangle. </p>
-<dl class="section note"><dt>Note</dt><dd>This function preserves the height of the rectangle.</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">my</td><td>the maximum y-coordinate. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -887,14 +716,6 @@ class cen::basic_rect&lt; T &gt;</div><p >A simple rectangle implementation, bas
 </table>
 </div><div class="memdoc">
 
-<p>Offsets the x-coordinate of the rectangle by the specified amount. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">dx</td><td>the offset to the x-coordinate. </td></tr>
-  </table>
-  </dd>
-</dl>
-
 </div>
 </div>
 <a id="aac4f0c5d969304d266d40b66562ffd2e" name="aac4f0c5d969304d266d40b66562ffd2e"></a>
@@ -920,14 +741,6 @@ class cen::basic_rect&lt; T &gt;</div><p >A simple rectangle implementation, bas
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Offsets the y-coordinate of the rectangle by the specified amount. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">dy</td><td>the offset to the y-coordinate. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -955,14 +768,6 @@ class cen::basic_rect&lt; T &gt;</div><p >A simple rectangle implementation, bas
 </table>
 </div><div class="memdoc">
 
-<p>Offsets the width of the rectangle by the specified amount. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">dw</td><td>the offset to the width. </td></tr>
-  </table>
-  </dd>
-</dl>
-
 </div>
 </div>
 <a id="ac9407fffa5d26c46415ac511e5174d44" name="ac9407fffa5d26c46415ac511e5174d44"></a>
@@ -989,14 +794,6 @@ class cen::basic_rect&lt; T &gt;</div><p >A simple rectangle implementation, bas
 </table>
 </div><div class="memdoc">
 
-<p>Offsets the height of the rectangle by the specified amount. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">dh</td><td>the offset to the height. </td></tr>
-  </table>
-  </dd>
-</dl>
-
 </div>
 </div>
 <a id="add06f6614e624143cee7cfeb90fcaf50" name="add06f6614e624143cee7cfeb90fcaf50"></a>
@@ -1022,9 +819,6 @@ class cen::basic_rect&lt; T &gt;</div><p >A simple rectangle implementation, bas
 </table>
 </div><div class="memdoc">
 
-<p>Returns the x-coordinate of the rectangle. </p>
-<dl class="section return"><dt>Returns</dt><dd>the rectangle x-coordinate. </dd></dl>
-
 </div>
 </div>
 <a id="a83fa5c37204bf9c5ee20ff40c5f96d84" name="a83fa5c37204bf9c5ee20ff40c5f96d84"></a>
@@ -1049,9 +843,6 @@ class cen::basic_rect&lt; T &gt;</div><p >A simple rectangle implementation, bas
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the y-coordinate of the rectangle. </p>
-<dl class="section return"><dt>Returns</dt><dd>the rectangle y-coordinate. </dd></dl>
 
 </div>
 </div>
@@ -1079,9 +870,6 @@ class cen::basic_rect&lt; T &gt;</div><p >A simple rectangle implementation, bas
 </table>
 </div><div class="memdoc">
 
-<p>Returns the position of the rectangle. </p>
-<dl class="section return"><dt>Returns</dt><dd>the rectangle position. </dd></dl>
-
 </div>
 </div>
 <a id="a84b8cf407ef33e6c8f32c9f473dda8a1" name="a84b8cf407ef33e6c8f32c9f473dda8a1"></a>
@@ -1107,9 +895,6 @@ class cen::basic_rect&lt; T &gt;</div><p >A simple rectangle implementation, bas
 </table>
 </div><div class="memdoc">
 
-<p>Returns the width of the rectangle. </p>
-<dl class="section return"><dt>Returns</dt><dd>the rectangle width. </dd></dl>
-
 </div>
 </div>
 <a id="ae882a23d156d68dc0e7f2a9af3fbd57d" name="ae882a23d156d68dc0e7f2a9af3fbd57d"></a>
@@ -1134,9 +919,6 @@ class cen::basic_rect&lt; T &gt;</div><p >A simple rectangle implementation, bas
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the height of the rectangle. </p>
-<dl class="section return"><dt>Returns</dt><dd>the rectangle height. </dd></dl>
 
 </div>
 </div>
@@ -1164,9 +946,6 @@ class cen::basic_rect&lt; T &gt;</div><p >A simple rectangle implementation, bas
 </table>
 </div><div class="memdoc">
 
-<p>Returns the size of the rectangle. </p>
-<dl class="section return"><dt>Returns</dt><dd>the rectangle size. </dd></dl>
-
 </div>
 </div>
 <a id="a75873edbb145c30a57b50ad3cbcc3955" name="a75873edbb145c30a57b50ad3cbcc3955"></a>
@@ -1192,9 +971,6 @@ class cen::basic_rect&lt; T &gt;</div><p >A simple rectangle implementation, bas
 </table>
 </div><div class="memdoc">
 
-<p>Returns the maximum x-coordinate of the rectangle. </p>
-<dl class="section return"><dt>Returns</dt><dd>the maximum x-coordinate. </dd></dl>
-
 </div>
 </div>
 <a id="a8a7e45bdcd7b8d672eb84d76d3c12d91" name="a8a7e45bdcd7b8d672eb84d76d3c12d91"></a>
@@ -1219,9 +995,6 @@ class cen::basic_rect&lt; T &gt;</div><p >A simple rectangle implementation, bas
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the maximum y-coordinate of the rectangle. </p>
-<dl class="section return"><dt>Returns</dt><dd>the maximum y-coordinate. </dd></dl>
 
 </div>
 </div>
@@ -1249,10 +1022,6 @@ class cen::basic_rect&lt; T &gt;</div><p >A simple rectangle implementation, bas
 </table>
 </div><div class="memdoc">
 
-<p>Indicates whether the rectangle has an area. </p>
-<p >The rectangle has an area if both the width and height are greater than zero.</p>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the rectangle has an area; <code>false</code> otherwise. </dd></dl>
-
 </div>
 </div>
 <a id="a54d38908f53e82ae8d7115750da9fa09" name="a54d38908f53e82ae8d7115750da9fa09"></a>
@@ -1278,10 +1047,6 @@ class cen::basic_rect&lt; T &gt;</div><p >A simple rectangle implementation, bas
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Computes the area of the rectangle. </p>
-<dl class="section note"><dt>Note</dt><dd>The returned area may be zero or even negative.</dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>the computed area. </dd></dl>
 
 </div>
 </div>
@@ -1309,9 +1074,6 @@ class cen::basic_rect&lt; T &gt;</div><p >A simple rectangle implementation, bas
 </table>
 </div><div class="memdoc">
 
-<p>Returns the x-coordinate of the center point of the rectangle. </p>
-<dl class="section return"><dt>Returns</dt><dd>the center point x-coordinate. </dd></dl>
-
 </div>
 </div>
 <a id="a2c82cd63eafef016fdff495322fc19d1" name="a2c82cd63eafef016fdff495322fc19d1"></a>
@@ -1338,9 +1100,6 @@ class cen::basic_rect&lt; T &gt;</div><p >A simple rectangle implementation, bas
 </table>
 </div><div class="memdoc">
 
-<p>Returns the y-coordinate of the center point of the rectangle. </p>
-<dl class="section return"><dt>Returns</dt><dd>the center point y-coordinate. </dd></dl>
-
 </div>
 </div>
 <a id="a4e9465f6ca2204699cf888fdfe3c59e1" name="a4e9465f6ca2204699cf888fdfe3c59e1"></a>
@@ -1366,9 +1125,6 @@ class cen::basic_rect&lt; T &gt;</div><p >A simple rectangle implementation, bas
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the center point of the rectangle. </p>
-<dl class="section return"><dt>Returns</dt><dd>the rectangle center point. </dd></dl>
 
 </div>
 </div>
@@ -1407,16 +1163,6 @@ class cen::basic_rect&lt; T &gt;</div><p >A simple rectangle implementation, bas
 </table>
 </div><div class="memdoc">
 
-<p>Indicates whether the rectangle contains a point. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">px</td><td>the x-coordinate of the point that will be checked. </td></tr>
-    <tr><td class="paramname">py</td><td>the y-coordinate of the point that will be checked.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the rectangle contains the point; <code>false</code> otherwise. </dd></dl>
-
 </div>
 </div>
 <a id="a15a5000e42df07a52da201fb24c1ea0d" name="a15a5000e42df07a52da201fb24c1ea0d"></a>
@@ -1444,15 +1190,6 @@ class cen::basic_rect&lt; T &gt;</div><p >A simple rectangle implementation, bas
 </table>
 </div><div class="memdoc">
 
-<p>Indicates whether the rectangle contains a point. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">point</td><td>the point that will be checked.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the rectangle contains the point; <code>false</code> otherwise. </dd></dl>
-
 </div>
 </div>
 <a id="a8ed59f69afef8b5700d4a7f83810cc31" name="a8ed59f69afef8b5700d4a7f83810cc31"></a>
@@ -1468,7 +1205,7 @@ class cen::basic_rect&lt; T &gt;</div><p >A simple rectangle implementation, bas
           <td class="memname">constexpr auto as_f </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const -&gt; <a class="el" href="group__math.html#ga336ad4ae752b44d7f4199f9a42102c9b">frect</a>
+          <td> const -&gt; <a class="el" href="namespacecen.html#a336ad4ae752b44d7f4199f9a42102c9b">frect</a>
   </td>
         </tr>
       </table>
@@ -1478,9 +1215,6 @@ class cen::basic_rect&lt; T &gt;</div><p >A simple rectangle implementation, bas
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the rectangle as an <code>frect</code>. </p>
-<dl class="section return"><dt>Returns</dt><dd>a floating-point based rectangle. </dd></dl>
 
 </div>
 </div>
@@ -1497,7 +1231,7 @@ class cen::basic_rect&lt; T &gt;</div><p >A simple rectangle implementation, bas
           <td class="memname">constexpr auto as_i </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const -&gt; <a class="el" href="group__math.html#ga57aaadeac20efcad966376c59b52bcab">irect</a>
+          <td> const -&gt; <a class="el" href="namespacecen.html#a57aaadeac20efcad966376c59b52bcab">irect</a>
   </td>
         </tr>
       </table>
@@ -1507,9 +1241,6 @@ class cen::basic_rect&lt; T &gt;</div><p >A simple rectangle implementation, bas
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the rectangle as an <code>irect</code>. </p>
-<dl class="section return"><dt>Returns</dt><dd>a integer based rectangle. </dd></dl>
 
 </div>
 </div>

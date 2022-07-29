@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Centurion
-   &#160;<span id="projectnumber">7.0.0</span>
+   &#160;<span id="projectnumber">7.1.0</span>
    </div>
    <div id="projectbrief">A modern C++ wrapper library for SDL2</div>
   </td>
@@ -95,235 +95,164 @@ $(document).ready(function(){initNavTree('classcen_1_1font.html',''); initResiza
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classcen_1_1font-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">font Class Reference<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="group__text.html">Text</a> &raquo; <a class="el" href="group__font.html">Font</a></div></div></div>
+  <div class="headertitle"><div class="title">font Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>Represents a TrueType font.  
- <a href="classcen_1_1font.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="font_8hpp_source.html">font.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcen_1_1font_1_1measure__result.html">measure_result</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides information about the measurement of a string.  <a href="structcen_1_1font_1_1measure__result.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5ff1fd98a6f4cdfcc4c8dfb2bbdca73f"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a5ff1fd98a6f4cdfcc4c8dfb2bbdca73f">set_size</a> (const int <a class="el" href="classcen_1_1font.html#a0d42313bd19a0bcdafb8efd7696bb853">size</a>) noexcept -&gt; <a class="el" href="classcen_1_1result.html">result</a></td></tr>
-<tr class="memdesc:a5ff1fd98a6f4cdfcc4c8dfb2bbdca73f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the size of the font dynamically.  <a href="classcen_1_1font.html#a5ff1fd98a6f4cdfcc4c8dfb2bbdca73f">More...</a><br /></td></tr>
-<tr class="separator:a5ff1fd98a6f4cdfcc4c8dfb2bbdca73f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d40d4d4f2761d2904f8ccc9169808a2"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a9d40d4d4f2761d2904f8ccc9169808a2">set_size</a> (const int <a class="el" href="classcen_1_1font.html#a0d42313bd19a0bcdafb8efd7696bb853">size</a>, const <a class="el" href="structcen_1_1font__dpi.html">font_dpi</a> &amp;dpi) noexcept -&gt; <a class="el" href="classcen_1_1result.html">result</a></td></tr>
-<tr class="memdesc:a9d40d4d4f2761d2904f8ccc9169808a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the size of the font dynamically.  <a href="classcen_1_1font.html#a9d40d4d4f2761d2904f8ccc9169808a2">More...</a><br /></td></tr>
-<tr class="separator:a9d40d4d4f2761d2904f8ccc9169808a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f3a488c74af044903a926bf0e009f50"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a0f3a488c74af044903a926bf0e009f50">get</a> () const noexcept -&gt; TTF_Font *</td></tr>
-<tr class="separator:a0f3a488c74af044903a926bf0e009f50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Construction</h2></td></tr>
 <tr class="memitem:ade3c5a202919b639c8bc3b7aab6c7785"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#ade3c5a202919b639c8bc3b7aab6c7785">font</a> (const char *<a class="el" href="classcen_1_1file.html">file</a>, const int <a class="el" href="classcen_1_1font.html#a0d42313bd19a0bcdafb8efd7696bb853">size</a>)</td></tr>
-<tr class="memdesc:ade3c5a202919b639c8bc3b7aab6c7785"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens a font.  <a href="classcen_1_1font.html#ade3c5a202919b639c8bc3b7aab6c7785">More...</a><br /></td></tr>
 <tr class="separator:ade3c5a202919b639c8bc3b7aab6c7785"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29368675c3da33759dd7219cf1d22c42"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a29368675c3da33759dd7219cf1d22c42">font</a> (const std::string &amp;<a class="el" href="classcen_1_1file.html">file</a>, const int <a class="el" href="classcen_1_1font.html#a0d42313bd19a0bcdafb8efd7696bb853">size</a>)</td></tr>
-<tr class="memdesc:a29368675c3da33759dd7219cf1d22c42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens a font.  <a href="classcen_1_1font.html#a29368675c3da33759dd7219cf1d22c42">More...</a><br /></td></tr>
 <tr class="separator:a29368675c3da33759dd7219cf1d22c42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa70685f0b25eafa6ab564a96eacde6d9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#aa70685f0b25eafa6ab564a96eacde6d9">font</a> (const char *<a class="el" href="classcen_1_1file.html">file</a>, const int <a class="el" href="classcen_1_1font.html#a0d42313bd19a0bcdafb8efd7696bb853">size</a>, const <a class="el" href="structcen_1_1font__dpi.html">font_dpi</a> &amp;dpi)</td></tr>
-<tr class="memdesc:aa70685f0b25eafa6ab564a96eacde6d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens a font with the specified DPI settings.  <a href="classcen_1_1font.html#aa70685f0b25eafa6ab564a96eacde6d9">More...</a><br /></td></tr>
 <tr class="separator:aa70685f0b25eafa6ab564a96eacde6d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca32c606c6d902b16fd5706db8d48ad0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#aca32c606c6d902b16fd5706db8d48ad0">font</a> (const std::string &amp;<a class="el" href="classcen_1_1file.html">file</a>, const int <a class="el" href="classcen_1_1font.html#a0d42313bd19a0bcdafb8efd7696bb853">size</a>, const <a class="el" href="structcen_1_1font__dpi.html">font_dpi</a> &amp;dpi)</td></tr>
-<tr class="memdesc:aca32c606c6d902b16fd5706db8d48ad0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens a font with the specified DPI settings.  <a href="classcen_1_1font.html#aca32c606c6d902b16fd5706db8d48ad0">More...</a><br /></td></tr>
 <tr class="separator:aca32c606c6d902b16fd5706db8d48ad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Style functions</h2></td></tr>
+<tr class="memitem:a5ff1fd98a6f4cdfcc4c8dfb2bbdca73f"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a5ff1fd98a6f4cdfcc4c8dfb2bbdca73f">set_size</a> (const int <a class="el" href="classcen_1_1font.html#a0d42313bd19a0bcdafb8efd7696bb853">size</a>) noexcept -&gt; <a class="el" href="classcen_1_1result.html">result</a></td></tr>
+<tr class="separator:a5ff1fd98a6f4cdfcc4c8dfb2bbdca73f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d40d4d4f2761d2904f8ccc9169808a2"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a9d40d4d4f2761d2904f8ccc9169808a2">set_size</a> (const int <a class="el" href="classcen_1_1font.html#a0d42313bd19a0bcdafb8efd7696bb853">size</a>, const <a class="el" href="structcen_1_1font__dpi.html">font_dpi</a> &amp;dpi) noexcept -&gt; <a class="el" href="classcen_1_1result.html">result</a></td></tr>
+<tr class="separator:a9d40d4d4f2761d2904f8ccc9169808a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ebccaed2b4595fc3f53f64b1d5511ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a7ebccaed2b4595fc3f53f64b1d5511ff">reset_style</a> () noexcept</td></tr>
-<tr class="memdesc:a7ebccaed2b4595fc3f53f64b1d5511ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the style of the font.  <a href="classcen_1_1font.html#a7ebccaed2b4595fc3f53f64b1d5511ff">More...</a><br /></td></tr>
 <tr class="separator:a7ebccaed2b4595fc3f53f64b1d5511ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae81465bc554739d856576967a8e2167"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#aae81465bc554739d856576967a8e2167">set_bold</a> (const bool bold) noexcept</td></tr>
-<tr class="memdesc:aae81465bc554739d856576967a8e2167"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether the font is bold.  <a href="classcen_1_1font.html#aae81465bc554739d856576967a8e2167">More...</a><br /></td></tr>
 <tr class="separator:aae81465bc554739d856576967a8e2167"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a478416f3ec9ba7105eb8fa1a8358c4a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a478416f3ec9ba7105eb8fa1a8358c4a3">set_italic</a> (const bool italic) noexcept</td></tr>
-<tr class="memdesc:a478416f3ec9ba7105eb8fa1a8358c4a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether the font is italic.  <a href="classcen_1_1font.html#a478416f3ec9ba7105eb8fa1a8358c4a3">More...</a><br /></td></tr>
 <tr class="separator:a478416f3ec9ba7105eb8fa1a8358c4a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a678076871a327fd1a0601ef9e090c814"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a678076871a327fd1a0601ef9e090c814">set_underlined</a> (const bool underlined) noexcept</td></tr>
-<tr class="memdesc:a678076871a327fd1a0601ef9e090c814"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether the font is underlined.  <a href="classcen_1_1font.html#a678076871a327fd1a0601ef9e090c814">More...</a><br /></td></tr>
 <tr class="separator:a678076871a327fd1a0601ef9e090c814"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4aa2bd91a20c099c52e9e63872f697c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#aa4aa2bd91a20c099c52e9e63872f697c">set_strikethrough</a> (const bool strikethrough) noexcept</td></tr>
-<tr class="memdesc:aa4aa2bd91a20c099c52e9e63872f697c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether the font is strikethrough.  <a href="classcen_1_1font.html#aa4aa2bd91a20c099c52e9e63872f697c">More...</a><br /></td></tr>
 <tr class="separator:aa4aa2bd91a20c099c52e9e63872f697c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34cd0cd121779bfb136d9bc51a102dcb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a34cd0cd121779bfb136d9bc51a102dcb">set_kerning</a> (const bool kerning) noexcept</td></tr>
-<tr class="memdesc:a34cd0cd121779bfb136d9bc51a102dcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether the font can make use of kerning.  <a href="classcen_1_1font.html#a34cd0cd121779bfb136d9bc51a102dcb">More...</a><br /></td></tr>
 <tr class="separator:a34cd0cd121779bfb136d9bc51a102dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7c6868f7c157120af4d3884f26b0ebe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#ac7c6868f7c157120af4d3884f26b0ebe">set_outline</a> (const int <a class="el" href="classcen_1_1font.html#a8ceea4513f77046317872723041b825f">outline</a>) noexcept</td></tr>
-<tr class="memdesc:ac7c6868f7c157120af4d3884f26b0ebe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the outline size of the font.  <a href="classcen_1_1font.html#ac7c6868f7c157120af4d3884f26b0ebe">More...</a><br /></td></tr>
 <tr class="separator:ac7c6868f7c157120af4d3884f26b0ebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace47640e56c8313a97ceff112a8e3d40"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#ace47640e56c8313a97ceff112a8e3d40">set_hinting</a> (const <a class="el" href="group__font.html#ga48bc1fb9f75e812c78eb00a97a847671">font_hint</a> hint) noexcept</td></tr>
-<tr class="memdesc:ace47640e56c8313a97ceff112a8e3d40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the hint used by the font.  <a href="classcen_1_1font.html#ace47640e56c8313a97ceff112a8e3d40">More...</a><br /></td></tr>
+<tr class="memitem:ace47640e56c8313a97ceff112a8e3d40"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#ace47640e56c8313a97ceff112a8e3d40">set_hinting</a> (const <a class="el" href="namespacecen.html#a48bc1fb9f75e812c78eb00a97a847671">font_hint</a> hint) noexcept</td></tr>
 <tr class="separator:ace47640e56c8313a97ceff112a8e3d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3204e90f85f175778818d2ed0f6d0be"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#aa3204e90f85f175778818d2ed0f6d0be">is_bold</a> () const noexcept -&gt; bool</td></tr>
-<tr class="memdesc:aa3204e90f85f175778818d2ed0f6d0be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether the font is bold.  <a href="classcen_1_1font.html#aa3204e90f85f175778818d2ed0f6d0be">More...</a><br /></td></tr>
 <tr class="separator:aa3204e90f85f175778818d2ed0f6d0be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc6ee1f5296bea393c230b84af11b377"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#abc6ee1f5296bea393c230b84af11b377">is_italic</a> () const noexcept -&gt; bool</td></tr>
-<tr class="memdesc:abc6ee1f5296bea393c230b84af11b377"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether the font is italic.  <a href="classcen_1_1font.html#abc6ee1f5296bea393c230b84af11b377">More...</a><br /></td></tr>
 <tr class="separator:abc6ee1f5296bea393c230b84af11b377"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa34e6f9d362eefdea3d55cfd7faafac"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#aaa34e6f9d362eefdea3d55cfd7faafac">is_underlined</a> () const noexcept -&gt; bool</td></tr>
-<tr class="memdesc:aaa34e6f9d362eefdea3d55cfd7faafac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether the font is underlined.  <a href="classcen_1_1font.html#aaa34e6f9d362eefdea3d55cfd7faafac">More...</a><br /></td></tr>
 <tr class="separator:aaa34e6f9d362eefdea3d55cfd7faafac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a555d4bd04fefb6415b5bbc93a841079b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a555d4bd04fefb6415b5bbc93a841079b">is_strikethrough</a> () const noexcept -&gt; bool</td></tr>
-<tr class="memdesc:a555d4bd04fefb6415b5bbc93a841079b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether the font is strikethrough.  <a href="classcen_1_1font.html#a555d4bd04fefb6415b5bbc93a841079b">More...</a><br /></td></tr>
 <tr class="separator:a555d4bd04fefb6415b5bbc93a841079b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8705b85ad8600f28320b56be54bed38"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#ad8705b85ad8600f28320b56be54bed38">is_outlined</a> () const noexcept -&gt; bool</td></tr>
-<tr class="memdesc:ad8705b85ad8600f28320b56be54bed38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether the font is outlined.  <a href="classcen_1_1font.html#ad8705b85ad8600f28320b56be54bed38">More...</a><br /></td></tr>
 <tr class="separator:ad8705b85ad8600f28320b56be54bed38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a895f1895cda81eb13a8f0f9e4fc530a4"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a895f1895cda81eb13a8f0f9e4fc530a4">has_kerning</a> () const noexcept -&gt; bool</td></tr>
-<tr class="memdesc:a895f1895cda81eb13a8f0f9e4fc530a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether the font can make use of kerning.  <a href="classcen_1_1font.html#a895f1895cda81eb13a8f0f9e4fc530a4">More...</a><br /></td></tr>
 <tr class="separator:a895f1895cda81eb13a8f0f9e4fc530a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ceea4513f77046317872723041b825f"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a8ceea4513f77046317872723041b825f">outline</a> () const noexcept -&gt; int</td></tr>
-<tr class="memdesc:a8ceea4513f77046317872723041b825f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size of the font outline.  <a href="classcen_1_1font.html#a8ceea4513f77046317872723041b825f">More...</a><br /></td></tr>
 <tr class="separator:a8ceea4513f77046317872723041b825f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac494aa49da81e7399e63729754591f77"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#ac494aa49da81e7399e63729754591f77">hinting</a> () const noexcept -&gt; <a class="el" href="group__font.html#ga48bc1fb9f75e812c78eb00a97a847671">font_hint</a></td></tr>
-<tr class="memdesc:ac494aa49da81e7399e63729754591f77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the font hinting.  <a href="classcen_1_1font.html#ac494aa49da81e7399e63729754591f77">More...</a><br /></td></tr>
+<tr class="memitem:ac494aa49da81e7399e63729754591f77"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#ac494aa49da81e7399e63729754591f77">hinting</a> () const noexcept -&gt; <a class="el" href="namespacecen.html#a48bc1fb9f75e812c78eb00a97a847671">font_hint</a></td></tr>
 <tr class="separator:ac494aa49da81e7399e63729754591f77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Query functions</h2></td></tr>
 <tr class="memitem:a7f0f5224e212f6ccfec5e8df93b28a17"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a7f0f5224e212f6ccfec5e8df93b28a17">is_fixed_width</a> () const noexcept -&gt; bool</td></tr>
-<tr class="memdesc:a7f0f5224e212f6ccfec5e8df93b28a17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether the font is fixed width.  <a href="classcen_1_1font.html#a7f0f5224e212f6ccfec5e8df93b28a17">More...</a><br /></td></tr>
 <tr class="separator:a7f0f5224e212f6ccfec5e8df93b28a17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0756ee0d2af36d29fca34224c2f3d21"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#ac0756ee0d2af36d29fca34224c2f3d21">height</a> () const noexcept -&gt; int</td></tr>
-<tr class="memdesc:ac0756ee0d2af36d29fca34224c2f3d21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the maximum height of a character in the font.  <a href="classcen_1_1font.html#ac0756ee0d2af36d29fca34224c2f3d21">More...</a><br /></td></tr>
 <tr class="separator:ac0756ee0d2af36d29fca34224c2f3d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af41e0c0bb3c62e34e03c17b73acf0b7e"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#af41e0c0bb3c62e34e03c17b73acf0b7e">descent</a> () const noexcept -&gt; int</td></tr>
-<tr class="memdesc:af41e0c0bb3c62e34e03c17b73acf0b7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the offset from the baseline to the bottom of the font characters.  <a href="classcen_1_1font.html#af41e0c0bb3c62e34e03c17b73acf0b7e">More...</a><br /></td></tr>
 <tr class="separator:af41e0c0bb3c62e34e03c17b73acf0b7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a469c9a8a9702292885c94370e4c9bcc4"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a469c9a8a9702292885c94370e4c9bcc4">ascent</a> () const noexcept -&gt; int</td></tr>
-<tr class="memdesc:a469c9a8a9702292885c94370e4c9bcc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the offset from the baseline to the top of the font characters.  <a href="classcen_1_1font.html#a469c9a8a9702292885c94370e4c9bcc4">More...</a><br /></td></tr>
 <tr class="separator:a469c9a8a9702292885c94370e4c9bcc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a034ac452786607b41b77037251f4b8e8"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a034ac452786607b41b77037251f4b8e8">line_skip</a> () const noexcept -&gt; int</td></tr>
-<tr class="memdesc:a034ac452786607b41b77037251f4b8e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the suggested vertical spacing between lines of rendered text in the font.  <a href="classcen_1_1font.html#a034ac452786607b41b77037251f4b8e8">More...</a><br /></td></tr>
 <tr class="separator:a034ac452786607b41b77037251f4b8e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2b72738b1ca3d5f958c6d2d17dccaeb"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#ae2b72738b1ca3d5f958c6d2d17dccaeb">face_count</a> () const noexcept -&gt; int</td></tr>
-<tr class="memdesc:ae2b72738b1ca3d5f958c6d2d17dccaeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of available font faces.  <a href="classcen_1_1font.html#ae2b72738b1ca3d5f958c6d2d17dccaeb">More...</a><br /></td></tr>
 <tr class="separator:ae2b72738b1ca3d5f958c6d2d17dccaeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee351087d9d578d65815d90b262a3980"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#aee351087d9d578d65815d90b262a3980">family_name</a> () const noexcept -&gt; const char *</td></tr>
-<tr class="memdesc:aee351087d9d578d65815d90b262a3980"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the font family.  <a href="classcen_1_1font.html#aee351087d9d578d65815d90b262a3980">More...</a><br /></td></tr>
 <tr class="separator:aee351087d9d578d65815d90b262a3980"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52bdb2defa4d0fc1ba74988c1fd5a724"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a52bdb2defa4d0fc1ba74988c1fd5a724">style_name</a> () const noexcept -&gt; const char *</td></tr>
-<tr class="memdesc:a52bdb2defa4d0fc1ba74988c1fd5a724"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the font face style.  <a href="classcen_1_1font.html#a52bdb2defa4d0fc1ba74988c1fd5a724">More...</a><br /></td></tr>
 <tr class="separator:a52bdb2defa4d0fc1ba74988c1fd5a724"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d42313bd19a0bcdafb8efd7696bb853"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a0d42313bd19a0bcdafb8efd7696bb853">size</a> () const noexcept -&gt; int</td></tr>
-<tr class="memdesc:a0d42313bd19a0bcdafb8efd7696bb853"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size of the font.  <a href="classcen_1_1font.html#a0d42313bd19a0bcdafb8efd7696bb853">More...</a><br /></td></tr>
 <tr class="separator:a0d42313bd19a0bcdafb8efd7696bb853"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Glyph information functions</h2></td></tr>
-<tr class="memitem:ae5fce2a106ccbf82f4a7aff9cef870b7"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#ae5fce2a106ccbf82f4a7aff9cef870b7">get_kerning</a> (const <a class="el" href="group__common.html#gac3131ee180db2fcab120011a74d12f47">unicode_t</a> previous, const <a class="el" href="group__common.html#gac3131ee180db2fcab120011a74d12f47">unicode_t</a> current) const noexcept -&gt; int</td></tr>
-<tr class="memdesc:ae5fce2a106ccbf82f4a7aff9cef870b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the kerning amount between two glyphs.  <a href="classcen_1_1font.html#ae5fce2a106ccbf82f4a7aff9cef870b7">More...</a><br /></td></tr>
+<tr class="memitem:ae5fce2a106ccbf82f4a7aff9cef870b7"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#ae5fce2a106ccbf82f4a7aff9cef870b7">get_kerning</a> (const <a class="el" href="namespacecen.html#ac3131ee180db2fcab120011a74d12f47">unicode_t</a> previous, const <a class="el" href="namespacecen.html#ac3131ee180db2fcab120011a74d12f47">unicode_t</a> current) const noexcept -&gt; int</td></tr>
 <tr class="separator:ae5fce2a106ccbf82f4a7aff9cef870b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5531ba06640d4b3eaa878720e88f1cca"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a5531ba06640d4b3eaa878720e88f1cca">is_glyph_provided</a> (const <a class="el" href="group__common.html#gac3131ee180db2fcab120011a74d12f47">unicode_t</a> glyph) const noexcept -&gt; bool</td></tr>
-<tr class="memdesc:a5531ba06640d4b3eaa878720e88f1cca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether a glyph is provided by the font.  <a href="classcen_1_1font.html#a5531ba06640d4b3eaa878720e88f1cca">More...</a><br /></td></tr>
+<tr class="memitem:a5531ba06640d4b3eaa878720e88f1cca"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a5531ba06640d4b3eaa878720e88f1cca">is_glyph_provided</a> (const <a class="el" href="namespacecen.html#ac3131ee180db2fcab120011a74d12f47">unicode_t</a> glyph) const noexcept -&gt; bool</td></tr>
 <tr class="separator:a5531ba06640d4b3eaa878720e88f1cca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c4a280524a37b621e1557e00f39dc2f"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a4c4a280524a37b621e1557e00f39dc2f">get_metrics</a> (const <a class="el" href="group__common.html#gac3131ee180db2fcab120011a74d12f47">unicode_t</a> glyph) const noexcept -&gt; std::optional&lt; <a class="el" href="structcen_1_1glyph__metrics.html">glyph_metrics</a> &gt;</td></tr>
-<tr class="memdesc:a4c4a280524a37b621e1557e00f39dc2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the metrics of a specific glyph.  <a href="classcen_1_1font.html#a4c4a280524a37b621e1557e00f39dc2f">More...</a><br /></td></tr>
+<tr class="memitem:a4c4a280524a37b621e1557e00f39dc2f"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a4c4a280524a37b621e1557e00f39dc2f">get_metrics</a> (const <a class="el" href="namespacecen.html#ac3131ee180db2fcab120011a74d12f47">unicode_t</a> glyph) const noexcept -&gt; std::optional&lt; <a class="el" href="structcen_1_1glyph__metrics.html">glyph_metrics</a> &gt;</td></tr>
 <tr class="separator:a4c4a280524a37b621e1557e00f39dc2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08a63906d0f2335e465521c50962679a"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a08a63906d0f2335e465521c50962679a">get_kerning_w</a> (const <a class="el" href="group__common.html#ga1fb46aea219562a15ba1dd7fb83b7fe3">unicode32_t</a> previous, const <a class="el" href="group__common.html#ga1fb46aea219562a15ba1dd7fb83b7fe3">unicode32_t</a> current) const noexcept -&gt; int</td></tr>
-<tr class="memdesc:a08a63906d0f2335e465521c50962679a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the kerning amount between two glyphs.  <a href="classcen_1_1font.html#a08a63906d0f2335e465521c50962679a">More...</a><br /></td></tr>
+<tr class="memitem:a08a63906d0f2335e465521c50962679a"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a08a63906d0f2335e465521c50962679a">get_kerning_w</a> (const <a class="el" href="namespacecen.html#a1fb46aea219562a15ba1dd7fb83b7fe3">unicode32_t</a> previous, const <a class="el" href="namespacecen.html#a1fb46aea219562a15ba1dd7fb83b7fe3">unicode32_t</a> current) const noexcept -&gt; int</td></tr>
 <tr class="separator:a08a63906d0f2335e465521c50962679a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1e94f46bc3152879b978fc2f316af9c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#af1e94f46bc3152879b978fc2f316af9c">is_glyph_provided_w</a> (const <a class="el" href="group__common.html#ga1fb46aea219562a15ba1dd7fb83b7fe3">unicode32_t</a> glyph) const noexcept -&gt; bool</td></tr>
-<tr class="memdesc:af1e94f46bc3152879b978fc2f316af9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether a glyph is provided by the font.  <a href="classcen_1_1font.html#af1e94f46bc3152879b978fc2f316af9c">More...</a><br /></td></tr>
+<tr class="memitem:af1e94f46bc3152879b978fc2f316af9c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#af1e94f46bc3152879b978fc2f316af9c">is_glyph_provided_w</a> (const <a class="el" href="namespacecen.html#a1fb46aea219562a15ba1dd7fb83b7fe3">unicode32_t</a> glyph) const noexcept -&gt; bool</td></tr>
 <tr class="separator:af1e94f46bc3152879b978fc2f316af9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7caaa4d541e6b05abe2b8122feb83434"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a7caaa4d541e6b05abe2b8122feb83434">get_metrics_w</a> (const <a class="el" href="group__common.html#ga1fb46aea219562a15ba1dd7fb83b7fe3">unicode32_t</a> glyph) const noexcept -&gt; std::optional&lt; <a class="el" href="structcen_1_1glyph__metrics.html">glyph_metrics</a> &gt;</td></tr>
-<tr class="memdesc:a7caaa4d541e6b05abe2b8122feb83434"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the metrics of a specific glyph.  <a href="classcen_1_1font.html#a7caaa4d541e6b05abe2b8122feb83434">More...</a><br /></td></tr>
+<tr class="memitem:a7caaa4d541e6b05abe2b8122feb83434"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a7caaa4d541e6b05abe2b8122feb83434">get_metrics_w</a> (const <a class="el" href="namespacecen.html#a1fb46aea219562a15ba1dd7fb83b7fe3">unicode32_t</a> glyph) const noexcept -&gt; std::optional&lt; <a class="el" href="structcen_1_1glyph__metrics.html">glyph_metrics</a> &gt;</td></tr>
 <tr class="separator:a7caaa4d541e6b05abe2b8122feb83434"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">SDF functions</h2></td></tr>
 <tr class="memitem:a2448a8957f47673bb7ee74066437e409"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a2448a8957f47673bb7ee74066437e409">set_sdf_enabled</a> (const bool enable) noexcept -&gt; <a class="el" href="classcen_1_1result.html">result</a></td></tr>
-<tr class="memdesc:a2448a8957f47673bb7ee74066437e409"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether SDF (Signed Distance Field) rendering is enabled.  <a href="classcen_1_1font.html#a2448a8957f47673bb7ee74066437e409">More...</a><br /></td></tr>
 <tr class="separator:a2448a8957f47673bb7ee74066437e409"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09878d20bb0a7f085a8ef13c86787480"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a09878d20bb0a7f085a8ef13c86787480">sdf_enabled</a> () const noexcept -&gt; bool</td></tr>
-<tr class="memdesc:a09878d20bb0a7f085a8ef13c86787480"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether SDF rendering is enabled.  <a href="classcen_1_1font.html#a09878d20bb0a7f085a8ef13c86787480">More...</a><br /></td></tr>
 <tr class="separator:a09878d20bb0a7f085a8ef13c86787480"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Glyph rendering functions</h2></td></tr>
-<tr class="memitem:a4cc00534d2e199547d66407996b6515c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a4cc00534d2e199547d66407996b6515c">render_solid_glyph</a> (const <a class="el" href="group__common.html#gac3131ee180db2fcab120011a74d12f47">unicode_t</a> glyph, const <a class="el" href="classcen_1_1color.html">color</a> &amp;fg) const -&gt; <a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a></td></tr>
-<tr class="memdesc:a4cc00534d2e199547d66407996b6515c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders a single solid glyph.  <a href="classcen_1_1font.html#a4cc00534d2e199547d66407996b6515c">More...</a><br /></td></tr>
+<tr class="memitem:a4cc00534d2e199547d66407996b6515c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a4cc00534d2e199547d66407996b6515c">render_solid_glyph</a> (const <a class="el" href="namespacecen.html#ac3131ee180db2fcab120011a74d12f47">unicode_t</a> glyph, const <a class="el" href="classcen_1_1color.html">color</a> &amp;fg) const -&gt; <a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a></td></tr>
 <tr class="separator:a4cc00534d2e199547d66407996b6515c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af41fbbac1e42195e510c5042025b698c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#af41fbbac1e42195e510c5042025b698c">render_shaded_glyph</a> (const <a class="el" href="group__common.html#gac3131ee180db2fcab120011a74d12f47">unicode_t</a> glyph, const <a class="el" href="classcen_1_1color.html">color</a> &amp;fg, const <a class="el" href="classcen_1_1color.html">color</a> &amp;bg) const -&gt; <a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a></td></tr>
-<tr class="memdesc:af41fbbac1e42195e510c5042025b698c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders a single shaded glyph.  <a href="classcen_1_1font.html#af41fbbac1e42195e510c5042025b698c">More...</a><br /></td></tr>
+<tr class="memitem:af41fbbac1e42195e510c5042025b698c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#af41fbbac1e42195e510c5042025b698c">render_shaded_glyph</a> (const <a class="el" href="namespacecen.html#ac3131ee180db2fcab120011a74d12f47">unicode_t</a> glyph, const <a class="el" href="classcen_1_1color.html">color</a> &amp;fg, const <a class="el" href="classcen_1_1color.html">color</a> &amp;bg) const -&gt; <a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a></td></tr>
 <tr class="separator:af41fbbac1e42195e510c5042025b698c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a573f5db4411c1ae8c01645688e5541b9"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a573f5db4411c1ae8c01645688e5541b9">render_blended_glyph</a> (const <a class="el" href="group__common.html#gac3131ee180db2fcab120011a74d12f47">unicode_t</a> glyph, const <a class="el" href="classcen_1_1color.html">color</a> &amp;fg) const -&gt; <a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a></td></tr>
-<tr class="memdesc:a573f5db4411c1ae8c01645688e5541b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders a single blended glyph.  <a href="classcen_1_1font.html#a573f5db4411c1ae8c01645688e5541b9">More...</a><br /></td></tr>
+<tr class="memitem:a573f5db4411c1ae8c01645688e5541b9"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a573f5db4411c1ae8c01645688e5541b9">render_blended_glyph</a> (const <a class="el" href="namespacecen.html#ac3131ee180db2fcab120011a74d12f47">unicode_t</a> glyph, const <a class="el" href="classcen_1_1color.html">color</a> &amp;fg) const -&gt; <a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a></td></tr>
 <tr class="separator:a573f5db4411c1ae8c01645688e5541b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e8471cb68c2e1d5409a7c35406eb32c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a4e8471cb68c2e1d5409a7c35406eb32c">render_solid_glyph_w</a> (const <a class="el" href="group__common.html#ga1fb46aea219562a15ba1dd7fb83b7fe3">unicode32_t</a> glyph, const <a class="el" href="classcen_1_1color.html">color</a> &amp;fg) const -&gt; <a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a></td></tr>
-<tr class="memdesc:a4e8471cb68c2e1d5409a7c35406eb32c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders a single solid glyph.  <a href="classcen_1_1font.html#a4e8471cb68c2e1d5409a7c35406eb32c">More...</a><br /></td></tr>
+<tr class="memitem:a4e8471cb68c2e1d5409a7c35406eb32c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a4e8471cb68c2e1d5409a7c35406eb32c">render_solid_glyph_w</a> (const <a class="el" href="namespacecen.html#a1fb46aea219562a15ba1dd7fb83b7fe3">unicode32_t</a> glyph, const <a class="el" href="classcen_1_1color.html">color</a> &amp;fg) const -&gt; <a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a></td></tr>
 <tr class="separator:a4e8471cb68c2e1d5409a7c35406eb32c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c42d646fbaaab677ebd70766d56d477"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a9c42d646fbaaab677ebd70766d56d477">render_shaded_glyph_w</a> (const <a class="el" href="group__common.html#ga1fb46aea219562a15ba1dd7fb83b7fe3">unicode32_t</a> glyph, const <a class="el" href="classcen_1_1color.html">color</a> &amp;fg, const <a class="el" href="classcen_1_1color.html">color</a> &amp;bg) const -&gt; <a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a></td></tr>
-<tr class="memdesc:a9c42d646fbaaab677ebd70766d56d477"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders a single shaded glyph.  <a href="classcen_1_1font.html#a9c42d646fbaaab677ebd70766d56d477">More...</a><br /></td></tr>
+<tr class="memitem:a9c42d646fbaaab677ebd70766d56d477"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a9c42d646fbaaab677ebd70766d56d477">render_shaded_glyph_w</a> (const <a class="el" href="namespacecen.html#a1fb46aea219562a15ba1dd7fb83b7fe3">unicode32_t</a> glyph, const <a class="el" href="classcen_1_1color.html">color</a> &amp;fg, const <a class="el" href="classcen_1_1color.html">color</a> &amp;bg) const -&gt; <a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a></td></tr>
 <tr class="separator:a9c42d646fbaaab677ebd70766d56d477"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4da313909ef3710b147263e663a1b106"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a4da313909ef3710b147263e663a1b106">render_blended_glyph_w</a> (const <a class="el" href="group__common.html#ga1fb46aea219562a15ba1dd7fb83b7fe3">unicode32_t</a> glyph, const <a class="el" href="classcen_1_1color.html">color</a> &amp;fg) const -&gt; <a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a></td></tr>
-<tr class="memdesc:a4da313909ef3710b147263e663a1b106"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders a single blended glyph.  <a href="classcen_1_1font.html#a4da313909ef3710b147263e663a1b106">More...</a><br /></td></tr>
+<tr class="memitem:a4da313909ef3710b147263e663a1b106"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a4da313909ef3710b147263e663a1b106">render_blended_glyph_w</a> (const <a class="el" href="namespacecen.html#a1fb46aea219562a15ba1dd7fb83b7fe3">unicode32_t</a> glyph, const <a class="el" href="classcen_1_1color.html">color</a> &amp;fg) const -&gt; <a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a></td></tr>
 <tr class="separator:a4da313909ef3710b147263e663a1b106"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Measurement functions</h2></td></tr>
-<tr class="memitem:a3322b92561bc4ad0aac2a1c437f3988c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a3322b92561bc4ad0aac2a1c437f3988c">calc_size</a> (const char *str) const noexcept -&gt; std::optional&lt; <a class="el" href="group__math.html#gafe9a20175fe4b1a7e241b8c057a65c2d">iarea</a> &gt;</td></tr>
-<tr class="memdesc:a3322b92561bc4ad0aac2a1c437f3988c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size of a string if it was rendered using the font.  <a href="classcen_1_1font.html#a3322b92561bc4ad0aac2a1c437f3988c">More...</a><br /></td></tr>
+<tr class="memitem:a3322b92561bc4ad0aac2a1c437f3988c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a3322b92561bc4ad0aac2a1c437f3988c">calc_size</a> (const char *str) const noexcept -&gt; std::optional&lt; <a class="el" href="namespacecen.html#afe9a20175fe4b1a7e241b8c057a65c2d">iarea</a> &gt;</td></tr>
 <tr class="separator:a3322b92561bc4ad0aac2a1c437f3988c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a446664cd52fc4bd93d4f54f4240e85d7"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a446664cd52fc4bd93d4f54f4240e85d7">calc_size</a> (const std::string &amp;str) const noexcept -&gt; std::optional&lt; <a class="el" href="group__math.html#gafe9a20175fe4b1a7e241b8c057a65c2d">iarea</a> &gt;</td></tr>
-<tr class="memdesc:a446664cd52fc4bd93d4f54f4240e85d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size of a string if it was rendered using the font.  <a href="classcen_1_1font.html#a446664cd52fc4bd93d4f54f4240e85d7">More...</a><br /></td></tr>
+<tr class="memitem:a446664cd52fc4bd93d4f54f4240e85d7"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a446664cd52fc4bd93d4f54f4240e85d7">calc_size</a> (const std::string &amp;str) const noexcept -&gt; std::optional&lt; <a class="el" href="namespacecen.html#afe9a20175fe4b1a7e241b8c057a65c2d">iarea</a> &gt;</td></tr>
 <tr class="separator:a446664cd52fc4bd93d4f54f4240e85d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae24f32873b0dd0d2198b32b4c3e9be80"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#ae24f32873b0dd0d2198b32b4c3e9be80">measure_text</a> (const char *str, const int width) const noexcept -&gt; std::optional&lt; <a class="el" href="structcen_1_1font_1_1measure__result.html">measure_result</a> &gt;</td></tr>
-<tr class="memdesc:ae24f32873b0dd0d2198b32b4c3e9be80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Measures a string without rendering it.  <a href="classcen_1_1font.html#ae24f32873b0dd0d2198b32b4c3e9be80">More...</a><br /></td></tr>
 <tr class="separator:ae24f32873b0dd0d2198b32b4c3e9be80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad343b684fe29a099ecd7dc6b513d1e31"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#ad343b684fe29a099ecd7dc6b513d1e31">measure_utf8</a> (const char *str, const int width) const noexcept -&gt; std::optional&lt; <a class="el" href="structcen_1_1font_1_1measure__result.html">measure_result</a> &gt;</td></tr>
-<tr class="memdesc:ad343b684fe29a099ecd7dc6b513d1e31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Measures a string without rendering it.  <a href="classcen_1_1font.html#ad343b684fe29a099ecd7dc6b513d1e31">More...</a><br /></td></tr>
 <tr class="separator:ad343b684fe29a099ecd7dc6b513d1e31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a720be83291b379d5da412fc8c3b3039a"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a720be83291b379d5da412fc8c3b3039a">measure_unicode</a> (const <a class="el" href="classcen_1_1unicode__string.html">unicode_string</a> &amp;str, const int width) const noexcept -&gt; std::optional&lt; <a class="el" href="structcen_1_1font_1_1measure__result.html">measure_result</a> &gt;</td></tr>
-<tr class="memdesc:a720be83291b379d5da412fc8c3b3039a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Measures a string without rendering it.  <a href="classcen_1_1font.html#a720be83291b379d5da412fc8c3b3039a">More...</a><br /></td></tr>
 <tr class="separator:a720be83291b379d5da412fc8c3b3039a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">String rendering functions</h2></td></tr>
-<tr class="memitem:aeb9a7c39ec635380b464711c0804487a"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#aeb9a7c39ec635380b464711c0804487a">render_blended</a> (const char *str, const <a class="el" href="classcen_1_1color.html">color</a> &amp;fg) const -&gt; <a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a></td></tr>
+<tr class="memitem:aeb9a7c39ec635380b464711c0804487a"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#aeb9a7c39ec635380b464711c0804487a">render_blended</a> (const char *str, const <a class="el" href="classcen_1_1color.html">color</a> &amp;fg) const -&gt; <a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a></td></tr>
 <tr class="separator:aeb9a7c39ec635380b464711c0804487a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5990575f5ee1a0a1b4ea12a8660dd5c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#ab5990575f5ee1a0a1b4ea12a8660dd5c">render_blended_utf8</a> (const char *str, const <a class="el" href="classcen_1_1color.html">color</a> &amp;fg) const -&gt; <a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a></td></tr>
+<tr class="memitem:ab5990575f5ee1a0a1b4ea12a8660dd5c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#ab5990575f5ee1a0a1b4ea12a8660dd5c">render_blended_utf8</a> (const char *str, const <a class="el" href="classcen_1_1color.html">color</a> &amp;fg) const -&gt; <a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a></td></tr>
 <tr class="separator:ab5990575f5ee1a0a1b4ea12a8660dd5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7c41fbf222cb841a68829e20362a686"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#ad7c41fbf222cb841a68829e20362a686">render_blended_uni</a> (const <a class="el" href="classcen_1_1unicode__string.html">unicode_string</a> &amp;str, const <a class="el" href="classcen_1_1color.html">color</a> &amp;fg) const -&gt; <a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a></td></tr>
+<tr class="memitem:ad7c41fbf222cb841a68829e20362a686"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#ad7c41fbf222cb841a68829e20362a686">render_blended_uni</a> (const <a class="el" href="classcen_1_1unicode__string.html">unicode_string</a> &amp;str, const <a class="el" href="classcen_1_1color.html">color</a> &amp;fg) const -&gt; <a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a></td></tr>
 <tr class="separator:ad7c41fbf222cb841a68829e20362a686"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35a5834e04b0a41202ec8977b75abb86"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a35a5834e04b0a41202ec8977b75abb86">render_solid</a> (const char *str, const <a class="el" href="classcen_1_1color.html">color</a> &amp;fg) const -&gt; <a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a></td></tr>
+<tr class="memitem:a35a5834e04b0a41202ec8977b75abb86"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a35a5834e04b0a41202ec8977b75abb86">render_solid</a> (const char *str, const <a class="el" href="classcen_1_1color.html">color</a> &amp;fg) const -&gt; <a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a></td></tr>
 <tr class="separator:a35a5834e04b0a41202ec8977b75abb86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af901b4907bb73540c97406071d8beaa5"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#af901b4907bb73540c97406071d8beaa5">render_solid_utf8</a> (const char *str, const <a class="el" href="classcen_1_1color.html">color</a> &amp;fg) const -&gt; <a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a></td></tr>
+<tr class="memitem:af901b4907bb73540c97406071d8beaa5"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#af901b4907bb73540c97406071d8beaa5">render_solid_utf8</a> (const char *str, const <a class="el" href="classcen_1_1color.html">color</a> &amp;fg) const -&gt; <a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a></td></tr>
 <tr class="separator:af901b4907bb73540c97406071d8beaa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae966d9455506fcc1163469439a90f73d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#ae966d9455506fcc1163469439a90f73d">render_solid_uni</a> (const <a class="el" href="classcen_1_1unicode__string.html">unicode_string</a> &amp;str, const <a class="el" href="classcen_1_1color.html">color</a> &amp;fg) const -&gt; <a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a></td></tr>
+<tr class="memitem:ae966d9455506fcc1163469439a90f73d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#ae966d9455506fcc1163469439a90f73d">render_solid_uni</a> (const <a class="el" href="classcen_1_1unicode__string.html">unicode_string</a> &amp;str, const <a class="el" href="classcen_1_1color.html">color</a> &amp;fg) const -&gt; <a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a></td></tr>
 <tr class="separator:ae966d9455506fcc1163469439a90f73d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a344ded54cc05bb16cab51e5a1969def6"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a344ded54cc05bb16cab51e5a1969def6">render_shaded</a> (const char *str, const <a class="el" href="classcen_1_1color.html">color</a> &amp;fg, const <a class="el" href="classcen_1_1color.html">color</a> &amp;bg) const -&gt; <a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a></td></tr>
+<tr class="memitem:a344ded54cc05bb16cab51e5a1969def6"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a344ded54cc05bb16cab51e5a1969def6">render_shaded</a> (const char *str, const <a class="el" href="classcen_1_1color.html">color</a> &amp;fg, const <a class="el" href="classcen_1_1color.html">color</a> &amp;bg) const -&gt; <a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a></td></tr>
 <tr class="separator:a344ded54cc05bb16cab51e5a1969def6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac85f9faa8a2cfb78494d64a43f5b72cb"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#ac85f9faa8a2cfb78494d64a43f5b72cb">render_shaded_utf8</a> (const char *str, const <a class="el" href="classcen_1_1color.html">color</a> &amp;fg, const <a class="el" href="classcen_1_1color.html">color</a> &amp;bg) const -&gt; <a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a></td></tr>
+<tr class="memitem:ac85f9faa8a2cfb78494d64a43f5b72cb"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#ac85f9faa8a2cfb78494d64a43f5b72cb">render_shaded_utf8</a> (const char *str, const <a class="el" href="classcen_1_1color.html">color</a> &amp;fg, const <a class="el" href="classcen_1_1color.html">color</a> &amp;bg) const -&gt; <a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a></td></tr>
 <tr class="separator:ac85f9faa8a2cfb78494d64a43f5b72cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ad732aae7515acbcbebda76c49dd60c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a4ad732aae7515acbcbebda76c49dd60c">render_shaded_uni</a> (const <a class="el" href="classcen_1_1unicode__string.html">unicode_string</a> &amp;str, const <a class="el" href="classcen_1_1color.html">color</a> &amp;fg, const <a class="el" href="classcen_1_1color.html">color</a> &amp;bg) const -&gt; <a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a></td></tr>
+<tr class="memitem:a4ad732aae7515acbcbebda76c49dd60c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a4ad732aae7515acbcbebda76c49dd60c">render_shaded_uni</a> (const <a class="el" href="classcen_1_1unicode__string.html">unicode_string</a> &amp;str, const <a class="el" href="classcen_1_1color.html">color</a> &amp;fg, const <a class="el" href="classcen_1_1color.html">color</a> &amp;bg) const -&gt; <a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a></td></tr>
 <tr class="separator:a4ad732aae7515acbcbebda76c49dd60c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26ba00972f33086b6cc8e8c607aca304"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a26ba00972f33086b6cc8e8c607aca304">render_blended_wrapped</a> (const char *str, const <a class="el" href="classcen_1_1color.html">color</a> &amp;fg, const <a class="el" href="group__common.html#gae847b0ef07964fb6bdb468179580dc11">uint32</a> wrap) const -&gt; <a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a></td></tr>
+<tr class="memitem:a26ba00972f33086b6cc8e8c607aca304"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a26ba00972f33086b6cc8e8c607aca304">render_blended_wrapped</a> (const char *str, const <a class="el" href="classcen_1_1color.html">color</a> &amp;fg, const <a class="el" href="namespacecen.html#ae847b0ef07964fb6bdb468179580dc11">uint32</a> wrap) const -&gt; <a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a></td></tr>
 <tr class="separator:a26ba00972f33086b6cc8e8c607aca304"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3b17825fab05c14c101e1a0b645deef"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#ad3b17825fab05c14c101e1a0b645deef">render_blended_wrapped_utf8</a> (const char *str, const <a class="el" href="classcen_1_1color.html">color</a> &amp;fg, const <a class="el" href="group__common.html#gae847b0ef07964fb6bdb468179580dc11">uint32</a> wrap) const -&gt; <a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a></td></tr>
+<tr class="memitem:ad3b17825fab05c14c101e1a0b645deef"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#ad3b17825fab05c14c101e1a0b645deef">render_blended_wrapped_utf8</a> (const char *str, const <a class="el" href="classcen_1_1color.html">color</a> &amp;fg, const <a class="el" href="namespacecen.html#ae847b0ef07964fb6bdb468179580dc11">uint32</a> wrap) const -&gt; <a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a></td></tr>
 <tr class="separator:ad3b17825fab05c14c101e1a0b645deef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeca6ae1ebd6c060fbc2bb89da4f3fc68"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#aeca6ae1ebd6c060fbc2bb89da4f3fc68">render_blended_wrapped_uni</a> (const <a class="el" href="classcen_1_1unicode__string.html">unicode_string</a> &amp;str, const <a class="el" href="classcen_1_1color.html">color</a> &amp;fg, const <a class="el" href="group__common.html#gae847b0ef07964fb6bdb468179580dc11">uint32</a> wrap) const -&gt; <a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a></td></tr>
+<tr class="memitem:aeca6ae1ebd6c060fbc2bb89da4f3fc68"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#aeca6ae1ebd6c060fbc2bb89da4f3fc68">render_blended_wrapped_uni</a> (const <a class="el" href="classcen_1_1unicode__string.html">unicode_string</a> &amp;str, const <a class="el" href="classcen_1_1color.html">color</a> &amp;fg, const <a class="el" href="namespacecen.html#ae847b0ef07964fb6bdb468179580dc11">uint32</a> wrap) const -&gt; <a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a></td></tr>
 <tr class="separator:aeca6ae1ebd6c060fbc2bb89da4f3fc68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96a548acd38b643f0d005d74906e4f35"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a96a548acd38b643f0d005d74906e4f35">render_solid_wrapped</a> (const char *str, const <a class="el" href="classcen_1_1color.html">color</a> &amp;fg, const <a class="el" href="group__common.html#gae847b0ef07964fb6bdb468179580dc11">uint32</a> wrap) const -&gt; <a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a></td></tr>
+<tr class="memitem:a96a548acd38b643f0d005d74906e4f35"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a96a548acd38b643f0d005d74906e4f35">render_solid_wrapped</a> (const char *str, const <a class="el" href="classcen_1_1color.html">color</a> &amp;fg, const <a class="el" href="namespacecen.html#ae847b0ef07964fb6bdb468179580dc11">uint32</a> wrap) const -&gt; <a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a></td></tr>
 <tr class="separator:a96a548acd38b643f0d005d74906e4f35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fda91ae2a518a9a49483832bbd4bc5b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a7fda91ae2a518a9a49483832bbd4bc5b">render_solid_wrapped_utf8</a> (const char *str, const <a class="el" href="classcen_1_1color.html">color</a> &amp;fg, const <a class="el" href="group__common.html#gae847b0ef07964fb6bdb468179580dc11">uint32</a> wrap) const -&gt; <a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a></td></tr>
+<tr class="memitem:a7fda91ae2a518a9a49483832bbd4bc5b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a7fda91ae2a518a9a49483832bbd4bc5b">render_solid_wrapped_utf8</a> (const char *str, const <a class="el" href="classcen_1_1color.html">color</a> &amp;fg, const <a class="el" href="namespacecen.html#ae847b0ef07964fb6bdb468179580dc11">uint32</a> wrap) const -&gt; <a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a></td></tr>
 <tr class="separator:a7fda91ae2a518a9a49483832bbd4bc5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8379400bc09130936e7747d3a05768b5"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a8379400bc09130936e7747d3a05768b5">render_solid_wrapped_uni</a> (const <a class="el" href="classcen_1_1unicode__string.html">unicode_string</a> &amp;str, const <a class="el" href="classcen_1_1color.html">color</a> &amp;fg, const <a class="el" href="group__common.html#gae847b0ef07964fb6bdb468179580dc11">uint32</a> wrap) const -&gt; <a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a></td></tr>
+<tr class="memitem:a8379400bc09130936e7747d3a05768b5"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a8379400bc09130936e7747d3a05768b5">render_solid_wrapped_uni</a> (const <a class="el" href="classcen_1_1unicode__string.html">unicode_string</a> &amp;str, const <a class="el" href="classcen_1_1color.html">color</a> &amp;fg, const <a class="el" href="namespacecen.html#ae847b0ef07964fb6bdb468179580dc11">uint32</a> wrap) const -&gt; <a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a></td></tr>
 <tr class="separator:a8379400bc09130936e7747d3a05768b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addf3f37d29435ef74d254f1cada8408b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#addf3f37d29435ef74d254f1cada8408b">render_shaded_wrapped</a> (const char *str, const <a class="el" href="classcen_1_1color.html">color</a> &amp;fg, const <a class="el" href="classcen_1_1color.html">color</a> &amp;bg, const <a class="el" href="group__common.html#gae847b0ef07964fb6bdb468179580dc11">uint32</a> wrap) const -&gt; <a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a></td></tr>
+<tr class="memitem:addf3f37d29435ef74d254f1cada8408b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#addf3f37d29435ef74d254f1cada8408b">render_shaded_wrapped</a> (const char *str, const <a class="el" href="classcen_1_1color.html">color</a> &amp;fg, const <a class="el" href="classcen_1_1color.html">color</a> &amp;bg, const <a class="el" href="namespacecen.html#ae847b0ef07964fb6bdb468179580dc11">uint32</a> wrap) const -&gt; <a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a></td></tr>
 <tr class="separator:addf3f37d29435ef74d254f1cada8408b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b110e67a65bc9b1145c708f66b7b285"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a3b110e67a65bc9b1145c708f66b7b285">render_shaded_wrapped_utf8</a> (const char *str, const <a class="el" href="classcen_1_1color.html">color</a> &amp;fg, const <a class="el" href="classcen_1_1color.html">color</a> &amp;bg, const <a class="el" href="group__common.html#gae847b0ef07964fb6bdb468179580dc11">uint32</a> wrap) const -&gt; <a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a></td></tr>
+<tr class="memitem:a3b110e67a65bc9b1145c708f66b7b285"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a3b110e67a65bc9b1145c708f66b7b285">render_shaded_wrapped_utf8</a> (const char *str, const <a class="el" href="classcen_1_1color.html">color</a> &amp;fg, const <a class="el" href="classcen_1_1color.html">color</a> &amp;bg, const <a class="el" href="namespacecen.html#ae847b0ef07964fb6bdb468179580dc11">uint32</a> wrap) const -&gt; <a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a></td></tr>
 <tr class="separator:a3b110e67a65bc9b1145c708f66b7b285"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a387f77cc72fc3209903deeab2a8ae163"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a387f77cc72fc3209903deeab2a8ae163">render_shaded_wrapped_uni</a> (const <a class="el" href="classcen_1_1unicode__string.html">unicode_string</a> &amp;str, const <a class="el" href="classcen_1_1color.html">color</a> &amp;fg, const <a class="el" href="classcen_1_1color.html">color</a> &amp;bg, const <a class="el" href="group__common.html#gae847b0ef07964fb6bdb468179580dc11">uint32</a> wrap) const -&gt; <a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a></td></tr>
+<tr class="memitem:a387f77cc72fc3209903deeab2a8ae163"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a387f77cc72fc3209903deeab2a8ae163">render_shaded_wrapped_uni</a> (const <a class="el" href="classcen_1_1unicode__string.html">unicode_string</a> &amp;str, const <a class="el" href="classcen_1_1color.html">color</a> &amp;fg, const <a class="el" href="classcen_1_1color.html">color</a> &amp;bg, const <a class="el" href="namespacecen.html#ae847b0ef07964fb6bdb468179580dc11">uint32</a> wrap) const -&gt; <a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a></td></tr>
 <tr class="separator:a387f77cc72fc3209903deeab2a8ae163"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f3a488c74af044903a926bf0e009f50"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font.html#a0f3a488c74af044903a926bf0e009f50">get</a> () const noexcept -&gt; TTF_Font *</td></tr>
+<tr class="separator:a0f3a488c74af044903a926bf0e009f50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Represents a TrueType font. </p>
+<div class="textblock"><p >Represents a TrueType font.</p>
 <p >This class provides information about TrueType fonts, and can also be used for rendering glyphs and strings. There are also various utility classes related to dealing with fonts, in order to easily deal with fonts of different sizes and more efficient text rendering.</p>
-<p >An overview of this API can be viewed <a class="el" href="page-example-font.html">here</a>.</p>
-<dl class="section see"><dt>See also</dt><dd><code><a class="el" href="classcen_1_1font__cache.html" title="Provides efficient font rendering.">font_cache</a></code> </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classcen_1_1font__cache.html">font_cache</a> </dd>
 <dd>
-<code>font_bundle</code> </dd></dl>
+font_bundle </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ade3c5a202919b639c8bc3b7aab6c7785" name="ade3c5a202919b639c8bc3b7aab6c7785"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ade3c5a202919b639c8bc3b7aab6c7785">&#9670;&nbsp;</a></span>font() <span class="overload">[1/4]</span></h2>
@@ -358,22 +287,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Opens a font. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">file</td><td>the file path of the font file. </td></tr>
-    <tr><td class="paramname">size</td><td>the point size of the font.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">exception</td><td>if the font size is not greater than zero. </td></tr>
-    <tr><td class="paramname"><a class="el" href="classcen_1_1ttf__error.html" title="Represents an error related to the core SDL_ttf library.">ttf_error</a></td><td>if the font cannot be opened. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -410,22 +323,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Opens a font. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">file</td><td>the file path of the font file. </td></tr>
-    <tr><td class="paramname">size</td><td>the point size of the font.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">exception</td><td>if the font size is not greater than zero. </td></tr>
-    <tr><td class="paramname"><a class="el" href="classcen_1_1ttf__error.html" title="Represents an error related to the core SDL_ttf library.">ttf_error</a></td><td>if the font cannot be opened. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -469,24 +366,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Opens a font with the specified DPI settings. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">file</td><td>the path to the source font file. </td></tr>
-    <tr><td class="paramname">size</td><td>the point size of the font. </td></tr>
-    <tr><td class="paramname">dpi</td><td>the DPI information.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">exception</td><td>if the font size is invalid. </td></tr>
-    <tr><td class="paramname"><a class="el" href="classcen_1_1ttf__error.html" title="Represents an error related to the core SDL_ttf library.">ttf_error</a></td><td>if the font cannot be opened.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function requires at least SDL_ttf 2.0.18 </dd></dl>
-
 </div>
 </div>
 <a id="aca32c606c6d902b16fd5706db8d48ad0" name="aca32c606c6d902b16fd5706db8d48ad0"></a>
@@ -529,24 +408,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Opens a font with the specified DPI settings. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">file</td><td>the path to the source font file. </td></tr>
-    <tr><td class="paramname">size</td><td>the point size of the font. </td></tr>
-    <tr><td class="paramname">dpi</td><td>the DPI information.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">exception</td><td>if the font size is invalid. </td></tr>
-    <tr><td class="paramname"><a class="el" href="classcen_1_1ttf__error.html" title="Represents an error related to the core SDL_ttf library.">ttf_error</a></td><td>if the font cannot be opened.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function requires at least SDL_ttf 2.0.18 </dd></dl>
-
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -574,16 +435,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Sets the size of the font dynamically. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">size</td><td>the new point size.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><code>success</code> if the size was successfully changed; <code>failure</code> otherwise.</dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function requires at least SDL_ttf 2.0.18 </dd></dl>
 
 </div>
 </div>
@@ -622,17 +473,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Sets the size of the font dynamically. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">size</td><td>the new point size. </td></tr>
-    <tr><td class="paramname">dpi</td><td>the DPI size information.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><code>success</code> if the size was successfully changed; <code>failure</code> otherwise.</dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function requires at least SDL_ttf 2.0.18 </dd></dl>
-
 </div>
 </div>
 <a id="a7ebccaed2b4595fc3f53f64b1d5511ff" name="a7ebccaed2b4595fc3f53f64b1d5511ff"></a>
@@ -657,8 +497,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Resets the style of the font. </p>
 
 </div>
 </div>
@@ -686,14 +524,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Sets whether the font is bold. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">bold</td><td><code>true</code> if the font should be bold; <code>false</code> otherwise. </td></tr>
-  </table>
-  </dd>
-</dl>
-
 </div>
 </div>
 <a id="a478416f3ec9ba7105eb8fa1a8358c4a3" name="a478416f3ec9ba7105eb8fa1a8358c4a3"></a>
@@ -719,14 +549,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Sets whether the font is italic. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">italic</td><td><code>true</code> if the font should be italic; <code>false</code> otherwise. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -754,14 +576,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Sets whether the font is underlined. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">underlined</td><td><code>true</code> if the font should be underlined; <code>false</code> otherwise. </td></tr>
-  </table>
-  </dd>
-</dl>
-
 </div>
 </div>
 <a id="aa4aa2bd91a20c099c52e9e63872f697c" name="aa4aa2bd91a20c099c52e9e63872f697c"></a>
@@ -787,14 +601,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Sets whether the font is strikethrough. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">strikethrough</td><td><code>true</code> if the font should be strikethrough; <code>false</code> otherwise. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -822,14 +628,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Sets whether the font can make use of kerning. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">kerning</td><td><code>true</code> if kerning is allowed; <code>false</code> otherwise. </td></tr>
-  </table>
-  </dd>
-</dl>
-
 </div>
 </div>
 <a id="ac7c6868f7c157120af4d3884f26b0ebe" name="ac7c6868f7c157120af4d3884f26b0ebe"></a>
@@ -856,14 +654,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Sets the outline size of the font. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">outline</td><td>the outline size; use zero to disable the outline. </td></tr>
-  </table>
-  </dd>
-</dl>
-
 </div>
 </div>
 <a id="ace47640e56c8313a97ceff112a8e3d40" name="ace47640e56c8313a97ceff112a8e3d40"></a>
@@ -878,7 +668,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void set_hinting </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__font.html#ga48bc1fb9f75e812c78eb00a97a847671">font_hint</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#a48bc1fb9f75e812c78eb00a97a847671">font_hint</a>&#160;</td>
           <td class="paramname"><em>hint</em></td><td>)</td>
           <td></td>
         </tr>
@@ -889,14 +679,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Sets the hint used by the font. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">hint</td><td>the hint that will be used. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -924,9 +706,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Indicates whether the font is bold. </p>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the font is bold; <code>false</code> otherwise. </dd></dl>
-
 </div>
 </div>
 <a id="abc6ee1f5296bea393c230b84af11b377" name="abc6ee1f5296bea393c230b84af11b377"></a>
@@ -952,9 +731,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Indicates whether the font is italic. </p>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the font is italic; <code>false</code> otherwise. </dd></dl>
 
 </div>
 </div>
@@ -982,9 +758,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Indicates whether the font is underlined. </p>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the font is underlined; <code>false</code> otherwise. </dd></dl>
-
 </div>
 </div>
 <a id="a555d4bd04fefb6415b5bbc93a841079b" name="a555d4bd04fefb6415b5bbc93a841079b"></a>
@@ -1011,9 +784,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Indicates whether the font is strikethrough. </p>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the font is strikethrough; <code>false</code> otherwise. </dd></dl>
-
 </div>
 </div>
 <a id="ad8705b85ad8600f28320b56be54bed38" name="ad8705b85ad8600f28320b56be54bed38"></a>
@@ -1038,9 +808,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Indicates whether the font is outlined. </p>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the font is outlined; <code>false</code> otherwise. </dd></dl>
 
 </div>
 </div>
@@ -1068,9 +835,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Indicates whether the font can make use of kerning. </p>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the kerning is allowed; <code>false</code> otherwise. </dd></dl>
-
 </div>
 </div>
 <a id="a8ceea4513f77046317872723041b825f" name="a8ceea4513f77046317872723041b825f"></a>
@@ -1097,9 +861,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the size of the font outline. </p>
-<dl class="section return"><dt>Returns</dt><dd>the outline size. </dd></dl>
-
 </div>
 </div>
 <a id="ac494aa49da81e7399e63729754591f77" name="ac494aa49da81e7399e63729754591f77"></a>
@@ -1115,7 +876,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">auto hinting </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const -&gt; <a class="el" href="group__font.html#ga48bc1fb9f75e812c78eb00a97a847671">font_hint</a>
+          <td> const -&gt; <a class="el" href="namespacecen.html#a48bc1fb9f75e812c78eb00a97a847671">font_hint</a>
   </td>
         </tr>
       </table>
@@ -1125,9 +886,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the font hinting. </p>
-<dl class="section return"><dt>Returns</dt><dd>the current font hint. </dd></dl>
 
 </div>
 </div>
@@ -1155,9 +913,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Indicates whether the font is fixed width. </p>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the font is fixed width; <code>false</code> otherwise. </dd></dl>
-
 </div>
 </div>
 <a id="ac0756ee0d2af36d29fca34224c2f3d21" name="ac0756ee0d2af36d29fca34224c2f3d21"></a>
@@ -1182,9 +937,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the maximum height of a character in the font. </p>
-<dl class="section return"><dt>Returns</dt><dd>the maximum character height. </dd></dl>
 
 </div>
 </div>
@@ -1211,9 +963,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the offset from the baseline to the bottom of the font characters. </p>
-<dl class="section return"><dt>Returns</dt><dd>the "descent" value of the font. </dd></dl>
-
 </div>
 </div>
 <a id="a469c9a8a9702292885c94370e4c9bcc4" name="a469c9a8a9702292885c94370e4c9bcc4"></a>
@@ -1238,9 +987,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the offset from the baseline to the top of the font characters. </p>
-<dl class="section return"><dt>Returns</dt><dd>the "ascent" value of the font. </dd></dl>
 
 </div>
 </div>
@@ -1268,9 +1014,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the suggested vertical spacing between lines of rendered text in the font. </p>
-<dl class="section return"><dt>Returns</dt><dd>the vertical spacing between lines of text in the font. </dd></dl>
-
 </div>
 </div>
 <a id="ae2b72738b1ca3d5f958c6d2d17dccaeb" name="ae2b72738b1ca3d5f958c6d2d17dccaeb"></a>
@@ -1296,9 +1039,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the number of available font faces. </p>
-<dl class="section return"><dt>Returns</dt><dd>the amount of font faces. </dd></dl>
 
 </div>
 </div>
@@ -1326,9 +1066,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the name of the font family. </p>
-<dl class="section return"><dt>Returns</dt><dd>the font family name; a null string is returned if something goes wrong. </dd></dl>
-
 </div>
 </div>
 <a id="a52bdb2defa4d0fc1ba74988c1fd5a724" name="a52bdb2defa4d0fc1ba74988c1fd5a724"></a>
@@ -1355,9 +1092,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the name of the font face style. </p>
-<dl class="section return"><dt>Returns</dt><dd>the font face style name; a null string is returned if it is not available. </dd></dl>
-
 </div>
 </div>
 <a id="a0d42313bd19a0bcdafb8efd7696bb853" name="a0d42313bd19a0bcdafb8efd7696bb853"></a>
@@ -1383,9 +1117,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the size of the font. </p>
-<dl class="section return"><dt>Returns</dt><dd>the size of the font. </dd></dl>
-
 </div>
 </div>
 <a id="ae5fce2a106ccbf82f4a7aff9cef870b7" name="ae5fce2a106ccbf82f4a7aff9cef870b7"></a>
@@ -1400,13 +1131,13 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">auto get_kerning </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__common.html#gac3131ee180db2fcab120011a74d12f47">unicode_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#ac3131ee180db2fcab120011a74d12f47">unicode_t</a>&#160;</td>
           <td class="paramname"><em>previous</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__common.html#gac3131ee180db2fcab120011a74d12f47">unicode_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#ac3131ee180db2fcab120011a74d12f47">unicode_t</a>&#160;</td>
           <td class="paramname"><em>current</em>&#160;</td>
         </tr>
         <tr>
@@ -1422,16 +1153,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the kerning amount between two glyphs. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">previous</td><td>the previous glyph. </td></tr>
-    <tr><td class="paramname">current</td><td>the current glyph.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the kerning amount between the two glyphs. </dd></dl>
 
 </div>
 </div>
@@ -1447,7 +1168,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">auto is_glyph_provided </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__common.html#gac3131ee180db2fcab120011a74d12f47">unicode_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#ac3131ee180db2fcab120011a74d12f47">unicode_t</a>&#160;</td>
           <td class="paramname"><em>glyph</em></td><td>)</td>
           <td> const -&gt; bool
   </td>
@@ -1459,15 +1180,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Indicates whether a glyph is provided by the font. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">glyph</td><td>the glyph that will be checked.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the glyph is provided; <code>false</code> otherwise. </dd></dl>
 
 </div>
 </div>
@@ -1483,7 +1195,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">auto get_metrics </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__common.html#gac3131ee180db2fcab120011a74d12f47">unicode_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#ac3131ee180db2fcab120011a74d12f47">unicode_t</a>&#160;</td>
           <td class="paramname"><em>glyph</em></td><td>)</td>
           <td> const -&gt; std::optional&lt;<a class="el" href="structcen_1_1glyph__metrics.html">glyph_metrics</a>&gt;
   </td>
@@ -1495,15 +1207,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the metrics of a specific glyph. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">glyph</td><td>the glyph that will be queried.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the metrics of the glyph; an empty optional is returned if it is unavailable. </dd></dl>
 
 </div>
 </div>
@@ -1519,13 +1222,13 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">auto get_kerning_w </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__common.html#ga1fb46aea219562a15ba1dd7fb83b7fe3">unicode32_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#a1fb46aea219562a15ba1dd7fb83b7fe3">unicode32_t</a>&#160;</td>
           <td class="paramname"><em>previous</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__common.html#ga1fb46aea219562a15ba1dd7fb83b7fe3">unicode32_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#a1fb46aea219562a15ba1dd7fb83b7fe3">unicode32_t</a>&#160;</td>
           <td class="paramname"><em>current</em>&#160;</td>
         </tr>
         <tr>
@@ -1542,17 +1245,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the kerning amount between two glyphs. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">previous</td><td>the previous glyph. </td></tr>
-    <tr><td class="paramname">current</td><td>the current glyph.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the kerning amount between the two glyphs. </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function requires at least SDL_ttf 2.0.18 </dd></dl>
-
 </div>
 </div>
 <a id="af1e94f46bc3152879b978fc2f316af9c" name="af1e94f46bc3152879b978fc2f316af9c"></a>
@@ -1567,7 +1259,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">auto is_glyph_provided_w </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__common.html#ga1fb46aea219562a15ba1dd7fb83b7fe3">unicode32_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#a1fb46aea219562a15ba1dd7fb83b7fe3">unicode32_t</a>&#160;</td>
           <td class="paramname"><em>glyph</em></td><td>)</td>
           <td> const -&gt; bool
   </td>
@@ -1579,16 +1271,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Indicates whether a glyph is provided by the font. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">glyph</td><td>the glyph that will be checked.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the glyph is provided; <code>false</code> otherwise. </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function requires at least SDL_ttf 2.0.18 </dd></dl>
 
 </div>
 </div>
@@ -1604,7 +1286,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">auto get_metrics_w </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__common.html#ga1fb46aea219562a15ba1dd7fb83b7fe3">unicode32_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#a1fb46aea219562a15ba1dd7fb83b7fe3">unicode32_t</a>&#160;</td>
           <td class="paramname"><em>glyph</em></td><td>)</td>
           <td> const -&gt; std::optional&lt;<a class="el" href="structcen_1_1glyph__metrics.html">glyph_metrics</a>&gt;
   </td>
@@ -1616,16 +1298,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the metrics of a specific glyph. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">glyph</td><td>the glyph that will be queried.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the metrics of the glyph; an empty optional is returned if it is unavailable. </dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function requires at least SDL_ttf 2.0.18 </dd></dl>
 
 </div>
 </div>
@@ -1654,16 +1326,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Sets whether SDF (Signed Distance Field) rendering is enabled. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">enable</td><td><code>true</code> to enable SDF rendering; <code>false</code> otherwise.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><code>success</code> if nothing goes wrong; <code>failure</code> otherwise.</dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function requires at least SDL_ttf 2.0.18 </dd></dl>
-
 </div>
 </div>
 <a id="a09878d20bb0a7f085a8ef13c86787480" name="a09878d20bb0a7f085a8ef13c86787480"></a>
@@ -1690,10 +1352,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Indicates whether SDF rendering is enabled. </p>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if SDF rendering is enabled; <code>false</code> otherwise.</dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function requires at least SDL_ttf 2.0.18 </dd></dl>
-
 </div>
 </div>
 <a id="a4cc00534d2e199547d66407996b6515c" name="a4cc00534d2e199547d66407996b6515c"></a>
@@ -1708,7 +1366,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">auto render_solid_glyph </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__common.html#gac3131ee180db2fcab120011a74d12f47">unicode_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#ac3131ee180db2fcab120011a74d12f47">unicode_t</a>&#160;</td>
           <td class="paramname"><em>glyph</em>, </td>
         </tr>
         <tr>
@@ -1720,7 +1378,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const -&gt; <a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a>
+          <td></td><td> const -&gt; <a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a>
   </td>
         </tr>
       </table>
@@ -1730,22 +1388,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Renders a single solid glyph. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">glyph</td><td>the glyph that will be rendered. </td></tr>
-    <tr><td class="paramname">fg</td><td>the glyph foreground color.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the rendered glyph.</dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="classcen_1_1ttf__error.html" title="Represents an error related to the core SDL_ttf library.">ttf_error</a></td><td>if the glyph cannot be rendered. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -1761,7 +1403,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">auto render_shaded_glyph </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__common.html#gac3131ee180db2fcab120011a74d12f47">unicode_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#ac3131ee180db2fcab120011a74d12f47">unicode_t</a>&#160;</td>
           <td class="paramname"><em>glyph</em>, </td>
         </tr>
         <tr>
@@ -1779,7 +1421,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const -&gt; <a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a>
+          <td></td><td> const -&gt; <a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a>
   </td>
         </tr>
       </table>
@@ -1789,23 +1431,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Renders a single shaded glyph. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">glyph</td><td>the glyph that will be rendered. </td></tr>
-    <tr><td class="paramname">fg</td><td>the glyph foreground color. </td></tr>
-    <tr><td class="paramname">bg</td><td>the glyph background color.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the rendered glyph.</dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="classcen_1_1ttf__error.html" title="Represents an error related to the core SDL_ttf library.">ttf_error</a></td><td>if the glyph cannot be rendered. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -1821,7 +1446,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">auto render_blended_glyph </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__common.html#gac3131ee180db2fcab120011a74d12f47">unicode_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#ac3131ee180db2fcab120011a74d12f47">unicode_t</a>&#160;</td>
           <td class="paramname"><em>glyph</em>, </td>
         </tr>
         <tr>
@@ -1833,7 +1458,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const -&gt; <a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a>
+          <td></td><td> const -&gt; <a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a>
   </td>
         </tr>
       </table>
@@ -1843,22 +1468,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Renders a single blended glyph. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">glyph</td><td>the glyph that will be rendered. </td></tr>
-    <tr><td class="paramname">fg</td><td>the glyph foreground color.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the rendered glyph.</dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="classcen_1_1ttf__error.html" title="Represents an error related to the core SDL_ttf library.">ttf_error</a></td><td>if the glyph cannot be rendered. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -1874,7 +1483,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">auto render_solid_glyph_w </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__common.html#ga1fb46aea219562a15ba1dd7fb83b7fe3">unicode32_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#a1fb46aea219562a15ba1dd7fb83b7fe3">unicode32_t</a>&#160;</td>
           <td class="paramname"><em>glyph</em>, </td>
         </tr>
         <tr>
@@ -1886,7 +1495,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const -&gt; <a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a>
+          <td></td><td> const -&gt; <a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a>
   </td>
         </tr>
       </table>
@@ -1896,23 +1505,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Renders a single solid glyph. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">glyph</td><td>the glyph that will be rendered. </td></tr>
-    <tr><td class="paramname">fg</td><td>the glyph foreground color.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the rendered glyph.</dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="classcen_1_1ttf__error.html" title="Represents an error related to the core SDL_ttf library.">ttf_error</a></td><td>if the glyph cannot be rendered. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function requires at least SDL_ttf 2.0.18 </dd></dl>
 
 </div>
 </div>
@@ -1928,7 +1520,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">auto render_shaded_glyph_w </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__common.html#ga1fb46aea219562a15ba1dd7fb83b7fe3">unicode32_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#a1fb46aea219562a15ba1dd7fb83b7fe3">unicode32_t</a>&#160;</td>
           <td class="paramname"><em>glyph</em>, </td>
         </tr>
         <tr>
@@ -1946,7 +1538,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const -&gt; <a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a>
+          <td></td><td> const -&gt; <a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a>
   </td>
         </tr>
       </table>
@@ -1956,24 +1548,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Renders a single shaded glyph. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">glyph</td><td>the glyph that will be rendered. </td></tr>
-    <tr><td class="paramname">fg</td><td>the glyph foreground color. </td></tr>
-    <tr><td class="paramname">bg</td><td>the glyph background color.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the rendered glyph.</dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="classcen_1_1ttf__error.html" title="Represents an error related to the core SDL_ttf library.">ttf_error</a></td><td>if the glyph cannot be rendered. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function requires at least SDL_ttf 2.0.18 </dd></dl>
 
 </div>
 </div>
@@ -1989,7 +1563,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">auto render_blended_glyph_w </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__common.html#ga1fb46aea219562a15ba1dd7fb83b7fe3">unicode32_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#a1fb46aea219562a15ba1dd7fb83b7fe3">unicode32_t</a>&#160;</td>
           <td class="paramname"><em>glyph</em>, </td>
         </tr>
         <tr>
@@ -2001,7 +1575,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const -&gt; <a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a>
+          <td></td><td> const -&gt; <a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a>
   </td>
         </tr>
       </table>
@@ -2011,23 +1585,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Renders a single blended glyph. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">glyph</td><td>the glyph that will be rendered. </td></tr>
-    <tr><td class="paramname">fg</td><td>the glyph foreground color.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the rendered glyph.</dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="classcen_1_1ttf__error.html" title="Represents an error related to the core SDL_ttf library.">ttf_error</a></td><td>if the glyph cannot be rendered. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function requires at least SDL_ttf 2.0.18 </dd></dl>
 
 </div>
 </div>
@@ -2045,7 +1602,7 @@ Public Member Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>str</em></td><td>)</td>
-          <td> const -&gt; std::optional&lt;<a class="el" href="group__math.html#gafe9a20175fe4b1a7e241b8c057a65c2d">iarea</a>&gt;
+          <td> const -&gt; std::optional&lt;<a class="el" href="namespacecen.html#afe9a20175fe4b1a7e241b8c057a65c2d">iarea</a>&gt;
   </td>
         </tr>
       </table>
@@ -2055,15 +1612,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the size of a string if it was rendered using the font. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">str</td><td>the string that will be measured.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the size of the string if it was rendered; an empty optional is returned if something goes wrong. </dd></dl>
 
 </div>
 </div>
@@ -2081,7 +1629,7 @@ Public Member Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>str</em></td><td>)</td>
-          <td> const -&gt; std::optional&lt;<a class="el" href="group__math.html#gafe9a20175fe4b1a7e241b8c057a65c2d">iarea</a>&gt;
+          <td> const -&gt; std::optional&lt;<a class="el" href="namespacecen.html#afe9a20175fe4b1a7e241b8c057a65c2d">iarea</a>&gt;
   </td>
         </tr>
       </table>
@@ -2091,15 +1639,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the size of a string if it was rendered using the font. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">str</td><td>the string that will be measured.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the size of the string if it was rendered; an empty optional is returned if something goes wrong. </dd></dl>
 
 </div>
 </div>
@@ -2138,17 +1677,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Measures a string without rendering it. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">str</td><td>the string that will be measured. </td></tr>
-    <tr><td class="paramname">width</td><td>the maximum allowed width of the rendered string.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the measurement result; an empty optional is returned upon failure.</dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function requires at least SDL_ttf 2.0.18 </dd></dl>
-
 </div>
 </div>
 <a id="ad343b684fe29a099ecd7dc6b513d1e31" name="ad343b684fe29a099ecd7dc6b513d1e31"></a>
@@ -2185,17 +1713,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Measures a string without rendering it. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">str</td><td>the string that will be measured. </td></tr>
-    <tr><td class="paramname">width</td><td>the maximum allowed width of the rendered string.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the measurement result; an empty optional is returned upon failure.</dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function requires at least SDL_ttf 2.0.18 </dd></dl>
 
 </div>
 </div>
@@ -2234,17 +1751,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Measures a string without rendering it. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">str</td><td>the string that will be measured. </td></tr>
-    <tr><td class="paramname">width</td><td>the maximum allowed width of the rendered string.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the measurement result; an empty optional is returned upon failure.</dd></dl>
-<dl class="section remark"><dt>Remarks</dt><dd>This function requires at least SDL_ttf 2.0.18 </dd></dl>
-
 </div>
 </div>
 <a id="aeb9a7c39ec635380b464711c0804487a" name="aeb9a7c39ec635380b464711c0804487a"></a>
@@ -2271,7 +1777,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const -&gt; <a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a>
+          <td></td><td> const -&gt; <a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a>
   </td>
         </tr>
       </table>
@@ -2308,7 +1814,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const -&gt; <a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a>
+          <td></td><td> const -&gt; <a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a>
   </td>
         </tr>
       </table>
@@ -2345,7 +1851,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const -&gt; <a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a>
+          <td></td><td> const -&gt; <a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a>
   </td>
         </tr>
       </table>
@@ -2382,7 +1888,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const -&gt; <a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a>
+          <td></td><td> const -&gt; <a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a>
   </td>
         </tr>
       </table>
@@ -2419,7 +1925,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const -&gt; <a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a>
+          <td></td><td> const -&gt; <a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a>
   </td>
         </tr>
       </table>
@@ -2456,7 +1962,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const -&gt; <a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a>
+          <td></td><td> const -&gt; <a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a>
   </td>
         </tr>
       </table>
@@ -2499,7 +2005,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const -&gt; <a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a>
+          <td></td><td> const -&gt; <a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a>
   </td>
         </tr>
       </table>
@@ -2542,7 +2048,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const -&gt; <a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a>
+          <td></td><td> const -&gt; <a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a>
   </td>
         </tr>
       </table>
@@ -2585,7 +2091,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const -&gt; <a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a>
+          <td></td><td> const -&gt; <a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a>
   </td>
         </tr>
       </table>
@@ -2622,13 +2128,13 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__common.html#gae847b0ef07964fb6bdb468179580dc11">uint32</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#ae847b0ef07964fb6bdb468179580dc11">uint32</a>&#160;</td>
           <td class="paramname"><em>wrap</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const -&gt; <a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a>
+          <td></td><td> const -&gt; <a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a>
   </td>
         </tr>
       </table>
@@ -2665,13 +2171,13 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__common.html#gae847b0ef07964fb6bdb468179580dc11">uint32</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#ae847b0ef07964fb6bdb468179580dc11">uint32</a>&#160;</td>
           <td class="paramname"><em>wrap</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const -&gt; <a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a>
+          <td></td><td> const -&gt; <a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a>
   </td>
         </tr>
       </table>
@@ -2708,13 +2214,13 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__common.html#gae847b0ef07964fb6bdb468179580dc11">uint32</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#ae847b0ef07964fb6bdb468179580dc11">uint32</a>&#160;</td>
           <td class="paramname"><em>wrap</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const -&gt; <a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a>
+          <td></td><td> const -&gt; <a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a>
   </td>
         </tr>
       </table>
@@ -2751,13 +2257,13 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__common.html#gae847b0ef07964fb6bdb468179580dc11">uint32</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#ae847b0ef07964fb6bdb468179580dc11">uint32</a>&#160;</td>
           <td class="paramname"><em>wrap</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const -&gt; <a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a>
+          <td></td><td> const -&gt; <a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a>
   </td>
         </tr>
       </table>
@@ -2794,13 +2300,13 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__common.html#gae847b0ef07964fb6bdb468179580dc11">uint32</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#ae847b0ef07964fb6bdb468179580dc11">uint32</a>&#160;</td>
           <td class="paramname"><em>wrap</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const -&gt; <a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a>
+          <td></td><td> const -&gt; <a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a>
   </td>
         </tr>
       </table>
@@ -2837,13 +2343,13 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__common.html#gae847b0ef07964fb6bdb468179580dc11">uint32</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#ae847b0ef07964fb6bdb468179580dc11">uint32</a>&#160;</td>
           <td class="paramname"><em>wrap</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const -&gt; <a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a>
+          <td></td><td> const -&gt; <a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a>
   </td>
         </tr>
       </table>
@@ -2886,13 +2392,13 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__common.html#gae847b0ef07964fb6bdb468179580dc11">uint32</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#ae847b0ef07964fb6bdb468179580dc11">uint32</a>&#160;</td>
           <td class="paramname"><em>wrap</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const -&gt; <a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a>
+          <td></td><td> const -&gt; <a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a>
   </td>
         </tr>
       </table>
@@ -2935,13 +2441,13 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__common.html#gae847b0ef07964fb6bdb468179580dc11">uint32</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#ae847b0ef07964fb6bdb468179580dc11">uint32</a>&#160;</td>
           <td class="paramname"><em>wrap</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const -&gt; <a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a>
+          <td></td><td> const -&gt; <a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a>
   </td>
         </tr>
       </table>
@@ -2984,13 +2490,13 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__common.html#gae847b0ef07964fb6bdb468179580dc11">uint32</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#ae847b0ef07964fb6bdb468179580dc11">uint32</a>&#160;</td>
           <td class="paramname"><em>wrap</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const -&gt; <a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a>
+          <td></td><td> const -&gt; <a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a>
   </td>
         </tr>
       </table>

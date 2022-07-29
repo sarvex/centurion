@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Centurion
-   &#160;<span id="projectnumber">7.0.0</span>
+   &#160;<span id="projectnumber">7.1.0</span>
    </div>
    <div id="projectbrief">A modern C++ wrapper library for SDL2</div>
   </td>
@@ -95,12 +95,9 @@ $(document).ready(function(){initNavTree('classcen_1_1event__dispatcher.html',''
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classcen_1_1event__dispatcher-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">event_dispatcher&lt; Events &gt; Class Template Reference<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="group__event.html">Event</a></div></div></div>
+  <div class="headertitle"><div class="title">event_dispatcher&lt; Events &gt; Class Template Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>An event dispatcher, implemented as wrapper around an <code>event</code> instance.  
- <a href="classcen_1_1event__dispatcher.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="event_8hpp_source.html">event.hpp</a>&gt;</code></p>
 <table class="memberdecls">
@@ -111,7 +108,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9dfab88c373c2f12a06353ea7365d4b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07a9945a278b0b58bbddb1f1fba0c41a"><td class="memTemplParams" colspan="2">template&lt;typename Event &gt; </td></tr>
 <tr class="memitem:a07a9945a278b0b58bbddb1f1fba0c41a"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1event__dispatcher.html#a07a9945a278b0b58bbddb1f1fba0c41a">bind</a> () -&gt; <a class="el" href="classcen_1_1event__sink.html">event_sink</a>&lt; Event &gt; &amp;</td></tr>
-<tr class="memdesc:a07a9945a278b0b58bbddb1f1fba0c41a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the event sink associated with the specified event.  <a href="classcen_1_1event__dispatcher.html#a07a9945a278b0b58bbddb1f1fba0c41a">More...</a><br /></td></tr>
 <tr class="separator:a07a9945a278b0b58bbddb1f1fba0c41a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20194325f0380eb3bbc6bc6c8b2697d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1event__dispatcher.html#a20194325f0380eb3bbc6bc6c8b2697d9">reset</a> () noexcept</td></tr>
 <tr class="memdesc:a20194325f0380eb3bbc6bc6c8b2697d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all set handlers from all the subscribed events.  <a href="classcen_1_1event__dispatcher.html#a20194325f0380eb3bbc6bc6c8b2697d9">More...</a><br /></td></tr>
@@ -128,12 +124,11 @@ Static Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename... Events&gt;<br />
-class cen::event_dispatcher&lt; Events &gt;</div><p >An event dispatcher, implemented as wrapper around an <code>event</code> instance. </p>
-<p >This class is an attempt to simplify handling events in applications, usually you'd check for all of the events that you'd be interested in using <code>event::try_get()</code> in a long <code>if-else if</code> statement. By using this class, it's possible to automatically generate equivalent checks by specifying the events that you want to subscribe to, and subsequently connect lambdas, free functions or member functions to handle the subscribed events. This can often lead to cleaner looking code, since the manual checks will be replaced by a single call to <code><a class="el" href="classcen_1_1event__dispatcher.html#a9dfab88c373c2f12a06353ea7365d4b0" title="Polls all events, checking for subscribed events.">poll()</a></code>.</p>
-<p >The runtime overhead of using this class compared to typical manual event dispatching is minimal. However, the function objects for the subscribed events are stored internally, so they can take up a bit of space. It might be beneficial to allocate instances of this class on the heap, depending on the amount of subscribed events.</p>
-<p >The signature of all event handlers should be <code>void(const Event&amp;)</code>, where <code>Event</code> is the subscribed event type.</p>
-<p >An example usage of this class can be found <a class="el" href="page-event-dispatcher.html">here</a>.</p>
-<dl class="section note"><dt>Note</dt><dd>It is advisable to always typedef the signature of this class with the events that you want to handle, since the class name quickly grows in size.</dd></dl>
+class cen::event_dispatcher&lt; Events &gt;</div><p >An event dispatcher, implemented as wrapper around an <a class="el" href="classcen_1_1event__handler.html" title="The main API for dealing with events.">event_handler</a> instance.</p>
+<p >This class is an attempt to simplify handling events in applications, usually you'd check for all of the events that you'd be interested in using event::try_get in a long "if-else if" statement. By using this class, it's possible to automatically generate equivalent checks by specifying the events that you want to subscribe to, and subsequently connect lambdas, free functions or member functions to handle the subscribed events. This can often lead to cleaner looking code, since the manual checks will be replaced by a single call to the poll function.</p>
+<p >The runtime overhead of using this class compared to typical manual event dispatching is minimal. However, the function objects for the subscribed events are stored internally, so they can take up a bit of space. It might be beneficial to allocate instances of this class on the heap, if the amount of subscribed events is very large.</p>
+<p >The signature of all event handlers should be <code>void(const Event&amp;)</code>, where Event is the subscribed event type.</p>
+<p >Note, it is advisable to always typedef the signature of this class with the events that you want to handle, since the class name quickly grows in size.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">Events</td><td>the list of events to "subscribe" to, all other events are ignored. </td></tr>
@@ -191,8 +186,7 @@ class cen::event_dispatcher&lt; Events &gt;</div><p >An event dispatcher, implem
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the event sink associated with the specified event. </p>
+<p >Returns the event sink associated with the specified event.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">Event</td><td>the subscribed event to obtain the event sink for.</td></tr>
@@ -255,7 +249,6 @@ class cen::event_dispatcher&lt; Events &gt;</div><p >An event dispatcher, implem
 </div><div class="memdoc">
 
 <p>Returns the amount of set event handlers. </p>
-<dl class="section return"><dt>Returns</dt><dd>the amount of event handlers. </dd></dl>
 
 </div>
 </div>
@@ -284,7 +277,6 @@ class cen::event_dispatcher&lt; Events &gt;</div><p >An event dispatcher, implem
 </div><div class="memdoc">
 
 <p>Returns the total number of subscribed events. </p>
-<dl class="section return"><dt>Returns</dt><dd>the amount of subscribed events. </dd></dl>
 
 </div>
 </div>

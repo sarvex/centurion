@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Centurion
-   &#160;<span id="projectnumber">7.0.0</span>
+   &#160;<span id="projectnumber">7.1.0</span>
    </div>
    <div id="projectbrief">A modern C++ wrapper library for SDL2</div>
   </td>
@@ -96,19 +96,15 @@ $(document).ready(function(){initNavTree('classcen_1_1font__cache.html',''); ini
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classcen_1_1font__cache-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">font_cache Class Reference<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="group__text.html">Text</a> &raquo; <a class="el" href="group__font.html">Font</a></div></div></div>
+  <div class="headertitle"><div class="title">font_cache Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>Provides efficient font rendering.  
- <a href="classcen_1_1font__cache.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="font_8hpp_source.html">font.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcen_1_1font__cache_1_1glyph__data.html">glyph_data</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides cached information about a glyph in a font.  <a href="structcen_1_1font__cache_1_1glyph__data.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
@@ -120,90 +116,72 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa947e0f5dd8c7713ab1365de0e0efb2b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font__cache.html#aa947e0f5dd8c7713ab1365de0e0efb2b">get_font</a> () noexcept -&gt; <a class="el" href="classcen_1_1font.html">font</a> &amp;</td></tr>
-<tr class="memdesc:aa947e0f5dd8c7713ab1365de0e0efb2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the underlying font instance.  <a href="classcen_1_1font__cache.html#aa947e0f5dd8c7713ab1365de0e0efb2b">More...</a><br /></td></tr>
-<tr class="separator:aa947e0f5dd8c7713ab1365de0e0efb2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84cf0a868a006f11d73e6a06d6fcaee5"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font__cache.html#a84cf0a868a006f11d73e6a06d6fcaee5">get_font</a> () const noexcept -&gt; const <a class="el" href="classcen_1_1font.html">font</a> &amp;</td></tr>
-<tr class="memdesc:a84cf0a868a006f11d73e6a06d6fcaee5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the underlying font instance.  <a href="classcen_1_1font__cache.html#a84cf0a868a006f11d73e6a06d6fcaee5">More...</a><br /></td></tr>
-<tr class="separator:a84cf0a868a006f11d73e6a06d6fcaee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Construction</h2></td></tr>
 <tr class="memitem:a57b6509b90a5c8d69604df3813c79dfe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font__cache.html#a57b6509b90a5c8d69604df3813c79dfe">font_cache</a> (const char *<a class="el" href="classcen_1_1file.html">file</a>, const int size)</td></tr>
-<tr class="memdesc:a57b6509b90a5c8d69604df3813c79dfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a font cache based on the font at the specified file path.  <a href="classcen_1_1font__cache.html#a57b6509b90a5c8d69604df3813c79dfe">More...</a><br /></td></tr>
 <tr class="separator:a57b6509b90a5c8d69604df3813c79dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af72f2538c04977d58bfc09eff07c7543"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font__cache.html#af72f2538c04977d58bfc09eff07c7543">font_cache</a> (const std::string &amp;<a class="el" href="classcen_1_1file.html">file</a>, const int size)</td></tr>
-<tr class="memdesc:af72f2538c04977d58bfc09eff07c7543"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a font cache based on the font at the specified file path.  <a href="classcen_1_1font__cache.html#af72f2538c04977d58bfc09eff07c7543">More...</a><br /></td></tr>
 <tr class="separator:af72f2538c04977d58bfc09eff07c7543"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21fe8d4a8050362a11eff5e73a58343e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font__cache.html#a21fe8d4a8050362a11eff5e73a58343e">font_cache</a> (<a class="el" href="classcen_1_1font.html">font</a> &amp;&amp;<a class="el" href="classcen_1_1font.html">font</a>) noexcept</td></tr>
-<tr class="memdesc:a21fe8d4a8050362a11eff5e73a58343e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a font cache based on an existing font.  <a href="classcen_1_1font__cache.html#a21fe8d4a8050362a11eff5e73a58343e">More...</a><br /></td></tr>
 <tr class="separator:a21fe8d4a8050362a11eff5e73a58343e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Glyph-based rendering functions</h2></td></tr>
 <tr class="memitem:a0fc0fb4061792a0a6c3c2ae18d81f68b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a0fc0fb4061792a0a6c3c2ae18d81f68b"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1font__cache.html#a0fc0fb4061792a0a6c3c2ae18d81f68b">render_glyph</a> (<a class="el" href="classcen_1_1basic__renderer.html">basic_renderer</a>&lt; T &gt; &amp;<a class="el" href="group__render.html#gaf6dbad20a46b69892b5e694a4069ae42">renderer</a>, const <a class="el" href="group__common.html#gac3131ee180db2fcab120011a74d12f47">unicode_t</a> glyph, const <a class="el" href="group__math.html#gaa280ad1d741fe50107f6ee49bb578bda">ipoint</a> &amp;position) -&gt; int</td></tr>
+<tr class="memitem:a0fc0fb4061792a0a6c3c2ae18d81f68b"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1font__cache.html#a0fc0fb4061792a0a6c3c2ae18d81f68b">render_glyph</a> (<a class="el" href="classcen_1_1basic__renderer.html">basic_renderer</a>&lt; T &gt; &amp;<a class="el" href="namespacecen.html#af6dbad20a46b69892b5e694a4069ae42">renderer</a>, const <a class="el" href="namespacecen.html#ac3131ee180db2fcab120011a74d12f47">unicode_t</a> glyph, const <a class="el" href="namespacecen.html#aa280ad1d741fe50107f6ee49bb578bda">ipoint</a> &amp;position) -&gt; int</td></tr>
 <tr class="memdesc:a0fc0fb4061792a0a6c3c2ae18d81f68b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders a glyph, returning the x-coordinate for the next glyph.  <a href="classcen_1_1font__cache.html#a0fc0fb4061792a0a6c3c2ae18d81f68b">More...</a><br /></td></tr>
 <tr class="separator:a0fc0fb4061792a0a6c3c2ae18d81f68b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7fab129ec6c4538d454f087a7f39ede"><td class="memTemplParams" colspan="2">template&lt;typename T , typename String &gt; </td></tr>
-<tr class="memitem:af7fab129ec6c4538d454f087a7f39ede"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1font__cache.html#af7fab129ec6c4538d454f087a7f39ede">render_text</a> (<a class="el" href="classcen_1_1basic__renderer.html">basic_renderer</a>&lt; T &gt; &amp;<a class="el" href="group__render.html#gaf6dbad20a46b69892b5e694a4069ae42">renderer</a>, const String &amp;str, <a class="el" href="group__math.html#gaa280ad1d741fe50107f6ee49bb578bda">ipoint</a> position)</td></tr>
-<tr class="memdesc:af7fab129ec6c4538d454f087a7f39ede"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders a string as a series of glyphs.  <a href="classcen_1_1font__cache.html#af7fab129ec6c4538d454f087a7f39ede">More...</a><br /></td></tr>
+<tr class="memitem:af7fab129ec6c4538d454f087a7f39ede"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1font__cache.html#af7fab129ec6c4538d454f087a7f39ede">render_text</a> (<a class="el" href="classcen_1_1basic__renderer.html">basic_renderer</a>&lt; T &gt; &amp;<a class="el" href="namespacecen.html#af6dbad20a46b69892b5e694a4069ae42">renderer</a>, const String &amp;str, <a class="el" href="namespacecen.html#aa280ad1d741fe50107f6ee49bb578bda">ipoint</a> position)</td></tr>
 <tr class="separator:af7fab129ec6c4538d454f087a7f39ede"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">String caching functions</h2></td></tr>
 <tr class="memitem:a2e73a166415ff86c19fc440e228152b7"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a2e73a166415ff86c19fc440e228152b7"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1font__cache.html#a2e73a166415ff86c19fc440e228152b7">store</a> (<a class="el" href="classcen_1_1basic__renderer.html">basic_renderer</a>&lt; T &gt; &amp;<a class="el" href="group__render.html#gaf6dbad20a46b69892b5e694a4069ae42">renderer</a>, const <a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a> &amp;<a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a>) -&gt; <a class="el" href="classcen_1_1font__cache.html#ac1736ede57259cd13f11b36271b4464a">id_type</a></td></tr>
-<tr class="memdesc:a2e73a166415ff86c19fc440e228152b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Caches a rendered string as a texture.  <a href="classcen_1_1font__cache.html#a2e73a166415ff86c19fc440e228152b7">More...</a><br /></td></tr>
+<tr class="memitem:a2e73a166415ff86c19fc440e228152b7"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1font__cache.html#a2e73a166415ff86c19fc440e228152b7">store</a> (<a class="el" href="classcen_1_1basic__renderer.html">basic_renderer</a>&lt; T &gt; &amp;<a class="el" href="namespacecen.html#af6dbad20a46b69892b5e694a4069ae42">renderer</a>, const <a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a> &amp;<a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a>) -&gt; <a class="el" href="classcen_1_1font__cache.html#ac1736ede57259cd13f11b36271b4464a">id_type</a></td></tr>
 <tr class="separator:a2e73a166415ff86c19fc440e228152b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a66325a8c8319a4bce50f561c0a8cbb"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font__cache.html#a7a66325a8c8319a4bce50f561c0a8cbb">find_string</a> (const <a class="el" href="classcen_1_1font__cache.html#ac1736ede57259cd13f11b36271b4464a">id_type</a> id) const -&gt; const <a class="el" href="group__render.html#gaf3987dbc8acab4d9401d089e274546aa">texture</a> *</td></tr>
+<tr class="memitem:a7a66325a8c8319a4bce50f561c0a8cbb"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font__cache.html#a7a66325a8c8319a4bce50f561c0a8cbb">find_string</a> (const <a class="el" href="classcen_1_1font__cache.html#ac1736ede57259cd13f11b36271b4464a">id_type</a> id) const -&gt; const <a class="el" href="namespacecen.html#af3987dbc8acab4d9401d089e274546aa">texture</a> *</td></tr>
 <tr class="memdesc:a7a66325a8c8319a4bce50f561c0a8cbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the cached string texture for an identifier, if there is one.  <a href="classcen_1_1font__cache.html#a7a66325a8c8319a4bce50f561c0a8cbb">More...</a><br /></td></tr>
 <tr class="separator:a7a66325a8c8319a4bce50f561c0a8cbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87b091042e4bf09e137695391a5dc6d5"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font__cache.html#a87b091042e4bf09e137695391a5dc6d5">has_string</a> (const <a class="el" href="classcen_1_1font__cache.html#ac1736ede57259cd13f11b36271b4464a">id_type</a> id) const -&gt; bool</td></tr>
 <tr class="memdesc:a87b091042e4bf09e137695391a5dc6d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether there is a cached string associated with a specific identifier.  <a href="classcen_1_1font__cache.html#a87b091042e4bf09e137695391a5dc6d5">More...</a><br /></td></tr>
 <tr class="separator:a87b091042e4bf09e137695391a5dc6d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99424815e0484c9824c20f8793b94504"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font__cache.html#a99424815e0484c9824c20f8793b94504">get_string</a> (const <a class="el" href="classcen_1_1font__cache.html#ac1736ede57259cd13f11b36271b4464a">id_type</a> id) const -&gt; const <a class="el" href="group__render.html#gaf3987dbc8acab4d9401d089e274546aa">texture</a> &amp;</td></tr>
+<tr class="memitem:a99424815e0484c9824c20f8793b94504"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font__cache.html#a99424815e0484c9824c20f8793b94504">get_string</a> (const <a class="el" href="classcen_1_1font__cache.html#ac1736ede57259cd13f11b36271b4464a">id_type</a> id) const -&gt; const <a class="el" href="namespacecen.html#af3987dbc8acab4d9401d089e274546aa">texture</a> &amp;</td></tr>
 <tr class="memdesc:a99424815e0484c9824c20f8793b94504"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the cached rendered string associated with an identifier.  <a href="classcen_1_1font__cache.html#a99424815e0484c9824c20f8793b94504">More...</a><br /></td></tr>
 <tr class="separator:a99424815e0484c9824c20f8793b94504"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Glyph caching functions</h2></td></tr>
 <tr class="memitem:a487109ac6cbc0acdc8b3c95192486a38"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a487109ac6cbc0acdc8b3c95192486a38"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1font__cache.html#a487109ac6cbc0acdc8b3c95192486a38">store_glyph</a> (<a class="el" href="classcen_1_1basic__renderer.html">basic_renderer</a>&lt; T &gt; &amp;<a class="el" href="group__render.html#gaf6dbad20a46b69892b5e694a4069ae42">renderer</a>, const <a class="el" href="group__common.html#gac3131ee180db2fcab120011a74d12f47">unicode_t</a> glyph)</td></tr>
-<tr class="memdesc:a487109ac6cbc0acdc8b3c95192486a38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders a glyph to a texture and caches it.  <a href="classcen_1_1font__cache.html#a487109ac6cbc0acdc8b3c95192486a38">More...</a><br /></td></tr>
+<tr class="memitem:a487109ac6cbc0acdc8b3c95192486a38"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1font__cache.html#a487109ac6cbc0acdc8b3c95192486a38">store_glyph</a> (<a class="el" href="classcen_1_1basic__renderer.html">basic_renderer</a>&lt; T &gt; &amp;<a class="el" href="namespacecen.html#af6dbad20a46b69892b5e694a4069ae42">renderer</a>, const <a class="el" href="namespacecen.html#ac3131ee180db2fcab120011a74d12f47">unicode_t</a> glyph)</td></tr>
 <tr class="separator:a487109ac6cbc0acdc8b3c95192486a38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f47b5b7787e8055ff8f540d011fb526"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a8f47b5b7787e8055ff8f540d011fb526"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1font__cache.html#a8f47b5b7787e8055ff8f540d011fb526">store_glyphs</a> (<a class="el" href="classcen_1_1basic__renderer.html">basic_renderer</a>&lt; T &gt; &amp;<a class="el" href="group__render.html#gaf6dbad20a46b69892b5e694a4069ae42">renderer</a>, const <a class="el" href="group__common.html#gac3131ee180db2fcab120011a74d12f47">unicode_t</a> begin, const <a class="el" href="group__common.html#gac3131ee180db2fcab120011a74d12f47">unicode_t</a> end)</td></tr>
-<tr class="memdesc:a8f47b5b7787e8055ff8f540d011fb526"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders a range of glyphs to individual textures and caches them.  <a href="classcen_1_1font__cache.html#a8f47b5b7787e8055ff8f540d011fb526">More...</a><br /></td></tr>
+<tr class="memitem:a8f47b5b7787e8055ff8f540d011fb526"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1font__cache.html#a8f47b5b7787e8055ff8f540d011fb526">store_glyphs</a> (<a class="el" href="classcen_1_1basic__renderer.html">basic_renderer</a>&lt; T &gt; &amp;<a class="el" href="namespacecen.html#af6dbad20a46b69892b5e694a4069ae42">renderer</a>, const <a class="el" href="namespacecen.html#ac3131ee180db2fcab120011a74d12f47">unicode_t</a> begin, const <a class="el" href="namespacecen.html#ac3131ee180db2fcab120011a74d12f47">unicode_t</a> end)</td></tr>
 <tr class="separator:a8f47b5b7787e8055ff8f540d011fb526"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5997c2807914fd6cce66a47d1edc83d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:af5997c2807914fd6cce66a47d1edc83d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1font__cache.html#af5997c2807914fd6cce66a47d1edc83d">store_basic_latin_glyphs</a> (<a class="el" href="classcen_1_1basic__renderer.html">basic_renderer</a>&lt; T &gt; &amp;<a class="el" href="group__render.html#gaf6dbad20a46b69892b5e694a4069ae42">renderer</a>)</td></tr>
+<tr class="memitem:af5997c2807914fd6cce66a47d1edc83d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1font__cache.html#af5997c2807914fd6cce66a47d1edc83d">store_basic_latin_glyphs</a> (<a class="el" href="classcen_1_1basic__renderer.html">basic_renderer</a>&lt; T &gt; &amp;<a class="el" href="namespacecen.html#af6dbad20a46b69892b5e694a4069ae42">renderer</a>)</td></tr>
 <tr class="memdesc:af5997c2807914fd6cce66a47d1edc83d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the glyphs provided in the basic latin character range.  <a href="classcen_1_1font__cache.html#af5997c2807914fd6cce66a47d1edc83d">More...</a><br /></td></tr>
 <tr class="separator:af5997c2807914fd6cce66a47d1edc83d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74052558344131ca6623c32cc4c7f2af"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a74052558344131ca6623c32cc4c7f2af"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1font__cache.html#a74052558344131ca6623c32cc4c7f2af">store_latin1_supplement_glyphs</a> (<a class="el" href="classcen_1_1basic__renderer.html">basic_renderer</a>&lt; T &gt; &amp;<a class="el" href="group__render.html#gaf6dbad20a46b69892b5e694a4069ae42">renderer</a>)</td></tr>
+<tr class="memitem:a74052558344131ca6623c32cc4c7f2af"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1font__cache.html#a74052558344131ca6623c32cc4c7f2af">store_latin1_supplement_glyphs</a> (<a class="el" href="classcen_1_1basic__renderer.html">basic_renderer</a>&lt; T &gt; &amp;<a class="el" href="namespacecen.html#af6dbad20a46b69892b5e694a4069ae42">renderer</a>)</td></tr>
 <tr class="memdesc:a74052558344131ca6623c32cc4c7f2af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the glyphs provided in the Latin-1 supplement character range.  <a href="classcen_1_1font__cache.html#a74052558344131ca6623c32cc4c7f2af">More...</a><br /></td></tr>
 <tr class="separator:a74052558344131ca6623c32cc4c7f2af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a846b5927624a5685f0230e7267a1250b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a846b5927624a5685f0230e7267a1250b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1font__cache.html#a846b5927624a5685f0230e7267a1250b">store_latin1_glyphs</a> (<a class="el" href="classcen_1_1basic__renderer.html">basic_renderer</a>&lt; T &gt; &amp;<a class="el" href="group__render.html#gaf6dbad20a46b69892b5e694a4069ae42">renderer</a>)</td></tr>
+<tr class="memitem:a846b5927624a5685f0230e7267a1250b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1font__cache.html#a846b5927624a5685f0230e7267a1250b">store_latin1_glyphs</a> (<a class="el" href="classcen_1_1basic__renderer.html">basic_renderer</a>&lt; T &gt; &amp;<a class="el" href="namespacecen.html#af6dbad20a46b69892b5e694a4069ae42">renderer</a>)</td></tr>
 <tr class="memdesc:a846b5927624a5685f0230e7267a1250b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the glyphs provided in the Latin-1 character range.  <a href="classcen_1_1font__cache.html#a846b5927624a5685f0230e7267a1250b">More...</a><br /></td></tr>
 <tr class="separator:a846b5927624a5685f0230e7267a1250b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Glyph cache query functions</h2></td></tr>
-<tr class="memitem:a645e2aefe0d941117dce3c6fcecb305d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font__cache.html#a645e2aefe0d941117dce3c6fcecb305d">find_glyph</a> (const <a class="el" href="group__common.html#gac3131ee180db2fcab120011a74d12f47">unicode_t</a> glyph) const -&gt; const <a class="el" href="structcen_1_1font__cache_1_1glyph__data.html">glyph_data</a> *</td></tr>
+<tr class="memitem:a645e2aefe0d941117dce3c6fcecb305d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font__cache.html#a645e2aefe0d941117dce3c6fcecb305d">find_glyph</a> (const <a class="el" href="namespacecen.html#ac3131ee180db2fcab120011a74d12f47">unicode_t</a> glyph) const -&gt; const <a class="el" href="structcen_1_1font__cache_1_1glyph__data.html">glyph_data</a> *</td></tr>
 <tr class="memdesc:a645e2aefe0d941117dce3c6fcecb305d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the cached information associated with a glyph, if there is any.  <a href="classcen_1_1font__cache.html#a645e2aefe0d941117dce3c6fcecb305d">More...</a><br /></td></tr>
 <tr class="separator:a645e2aefe0d941117dce3c6fcecb305d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab88aa125a685709e524023fd2abc43fb"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font__cache.html#ab88aa125a685709e524023fd2abc43fb">has_glyph</a> (const <a class="el" href="group__common.html#gac3131ee180db2fcab120011a74d12f47">unicode_t</a> glyph) const noexcept -&gt; bool</td></tr>
+<tr class="memitem:ab88aa125a685709e524023fd2abc43fb"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font__cache.html#ab88aa125a685709e524023fd2abc43fb">has_glyph</a> (const <a class="el" href="namespacecen.html#ac3131ee180db2fcab120011a74d12f47">unicode_t</a> glyph) const noexcept -&gt; bool</td></tr>
 <tr class="memdesc:ab88aa125a685709e524023fd2abc43fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether a glyph has been cached.  <a href="classcen_1_1font__cache.html#ab88aa125a685709e524023fd2abc43fb">More...</a><br /></td></tr>
 <tr class="separator:ab88aa125a685709e524023fd2abc43fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a405f1019c10259fefa6e45710101a240"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font__cache.html#a405f1019c10259fefa6e45710101a240">get_glyph</a> (const <a class="el" href="group__common.html#gac3131ee180db2fcab120011a74d12f47">unicode_t</a> glyph) const -&gt; const <a class="el" href="structcen_1_1font__cache_1_1glyph__data.html">glyph_data</a> &amp;</td></tr>
+<tr class="memitem:a405f1019c10259fefa6e45710101a240"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font__cache.html#a405f1019c10259fefa6e45710101a240">get_glyph</a> (const <a class="el" href="namespacecen.html#ac3131ee180db2fcab120011a74d12f47">unicode_t</a> glyph) const -&gt; const <a class="el" href="structcen_1_1font__cache_1_1glyph__data.html">glyph_data</a> &amp;</td></tr>
 <tr class="memdesc:a405f1019c10259fefa6e45710101a240"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the previously cached information associated with a glyph.  <a href="classcen_1_1font__cache.html#a405f1019c10259fefa6e45710101a240">More...</a><br /></td></tr>
 <tr class="separator:a405f1019c10259fefa6e45710101a240"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa947e0f5dd8c7713ab1365de0e0efb2b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font__cache.html#aa947e0f5dd8c7713ab1365de0e0efb2b">get_font</a> () noexcept -&gt; <a class="el" href="classcen_1_1font.html">font</a> &amp;</td></tr>
+<tr class="memdesc:aa947e0f5dd8c7713ab1365de0e0efb2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the underlying font instance.  <a href="classcen_1_1font__cache.html#aa947e0f5dd8c7713ab1365de0e0efb2b">More...</a><br /></td></tr>
+<tr class="separator:aa947e0f5dd8c7713ab1365de0e0efb2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84cf0a868a006f11d73e6a06d6fcaee5"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1font__cache.html#a84cf0a868a006f11d73e6a06d6fcaee5">get_font</a> () const noexcept -&gt; const <a class="el" href="classcen_1_1font.html">font</a> &amp;</td></tr>
+<tr class="separator:a84cf0a868a006f11d73e6a06d6fcaee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Provides efficient font rendering. </p>
+<div class="textblock"><p >Provides efficient font rendering.</p>
 <p >This class can be used to cache individual glyphs as textures that can subsequently be rendered one-by-one to form strings. Note, this approach will not result in accurate kerning. However, this might not be noticeable, and simply worth the performance boost. This approach is very efficient for rendering pieces of text that frequently changes, since other approaches would require dynamic allocation and de-allocation for every new rendered string.</p>
 <p >Furthermore, it is possible to cache rendered strings and associate them with integer identifiers. In contrast with the first approach, this will result in accurate kerning. The only problem is that it is hard to know the exact strings you will render at compile-time. Use this option if you know that you are going to render some specific string a lot.</p>
-<dl class="section note"><dt>Note</dt><dd>Instances of this class are initially empty, i.e. they hold no cached glyphs or strings. It is up to you to explicitly specify what you want to cache.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><code><a class="el" href="classcen_1_1font.html" title="Represents a TrueType font.">font</a></code> </dd>
+<p >Note, instances of this class are initially empty, i.e. they hold no cached glyphs or strings. It is up to you to explicitly specify what you want to cache.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classcen_1_1font.html">font</a> </dd>
 <dd>
-<code>font_bundle</code> </dd></dl>
+font_bundle </dd></dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="ac1736ede57259cd13f11b36271b4464a" name="ac1736ede57259cd13f11b36271b4464a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac1736ede57259cd13f11b36271b4464a">&#9670;&nbsp;</a></span>id_type</h2>
@@ -267,8 +245,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Creates a font cache based on the font at the specified file path. </p>
+<p >Creates a font cache based on the font at the specified file path.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">file</td><td>the file path of the font. </td></tr>
@@ -313,15 +290,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Creates a font cache based on the font at the specified file path. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">file</td><td>the file path of the font. </td></tr>
-    <tr><td class="paramname">size</td><td>the size of the font. </td></tr>
-  </table>
-  </dd>
-</dl>
-
 </div>
 </div>
 <a id="a21fe8d4a8050362a11eff5e73a58343e" name="a21fe8d4a8050362a11eff5e73a58343e"></a>
@@ -348,14 +316,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Creates a font cache based on an existing font. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">font</td><td>the font that will be used. </td></tr>
-  </table>
-  </dd>
-</dl>
-
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -377,13 +337,13 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__common.html#gac3131ee180db2fcab120011a74d12f47">unicode_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#ac3131ee180db2fcab120011a74d12f47">unicode_t</a>&#160;</td>
           <td class="paramname"><em>glyph</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__math.html#gaa280ad1d741fe50107f6ee49bb578bda">ipoint</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#aa280ad1d741fe50107f6ee49bb578bda">ipoint</a> &amp;&#160;</td>
           <td class="paramname"><em>position</em>&#160;</td>
         </tr>
         <tr>
@@ -401,15 +361,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Renders a glyph, returning the x-coordinate for the next glyph. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">renderer</td><td>the renderer that will be used. </td></tr>
-    <tr><td class="paramname">glyph</td><td>the Unicode glyph that will be rendered. </td></tr>
-    <tr><td class="paramname">position</td><td>the position of the rendered glyph.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the x-coordinate intended to be used by a consecutive glyph. </dd></dl>
 
 </div>
 </div>
@@ -437,7 +388,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__math.html#gaa280ad1d741fe50107f6ee49bb578bda">ipoint</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacecen.html#aa280ad1d741fe50107f6ee49bb578bda">ipoint</a>&#160;</td>
           <td class="paramname"><em>position</em>&#160;</td>
         </tr>
         <tr>
@@ -452,10 +403,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Renders a string as a series of glyphs. </p>
-<p >You can provide null-characters in the string to indicate line breaks which this function will respect.</p>
-<dl class="section note"><dt>Note</dt><dd>This function will not output rendered text with accurate kerning.</dd></dl>
+<p >Renders a string as a series of glyphs.</p>
+<p >You can provide null-characters in the string to indicate line breaks. This function will not output rendered text with accurate kerning.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">String</td><td>the type of the string-like object, storing Unicode glyphs.</td></tr>
@@ -466,11 +415,10 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">renderer</td><td>the renderer that will be used. </td></tr>
     <tr><td class="paramname">str</td><td>the source of the Unicode glyphs. </td></tr>
-    <tr><td class="paramname">position</td><td>the position of the rendered string.</td></tr>
+    <tr><td class="paramname">position</td><td>the position of the rendered string. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><code><a class="el" href="classcen_1_1font__cache.html#a0fc0fb4061792a0a6c3c2ae18d81f68b" title="Renders a glyph, returning the x-coordinate for the next glyph.">render_glyph()</a></code> </dd></dl>
 
 </div>
 </div>
@@ -492,7 +440,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__video.html#ga6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#a6c0f3fffe383c4c7e5a5b6acb5dc8dd3">surface</a> &amp;&#160;</td>
           <td class="paramname"><em>surface</em>&#160;</td>
         </tr>
         <tr>
@@ -508,9 +456,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Caches a rendered string as a texture. </p>
-<p >Whilst this function takes any surface as input, it is intended to be used in collaboration with the text rendering functions provided by the <code>font</code> class. As a result, the related functions use "string" in their names, e.g. <code><a class="el" href="classcen_1_1font__cache.html#a7a66325a8c8319a4bce50f561c0a8cbb" title="Returns the cached string texture for an identifier, if there is one.">find_string()</a></code> and <code><a class="el" href="classcen_1_1font__cache.html#a87b091042e4bf09e137695391a5dc6d5" title="Indicates whether there is a cached string associated with a specific identifier.">has_string()</a></code>.</p>
+<p >Caches a rendered string as a texture.</p>
+<p >Whilst this function takes any surface as input, it is intended to be used in collaboration with the text rendering functions provided by the font class. As a result, the related functions use "string" in their names, e.g. find_string and has_string.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">renderer</td><td>the associated renderer. </td></tr>
@@ -519,11 +466,11 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the identifier assigned to the cached string.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><code><a class="el" href="classcen_1_1font__cache.html#a7a66325a8c8319a4bce50f561c0a8cbb" title="Returns the cached string texture for an identifier, if there is one.">find_string()</a></code> </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classcen_1_1font__cache.html#a7a66325a8c8319a4bce50f561c0a8cbb" title="Returns the cached string texture for an identifier, if there is one.">find_string</a> </dd>
 <dd>
-<code><a class="el" href="classcen_1_1font__cache.html#a87b091042e4bf09e137695391a5dc6d5" title="Indicates whether there is a cached string associated with a specific identifier.">has_string()</a></code> </dd>
+<a class="el" href="classcen_1_1font__cache.html#a87b091042e4bf09e137695391a5dc6d5" title="Indicates whether there is a cached string associated with a specific identifier.">has_string</a> </dd>
 <dd>
-<code><a class="el" href="classcen_1_1font__cache.html#a99424815e0484c9824c20f8793b94504" title="Returns the cached rendered string associated with an identifier.">get_string()</a></code> </dd></dl>
+<a class="el" href="classcen_1_1font__cache.html#a99424815e0484c9824c20f8793b94504" title="Returns the cached rendered string associated with an identifier.">get_string</a> </dd></dl>
 
 </div>
 </div>
@@ -541,7 +488,7 @@ Public Member Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classcen_1_1font__cache.html#ac1736ede57259cd13f11b36271b4464a">id_type</a>&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
-          <td> const -&gt; const <a class="el" href="group__render.html#gaf3987dbc8acab4d9401d089e274546aa">texture</a>*
+          <td> const -&gt; const <a class="el" href="namespacecen.html#af3987dbc8acab4d9401d089e274546aa">texture</a>*
   </td>
         </tr>
       </table>
@@ -553,13 +500,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the cached string texture for an identifier, if there is one. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">id</td><td>the identifier of the cached string.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the cached string texture; a null pointer is returned if no match was found. </dd></dl>
 
 </div>
 </div>
@@ -589,13 +529,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Indicates whether there is a cached string associated with a specific identifier. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">id</td><td>the identifier that will be checked.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if there is a cached string associated with the ID; <code>false</code> otherwise. </dd></dl>
 
 </div>
 </div>
@@ -613,7 +546,7 @@ Public Member Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classcen_1_1font__cache.html#ac1736ede57259cd13f11b36271b4464a">id_type</a>&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
-          <td> const -&gt; const <a class="el" href="group__render.html#gaf3987dbc8acab4d9401d089e274546aa">texture</a>&amp;
+          <td> const -&gt; const <a class="el" href="namespacecen.html#af3987dbc8acab4d9401d089e274546aa">texture</a>&amp;
   </td>
         </tr>
       </table>
@@ -625,20 +558,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the cached rendered string associated with an identifier. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">id</td><td>the identifier associated with the desired rendered string.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the cached string texture.</dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">exception</td><td>if there is no cached string for the supplied identifier.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><code><a class="el" href="classcen_1_1font__cache.html#a7a66325a8c8319a4bce50f561c0a8cbb" title="Returns the cached string texture for an identifier, if there is one.">find_string()</a></code> </dd></dl>
 
 </div>
 </div>
@@ -660,7 +579,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__common.html#gac3131ee180db2fcab120011a74d12f47">unicode_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#ac3131ee180db2fcab120011a74d12f47">unicode_t</a>&#160;</td>
           <td class="paramname"><em>glyph</em>&#160;</td>
         </tr>
         <tr>
@@ -675,8 +594,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Renders a glyph to a texture and caches it. </p>
+<p >Renders a glyph to a texture and caches it.</p>
 <p >This function has no effect if the glyph has already been cached, or if the glyph is not provided by the underlying font.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -706,13 +624,13 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__common.html#gac3131ee180db2fcab120011a74d12f47">unicode_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#ac3131ee180db2fcab120011a74d12f47">unicode_t</a>&#160;</td>
           <td class="paramname"><em>begin</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__common.html#gac3131ee180db2fcab120011a74d12f47">unicode_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#ac3131ee180db2fcab120011a74d12f47">unicode_t</a>&#160;</td>
           <td class="paramname"><em>end</em>&#160;</td>
         </tr>
         <tr>
@@ -727,8 +645,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Renders a range of glyphs to individual textures and caches them. </p>
+<p >Renders a range of glyphs to individual textures and caches them.</p>
 <p >The glyphs that will be cached are in the range [begin, end).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -738,9 +655,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><code><a class="el" href="classcen_1_1font__cache.html#a487109ac6cbc0acdc8b3c95192486a38" title="Renders a glyph to a texture and caches it.">store_glyph()</a></code> </dd>
-<dd>
-<a href="https://unicode-table.com/en/blocks/">https://unicode-table.com/en/blocks/</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://unicode-table.com/en/blocks/">https://unicode-table.com/en/blocks/</a> </dd></dl>
 
 </div>
 </div>
@@ -769,14 +684,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Stores the glyphs provided in the basic latin character range. </p>
-<dl class="section note"><dt>Note</dt><dd>The control characters are excluded.</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">renderer</td><td>the renderer that will be used.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><code><a class="el" href="classcen_1_1font__cache.html#a8f47b5b7787e8055ff8f540d011fb526" title="Renders a range of glyphs to individual textures and caches them.">store_glyphs()</a></code> </dd></dl>
 
 </div>
 </div>
@@ -805,14 +712,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Stores the glyphs provided in the Latin-1 supplement character range. </p>
-<dl class="section note"><dt>Note</dt><dd>The control characters are excluded.</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">renderer</td><td>the renderer that will be used.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><code><a class="el" href="classcen_1_1font__cache.html#a8f47b5b7787e8055ff8f540d011fb526" title="Renders a range of glyphs to individual textures and caches them.">store_glyphs()</a></code> </dd></dl>
 
 </div>
 </div>
@@ -841,15 +740,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Stores the glyphs provided in the Latin-1 character range. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">renderer</td><td>the renderer that will be used.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><code><a class="el" href="classcen_1_1font__cache.html#af5997c2807914fd6cce66a47d1edc83d" title="Stores the glyphs provided in the basic latin character range.">store_basic_latin_glyphs()</a></code> </dd>
-<dd>
-<code><a class="el" href="classcen_1_1font__cache.html#a74052558344131ca6623c32cc4c7f2af" title="Stores the glyphs provided in the Latin-1 supplement character range.">store_latin1_supplement_glyphs()</a></code> </dd></dl>
 
 </div>
 </div>
@@ -865,7 +755,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">auto find_glyph </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__common.html#gac3131ee180db2fcab120011a74d12f47">unicode_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#ac3131ee180db2fcab120011a74d12f47">unicode_t</a>&#160;</td>
           <td class="paramname"><em>glyph</em></td><td>)</td>
           <td> const -&gt; const <a class="el" href="structcen_1_1font__cache_1_1glyph__data.html">glyph_data</a>*
   </td>
@@ -879,13 +769,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the cached information associated with a glyph, if there is any. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">glyph</td><td>the glyph that will be queried.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the found glyph data; a null pointer is returned if no data was found. </dd></dl>
 
 </div>
 </div>
@@ -901,7 +784,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">auto has_glyph </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__common.html#gac3131ee180db2fcab120011a74d12f47">unicode_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#ac3131ee180db2fcab120011a74d12f47">unicode_t</a>&#160;</td>
           <td class="paramname"><em>glyph</em></td><td>)</td>
           <td> const -&gt; bool
   </td>
@@ -915,13 +798,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Indicates whether a glyph has been cached. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">glyph</td><td>the glyph that will be checked.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the glyph has been cached; <code>false</code> otherwise. </dd></dl>
 
 </div>
 </div>
@@ -937,7 +813,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">auto get_glyph </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__common.html#gac3131ee180db2fcab120011a74d12f47">unicode_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#ac3131ee180db2fcab120011a74d12f47">unicode_t</a>&#160;</td>
           <td class="paramname"><em>glyph</em></td><td>)</td>
           <td> const -&gt; const <a class="el" href="structcen_1_1font__cache_1_1glyph__data.html">glyph_data</a>&amp;
   </td>
@@ -951,20 +827,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the previously cached information associated with a glyph. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">glyph</td><td>the glyph that will be queried.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the cached glyph data.</dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">exception</td><td>if there is no data stored for the glyph.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><code><a class="el" href="classcen_1_1font__cache.html#a645e2aefe0d941117dce3c6fcecb305d" title="Returns the cached information associated with a glyph, if there is any.">find_glyph()</a></code> </dd></dl>
 
 </div>
 </div>
@@ -992,7 +854,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the underlying font instance. </p>
-<dl class="section return"><dt>Returns</dt><dd>the associated font. </dd></dl>
 
 </div>
 </div>
@@ -1018,9 +879,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the underlying font instance. </p>
-<dl class="section return"><dt>Returns</dt><dd>the associated font. </dd></dl>
 
 </div>
 </div>

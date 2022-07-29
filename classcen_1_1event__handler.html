@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Centurion
-   &#160;<span id="projectnumber">7.0.0</span>
+   &#160;<span id="projectnumber">7.1.0</span>
    </div>
    <div id="projectbrief">A modern C++ wrapper library for SDL2</div>
   </td>
@@ -95,54 +95,45 @@ $(document).ready(function(){initNavTree('classcen_1_1event__handler.html',''); 
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classcen_1_1event__handler-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">event_handler Class Reference<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="group__event.html">Event</a></div></div></div>
+  <div class="headertitle"><div class="title">event_handler Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>The main interface for dealing with events.  
+<p>The main API for dealing with events.  
  <a href="classcen_1_1event__handler.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="event_8hpp_source.html">event.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7b8e10910a2bb2854d18d7500112bddb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1event__handler.html#a7b8e10910a2bb2854d18d7500112bddb">event_handler</a> () noexcept=default</td></tr>
-<tr class="memdesc:a7b8e10910a2bb2854d18d7500112bddb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an empty event handler.  <a href="classcen_1_1event__handler.html#a7b8e10910a2bb2854d18d7500112bddb">More...</a><br /></td></tr>
-<tr class="separator:a7b8e10910a2bb2854d18d7500112bddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ed11595e1c07a0eaff96b628a93cac3"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1event__handler.html#a7ed11595e1c07a0eaff96b628a93cac3">poll</a> () noexcept -&gt; bool</td></tr>
 <tr class="memdesc:a7ed11595e1c07a0eaff96b628a93cac3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Polls the next available event, if there is one.  <a href="classcen_1_1event__handler.html#a7ed11595e1c07a0eaff96b628a93cac3">More...</a><br /></td></tr>
 <tr class="separator:a7ed11595e1c07a0eaff96b628a93cac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc0bf5d5967ffc62e8d151306a49e0cc"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:adc0bf5d5967ffc62e8d151306a49e0cc"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1event__handler.html#adc0bf5d5967ffc62e8d151306a49e0cc">is</a> () const noexcept -&gt; bool</td></tr>
-<tr class="memdesc:adc0bf5d5967ffc62e8d151306a49e0cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether the currently stored event is of a particular type.  <a href="classcen_1_1event__handler.html#adc0bf5d5967ffc62e8d151306a49e0cc">More...</a><br /></td></tr>
 <tr class="separator:adc0bf5d5967ffc62e8d151306a49e0cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a907fcc922926a9c620af3e846af6c260"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1event__handler.html#a907fcc922926a9c620af3e846af6c260">is</a> (const <a class="el" href="group__event.html#gaeb4d53edaa173984689adc358463ecad">event_type</a> <a class="el" href="classcen_1_1event__handler.html#a99f25fc4102ab18bb31231fca21846c1">type</a>) const noexcept -&gt; bool</td></tr>
+<tr class="memitem:a907fcc922926a9c620af3e846af6c260"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1event__handler.html#a907fcc922926a9c620af3e846af6c260">is</a> (const <a class="el" href="namespacecen.html#aeb4d53edaa173984689adc358463ecad">event_type</a> <a class="el" href="classcen_1_1event__handler.html#a99f25fc4102ab18bb31231fca21846c1">type</a>) const noexcept -&gt; bool</td></tr>
 <tr class="memdesc:a907fcc922926a9c620af3e846af6c260"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether the current event is of a specific type.  <a href="classcen_1_1event__handler.html#a907fcc922926a9c620af3e846af6c260">More...</a><br /></td></tr>
 <tr class="separator:a907fcc922926a9c620af3e846af6c260"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99f25fc4102ab18bb31231fca21846c1"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1event__handler.html#a99f25fc4102ab18bb31231fca21846c1">type</a> () const noexcept -&gt; std::optional&lt; <a class="el" href="group__event.html#gaeb4d53edaa173984689adc358463ecad">event_type</a> &gt;</td></tr>
+<tr class="memitem:a99f25fc4102ab18bb31231fca21846c1"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1event__handler.html#a99f25fc4102ab18bb31231fca21846c1">type</a> () const noexcept -&gt; std::optional&lt; <a class="el" href="namespacecen.html#aeb4d53edaa173984689adc358463ecad">event_type</a> &gt;</td></tr>
 <tr class="memdesc:a99f25fc4102ab18bb31231fca21846c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the type of the internal event.  <a href="classcen_1_1event__handler.html#a99f25fc4102ab18bb31231fca21846c1">More...</a><br /></td></tr>
 <tr class="separator:a99f25fc4102ab18bb31231fca21846c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54f488b2cd30fad4df625b62393e3be4"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1event__handler.html#a54f488b2cd30fad4df625b62393e3be4">raw_type</a> () const noexcept -&gt; std::optional&lt; <a class="el" href="group__common.html#gae847b0ef07964fb6bdb468179580dc11">uint32</a> &gt;</td></tr>
+<tr class="memitem:a54f488b2cd30fad4df625b62393e3be4"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1event__handler.html#a54f488b2cd30fad4df625b62393e3be4">raw_type</a> () const noexcept -&gt; std::optional&lt; <a class="el" href="namespacecen.html#ae847b0ef07964fb6bdb468179580dc11">uint32</a> &gt;</td></tr>
 <tr class="memdesc:a54f488b2cd30fad4df625b62393e3be4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the raw integral value of the event type.  <a href="classcen_1_1event__handler.html#a54f488b2cd30fad4df625b62393e3be4">More...</a><br /></td></tr>
 <tr class="separator:a54f488b2cd30fad4df625b62393e3be4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a003a5b5c4c05baab9df96992a34c7a58"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1event__handler.html#a003a5b5c4c05baab9df96992a34c7a58">empty</a> () const noexcept -&gt; bool</td></tr>
-<tr class="memdesc:a003a5b5c4c05baab9df96992a34c7a58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether there is no internal event instance.  <a href="classcen_1_1event__handler.html#a003a5b5c4c05baab9df96992a34c7a58">More...</a><br /></td></tr>
 <tr class="separator:a003a5b5c4c05baab9df96992a34c7a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04a2d8226252932520a1d987a83b57e0"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a04a2d8226252932520a1d987a83b57e0"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1event__handler.html#a04a2d8226252932520a1d987a83b57e0">get</a> () -&gt; T &amp;</td></tr>
-<tr class="memdesc:a04a2d8226252932520a1d987a83b57e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current event representation.  <a href="classcen_1_1event__handler.html#a04a2d8226252932520a1d987a83b57e0">More...</a><br /></td></tr>
 <tr class="separator:a04a2d8226252932520a1d987a83b57e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2a500b63b185170d2bfa8cab0e9ac99"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ac2a500b63b185170d2bfa8cab0e9ac99"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1event__handler.html#ac2a500b63b185170d2bfa8cab0e9ac99">get</a> () const -&gt; const T &amp;</td></tr>
-<tr class="memdesc:ac2a500b63b185170d2bfa8cab0e9ac99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current event representation.  <a href="classcen_1_1event__handler.html#ac2a500b63b185170d2bfa8cab0e9ac99">More...</a><br /></td></tr>
 <tr class="separator:ac2a500b63b185170d2bfa8cab0e9ac99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa29779e241fd04d04e808c5f4cce1162"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:aa29779e241fd04d04e808c5f4cce1162"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1event__handler.html#aa29779e241fd04d04e808c5f4cce1162">try_get</a> () noexcept -&gt; T *</td></tr>
-<tr class="memdesc:aa29779e241fd04d04e808c5f4cce1162"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to return the current event representation.  <a href="classcen_1_1event__handler.html#aa29779e241fd04d04e808c5f4cce1162">More...</a><br /></td></tr>
 <tr class="separator:aa29779e241fd04d04e808c5f4cce1162"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb139d920a4ab1887ebb8d599256115e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:adb139d920a4ab1887ebb8d599256115e"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1event__handler.html#adb139d920a4ab1887ebb8d599256115e">try_get</a> () const noexcept -&gt; const T *</td></tr>
-<tr class="memdesc:adb139d920a4ab1887ebb8d599256115e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to return the current event representation.  <a href="classcen_1_1event__handler.html#adb139d920a4ab1887ebb8d599256115e">More...</a><br /></td></tr>
 <tr class="separator:adb139d920a4ab1887ebb8d599256115e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c86ac2a8362c2573f3d4176ae0f6125"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1event__handler.html#a4c86ac2a8362c2573f3d4176ae0f6125">data</a> () const noexcept -&gt; const SDL_Event *</td></tr>
 <tr class="separator:a4c86ac2a8362c2573f3d4176ae0f6125"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -150,59 +141,27 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a8b00a98d0d732298510d6f8e60efcbe0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1event__handler.html#a8b00a98d0d732298510d6f8e60efcbe0">update</a> () noexcept</td></tr>
-<tr class="memdesc:a8b00a98d0d732298510d6f8e60efcbe0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the event loop, gathering events from the input devices.  <a href="classcen_1_1event__handler.html#a8b00a98d0d732298510d6f8e60efcbe0">More...</a><br /></td></tr>
 <tr class="separator:a8b00a98d0d732298510d6f8e60efcbe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3176e425b2a798819858f4bf5f8ed81"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ab3176e425b2a798819858f4bf5f8ed81"><td class="memTemplItemLeft" align="right" valign="top">static auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1event__handler.html#ab3176e425b2a798819858f4bf5f8ed81">push</a> (const <a class="el" href="classcen_1_1event__base.html">event_base</a>&lt; T &gt; &amp;event) noexcept -&gt; <a class="el" href="classcen_1_1result.html">result</a></td></tr>
 <tr class="separator:ab3176e425b2a798819858f4bf5f8ed81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9607e1be652c6cf3e9cb00165e23a97"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1event__handler.html#ae9607e1be652c6cf3e9cb00165e23a97">flush</a> () noexcept</td></tr>
-<tr class="memdesc:ae9607e1be652c6cf3e9cb00165e23a97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flushes all current events from the event queue.  <a href="classcen_1_1event__handler.html#ae9607e1be652c6cf3e9cb00165e23a97">More...</a><br /></td></tr>
 <tr class="separator:ae9607e1be652c6cf3e9cb00165e23a97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab751d0ac467afd22f0e730a315003698"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1event__handler.html#ab751d0ac467afd22f0e730a315003698">flush_all</a> () noexcept</td></tr>
-<tr class="memdesc:ab751d0ac467afd22f0e730a315003698"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flushes all of the current events from the event queue, including pending events.  <a href="classcen_1_1event__handler.html#ab751d0ac467afd22f0e730a315003698">More...</a><br /></td></tr>
 <tr class="separator:ab751d0ac467afd22f0e730a315003698"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a968fe076344c10df8405f22ff7dc9035"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1event__handler.html#a968fe076344c10df8405f22ff7dc9035">queue_count</a> () noexcept -&gt; std::optional&lt; int &gt;</td></tr>
 <tr class="memdesc:a968fe076344c10df8405f22ff7dc9035"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current amount of events in the event queue.  <a href="classcen_1_1event__handler.html#a968fe076344c10df8405f22ff7dc9035">More...</a><br /></td></tr>
 <tr class="separator:a968fe076344c10df8405f22ff7dc9035"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad431a15c94c82e32eeaeb47adee62bde"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1event__handler.html#ad431a15c94c82e32eeaeb47adee62bde">queue_count</a> (const <a class="el" href="group__event.html#gaeb4d53edaa173984689adc358463ecad">event_type</a> <a class="el" href="classcen_1_1event__handler.html#a99f25fc4102ab18bb31231fca21846c1">type</a>) noexcept -&gt; std::optional&lt; int &gt;</td></tr>
-<tr class="memdesc:ad431a15c94c82e32eeaeb47adee62bde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of events of a particular type that are in the event queue.  <a href="classcen_1_1event__handler.html#ad431a15c94c82e32eeaeb47adee62bde">More...</a><br /></td></tr>
+<tr class="memitem:ad431a15c94c82e32eeaeb47adee62bde"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1event__handler.html#ad431a15c94c82e32eeaeb47adee62bde">queue_count</a> (const <a class="el" href="namespacecen.html#aeb4d53edaa173984689adc358463ecad">event_type</a> <a class="el" href="classcen_1_1event__handler.html#a99f25fc4102ab18bb31231fca21846c1">type</a>) noexcept -&gt; std::optional&lt; int &gt;</td></tr>
+<tr class="memdesc:ad431a15c94c82e32eeaeb47adee62bde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of events of a particular type in the event queue.  <a href="classcen_1_1event__handler.html#ad431a15c94c82e32eeaeb47adee62bde">More...</a><br /></td></tr>
 <tr class="separator:ad431a15c94c82e32eeaeb47adee62bde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f34081f39517cacd208a32c4ca1a72e"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1event__handler.html#a9f34081f39517cacd208a32c4ca1a72e">in_queue</a> (const <a class="el" href="group__event.html#gaeb4d53edaa173984689adc358463ecad">event_type</a> <a class="el" href="classcen_1_1event__handler.html#a99f25fc4102ab18bb31231fca21846c1">type</a>) noexcept -&gt; bool</td></tr>
-<tr class="memdesc:a9f34081f39517cacd208a32c4ca1a72e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether or not any events of the specified type is in the event queue.  <a href="classcen_1_1event__handler.html#a9f34081f39517cacd208a32c4ca1a72e">More...</a><br /></td></tr>
+<tr class="memitem:a9f34081f39517cacd208a32c4ca1a72e"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1event__handler.html#a9f34081f39517cacd208a32c4ca1a72e">in_queue</a> (const <a class="el" href="namespacecen.html#aeb4d53edaa173984689adc358463ecad">event_type</a> <a class="el" href="classcen_1_1event__handler.html#a99f25fc4102ab18bb31231fca21846c1">type</a>) noexcept -&gt; bool</td></tr>
+<tr class="memdesc:a9f34081f39517cacd208a32c4ca1a72e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether any events of the specified type are in the event queue.  <a href="classcen_1_1event__handler.html#a9f34081f39517cacd208a32c4ca1a72e">More...</a><br /></td></tr>
 <tr class="separator:a9f34081f39517cacd208a32c4ca1a72e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >The main interface for dealing with events. </p>
-<p >An example usage of this class can be found <a class="el" href="page-event-handler.html">here</a>. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a7b8e10910a2bb2854d18d7500112bddb" name="a7b8e10910a2bb2854d18d7500112bddb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b8e10910a2bb2854d18d7500112bddb">&#9670;&nbsp;</a></span>event_handler()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classcen_1_1event__handler.html">event_handler</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Creates an empty event handler. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
+<div class="textblock"><p >The main API for dealing with events. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a8b00a98d0d732298510d6f8e60efcbe0" name="a8b00a98d0d732298510d6f8e60efcbe0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8b00a98d0d732298510d6f8e60efcbe0">&#9670;&nbsp;</a></span>update()</h2>
 
@@ -225,9 +184,6 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Updates the event loop, gathering events from the input devices. </p>
-<dl class="section note"><dt>Note</dt><dd>You might not have to call this function by yourself. </dd></dl>
 
 </div>
 </div>
@@ -281,8 +237,6 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Flushes all current events from the event queue. </p>
-
 </div>
 </div>
 <a id="ab751d0ac467afd22f0e730a315003698" name="ab751d0ac467afd22f0e730a315003698"></a>
@@ -307,8 +261,6 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Flushes all of the current events from the event queue, including pending events. </p>
 
 </div>
 </div>
@@ -337,7 +289,6 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Polls the next available event, if there is one. </p>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if there are any pending events; <code>false</code> otherwise. </dd></dl>
 
 </div>
 </div>
@@ -364,16 +315,16 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Indicates whether the currently stored event is of a particular type. </p>
-<dl class="section note"><dt>Note</dt><dd>Not all event types have dedicated event classes, so you might want to use <code>is(event_type)</code> to perform more fine-grained type checks.</dd></dl>
+<p >Indicates whether the currently stored event is of a particular type.</p>
+<p >Note, not all event types have dedicated event classes, so you might want to use the overload taking a event type as a parameter to perform more fine-grained type checks.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>the event type to check for, e.g. <code><a class="el" href="classcen_1_1window__event.html">window_event</a></code>.</td></tr>
+    <tr><td class="paramname">T</td><td>the event type to check for, e.g. <a class="el" href="classcen_1_1window__event.html">window_event</a>.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the stored event is of the specified type; <code>false</code> otherwise. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the stored event is of the specified type; false otherwise.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>is(event_type) </dd></dl>
 
 </div>
 </div>
@@ -389,7 +340,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">auto is </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__event.html#gaeb4d53edaa173984689adc358463ecad">event_type</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#aeb4d53edaa173984689adc358463ecad">event_type</a>&#160;</td>
           <td class="paramname"><em>type</em></td><td>)</td>
           <td> const -&gt; bool
   </td>
@@ -403,13 +354,6 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Indicates whether the current event is of a specific type. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">type</td><td>the type to check for.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the current event is of the specified type; <code>false</code> otherwise. </dd></dl>
 
 </div>
 </div>
@@ -426,7 +370,7 @@ Static Public Member Functions</h2></td></tr>
           <td class="memname">auto type </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const -&gt; std::optional&lt;<a class="el" href="group__event.html#gaeb4d53edaa173984689adc358463ecad">event_type</a>&gt;
+          <td> const -&gt; std::optional&lt;<a class="el" href="namespacecen.html#aeb4d53edaa173984689adc358463ecad">event_type</a>&gt;
   </td>
         </tr>
       </table>
@@ -438,7 +382,6 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the type of the internal event. </p>
-<dl class="section return"><dt>Returns</dt><dd>the type of the event; an empty optional is returned if there is no valid internal event. </dd></dl>
 
 </div>
 </div>
@@ -455,7 +398,7 @@ Static Public Member Functions</h2></td></tr>
           <td class="memname">auto raw_type </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const -&gt; std::optional&lt;<a class="el" href="group__common.html#gae847b0ef07964fb6bdb468179580dc11">uint32</a>&gt;
+          <td> const -&gt; std::optional&lt;<a class="el" href="namespacecen.html#ae847b0ef07964fb6bdb468179580dc11">uint32</a>&gt;
   </td>
         </tr>
       </table>
@@ -467,8 +410,6 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the raw integral value of the event type. </p>
-<p >This function is useful when combined with the use of user events.</p>
-<dl class="section return"><dt>Returns</dt><dd>the integral value of the current event type; an empty optional is returned if there is no valid internal event. </dd></dl>
 
 </div>
 </div>
@@ -494,10 +435,9 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Indicates whether there is no internal event instance. </p>
-<dl class="section note"><dt>Note</dt><dd>There may still be information about the event type, this function just checks whether there is additional information about the event, i.e. a dedicated event type.</dd></dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if there is no internal event; <code>false</code> otherwise. </dd></dl>
+<p >Indicates whether there is no internal event instance.</p>
+<p >There may still be information about the event type, this function just checks whether there is additional information about the event, i.e. a dedicated event type.</p>
+<dl class="section return"><dt>Returns</dt><dd>true if there is no internal event; false otherwise. </dd></dl>
 
 </div>
 </div>
@@ -524,10 +464,9 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the current event representation. </p>
+<p >Returns the current event representation.</p>
 <p >Use this function if you're certain about the current event type.</p>
-<p >An exception is thrown if there is a mismatch between the requested type and the actual current event type. Use <code><a class="el" href="classcen_1_1event__handler.html#aa29779e241fd04d04e808c5f4cce1162" title="Attempts to return the current event representation.">try_get()</a></code> for a non-throwing alternative to this function.</p>
+<p >An exception is thrown if there is a mismatch between the requested type and the actual current event type. Use the try_get function for a non-throwing alternative to this function.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>the type of the event to obtain.</td></tr>
@@ -562,17 +501,6 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the current event representation. </p>
-<p >Use this function if you're certain about the current event type.</p>
-<p >An exception is thrown if there is a mismatch between the requested type and the actual current event type. Use <code><a class="el" href="classcen_1_1event__handler.html#aa29779e241fd04d04e808c5f4cce1162" title="Attempts to return the current event representation.">try_get()</a></code> for a non-throwing alternative to this function.</p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>the type of the event to obtain.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>a reference to the internal event type. </dd></dl>
-
 </div>
 </div>
 <a id="aa29779e241fd04d04e808c5f4cce1162" name="aa29779e241fd04d04e808c5f4cce1162"></a>
@@ -598,16 +526,14 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Attempts to return the current event representation. </p>
-<p >This function returns a null pointer if there is a mismatch between the requested type and the current event type.</p>
+<p >Attempts to return the current event representation.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>the type of the event to obtain.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>a pointer to the internal event type, might be null. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a potentially null pointer to the internal event type. </dd></dl>
 
 </div>
 </div>
@@ -634,16 +560,6 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Attempts to return the current event representation. </p>
-<p >This function returns a null pointer if there is a mismatch between the requested type and the current event type.</p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>the type of the event to obtain.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>a pointer to the internal event type, might be null. </dd></dl>
 
 </div>
 </div>
@@ -672,7 +588,6 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the current amount of events in the event queue. </p>
-<dl class="section return"><dt>Returns</dt><dd>the current number of events in the event queue; an empty optional is returned if something goes wrong. </dd></dl>
 
 </div>
 </div>
@@ -688,7 +603,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">static auto queue_count </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__event.html#gaeb4d53edaa173984689adc358463ecad">event_type</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#aeb4d53edaa173984689adc358463ecad">event_type</a>&#160;</td>
           <td class="paramname"><em>type</em></td><td>)</td>
           <td> -&gt; std::optional&lt;int&gt;
   </td>
@@ -701,14 +616,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the number of events of a particular type that are in the event queue. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">type</td><td>the type of event to count.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the current number of events of the specified type that are in the event queue; an empty optional is returned if something goes wrong. </dd></dl>
+<p>Returns the number of events of a particular type in the event queue. </p>
 
 </div>
 </div>
@@ -724,7 +632,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">static auto in_queue </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__event.html#gaeb4d53edaa173984689adc358463ecad">event_type</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#aeb4d53edaa173984689adc358463ecad">event_type</a>&#160;</td>
           <td class="paramname"><em>type</em></td><td>)</td>
           <td> -&gt; bool
   </td>
@@ -737,14 +645,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Indicates whether or not any events of the specified type is in the event queue. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">type</td><td>the event type to look for in the event queue.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if there are events of the specified type in the event queue; <code>false</code> otherwise. </dd></dl>
+<p>Indicates whether any events of the specified type are in the event queue. </p>
 
 </div>
 </div>

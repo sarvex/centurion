@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Centurion
-   &#160;<span id="projectnumber">7.0.0</span>
+   &#160;<span id="projectnumber">7.1.0</span>
    </div>
    <div id="projectbrief">A modern C++ wrapper library for SDL2</div>
   </td>
@@ -117,10 +117,10 @@ $(document).ready(function(){initNavTree('page-event-handler.html',''); initResi
 <div class="line">{</div>
 <div class="line">  <span class="keyword">const</span> <a class="code hl_class" href="classcen_1_1sdl.html">cen::sdl</a> sdl;</div>
 <div class="line"> </div>
-<div class="line">  <a class="code hl_class" href="classcen_1_1basic__window.html">cen::window</a> <a class="code hl_typedef" href="group__video.html#gad2eb382608242f24cf986eee93ea144c">window</a>{<span class="stringliteral">&quot;event_handler demo&quot;</span>};</div>
-<div class="line">  <a class="code hl_class" href="classcen_1_1basic__renderer.html">cen::renderer</a> <a class="code hl_typedef" href="group__render.html#gaf6dbad20a46b69892b5e694a4069ae42">renderer</a> = <a class="code hl_typedef" href="group__video.html#gad2eb382608242f24cf986eee93ea144c">window</a>.make_renderer();</div>
+<div class="line">  <a class="code hl_class" href="classcen_1_1basic__window.html">cen::window</a> <a class="code hl_typedef" href="namespacecen.html#ad2eb382608242f24cf986eee93ea144c">window</a>{<span class="stringliteral">&quot;event_handler demo&quot;</span>};</div>
+<div class="line">  <a class="code hl_class" href="classcen_1_1basic__renderer.html">cen::renderer</a> <a class="code hl_typedef" href="namespacecen.html#af6dbad20a46b69892b5e694a4069ae42">renderer</a> = <a class="code hl_typedef" href="namespacecen.html#ad2eb382608242f24cf986eee93ea144c">window</a>.make_renderer();</div>
 <div class="line"> </div>
-<div class="line">  <a class="code hl_typedef" href="group__video.html#gad2eb382608242f24cf986eee93ea144c">window</a>.show();</div>
+<div class="line">  <a class="code hl_typedef" href="namespacecen.html#ad2eb382608242f24cf986eee93ea144c">window</a>.show();</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">/* Create our event handler, which provides our event management API */</span></div>
 <div class="line">  <a class="code hl_class" href="classcen_1_1event__handler.html">cen::event_handler</a> handler;</div>
@@ -136,7 +136,7 @@ $(document).ready(function(){initNavTree('page-event-handler.html',''); initResi
 <div class="line">        running = <span class="keyword">false</span>;</div>
 <div class="line">        <span class="keywordflow">break</span>;</div>
 <div class="line">      }</div>
-<div class="line">      <span class="keywordflow">else</span> <span class="keywordflow">if</span> (handler.<a class="code hl_function" href="classcen_1_1event__handler.html#adc0bf5d5967ffc62e8d151306a49e0cc">is</a>(<a class="code hl_enumvalue" href="group__event.html#ggaeb4d53edaa173984689adc358463ecada88aee4617a01e1e5da7f11f3b5fb7ac0">cen::event_type::key_down</a>)) {</div>
+<div class="line">      <span class="keywordflow">else</span> <span class="keywordflow">if</span> (handler.<a class="code hl_function" href="classcen_1_1event__handler.html#adc0bf5d5967ffc62e8d151306a49e0cc">is</a>(<a class="code hl_enumvalue" href="namespacecen.html#aeb4d53edaa173984689adc358463ecada88aee4617a01e1e5da7f11f3b5fb7ac0">cen::event_type::key_down</a>)) {</div>
 <div class="line">        <span class="comment">/* We received a keyboard event, so get the internal event representation. */</span></div>
 <div class="line">        <span class="keyword">const</span> <span class="keyword">auto</span>&amp; keyboardEvent = handler.<a class="code hl_function" href="classcen_1_1event__handler.html#a04a2d8226252932520a1d987a83b57e0">get</a>&lt;<a class="code hl_class" href="classcen_1_1keyboard__event.html">cen::keyboard_event</a>&gt;();</div>
 <div class="line">        <span class="keywordflow">if</span> (!keyboardEvent.repeated()) {</div>
@@ -150,44 +150,44 @@ $(document).ready(function(){initNavTree('page-event-handler.html',''); initResi
 <div class="line">      }</div>
 <div class="line">    }</div>
 <div class="line"> </div>
-<div class="line">    <a class="code hl_typedef" href="group__render.html#gaf6dbad20a46b69892b5e694a4069ae42">renderer</a>.clear_with(colors.at(colorIndex));</div>
+<div class="line">    <a class="code hl_typedef" href="namespacecen.html#af6dbad20a46b69892b5e694a4069ae42">renderer</a>.clear_with(colors.at(colorIndex));</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">if</span> (mousePos) {</div>
-<div class="line">      <a class="code hl_typedef" href="group__render.html#gaf6dbad20a46b69892b5e694a4069ae42">renderer</a>.set_color(colors.at((colorIndex + 1u) % colors.size()));</div>
+<div class="line">      <a class="code hl_typedef" href="namespacecen.html#af6dbad20a46b69892b5e694a4069ae42">renderer</a>.set_color(colors.at((colorIndex + 1u) % colors.size()));</div>
 <div class="line"> </div>
 <div class="line">      <a class="code hl_class" href="classcen_1_1basic__rect.html">cen::irect</a> rect{*mousePos, {6, 6}};</div>
 <div class="line">      rect.<a class="code hl_function" href="classcen_1_1basic__rect.html#a4b90146c5be149213763206402e9a5f6">offset_x</a>(-3);</div>
 <div class="line">      rect.offset_y(-3);</div>
 <div class="line"> </div>
-<div class="line">      <a class="code hl_typedef" href="group__render.html#gaf6dbad20a46b69892b5e694a4069ae42">renderer</a>.fill_rect(rect);</div>
+<div class="line">      <a class="code hl_typedef" href="namespacecen.html#af6dbad20a46b69892b5e694a4069ae42">renderer</a>.fill_rect(rect);</div>
 <div class="line">    }</div>
 <div class="line"> </div>
-<div class="line">    <a class="code hl_typedef" href="group__render.html#gaf6dbad20a46b69892b5e694a4069ae42">renderer</a>.present();</div>
+<div class="line">    <a class="code hl_typedef" href="namespacecen.html#af6dbad20a46b69892b5e694a4069ae42">renderer</a>.present();</div>
 <div class="line">  }</div>
 <div class="line"> </div>
-<div class="line">  <a class="code hl_typedef" href="group__video.html#gad2eb382608242f24cf986eee93ea144c">window</a>.hide();</div>
+<div class="line">  <a class="code hl_typedef" href="namespacecen.html#ad2eb382608242f24cf986eee93ea144c">window</a>.hide();</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-<div class="ttc" id="aclasscen_1_1basic__rect_html"><div class="ttname"><a href="classcen_1_1basic__rect.html">cen::basic_rect</a></div><div class="ttdoc">A simple rectangle implementation, based on either SDL_Rect or SDL_FRect.</div><div class="ttdef"><b>Definition:</b> math.hpp:552</div></div>
-<div class="ttc" id="aclasscen_1_1basic__rect_html_a4b90146c5be149213763206402e9a5f6"><div class="ttname"><a href="classcen_1_1basic__rect.html#a4b90146c5be149213763206402e9a5f6">cen::basic_rect::offset_x</a></div><div class="ttdeci">constexpr void offset_x(const value_type dx) noexcept</div><div class="ttdoc">Offsets the x-coordinate of the rectangle by the specified amount.</div><div class="ttdef"><b>Definition:</b> math.hpp:711</div></div>
-<div class="ttc" id="aclasscen_1_1basic__renderer_html"><div class="ttname"><a href="classcen_1_1basic__renderer.html">cen::basic_renderer</a></div><div class="ttdoc">Provides the primary 2D rendering API.</div><div class="ttdef"><b>Definition:</b> render.hpp:143</div></div>
-<div class="ttc" id="aclasscen_1_1basic__window_html"><div class="ttname"><a href="classcen_1_1basic__window.html">cen::basic_window</a></div><div class="ttdoc">Represents an operating-system window.</div><div class="ttdef"><b>Definition:</b> window.hpp:80</div></div>
-<div class="ttc" id="aclasscen_1_1event__handler_html"><div class="ttname"><a href="classcen_1_1event__handler.html">cen::event_handler</a></div><div class="ttdoc">The main interface for dealing with events.</div><div class="ttdef"><b>Definition:</b> event.hpp:75</div></div>
-<div class="ttc" id="aclasscen_1_1event__handler_html_a04a2d8226252932520a1d987a83b57e0"><div class="ttname"><a href="classcen_1_1event__handler.html#a04a2d8226252932520a1d987a83b57e0">cen::event_handler::get</a></div><div class="ttdeci">auto get() -&gt; T &amp;</div><div class="ttdoc">Returns the current event representation.</div><div class="ttdef"><b>Definition:</b> event.hpp:219</div></div>
-<div class="ttc" id="aclasscen_1_1event__handler_html_a7ed11595e1c07a0eaff96b628a93cac3"><div class="ttname"><a href="classcen_1_1event__handler.html#a7ed11595e1c07a0eaff96b628a93cac3">cen::event_handler::poll</a></div><div class="ttdeci">auto poll() noexcept -&gt; bool</div><div class="ttdoc">Polls the next available event, if there is one.</div><div class="ttdef"><b>Definition:</b> event.hpp:115</div></div>
-<div class="ttc" id="aclasscen_1_1event__handler_html_aa29779e241fd04d04e808c5f4cce1162"><div class="ttname"><a href="classcen_1_1event__handler.html#aa29779e241fd04d04e808c5f4cce1162">cen::event_handler::try_get</a></div><div class="ttdeci">auto try_get() noexcept -&gt; T *</div><div class="ttdoc">Attempts to return the current event representation.</div><div class="ttdef"><b>Definition:</b> event.hpp:242</div></div>
-<div class="ttc" id="aclasscen_1_1event__handler_html_adc0bf5d5967ffc62e8d151306a49e0cc"><div class="ttname"><a href="classcen_1_1event__handler.html#adc0bf5d5967ffc62e8d151306a49e0cc">cen::event_handler::is</a></div><div class="ttdeci">auto is() const noexcept -&gt; bool</div><div class="ttdoc">Indicates whether the currently stored event is of a particular type.</div><div class="ttdef"><b>Definition:</b> event.hpp:139</div></div>
-<div class="ttc" id="aclasscen_1_1keyboard__event_html"><div class="ttname"><a href="classcen_1_1keyboard__event.html">cen::keyboard_event</a></div><div class="ttdef"><b>Definition:</b> misc_events.hpp:229</div></div>
-<div class="ttc" id="aclasscen_1_1mouse__button__event_html"><div class="ttname"><a href="classcen_1_1mouse__button__event.html">cen::mouse_button_event</a></div><div class="ttdef"><b>Definition:</b> mouse_events.hpp:74</div></div>
-<div class="ttc" id="aclasscen_1_1quit__event_html"><div class="ttname"><a href="classcen_1_1quit__event.html">cen::quit_event</a></div><div class="ttdef"><b>Definition:</b> misc_events.hpp:51</div></div>
-<div class="ttc" id="aclasscen_1_1sdl_html"><div class="ttname"><a href="classcen_1_1sdl.html">cen::sdl</a></div><div class="ttdoc">Used to load and subsequently unload the core SDL library.</div><div class="ttdef"><b>Definition:</b> initialization.hpp:77</div></div>
-<div class="ttc" id="agroup__event_html_ggaeb4d53edaa173984689adc358463ecada88aee4617a01e1e5da7f11f3b5fb7ac0"><div class="ttname"><a href="group__event.html#ggaeb4d53edaa173984689adc358463ecada88aee4617a01e1e5da7f11f3b5fb7ac0">cen::event_type::key_down</a></div><div class="ttdeci">@ key_down</div></div>
-<div class="ttc" id="agroup__render_html_gaf6dbad20a46b69892b5e694a4069ae42"><div class="ttname"><a href="group__render.html#gaf6dbad20a46b69892b5e694a4069ae42">cen::renderer</a></div><div class="ttdeci">basic_renderer&lt; detail::owner_tag &gt; renderer</div><div class="ttdoc">An owning renderer.</div><div class="ttdef"><b>Definition:</b> render.hpp:123</div></div>
-<div class="ttc" id="agroup__video_html_gad2eb382608242f24cf986eee93ea144c"><div class="ttname"><a href="group__video.html#gad2eb382608242f24cf986eee93ea144c">cen::window</a></div><div class="ttdeci">basic_window&lt; detail::owner_tag &gt; window</div><div class="ttdoc">An owning window.</div><div class="ttdef"><b>Definition:</b> window.hpp:61</div></div>
-<div class="ttc" id="anamespacecen_1_1colors_html_a3f9eef24aa232ea082330ed4b657a01d"><div class="ttname"><a href="namespacecen_1_1colors.html#a3f9eef24aa232ea082330ed4b657a01d">cen::colors::dark_turquoise</a></div><div class="ttdeci">constexpr color dark_turquoise</div><div class="ttdef"><b>Definition:</b> color.hpp:844</div></div>
-<div class="ttc" id="anamespacecen_1_1colors_html_a606184cb6e6c9c0359db564a99a42b2f"><div class="ttname"><a href="namespacecen_1_1colors.html#a606184cb6e6c9c0359db564a99a42b2f">cen::colors::hot_pink</a></div><div class="ttdeci">constexpr color hot_pink</div><div class="ttdef"><b>Definition:</b> color.hpp:735</div></div>
-<div class="ttc" id="anamespacecen_1_1colors_html_aad8cf484184db55309c898e4d300c48b"><div class="ttname"><a href="namespacecen_1_1colors.html#aad8cf484184db55309c898e4d300c48b">cen::colors::dark_olive_green</a></div><div class="ttdeci">constexpr color dark_olive_green</div><div class="ttdef"><b>Definition:</b> color.hpp:835</div></div>
+<div class="ttc" id="aclasscen_1_1basic__rect_html"><div class="ttname"><a href="classcen_1_1basic__rect.html">cen::basic_rect</a></div><div class="ttdef"><b>Definition:</b> math.hpp:401</div></div>
+<div class="ttc" id="aclasscen_1_1basic__rect_html_a4b90146c5be149213763206402e9a5f6"><div class="ttname"><a href="classcen_1_1basic__rect.html#a4b90146c5be149213763206402e9a5f6">cen::basic_rect::offset_x</a></div><div class="ttdeci">constexpr void offset_x(const value_type dx) noexcept</div><div class="ttdef"><b>Definition:</b> math.hpp:457</div></div>
+<div class="ttc" id="aclasscen_1_1basic__renderer_html"><div class="ttname"><a href="classcen_1_1basic__renderer.html">cen::basic_renderer</a></div><div class="ttdef"><b>Definition:</b> render.hpp:115</div></div>
+<div class="ttc" id="aclasscen_1_1basic__window_html"><div class="ttname"><a href="classcen_1_1basic__window.html">cen::basic_window</a></div><div class="ttdef"><b>Definition:</b> window.hpp:75</div></div>
+<div class="ttc" id="aclasscen_1_1event__handler_html"><div class="ttname"><a href="classcen_1_1event__handler.html">cen::event_handler</a></div><div class="ttdoc">The main API for dealing with events.</div><div class="ttdef"><b>Definition:</b> event.hpp:62</div></div>
+<div class="ttc" id="aclasscen_1_1event__handler_html_a04a2d8226252932520a1d987a83b57e0"><div class="ttname"><a href="classcen_1_1event__handler.html#a04a2d8226252932520a1d987a83b57e0">cen::event_handler::get</a></div><div class="ttdeci">auto get() -&gt; T &amp;</div><div class="ttdef"><b>Definition:</b> event.hpp:170</div></div>
+<div class="ttc" id="aclasscen_1_1event__handler_html_a7ed11595e1c07a0eaff96b628a93cac3"><div class="ttname"><a href="classcen_1_1event__handler.html#a7ed11595e1c07a0eaff96b628a93cac3">cen::event_handler::poll</a></div><div class="ttdeci">auto poll() noexcept -&gt; bool</div><div class="ttdoc">Polls the next available event, if there is one.</div><div class="ttdef"><b>Definition:</b> event.hpp:82</div></div>
+<div class="ttc" id="aclasscen_1_1event__handler_html_aa29779e241fd04d04e808c5f4cce1162"><div class="ttname"><a href="classcen_1_1event__handler.html#aa29779e241fd04d04e808c5f4cce1162">cen::event_handler::try_get</a></div><div class="ttdeci">auto try_get() noexcept -&gt; T *</div><div class="ttdef"><b>Definition:</b> event.hpp:189</div></div>
+<div class="ttc" id="aclasscen_1_1event__handler_html_adc0bf5d5967ffc62e8d151306a49e0cc"><div class="ttname"><a href="classcen_1_1event__handler.html#adc0bf5d5967ffc62e8d151306a49e0cc">cen::event_handler::is</a></div><div class="ttdeci">auto is() const noexcept -&gt; bool</div><div class="ttdef"><b>Definition:</b> event.hpp:108</div></div>
+<div class="ttc" id="aclasscen_1_1keyboard__event_html"><div class="ttname"><a href="classcen_1_1keyboard__event.html">cen::keyboard_event</a></div><div class="ttdef"><b>Definition:</b> misc_events.hpp:226</div></div>
+<div class="ttc" id="aclasscen_1_1mouse__button__event_html"><div class="ttname"><a href="classcen_1_1mouse__button__event.html">cen::mouse_button_event</a></div><div class="ttdef"><b>Definition:</b> mouse_events.hpp:66</div></div>
+<div class="ttc" id="aclasscen_1_1quit__event_html"><div class="ttname"><a href="classcen_1_1quit__event.html">cen::quit_event</a></div><div class="ttdef"><b>Definition:</b> misc_events.hpp:48</div></div>
+<div class="ttc" id="aclasscen_1_1sdl_html"><div class="ttname"><a href="classcen_1_1sdl.html">cen::sdl</a></div><div class="ttdef"><b>Definition:</b> initialization.hpp:64</div></div>
+<div class="ttc" id="anamespacecen_1_1colors_html_a3f9eef24aa232ea082330ed4b657a01d"><div class="ttname"><a href="namespacecen_1_1colors.html#a3f9eef24aa232ea082330ed4b657a01d">cen::colors::dark_turquoise</a></div><div class="ttdeci">constexpr color dark_turquoise</div><div class="ttdef"><b>Definition:</b> color.hpp:700</div></div>
+<div class="ttc" id="anamespacecen_1_1colors_html_a606184cb6e6c9c0359db564a99a42b2f"><div class="ttname"><a href="namespacecen_1_1colors.html#a606184cb6e6c9c0359db564a99a42b2f">cen::colors::hot_pink</a></div><div class="ttdeci">constexpr color hot_pink</div><div class="ttdef"><b>Definition:</b> color.hpp:591</div></div>
+<div class="ttc" id="anamespacecen_1_1colors_html_aad8cf484184db55309c898e4d300c48b"><div class="ttname"><a href="namespacecen_1_1colors.html#aad8cf484184db55309c898e4d300c48b">cen::colors::dark_olive_green</a></div><div class="ttdeci">constexpr color dark_olive_green</div><div class="ttdef"><b>Definition:</b> color.hpp:691</div></div>
+<div class="ttc" id="anamespacecen_html_ad2eb382608242f24cf986eee93ea144c"><div class="ttname"><a href="namespacecen.html#ad2eb382608242f24cf986eee93ea144c">cen::window</a></div><div class="ttdeci">basic_window&lt; detail::owner_tag &gt; window</div><div class="ttdef"><b>Definition:</b> window.hpp:58</div></div>
+<div class="ttc" id="anamespacecen_html_aeb4d53edaa173984689adc358463ecada88aee4617a01e1e5da7f11f3b5fb7ac0"><div class="ttname"><a href="namespacecen.html#aeb4d53edaa173984689adc358463ecada88aee4617a01e1e5da7f11f3b5fb7ac0">cen::event_type::key_down</a></div><div class="ttdeci">@ key_down</div></div>
+<div class="ttc" id="anamespacecen_html_af6dbad20a46b69892b5e694a4069ae42"><div class="ttname"><a href="namespacecen.html#af6dbad20a46b69892b5e694a4069ae42">cen::renderer</a></div><div class="ttdeci">basic_renderer&lt; detail::owner_tag &gt; renderer</div><div class="ttdef"><b>Definition:</b> render.hpp:101</div></div>
 </div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

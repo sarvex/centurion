@@ -1,6 +1,12 @@
 var annotated_dup =
 [
     [ "cen", "namespacecen.html", [
+      [ "detail", "namespacecen_1_1detail.html", [
+        [ "pointer", "classcen_1_1detail_1_1pointer.html", "classcen_1_1detail_1_1pointer" ],
+        [ "sdl_deleter", "structcen_1_1detail_1_1sdl__deleter.html", "structcen_1_1detail_1_1sdl__deleter" ],
+        [ "tuple_type_index", "classcen_1_1detail_1_1tuple__type__index.html", null ],
+        [ "tuple_type_index< Target, std::tuple< T... > >", "classcen_1_1detail_1_1tuple__type__index_3_01_target_00_01std_1_1tuple_3_01_t_8_8_8_01_4_01_4.html", null ]
+      ] ],
       [ "experimental", "namespacecen_1_1experimental.html", [
         [ "font_bundle", "classcen_1_1experimental_1_1font__bundle.html", "classcen_1_1experimental_1_1font__bundle" ]
       ] ],
@@ -107,6 +113,7 @@ var annotated_dup =
       [ "shared_object", "classcen_1_1shared__object.html", "classcen_1_1shared__object" ],
       [ "simd_block", "classcen_1_1simd__block.html", "classcen_1_1simd__block" ],
       [ "text_editing_event", "classcen_1_1text__editing__event.html", "classcen_1_1text__editing__event" ],
+      [ "text_editing_ext_event", "classcen_1_1text__editing__ext__event.html", "classcen_1_1text__editing__ext__event" ],
       [ "text_input_event", "classcen_1_1text__input__event.html", "classcen_1_1text__input__event" ],
       [ "thread", "classcen_1_1thread.html", "classcen_1_1thread" ],
       [ "touch_finger_event", "classcen_1_1touch__finger__event.html", "classcen_1_1touch__finger__event" ],

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['window_0',['window',['../group__video.html#gad2eb382608242f24cf986eee93ea144c',1,'cen']]],
-  ['window_5fhandle_1',['window_handle',['../group__video.html#ga33e9c5d191b09bdb03534937b41695e6',1,'cen']]]
+  ['value_5ftype_0',['value_type',['../structcen_1_1basic__vector3.html#afb9ded5f49336ae503bb9f2035ea902b',1,'cen::basic_vector3::value_type()'],['../structcen_1_1basic__area.html#afb9ded5f49336ae503bb9f2035ea902b',1,'cen::basic_area::value_type()'],['../classcen_1_1point__traits.html#a5e2591e4135d4ce3ddfcc9a98b4bbcf7',1,'cen::point_traits::value_type()'],['../classcen_1_1basic__point.html#a3a4045187c4303faf020d14f1027fb98',1,'cen::basic_point::value_type()'],['../classcen_1_1rect__traits.html#a5e2591e4135d4ce3ddfcc9a98b4bbcf7',1,'cen::rect_traits::value_type()'],['../classcen_1_1basic__rect.html#a179aebb35ad5f78a20b210e77d67a322',1,'cen::basic_rect::value_type()'],['../classcen_1_1unicode__string.html#a0589752371dde065db1ea069d2afadb4',1,'cen::unicode_string::value_type()']]]
 ];

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Centurion
-   &#160;<span id="projectnumber">7.0.0</span>
+   &#160;<span id="projectnumber">7.1.0</span>
    </div>
    <div id="projectbrief">A modern C++ wrapper library for SDL2</div>
   </td>
@@ -94,12 +94,9 @@ $(document).ready(function(){initNavTree('classcen_1_1keyboard.html',''); initRe
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classcen_1_1keyboard-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">keyboard Class Reference<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="group__input.html">Input</a> &raquo; <a class="el" href="group__keyboard.html">Keyboard</a></div></div></div>
+  <div class="headertitle"><div class="title">keyboard Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>Provides a read-only view into the keyboard state.  
- <a href="classcen_1_1keyboard.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="keyboard_8hpp_source.html">keyboard.hpp</a>&gt;</code></p>
 <table class="memberdecls">
@@ -108,39 +105,33 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7c8770c1c1019c4d449379750cf3a4ed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1keyboard.html#a7c8770c1c1019c4d449379750cf3a4ed">keyboard</a> () noexcept</td></tr>
 <tr class="separator:a7c8770c1c1019c4d449379750cf3a4ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f2e190b8261a98c97c2ea4e86670d54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1keyboard.html#a5f2e190b8261a98c97c2ea4e86670d54">refresh</a> ()</td></tr>
-<tr class="memdesc:a5f2e190b8261a98c97c2ea4e86670d54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refreshes the key state.  <a href="classcen_1_1keyboard.html#a5f2e190b8261a98c97c2ea4e86670d54">More...</a><br /></td></tr>
 <tr class="separator:a5f2e190b8261a98c97c2ea4e86670d54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfd7d4f299e485a26ee7897d35824ba6"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1keyboard.html#adfd7d4f299e485a26ee7897d35824ba6">is_pressed</a> (const <a class="el" href="classcen_1_1scan__code.html">scan_code</a> &amp;code) const noexcept -&gt; bool</td></tr>
 <tr class="memdesc:adfd7d4f299e485a26ee7897d35824ba6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether a key is being pressed.  <a href="classcen_1_1keyboard.html#adfd7d4f299e485a26ee7897d35824ba6">More...</a><br /></td></tr>
 <tr class="separator:adfd7d4f299e485a26ee7897d35824ba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9f42d413b549f6474427c395d9e6548"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1keyboard.html#ad9f42d413b549f6474427c395d9e6548">is_pressed</a> (const <a class="el" href="classcen_1_1key__code.html">key_code</a> &amp;code) const noexcept -&gt; bool</td></tr>
-<tr class="memdesc:ad9f42d413b549f6474427c395d9e6548"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether a key is being pressed.  <a href="classcen_1_1keyboard.html#ad9f42d413b549f6474427c395d9e6548">More...</a><br /></td></tr>
 <tr class="separator:ad9f42d413b549f6474427c395d9e6548"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf6e694302b9c1c3cb20c1f54fe7d631"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1keyboard.html#abf6e694302b9c1c3cb20c1f54fe7d631">is_held</a> (const <a class="el" href="classcen_1_1scan__code.html">scan_code</a> &amp;code) const noexcept(<a class="el" href="group__common.html#ga536dd3053e832e696a908d66e89af06a">on_msvc</a>) -&gt; bool</td></tr>
+<tr class="memitem:abf6e694302b9c1c3cb20c1f54fe7d631"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1keyboard.html#abf6e694302b9c1c3cb20c1f54fe7d631">is_held</a> (const <a class="el" href="classcen_1_1scan__code.html">scan_code</a> &amp;code) const noexcept(<a class="el" href="namespacecen.html#a536dd3053e832e696a908d66e89af06a">on_msvc</a>) -&gt; bool</td></tr>
 <tr class="memdesc:abf6e694302b9c1c3cb20c1f54fe7d631"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether a key is held, i.e. pressed for at least two consecutive updates.  <a href="classcen_1_1keyboard.html#abf6e694302b9c1c3cb20c1f54fe7d631">More...</a><br /></td></tr>
 <tr class="separator:abf6e694302b9c1c3cb20c1f54fe7d631"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d756711c10cd3e24660555cb490b235"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1keyboard.html#a5d756711c10cd3e24660555cb490b235">is_held</a> (const <a class="el" href="classcen_1_1key__code.html">key_code</a> &amp;code) const noexcept(<a class="el" href="group__common.html#ga536dd3053e832e696a908d66e89af06a">on_msvc</a>) -&gt; bool</td></tr>
-<tr class="memdesc:a5d756711c10cd3e24660555cb490b235"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether a key is held, i.e. pressed for at least two consecutive updates.  <a href="classcen_1_1keyboard.html#a5d756711c10cd3e24660555cb490b235">More...</a><br /></td></tr>
+<tr class="memitem:a5d756711c10cd3e24660555cb490b235"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1keyboard.html#a5d756711c10cd3e24660555cb490b235">is_held</a> (const <a class="el" href="classcen_1_1key__code.html">key_code</a> &amp;code) const noexcept(<a class="el" href="namespacecen.html#a536dd3053e832e696a908d66e89af06a">on_msvc</a>) -&gt; bool</td></tr>
 <tr class="separator:a5d756711c10cd3e24660555cb490b235"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a828420d6e6be562be4178283eafa1774"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1keyboard.html#a828420d6e6be562be4178283eafa1774">just_pressed</a> (const <a class="el" href="classcen_1_1scan__code.html">scan_code</a> &amp;code) const noexcept(<a class="el" href="group__common.html#ga536dd3053e832e696a908d66e89af06a">on_msvc</a>) -&gt; bool</td></tr>
+<tr class="memitem:a828420d6e6be562be4178283eafa1774"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1keyboard.html#a828420d6e6be562be4178283eafa1774">just_pressed</a> (const <a class="el" href="classcen_1_1scan__code.html">scan_code</a> &amp;code) const noexcept(<a class="el" href="namespacecen.html#a536dd3053e832e696a908d66e89af06a">on_msvc</a>) -&gt; bool</td></tr>
 <tr class="memdesc:a828420d6e6be562be4178283eafa1774"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether a key was initially pressed during the the last update.  <a href="classcen_1_1keyboard.html#a828420d6e6be562be4178283eafa1774">More...</a><br /></td></tr>
 <tr class="separator:a828420d6e6be562be4178283eafa1774"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12345eab37be45b1a96d7cbc5bdc3ee7"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1keyboard.html#a12345eab37be45b1a96d7cbc5bdc3ee7">just_pressed</a> (const <a class="el" href="classcen_1_1key__code.html">key_code</a> &amp;code) const noexcept(<a class="el" href="group__common.html#ga536dd3053e832e696a908d66e89af06a">on_msvc</a>) -&gt; bool</td></tr>
-<tr class="memdesc:a12345eab37be45b1a96d7cbc5bdc3ee7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether a key was initially pressed during the the last update.  <a href="classcen_1_1keyboard.html#a12345eab37be45b1a96d7cbc5bdc3ee7">More...</a><br /></td></tr>
+<tr class="memitem:a12345eab37be45b1a96d7cbc5bdc3ee7"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1keyboard.html#a12345eab37be45b1a96d7cbc5bdc3ee7">just_pressed</a> (const <a class="el" href="classcen_1_1key__code.html">key_code</a> &amp;code) const noexcept(<a class="el" href="namespacecen.html#a536dd3053e832e696a908d66e89af06a">on_msvc</a>) -&gt; bool</td></tr>
 <tr class="separator:a12345eab37be45b1a96d7cbc5bdc3ee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad57014dd3f62237acf902a852ba2b7ff"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1keyboard.html#ad57014dd3f62237acf902a852ba2b7ff">just_released</a> (const <a class="el" href="classcen_1_1scan__code.html">scan_code</a> &amp;code) const noexcept(<a class="el" href="group__common.html#ga536dd3053e832e696a908d66e89af06a">on_msvc</a>) -&gt; bool</td></tr>
+<tr class="memitem:ad57014dd3f62237acf902a852ba2b7ff"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1keyboard.html#ad57014dd3f62237acf902a852ba2b7ff">just_released</a> (const <a class="el" href="classcen_1_1scan__code.html">scan_code</a> &amp;code) const noexcept(<a class="el" href="namespacecen.html#a536dd3053e832e696a908d66e89af06a">on_msvc</a>) -&gt; bool</td></tr>
 <tr class="memdesc:ad57014dd3f62237acf902a852ba2b7ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether a key was released during the the last update.  <a href="classcen_1_1keyboard.html#ad57014dd3f62237acf902a852ba2b7ff">More...</a><br /></td></tr>
 <tr class="separator:ad57014dd3f62237acf902a852ba2b7ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51fa223afb9ae4acbc8ea7447d2b6383"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1keyboard.html#a51fa223afb9ae4acbc8ea7447d2b6383">just_released</a> (const <a class="el" href="classcen_1_1key__code.html">key_code</a> &amp;code) const noexcept(<a class="el" href="group__common.html#ga536dd3053e832e696a908d66e89af06a">on_msvc</a>) -&gt; bool</td></tr>
-<tr class="memdesc:a51fa223afb9ae4acbc8ea7447d2b6383"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether a key was released during the the last update.  <a href="classcen_1_1keyboard.html#a51fa223afb9ae4acbc8ea7447d2b6383">More...</a><br /></td></tr>
+<tr class="memitem:a51fa223afb9ae4acbc8ea7447d2b6383"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1keyboard.html#a51fa223afb9ae4acbc8ea7447d2b6383">just_released</a> (const <a class="el" href="classcen_1_1key__code.html">key_code</a> &amp;code) const noexcept(<a class="el" href="namespacecen.html#a536dd3053e832e696a908d66e89af06a">on_msvc</a>) -&gt; bool</td></tr>
 <tr class="separator:a51fa223afb9ae4acbc8ea7447d2b6383"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d42313bd19a0bcdafb8efd7696bb853"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1keyboard.html#a0d42313bd19a0bcdafb8efd7696bb853">size</a> () const noexcept -&gt; int</td></tr>
-<tr class="memdesc:a0d42313bd19a0bcdafb8efd7696bb853"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the total amount of keys.  <a href="classcen_1_1keyboard.html#a0d42313bd19a0bcdafb8efd7696bb853">More...</a><br /></td></tr>
 <tr class="separator:a0d42313bd19a0bcdafb8efd7696bb853"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Provides a read-only view into the keyboard state. </p>
-<dl class="section see"><dt>See also</dt><dd><code><a class="el" href="classcen_1_1mouse.html" title="Provides a view into the mouse state.">mouse</a></code> </dd></dl>
+<div class="textblock"><p >Provides a view into the keyboard state.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classcen_1_1mouse.html" title="Provides a view into the mouse state.">mouse</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7c8770c1c1019c4d449379750cf3a4ed" name="a7c8770c1c1019c4d449379750cf3a4ed"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7c8770c1c1019c4d449379750cf3a4ed">&#9670;&nbsp;</a></span>keyboard()</h2>
@@ -191,8 +182,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Refreshes the key state. </p>
-
 </div>
 </div>
 <a id="adfd7d4f299e485a26ee7897d35824ba6" name="adfd7d4f299e485a26ee7897d35824ba6"></a>
@@ -221,14 +210,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Indicates whether a key is being pressed. </p>
-<p >This function returns <code>false</code> if the key isn't recognized.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">code</td><td>the key that will be checked.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the key is being pressed; <code>false</code> otherwise. </dd></dl>
 
 </div>
 </div>
@@ -256,16 +237,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Indicates whether a key is being pressed. </p>
-<p >This function returns <code>false</code> if the key isn't recognized.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">code</td><td>the key that will be checked.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the key is being pressed; <code>false</code> otherwise. </dd></dl>
 
 </div>
 </div>
@@ -295,14 +266,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Indicates whether a key is held, i.e. pressed for at least two consecutive updates. </p>
-<p >This function returns false if the supplied key isn't recognized.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">code</td><td>the key that will be checked.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the key is held; <code>false</code> otherwise. </dd></dl>
 
 </div>
 </div>
@@ -330,16 +293,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Indicates whether a key is held, i.e. pressed for at least two consecutive updates. </p>
-<p >This function returns false if the supplied key isn't recognized.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">code</td><td>the key that will be checked.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the key is held; <code>false</code> otherwise. </dd></dl>
 
 </div>
 </div>
@@ -369,14 +322,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Indicates whether a key was initially pressed during the the last update. </p>
-<p >This function returns false if the supplied key isn't recognized.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">code</td><td>the key that will be checked.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the key was just pressed; <code>false</code> otherwise. </dd></dl>
 
 </div>
 </div>
@@ -404,16 +349,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Indicates whether a key was initially pressed during the the last update. </p>
-<p >This function returns false if the supplied key isn't recognized.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">code</td><td>the key that will be checked.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the key was just pressed; <code>false</code> otherwise. </dd></dl>
 
 </div>
 </div>
@@ -443,14 +378,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Indicates whether a key was released during the the last update. </p>
-<p >This function returns false if the supplied key isn't recognized.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">code</td><td>the key that will be checked.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the key was just released; <code>false</code> otherwise. </dd></dl>
 
 </div>
 </div>
@@ -479,16 +406,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Indicates whether a key was released during the the last update. </p>
-<p >This function returns false if the supplied key isn't recognized.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">code</td><td>the key that will be checked.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the key was just released; <code>false</code> otherwise. </dd></dl>
-
 </div>
 </div>
 <a id="a0d42313bd19a0bcdafb8efd7696bb853" name="a0d42313bd19a0bcdafb8efd7696bb853"></a>
@@ -513,9 +430,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Returns the total amount of keys. </p>
-<dl class="section return"><dt>Returns</dt><dd>the key count. </dd></dl>
 
 </div>
 </div>

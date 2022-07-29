@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Centurion
-   &#160;<span id="projectnumber">7.0.0</span>
+   &#160;<span id="projectnumber">7.1.0</span>
    </div>
    <div id="projectbrief">A modern C++ wrapper library for SDL2</div>
   </td>
@@ -128,88 +128,105 @@ $(document).ready(function(){initNavTree('owner__handle__api_8hpp_source.html','
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &quot;../common.hpp&quot;</span></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &quot;../memory.hpp&quot;</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacecen_1_1detail.html">cen::detail</a> {</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">namespace </span>cen::detail {</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">using</span> owner_tag = std::true_type;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">using</span> handle_tag = std::false_type;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> is_owner = std::is_same_v&lt;T, owner_tag&gt;;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> is_handle = std::is_same_v&lt;T, handle_tag&gt;;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keyword">using</span> enable_for_owner = std::enable_if_t&lt;is_owner&lt;T&gt;, <span class="keywordtype">int</span>&gt;;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="keyword">using</span> enable_for_handle = std::enable_if_t&lt;is_handle&lt;T&gt;, <span class="keywordtype">int</span>&gt;;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> B, <span class="keyword">typename</span> Type&gt;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keyword">class </span>pointer final</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>{</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="keyword">using</span> smart_ptr = managed_ptr&lt;Type&gt;;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <span class="keyword">using</span> raw_ptr = Type*;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="keyword">using</span> pointer_type = std::conditional_t&lt;B::value, smart_ptr, raw_ptr&gt;;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="namespacecen_1_1detail.html#a4fd5dc4f4d362a2fb5f712fc5aaf07aa">   37</a></span><span class="keyword">using</span> <a class="code hl_typedef" href="namespacecen_1_1detail.html#a4fd5dc4f4d362a2fb5f712fc5aaf07aa">owner_tag</a> = std::true_type;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="namespacecen_1_1detail.html#af2d42f90b9dc4e551bf68cddf54cc5b5">   38</a></span><span class="keyword">using</span> <a class="code hl_typedef" href="namespacecen_1_1detail.html#af2d42f90b9dc4e551bf68cddf54cc5b5">handle_tag</a> = std::false_type;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="namespacecen_1_1detail.html#a7a7e33f165a12fa25f4399541e1761af">   41</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="namespacecen_1_1detail.html#a7a7e33f165a12fa25f4399541e1761af">is_owner</a> = std::is_same_v&lt;T, owner_tag&gt;;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="namespacecen_1_1detail.html#a8ca49fdda5da2e804a34921261a1fe5f">   44</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="namespacecen_1_1detail.html#a8ca49fdda5da2e804a34921261a1fe5f">is_handle</a> = std::is_same_v&lt;T, handle_tag&gt;;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="namespacecen_1_1detail.html#a10de886509ce4311b91d656f5e620d5a">   47</a></span><span class="keyword">using</span> <a class="code hl_typedef" href="namespacecen_1_1detail.html#a10de886509ce4311b91d656f5e620d5a">enable_for_owner</a> = std::enable_if_t&lt;is_owner&lt;T&gt;, <span class="keywordtype">int</span>&gt;;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="namespacecen_1_1detail.html#af7eaf1dad7d2f17f827758b6586e98f2">   50</a></span><span class="keyword">using</span> <a class="code hl_typedef" href="namespacecen_1_1detail.html#af7eaf1dad7d2f17f827758b6586e98f2">enable_for_handle</a> = std::enable_if_t&lt;is_handle&lt;T&gt;, <span class="keywordtype">int</span>&gt;;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> B, <span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="classcen_1_1detail_1_1pointer.html">   53</a></span><span class="keyword">class </span><a class="code hl_class" href="classcen_1_1detail_1_1pointer.html">pointer</a> final</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>{</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classcen_1_1detail_1_1pointer.html#a61683be2f73ed9f6cfeecbe42b415f4f">   56</a></span>  <span class="keyword">using</span> <a class="code hl_typedef" href="classcen_1_1detail_1_1pointer.html#a61683be2f73ed9f6cfeecbe42b415f4f">smart_ptr</a> = <a class="code hl_typedef" href="namespacecen.html#a38aa6e8a9aabd06103a462394fc72230">managed_ptr&lt;Type&gt;</a>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classcen_1_1detail_1_1pointer.html#a6659fea55839590cb7899335ea09a4ed">   57</a></span>  <span class="keyword">using</span> <a class="code hl_typedef" href="classcen_1_1detail_1_1pointer.html#a6659fea55839590cb7899335ea09a4ed">raw_ptr</a> = Type*;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="classcen_1_1detail_1_1pointer.html#afb0e17872335753fd408bfa864380cb9">   58</a></span>  <span class="keyword">using</span> <a class="code hl_typedef" href="classcen_1_1detail_1_1pointer.html#afb0e17872335753fd408bfa864380cb9">pointer_type</a> = std::conditional_t&lt;B::value, smart_ptr, raw_ptr&gt;;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="classcen_1_1detail_1_1pointer.html#a7bd46b9c494518b7f4703a397831ea04">   60</a></span>  <a class="code hl_function" href="classcen_1_1detail_1_1pointer.html#a7bd46b9c494518b7f4703a397831ea04">pointer</a>() noexcept = default;</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  pointer() noexcept = default;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="classcen_1_1detail_1_1pointer.html#a2ad27231e5b54a5f2980a518d3abe70c">   62</a></span>  explicit <a class="code hl_class" href="classcen_1_1detail_1_1pointer.html">pointer</a>(Type* ptr) noexcept : mPtr{ptr} {}</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  explicit pointer(Type* ptr) noexcept : mPtr{ptr} {}</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> BB = B, enable_for_owner&lt;BB&gt; = 0&gt;</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  <span class="keywordtype">void</span> reset(Type* ptr) <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  {</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    mPtr.reset(ptr);</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  }</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> BB = B, enable_for_owner&lt;BB&gt; = 0&gt;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="classcen_1_1detail_1_1pointer.html#abae4c8d910c37d92fc20efadac31140f">   65</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classcen_1_1detail_1_1pointer.html#abae4c8d910c37d92fc20efadac31140f">reset</a>(Type* ptr) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  {</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    mPtr.reset(ptr);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  }</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="classcen_1_1detail_1_1pointer.html#a79780ab97f818f2dea4b4f319d084233">   70</a></span>  <span class="keyword">auto</span> <a class="code hl_function" href="classcen_1_1detail_1_1pointer.html#a79780ab97f818f2dea4b4f319d084233">operator-&gt;</a>() noexcept -&gt; Type* { <span class="keywordflow">return</span> <a class="code hl_function" href="classcen_1_1detail_1_1pointer.html#a4366e3c0a4fbc12dc5bb0fc2aadb62d4">get</a>(); }</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  <span class="keyword">auto</span> operator-&gt;() noexcept -&gt; Type* { <span class="keywordflow">return</span> <a class="code hl_function" href="group__opengl.html#ga563e02365f9bb8c8c8c5a9871f12bd43">get</a>(); }</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="classcen_1_1detail_1_1pointer.html#ad878e7bef9fd0b413fb919c301c580e2">   72</a></span>  <span class="keyword">auto</span> <a class="code hl_function" href="classcen_1_1detail_1_1pointer.html#ad878e7bef9fd0b413fb919c301c580e2">operator-&gt;</a>() const noexcept -&gt; const Type* { <span class="keywordflow">return</span> <a class="code hl_function" href="classcen_1_1detail_1_1pointer.html#a4366e3c0a4fbc12dc5bb0fc2aadb62d4">get</a>(); }</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  <span class="keyword">auto</span> operator-&gt;() const noexcept -&gt; const Type* { <span class="keywordflow">return</span> <a class="code hl_function" href="group__opengl.html#ga563e02365f9bb8c8c8c5a9871f12bd43">get</a>(); }</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  <span class="keyword">auto</span> operator*() noexcept -&gt; Type&amp;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  {</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <a class="code hl_enumvalue" href="group__logging.html#gga3a6b7415e80b54dc6e6cff5d4451bc00ae44e4612f62d2fb8f8738bab118a9850">assert</a>(mPtr);</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordflow">return</span> *mPtr;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  }</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  <span class="keyword">auto</span> operator*() const noexcept -&gt; const Type&amp;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  {</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <a class="code hl_enumvalue" href="group__logging.html#gga3a6b7415e80b54dc6e6cff5d4451bc00ae44e4612f62d2fb8f8738bab118a9850">assert</a>(mPtr);</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordflow">return</span> *mPtr;</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  }</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="classcen_1_1detail_1_1pointer.html#a0f16c29926e8e254f108fca6a1272726">   74</a></span>  <span class="keyword">auto</span> <a class="code hl_function" href="classcen_1_1detail_1_1pointer.html#a0f16c29926e8e254f108fca6a1272726">operator*</a>() noexcept -&gt; Type&amp;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  {</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <a class="code hl_enumvalue" href="namespacecen.html#a3a6b7415e80b54dc6e6cff5d4451bc00ae44e4612f62d2fb8f8738bab118a9850">assert</a>(mPtr);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordflow">return</span> *mPtr;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  }</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="classcen_1_1detail_1_1pointer.html#a6014b3d6a6c2f931249799cdc4fb19e5">   80</a></span>  <span class="keyword">auto</span> <a class="code hl_function" href="classcen_1_1detail_1_1pointer.html#a6014b3d6a6c2f931249799cdc4fb19e5">operator*</a>() const noexcept -&gt; const Type&amp;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  {</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <a class="code hl_enumvalue" href="namespacecen.html#a3a6b7415e80b54dc6e6cff5d4451bc00ae44e4612f62d2fb8f8738bab118a9850">assert</a>(mPtr);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordflow">return</span> *mPtr;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  }</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="classcen_1_1detail_1_1pointer.html#a420e60e9788bfa3b52aa3aab72ea3a5e">   86</a></span>  <span class="keyword">explicit</span> <span class="keyword">operator</span> bool() const noexcept { <span class="keywordflow">return</span> mPtr != <span class="keyword">nullptr</span>; }</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  <span class="keyword">explicit</span> <span class="keyword">operator</span> bool() const noexcept { <span class="keywordflow">return</span> mPtr != <span class="keyword">nullptr</span>; }</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="classcen_1_1detail_1_1pointer.html#a4f1218c5fb2b167a121e09759ab17373">   88</a></span>  <span class="comment">/*implicit*/</span> <span class="keyword">operator</span> Type*() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> <a class="code hl_function" href="classcen_1_1detail_1_1pointer.html#a4366e3c0a4fbc12dc5bb0fc2aadb62d4">get</a>(); }</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  <span class="comment">/*implicit*/</span> <span class="keyword">operator</span> Type*() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> <a class="code hl_function" href="group__opengl.html#ga563e02365f9bb8c8c8c5a9871f12bd43">get</a>(); }</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> BB = B, enable_for_owner&lt;BB&gt; = 0&gt;</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  [[nodiscard]] <span class="keyword">auto</span> release() noexcept -&gt; Type*</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  {</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keywordflow">return</span> mPtr.release();</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  }</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  [[nodiscard]] <span class="keyword">auto</span> <a class="code hl_function" href="group__opengl.html#ga563e02365f9bb8c8c8c5a9871f12bd43">get</a>() const noexcept -&gt; Type*</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  {</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (B::value) {</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>      <span class="keywordflow">return</span> mPtr.get();</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    }</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>      <span class="keywordflow">return</span> mPtr;</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    }</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  }</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  pointer_type mPtr{};</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>};</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> BB = B, enable_for_owner&lt;BB&gt; = 0&gt;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="classcen_1_1detail_1_1pointer.html#adc2a07995a6f3213d97999639449e8b1">   91</a></span>  [[nodiscard]] <span class="keyword">auto</span> <a class="code hl_function" href="classcen_1_1detail_1_1pointer.html#adc2a07995a6f3213d97999639449e8b1">release</a>() noexcept -&gt; Type*</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  {</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keywordflow">return</span> mPtr.release();</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  }</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="classcen_1_1detail_1_1pointer.html#a4366e3c0a4fbc12dc5bb0fc2aadb62d4">   96</a></span>  [[nodiscard]] <span class="keyword">auto</span> <a class="code hl_function" href="classcen_1_1detail_1_1pointer.html#a4366e3c0a4fbc12dc5bb0fc2aadb62d4">get</a>() const noexcept -&gt; Type*</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  {</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (B::value) {</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>      <span class="keywordflow">return</span> mPtr.get();</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    }</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>      <span class="keywordflow">return</span> mPtr;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    }</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  }</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  <a class="code hl_typedef" href="classcen_1_1detail_1_1pointer.html#afb0e17872335753fd408bfa864380cb9">pointer_type</a> mPtr{};</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>};</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>}  <span class="comment">// namespace cen::detail</span></div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>}  <span class="comment">// namespace cen::detail</span></div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="preprocessor">#endif  </span><span class="comment">// CENTURION_DETAIL_OWNER_HANDLE_API_HPP_</span></div>
-<div class="ttc" id="agroup__logging_html_gga3a6b7415e80b54dc6e6cff5d4451bc00ae44e4612f62d2fb8f8738bab118a9850"><div class="ttname"><a href="group__logging.html#gga3a6b7415e80b54dc6e6cff5d4451bc00ae44e4612f62d2fb8f8738bab118a9850">cen::log_category::assert</a></div><div class="ttdeci">@ assert</div></div>
-<div class="ttc" id="agroup__opengl_html_ga563e02365f9bb8c8c8c5a9871f12bd43"><div class="ttname"><a href="group__opengl.html#ga563e02365f9bb8c8c8c5a9871f12bd43">cen::gl::get</a></div><div class="ttdeci">auto get(const gl_attribute attr) noexcept -&gt; std::optional&lt; int &gt;</div><div class="ttdoc">Returns the current value of an OpenGL context attribute.</div><div class="ttdef"><b>Definition:</b> opengl.hpp:396</div></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="preprocessor">#endif  </span><span class="comment">// CENTURION_DETAIL_OWNER_HANDLE_API_HPP_</span></div>
+<div class="ttc" id="aclasscen_1_1detail_1_1pointer_html"><div class="ttname"><a href="classcen_1_1detail_1_1pointer.html">cen::detail::pointer</a></div><div class="ttdef"><b>Definition:</b> owner_handle_api.hpp:54</div></div>
+<div class="ttc" id="aclasscen_1_1detail_1_1pointer_html_a0f16c29926e8e254f108fca6a1272726"><div class="ttname"><a href="classcen_1_1detail_1_1pointer.html#a0f16c29926e8e254f108fca6a1272726">cen::detail::pointer::operator*</a></div><div class="ttdeci">auto operator*() noexcept -&gt; Type &amp;</div><div class="ttdef"><b>Definition:</b> owner_handle_api.hpp:74</div></div>
+<div class="ttc" id="aclasscen_1_1detail_1_1pointer_html_a4366e3c0a4fbc12dc5bb0fc2aadb62d4"><div class="ttname"><a href="classcen_1_1detail_1_1pointer.html#a4366e3c0a4fbc12dc5bb0fc2aadb62d4">cen::detail::pointer::get</a></div><div class="ttdeci">auto get() const noexcept -&gt; Type *</div><div class="ttdef"><b>Definition:</b> owner_handle_api.hpp:96</div></div>
+<div class="ttc" id="aclasscen_1_1detail_1_1pointer_html_a6014b3d6a6c2f931249799cdc4fb19e5"><div class="ttname"><a href="classcen_1_1detail_1_1pointer.html#a6014b3d6a6c2f931249799cdc4fb19e5">cen::detail::pointer::operator*</a></div><div class="ttdeci">auto operator*() const noexcept -&gt; const Type &amp;</div><div class="ttdef"><b>Definition:</b> owner_handle_api.hpp:80</div></div>
+<div class="ttc" id="aclasscen_1_1detail_1_1pointer_html_a61683be2f73ed9f6cfeecbe42b415f4f"><div class="ttname"><a href="classcen_1_1detail_1_1pointer.html#a61683be2f73ed9f6cfeecbe42b415f4f">cen::detail::pointer::smart_ptr</a></div><div class="ttdeci">managed_ptr&lt; Type &gt; smart_ptr</div><div class="ttdef"><b>Definition:</b> owner_handle_api.hpp:56</div></div>
+<div class="ttc" id="aclasscen_1_1detail_1_1pointer_html_a6659fea55839590cb7899335ea09a4ed"><div class="ttname"><a href="classcen_1_1detail_1_1pointer.html#a6659fea55839590cb7899335ea09a4ed">cen::detail::pointer::raw_ptr</a></div><div class="ttdeci">Type * raw_ptr</div><div class="ttdef"><b>Definition:</b> owner_handle_api.hpp:57</div></div>
+<div class="ttc" id="aclasscen_1_1detail_1_1pointer_html_a79780ab97f818f2dea4b4f319d084233"><div class="ttname"><a href="classcen_1_1detail_1_1pointer.html#a79780ab97f818f2dea4b4f319d084233">cen::detail::pointer::operator-&gt;</a></div><div class="ttdeci">auto operator-&gt;() noexcept -&gt; Type *</div><div class="ttdef"><b>Definition:</b> owner_handle_api.hpp:70</div></div>
+<div class="ttc" id="aclasscen_1_1detail_1_1pointer_html_a7bd46b9c494518b7f4703a397831ea04"><div class="ttname"><a href="classcen_1_1detail_1_1pointer.html#a7bd46b9c494518b7f4703a397831ea04">cen::detail::pointer::pointer</a></div><div class="ttdeci">pointer() noexcept=default</div></div>
+<div class="ttc" id="aclasscen_1_1detail_1_1pointer_html_abae4c8d910c37d92fc20efadac31140f"><div class="ttname"><a href="classcen_1_1detail_1_1pointer.html#abae4c8d910c37d92fc20efadac31140f">cen::detail::pointer::reset</a></div><div class="ttdeci">void reset(Type *ptr) noexcept</div><div class="ttdef"><b>Definition:</b> owner_handle_api.hpp:65</div></div>
+<div class="ttc" id="aclasscen_1_1detail_1_1pointer_html_ad878e7bef9fd0b413fb919c301c580e2"><div class="ttname"><a href="classcen_1_1detail_1_1pointer.html#ad878e7bef9fd0b413fb919c301c580e2">cen::detail::pointer::operator-&gt;</a></div><div class="ttdeci">auto operator-&gt;() const noexcept -&gt; const Type *</div><div class="ttdef"><b>Definition:</b> owner_handle_api.hpp:72</div></div>
+<div class="ttc" id="aclasscen_1_1detail_1_1pointer_html_adc2a07995a6f3213d97999639449e8b1"><div class="ttname"><a href="classcen_1_1detail_1_1pointer.html#adc2a07995a6f3213d97999639449e8b1">cen::detail::pointer::release</a></div><div class="ttdeci">auto release() noexcept -&gt; Type *</div><div class="ttdef"><b>Definition:</b> owner_handle_api.hpp:91</div></div>
+<div class="ttc" id="aclasscen_1_1detail_1_1pointer_html_afb0e17872335753fd408bfa864380cb9"><div class="ttname"><a href="classcen_1_1detail_1_1pointer.html#afb0e17872335753fd408bfa864380cb9">cen::detail::pointer::pointer_type</a></div><div class="ttdeci">std::conditional_t&lt; B::value, smart_ptr, raw_ptr &gt; pointer_type</div><div class="ttdef"><b>Definition:</b> owner_handle_api.hpp:58</div></div>
+<div class="ttc" id="anamespacecen_1_1detail_html"><div class="ttname"><a href="namespacecen_1_1detail.html">cen::detail</a></div><div class="ttdef"><b>Definition:</b> array_utils.hpp:34</div></div>
+<div class="ttc" id="anamespacecen_1_1detail_html_a10de886509ce4311b91d656f5e620d5a"><div class="ttname"><a href="namespacecen_1_1detail.html#a10de886509ce4311b91d656f5e620d5a">cen::detail::enable_for_owner</a></div><div class="ttdeci">std::enable_if_t&lt; is_owner&lt; T &gt;, int &gt; enable_for_owner</div><div class="ttdef"><b>Definition:</b> owner_handle_api.hpp:47</div></div>
+<div class="ttc" id="anamespacecen_1_1detail_html_a4fd5dc4f4d362a2fb5f712fc5aaf07aa"><div class="ttname"><a href="namespacecen_1_1detail.html#a4fd5dc4f4d362a2fb5f712fc5aaf07aa">cen::detail::owner_tag</a></div><div class="ttdeci">std::true_type owner_tag</div><div class="ttdef"><b>Definition:</b> owner_handle_api.hpp:37</div></div>
+<div class="ttc" id="anamespacecen_1_1detail_html_a7a7e33f165a12fa25f4399541e1761af"><div class="ttname"><a href="namespacecen_1_1detail.html#a7a7e33f165a12fa25f4399541e1761af">cen::detail::is_owner</a></div><div class="ttdeci">constexpr bool is_owner</div><div class="ttdef"><b>Definition:</b> owner_handle_api.hpp:41</div></div>
+<div class="ttc" id="anamespacecen_1_1detail_html_a8ca49fdda5da2e804a34921261a1fe5f"><div class="ttname"><a href="namespacecen_1_1detail.html#a8ca49fdda5da2e804a34921261a1fe5f">cen::detail::is_handle</a></div><div class="ttdeci">constexpr bool is_handle</div><div class="ttdef"><b>Definition:</b> owner_handle_api.hpp:44</div></div>
+<div class="ttc" id="anamespacecen_1_1detail_html_af2d42f90b9dc4e551bf68cddf54cc5b5"><div class="ttname"><a href="namespacecen_1_1detail.html#af2d42f90b9dc4e551bf68cddf54cc5b5">cen::detail::handle_tag</a></div><div class="ttdeci">std::false_type handle_tag</div><div class="ttdef"><b>Definition:</b> owner_handle_api.hpp:38</div></div>
+<div class="ttc" id="anamespacecen_1_1detail_html_af7eaf1dad7d2f17f827758b6586e98f2"><div class="ttname"><a href="namespacecen_1_1detail.html#af7eaf1dad7d2f17f827758b6586e98f2">cen::detail::enable_for_handle</a></div><div class="ttdeci">std::enable_if_t&lt; is_handle&lt; T &gt;, int &gt; enable_for_handle</div><div class="ttdef"><b>Definition:</b> owner_handle_api.hpp:50</div></div>
+<div class="ttc" id="anamespacecen_html_a38aa6e8a9aabd06103a462394fc72230"><div class="ttname"><a href="namespacecen.html#a38aa6e8a9aabd06103a462394fc72230">cen::managed_ptr</a></div><div class="ttdeci">std::unique_ptr&lt; T, deleter&lt; T &gt; &gt; managed_ptr</div><div class="ttdef"><b>Definition:</b> memory.hpp:167</div></div>
+<div class="ttc" id="anamespacecen_html_a3a6b7415e80b54dc6e6cff5d4451bc00ae44e4612f62d2fb8f8738bab118a9850"><div class="ttname"><a href="namespacecen.html#a3a6b7415e80b54dc6e6cff5d4451bc00ae44e4612f62d2fb8f8738bab118a9850">cen::log_category::assert</a></div><div class="ttdeci">@ assert</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.1-->

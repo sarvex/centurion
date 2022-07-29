@@ -31,6 +31,7 @@ var NAVTREE =
     [ "Dependencies", "index.html#autotoc_md4", null ],
     [ "Installation", "index.html#autotoc_md5", null ],
     [ "Documentation", "index.html#autotoc_md6", null ],
+    [ "Projects using Centurion", "index.html#autotoc_md7", null ],
     [ "Primer", "primer.html", [
       [ "Implementation Details", "primer.html#impl-details", null ],
       [ "Owners and Handles", "primer.html#owners-handles-primer", null ],
@@ -62,8 +63,6 @@ var NAVTREE =
       [ "Can I contribute to Centurion?", "page-faq.html#faq-contribution", null ]
     ] ],
     [ "Examples", "page-examples.html", "page-examples" ],
-    [ "Deprecated List", "deprecated.html", null ],
-    [ "Modules", "modules.html", "modules" ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -95,16 +94,22 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
+"classcen_1_1basic__point.html#a1743c2fafa61280b28f23e395c3410a3",
 "classcen_1_1basic__sensor.html#a2ca665f40bdac87c89efce69e77a001a",
-"classcen_1_1controller__touchpad__event.html#a6682ad3d4c4a3dcbade46dd7b623a36a",
-"classcen_1_1font__cache.html#af38ce1af42d538f410180c265518d4f0",
-"classcen_1_1palette.html#ad2ccbc72e9777a6a2692d4b297a6ab26",
-"functions_func_v.html",
-"group__filesystem.html#gad7cd68f5f041004164c1ea9bf96a7812",
-"group__math.html#ga0c94295992a014d8b750c13a962a3c68",
-"group__sensor.html",
-"namespacecen_1_1colors.html#a9a21782b65fd1b560fb7c27f730da096",
-"namespacemembers_vars_f.html"
+"classcen_1_1basic__window.html#a9132b5bc489350d5fea277e32f0ac27a",
+"classcen_1_1controller__touchpad__event.html#a708187bfd5772762ef53c6a9ec819f58",
+"classcen_1_1file.html#a14f06f0dbed2eba129f0b60a6fbb4997",
+"classcen_1_1font__cache.html#a21fe8d4a8050362a11eff5e73a58343e",
+"classcen_1_1locale.html",
+"classcen_1_1mutex.html#aa697560613ba0bf46a0e1a397f07f70f",
+"classcen_1_1text__editing__ext__event.html#ad1421eca7622f04b22ccba514cde905e",
+"functions_func_n.html",
+"namespacecen.html#a48d945e10cf614b8ab680bc962591f69a334c4a4c42fdb79d7ebc3e73b517e6f8",
+"namespacecen.html#a8c5a7bd5bed777afe5e28406bbb57be8",
+"namespacecen.html#ae40cf34ec675c8aa72bf2c7c7326cdc1afea087517c26fadd409bd4b9dc642555",
+"namespacecen_1_1colors.html#ad8614aeda7bc1c69f4f2b9fd64d46e72",
+"namespacemembers_vars_e.html",
+"structcen_1_1renderer__scale.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

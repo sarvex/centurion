@@ -45,5 +45,6 @@ var classcen_1_1file =
     [ "type", "classcen_1_1file.html#a70e9ad831bbc86bf70ddfdfacc607bff", null ],
     [ "size", "classcen_1_1file.html#a8741d57c2d7b11e5d16ab3308bc2ef5f", null ],
     [ "data", "classcen_1_1file.html#a90351c76fc37bc4aa6eedbf7195251e7", null ],
+    [ "is_ok", "classcen_1_1file.html#a2f45b247d4d7926548419155a8b9fd8a", null ],
     [ "operator bool", "classcen_1_1file.html#a420e60e9788bfa3b52aa3aab72ea3a5e", null ]
 ];

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Centurion
-   &#160;<span id="projectnumber">7.0.0</span>
+   &#160;<span id="projectnumber">7.1.0</span>
    </div>
    <div id="projectbrief">A modern C++ wrapper library for SDL2</div>
   </td>
@@ -94,38 +94,36 @@ $(document).ready(function(){initNavTree('classcen_1_1semaphore.html',''); initR
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classcen_1_1semaphore-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">semaphore Class Reference<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="group__concurrency.html">Concurrency</a></div></div></div>
+  <div class="headertitle"><div class="title">semaphore Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Represents a semaphore with a set of "tokens" (or permits).  
+<p>Represents a semaphore with a set of "tokens" (or "permits").  
  <a href="classcen_1_1semaphore.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="concurrency_8hpp_source.html">concurrency.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8d914a242b948b341bd3a920714ccbb2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1semaphore.html#a8d914a242b948b341bd3a920714ccbb2">semaphore</a> (const <a class="el" href="group__common.html#gae847b0ef07964fb6bdb468179580dc11">uint32</a> tokens)</td></tr>
-<tr class="memdesc:a8d914a242b948b341bd3a920714ccbb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a semaphore.  <a href="classcen_1_1semaphore.html#a8d914a242b948b341bd3a920714ccbb2">More...</a><br /></td></tr>
+<tr class="memitem:a8d914a242b948b341bd3a920714ccbb2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1semaphore.html#a8d914a242b948b341bd3a920714ccbb2">semaphore</a> (const <a class="el" href="namespacecen.html#ae847b0ef07964fb6bdb468179580dc11">uint32</a> tokens)</td></tr>
+<tr class="memdesc:a8d914a242b948b341bd3a920714ccbb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a semaphore with an initial amount of tokens.  <a href="classcen_1_1semaphore.html#a8d914a242b948b341bd3a920714ccbb2">More...</a><br /></td></tr>
 <tr class="separator:a8d914a242b948b341bd3a920714ccbb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d1462b61070820535038caa62e988e8"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1semaphore.html#a0d1462b61070820535038caa62e988e8">acquire</a> () noexcept -&gt; <a class="el" href="classcen_1_1result.html">result</a></td></tr>
-<tr class="memdesc:a0d1462b61070820535038caa62e988e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acquires a token from the semaphore.  <a href="classcen_1_1semaphore.html#a0d1462b61070820535038caa62e988e8">More...</a><br /></td></tr>
+<tr class="memdesc:a0d1462b61070820535038caa62e988e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acquires a token from the semaphore, blocks until a token is available.  <a href="classcen_1_1semaphore.html#a0d1462b61070820535038caa62e988e8">More...</a><br /></td></tr>
 <tr class="separator:a0d1462b61070820535038caa62e988e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa83f258e9a270bd9ff007ebe358376d5"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1semaphore.html#aa83f258e9a270bd9ff007ebe358376d5">acquire</a> (const <a class="el" href="group__common.html#ga66f48b1369b952fdefe95b983184ef2a">u32ms</a> duration) noexcept(noexcept(duration.count())) -&gt; <a class="el" href="group__concurrency.html#ga87a7bc4e11220a6a035e3e25661fa558">lock_status</a></td></tr>
-<tr class="memdesc:aa83f258e9a270bd9ff007ebe358376d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to acquire a token from the semaphore.  <a href="classcen_1_1semaphore.html#aa83f258e9a270bd9ff007ebe358376d5">More...</a><br /></td></tr>
+<tr class="memitem:aa83f258e9a270bd9ff007ebe358376d5"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1semaphore.html#aa83f258e9a270bd9ff007ebe358376d5">acquire</a> (const <a class="el" href="namespacecen.html#a66f48b1369b952fdefe95b983184ef2a">u32ms</a> duration) noexcept(noexcept(duration.count())) -&gt; <a class="el" href="namespacecen.html#a87a7bc4e11220a6a035e3e25661fa558">lock_status</a></td></tr>
 <tr class="separator:aa83f258e9a270bd9ff007ebe358376d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf62a5363d299aba2b103946c3d994ef"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1semaphore.html#adf62a5363d299aba2b103946c3d994ef">try_acquire</a> () noexcept -&gt; <a class="el" href="group__concurrency.html#ga87a7bc4e11220a6a035e3e25661fa558">lock_status</a></td></tr>
-<tr class="memdesc:adf62a5363d299aba2b103946c3d994ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to acquire a token from the semaphore.  <a href="classcen_1_1semaphore.html#adf62a5363d299aba2b103946c3d994ef">More...</a><br /></td></tr>
+<tr class="memitem:adf62a5363d299aba2b103946c3d994ef"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1semaphore.html#adf62a5363d299aba2b103946c3d994ef">try_acquire</a> () noexcept -&gt; <a class="el" href="namespacecen.html#a87a7bc4e11220a6a035e3e25661fa558">lock_status</a></td></tr>
 <tr class="separator:adf62a5363d299aba2b103946c3d994ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe6fba087ed133a6d1ac432b69ae52ae"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1semaphore.html#abe6fba087ed133a6d1ac432b69ae52ae">release</a> () noexcept -&gt; <a class="el" href="classcen_1_1result.html">result</a></td></tr>
 <tr class="memdesc:abe6fba087ed133a6d1ac432b69ae52ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a token to the semaphore and notifies waiting threads.  <a href="classcen_1_1semaphore.html#abe6fba087ed133a6d1ac432b69ae52ae">More...</a><br /></td></tr>
 <tr class="separator:abe6fba087ed133a6d1ac432b69ae52ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a973dc27cc63d4d8980ae4e54dfdff60a"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1semaphore.html#a973dc27cc63d4d8980ae4e54dfdff60a">count</a> () const noexcept -&gt; <a class="el" href="group__common.html#gae847b0ef07964fb6bdb468179580dc11">uint32</a></td></tr>
-<tr class="memdesc:a973dc27cc63d4d8980ae4e54dfdff60a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the amount of currently available tokens.  <a href="classcen_1_1semaphore.html#a973dc27cc63d4d8980ae4e54dfdff60a">More...</a><br /></td></tr>
+<tr class="memitem:a973dc27cc63d4d8980ae4e54dfdff60a"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1semaphore.html#a973dc27cc63d4d8980ae4e54dfdff60a">count</a> () const noexcept -&gt; <a class="el" href="namespacecen.html#ae847b0ef07964fb6bdb468179580dc11">uint32</a></td></tr>
+<tr class="memdesc:a973dc27cc63d4d8980ae4e54dfdff60a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the amount of available tokens.  <a href="classcen_1_1semaphore.html#a973dc27cc63d4d8980ae4e54dfdff60a">More...</a><br /></td></tr>
 <tr class="separator:a973dc27cc63d4d8980ae4e54dfdff60a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Represents a semaphore with a set of "tokens" (or permits). </p>
+<div class="textblock"><p >Represents a semaphore with a set of "tokens" (or "permits"). </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8d914a242b948b341bd3a920714ccbb2" name="a8d914a242b948b341bd3a920714ccbb2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8d914a242b948b341bd3a920714ccbb2">&#9670;&nbsp;</a></span>semaphore()</h2>
@@ -139,7 +137,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classcen_1_1semaphore.html">semaphore</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__common.html#gae847b0ef07964fb6bdb468179580dc11">uint32</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#ae847b0ef07964fb6bdb468179580dc11">uint32</a>&#160;</td>
           <td class="paramname"><em>tokens</em></td><td>)</td>
           <td></td>
         </tr>
@@ -151,13 +149,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Creates a semaphore. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">tokens</td><td>the initial amount of tokens. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Creates a semaphore with an initial amount of tokens. </p>
 
 </div>
 </div>
@@ -185,9 +177,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Acquires a token from the semaphore. </p>
-<dl class="section note"><dt>Note</dt><dd>This function blocks the calling thread until a token is available.</dd></dl>
-<dl class="section return"><dt>Returns</dt><dd><code>success</code> if a token was acquired; <code>failure</code> otherwise. </dd></dl>
+<p>Acquires a token from the semaphore, blocks until a token is available. </p>
 
 </div>
 </div>
@@ -203,9 +193,9 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">auto acquire </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__common.html#ga66f48b1369b952fdefe95b983184ef2a">u32ms</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#a66f48b1369b952fdefe95b983184ef2a">u32ms</a>&#160;</td>
           <td class="paramname"><em>duration</em></td><td>)</td>
-          <td> -&gt; <a class="el" href="group__concurrency.html#ga87a7bc4e11220a6a035e3e25661fa558">lock_status</a>
+          <td> -&gt; <a class="el" href="namespacecen.html#a87a7bc4e11220a6a035e3e25661fa558">lock_status</a>
   </td>
         </tr>
       </table>
@@ -215,15 +205,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Attempts to acquire a token from the semaphore. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">duration</td><td>the maximum amount of time to wait.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><code>success</code> if a token was acquired; <code>timed_out</code> if no token was acquired in the specified duration; <code>error</code> if something goes wrong. </dd></dl>
 
 </div>
 </div>
@@ -240,7 +221,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">auto try_acquire </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> -&gt; <a class="el" href="group__concurrency.html#ga87a7bc4e11220a6a035e3e25661fa558">lock_status</a>
+          <td> -&gt; <a class="el" href="namespacecen.html#a87a7bc4e11220a6a035e3e25661fa558">lock_status</a>
   </td>
         </tr>
       </table>
@@ -250,9 +231,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Attempts to acquire a token from the semaphore. </p>
-<dl class="section return"><dt>Returns</dt><dd><code>success</code> if a token was acquired; <code>timed_out</code> if the thread would've been blocked; <code>error</code> if something goes wrong. </dd></dl>
 
 </div>
 </div>
@@ -280,7 +258,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns a token to the semaphore and notifies waiting threads. </p>
-<dl class="section return"><dt>Returns</dt><dd><code>success</code> if nothing went wrong; <code>failure</code> otherwise. </dd></dl>
 
 </div>
 </div>
@@ -297,7 +274,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">auto count </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const -&gt; <a class="el" href="group__common.html#gae847b0ef07964fb6bdb468179580dc11">uint32</a>
+          <td> const -&gt; <a class="el" href="namespacecen.html#ae847b0ef07964fb6bdb468179580dc11">uint32</a>
   </td>
         </tr>
       </table>
@@ -308,8 +285,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the amount of currently available tokens. </p>
-<dl class="section return"><dt>Returns</dt><dd>the amount of tokens. </dd></dl>
+<p>Returns the amount of available tokens. </p>
 
 </div>
 </div>

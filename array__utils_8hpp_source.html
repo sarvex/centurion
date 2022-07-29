@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Centurion
-   &#160;<span id="projectnumber">7.0.0</span>
+   &#160;<span id="projectnumber">7.1.0</span>
    </div>
    <div id="projectbrief">A modern C++ wrapper library for SDL2</div>
   </td>
@@ -127,41 +127,42 @@ $(document).ready(function(){initNavTree('array__utils_8hpp_source.html',''); in
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &quot;../common.hpp&quot;</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &quot;../features.hpp&quot;</span></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="namespacecen_1_1detail.html">   34</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacecen_1_1detail.html">cen::detail</a> {</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">namespace </span>cen::detail {</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> Size&gt;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">constexpr</span> <span class="keywordtype">void</span> assign(<span class="keyword">const</span> std::array&lt;T, Size&gt;&amp; array, bounded_array_ref&lt;T, Size&gt; out)</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>{</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  std::size_t index = 0;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp;&amp; value : array) {</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    out[index] = value;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    ++index;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  }</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>}</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> Size&gt;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> to_array(bounded_array_ref&lt;const T, Size&gt; data)</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    -&gt; std::array&lt;T, Size&gt;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>{</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#if CENTURION_HAS_FEATURE_TO_ARRAY</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <span class="keywordflow">return</span> std::to_array(data);</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  std::array&lt;T, Size&gt; array;  <span class="comment">// NOLINT</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="keywordflow">for</span> (std::size_t i = 0; <a class="code hl_variable" href="namespacecen_1_1keycodes.html#adea8d5367f8ac27b18ca8f57030227df">i</a> &lt; Size; ++<a class="code hl_variable" href="namespacecen_1_1keycodes.html#adea8d5367f8ac27b18ca8f57030227df">i</a>) {</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    array[<a class="code hl_variable" href="namespacecen_1_1keycodes.html#adea8d5367f8ac27b18ca8f57030227df">i</a>] = data[<a class="code hl_variable" href="namespacecen_1_1keycodes.html#adea8d5367f8ac27b18ca8f57030227df">i</a>];</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  }</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <span class="keywordflow">return</span> array;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">#endif  </span><span class="comment">// CENTURION_HAS_FEATURE_TO_ARRAY</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> Size&gt;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="namespacecen_1_1detail.html#a493173c7ce342f291c1bfb387ca25470">   37</a></span><span class="keyword">constexpr</span> <span class="keywordtype">void</span> <a class="code hl_function" href="namespacecen_1_1detail.html#a493173c7ce342f291c1bfb387ca25470">assign</a>(<span class="keyword">const</span> std::array&lt;T, Size&gt;&amp; array, <a class="code hl_typedef" href="namespacecen.html#ade6b931c80a9e1c6bdd941061d8b0bb9">bounded_array_ref&lt;T, Size&gt;</a> out)</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>{</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  std::size_t index = 0;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp;&amp; value : array) {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    out[index] = value;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    ++index;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  }</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>}</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> Size&gt;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="namespacecen_1_1detail.html#afe94e9a798d376b23e666754c57267af">   47</a></span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespacecen_1_1detail.html#afe94e9a798d376b23e666754c57267af">to_array</a>(<a class="code hl_typedef" href="namespacecen.html#ade6b931c80a9e1c6bdd941061d8b0bb9">bounded_array_ref&lt;const T, Size&gt;</a> data)</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    -&gt; std::array&lt;T, Size&gt;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>{</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#if CENTURION_HAS_FEATURE_TO_ARRAY</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keywordflow">return</span> std::to_array(data);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  std::array&lt;T, Size&gt; array;  <span class="comment">// NOLINT</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="keywordflow">for</span> (std::size_t i = 0; i &lt; Size; ++i) {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    array[i] = data[i];</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <span class="keywordflow">return</span> array;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#endif  </span><span class="comment">// CENTURION_HAS_FEATURE_TO_ARRAY</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}  <span class="comment">// namespace cen::detail</span></div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>}  <span class="comment">// namespace cen::detail</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">#endif  </span><span class="comment">// CENTURION_DETAIL_ARRAY_UTILS_HPP_</span></div>
-<div class="ttc" id="anamespacecen_1_1keycodes_html_adea8d5367f8ac27b18ca8f57030227df"><div class="ttname"><a href="namespacecen_1_1keycodes.html#adea8d5367f8ac27b18ca8f57030227df">cen::keycodes::i</a></div><div class="ttdeci">constexpr key_code i</div><div class="ttdef"><b>Definition:</b> keyboard.hpp:750</div></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="preprocessor">#endif  </span><span class="comment">// CENTURION_DETAIL_ARRAY_UTILS_HPP_</span></div>
+<div class="ttc" id="anamespacecen_1_1detail_html"><div class="ttname"><a href="namespacecen_1_1detail.html">cen::detail</a></div><div class="ttdef"><b>Definition:</b> array_utils.hpp:34</div></div>
+<div class="ttc" id="anamespacecen_1_1detail_html_a493173c7ce342f291c1bfb387ca25470"><div class="ttname"><a href="namespacecen_1_1detail.html#a493173c7ce342f291c1bfb387ca25470">cen::detail::assign</a></div><div class="ttdeci">constexpr void assign(const std::array&lt; T, Size &gt; &amp;array, bounded_array_ref&lt; T, Size &gt; out)</div><div class="ttdef"><b>Definition:</b> array_utils.hpp:37</div></div>
+<div class="ttc" id="anamespacecen_1_1detail_html_afe94e9a798d376b23e666754c57267af"><div class="ttname"><a href="namespacecen_1_1detail.html#afe94e9a798d376b23e666754c57267af">cen::detail::to_array</a></div><div class="ttdeci">constexpr auto to_array(bounded_array_ref&lt; const T, Size &gt; data) -&gt; std::array&lt; T, Size &gt;</div><div class="ttdef"><b>Definition:</b> array_utils.hpp:47</div></div>
+<div class="ttc" id="anamespacecen_html_ade6b931c80a9e1c6bdd941061d8b0bb9"><div class="ttname"><a href="namespacecen.html#ade6b931c80a9e1c6bdd941061d8b0bb9">cen::bounded_array_ref</a></div><div class="ttdeci">T(&amp;)[Size] bounded_array_ref</div><div class="ttdef"><b>Definition:</b> common.hpp:139</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.1-->

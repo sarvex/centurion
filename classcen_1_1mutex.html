@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Centurion
-   &#160;<span id="projectnumber">7.0.0</span>
+   &#160;<span id="projectnumber">7.1.0</span>
    </div>
    <div id="projectbrief">A modern C++ wrapper library for SDL2</div>
   </td>
@@ -94,12 +94,9 @@ $(document).ready(function(){initNavTree('classcen_1_1mutex.html',''); initResiz
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classcen_1_1mutex-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">mutex Class Reference<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="group__concurrency.html">Concurrency</a></div></div></div>
+  <div class="headertitle"><div class="title">mutex Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>Represents a recursive mutex.  
- <a href="classcen_1_1mutex.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="concurrency_8hpp_source.html">concurrency.hpp</a>&gt;</code></p>
 <table class="memberdecls">
@@ -111,11 +108,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab720e1155a693fb0d378a513b6ad7126"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1mutex.html#ab720e1155a693fb0d378a513b6ad7126">lock</a> () noexcept -&gt; <a class="el" href="classcen_1_1result.html">result</a></td></tr>
 <tr class="memdesc:ab720e1155a693fb0d378a513b6ad7126"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to lock the mutex, blocks if the mutex isn't available.  <a href="classcen_1_1mutex.html#ab720e1155a693fb0d378a513b6ad7126">More...</a><br /></td></tr>
 <tr class="separator:ab720e1155a693fb0d378a513b6ad7126"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab40ecadf11cc938fa0492daf71cc8275"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1mutex.html#ab40ecadf11cc938fa0492daf71cc8275">try_lock</a> () noexcept -&gt; <a class="el" href="group__concurrency.html#ga87a7bc4e11220a6a035e3e25661fa558">lock_status</a></td></tr>
-<tr class="memdesc:ab40ecadf11cc938fa0492daf71cc8275"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to lock the mutex, returns if the mutex isn't available.  <a href="classcen_1_1mutex.html#ab40ecadf11cc938fa0492daf71cc8275">More...</a><br /></td></tr>
+<tr class="memitem:ab40ecadf11cc938fa0492daf71cc8275"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1mutex.html#ab40ecadf11cc938fa0492daf71cc8275">try_lock</a> () noexcept -&gt; <a class="el" href="namespacecen.html#a87a7bc4e11220a6a035e3e25661fa558">lock_status</a></td></tr>
+<tr class="memdesc:ab40ecadf11cc938fa0492daf71cc8275"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to lock the mutex and returns immediately.  <a href="classcen_1_1mutex.html#ab40ecadf11cc938fa0492daf71cc8275">More...</a><br /></td></tr>
 <tr class="separator:ab40ecadf11cc938fa0492daf71cc8275"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa697560613ba0bf46a0e1a397f07f70f"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1mutex.html#aa697560613ba0bf46a0e1a397f07f70f">unlock</a> () noexcept -&gt; <a class="el" href="classcen_1_1result.html">result</a></td></tr>
-<tr class="memdesc:aa697560613ba0bf46a0e1a397f07f70f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to unlock the mutex.  <a href="classcen_1_1mutex.html#aa697560613ba0bf46a0e1a397f07f70f">More...</a><br /></td></tr>
 <tr class="separator:aa697560613ba0bf46a0e1a397f07f70f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cc10ca453c0f9f3b522b46d83d92684"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1mutex.html#a4cc10ca453c0f9f3b522b46d83d92684">data</a> () noexcept -&gt; SDL_mutex *</td></tr>
 <tr class="separator:a4cc10ca453c0f9f3b522b46d83d92684"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,11 +119,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7d016b3a877e3d07e53e17688d90d7dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Represents a recursive mutex. </p>
-<p >The fact that the mutex is recursive means that it's possible to nest lock and unlock calls with the same mutex.</p>
-<dl class="section see"><dt>See also</dt><dd><code><a class="el" href="classcen_1_1scoped__lock.html" title="An RAII blocking lock that unlocks an associated mutex upon destruction.">scoped_lock</a></code> </dd>
+<div class="textblock"><p >Represents a recursive mutex.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classcen_1_1scoped__lock.html" title="An RAII style blocking lock that unlocks the associated mutex upon destruction.">scoped_lock</a> </dd>
 <dd>
-<code><a class="el" href="classcen_1_1try__lock.html" title="An RAII non-blocking lock that unlocks an associated mutex upon destruction.">try_lock</a></code> </dd></dl>
+<a class="el" href="classcen_1_1try__lock.html" title="An RAII style non-blocking lock that unlocks the associated mutex upon destruction.">try_lock</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aef42e2bd0ea2ffa8ce1cdc7e5d183910" name="aef42e2bd0ea2ffa8ce1cdc7e5d183910"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aef42e2bd0ea2ffa8ce1cdc7e5d183910">&#9670;&nbsp;</a></span>mutex()</h2>
@@ -153,12 +148,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Creates an unlocked mutex. </p>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="classcen_1_1sdl__error.html" title="Represents an error related to the core SDL library.">sdl_error</a></td><td>if the mutex could not be created. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -187,7 +176,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Attempts to lock the mutex, blocks if the mutex isn't available. </p>
-<dl class="section return"><dt>Returns</dt><dd><code>success</code> if the mutex was successfully locked; <code>failure</code> otherwise. </dd></dl>
 
 </div>
 </div>
@@ -204,7 +192,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">auto <a class="el" href="classcen_1_1try__lock.html">try_lock</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> -&gt; <a class="el" href="group__concurrency.html#ga87a7bc4e11220a6a035e3e25661fa558">lock_status</a>
+          <td> -&gt; <a class="el" href="namespacecen.html#a87a7bc4e11220a6a035e3e25661fa558">lock_status</a>
   </td>
         </tr>
       </table>
@@ -215,8 +203,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Attempts to lock the mutex, returns if the mutex isn't available. </p>
-<dl class="section return"><dt>Returns</dt><dd>the result of the operation. </dd></dl>
+<p>Attempts to lock the mutex and returns immediately. </p>
 
 </div>
 </div>
@@ -242,9 +229,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Attempts to unlock the mutex. </p>
-<dl class="section return"><dt>Returns</dt><dd><code>success</code> if the mutex was successfully unlocked; <code>failure</code> otherwise. </dd></dl>
 
 </div>
 </div>

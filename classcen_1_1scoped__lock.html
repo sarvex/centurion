@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Centurion
-   &#160;<span id="projectnumber">7.0.0</span>
+   &#160;<span id="projectnumber">7.1.0</span>
    </div>
    <div id="projectbrief">A modern C++ wrapper library for SDL2</div>
   </td>
@@ -94,11 +94,11 @@ $(document).ready(function(){initNavTree('classcen_1_1scoped__lock.html',''); in
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classcen_1_1scoped__lock-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">scoped_lock Class Reference<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="group__concurrency.html">Concurrency</a></div></div></div>
+  <div class="headertitle"><div class="title">scoped_lock Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>An RAII blocking lock that unlocks an associated mutex upon destruction.  
+<p>An RAII style blocking lock that unlocks the associated mutex upon destruction.  
  <a href="classcen_1_1scoped__lock.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="concurrency_8hpp_source.html">concurrency.hpp</a>&gt;</code></p>
@@ -109,11 +109,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a5a5e21d60f2c3d28f9f2e067008236b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to lock a mutex.  <a href="classcen_1_1scoped__lock.html#a5a5e21d60f2c3d28f9f2e067008236b7">More...</a><br /></td></tr>
 <tr class="separator:a5a5e21d60f2c3d28f9f2e067008236b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f65e30da3f916056adf30f7f6f6b7d1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1scoped__lock.html#a8f65e30da3f916056adf30f7f6f6b7d1">~scoped_lock</a> () noexcept</td></tr>
-<tr class="memdesc:a8f65e30da3f916056adf30f7f6f6b7d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlocks the associated mutex.  <a href="classcen_1_1scoped__lock.html#a8f65e30da3f916056adf30f7f6f6b7d1">More...</a><br /></td></tr>
 <tr class="separator:a8f65e30da3f916056adf30f7f6f6b7d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >An RAII blocking lock that unlocks an associated mutex upon destruction. </p>
+<div class="textblock"><p >An RAII style blocking lock that unlocks the associated mutex upon destruction. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5a5e21d60f2c3d28f9f2e067008236b7" name="a5a5e21d60f2c3d28f9f2e067008236b7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5a5e21d60f2c3d28f9f2e067008236b7">&#9670;&nbsp;</a></span>scoped_lock()</h2>
@@ -140,18 +139,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Attempts to lock a mutex. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">mutex</td><td>the mutex that will be locked.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="classcen_1_1sdl__error.html" title="Represents an error related to the core SDL library.">sdl_error</a></td><td>if the mutex couldn't be locked. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -177,8 +164,6 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Unlocks the associated mutex. </p>
 
 </div>
 </div>
