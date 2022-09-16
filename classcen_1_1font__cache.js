@@ -1,8 +1,8 @@
 var classcen_1_1font__cache =
 [
     [ "glyph_data", "structcen_1_1font__cache_1_1glyph__data.html", "structcen_1_1font__cache_1_1glyph__data" ],
-    [ "id_type", "classcen_1_1font__cache.html#ac1736ede57259cd13f11b36271b4464a", null ],
-    [ "size_type", "classcen_1_1font__cache.html#af38ce1af42d538f410180c265518d4f0", null ],
+    [ "id_type", "classcen_1_1font__cache.html#a0d3f6f80c9279c52589366ef0081d1e1", null ],
+    [ "size_type", "classcen_1_1font__cache.html#ad5f854331730f70edc52ff848aeef85b", null ],
     [ "font_cache", "classcen_1_1font__cache.html#a57b6509b90a5c8d69604df3813c79dfe", null ],
     [ "font_cache", "classcen_1_1font__cache.html#af72f2538c04977d58bfc09eff07c7543", null ],
     [ "font_cache", "classcen_1_1font__cache.html#a21fe8d4a8050362a11eff5e73a58343e", null ],

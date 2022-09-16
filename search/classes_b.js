@@ -11,5 +11,6 @@ var searchData=
   ['mouse_5fmotion_5fevent_8',['mouse_motion_event',['../classcen_1_1mouse__motion__event.html',1,'cen']]],
   ['mouse_5fwheel_5fevent_9',['mouse_wheel_event',['../classcen_1_1mouse__wheel__event.html',1,'cen']]],
   ['multi_5fgesture_5fevent_10',['multi_gesture_event',['../classcen_1_1multi__gesture__event.html',1,'cen']]],
-  ['mutex_11',['mutex',['../classcen_1_1mutex.html',1,'cen']]]
+  ['music_11',['music',['../classcen_1_1music.html',1,'cen']]],
+  ['mutex_12',['mutex',['../classcen_1_1mutex.html',1,'cen']]]
 ];

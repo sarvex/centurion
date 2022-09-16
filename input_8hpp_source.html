@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Centurion
-   &#160;<span id="projectnumber">7.1.0</span>
+   &#160;<span id="projectnumber">7.2.0</span>
    </div>
    <div id="projectbrief">A modern C++ wrapper library for SDL2</div>
   </td>
@@ -136,7 +136,7 @@ $(document).ready(function(){initNavTree('input_8hpp_source.html',''); initResiz
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  <a class="code hl_enumvalue" href="namespacecen.html#aca49ff1dab9f8fde0cc789fac0f23e04a6375592a2d987630e9bf9afd9e7de973">pressed</a> = SDL_PRESSED</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>};</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="namespacecen.html#a31e19e6b44241edd8fff8413c53d006b">   43</a></span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespacecen.html#a5cccd9c669fdd74579d28f4a16101941">to_string</a>(<span class="keyword">const</span> <a class="code hl_enumeration" href="namespacecen.html#aca49ff1dab9f8fde0cc789fac0f23e04">button_state</a> state) -&gt; std::string_view</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="namespacecen.html#a31e19e6b44241edd8fff8413c53d006b">   43</a></span>[[nodiscard]] <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespacecen.html#a8f9fd48daaa6a5c663403bac65cdac7d">to_string</a>(<span class="keyword">const</span> <a class="code hl_enumeration" href="namespacecen.html#aca49ff1dab9f8fde0cc789fac0f23e04">button_state</a> state) -&gt; std::string_view</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>{</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <span class="keywordflow">switch</span> (state) {</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacecen.html#aca49ff1dab9f8fde0cc789fac0f23e04a23690fd759f17135ec9879b56ff2600c">button_state::released</a>:</div>
@@ -150,22 +150,22 @@ $(document).ready(function(){initNavTree('input_8hpp_source.html',''); initResiz
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  }</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>}</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="namespacecen.html#a655bdedd0f342670a64372b2274b91d5">   57</a></span><span class="keyword">inline</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespacecen.html#a9b2b88e0d39f0088b6940317fe33dbdf">operator&lt;&lt;</a>(std::ostream&amp; stream, <span class="keyword">const</span> <a class="code hl_enumeration" href="namespacecen.html#aca49ff1dab9f8fde0cc789fac0f23e04">button_state</a> state) -&gt; std::ostream&amp;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="namespacecen.html#a655bdedd0f342670a64372b2274b91d5">   57</a></span><span class="keyword">inline</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespacecen.html#adf49b1a40e40830d742d80a1387d3b58">operator&lt;&lt;</a>(std::ostream&amp; stream, <span class="keyword">const</span> <a class="code hl_enumeration" href="namespacecen.html#aca49ff1dab9f8fde0cc789fac0f23e04">button_state</a> state) -&gt; std::ostream&amp;</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>{</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <span class="keywordflow">return</span> stream &lt;&lt; <a class="code hl_function" href="namespacecen.html#a5cccd9c669fdd74579d28f4a16101941">to_string</a>(state);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <span class="keywordflow">return</span> stream &lt;&lt; <a class="code hl_function" href="namespacecen.html#a8f9fd48daaa6a5c663403bac65cdac7d">to_string</a>(state);</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>}</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}  <span class="comment">// namespace cen</span></div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">#endif  </span><span class="comment">// CENTURION_INPUT_HPP_</span></div>
-<div class="ttc" id="aclasscen_1_1exception_html"><div class="ttname"><a href="classcen_1_1exception.html">cen::exception</a></div><div class="ttdoc">The base class of all exceptions explicitly thrown by the library.</div><div class="ttdef"><b>Definition:</b> common.hpp:160</div></div>
-<div class="ttc" id="anamespacecen_html"><div class="ttname"><a href="namespacecen.html">cen</a></div><div class="ttdef"><b>Definition:</b> audio_events.hpp:33</div></div>
-<div class="ttc" id="anamespacecen_html_a0fecf032c367d6e513b85439dcdb8fb2"><div class="ttname"><a href="namespacecen.html#a0fecf032c367d6e513b85439dcdb8fb2">cen::uint8</a></div><div class="ttdeci">Uint8 uint8</div><div class="ttdef"><b>Definition:</b> common.hpp:75</div></div>
-<div class="ttc" id="anamespacecen_html_a5cccd9c669fdd74579d28f4a16101941"><div class="ttname"><a href="namespacecen.html#a5cccd9c669fdd74579d28f4a16101941">cen::to_string</a></div><div class="ttdeci">auto to_string(const color &amp;color) -&gt; std::string</div><div class="ttdef"><b>Definition:</b> color.hpp:526</div></div>
-<div class="ttc" id="anamespacecen_html_a9b2b88e0d39f0088b6940317fe33dbdf"><div class="ttname"><a href="namespacecen.html#a9b2b88e0d39f0088b6940317fe33dbdf">cen::operator&lt;&lt;</a></div><div class="ttdeci">auto operator&lt;&lt;(std::ostream &amp;stream, const color &amp;color) -&gt; std::ostream &amp;</div><div class="ttdef"><b>Definition:</b> color.hpp:531</div></div>
+<div class="ttc" id="aclasscen_1_1exception_html"><div class="ttname"><a href="classcen_1_1exception.html">cen::exception</a></div><div class="ttdoc">The base class of all exceptions explicitly thrown by the library.</div><div class="ttdef"><b>Definition:</b> common.hpp:167</div></div>
+<div class="ttc" id="anamespacecen_html"><div class="ttname"><a href="namespacecen.html">cen</a></div><div class="ttdef"><b>Definition:</b> audio.hpp:51</div></div>
+<div class="ttc" id="anamespacecen_html_a0fecf032c367d6e513b85439dcdb8fb2"><div class="ttname"><a href="namespacecen.html#a0fecf032c367d6e513b85439dcdb8fb2">cen::uint8</a></div><div class="ttdeci">Uint8 uint8</div><div class="ttdef"><b>Definition:</b> common.hpp:77</div></div>
+<div class="ttc" id="anamespacecen_html_a8f9fd48daaa6a5c663403bac65cdac7d"><div class="ttname"><a href="namespacecen.html#a8f9fd48daaa6a5c663403bac65cdac7d">cen::to_string</a></div><div class="ttdeci">constexpr auto to_string(const music_type type) -&gt; std::string_view</div><div class="ttdef"><b>Definition:</b> audio.hpp:66</div></div>
 <div class="ttc" id="anamespacecen_html_aca49ff1dab9f8fde0cc789fac0f23e04"><div class="ttname"><a href="namespacecen.html#aca49ff1dab9f8fde0cc789fac0f23e04">cen::button_state</a></div><div class="ttdeci">button_state</div><div class="ttdef"><b>Definition:</b> input.hpp:38</div></div>
 <div class="ttc" id="anamespacecen_html_aca49ff1dab9f8fde0cc789fac0f23e04a23690fd759f17135ec9879b56ff2600c"><div class="ttname"><a href="namespacecen.html#aca49ff1dab9f8fde0cc789fac0f23e04a23690fd759f17135ec9879b56ff2600c">cen::button_state::released</a></div><div class="ttdeci">@ released</div></div>
 <div class="ttc" id="anamespacecen_html_aca49ff1dab9f8fde0cc789fac0f23e04a6375592a2d987630e9bf9afd9e7de973"><div class="ttname"><a href="namespacecen.html#aca49ff1dab9f8fde0cc789fac0f23e04a6375592a2d987630e9bf9afd9e7de973">cen::button_state::pressed</a></div><div class="ttdeci">@ pressed</div></div>
+<div class="ttc" id="anamespacecen_html_adf49b1a40e40830d742d80a1387d3b58"><div class="ttname"><a href="namespacecen.html#adf49b1a40e40830d742d80a1387d3b58">cen::operator&lt;&lt;</a></div><div class="ttdeci">auto operator&lt;&lt;(std::ostream &amp;stream, const music_type type) -&gt; std::ostream &amp;</div><div class="ttdef"><b>Definition:</b> audio.hpp:101</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.1-->

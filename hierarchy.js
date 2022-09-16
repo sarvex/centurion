@@ -77,6 +77,9 @@ var hierarchy =
     [ "event_base< SDL_JoyBallEvent >", "classcen_1_1event__base.html", [
       [ "joy_ball_event", "classcen_1_1joy__ball__event.html", null ]
     ] ],
+    [ "event_base< SDL_JoyBatteryEvent >", "classcen_1_1event__base.html", [
+      [ "joy_battery_event", "classcen_1_1joy__battery__event.html", null ]
+    ] ],
     [ "event_base< SDL_JoyButtonEvent >", "classcen_1_1event__base.html", [
       [ "joy_button_event", "classcen_1_1joy__button__event.html", null ]
     ] ],
@@ -157,12 +160,14 @@ var hierarchy =
     [ "mix", "classcen_1_1mix.html", null ],
     [ "mix_cfg", "structcen_1_1mix__cfg.html", null ],
     [ "mouse", "classcen_1_1mouse.html", null ],
+    [ "music", "classcen_1_1music.html", null ],
     [ "mutex", "classcen_1_1mutex.html", null ],
     [ "palette", "classcen_1_1palette.html", null ],
     [ "point_traits< T, >", "classcen_1_1point__traits.html", null ],
     [ "point_traits< int >", "classcen_1_1point__traits.html", null ],
     [ "pointer< B, Type >", "classcen_1_1detail_1_1pointer.html", null ],
     [ "pointer< detail::owner_tag, SDL_Texture >", "classcen_1_1detail_1_1pointer.html", null ],
+    [ "pointer< T, Mix_Chunk >", "classcen_1_1detail_1_1pointer.html", null ],
     [ "pointer< T, SDL_Cursor >", "classcen_1_1detail_1_1pointer.html", null ],
     [ "pointer< T, SDL_GameController >", "classcen_1_1detail_1_1pointer.html", null ],
     [ "pointer< T, SDL_Joystick >", "classcen_1_1detail_1_1pointer.html", null ],
@@ -191,5 +196,6 @@ var hierarchy =
     [ "tuple_type_index< Target, Tuple >", "classcen_1_1detail_1_1tuple__type__index.html", null ],
     [ "tuple_type_index< Target, std::tuple< T... > >", "classcen_1_1detail_1_1tuple__type__index_3_01_target_00_01std_1_1tuple_3_01_t_8_8_8_01_4_01_4.html", null ],
     [ "unicode_string", "classcen_1_1unicode__string.html", null ],
+    [ "virtual_joystick_desc", "classcen_1_1virtual__joystick__desc.html", null ],
     [ "vk_library", "classcen_1_1vk__library.html", null ]
 ];

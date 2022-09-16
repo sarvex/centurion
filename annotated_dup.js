@@ -22,7 +22,7 @@ var annotated_dup =
       [ "basic_rect", "classcen_1_1basic__rect.html", "classcen_1_1basic__rect" ],
       [ "basic_renderer", "classcen_1_1basic__renderer.html", "classcen_1_1basic__renderer" ],
       [ "basic_sensor", "classcen_1_1basic__sensor.html", "classcen_1_1basic__sensor" ],
-      [ "basic_sound_effect", "classcen_1_1basic__sound__effect.html", null ],
+      [ "basic_sound_effect", "classcen_1_1basic__sound__effect.html", "classcen_1_1basic__sound__effect" ],
       [ "basic_surface", "classcen_1_1basic__surface.html", "classcen_1_1basic__surface" ],
       [ "basic_texture", "classcen_1_1basic__texture.html", "classcen_1_1basic__texture" ],
       [ "basic_vector3", "structcen_1_1basic__vector3.html", "structcen_1_1basic__vector3" ],
@@ -77,6 +77,7 @@ var annotated_dup =
       [ "img_error", "classcen_1_1img__error.html", "classcen_1_1img__error" ],
       [ "joy_axis_event", "classcen_1_1joy__axis__event.html", "classcen_1_1joy__axis__event" ],
       [ "joy_ball_event", "classcen_1_1joy__ball__event.html", "classcen_1_1joy__ball__event" ],
+      [ "joy_battery_event", "classcen_1_1joy__battery__event.html", "classcen_1_1joy__battery__event" ],
       [ "joy_button_event", "classcen_1_1joy__button__event.html", "classcen_1_1joy__button__event" ],
       [ "joy_device_event", "classcen_1_1joy__device__event.html", "classcen_1_1joy__device__event" ],
       [ "joy_hat_event", "classcen_1_1joy__hat__event.html", "classcen_1_1joy__hat__event" ],
@@ -94,6 +95,7 @@ var annotated_dup =
       [ "mouse_motion_event", "classcen_1_1mouse__motion__event.html", "classcen_1_1mouse__motion__event" ],
       [ "mouse_wheel_event", "classcen_1_1mouse__wheel__event.html", "classcen_1_1mouse__wheel__event" ],
       [ "multi_gesture_event", "classcen_1_1multi__gesture__event.html", "classcen_1_1multi__gesture__event" ],
+      [ "music", "classcen_1_1music.html", "classcen_1_1music" ],
       [ "mutex", "classcen_1_1mutex.html", "classcen_1_1mutex" ],
       [ "palette", "classcen_1_1palette.html", "classcen_1_1palette" ],
       [ "point_traits", "classcen_1_1point__traits.html", "classcen_1_1point__traits" ],
@@ -122,6 +124,7 @@ var annotated_dup =
       [ "ttf_error", "classcen_1_1ttf__error.html", "classcen_1_1ttf__error" ],
       [ "unicode_string", "classcen_1_1unicode__string.html", "classcen_1_1unicode__string" ],
       [ "user_event", "classcen_1_1user__event.html", "classcen_1_1user__event" ],
+      [ "virtual_joystick_desc", "classcen_1_1virtual__joystick__desc.html", "classcen_1_1virtual__joystick__desc" ],
       [ "vk_library", "classcen_1_1vk__library.html", "classcen_1_1vk__library" ],
       [ "window_event", "classcen_1_1window__event.html", "classcen_1_1window__event" ]
     ] ]

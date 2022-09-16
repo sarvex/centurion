@@ -1,15 +1,15 @@
 var searchData=
 [
-  ['f_0',['f',['../namespacecen_1_1keycodes.html#ab28e3c39f4e446e9c9ea9530f47c2f1f',1,'cen::keycodes::f()'],['../namespacecen_1_1scancodes.html#a2e8540f2d2ce7130b5f297ea17a063b4',1,'cen::scancodes::f()']]],
-  ['f1_1',['f1',['../namespacecen_1_1keycodes.html#aba34c9a6d9608c4b1aed450228edd24f',1,'cen::keycodes::f1()'],['../namespacecen_1_1scancodes.html#a54917fbc48a94f3cf3dec9bf96132992',1,'cen::scancodes::f1()']]],
+  ['f_0',['f',['../namespacecen_1_1scancodes.html#a2e8540f2d2ce7130b5f297ea17a063b4',1,'cen::scancodes::f()'],['../namespacecen_1_1keycodes.html#ab28e3c39f4e446e9c9ea9530f47c2f1f',1,'cen::keycodes::f()']]],
+  ['f1_1',['f1',['../namespacecen_1_1scancodes.html#a54917fbc48a94f3cf3dec9bf96132992',1,'cen::scancodes::f1()'],['../namespacecen_1_1keycodes.html#aba34c9a6d9608c4b1aed450228edd24f',1,'cen::keycodes::f1()']]],
   ['f10_2',['f10',['../namespacecen_1_1scancodes.html#a2c03f90742308a18bc0bfd749fa6f2a8',1,'cen::scancodes::f10()'],['../namespacecen_1_1keycodes.html#a92817f8d723b7c4a100b5b3d6d7cfb63',1,'cen::keycodes::f10()']]],
   ['f11_3',['f11',['../namespacecen_1_1scancodes.html#a782ec1ff5f125805b3736b4198952093',1,'cen::scancodes::f11()'],['../namespacecen_1_1keycodes.html#a4ccee3fdd53315e36199a6e78af0ff53',1,'cen::keycodes::f11()']]],
   ['f12_4',['f12',['../namespacecen_1_1scancodes.html#a02de15b4ac52808926ff778b8bbe3bc7',1,'cen::scancodes::f12()'],['../namespacecen_1_1keycodes.html#a9356041f51482a5fd4b7e84d8a8bda59',1,'cen::keycodes::f12()']]],
-  ['f2_5',['f2',['../namespacecen_1_1scancodes.html#ab1c204fae8171cd68194e00b9f205128',1,'cen::scancodes::f2()'],['../namespacecen_1_1keycodes.html#a641cfc38b1604d275ac406de75287a25',1,'cen::keycodes::f2()']]],
+  ['f2_5',['f2',['../namespacecen_1_1keycodes.html#a641cfc38b1604d275ac406de75287a25',1,'cen::keycodes::f2()'],['../namespacecen_1_1scancodes.html#ab1c204fae8171cd68194e00b9f205128',1,'cen::scancodes::f2()']]],
   ['f3_6',['f3',['../namespacecen_1_1keycodes.html#ae3b60aef484befe90d359a03e5daa665',1,'cen::keycodes::f3()'],['../namespacecen_1_1scancodes.html#a949298f794fda1c39988399003a85f89',1,'cen::scancodes::f3()']]],
   ['f4_7',['f4',['../namespacecen_1_1keycodes.html#ad5ec4a598f85d8ada4d1634903b8a2f6',1,'cen::keycodes::f4()'],['../namespacecen_1_1scancodes.html#a38ae6925c1d61bc2fbc42f238b15268e',1,'cen::scancodes::f4()']]],
   ['f5_8',['f5',['../namespacecen_1_1keycodes.html#a613bf11c57b522c3c3330e9c91e31db6',1,'cen::keycodes::f5()'],['../namespacecen_1_1scancodes.html#a444d5679f9c24d890054aa7029bb7d60',1,'cen::scancodes::f5()']]],
-  ['f6_9',['f6',['../namespacecen_1_1keycodes.html#a5dbeca581a4d15d2edd049a51f84cc45',1,'cen::keycodes::f6()'],['../namespacecen_1_1scancodes.html#aed6e2a8207aeac72512a2eb82b8ce6ba',1,'cen::scancodes::f6()']]],
+  ['f6_9',['f6',['../namespacecen_1_1scancodes.html#aed6e2a8207aeac72512a2eb82b8ce6ba',1,'cen::scancodes::f6()'],['../namespacecen_1_1keycodes.html#a5dbeca581a4d15d2edd049a51f84cc45',1,'cen::keycodes::f6()']]],
   ['f7_10',['f7',['../namespacecen_1_1keycodes.html#a125640b1ccc90f8608efd11f912af818',1,'cen::keycodes::f7()'],['../namespacecen_1_1scancodes.html#aefd2a65f74a0c96c52ffd9882299b8b5',1,'cen::scancodes::f7()']]],
   ['f8_11',['f8',['../namespacecen_1_1keycodes.html#af5e9a4ad80a5e62355687fae5df7f4bb',1,'cen::keycodes::f8()'],['../namespacecen_1_1scancodes.html#a5f2beb5a6452e7202af22d29eae8a0bb',1,'cen::scancodes::f8()']]],
   ['f9_12',['f9',['../namespacecen_1_1keycodes.html#a9eea2f6e2ca6b111132c302c117439e2',1,'cen::keycodes::f9()'],['../namespacecen_1_1scancodes.html#a902ad60a4c07052db25bd7109f68bb9b',1,'cen::scancodes::f9()']]],
@@ -20,8 +20,9 @@ var searchData=
   ['floating_17',['floating',['../classcen_1_1basic__rect.html#a00b9fb4dd032793793a1b62524e886d7',1,'cen::basic_rect::floating()'],['../classcen_1_1rect__traits.html#a00b9fb4dd032793793a1b62524e886d7',1,'cen::rect_traits::floating()'],['../classcen_1_1basic__point.html#a00b9fb4dd032793793a1b62524e886d7',1,'cen::basic_point::floating()'],['../classcen_1_1point__traits.html#a00b9fb4dd032793793a1b62524e886d7',1,'cen::point_traits::floating()']]],
   ['floral_5fwhite_18',['floral_white',['../namespacecen_1_1colors.html#a43a250f010e9de29bf0437a341330d54',1,'cen::colors']]],
   ['forest_5fgreen_19',['forest_green',['../namespacecen_1_1colors.html#a8e602ff97337c23201ea25c9ada95fc2',1,'cen::colors']]],
-  ['format_20',['format',['../structcen_1_1mix__cfg.html#ae112ac8960369ed3bdd9e0962819bd8f',1,'cen::mix_cfg']]],
-  ['four_21',['four',['../namespacecen_1_1keycodes.html#a8c6d9b9ebf47bb31a1d6c1b563ae7684',1,'cen::keycodes::four()'],['../namespacecen_1_1scancodes.html#a23aa61da5ff3f51de353d8c5b9a4bc4a',1,'cen::scancodes::four()']]],
-  ['frequency_22',['frequency',['../structcen_1_1mix__cfg.html#a0877761f00ee2460fe16820f9d52daf1',1,'cen::mix_cfg']]],
-  ['fuchsia_23',['fuchsia',['../namespacecen_1_1colors.html#aeb0c47588d98617ec2561c089c61afdc',1,'cen::colors']]]
+  ['forever_20',['forever',['../classcen_1_1basic__sound__effect.html#a8c42ce8b6ffdd5a4bd0b04423d84cd3b',1,'cen::basic_sound_effect::forever()'],['../classcen_1_1music.html#a8c42ce8b6ffdd5a4bd0b04423d84cd3b',1,'cen::music::forever()']]],
+  ['format_21',['format',['../structcen_1_1mix__cfg.html#ae112ac8960369ed3bdd9e0962819bd8f',1,'cen::mix_cfg']]],
+  ['four_22',['four',['../namespacecen_1_1keycodes.html#a8c6d9b9ebf47bb31a1d6c1b563ae7684',1,'cen::keycodes::four()'],['../namespacecen_1_1scancodes.html#a23aa61da5ff3f51de353d8c5b9a4bc4a',1,'cen::scancodes::four()']]],
+  ['frequency_23',['frequency',['../structcen_1_1mix__cfg.html#a0877761f00ee2460fe16820f9d52daf1',1,'cen::mix_cfg']]],
+  ['fuchsia_24',['fuchsia',['../namespacecen_1_1colors.html#aeb0c47588d98617ec2561c089c61afdc',1,'cen::colors']]]
 ];

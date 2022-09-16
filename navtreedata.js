@@ -94,22 +94,22 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classcen_1_1basic__point.html#a1743c2fafa61280b28f23e395c3410a3",
-"classcen_1_1basic__sensor.html#a2ca665f40bdac87c89efce69e77a001a",
-"classcen_1_1basic__window.html#a9132b5bc489350d5fea277e32f0ac27a",
-"classcen_1_1controller__touchpad__event.html#a708187bfd5772762ef53c6a9ec819f58",
-"classcen_1_1file.html#a14f06f0dbed2eba129f0b60a6fbb4997",
-"classcen_1_1font__cache.html#a21fe8d4a8050362a11eff5e73a58343e",
-"classcen_1_1locale.html",
-"classcen_1_1mutex.html#aa697560613ba0bf46a0e1a397f07f70f",
-"classcen_1_1text__editing__ext__event.html#ad1421eca7622f04b22ccba514cde905e",
-"functions_func_n.html",
-"namespacecen.html#a48d945e10cf614b8ab680bc962591f69a334c4a4c42fdb79d7ebc3e73b517e6f8",
-"namespacecen.html#a8c5a7bd5bed777afe5e28406bbb57be8",
-"namespacecen.html#ae40cf34ec675c8aa72bf2c7c7326cdc1afea087517c26fadd409bd4b9dc642555",
-"namespacecen_1_1colors.html#ad8614aeda7bc1c69f4f2b9fd64d46e72",
-"namespacemembers_vars_e.html",
-"structcen_1_1renderer__scale.html"
+"classcen_1_1basic__pixel__format__info.html#ae6fc7ceac79014079f76e7d99d2408ac",
+"classcen_1_1basic__sensor.html#a091a2fe4c22cad3ba668ca2332537f83",
+"classcen_1_1basic__window.html#a5bd22283effc54c70cc24db49d9a97c9",
+"classcen_1_1controller__button__event.html#aea5fc26631d769de841b2a799afb8e92",
+"classcen_1_1event__sink.html#afd198e92d23d154afe80c21012721da7",
+"classcen_1_1font.html#ace47640e56c8313a97ceff112a8e3d40",
+"classcen_1_1keyboard.html#a5d756711c10cd3e24660555cb490b235",
+"classcen_1_1mouse__wheel__event.html#a61e46d1c00fc7e139e8c40063cf5f73d",
+"classcen_1_1sensor__event.html",
+"classcen_1_1user__event.html#a4759bfaa68d76f2eedbe0084a8a8e6a2",
+"namespacecen.html#a219d87c11a2882c866c86bee89bc8b01",
+"namespacecen.html#a60011722b21f8fabe22666e9e9127a56a9ee49271089699c3dd1f25d03b604c7f",
+"namespacecen.html#abe0c5b46878d675d13d978afe2509b05",
+"namespacecen.html#aee91a2ab8e38420d1ffc4d8f60fa6e59",
+"namespacecen_1_1keycodes.html#a641cfc38b1604d275ac406de75287a25",
+"structcen_1_1basic__area.html#ac56ed64014f0c13a17b934276def8633"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

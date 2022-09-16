@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Centurion
-   &#160;<span id="projectnumber">7.1.0</span>
+   &#160;<span id="projectnumber">7.2.0</span>
    </div>
    <div id="projectbrief">A modern C++ wrapper library for SDL2</div>
   </td>
@@ -151,8 +151,8 @@ $(document).ready(function(){initNavTree('page-example-music.html',''); initResi
 <div class="line">  <a class="code hl_class" href="classcen_1_1basic__renderer.html">cen::renderer</a> mRenderer;</div>
 <div class="line">  <a class="code hl_class" href="classcen_1_1font.html">cen::font</a> mFont;</div>
 <div class="line">  event_dispatcher mDispatcher;</div>
-<div class="line">  cen::music mSong;</div>
-<div class="line">  cen::music mClick;</div>
+<div class="line">  <a class="code hl_class" href="classcen_1_1music.html">cen::music</a> mSong;</div>
+<div class="line">  <a class="code hl_class" href="classcen_1_1music.html">cen::music</a> mClick;</div>
 <div class="line">  <span class="keywordtype">bool</span> m_running{<span class="keyword">true</span>};</div>
 <div class="line"> </div>
 <div class="line">  std::vector&lt;cen::texture&gt; mInstructions;</div>
@@ -184,22 +184,22 @@ $(document).ready(function(){initNavTree('page-example-music.html',''); initResi
 <div class="line">  {</div>
 <div class="line">    <span class="keywordflow">if</span> (event.<a class="code hl_function" href="classcen_1_1keyboard__event.html#a30b655c7a72808690a4f8eb76a989935">released</a>()) {</div>
 <div class="line">      <span class="keywordflow">if</span> (event.<a class="code hl_function" href="classcen_1_1keyboard__event.html#a431d5aee03a8f3925ae2ade20c9fa9c5">is_active</a>(<a class="code hl_variable" href="namespacecen_1_1scancodes.html#a5e87e2af3d94413c3c104aef294b9680">cen::scancodes::zero</a>)) {</div>
-<div class="line">        mClick.play(0);</div>
+<div class="line">        mClick.<a class="code hl_function" href="classcen_1_1music.html#a99e0a7e12821ea53398bec5ae96c46db">play</a>(0);</div>
 <div class="line">      }</div>
 <div class="line">      <span class="keywordflow">else</span> <span class="keywordflow">if</span> (event.<a class="code hl_function" href="classcen_1_1keyboard__event.html#a431d5aee03a8f3925ae2ade20c9fa9c5">is_active</a>(<a class="code hl_variable" href="namespacecen_1_1scancodes.html#a4a23c2008a08500c90ddd9711b882f36">cen::scancodes::one</a>)) {</div>
-<div class="line">        mClick.play(1);</div>
+<div class="line">        mClick.<a class="code hl_function" href="classcen_1_1music.html#a99e0a7e12821ea53398bec5ae96c46db">play</a>(1);</div>
 <div class="line">      }</div>
 <div class="line">      <span class="keywordflow">else</span> <span class="keywordflow">if</span> (event.<a class="code hl_function" href="classcen_1_1keyboard__event.html#a431d5aee03a8f3925ae2ade20c9fa9c5">is_active</a>(<a class="code hl_variable" href="namespacecen_1_1scancodes.html#a3721f013f132b9516b7c124e2abfafdc">cen::scancodes::two</a>)) {</div>
-<div class="line">        mClick.play(2);</div>
+<div class="line">        mClick.<a class="code hl_function" href="classcen_1_1music.html#a99e0a7e12821ea53398bec5ae96c46db">play</a>(2);</div>
 <div class="line">      }</div>
 <div class="line">      <span class="keywordflow">else</span> <span class="keywordflow">if</span> (event.<a class="code hl_function" href="classcen_1_1keyboard__event.html#a431d5aee03a8f3925ae2ade20c9fa9c5">is_active</a>(<a class="code hl_variable" href="namespacecen_1_1scancodes.html#a4e59bca21adb8987c489f6fadc713d9d">cen::scancodes::nine</a>)) {</div>
-<div class="line">        mClick.play(cen::music::forever);</div>
+<div class="line">        mClick.<a class="code hl_function" href="classcen_1_1music.html#a99e0a7e12821ea53398bec5ae96c46db">play</a>(<a class="code hl_variable" href="classcen_1_1music.html#a8c42ce8b6ffdd5a4bd0b04423d84cd3b">cen::music::forever</a>);</div>
 <div class="line">      }</div>
 <div class="line">      <span class="keywordflow">else</span> <span class="keywordflow">if</span> (event.<a class="code hl_function" href="classcen_1_1keyboard__event.html#a431d5aee03a8f3925ae2ade20c9fa9c5">is_active</a>(<a class="code hl_variable" href="namespacecen_1_1scancodes.html#a2e8540f2d2ce7130b5f297ea17a063b4">cen::scancodes::f</a>)) {</div>
-<div class="line">        mSong.fade_in(cen::music::ms_type{5&#39;000});</div>
+<div class="line">        mSong.<a class="code hl_function" href="classcen_1_1music.html#a1db5e2542e2da94d4115078d31498f34">fade_in</a>(<a class="code hl_typedef" href="classcen_1_1music.html#aecffb3e27f2950244a2adaf8f64d3487">cen::music::ms_type</a>{5&#39;000});</div>
 <div class="line">      }</div>
 <div class="line">      <span class="keywordflow">else</span> <span class="keywordflow">if</span> (event.<a class="code hl_function" href="classcen_1_1keyboard__event.html#a431d5aee03a8f3925ae2ade20c9fa9c5">is_active</a>(<a class="code hl_variable" href="namespacecen_1_1scancodes.html#af7c509b15337724ffb3fde8fd0f95df5">cen::scancodes::escape</a>)) {</div>
-<div class="line">        cen::music::halt();</div>
+<div class="line">        <a class="code hl_function" href="classcen_1_1music.html#adb20172a012303559790faa1bef5f1ac">cen::music::halt</a>();</div>
 <div class="line">      }</div>
 <div class="line">    }</div>
 <div class="line">  }</div>
@@ -221,10 +221,10 @@ $(document).ready(function(){initNavTree('page-example-music.html',''); initResi
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    <span class="keyword">constexpr</span> <a class="code hl_class" href="classcen_1_1basic__point.html">cen::ipoint</a> offset{0, 25};</div>
-<div class="line">    <span class="keywordflow">if</span> (cen::music::is_playing() &amp;&amp; !cen::music::is_fading()) {</div>
+<div class="line">    <span class="keywordflow">if</span> (<a class="code hl_function" href="classcen_1_1music.html#aae223643659ed3d5f96e17803b5ea39a">cen::music::is_playing</a>() &amp;&amp; !<a class="code hl_function" href="classcen_1_1music.html#a2a1481cce5fd9d023df4aaebd723864f">cen::music::is_fading</a>()) {</div>
 <div class="line">      mRenderer.<a class="code hl_function" href="classcen_1_1basic__renderer.html#a95fe710c148b184353ed64432ddcdfef">render</a>(*mTexPlayingMusic, position_of(*mTexPlayingMusic) + offset);</div>
 <div class="line">    }</div>
-<div class="line">    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (cen::music::is_fading()) {</div>
+<div class="line">    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_function" href="classcen_1_1music.html#a2a1481cce5fd9d023df4aaebd723864f">cen::music::is_fading</a>()) {</div>
 <div class="line">      mRenderer.<a class="code hl_function" href="classcen_1_1basic__renderer.html#a95fe710c148b184353ed64432ddcdfef">render</a>(*mTexFadingMusic, position_of(*mTexFadingMusic) + offset);</div>
 <div class="line">    }</div>
 <div class="line">    <span class="keywordflow">else</span> {</div>
@@ -258,14 +258,22 @@ $(document).ready(function(){initNavTree('page-example-music.html',''); initResi
 <div class="ttc" id="aclasscen_1_1basic__window_html"><div class="ttname"><a href="classcen_1_1basic__window.html">cen::basic_window</a></div><div class="ttdef"><b>Definition:</b> window.hpp:75</div></div>
 <div class="ttc" id="aclasscen_1_1basic__window_html_a53cd19308e42689a98c65dc078abc866"><div class="ttname"><a href="classcen_1_1basic__window.html#a53cd19308e42689a98c65dc078abc866">cen::basic_window::default_size</a></div><div class="ttdeci">static constexpr auto default_size() noexcept -&gt; iarea</div><div class="ttdef"><b>Definition:</b> window.hpp:526</div></div>
 <div class="ttc" id="aclasscen_1_1color_html"><div class="ttname"><a href="classcen_1_1color.html">cen::color</a></div><div class="ttdef"><b>Definition:</b> color.hpp:63</div></div>
-<div class="ttc" id="aclasscen_1_1event__dispatcher_html"><div class="ttname"><a href="classcen_1_1event__dispatcher.html">cen::event_dispatcher</a></div><div class="ttdef"><b>Definition:</b> event.hpp:564</div></div>
-<div class="ttc" id="aclasscen_1_1font_html"><div class="ttname"><a href="classcen_1_1font.html">cen::font</a></div><div class="ttdef"><b>Definition:</b> font.hpp:168</div></div>
-<div class="ttc" id="aclasscen_1_1font_html_aeb9a7c39ec635380b464711c0804487a"><div class="ttname"><a href="classcen_1_1font.html#aeb9a7c39ec635380b464711c0804487a">cen::font::render_blended</a></div><div class="ttdeci">auto render_blended(const char *str, const color &amp;fg) const -&gt; surface</div><div class="ttdef"><b>Definition:</b> font.hpp:544</div></div>
+<div class="ttc" id="aclasscen_1_1event__dispatcher_html"><div class="ttname"><a href="classcen_1_1event__dispatcher.html">cen::event_dispatcher</a></div><div class="ttdef"><b>Definition:</b> event.hpp:576</div></div>
+<div class="ttc" id="aclasscen_1_1font_html"><div class="ttname"><a href="classcen_1_1font.html">cen::font</a></div><div class="ttdef"><b>Definition:</b> font.hpp:201</div></div>
+<div class="ttc" id="aclasscen_1_1font_html_aeb9a7c39ec635380b464711c0804487a"><div class="ttname"><a href="classcen_1_1font.html#aeb9a7c39ec635380b464711c0804487a">cen::font::render_blended</a></div><div class="ttdeci">auto render_blended(const char *str, const color &amp;fg) const -&gt; surface</div><div class="ttdef"><b>Definition:</b> font.hpp:590</div></div>
 <div class="ttc" id="aclasscen_1_1img_html"><div class="ttname"><a href="classcen_1_1img.html">cen::img</a></div><div class="ttdoc">Used to load and subsequently unload the SDL_image library.</div><div class="ttdef"><b>Definition:</b> initialization.hpp:86</div></div>
 <div class="ttc" id="aclasscen_1_1keyboard__event_html"><div class="ttname"><a href="classcen_1_1keyboard__event.html">cen::keyboard_event</a></div><div class="ttdef"><b>Definition:</b> misc_events.hpp:226</div></div>
 <div class="ttc" id="aclasscen_1_1keyboard__event_html_a30b655c7a72808690a4f8eb76a989935"><div class="ttname"><a href="classcen_1_1keyboard__event.html#a30b655c7a72808690a4f8eb76a989935">cen::keyboard_event::released</a></div><div class="ttdeci">auto released() const noexcept -&gt; bool</div><div class="ttdef"><b>Definition:</b> misc_events.hpp:284</div></div>
 <div class="ttc" id="aclasscen_1_1keyboard__event_html_a431d5aee03a8f3925ae2ade20c9fa9c5"><div class="ttname"><a href="classcen_1_1keyboard__event.html#a431d5aee03a8f3925ae2ade20c9fa9c5">cen::keyboard_event::is_active</a></div><div class="ttdeci">auto is_active(const scan_code &amp;code) const noexcept -&gt; bool</div><div class="ttdef"><b>Definition:</b> misc_events.hpp:252</div></div>
 <div class="ttc" id="aclasscen_1_1mix_html"><div class="ttname"><a href="classcen_1_1mix.html">cen::mix</a></div><div class="ttdoc">Used to load and subsequently unload the SDL_mixer library.</div><div class="ttdef"><b>Definition:</b> initialization.hpp:115</div></div>
+<div class="ttc" id="aclasscen_1_1music_html"><div class="ttname"><a href="classcen_1_1music.html">cen::music</a></div><div class="ttdef"><b>Definition:</b> audio.hpp:154</div></div>
+<div class="ttc" id="aclasscen_1_1music_html_a1db5e2542e2da94d4115078d31498f34"><div class="ttname"><a href="classcen_1_1music.html#a1db5e2542e2da94d4115078d31498f34">cen::music::fade_in</a></div><div class="ttdeci">auto fade_in(const ms_type duration, const int iterations=0) noexcept(noexcept(duration.count())) -&gt; result</div><div class="ttdef"><b>Definition:</b> audio.hpp:195</div></div>
+<div class="ttc" id="aclasscen_1_1music_html_a2a1481cce5fd9d023df4aaebd723864f"><div class="ttname"><a href="classcen_1_1music.html#a2a1481cce5fd9d023df4aaebd723864f">cen::music::is_fading</a></div><div class="ttdeci">static auto is_fading() noexcept -&gt; bool</div><div class="ttdef"><b>Definition:</b> audio.hpp:219</div></div>
+<div class="ttc" id="aclasscen_1_1music_html_a8c42ce8b6ffdd5a4bd0b04423d84cd3b"><div class="ttname"><a href="classcen_1_1music.html#a8c42ce8b6ffdd5a4bd0b04423d84cd3b">cen::music::forever</a></div><div class="ttdeci">static constexpr int forever</div><div class="ttdoc">Used to loop music indefinitely.</div><div class="ttdef"><b>Definition:</b> audio.hpp:160</div></div>
+<div class="ttc" id="aclasscen_1_1music_html_a99e0a7e12821ea53398bec5ae96c46db"><div class="ttname"><a href="classcen_1_1music.html#a99e0a7e12821ea53398bec5ae96c46db">cen::music::play</a></div><div class="ttdeci">auto play(const int iterations=0) noexcept -&gt; maybe&lt; channel_index &gt;</div><div class="ttdef"><b>Definition:</b> audio.hpp:171</div></div>
+<div class="ttc" id="aclasscen_1_1music_html_aae223643659ed3d5f96e17803b5ea39a"><div class="ttname"><a href="classcen_1_1music.html#aae223643659ed3d5f96e17803b5ea39a">cen::music::is_playing</a></div><div class="ttdeci">static auto is_playing() noexcept -&gt; bool</div><div class="ttdef"><b>Definition:</b> audio.hpp:191</div></div>
+<div class="ttc" id="aclasscen_1_1music_html_adb20172a012303559790faa1bef5f1ac"><div class="ttname"><a href="classcen_1_1music.html#adb20172a012303559790faa1bef5f1ac">cen::music::halt</a></div><div class="ttdeci">static void halt() noexcept</div><div class="ttdef"><b>Definition:</b> audio.hpp:186</div></div>
+<div class="ttc" id="aclasscen_1_1music_html_aecffb3e27f2950244a2adaf8f64d3487"><div class="ttname"><a href="classcen_1_1music.html#aecffb3e27f2950244a2adaf8f64d3487">cen::music::ms_type</a></div><div class="ttdeci">millis&lt; int &gt; ms_type</div><div class="ttdef"><b>Definition:</b> audio.hpp:157</div></div>
 <div class="ttc" id="aclasscen_1_1quit__event_html"><div class="ttname"><a href="classcen_1_1quit__event.html">cen::quit_event</a></div><div class="ttdef"><b>Definition:</b> misc_events.hpp:48</div></div>
 <div class="ttc" id="aclasscen_1_1sdl_html"><div class="ttname"><a href="classcen_1_1sdl.html">cen::sdl</a></div><div class="ttdef"><b>Definition:</b> initialization.hpp:64</div></div>
 <div class="ttc" id="aclasscen_1_1ttf_html"><div class="ttname"><a href="classcen_1_1ttf.html">cen::ttf</a></div><div class="ttdoc">Used to load and subsequently unload the SDL_ttf library.</div><div class="ttdef"><b>Definition:</b> initialization.hpp:141</div></div>
@@ -274,15 +282,15 @@ $(document).ready(function(){initNavTree('page-example-music.html',''); initResi
 <div class="ttc" id="anamespacecen_1_1colors_html_a606184cb6e6c9c0359db564a99a42b2f"><div class="ttname"><a href="namespacecen_1_1colors.html#a606184cb6e6c9c0359db564a99a42b2f">cen::colors::hot_pink</a></div><div class="ttdeci">constexpr color hot_pink</div><div class="ttdef"><b>Definition:</b> color.hpp:591</div></div>
 <div class="ttc" id="anamespacecen_1_1colors_html_a73f7d842ed5f7f8993c0a23834125668"><div class="ttname"><a href="namespacecen_1_1colors.html#a73f7d842ed5f7f8993c0a23834125668">cen::colors::red</a></div><div class="ttdeci">constexpr color red</div><div class="ttdef"><b>Definition:</b> color.hpp:629</div></div>
 <div class="ttc" id="anamespacecen_1_1colors_html_aa98ab3e63a16a866067bc211959fd865"><div class="ttname"><a href="namespacecen_1_1colors.html#aa98ab3e63a16a866067bc211959fd865">cen::colors::lime_green</a></div><div class="ttdeci">constexpr color lime_green</div><div class="ttdef"><b>Definition:</b> color.hpp:601</div></div>
-<div class="ttc" id="anamespacecen_1_1keycodes_html_a39783ed77cbe219ddaaa4d7a1f386133"><div class="ttname"><a href="namespacecen_1_1keycodes.html#a39783ed77cbe219ddaaa4d7a1f386133">cen::keycodes::y</a></div><div class="ttdeci">constexpr key_code y</div><div class="ttdef"><b>Definition:</b> keyboard.hpp:571</div></div>
-<div class="ttc" id="anamespacecen_1_1keycodes_html_aa4d1315a35cd931996c66faaf75c49e1"><div class="ttname"><a href="namespacecen_1_1keycodes.html#aa4d1315a35cd931996c66faaf75c49e1">cen::keycodes::x</a></div><div class="ttdeci">constexpr key_code x</div><div class="ttdef"><b>Definition:</b> keyboard.hpp:570</div></div>
-<div class="ttc" id="anamespacecen_1_1scancodes_html_a2e8540f2d2ce7130b5f297ea17a063b4"><div class="ttname"><a href="namespacecen_1_1scancodes.html#a2e8540f2d2ce7130b5f297ea17a063b4">cen::scancodes::f</a></div><div class="ttdeci">constexpr scan_code f</div><div class="ttdef"><b>Definition:</b> keyboard.hpp:630</div></div>
-<div class="ttc" id="anamespacecen_1_1scancodes_html_a3721f013f132b9516b7c124e2abfafdc"><div class="ttname"><a href="namespacecen_1_1scancodes.html#a3721f013f132b9516b7c124e2abfafdc">cen::scancodes::two</a></div><div class="ttdeci">constexpr scan_code two</div><div class="ttdef"><b>Definition:</b> keyboard.hpp:653</div></div>
-<div class="ttc" id="anamespacecen_1_1scancodes_html_a4a23c2008a08500c90ddd9711b882f36"><div class="ttname"><a href="namespacecen_1_1scancodes.html#a4a23c2008a08500c90ddd9711b882f36">cen::scancodes::one</a></div><div class="ttdeci">constexpr scan_code one</div><div class="ttdef"><b>Definition:</b> keyboard.hpp:652</div></div>
-<div class="ttc" id="anamespacecen_1_1scancodes_html_a4e59bca21adb8987c489f6fadc713d9d"><div class="ttname"><a href="namespacecen_1_1scancodes.html#a4e59bca21adb8987c489f6fadc713d9d">cen::scancodes::nine</a></div><div class="ttdeci">constexpr scan_code nine</div><div class="ttdef"><b>Definition:</b> keyboard.hpp:660</div></div>
-<div class="ttc" id="anamespacecen_1_1scancodes_html_a5e87e2af3d94413c3c104aef294b9680"><div class="ttname"><a href="namespacecen_1_1scancodes.html#a5e87e2af3d94413c3c104aef294b9680">cen::scancodes::zero</a></div><div class="ttdeci">constexpr scan_code zero</div><div class="ttdef"><b>Definition:</b> keyboard.hpp:661</div></div>
-<div class="ttc" id="anamespacecen_1_1scancodes_html_af7c509b15337724ffb3fde8fd0f95df5"><div class="ttname"><a href="namespacecen_1_1scancodes.html#af7c509b15337724ffb3fde8fd0f95df5">cen::scancodes::escape</a></div><div class="ttdeci">constexpr scan_code escape</div><div class="ttdef"><b>Definition:</b> keyboard.hpp:683</div></div>
-<div class="ttc" id="anamespacecen_html"><div class="ttname"><a href="namespacecen.html">cen</a></div><div class="ttdef"><b>Definition:</b> audio_events.hpp:33</div></div>
+<div class="ttc" id="anamespacecen_1_1keycodes_html_a39783ed77cbe219ddaaa4d7a1f386133"><div class="ttname"><a href="namespacecen_1_1keycodes.html#a39783ed77cbe219ddaaa4d7a1f386133">cen::keycodes::y</a></div><div class="ttdeci">constexpr key_code y</div><div class="ttdef"><b>Definition:</b> keyboard.hpp:577</div></div>
+<div class="ttc" id="anamespacecen_1_1keycodes_html_aa4d1315a35cd931996c66faaf75c49e1"><div class="ttname"><a href="namespacecen_1_1keycodes.html#aa4d1315a35cd931996c66faaf75c49e1">cen::keycodes::x</a></div><div class="ttdeci">constexpr key_code x</div><div class="ttdef"><b>Definition:</b> keyboard.hpp:576</div></div>
+<div class="ttc" id="anamespacecen_1_1scancodes_html_a2e8540f2d2ce7130b5f297ea17a063b4"><div class="ttname"><a href="namespacecen_1_1scancodes.html#a2e8540f2d2ce7130b5f297ea17a063b4">cen::scancodes::f</a></div><div class="ttdeci">constexpr scan_code f</div><div class="ttdef"><b>Definition:</b> keyboard.hpp:636</div></div>
+<div class="ttc" id="anamespacecen_1_1scancodes_html_a3721f013f132b9516b7c124e2abfafdc"><div class="ttname"><a href="namespacecen_1_1scancodes.html#a3721f013f132b9516b7c124e2abfafdc">cen::scancodes::two</a></div><div class="ttdeci">constexpr scan_code two</div><div class="ttdef"><b>Definition:</b> keyboard.hpp:659</div></div>
+<div class="ttc" id="anamespacecen_1_1scancodes_html_a4a23c2008a08500c90ddd9711b882f36"><div class="ttname"><a href="namespacecen_1_1scancodes.html#a4a23c2008a08500c90ddd9711b882f36">cen::scancodes::one</a></div><div class="ttdeci">constexpr scan_code one</div><div class="ttdef"><b>Definition:</b> keyboard.hpp:658</div></div>
+<div class="ttc" id="anamespacecen_1_1scancodes_html_a4e59bca21adb8987c489f6fadc713d9d"><div class="ttname"><a href="namespacecen_1_1scancodes.html#a4e59bca21adb8987c489f6fadc713d9d">cen::scancodes::nine</a></div><div class="ttdeci">constexpr scan_code nine</div><div class="ttdef"><b>Definition:</b> keyboard.hpp:666</div></div>
+<div class="ttc" id="anamespacecen_1_1scancodes_html_a5e87e2af3d94413c3c104aef294b9680"><div class="ttname"><a href="namespacecen_1_1scancodes.html#a5e87e2af3d94413c3c104aef294b9680">cen::scancodes::zero</a></div><div class="ttdeci">constexpr scan_code zero</div><div class="ttdef"><b>Definition:</b> keyboard.hpp:667</div></div>
+<div class="ttc" id="anamespacecen_1_1scancodes_html_af7c509b15337724ffb3fde8fd0f95df5"><div class="ttname"><a href="namespacecen_1_1scancodes.html#af7c509b15337724ffb3fde8fd0f95df5">cen::scancodes::escape</a></div><div class="ttdeci">constexpr scan_code escape</div><div class="ttdef"><b>Definition:</b> keyboard.hpp:689</div></div>
+<div class="ttc" id="anamespacecen_html"><div class="ttname"><a href="namespacecen.html">cen</a></div><div class="ttdef"><b>Definition:</b> audio.hpp:51</div></div>
 <div class="ttc" id="anamespacecen_html_a3a6b7415e80b54dc6e6cff5d4451bc00a9e5f0bb330344d580b9e30d338d6ab6d"><div class="ttname"><a href="namespacecen.html#a3a6b7415e80b54dc6e6cff5d4451bc00a9e5f0bb330344d580b9e30d338d6ab6d">cen::log_category::render</a></div><div class="ttdeci">@ render</div></div>
 <div class="ttc" id="anamespacecen_html_acee910831fcf4331e19af73170bbf11aa662f707d5491e9bce8238a6c0be92190"><div class="ttname"><a href="namespacecen.html#acee910831fcf4331e19af73170bbf11aa662f707d5491e9bce8238a6c0be92190">cen::window_event_id::hidden</a></div><div class="ttdeci">@ hidden</div></div>
 <div class="ttc" id="anamespacecen_html_ad2eb382608242f24cf986eee93ea144c"><div class="ttname"><a href="namespacecen.html#ad2eb382608242f24cf986eee93ea144c">cen::window</a></div><div class="ttdeci">basic_window&lt; detail::owner_tag &gt; window</div><div class="ttdef"><b>Definition:</b> window.hpp:58</div></div>

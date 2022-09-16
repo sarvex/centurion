@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Centurion
-   &#160;<span id="projectnumber">7.1.0</span>
+   &#160;<span id="projectnumber">7.2.0</span>
    </div>
    <div id="projectbrief">A modern C++ wrapper library for SDL2</div>
   </td>
@@ -169,16 +169,16 @@ $(document).ready(function(){initNavTree('vulkan_8hpp_source.html',''); initResi
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <span class="keywordflow">return</span> SDL_Vulkan_CreateSurface(<a class="code hl_class" href="classcen_1_1basic__window.html">window</a>.<a class="code hl_function" href="classcen_1_1basic__window.html#a8d64d4cda75e029e57cf2ffe46fe8eee">get</a>(), instance, outSurface) == SDL_TRUE;</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>}</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="namespacecen_1_1vk.html#aaee77b4b2d240f9bc89b98fd673b5195">   79</a></span><span class="keyword">inline</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespacecen_1_1vk.html#aaee77b4b2d240f9bc89b98fd673b5195">required_extensions</a>() -&gt; std::optional&lt;std::vector&lt;const char*&gt;&gt;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="namespacecen_1_1vk.html#a06ab991dd0cd1e00fa656a65e55ccea5">   79</a></span><span class="keyword">inline</span> <span class="keyword">auto</span> <a class="code hl_function" href="namespacecen_1_1vk.html#a06ab991dd0cd1e00fa656a65e55ccea5">required_extensions</a>() -&gt; <a class="code hl_typedef" href="namespacecen.html#ae5ea719e5aedb3fa41a82323de5c977e">maybe&lt;std::vector&lt;const char*&gt;</a>&gt;</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>{</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  <a class="code hl_typedef" href="namespacecen.html#a69aa29b598b851b0640aa225a9e5d61d">uint</a> count{};</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  <span class="keywordflow">if</span> (!SDL_Vulkan_GetInstanceExtensions(<span class="keyword">nullptr</span>, &amp;count, <span class="keyword">nullptr</span>)) {</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordflow">return</span> std::nullopt;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="namespacecen.html#ab8b825c79d788dd8f2479fb7d5c378cb">nothing</a>;</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  }</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  std::vector&lt;const char*&gt; names(count);</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  <span class="keywordflow">if</span> (!SDL_Vulkan_GetInstanceExtensions(<span class="keyword">nullptr</span>, &amp;count, names.data())) {</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keywordflow">return</span> std::nullopt;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="namespacecen.html#ab8b825c79d788dd8f2479fb7d5c378cb">nothing</a>;</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  }</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  <span class="keywordflow">return</span> names;</div>
@@ -204,17 +204,19 @@ $(document).ready(function(){initNavTree('vulkan_8hpp_source.html',''); initResi
 <div class="ttc" id="aclasscen_1_1basic__window_html"><div class="ttname"><a href="classcen_1_1basic__window.html">cen::basic_window</a></div><div class="ttdef"><b>Definition:</b> window.hpp:75</div></div>
 <div class="ttc" id="aclasscen_1_1basic__window_html_a8d64d4cda75e029e57cf2ffe46fe8eee"><div class="ttname"><a href="classcen_1_1basic__window.html#a8d64d4cda75e029e57cf2ffe46fe8eee">cen::basic_window::get</a></div><div class="ttdeci">auto get() const noexcept -&gt; SDL_Window *</div><div class="ttdef"><b>Definition:</b> window.hpp:516</div></div>
 <div class="ttc" id="aclasscen_1_1basic__window_html_ad47de2152cabe60078d2ab1a45505b3d"><div class="ttname"><a href="classcen_1_1basic__window.html#ad47de2152cabe60078d2ab1a45505b3d">cen::basic_window::is_vulkan</a></div><div class="ttdeci">auto is_vulkan() const noexcept -&gt; bool</div><div class="ttdef"><b>Definition:</b> window.hpp:476</div></div>
-<div class="ttc" id="aclasscen_1_1result_html"><div class="ttname"><a href="classcen_1_1result.html">cen::result</a></div><div class="ttdef"><b>Definition:</b> common.hpp:250</div></div>
-<div class="ttc" id="aclasscen_1_1sdl__error_html"><div class="ttname"><a href="classcen_1_1sdl__error.html">cen::sdl_error</a></div><div class="ttdef"><b>Definition:</b> common.hpp:173</div></div>
+<div class="ttc" id="aclasscen_1_1result_html"><div class="ttname"><a href="classcen_1_1result.html">cen::result</a></div><div class="ttdef"><b>Definition:</b> common.hpp:257</div></div>
+<div class="ttc" id="aclasscen_1_1sdl__error_html"><div class="ttname"><a href="classcen_1_1sdl__error.html">cen::sdl_error</a></div><div class="ttdef"><b>Definition:</b> common.hpp:180</div></div>
 <div class="ttc" id="aclasscen_1_1vk__library_html"><div class="ttname"><a href="classcen_1_1vk__library.html">cen::vk_library</a></div><div class="ttdoc">Responsible for loading and unloading a Vulkan library.</div><div class="ttdef"><b>Definition:</b> vulkan.hpp:46</div></div>
 <div class="ttc" id="aclasscen_1_1vk__library_html_a908775baeab0fa15b0e268a2b3fd9891"><div class="ttname"><a href="classcen_1_1vk__library.html#a908775baeab0fa15b0e268a2b3fd9891">cen::vk_library::~vk_library</a></div><div class="ttdeci">~vk_library() noexcept</div><div class="ttdef"><b>Definition:</b> vulkan.hpp:58</div></div>
+<div class="ttc" id="anamespacecen_1_1vk_html_a06ab991dd0cd1e00fa656a65e55ccea5"><div class="ttname"><a href="namespacecen_1_1vk.html#a06ab991dd0cd1e00fa656a65e55ccea5">cen::vk::required_extensions</a></div><div class="ttdeci">auto required_extensions() -&gt; maybe&lt; std::vector&lt; const char * &gt; &gt;</div><div class="ttdoc">Returns the extensions required to create a Vulkan surface.</div><div class="ttdef"><b>Definition:</b> vulkan.hpp:79</div></div>
 <div class="ttc" id="anamespacecen_1_1vk_html_a4639deef5c9904daab636df15440df55"><div class="ttname"><a href="namespacecen_1_1vk.html#a4639deef5c9904daab636df15440df55">cen::vk::drawable_size</a></div><div class="ttdeci">auto drawable_size(const basic_window&lt; T &gt; &amp;window) noexcept -&gt; iarea</div><div class="ttdef"><b>Definition:</b> vulkan.hpp:95</div></div>
 <div class="ttc" id="anamespacecen_1_1vk_html_a81dbeb1b5136411b3eb5b314d57dac7f"><div class="ttname"><a href="namespacecen_1_1vk.html#a81dbeb1b5136411b3eb5b314d57dac7f">cen::vk::get_instance_proc_addr</a></div><div class="ttdeci">auto get_instance_proc_addr() noexcept -&gt; void *</div><div class="ttdoc">Returns the address of the vkGetInstanceProcAddr function.</div><div class="ttdef"><b>Definition:</b> vulkan.hpp:64</div></div>
 <div class="ttc" id="anamespacecen_1_1vk_html_aa6fc5673d0fc61a11ff1a1d84d4514d4"><div class="ttname"><a href="namespacecen_1_1vk.html#aa6fc5673d0fc61a11ff1a1d84d4514d4">cen::vk::make_surface</a></div><div class="ttdeci">auto make_surface(basic_window&lt; T &gt; &amp;window, VkInstance instance, VkSurfaceKHR *outSurface) noexcept -&gt; result</div><div class="ttdef"><b>Definition:</b> vulkan.hpp:70</div></div>
-<div class="ttc" id="anamespacecen_1_1vk_html_aaee77b4b2d240f9bc89b98fd673b5195"><div class="ttname"><a href="namespacecen_1_1vk.html#aaee77b4b2d240f9bc89b98fd673b5195">cen::vk::required_extensions</a></div><div class="ttdeci">auto required_extensions() -&gt; std::optional&lt; std::vector&lt; const char * &gt; &gt;</div><div class="ttdoc">Returns the extensions required to create a Vulkan surface.</div><div class="ttdef"><b>Definition:</b> vulkan.hpp:79</div></div>
-<div class="ttc" id="anamespacecen_html"><div class="ttname"><a href="namespacecen.html">cen</a></div><div class="ttdef"><b>Definition:</b> audio_events.hpp:33</div></div>
+<div class="ttc" id="anamespacecen_html"><div class="ttname"><a href="namespacecen.html">cen</a></div><div class="ttdef"><b>Definition:</b> audio.hpp:51</div></div>
 <div class="ttc" id="anamespacecen_html_a3a6b7415e80b54dc6e6cff5d4451bc00ae44e4612f62d2fb8f8738bab118a9850"><div class="ttname"><a href="namespacecen.html#a3a6b7415e80b54dc6e6cff5d4451bc00ae44e4612f62d2fb8f8738bab118a9850">cen::log_category::assert</a></div><div class="ttdeci">@ assert</div></div>
-<div class="ttc" id="anamespacecen_html_a69aa29b598b851b0640aa225a9e5d61d"><div class="ttname"><a href="namespacecen.html#a69aa29b598b851b0640aa225a9e5d61d">cen::uint</a></div><div class="ttdeci">unsigned int uint</div><div class="ttdef"><b>Definition:</b> common.hpp:72</div></div>
+<div class="ttc" id="anamespacecen_html_a69aa29b598b851b0640aa225a9e5d61d"><div class="ttname"><a href="namespacecen.html#a69aa29b598b851b0640aa225a9e5d61d">cen::uint</a></div><div class="ttdeci">unsigned int uint</div><div class="ttdef"><b>Definition:</b> common.hpp:74</div></div>
+<div class="ttc" id="anamespacecen_html_ab8b825c79d788dd8f2479fb7d5c378cb"><div class="ttname"><a href="namespacecen.html#ab8b825c79d788dd8f2479fb7d5c378cb">cen::nothing</a></div><div class="ttdeci">constexpr auto nothing</div><div class="ttdef"><b>Definition:</b> common.hpp:152</div></div>
+<div class="ttc" id="anamespacecen_html_ae5ea719e5aedb3fa41a82323de5c977e"><div class="ttname"><a href="namespacecen.html#ae5ea719e5aedb3fa41a82323de5c977e">cen::maybe</a></div><div class="ttdeci">std::optional&lt; T &gt; maybe</div><div class="ttdef"><b>Definition:</b> common.hpp:150</div></div>
 <div class="ttc" id="astructcen_1_1basic__area_html"><div class="ttname"><a href="structcen_1_1basic__area.html">cen::basic_area</a></div><div class="ttdef"><b>Definition:</b> math.hpp:126</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

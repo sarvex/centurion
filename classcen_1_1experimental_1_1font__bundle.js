@@ -1,7 +1,7 @@
 var classcen_1_1experimental_1_1font__bundle =
 [
-    [ "id_type", "classcen_1_1experimental_1_1font__bundle.html#ac1736ede57259cd13f11b36271b4464a", null ],
-    [ "size_type", "classcen_1_1experimental_1_1font__bundle.html#af38ce1af42d538f410180c265518d4f0", null ],
+    [ "id_type", "classcen_1_1experimental_1_1font__bundle.html#a0d3f6f80c9279c52589366ef0081d1e1", null ],
+    [ "size_type", "classcen_1_1experimental_1_1font__bundle.html#ad5f854331730f70edc52ff848aeef85b", null ],
     [ "load_font", "classcen_1_1experimental_1_1font__bundle.html#aac6d990d762109fd63477f27bf772552", null ],
     [ "contains", "classcen_1_1experimental_1_1font__bundle.html#a51b88901e9aa3e4f66f9f5ca9b55c1bb", null ],
     [ "contains", "classcen_1_1experimental_1_1font__bundle.html#a4e8a8123999297d5d016e9bb9cfb9691", null ],

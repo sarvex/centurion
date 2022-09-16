@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Centurion
-   &#160;<span id="projectnumber">7.1.0</span>
+   &#160;<span id="projectnumber">7.2.0</span>
    </div>
    <div id="projectbrief">A modern C++ wrapper library for SDL2</div>
   </td>
@@ -91,9 +91,673 @@ $(document).ready(function(){initNavTree('classcen_1_1basic__sound__effect.html'
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="classcen_1_1basic__sound__effect-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">basic_sound_effect&lt; T &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="audio_8hpp_source.html">audio.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:afd8fb49d1c233200e83475feb3d30cec"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__sound__effect.html#afd8fb49d1c233200e83475feb3d30cec">channel_index</a> = int</td></tr>
+<tr class="separator:afd8fb49d1c233200e83475feb3d30cec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecffb3e27f2950244a2adaf8f64d3487"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__sound__effect.html#aecffb3e27f2950244a2adaf8f64d3487">ms_type</a> = <a class="el" href="namespacecen.html#a860bced675bf2328d203b4ee1676c6b1">millis</a>&lt; int &gt;</td></tr>
+<tr class="separator:aecffb3e27f2950244a2adaf8f64d3487"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a4b9b188327dfbe37aa1c49b914b1bf08"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__sound__effect.html#a4b9b188327dfbe37aa1c49b914b1bf08">basic_sound_effect</a> (<a class="el" href="namespacecen.html#a8ab6d78cbc2030d15036476760bbbf3f">maybe_owner</a>&lt; Mix_Chunk * &gt; sound) noexcept(<a class="el" href="namespacecen_1_1detail.html#a8ca49fdda5da2e804a34921261a1fe5f">detail::is_handle</a>&lt; T &gt;)</td></tr>
+<tr class="separator:a4b9b188327dfbe37aa1c49b914b1bf08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ab63e040624f8970b161fa61f486f91"><td class="memTemplParams" colspan="2">template&lt;typename TT  = T, <a class="el" href="namespacecen_1_1detail.html#a10de886509ce4311b91d656f5e620d5a">detail::enable_for_owner</a>&lt; TT &gt;  = 0&gt; </td></tr>
+<tr class="memitem:a1ab63e040624f8970b161fa61f486f91"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__sound__effect.html#a1ab63e040624f8970b161fa61f486f91">basic_sound_effect</a> (const char *<a class="el" href="classcen_1_1file.html">file</a>)</td></tr>
+<tr class="separator:a1ab63e040624f8970b161fa61f486f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae625ec7fe5b8f5618f4f8c86df02d9eb"><td class="memTemplParams" colspan="2">template&lt;typename TT  = T, <a class="el" href="namespacecen_1_1detail.html#a10de886509ce4311b91d656f5e620d5a">detail::enable_for_owner</a>&lt; TT &gt;  = 0&gt; </td></tr>
+<tr class="memitem:ae625ec7fe5b8f5618f4f8c86df02d9eb"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__sound__effect.html#ae625ec7fe5b8f5618f4f8c86df02d9eb">basic_sound_effect</a> (const std::string &amp;<a class="el" href="classcen_1_1file.html">file</a>)</td></tr>
+<tr class="separator:ae625ec7fe5b8f5618f4f8c86df02d9eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cc4b894152cc1ca4dead347d9045293"><td class="memTemplParams" colspan="2">template&lt;typename TT  = T, <a class="el" href="namespacecen_1_1detail.html#af7eaf1dad7d2f17f827758b6586e98f2">detail::enable_for_handle</a>&lt; TT &gt;  = 0&gt; </td></tr>
+<tr class="memitem:a4cc4b894152cc1ca4dead347d9045293"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__sound__effect.html#a4cc4b894152cc1ca4dead347d9045293">basic_sound_effect</a> (const <a class="el" href="namespacecen.html#ace9ba3bd0f51951ca1000e2dca4786a5">sound_effect</a> &amp;<a class="el" href="namespacecen.html#ae635fa1092d174256dfa190f7d24cd96">owner</a>) noexcept</td></tr>
+<tr class="separator:a4cc4b894152cc1ca4dead347d9045293"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2abc8fa53d0e517288573b31ca3c3c2e"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__sound__effect.html#a2abc8fa53d0e517288573b31ca3c3c2e">play</a> (const int iterations=0) noexcept -&gt; <a class="el" href="classcen_1_1result.html">result</a></td></tr>
+<tr class="separator:a2abc8fa53d0e517288573b31ca3c3c2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba28ee97ffe6d508e26f534ec7e62f8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__sound__effect.html#aba28ee97ffe6d508e26f534ec7e62f8f">stop</a> () noexcept</td></tr>
+<tr class="separator:aba28ee97ffe6d508e26f534ec7e62f8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a568736b1ac3114947f3779234747ef3e"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__sound__effect.html#a568736b1ac3114947f3779234747ef3e">is_playing</a> () const noexcept -&gt; bool</td></tr>
+<tr class="separator:a568736b1ac3114947f3779234747ef3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a508c478c6de74e3f12cf345d5a80f2cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__sound__effect.html#a508c478c6de74e3f12cf345d5a80f2cc">fade_in</a> (const <a class="el" href="classcen_1_1basic__sound__effect.html#aecffb3e27f2950244a2adaf8f64d3487">ms_type</a> duration) noexcept(noexcept(duration.count()))</td></tr>
+<tr class="separator:a508c478c6de74e3f12cf345d5a80f2cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa642b9a53fcdc2bec4b02a3dcc9bd228"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__sound__effect.html#aa642b9a53fcdc2bec4b02a3dcc9bd228">fade_out</a> (const <a class="el" href="classcen_1_1basic__sound__effect.html#aecffb3e27f2950244a2adaf8f64d3487">ms_type</a> duration) noexcept(noexcept(duration.count()))</td></tr>
+<tr class="separator:aa642b9a53fcdc2bec4b02a3dcc9bd228"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa921a9e6d7f5b302ee698b26655a13b2"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__sound__effect.html#aa921a9e6d7f5b302ee698b26655a13b2">is_fading</a> () const noexcept -&gt; bool</td></tr>
+<tr class="separator:aa921a9e6d7f5b302ee698b26655a13b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36afc342297050c00b5e72fde9fefd0b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__sound__effect.html#a36afc342297050c00b5e72fde9fefd0b">channel</a> () const noexcept -&gt; <a class="el" href="namespacecen.html#ae5ea719e5aedb3fa41a82323de5c977e">maybe</a>&lt; <a class="el" href="classcen_1_1basic__sound__effect.html#afd8fb49d1c233200e83475feb3d30cec">channel_index</a> &gt;</td></tr>
+<tr class="separator:a36afc342297050c00b5e72fde9fefd0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadf5c08e0f1c19a0d33f085f428336c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__sound__effect.html#aadf5c08e0f1c19a0d33f085f428336c2">set_volume</a> (const int <a class="el" href="classcen_1_1basic__sound__effect.html#a6c0375c99616b434b3701e8239f1b2af">volume</a>) noexcept</td></tr>
+<tr class="separator:aadf5c08e0f1c19a0d33f085f428336c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c0375c99616b434b3701e8239f1b2af"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__sound__effect.html#a6c0375c99616b434b3701e8239f1b2af">volume</a> () const noexcept -&gt; int</td></tr>
+<tr class="separator:a6c0375c99616b434b3701e8239f1b2af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a794370941bb986dc2e71c41715c287db"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__sound__effect.html#a794370941bb986dc2e71c41715c287db">get</a> () const noexcept -&gt; Mix_Chunk *</td></tr>
+<tr class="separator:a794370941bb986dc2e71c41715c287db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:adddb96f635960d99fac68950c60fcc24"><td class="memTemplParams" colspan="2">template&lt;typename TT  = T, <a class="el" href="namespacecen_1_1detail.html#a10de886509ce4311b91d656f5e620d5a">detail::enable_for_owner</a>&lt; TT &gt;  = 0&gt; </td></tr>
+<tr class="memitem:adddb96f635960d99fac68950c60fcc24"><td class="memTemplItemLeft" align="right" valign="top">static auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__sound__effect.html#adddb96f635960d99fac68950c60fcc24">is_any_playing</a> () noexcept -&gt; bool</td></tr>
+<tr class="separator:adddb96f635960d99fac68950c60fcc24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d26f9605e3a2286af4ad4a408eb91b4"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__sound__effect.html#a2d26f9605e3a2286af4ad4a408eb91b4">max_volume</a> () noexcept -&gt; int</td></tr>
+<tr class="separator:a2d26f9605e3a2286af4ad4a408eb91b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4bdfaca775f69f78d376f0f1a61bff9"><td class="memTemplParams" colspan="2">template&lt;typename TT  = T, <a class="el" href="namespacecen_1_1detail.html#a10de886509ce4311b91d656f5e620d5a">detail::enable_for_owner</a>&lt; TT &gt;  = 0&gt; </td></tr>
+<tr class="memitem:ad4bdfaca775f69f78d376f0f1a61bff9"><td class="memTemplItemLeft" align="right" valign="top">static auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__sound__effect.html#ad4bdfaca775f69f78d376f0f1a61bff9">has_decoder</a> (const char *name) noexcept -&gt; bool</td></tr>
+<tr class="separator:ad4bdfaca775f69f78d376f0f1a61bff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd63270a41465c20bd1a67635740cf67"><td class="memTemplParams" colspan="2">template&lt;typename TT  = T, <a class="el" href="namespacecen_1_1detail.html#a10de886509ce4311b91d656f5e620d5a">detail::enable_for_owner</a>&lt; TT &gt;  = 0&gt; </td></tr>
+<tr class="memitem:afd63270a41465c20bd1a67635740cf67"><td class="memTemplItemLeft" align="right" valign="top">static auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__sound__effect.html#afd63270a41465c20bd1a67635740cf67">get_decoder</a> (const int index) noexcept -&gt; const char *</td></tr>
+<tr class="separator:afd63270a41465c20bd1a67635740cf67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ec913bcf9bcfaad5a41dca1553545e6"><td class="memTemplParams" colspan="2">template&lt;typename TT  = T, <a class="el" href="namespacecen_1_1detail.html#a10de886509ce4311b91d656f5e620d5a">detail::enable_for_owner</a>&lt; TT &gt;  = 0&gt; </td></tr>
+<tr class="memitem:a3ec913bcf9bcfaad5a41dca1553545e6"><td class="memTemplItemLeft" align="right" valign="top">static auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__sound__effect.html#a3ec913bcf9bcfaad5a41dca1553545e6">decoder_count</a> () noexcept -&gt; int</td></tr>
+<tr class="separator:a3ec913bcf9bcfaad5a41dca1553545e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:ac24ceaad24533d19e7d3d5e4f83b9bc0"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="classcen_1_1basic__sound__effect.html#afd8fb49d1c233200e83475feb3d30cec">channel_index</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__sound__effect.html#ac24ceaad24533d19e7d3d5e4f83b9bc0">undefined_channel</a></td></tr>
+<tr class="separator:ac24ceaad24533d19e7d3d5e4f83b9bc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c42ce8b6ffdd5a4bd0b04423d84cd3b"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcen_1_1basic__sound__effect.html#a8c42ce8b6ffdd5a4bd0b04423d84cd3b">forever</a></td></tr>
+<tr class="memdesc:a8c42ce8b6ffdd5a4bd0b04423d84cd3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to play sounds indefinitely.  <a href="classcen_1_1basic__sound__effect.html#a8c42ce8b6ffdd5a4bd0b04423d84cd3b">More...</a><br /></td></tr>
+<tr class="separator:a8c42ce8b6ffdd5a4bd0b04423d84cd3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename T&gt;<br />
+class cen::basic_sound_effect&lt; T &gt;</div><p >Represents a sound effect.</p>
+<p >Unlike with the music API, multiple sound effects can be played at the same time, which is the main difference between the music and sound effect APIs.</p>
+<p >The supported file formats are:</p><ul>
+<li>WAVE/RIFF (.wav)</li>
+<li>AIFF (.aiff)</li>
+<li>VOC (.voc)</li>
+<li>OGG (.ogg)</li>
+<li>VOC (.voc)</li>
+</ul>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacecen.html#ace9ba3bd0f51951ca1000e2dca4786a5">sound_effect</a> </dd>
+<dd>
+<a class="el" href="namespacecen.html#ae4097c2652b20d78a7679cdf35b0824d">sound_effect_handle</a> </dd>
+<dd>
+<a class="el" href="classcen_1_1music.html">music</a> </dd>
+<dd>
+<a class="el" href="namespacecen.html#a4343edd2e0c221d09ee44e2a0653e0e2" title="Returns a potentially empty handle to the sound associated with a channel.">get_sound</a> </dd></dl>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="afd8fb49d1c233200e83475feb3d30cec" name="afd8fb49d1c233200e83475feb3d30cec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd8fb49d1c233200e83475feb3d30cec">&#9670;&nbsp;</a></span>channel_index</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classcen_1_1basic__sound__effect.html#afd8fb49d1c233200e83475feb3d30cec">channel_index</a> =  int</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aecffb3e27f2950244a2adaf8f64d3487" name="aecffb3e27f2950244a2adaf8f64d3487"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecffb3e27f2950244a2adaf8f64d3487">&#9670;&nbsp;</a></span>ms_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classcen_1_1basic__sound__effect.html#aecffb3e27f2950244a2adaf8f64d3487">ms_type</a> =  <a class="el" href="namespacecen.html#a860bced675bf2328d203b4ee1676c6b1">millis</a>&lt;int&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a4b9b188327dfbe37aa1c49b914b1bf08" name="a4b9b188327dfbe37aa1c49b914b1bf08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b9b188327dfbe37aa1c49b914b1bf08">&#9670;&nbsp;</a></span>basic_sound_effect() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcen_1_1basic__sound__effect.html">basic_sound_effect</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacecen.html#a8ab6d78cbc2030d15036476760bbbf3f">maybe_owner</a>&lt; Mix_Chunk * &gt;&#160;</td>
+          <td class="paramname"><em>sound</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1ab63e040624f8970b161fa61f486f91" name="a1ab63e040624f8970b161fa61f486f91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ab63e040624f8970b161fa61f486f91">&#9670;&nbsp;</a></span>basic_sound_effect() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcen_1_1basic__sound__effect.html">basic_sound_effect</a> </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>file</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae625ec7fe5b8f5618f4f8c86df02d9eb" name="ae625ec7fe5b8f5618f4f8c86df02d9eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae625ec7fe5b8f5618f4f8c86df02d9eb">&#9670;&nbsp;</a></span>basic_sound_effect() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcen_1_1basic__sound__effect.html">basic_sound_effect</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>file</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4cc4b894152cc1ca4dead347d9045293" name="a4cc4b894152cc1ca4dead347d9045293"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cc4b894152cc1ca4dead347d9045293">&#9670;&nbsp;</a></span>basic_sound_effect() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classcen_1_1basic__sound__effect.html">basic_sound_effect</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacecen.html#ace9ba3bd0f51951ca1000e2dca4786a5">sound_effect</a> &amp;&#160;</td>
+          <td class="paramname"><em>owner</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2abc8fa53d0e517288573b31ca3c3c2e" name="a2abc8fa53d0e517288573b31ca3c3c2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2abc8fa53d0e517288573b31ca3c3c2e">&#9670;&nbsp;</a></span>play()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto play </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>iterations</em> = <code>0</code></td><td>)</td>
+          <td> -&gt; <a class="el" href="classcen_1_1result.html">result</a>
+  </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aba28ee97ffe6d508e26f534ec7e62f8f" name="aba28ee97ffe6d508e26f534ec7e62f8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba28ee97ffe6d508e26f534ec7e62f8f">&#9670;&nbsp;</a></span>stop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a568736b1ac3114947f3779234747ef3e" name="a568736b1ac3114947f3779234747ef3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a568736b1ac3114947f3779234747ef3e">&#9670;&nbsp;</a></span>is_playing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto is_playing </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const -&gt; bool
+  </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adddb96f635960d99fac68950c60fcc24" name="adddb96f635960d99fac68950c60fcc24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adddb96f635960d99fac68950c60fcc24">&#9670;&nbsp;</a></span>is_any_playing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static auto is_any_playing </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> -&gt; bool
+  </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a508c478c6de74e3f12cf345d5a80f2cc" name="a508c478c6de74e3f12cf345d5a80f2cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a508c478c6de74e3f12cf345d5a80f2cc">&#9670;&nbsp;</a></span>fade_in()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fade_in </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classcen_1_1basic__sound__effect.html#aecffb3e27f2950244a2adaf8f64d3487">ms_type</a>&#160;</td>
+          <td class="paramname"><em>duration</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa642b9a53fcdc2bec4b02a3dcc9bd228" name="aa642b9a53fcdc2bec4b02a3dcc9bd228"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa642b9a53fcdc2bec4b02a3dcc9bd228">&#9670;&nbsp;</a></span>fade_out()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fade_out </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classcen_1_1basic__sound__effect.html#aecffb3e27f2950244a2adaf8f64d3487">ms_type</a>&#160;</td>
+          <td class="paramname"><em>duration</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa921a9e6d7f5b302ee698b26655a13b2" name="aa921a9e6d7f5b302ee698b26655a13b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa921a9e6d7f5b302ee698b26655a13b2">&#9670;&nbsp;</a></span>is_fading()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto is_fading </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const -&gt; bool
+  </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a36afc342297050c00b5e72fde9fefd0b" name="a36afc342297050c00b5e72fde9fefd0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36afc342297050c00b5e72fde9fefd0b">&#9670;&nbsp;</a></span>channel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto channel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const -&gt; <a class="el" href="namespacecen.html#ae5ea719e5aedb3fa41a82323de5c977e">maybe</a>&lt;<a class="el" href="classcen_1_1basic__sound__effect.html#afd8fb49d1c233200e83475feb3d30cec">channel_index</a>&gt;
+  </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aadf5c08e0f1c19a0d33f085f428336c2" name="aadf5c08e0f1c19a0d33f085f428336c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadf5c08e0f1c19a0d33f085f428336c2">&#9670;&nbsp;</a></span>set_volume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void set_volume </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>volume</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6c0375c99616b434b3701e8239f1b2af" name="a6c0375c99616b434b3701e8239f1b2af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c0375c99616b434b3701e8239f1b2af">&#9670;&nbsp;</a></span>volume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto volume </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const -&gt; int </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2d26f9605e3a2286af4ad4a408eb91b4" name="a2d26f9605e3a2286af4ad4a408eb91b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d26f9605e3a2286af4ad4a408eb91b4">&#9670;&nbsp;</a></span>max_volume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr auto max_volume </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> -&gt; int </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad4bdfaca775f69f78d376f0f1a61bff9" name="ad4bdfaca775f69f78d376f0f1a61bff9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4bdfaca775f69f78d376f0f1a61bff9">&#9670;&nbsp;</a></span>has_decoder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static auto has_decoder </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> -&gt; bool
+  </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afd63270a41465c20bd1a67635740cf67" name="afd63270a41465c20bd1a67635740cf67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd63270a41465c20bd1a67635740cf67">&#9670;&nbsp;</a></span>get_decoder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static auto get_decoder </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> -&gt; const char*
+  </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3ec913bcf9bcfaad5a41dca1553545e6" name="a3ec913bcf9bcfaad5a41dca1553545e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ec913bcf9bcfaad5a41dca1553545e6">&#9670;&nbsp;</a></span>decoder_count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static auto decoder_count </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> -&gt; int
+  </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a794370941bb986dc2e71c41715c287db" name="a794370941bb986dc2e71c41715c287db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a794370941bb986dc2e71c41715c287db">&#9670;&nbsp;</a></span>get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto get </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const -&gt; Mix_Chunk* </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ac24ceaad24533d19e7d3d5e4f83b9bc0" name="ac24ceaad24533d19e7d3d5e4f83b9bc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac24ceaad24533d19e7d3d5e4f83b9bc0">&#9670;&nbsp;</a></span>undefined_channel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classcen_1_1basic__sound__effect.html#afd8fb49d1c233200e83475feb3d30cec">channel_index</a> undefined_channel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8c42ce8b6ffdd5a4bd0b04423d84cd3b" name="a8c42ce8b6ffdd5a4bd0b04423d84cd3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c42ce8b6ffdd5a4bd0b04423d84cd3b">&#9670;&nbsp;</a></span>forever</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int forever</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Used to play sounds indefinitely. </p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.1-->

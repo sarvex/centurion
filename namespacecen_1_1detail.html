@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Centurion
-   &#160;<span id="projectnumber">7.1.0</span>
+   &#160;<span id="projectnumber">7.2.0</span>
    </div>
    <div id="projectbrief">A modern C++ wrapper library for SDL2</div>
   </td>
@@ -126,10 +126,10 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a493173c7ce342f291c1bfb387ca25470"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t Size&gt; </td></tr>
+<tr class="memitem:a493173c7ce342f291c1bfb387ca25470"><td class="memTemplParams" colspan="2">template&lt;typename T , <a class="el" href="namespacecen.html#ac47ac2e28dd2cb38fbf05ce10f810407">usize</a> Size&gt; </td></tr>
 <tr class="memitem:a493173c7ce342f291c1bfb387ca25470"><td class="memTemplItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecen_1_1detail.html#a493173c7ce342f291c1bfb387ca25470">assign</a> (const std::array&lt; T, Size &gt; &amp;array, <a class="el" href="namespacecen.html#ade6b931c80a9e1c6bdd941061d8b0bb9">bounded_array_ref</a>&lt; T, Size &gt; out)</td></tr>
 <tr class="separator:a493173c7ce342f291c1bfb387ca25470"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe94e9a798d376b23e666754c57267af"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t Size&gt; </td></tr>
+<tr class="memitem:afe94e9a798d376b23e666754c57267af"><td class="memTemplParams" colspan="2">template&lt;typename T , <a class="el" href="namespacecen.html#ac47ac2e28dd2cb38fbf05ce10f810407">usize</a> Size&gt; </td></tr>
 <tr class="memitem:afe94e9a798d376b23e666754c57267af"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecen_1_1detail.html#afe94e9a798d376b23e666754c57267af">to_array</a> (<a class="el" href="namespacecen.html#ade6b931c80a9e1c6bdd941061d8b0bb9">bounded_array_ref</a>&lt; const T, Size &gt; data) -&gt; std::array&lt; T, Size &gt;</td></tr>
 <tr class="separator:afe94e9a798d376b23e666754c57267af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af26c31d8d7f11235d52328d77813006a"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecen_1_1detail.html#af26c31d8d7f11235d52328d77813006a">sdl_version_at_least</a> (const int major, const int minor, const int patch) noexcept -&gt; bool</td></tr>
@@ -146,9 +146,9 @@ Functions</h2></td></tr>
 <tr class="separator:a8376136359892764835cf15c5fdfec2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac29da3a83b953ce46c20eba32e206ccd"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecen_1_1detail.html#ac29da3a83b953ce46c20eba32e206ccd">lerp</a> (const float a, const float b, const float bias) noexcept -&gt; float</td></tr>
 <tr class="separator:ac29da3a83b953ce46c20eba32e206ccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62e266222e0a55810de00602acb69acb"><td class="memTemplParams" colspan="2">template&lt;typename T  = int&gt; </td></tr>
-<tr class="memitem:a62e266222e0a55810de00602acb69acb"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecen_1_1detail.html#a62e266222e0a55810de00602acb69acb">stoi</a> (const std::string_view str, const int base=10) noexcept(<a class="el" href="namespacecen.html#a536dd3053e832e696a908d66e89af06a">on_msvc</a>) -&gt; std::optional&lt; T &gt;</td></tr>
-<tr class="separator:a62e266222e0a55810de00602acb69acb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcbf4a34c608dd5c31b70db89e912986"><td class="memTemplParams" colspan="2">template&lt;typename T  = int&gt; </td></tr>
+<tr class="memitem:adcbf4a34c608dd5c31b70db89e912986"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacecen_1_1detail.html#adcbf4a34c608dd5c31b70db89e912986">stoi</a> (const std::string_view str, const int base=10) noexcept(<a class="el" href="namespacecen.html#a536dd3053e832e696a908d66e89af06a">on_msvc</a>) -&gt; <a class="el" href="namespacecen.html#ae5ea719e5aedb3fa41a82323de5c977e">maybe</a>&lt; T &gt;</td></tr>
+<tr class="separator:adcbf4a34c608dd5c31b70db89e912986"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6e78ea746638ef88f8b9e8dec17ae80"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecen_1_1detail.html#aa6e78ea746638ef88f8b9e8dec17ae80">cmp</a> (const char *a, const char *b) noexcept -&gt; bool</td></tr>
 <tr class="separator:aa6e78ea746638ef88f8b9e8dec17ae80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a5b459ce9562dd89bcf9c6a7f359481"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacecen_1_1detail.html#a9a5b459ce9562dd89bcf9c6a7f359481">address_of</a> (const void *ptr) -&gt; std::string</td></tr>
@@ -499,8 +499,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a62e266222e0a55810de00602acb69acb" name="a62e266222e0a55810de00602acb69acb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62e266222e0a55810de00602acb69acb">&#9670;&nbsp;</a></span>stoi()</h2>
+<a id="adcbf4a34c608dd5c31b70db89e912986" name="adcbf4a34c608dd5c31b70db89e912986"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcbf4a34c608dd5c31b70db89e912986">&#9670;&nbsp;</a></span>stoi()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -523,7 +523,7 @@ Variables</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> -&gt; std::optional&lt;T&gt;
+          <td></td><td> -&gt; <a class="el" href="namespacecen.html#ae5ea719e5aedb3fa41a82323de5c977e">maybe</a>&lt;T&gt;
 </td>
         </tr>
       </table>

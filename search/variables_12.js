@@ -10,7 +10,7 @@ var searchData=
   ['sienna_7',['sienna',['../namespacecen_1_1colors.html#af0cf9d1151223740b1850d4afa29077b',1,'cen::colors']]],
   ['silver_8',['silver',['../namespacecen_1_1colors.html#a6c2decf9ddb43404fcc79446135a8719',1,'cen::colors']]],
   ['six_9',['six',['../namespacecen_1_1scancodes.html#ae15adfef6357f2ae1750434448521447',1,'cen::scancodes::six()'],['../namespacecen_1_1keycodes.html#a81eea9bc8b3451428a0c0a8a8b87ffd3',1,'cen::keycodes::six()']]],
-  ['size_10',['size',['../structcen_1_1basic__window_1_1icc__profile__data.html#a15be4f36d9c953254b9d6d64bbc8590e',1,'cen::basic_window::icc_profile_data']]],
+  ['size_10',['size',['../structcen_1_1basic__window_1_1icc__profile__data.html#a59f6400efda18d25d7b3cf3c2e7a3d3d',1,'cen::basic_window::icc_profile_data']]],
   ['sky_5fblue_11',['sky_blue',['../namespacecen_1_1colors.html#aba10d326c9d5d996d106168e0d2f7687',1,'cen::colors']]],
   ['slate_5fblue_12',['slate_blue',['../namespacecen_1_1colors.html#a61d9460adf17758aae0cd530229e6f6c',1,'cen::colors']]],
   ['slate_5fgray_13',['slate_gray',['../namespacecen_1_1colors.html#a2e1b6f86b717dbe149f7428b73f48c12',1,'cen::colors']]],

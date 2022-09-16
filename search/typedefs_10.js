@@ -10,5 +10,7 @@ var searchData=
   ['uint8_7',['uint8',['../namespacecen.html#a0fecf032c367d6e513b85439dcdb8fb2',1,'cen']]],
   ['ulonglong_8',['ulonglong',['../namespacecen.html#a70c2c38542d55bfe51d75907a6c8125a',1,'cen']]],
   ['unicode32_5ft_9',['unicode32_t',['../namespacecen.html#a1fb46aea219562a15ba1dd7fb83b7fe3',1,'cen']]],
-  ['unicode_5ft_10',['unicode_t',['../namespacecen.html#ac3131ee180db2fcab120011a74d12f47',1,'cen']]]
+  ['unicode_5ft_10',['unicode_t',['../namespacecen.html#ac3131ee180db2fcab120011a74d12f47',1,'cen']]],
+  ['update_5fcallback_11',['update_callback',['../classcen_1_1virtual__joystick__desc.html#ae617486ed6d2a39611f3d119c33755d0',1,'cen::virtual_joystick_desc']]],
+  ['usize_12',['usize',['../namespacecen.html#ac47ac2e28dd2cb38fbf05ce10f810407',1,'cen']]]
 ];

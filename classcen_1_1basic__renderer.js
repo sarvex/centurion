@@ -38,7 +38,7 @@ var classcen_1_1basic__renderer =
     [ "get_target", "classcen_1_1basic__renderer.html#af4c0f1c6b2394a88f032dc4b13c720d4", null ],
     [ "reset_clip", "classcen_1_1basic__renderer.html#a6f72d71504ed0f45a9e833db02713fab", null ],
     [ "set_clip", "classcen_1_1basic__renderer.html#a18ec676ed756a7aa1b52ab396a6b2063", null ],
-    [ "clip", "classcen_1_1basic__renderer.html#a1cccdaeab111b1e438dd896771bba6a1", null ],
+    [ "clip", "classcen_1_1basic__renderer.html#a128fda870b0a671fbc9884bfd1f189d0", null ],
     [ "is_clipping_enabled", "classcen_1_1basic__renderer.html#aa8cf824c473f2ef3396f72c1bde3cd78", null ],
     [ "set_logical_size", "classcen_1_1basic__renderer.html#a51e25acc5375e5341687f755dbf74b57", null ],
     [ "set_logical_integer_scaling", "classcen_1_1basic__renderer.html#a36916a04ff44087eaee72b69c43311c0", null ],

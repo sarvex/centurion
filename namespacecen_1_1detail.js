@@ -15,7 +15,7 @@ var namespacecen_1_1detail =
     [ "min", "namespacecen_1_1detail.html#a91964c553e1989fb4c1db5ea779e5cdb", null ],
     [ "max", "namespacecen_1_1detail.html#a8376136359892764835cf15c5fdfec2e", null ],
     [ "lerp", "namespacecen_1_1detail.html#ac29da3a83b953ce46c20eba32e206ccd", null ],
-    [ "stoi", "namespacecen_1_1detail.html#a62e266222e0a55810de00602acb69acb", null ],
+    [ "stoi", "namespacecen_1_1detail.html#adcbf4a34c608dd5c31b70db89e912986", null ],
     [ "cmp", "namespacecen_1_1detail.html#aa6e78ea746638ef88f8b9e8dec17ae80", null ],
     [ "address_of", "namespacecen_1_1detail.html#a9a5b459ce9562dd89bcf9c6a7f359481", null ],
     [ "is_active", "namespacecen_1_1detail.html#a92fe872b0469e1d99ec3061b5fc9b81e", null ],
